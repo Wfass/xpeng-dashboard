@@ -1,0 +1,10 @@
+version: 2.12.1
+apkFileName: devtools.apk
+doNotCompress:
+- arsc
+- dex
+- mp3
+- ogg
+- png
+- webp
+- assets/index_kstp.html

@@ -1,0 +1,44 @@
+.class public Lcom/xiaopeng/carcontrol/carmanager/impl/CiuController$CiuControllerFactory;
+.super Ljava/lang/Object;
+.source "CiuController.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/xiaopeng/carcontrol/carmanager/impl/CiuController;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "CiuControllerFactory"
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 51
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static createCarController(Landroid/car/Car;)Lcom/xiaopeng/carcontrol/carmanager/impl/CiuController;
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "carClient"
+        }
+    .end annotation
+
+    .line 53
+    new-instance v0, Lcom/xiaopeng/carcontrol/carmanager/impl/CiuController;
+
+    invoke-direct {v0, p0}, Lcom/xiaopeng/carcontrol/carmanager/impl/CiuController;-><init>(Landroid/car/Car;)V
+
+    return-object v0
+.end method

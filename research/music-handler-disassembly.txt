@@ -1,0 +1,222 @@
+
+ClusterLyrics/research/icm-root/app/hmi/bin/ECluster:	file format elf32-littlearm
+
+Disassembly of section .text:
+
+000cf9f0 <_HandleOnMusicEvent>:
+   cf9f0: e92d4ff0     	push	{r4, r5, r6, r7, r8, r9, r10, r11, lr}
+   cf9f4: e28db020     	add	r11, sp, #32
+   cf9f8: e59f730c     	ldr	r7, [pc, #0x30c]        @ 0xcfd0c <_HandleOnMusicEvent+0x31c>
+   cf9fc: e24dd07c     	sub	sp, sp, #124
+   cfa00: e1a0a000     	mov	r10, r0
+   cfa04: e5904000     	ldr	r4, [r0]
+   cfa08: e3a06000     	mov	r6, #0
+   cfa0c: e59f02fc     	ldr	r0, [pc, #0x2fc]        @ 0xcfd10 <_HandleOnMusicEvent+0x320>
+   cfa10: e08f7007     	add	r7, pc, r7
+   cfa14: e2877e42     	add	r7, r7, #1056
+   cfa18: e1a02001     	mov	r2, r1
+   cfa1c: e1a05001     	mov	r5, r1
+   cfa20: e1a01007     	mov	r1, r7
+   cfa24: e08f0000     	add	r0, pc, r0
+   cfa28: e54b6025     	strb	r6, [r11, #-0x25]
+   cfa2c: e50b6060     	str	r6, [r11, #-0x60]
+   cfa30: e2849004     	add	r9, r4, #4
+   cfa34: e50b605c     	str	r6, [r11, #-0x5c]
+   cfa38: e50b6058     	str	r6, [r11, #-0x58]
+   cfa3c: e50b6054     	str	r6, [r11, #-0x54]
+   cfa40: e50b6050     	str	r6, [r11, #-0x50]
+   cfa44: e50b604c     	str	r6, [r11, #-0x4c]
+   cfa48: e50b6048     	str	r6, [r11, #-0x48]
+   cfa4c: e50b6044     	str	r6, [r11, #-0x44]
+   cfa50: e50b6040     	str	r6, [r11, #-0x40]
+   cfa54: e50b603c     	str	r6, [r11, #-0x3c]
+   cfa58: e50b6038     	str	r6, [r11, #-0x38]
+   cfa5c: e50b6034     	str	r6, [r11, #-0x34]
+   cfa60: e50b6030     	str	r6, [r11, #-0x30]
+   cfa64: eb0077fe     	bl	0xeda64 <_ZN8KanziLog4logDEPKcz> @ imm = #0x1dff8
+   cfa68: e59f02a4     	ldr	r0, [pc, #0x2a4]        @ 0xcfd14 <_HandleOnMusicEvent+0x324>
+   cfa6c: e1a01007     	mov	r1, r7
+   cfa70: e1a02004     	mov	r2, r4
+   cfa74: e08f0000     	add	r0, pc, r0
+   cfa78: eb0077f9     	bl	0xeda64 <_ZN8KanziLog4logDEPKcz> @ imm = #0x1dfe4
+   cfa7c: e1550009     	cmp	r5, r9
+   cfa80: 3a000054     	blo	0xcfbd8 <_HandleOnMusicEvent+0x1e8> @ imm = #0x150
+   cfa84: e284300f     	add	r3, r4, #15
+   cfa88: e50bd068     	str	sp, [r11, #-0x68]
+   cfa8c: e3c33007     	bic	r3, r3, #7
+   cfa90: e1a01006     	mov	r1, r6
+   cfa94: e04dd003     	sub	sp, sp, r3
+   cfa98: e2842001     	add	r2, r4, #1
+   cfa9c: e28d8037     	add	r8, sp, #55
+   cfaa0: e1a081a8     	lsr	r8, r8, #3
+   cfaa4: e1a07188     	lsl	r7, r8, #3
+   cfaa8: e1a00007     	mov	r0, r7
+   cfaac: ebff0e59     	bl	0x93418 <.plt+0x1190>   @ imm = #-0x3c69c
+   cfab0: e7c46188     	strb	r6, [r4, r8, lsl #3]
+   cfab4: e1a00007     	mov	r0, r7
+   cfab8: e28a1004     	add	r1, r10, #4
+   cfabc: e1a02004     	mov	r2, r4
+   cfac0: ebff0c44     	bl	0x92bd8 <.plt+0x950>    @ imm = #-0x3cef0
+   cfac4: e1a00007     	mov	r0, r7
+   cfac8: ebffb937     	bl	0xbdfac <cJSON_Parse>   @ imm = #-0x11b24
+   cfacc: e59f3244     	ldr	r3, [pc, #0x244]        @ 0xcfd18 <_HandleOnMusicEvent+0x328>
+   cfad0: e1500006     	cmp	r0, r6
+   cfad4: e08f3003     	add	r3, pc, r3
+   cfad8: e5830644     	str	r0, [r3, #0x644]
+   cfadc: 0a000045     	beq	0xcfbf8 <_HandleOnMusicEvent+0x208> @ imm = #0x114
+   cfae0: e24b6060     	sub	r6, r11, #96
+   cfae4: e1a01006     	mov	r1, r6
+   cfae8: ebfffc6a     	bl	0xcec98 <GetMusicData>  @ imm = #-0xe58
+   cfaec: e2455004     	sub	r5, r5, #4
+   cfaf0: e0644005     	rsb	r4, r4, r5
+   cfaf4: e3540000     	cmp	r4, #0
+   cfaf8: da000047     	ble	0xcfc1c <_HandleOnMusicEvent+0x22c> @ imm = #0x11c
+   cfafc: e3500000     	cmp	r0, #0
+   cfb00: 1a000057     	bne	0xcfc64 <_HandleOnMusicEvent+0x274> @ imm = #0x15c
+   cfb04: e59f1210     	ldr	r1, [pc, #0x210]        @ 0xcfd1c <_HandleOnMusicEvent+0x32c>
+   cfb08: e1a02004     	mov	r2, r4
+   cfb0c: e59f020c     	ldr	r0, [pc, #0x20c]        @ 0xcfd20 <_HandleOnMusicEvent+0x330>
+   cfb10: e3a03000     	mov	r3, #0
+   cfb14: e08f1001     	add	r1, pc, r1
+   cfb18: e08f0000     	add	r0, pc, r0
+   cfb1c: e2811e42     	add	r1, r1, #1056
+   cfb20: eb0077cf     	bl	0xeda64 <_ZN8KanziLog4logDEPKcz> @ imm = #0x1df3c
+   cfb24: e3a04000     	mov	r4, #0
+   cfb28: e59f31f4     	ldr	r3, [pc, #0x1f4]        @ 0xcfd24 <_HandleOnMusicEvent+0x334>
+   cfb2c: e08f3003     	add	r3, pc, r3
+   cfb30: e5930644     	ldr	r0, [r3, #0x644]
+   cfb34: e3500000     	cmp	r0, #0
+   cfb38: 0a000000     	beq	0xcfb40 <_HandleOnMusicEvent+0x150> @ imm = #0x0
+   cfb3c: ebffb6f8     	bl	0xbd724 <cJSON_Delete>  @ imm = #-0x12420
+   cfb40: e51b0060     	ldr	r0, [r11, #-0x60]
+   cfb44: e3500000     	cmp	r0, #0
+   cfb48: 0a000000     	beq	0xcfb50 <_HandleOnMusicEvent+0x160> @ imm = #0x0
+   cfb4c: ebff0c00     	bl	0x92b54 <.plt+0x8cc>    @ imm = #-0x3d000
+   cfb50: e51b005c     	ldr	r0, [r11, #-0x5c]
+   cfb54: e3500000     	cmp	r0, #0
+   cfb58: 0a000000     	beq	0xcfb60 <_HandleOnMusicEvent+0x170> @ imm = #0x0
+   cfb5c: ebff0bfc     	bl	0x92b54 <.plt+0x8cc>    @ imm = #-0x3d010
+   cfb60: e51b0058     	ldr	r0, [r11, #-0x58]
+   cfb64: e3500000     	cmp	r0, #0
+   cfb68: 0a000000     	beq	0xcfb70 <_HandleOnMusicEvent+0x180> @ imm = #0x0
+   cfb6c: ebff0bf8     	bl	0x92b54 <.plt+0x8cc>    @ imm = #-0x3d020
+   cfb70: e51b0054     	ldr	r0, [r11, #-0x54]
+   cfb74: e3500000     	cmp	r0, #0
+   cfb78: 0a000000     	beq	0xcfb80 <_HandleOnMusicEvent+0x190> @ imm = #0x0
+   cfb7c: ebff0bf4     	bl	0x92b54 <.plt+0x8cc>    @ imm = #-0x3d030
+   cfb80: e51b0050     	ldr	r0, [r11, #-0x50]
+   cfb84: e3500000     	cmp	r0, #0
+   cfb88: 0a000000     	beq	0xcfb90 <_HandleOnMusicEvent+0x1a0> @ imm = #0x0
+   cfb8c: ebff0bf0     	bl	0x92b54 <.plt+0x8cc>    @ imm = #-0x3d040
+   cfb90: e51b004c     	ldr	r0, [r11, #-0x4c]
+   cfb94: e3500000     	cmp	r0, #0
+   cfb98: 0a000000     	beq	0xcfba0 <_HandleOnMusicEvent+0x1b0> @ imm = #0x0
+   cfb9c: ebff0bec     	bl	0x92b54 <.plt+0x8cc>    @ imm = #-0x3d050
+   cfba0: e51b0048     	ldr	r0, [r11, #-0x48]
+   cfba4: e3500000     	cmp	r0, #0
+   cfba8: 0a000000     	beq	0xcfbb0 <_HandleOnMusicEvent+0x1c0> @ imm = #0x0
+   cfbac: ebff0be8     	bl	0x92b54 <.plt+0x8cc>    @ imm = #-0x3d060
+   cfbb0: e51b0044     	ldr	r0, [r11, #-0x44]
+   cfbb4: e3500000     	cmp	r0, #0
+   cfbb8: 0a000000     	beq	0xcfbc0 <_HandleOnMusicEvent+0x1d0> @ imm = #0x0
+   cfbbc: ebff0be4     	bl	0x92b54 <.plt+0x8cc>    @ imm = #-0x3d070
+   cfbc0: e51b0040     	ldr	r0, [r11, #-0x40]
+   cfbc4: e3500000     	cmp	r0, #0
+   cfbc8: 0a000000     	beq	0xcfbd0 <_HandleOnMusicEvent+0x1e0> @ imm = #0x0
+   cfbcc: ebff0be0     	bl	0x92b54 <.plt+0x8cc>    @ imm = #-0x3d080
+   cfbd0: e51bd068     	ldr	sp, [r11, #-0x68]
+   cfbd4: ea000004     	b	0xcfbec <_HandleOnMusicEvent+0x1fc> @ imm = #0x10
+   cfbd8: e59f0148     	ldr	r0, [pc, #0x148]        @ 0xcfd28 <_HandleOnMusicEvent+0x338>
+   cfbdc: e1a01007     	mov	r1, r7
+   cfbe0: e1a04006     	mov	r4, r6
+   cfbe4: e08f0000     	add	r0, pc, r0
+   cfbe8: eb007737     	bl	0xed8cc <_ZN8KanziLog4logEEPKcz> @ imm = #0x1dcdc
+   cfbec: e1a00004     	mov	r0, r4
+   cfbf0: e24bd020     	sub	sp, r11, #32
+   cfbf4: e8bd8ff0     	pop	{r4, r5, r6, r7, r8, r9, r10, r11, pc}
+   cfbf8: e59f112c     	ldr	r1, [pc, #0x12c]        @ 0xcfd2c <_HandleOnMusicEvent+0x33c>
+   cfbfc: e59f012c     	ldr	r0, [pc, #0x12c]        @ 0xcfd30 <_HandleOnMusicEvent+0x340>
+   cfc00: e08f1001     	add	r1, pc, r1
+   cfc04: e08f0000     	add	r0, pc, r0
+   cfc08: e2811e42     	add	r1, r1, #1056
+   cfc0c: eb00772e     	bl	0xed8cc <_ZN8KanziLog4logEEPKcz> @ imm = #0x1dcb8
+   cfc10: e3a04000     	mov	r4, #0
+   cfc14: e51bd068     	ldr	sp, [r11, #-0x68]
+   cfc18: eafffff3     	b	0xcfbec <_HandleOnMusicEvent+0x1fc> @ imm = #-0x34
+   cfc1c: e3500000     	cmp	r0, #0
+   cfc20: 0affffb7     	beq	0xcfb04 <_HandleOnMusicEvent+0x114> @ imm = #-0x124
+   cfc24: e55b3025     	ldrb	r3, [r11, #-0x25]
+   cfc28: e24be050     	sub	lr, r11, #80
+   cfc2c: e1a0c00d     	mov	r12, sp
+   cfc30: e58d3024     	str	r3, [sp, #0x24]
+   cfc34: e51b302c     	ldr	r3, [r11, #-0x2c]
+   cfc38: e58d3028     	str	r3, [sp, #0x28]
+   cfc3c: e8be000f     	ldm	lr!, {r0, r1, r2, r3}
+   cfc40: e8ac000f     	stm	r12!, {r0, r1, r2, r3}
+   cfc44: e8be000f     	ldm	lr!, {r0, r1, r2, r3}
+   cfc48: e8ac000f     	stm	r12!, {r0, r1, r2, r3}
+   cfc4c: e59e3000     	ldr	r3, [lr]
+   cfc50: e58c3000     	str	r3, [r12]
+   cfc54: e896000f     	ldm	r6, {r0, r1, r2, r3}
+   cfc58: eb007b92     	bl	0xeeaa8 <_SendMusicData> @ imm = #0x1ee48
+   cfc5c: e1a04000     	mov	r4, r0
+   cfc60: eaffffb0     	b	0xcfb28 <_HandleOnMusicEvent+0x138> @ imm = #-0x140
+   cfc64: e59f10c8     	ldr	r1, [pc, #0xc8]         @ 0xcfd34 <_HandleOnMusicEvent+0x344>
+   cfc68: e1a02004     	mov	r2, r4
+   cfc6c: e59f00c4     	ldr	r0, [pc, #0xc4]         @ 0xcfd38 <_HandleOnMusicEvent+0x348>
+   cfc70: e08f1001     	add	r1, pc, r1
+   cfc74: e08f0000     	add	r0, pc, r0
+   cfc78: e2811e42     	add	r1, r1, #1056
+   cfc7c: eb007778     	bl	0xeda64 <_ZN8KanziLog4logDEPKcz> @ imm = #0x1dde0
+   cfc80: e24b3034     	sub	r3, r11, #52
+   cfc84: e08a0009     	add	r0, r10, r9
+   cfc88: e58d3000     	str	r3, [sp]
+   cfc8c: e24b3030     	sub	r3, r11, #48
+   cfc90: e58d3004     	str	r3, [sp, #0x4]
+   cfc94: e24b3025     	sub	r3, r11, #37
+   cfc98: e58d3008     	str	r3, [sp, #0x8]
+   cfc9c: e24b302c     	sub	r3, r11, #44
+   cfca0: e58d300c     	str	r3, [sp, #0xc]
+   cfca4: e1a01004     	mov	r1, r4
+   cfca8: e24b2040     	sub	r2, r11, #64
+   cfcac: e24b3038     	sub	r3, r11, #56
+   cfcb0: ebfffedb     	bl	0xcf824 <GetMusicAndRadioPicData> @ imm = #-0x494
+   cfcb4: e51b2034     	ldr	r2, [r11, #-0x34]
+   cfcb8: e1a04000     	mov	r4, r0
+   cfcbc: e51b3038     	ldr	r3, [r11, #-0x38]
+   cfcc0: e59f1074     	ldr	r1, [pc, #0x74]         @ 0xcfd3c <_HandleOnMusicEvent+0x34c>
+   cfcc4: e59f0074     	ldr	r0, [pc, #0x74]         @ 0xcfd40 <_HandleOnMusicEvent+0x350>
+   cfcc8: e0030392     	mul	r3, r2, r3
+   cfccc: e51b2030     	ldr	r2, [r11, #-0x30]
+   cfcd0: e08f1001     	add	r1, pc, r1
+   cfcd4: e08f0000     	add	r0, pc, r0
+   cfcd8: e2811e42     	add	r1, r1, #1056
+   cfcdc: e0030392     	mul	r3, r2, r3
+   cfce0: e2832007     	add	r2, r3, #7
+   cfce4: e3530000     	cmp	r3, #0
+   cfce8: b1a03002     	movlt	r3, r2
+   cfcec: e1a031c3     	asr	r3, r3, #3
+   cfcf0: e1a02003     	mov	r2, r3
+   cfcf4: e50b303c     	str	r3, [r11, #-0x3c]
+   cfcf8: eb007759     	bl	0xeda64 <_ZN8KanziLog4logDEPKcz> @ imm = #0x1dd64
+   cfcfc: e3540000     	cmp	r4, #0
+   cfd00: 0affff88     	beq	0xcfb28 <_HandleOnMusicEvent+0x138> @ imm = #-0x1e0
+   cfd04: eaffffc6     	b	0xcfc24 <_HandleOnMusicEvent+0x234> @ imm = #-0xe8
+   cfd08: ebff0dda     	bl	0x93478 <.plt+0x11f0>   @ imm = #-0x3c898
+
+000dd704 <_ZN9KanziCard15loadCardSettingEv>:
+   dd704: e92d4010     	push	{r4, lr}
+   dd708: e1a04000     	mov	r4, r0
+   dd70c: ebffe8ab     	bl	0xd79c0 <_ZN13HmiProperties11getInstanceEv> @ imm = #-0x5d54
+   dd710: e3a01000     	mov	r1, #0
+   dd714: ebffe8d9     	bl	0xd7a80 <_ZNK13HmiProperties16getLeftCardIndexEi> @ imm = #-0x5c9c
+   dd718: e1a01000     	mov	r1, r0
+   dd71c: e1a00004     	mov	r0, r4
+   dd720: ebfffff5     	bl	0xdd6fc <_ZN9KanziCard20refreshLeftCardIndexEi> @ imm = #-0x2c
+   dd724: ebffe8a5     	bl	0xd79c0 <_ZN13HmiProperties11getInstanceEv> @ imm = #-0x5d6c
+   dd728: e3a01001     	mov	r1, #1
+   dd72c: ebffe8d7     	bl	0xd7a90 <_ZNK13HmiProperties17getRightCardIndexEi> @ imm = #-0x5ca4
+   dd730: e1a01000     	mov	r1, r0
+   dd734: e1a00004     	mov	r0, r4
+   dd738: e8bd4010     	pop	{r4, lr}
+   dd73c: eaffff66     	b	0xdd4dc <_ZN9KanziCard21refreshRightCardIndexEi> @ imm = #-0x268

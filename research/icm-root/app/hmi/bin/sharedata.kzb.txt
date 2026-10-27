@@ -1,0 +1,71 @@
+﻿Files:
+PropertyTypeLibrary/atlasOffset
+PropertyTypeLibrary/atlasSize
+PropertyTypeLibrary/CubemapColor
+PropertyTypeLibrary/offset
+PropertyTypeLibrary/smoothing
+PropertyTypeLibrary/Texture2
+PropertyTypeLibrary/TextureCube
+PropertyTypeLibrary/TAG_PROPERTY_TYPE_Transparent
+Animation Clips/Animation Clip
+Screens/Screen/RootPage/Viewport 2D/Scene/Camera
+Screens/Screen/RootPage/Viewport 2D/Scene/Directional Light
+Screens/Screen/RootPage/Viewport 2D/Scene
+Screens/Screen/RootPage/Viewport 2D
+Screens/Screen/<ResourceDictionaryInNode>
+Screens/Screen/RootPage
+Screens/Screen
+Material Types/VertexPhong
+Material Types/VertexPhongCube
+Material Types/VertexPhongMorph
+Material Types/VertexPhongSkinned
+Material Types/VertexPhongTextured
+Material Types/VertexPhongTexturedCube
+Material Types/VertexPhongTexturedMorph
+Material Types/VertexPhongTexturedSkinned
+Material Types/ColorTexture
+Material Types/DefaultBlit
+Material Types/FontDefault
+Material Types/MaskTexture
+Material Types/SweepTextures
+Material Types/Textured
+Material Types/Atlas_nonUniformTiles2D
+Materials/VertexPhongMaterial
+Materials/VertexPhongCubeMaterial
+Materials/VertexPhongMorphMaterial
+Materials/VertexPhongSkinnedMaterial
+Materials/VertexPhongTexturedMaterial
+Materials/VertexPhongTexturedCubeMaterial
+Materials/VertexPhongTexturedMorphMaterial
+Materials/VertexPhongTexturedSkinnedMaterial
+Materials/ColorTextureMaterial
+Materials/DefaultBlitMaterial
+Materials/FontDefaultMaterial
+Materials/MaskTextureMaterial
+Materials/SweepTexturesMaterial
+Materials/TexturedMaterial
+Materials/Atlas_nonUniformTiles2DMaterial
+Brushes/TextBrush-day
+Brushes/TextBrush-night
+Brushes/TextBrush-day_Red
+Brushes/TextBrush-night_Red
+Themes/DayNightThemeGroup/DefaultValues
+Themes/DayNightThemeGroup/Day
+Themes/DayNightThemeGroup/Night
+Themes/DayNightThemeGroup
+Page Transitions/Default Transitions
+Resource Files/Images/DefaultTextureImage.png
+Resource Files/Fonts/xpeng-bold.otf
+Resource Files/Fonts/xpeng-medium.otf
+Textures/Default Texture
+Styles/Alibaba-PuHuiTi-Bold
+Styles/Alibaba-PuHuiTi-Heavy
+Styles/Alibaba-PuHuiTi-Light
+Styles/Alibaba-PuHuiTi-Medium
+Styles/Alibaba-PuHuiTi-Regular
+Styles/Lato-Bold
+Styles/Lato-BoldItalic
+Styles/Lato-Regular
+Styles/Xpeng-Bold
+Styles/Xpeng-Medium
+/sharedata

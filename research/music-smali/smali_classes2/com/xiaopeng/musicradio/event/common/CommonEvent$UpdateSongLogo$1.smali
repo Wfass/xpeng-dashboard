@@ -1,0 +1,83 @@
+.class final Lcom/xiaopeng/musicradio/event/common/CommonEvent$UpdateSongLogo$1;
+.super Ljava/lang/Object;
+.source "CommonEvent.java"
+
+# interfaces
+.implements Landroid/os/Parcelable$Creator;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/xiaopeng/musicradio/event/common/CommonEvent$UpdateSongLogo;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x8
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Landroid/os/Parcelable$Creator<",
+        "Lcom/xiaopeng/musicradio/event/common/CommonEvent$UpdateSongLogo;",
+        ">;"
+    }
+.end annotation
+
+
+# direct methods
+.method constructor <init>()V
+    .locals 0
+
+    .line 855
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(Landroid/os/Parcel;)Lcom/xiaopeng/musicradio/event/common/CommonEvent$UpdateSongLogo;
+    .locals 2
+
+    .line 858
+    new-instance v0, Lcom/xiaopeng/musicradio/event/common/CommonEvent$UpdateSongLogo;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, p1, v1}, Lcom/xiaopeng/musicradio/event/common/CommonEvent$UpdateSongLogo;-><init>(Landroid/os/Parcel;Lcom/xiaopeng/musicradio/event/common/CommonEvent$1;)V
+
+    return-object v0
+.end method
+
+.method public a(I)[Lcom/xiaopeng/musicradio/event/common/CommonEvent$UpdateSongLogo;
+    .locals 0
+
+    .line 863
+    new-array p1, p1, [Lcom/xiaopeng/musicradio/event/common/CommonEvent$UpdateSongLogo;
+
+    return-object p1
+.end method
+
+.method public synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+    .locals 0
+
+    .line 855
+    invoke-virtual {p0, p1}, Lcom/xiaopeng/musicradio/event/common/CommonEvent$UpdateSongLogo$1;->a(Landroid/os/Parcel;)Lcom/xiaopeng/musicradio/event/common/CommonEvent$UpdateSongLogo;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public synthetic newArray(I)[Ljava/lang/Object;
+    .locals 0
+
+    .line 855
+    invoke-virtual {p0, p1}, Lcom/xiaopeng/musicradio/event/common/CommonEvent$UpdateSongLogo$1;->a(I)[Lcom/xiaopeng/musicradio/event/common/CommonEvent$UpdateSongLogo;
+
+    move-result-object p1
+
+    return-object p1
+.end method

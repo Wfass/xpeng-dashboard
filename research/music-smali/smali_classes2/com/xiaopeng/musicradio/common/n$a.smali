@@ -1,0 +1,35 @@
+.class Lcom/xiaopeng/musicradio/common/n$a;
+.super Ljava/lang/Object;
+.source "ViewVisibleManager.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/xiaopeng/musicradio/common/n;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0xa
+    name = "a"
+.end annotation
+
+
+# static fields
+.field static final a:Lcom/xiaopeng/musicradio/common/n;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    .line 46
+    new-instance v0, Lcom/xiaopeng/musicradio/common/n;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, v1}, Lcom/xiaopeng/musicradio/common/n;-><init>(Lcom/xiaopeng/musicradio/common/n$1;)V
+
+    sput-object v0, Lcom/xiaopeng/musicradio/common/n$a;->a:Lcom/xiaopeng/musicradio/common/n;
+
+    return-void
+.end method

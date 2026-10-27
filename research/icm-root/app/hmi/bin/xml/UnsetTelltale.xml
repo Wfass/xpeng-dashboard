@@ -1,0 +1,37 @@
+<SiteList>
+	<Item id="1" x="118" y="88"></Item>
+	<Item id="2" x="1746" y="88"></Item>
+	<Item id="3" x="46" y="88"></Item>
+	<Item id="4" x="1818" y="88"></Item>
+	<Item id="5" x="24" y="580"></Item>
+	<Item id="6" x="1842" y="580"></Item>
+	<Item id="7" x="24" y="644"></Item>
+	<Item id="8" x="1842" y="644"></Item>
+	<Item id="9" x="694" y="168"></Item>
+	<Item id="10" x="1170" y="168"></Item>
+	<Item id="11" x="622" y="168"></Item>
+	<Item id="12" x="1242" y="168"></Item>
+</SiteList>
+
+<TextureList>
+	<TextureURL id="-1" Name="name">kzb://telltale/Textures/UnsetTelltale/Null</TextureURL>
+	<TextureURL id="0" Name="name">kzb://telltale/Textures/UnsetTelltale/EPS电子助力转向</TextureURL>
+	<TextureURL id="1" Name="name">kzb://telltale/Textures/UnsetTelltale/ESP电子稳定系统</TextureURL>
+	<TextureURL id="2" Name="name">kzb://telltale/Textures/UnsetTelltale/ESP电子稳定系统off</TextureURL>
+	<TextureURL id="3" Name="name">kzb://telltale/Textures/UnsetTelltale/HDC陡坡缓降控制系统</TextureURL>
+	<TextureURL id="4" Name="name">kzb://telltale/Textures/UnsetTelltale/XPILOT故障</TextureURL>
+	<TextureURL id="5" Name="name">kzb://telltale/Textures/UnsetTelltale/电动系统故障</TextureURL>
+	<TextureURL id="6" Name="name">kzb://telltale/Textures/UnsetTelltale/电机及控制器过热</TextureURL>
+	<TextureURL id="7" Name="name">kzb://telltale/Textures/UnsetTelltale/动力蓄电池低荷电状态</TextureURL>
+	<TextureURL id="8" Name="name">kzb://telltale/Textures/UnsetTelltale/动力蓄电池高温</TextureURL>
+	<TextureURL id="9" Name="name">kzb://telltale/Textures/UnsetTelltale/动力蓄电池故障</TextureURL>
+	<TextureURL id="10" Name="name">kzb://telltale/Textures/UnsetTelltale/动力蓄电池过冷</TextureURL>
+	<TextureURL id="11" Name="name">kzb://telltale/Textures/UnsetTelltale/动力蓄电池切断黄色</TextureURL>
+	<TextureURL id="12" Name="name">kzb://telltale/Textures/UnsetTelltale/防盗启动锁止 系统指示灯</TextureURL>
+	<TextureURL id="13" Name="name">kzb://telltale/Textures/UnsetTelltale/驱动电机故障</TextureURL>
+	<TextureURL id="14" Name="name">kzb://telltale/Textures/UnsetTelltale/驱动功率限制</TextureURL>
+	<TextureURL id="15" Name="name">kzb://telltale/Textures/UnsetTelltale/热管理冷却液温度高</TextureURL>
+	<TextureURL id="16" Name="name">kzb://telltale/Textures/UnsetTelltale/洗涤液位低</TextureURL>
+	<TextureURL id="17" Name="name">kzb://telltale/Textures/UnsetTelltale/智能系统故障</TextureURL>
+	<TextureURL id="18" Name="name">kzb://telltale/Textures/UnsetTelltale/前碰撞预警功能关闭</TextureURL>
+</TextureList>

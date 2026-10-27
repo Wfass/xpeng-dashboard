@@ -1,0 +1,185 @@
+.class final Lcom/alibaba/fastjson2/r;
+.super Lcom/alibaba/fastjson2/q;
+.source "JSONPathSingleIndex.java"
+
+
+# instance fields
+.field final i:Lcom/alibaba/fastjson2/o;
+
+.field final j:I
+
+
+# direct methods
+.method public varargs constructor <init>(Ljava/lang/String;Lcom/alibaba/fastjson2/o;[Lcom/alibaba/fastjson2/g$b;)V
+    .locals 0
+
+    .line 11
+    invoke-direct {p0, p2, p1, p3}, Lcom/alibaba/fastjson2/q;-><init>(Lcom/alibaba/fastjson2/n;Ljava/lang/String;[Lcom/alibaba/fastjson2/g$b;)V
+
+    .line 12
+    iput-object p2, p0, Lcom/alibaba/fastjson2/r;->i:Lcom/alibaba/fastjson2/o;
+
+    .line 13
+    iget p1, p2, Lcom/alibaba/fastjson2/o;->e:I
+
+    iput p1, p0, Lcom/alibaba/fastjson2/r;->j:I
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(Lcom/alibaba/fastjson2/u;)Ljava/lang/Object;
+    .locals 4
+
+    .line 39
+    invoke-virtual {p1}, Lcom/alibaba/fastjson2/u;->g()Z
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_0
+
+    return-object v1
+
+    .line 43
+    :cond_0
+    invoke-virtual {p1}, Lcom/alibaba/fastjson2/u;->p()I
+
+    move-result v0
+
+    .line 44
+    iget-boolean v2, p1, Lcom/alibaba/fastjson2/u;->b:Z
+
+    if-eqz v2, :cond_1
+
+    iget v2, p0, Lcom/alibaba/fastjson2/r;->j:I
+
+    if-lt v2, v0, :cond_1
+
+    return-object v1
+
+    .line 48
+    :cond_1
+    iget-boolean v2, p1, Lcom/alibaba/fastjson2/u;->b:Z
+
+    if-nez v2, :cond_2
+
+    invoke-virtual {p1}, Lcom/alibaba/fastjson2/u;->z()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_2
+
+    return-object v1
+
+    :cond_2
+    const/4 v2, 0x0
+
+    .line 52
+    :goto_0
+    iget v3, p0, Lcom/alibaba/fastjson2/r;->j:I
+
+    if-ge v2, v3, :cond_4
+
+    if-ge v2, v0, :cond_4
+
+    .line 53
+    invoke-virtual {p1}, Lcom/alibaba/fastjson2/u;->P()V
+
+    .line 54
+    iget-boolean v3, p1, Lcom/alibaba/fastjson2/u;->b:Z
+
+    if-nez v3, :cond_3
+
+    invoke-virtual {p1}, Lcom/alibaba/fastjson2/u;->z()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_3
+
+    return-object v1
+
+    :cond_3
+    add-int/lit8 v2, v2, 0x1
+
+    goto :goto_0
+
+    .line 58
+    :cond_4
+    invoke-virtual {p1}, Lcom/alibaba/fastjson2/u;->aY()Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public c(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 8
+
+    const/4 v0, 0x0
+
+    if-nez p1, :cond_0
+
+    return-object v0
+
+    .line 22
+    :cond_0
+    instance-of v1, p1, Ljava/util/List;
+
+    if-eqz v1, :cond_2
+
+    .line 24
+    check-cast p1, Ljava/util/List;
+
+    .line 25
+    iget v1, p0, Lcom/alibaba/fastjson2/r;->j:I
+
+    invoke-interface {p1}, Ljava/util/List;->size()I
+
+    move-result v2
+
+    if-ge v1, v2, :cond_1
+
+    .line 26
+    iget v0, p0, Lcom/alibaba/fastjson2/r;->j:I
+
+    invoke-interface {p1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    :cond_1
+    return-object v0
+
+    .line 31
+    :cond_2
+    new-instance v0, Lcom/alibaba/fastjson2/g$a;
+
+    const/4 v3, 0x0
+
+    iget-object v4, p0, Lcom/alibaba/fastjson2/r;->i:Lcom/alibaba/fastjson2/o;
+
+    const/4 v5, 0x0
+
+    const-wide/16 v6, 0x0
+
+    move-object v1, v0
+
+    move-object v2, p0
+
+    invoke-direct/range {v1 .. v7}, Lcom/alibaba/fastjson2/g$a;-><init>(Lcom/alibaba/fastjson2/g;Lcom/alibaba/fastjson2/g$a;Lcom/alibaba/fastjson2/n;Lcom/alibaba/fastjson2/n;J)V
+
+    .line 32
+    iput-object p1, v0, Lcom/alibaba/fastjson2/g$a;->f:Ljava/lang/Object;
+
+    .line 33
+    iget-object p1, p0, Lcom/alibaba/fastjson2/r;->i:Lcom/alibaba/fastjson2/o;
+
+    invoke-virtual {p1, v0}, Lcom/alibaba/fastjson2/o;->a(Lcom/alibaba/fastjson2/g$a;)V
+
+    .line 34
+    iget-object p1, v0, Lcom/alibaba/fastjson2/g$a;->g:Ljava/lang/Object;
+
+    return-object p1
+.end method

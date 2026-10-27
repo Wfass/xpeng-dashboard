@@ -1,0 +1,25 @@
+20261027 23:49:29.691576|I|1151|OtaUe(40)|otaue_start(40, /data/ota)
+20261027 23:49:29.693782|I|1151|OtaUe(40)|Register ecu id: 40 
+20261027 23:49:29.694119|I|1151|OtaSomeip|Start SOME/IP app OTA
+20261027 23:49:29.694620|I|1244|OtaUeIoThd|Thread started
+20261027 23:49:29.696587|I|1151|SomeIP|Using configuration file: "ota-icm.json".
+20261027 23:49:29.703232|I|1151|SomeIP|Default configuration module loaded.
+20261027 23:49:29.703264|I|1151|SomeIP|Initializing vsomeip application "OTA".
+20261027 23:49:29.703446|I|1151|SomeIP|SOME/IP client identifier configured. Using 132c (was: 132c) and UID/GID=0/0
+20261027 23:49:29.703469|I|1151|SomeIP|Instantiating routing manager [Host].
+20261027 23:49:29.703736|I|1151|SomeIP|init_routing_endpoint Routing endpoint at /tmp/ue-icm-0
+20261027 23:49:29.704051|I|1151|SomeIP|Client [132c] is connecting to [0] at /tmp/ue-icm-0
+20261027 23:49:29.704277|I|1151|SomeIP|Application(OTA, 132c) is initialized (11, 100).
+20261027 23:49:29.704676|I|1245|SomeIP|Starting vsomeip application "OTA" (132c) using 2 threads I/O nice 255
+20261027 23:49:29.704799|I|1151|SomeIP|OFFER(132c): [0101.0028:0.0]
+20261027 23:49:29.705946|I|1245|SomeIP|Watchdog is disabled!
+20261027 23:49:29.706635|I|1247|SomeIP|shutdown thread id from application: 132c (OTA) is: 4f7a0680 TID: 1247
+20261027 23:49:29.706950|I|1245|SomeIP|io thread id from application: 132c (OTA) is: 4d77b680 TID: 1245
+20261027 23:49:29.707057|W|1151|OtaUe(40)|Version OTAUE_E28D1_V1.1.0.2_20200609154807_ENG_DEV, commit: 4b3f0b36
+20261027 23:49:29.707732|I|1245|SomeIP|Network interface "eth0" state changed: up
+20261027 23:49:29.707794|I|1245|SomeIP|Service Discovery disabled. Using static routing information.
+20261027 23:49:29.708317|I|1245|SomeIP|SOME/IP routing ready.
+20261027 23:49:29.709052|I|1246|SomeIP|main dispatch thread id from application: 132c (OTA) is: 4d2fb680 TID: 1246
+20261027 23:49:29.709211|I|1249|SomeIP|io thread id from application: 132c (OTA) is: 53881680 TID: 1249
+20261027 23:49:29.709390|I|1151|OtaUe(40)|OnUpgradeResult(40, 0, 4, 100, null)
+20261027 23:51:08.529287|I|1244|OtaUe(40)|Got ECU version, id: 40, sw: 5.0.1, hw: H.F, fp: 8210001ED10003_H.F_501, zone: 1

@@ -1,0 +1,661 @@
+.class public Lcom/xiaopeng/xui/vui/VuiView$XAttr;
+.super Ljava/lang/Object;
+.source "VuiView.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/xiaopeng/xui/vui/VuiView;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "XAttr"
+.end annotation
+
+
+# instance fields
+.field protected enableSceneFeature:Z
+
+.field private isMainScene:Z
+
+.field private volatile mVuiElementChangedListener:Ljava/lang/ref/WeakReference;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/lang/ref/WeakReference<",
+            "Lbxs;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private volatile mVuiEventInterceptListener:Ljava/lang/ref/WeakReference;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/lang/ref/WeakReference<",
+            "Lcom/xiaopeng/xui/vui/listenner/IVuiEventInterceptListener;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private mVuiSelected:Z
+
+.field private mVuiVisibility:I
+
+.field private performVuiAction:Z
+
+.field protected sceneId:Ljava/lang/String;
+
+.field private subSceneIds:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private volatile view:Ljava/lang/ref/WeakReference;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/lang/ref/WeakReference<",
+            "Landroid/view/View;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private vuiAction:Ljava/lang/String;
+
+.field private vuiBizId:Ljava/lang/String;
+
+.field private vuiDisableHitEffect:Z
+
+.field private vuiElementId:Ljava/lang/String;
+
+.field private vuiElementType:Lbxy;
+
+.field private vuiEnableViewVuiMode:Z
+
+.field private vuiFatherElementId:Ljava/lang/String;
+
+.field private vuiFatherLabel:Ljava/lang/String;
+
+.field private vuiFeedbackType:Lbxz;
+
+.field private vuiLabel:Ljava/lang/String;
+
+.field private vuiLayoutLoadable:Z
+
+.field private vuiMode:Lbya;
+
+.field private vuiPosition:Ljava/lang/Integer;
+
+.field private vuiPriority:Lbyb;
+
+.field private vuiProps:Lorg/json/JSONObject;
+
+.field private vuiStateIndex:Ljava/lang/Integer;
+
+.field private vuiStateLabels:[Ljava/lang/String;
+
+.field private vuiStateValues:[I
+
+.field private vuiValue:Ljava/lang/Object;
+
+
+# direct methods
+.method constructor <init>()V
+    .locals 3
+
+    .line 576
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, 0x0
+
+    .line 565
+    iput-boolean v0, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->mVuiSelected:Z
+
+    .line 568
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    iput-object v1, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->vuiStateIndex:Ljava/lang/Integer;
+
+    .line 569
+    iput-boolean v0, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->enableSceneFeature:Z
+
+    const/4 v1, 0x1
+
+    .line 571
+    iput-boolean v1, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->isMainScene:Z
+
+    const/4 v1, -0x1
+
+    .line 577
+    invoke-static {v1}, Lcom/xiaopeng/xui/vui/utils/VuiCommonUtils;->getElementType(I)Lbxy;
+
+    move-result-object v2
+
+    iput-object v2, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->vuiElementType:Lbxy;
+
+    .line 578
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    iput-object v1, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->vuiPosition:Ljava/lang/Integer;
+
+    .line 579
+    sget-object v1, Lbya;->NORMAL:Lbya;
+
+    iput-object v1, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->vuiMode:Lbya;
+
+    .line 580
+    iput-boolean v0, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->vuiEnableViewVuiMode:Z
+
+    const/4 v0, 0x2
+
+    .line 581
+    invoke-static {v0}, Lcom/xiaopeng/xui/vui/utils/VuiCommonUtils;->getViewLeveByPriority(I)Lbyb;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->vuiPriority:Lbyb;
+
+    const/4 v0, 0x0
+
+    .line 582
+    iput-object v0, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->vuiProps:Lorg/json/JSONObject;
+
+    return-void
+.end method
+
+.method static synthetic access$000(Lcom/xiaopeng/xui/vui/VuiView$XAttr;)Ljava/lang/String;
+    .locals 0
+
+    .line 545
+    iget-object p0, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->vuiAction:Ljava/lang/String;
+
+    return-object p0
+.end method
+
+.method static synthetic access$002(Lcom/xiaopeng/xui/vui/VuiView$XAttr;Ljava/lang/String;)Ljava/lang/String;
+    .locals 0
+
+    .line 545
+    iput-object p1, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->vuiAction:Ljava/lang/String;
+
+    return-object p1
+.end method
+
+.method static synthetic access$100(Lcom/xiaopeng/xui/vui/VuiView$XAttr;)Lbxy;
+    .locals 0
+
+    .line 545
+    iget-object p0, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->vuiElementType:Lbxy;
+
+    return-object p0
+.end method
+
+.method static synthetic access$1000(Lcom/xiaopeng/xui/vui/VuiView$XAttr;)Lbyb;
+    .locals 0
+
+    .line 545
+    iget-object p0, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->vuiPriority:Lbyb;
+
+    return-object p0
+.end method
+
+.method static synthetic access$1002(Lcom/xiaopeng/xui/vui/VuiView$XAttr;Lbyb;)Lbyb;
+    .locals 0
+
+    .line 545
+    iput-object p1, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->vuiPriority:Lbyb;
+
+    return-object p1
+.end method
+
+.method static synthetic access$102(Lcom/xiaopeng/xui/vui/VuiView$XAttr;Lbxy;)Lbxy;
+    .locals 0
+
+    .line 545
+    iput-object p1, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->vuiElementType:Lbxy;
+
+    return-object p1
+.end method
+
+.method static synthetic access$1100(Lcom/xiaopeng/xui/vui/VuiView$XAttr;)Lbxz;
+    .locals 0
+
+    .line 545
+    iget-object p0, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->vuiFeedbackType:Lbxz;
+
+    return-object p0
+.end method
+
+.method static synthetic access$1102(Lcom/xiaopeng/xui/vui/VuiView$XAttr;Lbxz;)Lbxz;
+    .locals 0
+
+    .line 545
+    iput-object p1, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->vuiFeedbackType:Lbxz;
+
+    return-object p1
+.end method
+
+.method static synthetic access$1200(Lcom/xiaopeng/xui/vui/VuiView$XAttr;)Z
+    .locals 0
+
+    .line 545
+    iget-boolean p0, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->vuiDisableHitEffect:Z
+
+    return p0
+.end method
+
+.method static synthetic access$1202(Lcom/xiaopeng/xui/vui/VuiView$XAttr;Z)Z
+    .locals 0
+
+    .line 545
+    iput-boolean p1, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->vuiDisableHitEffect:Z
+
+    return p1
+.end method
+
+.method static synthetic access$1300(Lcom/xiaopeng/xui/vui/VuiView$XAttr;)Z
+    .locals 0
+
+    .line 545
+    iget-boolean p0, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->vuiEnableViewVuiMode:Z
+
+    return p0
+.end method
+
+.method static synthetic access$1302(Lcom/xiaopeng/xui/vui/VuiView$XAttr;Z)Z
+    .locals 0
+
+    .line 545
+    iput-boolean p1, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->vuiEnableViewVuiMode:Z
+
+    return p1
+.end method
+
+.method static synthetic access$1400(Lcom/xiaopeng/xui/vui/VuiView$XAttr;)[Ljava/lang/String;
+    .locals 0
+
+    .line 545
+    iget-object p0, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->vuiStateLabels:[Ljava/lang/String;
+
+    return-object p0
+.end method
+
+.method static synthetic access$1402(Lcom/xiaopeng/xui/vui/VuiView$XAttr;[Ljava/lang/String;)[Ljava/lang/String;
+    .locals 0
+
+    .line 545
+    iput-object p1, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->vuiStateLabels:[Ljava/lang/String;
+
+    return-object p1
+.end method
+
+.method static synthetic access$1500(Lcom/xiaopeng/xui/vui/VuiView$XAttr;)[I
+    .locals 0
+
+    .line 545
+    iget-object p0, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->vuiStateValues:[I
+
+    return-object p0
+.end method
+
+.method static synthetic access$1502(Lcom/xiaopeng/xui/vui/VuiView$XAttr;[I)[I
+    .locals 0
+
+    .line 545
+    iput-object p1, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->vuiStateValues:[I
+
+    return-object p1
+.end method
+
+.method static synthetic access$1600(Lcom/xiaopeng/xui/vui/VuiView$XAttr;)Ljava/lang/Integer;
+    .locals 0
+
+    .line 545
+    iget-object p0, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->vuiStateIndex:Ljava/lang/Integer;
+
+    return-object p0
+.end method
+
+.method static synthetic access$1602(Lcom/xiaopeng/xui/vui/VuiView$XAttr;Ljava/lang/Integer;)Ljava/lang/Integer;
+    .locals 0
+
+    .line 545
+    iput-object p1, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->vuiStateIndex:Ljava/lang/Integer;
+
+    return-object p1
+.end method
+
+.method static synthetic access$1700(Lcom/xiaopeng/xui/vui/VuiView$XAttr;)Lorg/json/JSONObject;
+    .locals 0
+
+    .line 545
+    iget-object p0, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->vuiProps:Lorg/json/JSONObject;
+
+    return-object p0
+.end method
+
+.method static synthetic access$1702(Lcom/xiaopeng/xui/vui/VuiView$XAttr;Lorg/json/JSONObject;)Lorg/json/JSONObject;
+    .locals 0
+
+    .line 545
+    iput-object p1, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->vuiProps:Lorg/json/JSONObject;
+
+    return-object p1
+.end method
+
+.method static synthetic access$1800(Lcom/xiaopeng/xui/vui/VuiView$XAttr;)Z
+    .locals 0
+
+    .line 545
+    iget-boolean p0, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->isMainScene:Z
+
+    return p0
+.end method
+
+.method static synthetic access$1802(Lcom/xiaopeng/xui/vui/VuiView$XAttr;Z)Z
+    .locals 0
+
+    .line 545
+    iput-boolean p1, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->isMainScene:Z
+
+    return p1
+.end method
+
+.method static synthetic access$1900(Lcom/xiaopeng/xui/vui/VuiView$XAttr;)Ljava/util/List;
+    .locals 0
+
+    .line 545
+    iget-object p0, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->subSceneIds:Ljava/util/List;
+
+    return-object p0
+.end method
+
+.method static synthetic access$1902(Lcom/xiaopeng/xui/vui/VuiView$XAttr;Ljava/util/List;)Ljava/util/List;
+    .locals 0
+
+    .line 545
+    iput-object p1, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->subSceneIds:Ljava/util/List;
+
+    return-object p1
+.end method
+
+.method static synthetic access$200(Lcom/xiaopeng/xui/vui/VuiView$XAttr;)Ljava/lang/Integer;
+    .locals 0
+
+    .line 545
+    iget-object p0, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->vuiPosition:Ljava/lang/Integer;
+
+    return-object p0
+.end method
+
+.method static synthetic access$2000(Lcom/xiaopeng/xui/vui/VuiView$XAttr;)I
+    .locals 0
+
+    .line 545
+    iget p0, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->mVuiVisibility:I
+
+    return p0
+.end method
+
+.method static synthetic access$2002(Lcom/xiaopeng/xui/vui/VuiView$XAttr;I)I
+    .locals 0
+
+    .line 545
+    iput p1, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->mVuiVisibility:I
+
+    return p1
+.end method
+
+.method static synthetic access$202(Lcom/xiaopeng/xui/vui/VuiView$XAttr;Ljava/lang/Integer;)Ljava/lang/Integer;
+    .locals 0
+
+    .line 545
+    iput-object p1, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->vuiPosition:Ljava/lang/Integer;
+
+    return-object p1
+.end method
+
+.method static synthetic access$2100(Lcom/xiaopeng/xui/vui/VuiView$XAttr;)Z
+    .locals 0
+
+    .line 545
+    iget-boolean p0, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->mVuiSelected:Z
+
+    return p0
+.end method
+
+.method static synthetic access$2102(Lcom/xiaopeng/xui/vui/VuiView$XAttr;Z)Z
+    .locals 0
+
+    .line 545
+    iput-boolean p1, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->mVuiSelected:Z
+
+    return p1
+.end method
+
+.method static synthetic access$2200(Lcom/xiaopeng/xui/vui/VuiView$XAttr;)Ljava/lang/ref/WeakReference;
+    .locals 0
+
+    .line 545
+    iget-object p0, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->view:Ljava/lang/ref/WeakReference;
+
+    return-object p0
+.end method
+
+.method static synthetic access$2202(Lcom/xiaopeng/xui/vui/VuiView$XAttr;Ljava/lang/ref/WeakReference;)Ljava/lang/ref/WeakReference;
+    .locals 0
+
+    .line 545
+    iput-object p1, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->view:Ljava/lang/ref/WeakReference;
+
+    return-object p1
+.end method
+
+.method static synthetic access$2300(Lcom/xiaopeng/xui/vui/VuiView$XAttr;)Z
+    .locals 0
+
+    .line 545
+    iget-boolean p0, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->performVuiAction:Z
+
+    return p0
+.end method
+
+.method static synthetic access$2302(Lcom/xiaopeng/xui/vui/VuiView$XAttr;Z)Z
+    .locals 0
+
+    .line 545
+    iput-boolean p1, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->performVuiAction:Z
+
+    return p1
+.end method
+
+.method static synthetic access$2400(Lcom/xiaopeng/xui/vui/VuiView$XAttr;)Ljava/lang/Object;
+    .locals 0
+
+    .line 545
+    iget-object p0, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->vuiValue:Ljava/lang/Object;
+
+    return-object p0
+.end method
+
+.method static synthetic access$2402(Lcom/xiaopeng/xui/vui/VuiView$XAttr;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 545
+    iput-object p1, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->vuiValue:Ljava/lang/Object;
+
+    return-object p1
+.end method
+
+.method static synthetic access$2500(Lcom/xiaopeng/xui/vui/VuiView$XAttr;)Ljava/lang/ref/WeakReference;
+    .locals 0
+
+    .line 545
+    iget-object p0, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->mVuiElementChangedListener:Ljava/lang/ref/WeakReference;
+
+    return-object p0
+.end method
+
+.method static synthetic access$2502(Lcom/xiaopeng/xui/vui/VuiView$XAttr;Ljava/lang/ref/WeakReference;)Ljava/lang/ref/WeakReference;
+    .locals 0
+
+    .line 545
+    iput-object p1, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->mVuiElementChangedListener:Ljava/lang/ref/WeakReference;
+
+    return-object p1
+.end method
+
+.method static synthetic access$2600(Lcom/xiaopeng/xui/vui/VuiView$XAttr;)Ljava/lang/ref/WeakReference;
+    .locals 0
+
+    .line 545
+    iget-object p0, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->mVuiEventInterceptListener:Ljava/lang/ref/WeakReference;
+
+    return-object p0
+.end method
+
+.method static synthetic access$2602(Lcom/xiaopeng/xui/vui/VuiView$XAttr;Ljava/lang/ref/WeakReference;)Ljava/lang/ref/WeakReference;
+    .locals 0
+
+    .line 545
+    iput-object p1, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->mVuiEventInterceptListener:Ljava/lang/ref/WeakReference;
+
+    return-object p1
+.end method
+
+.method static synthetic access$300(Lcom/xiaopeng/xui/vui/VuiView$XAttr;)Ljava/lang/String;
+    .locals 0
+
+    .line 545
+    iget-object p0, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->vuiFatherElementId:Ljava/lang/String;
+
+    return-object p0
+.end method
+
+.method static synthetic access$302(Lcom/xiaopeng/xui/vui/VuiView$XAttr;Ljava/lang/String;)Ljava/lang/String;
+    .locals 0
+
+    .line 545
+    iput-object p1, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->vuiFatherElementId:Ljava/lang/String;
+
+    return-object p1
+.end method
+
+.method static synthetic access$400(Lcom/xiaopeng/xui/vui/VuiView$XAttr;)Ljava/lang/String;
+    .locals 0
+
+    .line 545
+    iget-object p0, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->vuiLabel:Ljava/lang/String;
+
+    return-object p0
+.end method
+
+.method static synthetic access$402(Lcom/xiaopeng/xui/vui/VuiView$XAttr;Ljava/lang/String;)Ljava/lang/String;
+    .locals 0
+
+    .line 545
+    iput-object p1, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->vuiLabel:Ljava/lang/String;
+
+    return-object p1
+.end method
+
+.method static synthetic access$500(Lcom/xiaopeng/xui/vui/VuiView$XAttr;)Ljava/lang/String;
+    .locals 0
+
+    .line 545
+    iget-object p0, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->vuiFatherLabel:Ljava/lang/String;
+
+    return-object p0
+.end method
+
+.method static synthetic access$502(Lcom/xiaopeng/xui/vui/VuiView$XAttr;Ljava/lang/String;)Ljava/lang/String;
+    .locals 0
+
+    .line 545
+    iput-object p1, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->vuiFatherLabel:Ljava/lang/String;
+
+    return-object p1
+.end method
+
+.method static synthetic access$600(Lcom/xiaopeng/xui/vui/VuiView$XAttr;)Ljava/lang/String;
+    .locals 0
+
+    .line 545
+    iget-object p0, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->vuiElementId:Ljava/lang/String;
+
+    return-object p0
+.end method
+
+.method static synthetic access$602(Lcom/xiaopeng/xui/vui/VuiView$XAttr;Ljava/lang/String;)Ljava/lang/String;
+    .locals 0
+
+    .line 545
+    iput-object p1, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->vuiElementId:Ljava/lang/String;
+
+    return-object p1
+.end method
+
+.method static synthetic access$700(Lcom/xiaopeng/xui/vui/VuiView$XAttr;)Z
+    .locals 0
+
+    .line 545
+    iget-boolean p0, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->vuiLayoutLoadable:Z
+
+    return p0
+.end method
+
+.method static synthetic access$702(Lcom/xiaopeng/xui/vui/VuiView$XAttr;Z)Z
+    .locals 0
+
+    .line 545
+    iput-boolean p1, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->vuiLayoutLoadable:Z
+
+    return p1
+.end method
+
+.method static synthetic access$800(Lcom/xiaopeng/xui/vui/VuiView$XAttr;)Lbya;
+    .locals 0
+
+    .line 545
+    iget-object p0, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->vuiMode:Lbya;
+
+    return-object p0
+.end method
+
+.method static synthetic access$802(Lcom/xiaopeng/xui/vui/VuiView$XAttr;Lbya;)Lbya;
+    .locals 0
+
+    .line 545
+    iput-object p1, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->vuiMode:Lbya;
+
+    return-object p1
+.end method
+
+.method static synthetic access$900(Lcom/xiaopeng/xui/vui/VuiView$XAttr;)Ljava/lang/String;
+    .locals 0
+
+    .line 545
+    iget-object p0, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->vuiBizId:Ljava/lang/String;
+
+    return-object p0
+.end method
+
+.method static synthetic access$902(Lcom/xiaopeng/xui/vui/VuiView$XAttr;Ljava/lang/String;)Ljava/lang/String;
+    .locals 0
+
+    .line 545
+    iput-object p1, p0, Lcom/xiaopeng/xui/vui/VuiView$XAttr;->vuiBizId:Ljava/lang/String;
+
+    return-object p1
+.end method

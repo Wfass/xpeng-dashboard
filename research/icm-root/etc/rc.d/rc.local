@@ -1,0 +1,11 @@
+#!/bin/sh
+#
+for i in 0 1 2; do
+    if [ -e /sys/class/graphics/fb$i ]; then
+        chmod 0666 /sys/class/graphics/fb$i/pan
+    fi
+done
+
+/sbin/getty -L ttymxc3 115200 vt100 &
+
+/root/startup.sh

@@ -1,0 +1,285 @@
+﻿Files:
+PropertyTypeLibrary/atlasOffset
+PropertyTypeLibrary/atlasSize
+PropertyTypeLibrary/Colorize
+PropertyTypeLibrary/CubemapColor
+PropertyTypeLibrary/EnduranceMileagePropINT
+PropertyTypeLibrary/Main.DayNightControlProp
+PropertyTypeLibrary/Main.ElectricityColorControlProp
+PropertyTypeLibrary/Main.ElectricityPercentProp
+PropertyTypeLibrary/Main.ElectricityPercentStr
+PropertyTypeLibrary/Main.EnduranceMileageProp
+PropertyTypeLibrary/Main.EnduranceMileageState
+PropertyTypeLibrary/Main.GearControlProp
+PropertyTypeLibrary/Main.Speed
+PropertyTypeLibrary/Main.TrafficLightsState
+PropertyTypeLibrary/NormalInfo.BatteryLifeStandardControllerProperty
+PropertyTypeLibrary/NormalInfo.DayNightControllerProperty
+PropertyTypeLibrary/NormalInfo.DrivingModeControllerProperty
+PropertyTypeLibrary/NormalInfo.ElectricityColorController
+PropertyTypeLibrary/NormalInfo.ElectricityPercentController
+PropertyTypeLibrary/NormalInfo.GearControllerProperty
+PropertyTypeLibrary/NormalInfo.MilNumberController
+PropertyTypeLibrary/NormalInfo.MorningOrAfternoonControllerProperty
+PropertyTypeLibrary/NormalInfo.NormalInfo.RenderTransformation
+PropertyTypeLibrary/NormalInfo.NumVisible
+PropertyTypeLibrary/NormalInfo.ReadyIndicatorLightVisible
+PropertyTypeLibrary/NormalInfo.Speed.SpeedNum
+PropertyTypeLibrary/NormalInfo.SpeedNum
+PropertyTypeLibrary/NormalInfo.SpeedNum_WidthBool
+PropertyTypeLibrary/NormalInfo.TempNumController
+PropertyTypeLibrary/NormalInfo.TimeController
+PropertyTypeLibrary/NormalInfo.TimePatternControllerProperty
+PropertyTypeLibrary/offset
+PropertyTypeLibrary/smoothing
+PropertyTypeLibrary/SpecialColor
+PropertyTypeLibrary/Texture2
+PropertyTypeLibrary/TextureCube
+PropertyTypeLibrary/UseSpecial
+PropertyTypeLibrary/TAG_PROPERTY_TYPE_Transparent
+Animation Clips/DriveModSM
+Animation Clips/OpacitySM
+Screens/Screen/RootPage/NormalInfo
+Screens/Screen/<ResourceDictionaryInNode>
+Screens/Screen/RootPage
+Screens/Screen
+Material Types/VertexPhong
+Material Types/ElectricityColor
+Materials/VertexPhongMaterial
+Materials/ElectricityColor
+Brushes/DefaultBackground
+Brushes/UnitColor
+Brushes/Material Brush
+Brushes/Color Brush
+Brushes/ElectricityColor
+Brushes/ElectricTextColor
+Prefabs/NormalInfo/NormalInfo/Gear/NotSelected0
+Prefabs/NormalInfo/NormalInfo/Gear/NotSelected1
+Prefabs/NormalInfo/NormalInfo/Gear/NotSelected2
+Prefabs/NormalInfo/NormalInfo/Gear/NotSelected3
+Prefabs/NormalInfo/NormalInfo/Gear/NotSelected0_1
+Prefabs/NormalInfo/NormalInfo/Gear/NotSelected1_1
+Prefabs/NormalInfo/NormalInfo/Gear/NotSelected2_1
+Prefabs/NormalInfo/NormalInfo/Gear/NotSelected3_1
+Prefabs/NormalInfo/NormalInfo/TrafficLight/BG
+Prefabs/NormalInfo/NormalInfo/TrafficLight/EmptyCenter
+Prefabs/NormalInfo/NormalInfo/TrafficLight/EmptyLeft
+Prefabs/NormalInfo/NormalInfo/TrafficLight/EmptyRight
+Prefabs/NormalInfo/NormalInfo/TrafficLight/CenterLight
+Prefabs/NormalInfo/NormalInfo/Footbar/DrivingMode/ColorImage
+Prefabs/NormalInfo/NormalInfo/Footbar/DrivingMode/DrivingModeText
+Prefabs/NormalInfo/NormalInfo/Footbar/OurdoorTemp/Value/Stack Layout 2D/Number
+Prefabs/NormalInfo/NormalInfo/Footbar/OurdoorTemp/Value/Stack Layout 2D/unit
+Prefabs/NormalInfo/NormalInfo/Footbar/OurdoorTemp/Value/Stack Layout 2D
+Prefabs/NormalInfo/NormalInfo/Footbar/OurdoorTemp/Value
+Prefabs/NormalInfo/NormalInfo/Footbar/Electricity/Electricity/Electricity
+Prefabs/NormalInfo/NormalInfo/Footbar/Electricity/Electricity/ElectricityColor
+Prefabs/NormalInfo/NormalInfo/Footbar/Electricity/Electricity/ElectricityColorNight
+Prefabs/NormalInfo/NormalInfo/Footbar/Electricity/ElectricityPercent/number
+Prefabs/NormalInfo/NormalInfo/Footbar/Electricity/ElectricityPercent/unit
+Prefabs/NormalInfo/NormalInfo/Footbar/Electricity/EnduranceMode/Image
+Prefabs/NormalInfo/NormalInfo/Footbar/Electricity/mileage/Stack Layout 2D/number
+Prefabs/NormalInfo/NormalInfo/Footbar/Electricity/mileage/Stack Layout 2D/Unit
+Prefabs/NormalInfo/NormalInfo/Footbar/Electricity/mileage/---/number
+Prefabs/NormalInfo/NormalInfo/Footbar/Electricity/mileage/---/Unit
+Prefabs/NormalInfo/NormalInfo/Footbar/Electricity/mileage/Stack Layout 2D
+Prefabs/NormalInfo/NormalInfo/Footbar/Electricity/mileage/---
+Prefabs/NormalInfo/NormalInfo/Footbar/Electricity/Electricity
+Prefabs/NormalInfo/NormalInfo/Footbar/Electricity/ElectricityPercent
+Prefabs/NormalInfo/NormalInfo/Footbar/Electricity/EnduranceMode
+Prefabs/NormalInfo/NormalInfo/Footbar/Electricity/mileage
+Prefabs/NormalInfo/NormalInfo/Footbar/Time/MorningOrAfternoonImage
+Prefabs/NormalInfo/NormalInfo/Footbar/Time/time
+Prefabs/NormalInfo/NormalInfo/Footbar/DrivingMode
+Prefabs/NormalInfo/NormalInfo/Footbar/OurdoorTemp
+Prefabs/NormalInfo/NormalInfo/Footbar/Electricity
+Prefabs/NormalInfo/NormalInfo/Footbar/Time
+Prefabs/NormalInfo/NormalInfo/DataLayer
+Prefabs/NormalInfo/NormalInfo/Gear
+Prefabs/NormalInfo/NormalInfo/Speed
+Prefabs/NormalInfo/NormalInfo/TrafficLight
+Prefabs/NormalInfo/NormalInfo/Footbar
+Prefabs/NormalInfo/NormalInfo/Ready
+Prefabs/NormalInfo/NormalInfo
+Prefabs/LoadDataSource/LoadDataSource
+Prefabs/Speed/Speed/Speedimage/Image_2
+Prefabs/Speed/Speed/Speedimage/Image_1
+Prefabs/Speed/Speed/Speedimage/Image_0
+Prefabs/Speed/Speed/Speedimage
+Prefabs/Speed/Speed/Invalid
+Prefabs/Speed/Speed/Unit
+Prefabs/Speed/Speed/Datalayer
+Prefabs/Speed/Speed
+Prefabs/NormalInfo
+Prefabs/LoadDataSource
+Prefabs/Speed
+Animation Data/hight
+Animation Data/Opacity
+Localization/normalinfo
+Locales/neutral
+Locales/zh-CN
+Data Sources/Data source
+Page Transitions/Default Transitions
+Resource Files/Images/SpeedNum/2_day.png
+Resource Files/Images/SpeedNum/3_day.png
+Resource Files/Images/SpeedNum/4_day.png
+Resource Files/Images/SpeedNum/5_day.png
+Resource Files/Images/SpeedNum/6_day.png
+Resource Files/Images/SpeedNum/7_day.png
+Resource Files/Images/SpeedNum/8_day.png
+Resource Files/Images/SpeedNum/9_day.png
+Resource Files/Images/SpeedNum/1_day.png
+Resource Files/Images/SpeedNum/0_day.png
+Resource Files/Images/SpeedNum/0_night.png
+Resource Files/Images/SpeedNum/1_night.png
+Resource Files/Images/SpeedNum/2_night.png
+Resource Files/Images/SpeedNum/3_night.png
+Resource Files/Images/SpeedNum/4_night.png
+Resource Files/Images/SpeedNum/5_night.png
+Resource Files/Images/SpeedNum/6_night.png
+Resource Files/Images/SpeedNum/7_night.png
+Resource Files/Images/SpeedNum/8_night.png
+Resource Files/Images/SpeedNum/9_night.png
+Resource Files/Images/电池槽.png
+Resource Files/Images/day.png
+Resource Files/Images/电池槽night.png
+Resource Files/Images/bg_mode_eco.png
+Resource Files/Images/bg_mode_sport.png
+Resource Files/Images/bg_mode_standard.png
+Resource Files/Images/bg_mode_ecoNight.png
+Resource Files/Images/bg_mode_sportNight.png
+Resource Files/Images/bg_mode_standardNight.png
+Resource Files/Images/READY.png
+Resource Files/Images/night.png
+Resource Files/Images/eco.png
+Resource Files/Images/sport.png
+Resource Files/Images/STANDARD.png
+Resource Files/Images/ecoNight.png
+Resource Files/Images/sportNight.png
+Resource Files/Images/STANDARDNight.png
+Resource Files/Images/ic_nedc.png
+Resource Files/Images/ic_wltp.png
+Resource Files/Images/ic_nedc_night.png
+Resource Files/Images/ic_wltp_night.png
+Resource Files/Images/bg_footbar_night.png
+Resource Files/Images/bg_footbar.png
+Resource Files/Images/ic_℃_day.png
+Resource Files/Images/ic_℃_night.png
+Resource Files/Images/电量蒙版.png
+Resource Files/Images/上午.png
+Resource Files/Images/下午.png
+Resource Files/Images/上午_night.png
+Resource Files/Images/下午_night.png
+Resource Files/Images/白天时速单位.png
+Resource Files/Images/黑夜时速单位.png
+Resource Files/Images/speed_invalid_day.png
+Resource Files/Images/speed_invalid_night.png
+Resource Files/Images/bg_mode_xpedalNight.png
+Resource Files/Images/bg_mode_comfort.png
+Resource Files/Images/bg_mode_comfortNight.png
+Resource Files/Images/bg_mode_xpedal.png
+Resource Files/Images/x-pedalNight.png
+Resource Files/Images/comfort.png
+Resource Files/Images/comfortNight.png
+Resource Files/Images/x-pedal.png
+Resource Files/Images/ic_cltc_night.png
+Resource Files/Images/ic_cltc.png
+Resource Files/Images/trafficlight_bg.png
+Resource Files/Images/trafficlight_center_green.png
+Resource Files/Images/trafficlight_center_red.png
+Resource Files/Images/trafficlight_center_yellow.png
+Resource Files/Images/trafficlight_empty_center.png
+Resource Files/Images/trafficlight_bg_night.png
+Resource Files/Images/trafficlight_center_green_night.png
+Resource Files/Images/trafficlight_center_red_night.png
+Resource Files/Images/trafficlight_center_yellow_night.png
+Resource Files/Images/trafficlight_empty_center_night.png
+Resource Files/Images/电池槽百分比-night.png
+Textures/DrivingMode/day/eco
+Textures/DrivingMode/day/sport
+Textures/DrivingMode/day/bg_mode_eco
+Textures/DrivingMode/day/bg_mode_sport
+Textures/DrivingMode/day/bg_mode_standard
+Textures/DrivingMode/day/STANDARD
+Textures/DrivingMode/day/bg_mode_comfort
+Textures/DrivingMode/day/bg_mode_xpedal
+Textures/DrivingMode/day/comfort
+Textures/DrivingMode/day/x-pedal
+Textures/DrivingMode/Night/ecoNight
+Textures/DrivingMode/Night/sportNight
+Textures/DrivingMode/Night/bg_mode_ecoNight
+Textures/DrivingMode/Night/bg_mode_sportNight
+Textures/DrivingMode/Night/bg_mode_standardNight
+Textures/DrivingMode/Night/STANDARDNight
+Textures/DrivingMode/Night/bg_mode_comfortNight
+Textures/DrivingMode/Night/bg_mode_xpedalNight
+Textures/DrivingMode/Night/comfortNight
+Textures/DrivingMode/Night/x-pedalNight
+Textures/SpeedNum/Day/0_day
+Textures/SpeedNum/Day/1_day
+Textures/SpeedNum/Day/2_day
+Textures/SpeedNum/Day/3_day
+Textures/SpeedNum/Day/4_day
+Textures/SpeedNum/Day/5_day
+Textures/SpeedNum/Day/6_day
+Textures/SpeedNum/Day/7_day
+Textures/SpeedNum/Day/8_day
+Textures/SpeedNum/Day/9_day
+Textures/SpeedNum/Night/0_night
+Textures/SpeedNum/Night/1_night
+Textures/SpeedNum/Night/2_night
+Textures/SpeedNum/Night/3_night
+Textures/SpeedNum/Night/4_night
+Textures/SpeedNum/Night/5_night
+Textures/SpeedNum/Night/6_night
+Textures/SpeedNum/Night/7_night
+Textures/SpeedNum/Night/8_night
+Textures/SpeedNum/Night/9_night
+Textures/TrafficLight/day/trafficlight_bg
+Textures/TrafficLight/day/trafficlight_center_green
+Textures/TrafficLight/day/trafficlight_center_red
+Textures/TrafficLight/day/trafficlight_center_yellow
+Textures/TrafficLight/day/trafficlight_empty_center
+Textures/TrafficLight/night/trafficlight_bg_night
+Textures/TrafficLight/night/trafficlight_center_green_night
+Textures/TrafficLight/night/trafficlight_center_red_night
+Textures/TrafficLight/night/trafficlight_center_yellow_night
+Textures/TrafficLight/night/trafficlight_empty_center_night
+Textures/电池槽
+Textures/day
+Textures/电池槽night
+Textures/READY
+Textures/night
+Textures/ic_nedc_night
+Textures/ic_wltp_night
+Textures/ic_nedc
+Textures/ic_wltp
+Textures/bg_footbar_night
+Textures/bg_footbar
+Textures/ic_℃_day
+Textures/ic_℃_night
+Textures/电量蒙版
+Textures/上午
+Textures/下午
+Textures/上午_night
+Textures/下午_night
+Textures/Speed_Unit_Day
+Textures/Soeed_Unit_Night
+Textures/speed_invalid_night
+Textures/speed_invalid_day
+Textures/ic_cltc_night
+Textures/ic_cltc
+Textures/电池槽百分比-night
+Styles/Text Block 2D Style
+State Managers/ElectricityColor State Manager
+State Managers/GearState Manager
+State Managers/DrivingMode State Manager
+State Managers/Text State Manager
+State Managers/Time State Manager
+State Managers/MorningOrAfternoon State Manager
+State Managers/GearSpeedState
+State Managers/IS---
+State Managers/SpeedNum
+State Managers/TrafficLights State Manager
+State Managers/ElectricityColor Night State Manager
+/normalinfo

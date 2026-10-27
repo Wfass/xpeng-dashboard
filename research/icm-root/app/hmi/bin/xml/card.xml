@@ -1,0 +1,210 @@
+<Card name="Card">
+    <Manager>
+        <Left>
+            <List>
+                <Visible type="bool">false</Visible>
+                <SensorFault type="bool">false</SensorFault>
+                <Index type="int">0</Index>
+            </List>
+            <Card>
+                <Index type="int">0</Index>
+                <Visible type="bool">true</Visible>
+            </Card>
+        </Left>
+        <Right>
+            <List >
+                <Visible type="bool">false</Visible>
+                <Index type="int">1</Index>
+            </List>
+            <Card>
+                <Index type="int">1</Index>
+                <Visible type="bool">true</Visible>
+            </Card>
+        </Right>
+    </Manager>
+
+    <Navigation>
+        <Style type="int">0</Style>
+        <ArrowID type="int">0</ArrowID>
+        <Distance type="string">0</Distance>
+        <DistanceUnits type="string">米</DistanceUnits>
+        <Moves type="string">进入</Moves>
+        <RoadName type="string"></RoadName>
+        <GuidanceVisible type="bool">false</GuidanceVisible>
+        <Enabled type="bool">false</Enabled>
+        <LaneCount type="int">0</LaneCount>
+        <LaneType type="int">0</LaneType>		
+        <LaneBackID_1 type="int">0</LaneBackID_1>
+		<LaneFrontID_1 type="int">0</LaneFrontID_1>
+        <LaneBackID_2 type="int">0</LaneBackID_2>
+		<LaneFrontID_2 type="int">0</LaneFrontID_2>
+        <LaneBackID_3 type="int">0</LaneBackID_3>
+        <LaneFrontID_3 type="int">0</LaneFrontID_3>
+        <LaneBackID_4 type="int">0</LaneBackID_4>
+		<LaneFrontID_4 type="int">0</LaneFrontID_4>
+        <LaneBackID_5 type="int">0</LaneBackID_5>
+        <LaneFrontID_5 type="int">0</LaneFrontID_5>
+        <LaneBackID_6 type="int">0</LaneBackID_6>
+        <LaneFrontID_6 type="int">0</LaneFrontID_6>
+        <LaneBackID_7 type="int">0</LaneBackID_7>
+        <LaneFrontID_7 type="int">0</LaneFrontID_7>
+		<LaneTollGateID_1 type="int">0</LaneTollGateID_1>
+		<LaneTollGateID_2 type="int">0</LaneTollGateID_2>
+		<LaneTollGateID_3 type="int">0</LaneTollGateID_3>
+		<LaneTollGateID_4 type="int">0</LaneTollGateID_4>
+		<LaneTollGateID_5 type="int">0</LaneTollGateID_5>
+		<LaneTollGateID_6 type="int">0</LaneTollGateID_6>
+		<LaneTollGateID_7 type="int">0</LaneTollGateID_7>
+    </Navigation>
+
+    <CarInfo>
+        <Tire>
+            <FL>
+                <TireState type="int">0</TireState>
+                <Pressure type="string">0.0</Pressure>
+                <PressureUnits type="string">bar</PressureUnits>
+                <PressureState type="int">0</PressureState>
+                <Temperatures type="string">00</Temperatures>
+                <TemperaturesUnits type="string">°C</TemperaturesUnits>
+                <TemperaturesState type="int">0</TemperaturesState>
+            </FL>
+            <FR>
+                <TireState type="int">0</TireState>
+                <Pressure type="string">0.0</Pressure>
+                <PressureUnits type="string">bar</PressureUnits>
+                <PressureState type="int">0</PressureState>
+                <Temperatures type="string">00</Temperatures>
+                <TemperaturesUnits type="string">°C</TemperaturesUnits>
+                <TemperaturesState type="int">0</TemperaturesState>
+            </FR>
+            <BL>
+                <TireState type="int">0</TireState>
+                <Pressure type="string">0.0</Pressure>
+                <PressureUnits type="string">bar</PressureUnits>
+                <PressureState type="int">0</PressureState>
+                <Temperatures type="string">00</Temperatures>
+                <TemperaturesUnits type="string">°C</TemperaturesUnits>
+                <TemperaturesState type="int">0</TemperaturesState>
+            </BL>
+            <BR>
+                <TireState type="int">0</TireState>
+                <Pressure type="string">0.0</Pressure>
+                <PressureUnits type="string">bar</PressureUnits>
+                <PressureState type="int">0</PressureState>
+                <Temperatures type="string">00</Temperatures>
+                <TemperaturesUnits type="string">°C</TemperaturesUnits>
+                <TemperaturesState type="int">0</TemperaturesState>
+            </BR>
+        </Tire>        
+        <LockState type="bool">false</LockState>
+    </CarInfo>
+
+    <Trip>
+        <ThisTime>
+            <Value type="string">0</Value>
+            <Units type="string">km</Units>
+        </ThisTime>
+        <AfterCharging>
+            <Value type="string">0</Value>
+            <Units type="string">km</Units>
+        </AfterCharging>
+        <SubtotalA>
+            <Value type="string">0</Value>
+            <Units type="string">km</Units>
+        </SubtotalA>
+        <SubtotalB>
+            <Value type="string">0</Value>
+            <Units type="string">km</Units>
+        </SubtotalB>
+        <Total>
+            <Value type="string">0</Value>
+            <Units type="string">km</Units>
+        </Total>
+        <Average>
+            <Value type="string">0</Value>
+            <Units type="string">km/h</Units>
+        </Average>
+        <ElapsedTime>
+            <Value type="string">0</Value>
+            <Units type="string">hour</Units>
+        </ElapsedTime>
+    </Trip>
+
+    <SensorFault>
+        <CarState type="int">0</CarState>
+        <SensorTextState type="int">0</SensorTextState>
+        <SmartCamera>
+            <State type="int">0</State>
+            <!-- 驾驶员 -->
+            <Site1 type="int">0</Site1>
+            <!-- 三目 -->
+            <Site2 type="int">0</Site2>
+            <!-- 单目前 -->
+            <Site3 type="int">0</Site3>
+            <!-- 单目左前 -->
+            <Site4 type="int">0</Site4>
+            <!-- 单目左后 -->
+            <Site5 type="int">0</Site5>
+            <!-- 单目右前 -->
+            <Site6 type="int">0</Site6>
+            <!-- 单目右后 -->
+            <Site7 type="int">0</Site7>
+            <!-- 单目后 -->
+            <Site8 type="int">0</Site8>
+        </SmartCamera>
+        <UltrasonicRadar>
+            <State type="int">0</State>
+            <FOL type="int">0</FOL>
+            <FCL type="int">0</FCL>
+            <FCR type="int">0</FCR>
+            <FOR type="int">0</FOR>
+            <FSL type="int">0</FSL>
+            <FSR type="int">0</FSR>
+            <ROL type="int">0</ROL>
+            <RCL type="int">0</RCL>
+            <RCR type="int">0</RCR>
+            <ROR type="int">0</ROR>
+            <RSL type="int">0</RSL>
+            <RSR type="int">0</RSR>
+        </UltrasonicRadar>
+        <MillimeterWaveRadar>
+            <State type="int">0</State>
+            <FC type="int">0</FC>
+            <FL type="int">0</FL>
+            <FR type="int">0</FR>
+            <RCL type="int">0</RCL>
+            <RCR type="int">0</RCR>
+        </MillimeterWaveRadar>
+        <Text >
+            <Visible type="bool">false</Visible>
+            <Value type="string"></Value>
+        </Text>
+        <LookAroundCamera >
+            <State type="int">0</State>
+            <F type="int">0</F>
+            <L type="int">0</L>
+            <R type="int">0</R>
+            <B type="int">0</B>
+        </LookAroundCamera>
+    </SensorFault>
+
+    <Music>
+        <String1 type="string">未知</String1>
+        <String2 type="string">未知</String2>
+        <SoundState type="int">-1</SoundState>
+        <BarValue type="int">0</BarValue>
+		<IsBarShow type="bool">0</IsBarShow>
+        <PlayState type="bool">false</PlayState>
+        <ImageState type="bool">false</ImageState>
+    </Music>
+    
+    <Power>
+        <AverageEnergyConsumption type="float">0</AverageEnergyConsumption>
+        <CurveValue type="float">0.333333</CurveValue>
+        <VEHpwrMax type="int">500</VEHpwrMax>
+        <VEHpwrMin type="int">-250</VEHpwrMin>
+        <VEHpwrValue type="int">0</VEHpwrValue>
+		<VEHpwrRemainingValue type="int">0</VEHpwrRemainingValue>
+        <IsInitOver type="bool">false</IsInitOver>
+    </Power>
+</Card>

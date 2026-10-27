@@ -1,0 +1,279 @@
+﻿Files:
+PropertyTypeLibrary/Main.CarColorControProp
+PropertyTypeLibrary/Main.DayNightControlProp
+PropertyTypeLibrary/Main.E28CarType
+PropertyTypeLibrary/Overlay.ACCDistanceAdjustVisible
+PropertyTypeLibrary/Overlay.ACCDistanceGearControllerProperty
+PropertyTypeLibrary/Overlay.ACCOperationGuide
+PropertyTypeLibrary/Overlay.ACCSpeedAdjust
+PropertyTypeLibrary/Overlay.ACCSpeedAdjustVisible
+PropertyTypeLibrary/Overlay.AirVolume
+PropertyTypeLibrary/Overlay.AirVolumeStateControllerProperty
+PropertyTypeLibrary/Overlay.AirVolumeVisible
+PropertyTypeLibrary/Overlay.CallerID
+PropertyTypeLibrary/Overlay.CallStateControllerProperty
+PropertyTypeLibrary/Overlay.CallTime
+PropertyTypeLibrary/Overlay.CallVisible
+PropertyTypeLibrary/Overlay.CubemapColor
+PropertyTypeLibrary/Overlay.DayNightControllerProperty
+PropertyTypeLibrary/Overlay.DayNightSilenceControllerProperty
+PropertyTypeLibrary/Overlay.ForcedPowerDownVisible
+PropertyTypeLibrary/Overlay.ForcePowerDownStateControllerProperty
+PropertyTypeLibrary/Overlay.LowSpeedAlarmVisible
+PropertyTypeLibrary/Overlay.midVoice
+PropertyTypeLibrary/Overlay.midVoiceState
+PropertyTypeLibrary/Overlay.midVoiceVisible
+PropertyTypeLibrary/Overlay.MidVolumeSilence
+PropertyTypeLibrary/Overlay.offset
+PropertyTypeLibrary/Overlay.OverlayVisible
+PropertyTypeLibrary/Overlay.PreventNGearByMistakeTime
+PropertyTypeLibrary/Overlay.PreventNGearByMistakeVisible
+PropertyTypeLibrary/Overlay.SensorFailureVisible
+PropertyTypeLibrary/Overlay.smoothing
+PropertyTypeLibrary/Overlay.Temperature
+PropertyTypeLibrary/Overlay.TemperatureVisible
+PropertyTypeLibrary/Overlay.Texture2
+PropertyTypeLibrary/Overlay.TextureCube
+PropertyTypeLibrary/TAG_PROPERTY_TYPE_Transparent
+Animation Clips/Animation Clip
+Screens/Screen/RootPage/Level0
+Screens/Screen/RootPage/Level1
+Screens/Screen/RootPage/Level2
+Screens/Screen/<ResourceDictionaryInNode>
+Screens/Screen/RootPage
+Screens/Screen
+Material Types/VertexPhong
+Materials/VertexPhongMaterial
+Prefabs/Level0/Level0/Left/PreventNGearByMistake/Button/ButtonText
+Prefabs/Level0/Level0/Left/PreventNGearByMistake/Button/ButtonTime
+Prefabs/Level0/Level0/Left/PreventNGearByMistake/Button/ButtonUnit
+Prefabs/Level0/Level0/Left/PreventNGearByMistake/ButtonTips/icon
+Prefabs/Level0/Level0/Left/PreventNGearByMistake/ButtonTips/text
+Prefabs/Level0/Level0/Left/PreventNGearByMistake/shadow
+Prefabs/Level0/Level0/Left/PreventNGearByMistake/BG
+Prefabs/Level0/Level0/Left/PreventNGearByMistake/Title
+Prefabs/Level0/Level0/Left/PreventNGearByMistake/Tips
+Prefabs/Level0/Level0/Left/PreventNGearByMistake/Button
+Prefabs/Level0/Level0/Left/PreventNGearByMistake/ButtonTips
+Prefabs/Level0/Level0/Left/ForcedPowerDown/Button/Buttom/Left
+Prefabs/Level0/Level0/Left/ForcedPowerDown/Button/Buttom/Right
+Prefabs/Level0/Level0/Left/ForcedPowerDown/Button/Buttom/SwitchText
+Prefabs/Level0/Level0/Left/ForcedPowerDown/Button/Buttom/Circle
+Prefabs/Level0/Level0/Left/ForcedPowerDown/Button/Buttom/DetermineText
+Prefabs/Level0/Level0/Left/ForcedPowerDown/Button/Determine
+Prefabs/Level0/Level0/Left/ForcedPowerDown/Button/DetermineText
+Prefabs/Level0/Level0/Left/ForcedPowerDown/Button/Cancel
+Prefabs/Level0/Level0/Left/ForcedPowerDown/Button/CancelText
+Prefabs/Level0/Level0/Left/ForcedPowerDown/Button/CheckBox
+Prefabs/Level0/Level0/Left/ForcedPowerDown/Button/Buttom
+Prefabs/Level0/Level0/Left/ForcedPowerDown/BG
+Prefabs/Level0/Level0/Left/ForcedPowerDown/Title
+Prefabs/Level0/Level0/Left/ForcedPowerDown/WarningTips
+Prefabs/Level0/Level0/Left/ForcedPowerDown/Button
+Prefabs/Level0/Level0/Left/PreventNGearByMistake
+Prefabs/Level0/Level0/Left/ForcedPowerDown
+Prefabs/Level0/Level0/Left/AbnormalVehicleCondition
+Prefabs/Level0/Level0/Left/LowSpeedAlarm
+Prefabs/Level0/Level0/Left/SensorFailure
+Prefabs/Level0/Level0/Right/Call/Call/Buttom/Left/Icon
+Prefabs/Level0/Level0/Right/Call/Call/Buttom/Left/Connect
+Prefabs/Level0/Level0/Right/Call/Call/Buttom/Right/HangUp
+Prefabs/Level0/Level0/Right/Call/Call/Buttom/Right/HangUpText
+Prefabs/Level0/Level0/Right/Call/Call/Buttom/Left
+Prefabs/Level0/Level0/Right/Call/Call/Buttom/Right
+Prefabs/Level0/Level0/Right/Call/Call/BG
+Prefabs/Level0/Level0/Right/Call/Call/HeadPortrait
+Prefabs/Level0/Level0/Right/Call/Call/Name
+Prefabs/Level0/Level0/Right/Call/Call/CallTime
+Prefabs/Level0/Level0/Right/Call/Call/CallTips
+Prefabs/Level0/Level0/Right/Call/Call/Buttom
+Prefabs/Level0/Level0/Right/Call/Call
+Prefabs/Level0/Level0/Right/Call
+Prefabs/Level0/Level0/DataLayer
+Prefabs/Level0/Level0/Left
+Prefabs/Level0/Level0/Right
+Prefabs/Level0/Level0
+Prefabs/Level1/Level1/ACC/OperationGuidance/BG/Car
+Prefabs/Level1/Level1/ACC/OperationGuidance/LeftAndRightButton/Left
+Prefabs/Level1/Level1/ACC/OperationGuidance/LeftAndRightButton/Right
+Prefabs/Level1/Level1/ACC/OperationGuidance/LeftAndRightButton/Text
+Prefabs/Level1/Level1/ACC/OperationGuidance/UpAndDownButton/Down
+Prefabs/Level1/Level1/ACC/OperationGuidance/UpAndDownButton/Up
+Prefabs/Level1/Level1/ACC/OperationGuidance/UpAndDownButton/Text
+Prefabs/Level1/Level1/ACC/OperationGuidance/BG
+Prefabs/Level1/Level1/ACC/OperationGuidance/Title
+Prefabs/Level1/Level1/ACC/OperationGuidance/LeftAndRightButton
+Prefabs/Level1/Level1/ACC/OperationGuidance/UpAndDownButton
+Prefabs/Level1/Level1/ACC/DistanceAdjust/DistanceAdjust/BG/CarLeft
+Prefabs/Level1/Level1/ACC/DistanceAdjust/DistanceAdjust/BG/CarRight
+Prefabs/Level1/Level1/ACC/DistanceAdjust/DistanceAdjust/Buttom/Left
+Prefabs/Level1/Level1/ACC/DistanceAdjust/DistanceAdjust/Buttom/LeftText
+Prefabs/Level1/Level1/ACC/DistanceAdjust/DistanceAdjust/Buttom/Right
+Prefabs/Level1/Level1/ACC/DistanceAdjust/DistanceAdjust/Buttom/RightText
+Prefabs/Level1/Level1/ACC/DistanceAdjust/DistanceAdjust/Gear/GearNum
+Prefabs/Level1/Level1/ACC/DistanceAdjust/DistanceAdjust/Gear/GearUnit
+Prefabs/Level1/Level1/ACC/DistanceAdjust/DistanceAdjust/BG
+Prefabs/Level1/Level1/ACC/DistanceAdjust/DistanceAdjust/Title
+Prefabs/Level1/Level1/ACC/DistanceAdjust/DistanceAdjust/DistanceBar
+Prefabs/Level1/Level1/ACC/DistanceAdjust/DistanceAdjust/Buttom
+Prefabs/Level1/Level1/ACC/DistanceAdjust/DistanceAdjust/Gear
+Prefabs/Level1/Level1/ACC/DistanceAdjust/DistanceAdjust
+Prefabs/Level1/Level1/ACC/SpeedAdjust/BG/car
+Prefabs/Level1/Level1/ACC/SpeedAdjust/Speed/Stack Layout 2D/SpeedNum
+Prefabs/Level1/Level1/ACC/SpeedAdjust/Speed/Stack Layout 2D/SpeedUnit
+Prefabs/Level1/Level1/ACC/SpeedAdjust/Speed/Stack Layout 2D
+Prefabs/Level1/Level1/ACC/SpeedAdjust/Buttom/Down
+Prefabs/Level1/Level1/ACC/SpeedAdjust/Buttom/DownText
+Prefabs/Level1/Level1/ACC/SpeedAdjust/Buttom/Up
+Prefabs/Level1/Level1/ACC/SpeedAdjust/Buttom/UpText
+Prefabs/Level1/Level1/ACC/SpeedAdjust/BG
+Prefabs/Level1/Level1/ACC/SpeedAdjust/Title
+Prefabs/Level1/Level1/ACC/SpeedAdjust/Speed
+Prefabs/Level1/Level1/ACC/SpeedAdjust/Buttom
+Prefabs/Level1/Level1/ACC/Datalayer
+Prefabs/Level1/Level1/ACC/OperationGuidance
+Prefabs/Level1/Level1/ACC/DistanceAdjust
+Prefabs/Level1/Level1/ACC/SpeedAdjust
+Prefabs/Level1/Level1/OSD/Left/BG/Image_1
+Prefabs/Level1/Level1/OSD/Left/BG/Image
+Prefabs/Level1/Level1/OSD/Left/AirVolume/bar/hight/Image_1
+Prefabs/Level1/Level1/OSD/Left/AirVolume/bar/bg
+Prefabs/Level1/Level1/OSD/Left/AirVolume/bar/hight
+Prefabs/Level1/Level1/OSD/Left/AirVolume/icon
+Prefabs/Level1/Level1/OSD/Left/AirVolume/Text Block 2D
+Prefabs/Level1/Level1/OSD/Left/AirVolume/bar
+Prefabs/Level1/Level1/OSD/Left/Temperature/Value/int/value
+Prefabs/Level1/Level1/OSD/Left/Temperature/Value/fractionalPart/value
+Prefabs/Level1/Level1/OSD/Left/Temperature/Value/int
+Prefabs/Level1/Level1/OSD/Left/Temperature/Value/dot
+Prefabs/Level1/Level1/OSD/Left/Temperature/Value/fractionalPart
+Prefabs/Level1/Level1/OSD/Left/Temperature/Value/unit
+Prefabs/Level1/Level1/OSD/Left/Temperature/name
+Prefabs/Level1/Level1/OSD/Left/Temperature/Value
+Prefabs/Level1/Level1/OSD/Left/BG
+Prefabs/Level1/Level1/OSD/Left/AirVolume
+Prefabs/Level1/Level1/OSD/Left/Temperature
+Prefabs/Level1/Level1/OSD/Right/BG/Image_1
+Prefabs/Level1/Level1/OSD/Right/BG/Image
+Prefabs/Level1/Level1/OSD/Right/midVoice/bar/hight/Image_1
+Prefabs/Level1/Level1/OSD/Right/midVoice/bar/bg
+Prefabs/Level1/Level1/OSD/Right/midVoice/bar/hight
+Prefabs/Level1/Level1/OSD/Right/midVoice/icon
+Prefabs/Level1/Level1/OSD/Right/midVoice/Text Block 2D
+Prefabs/Level1/Level1/OSD/Right/midVoice/bar
+Prefabs/Level1/Level1/OSD/Right/BG
+Prefabs/Level1/Level1/OSD/Right/midVoice
+Prefabs/Level1/Level1/OSD/DataLayer
+Prefabs/Level1/Level1/OSD/Left
+Prefabs/Level1/Level1/OSD/Right
+Prefabs/Level1/Level1/ACC
+Prefabs/Level1/Level1/OSD
+Prefabs/Level1/Level1
+Prefabs/Level2/Level2
+Prefabs/LoadDataSource/LoadDataSource
+Prefabs/Level0
+Prefabs/Level1
+Prefabs/Level2
+Prefabs/LoadDataSource
+Animation Data/BarAnimation_AirVolume
+Animation Data/BarAnimation_midVoice
+Localization/overlay
+Locales/neutral
+Locales/zh-CN
+Data Sources/Data source
+Page Transitions/Default Transitions
+Resource Files/Images/bg_osd_background.png
+Resource Files/Images/bg_osd_shadow.png
+Resource Files/Images/ic_air_volume.png
+Resource Files/Images/ic_mid_voice.png
+Resource Files/Images/bg_voice_lane.png
+Resource Files/Images/刻度.png
+Resource Files/Images/ic_mid_mute.png
+Resource Files/Images/bg_acc_chosen.png
+Resource Files/Images/button_long.png
+Resource Files/Images/ic_steeringwheel_ok.png
+Resource Files/Images/bg_acc_info.png
+Resource Files/Images/ic_steeringwheel_arrowleft.png
+Resource Files/Images/ic_steeringwheel_arrowright.png
+Resource Files/Images/ic_steeringwheel_arrowup.png
+Resource Files/Images/ic_steeringwheel_arrowdown.png
+Resource Files/Images/bg_acc_speed.png
+Resource Files/Images/acc车体_白天.png
+Resource Files/Images/1.png
+Resource Files/Images/2.png
+Resource Files/Images/3.png
+Resource Files/Images/4.png
+Resource Files/Images/5.png
+Resource Files/Images/button_chosen.png
+Resource Files/Images/bg_button.png
+Resource Files/Images/ic_card_head_big.png
+Resource Files/Images/ic_steeringwheel_back.png
+Resource Files/Images/bg_osd_backgroundwhite.png
+Resource Files/Images/bg_qc_chosenNight.png
+Resource Files/Images/bg_acc_infoNight.png
+Resource Files/Images/bg_acc_speedNight.png
+Resource Files/Images/acc车体_黑夜.png
+Resource Files/Images/button_longNight.png
+Resource Files/Images/矩形.png
+Resource Files/Images/10.png
+Resource Files/Images/bg_voice_laneNight.png
+Resource Files/Images/ic_air_volumeNight.png
+Resource Files/Images/ic_mid_voiceNight.png
+Resource Files/Images/bg_voice.png
+Resource Files/Images/bg_voiceNight.png
+Resource Files/Images/ic_mid_muteNight.png
+Resource Files/Images/ic_mid_call.png
+Resource Files/Images/ic_mid_callNight.png
+Textures/bg_osd_background
+Textures/bg_osd_shadow
+Textures/ic_air_volume
+Textures/ic_mid_voice
+Textures/bg_voice_lane
+Textures/刻度
+Textures/ic_mid_mute
+Textures/bg_acc_chosenNight
+Textures/button_long
+Textures/ic_steeringwheel_ok
+Textures/bg_acc_info
+Textures/ic_steeringwheel_arrowleft
+Textures/ic_steeringwheel_arrowright
+Textures/ic_steeringwheel_arrowup
+Textures/ic_steeringwheel_arrowdown
+Textures/bg_acc_speed
+Textures/acc车体_白天
+Textures/1
+Textures/2
+Textures/3
+Textures/4
+Textures/5
+Textures/button_chosen
+Textures/bg_button
+Textures/ic_card_head_big
+Textures/ic_steeringwheel_back
+Textures/bg_osd_backgroundwhite
+Textures/bg_qc_chosenNight
+Textures/bg_acc_infoNight
+Textures/bg_acc_speedNight
+Textures/acc车体_黑夜
+Textures/button_longNight
+Textures/矩形
+Textures/bg_acc_chosen
+Textures/10
+Textures/bg_voice_laneNight
+Textures/ic_air_volumeNight
+Textures/ic_mid_voiceNight
+Textures/bg_voice
+Textures/bg_voiceNight
+Textures/ic_mid_muteNight
+Textures/ic_mid_call
+Textures/ic_mid_callNight
+Styles/Text Block 2D Style
+State Managers/DistanceAdjust State Manager
+State Managers/CheckBox State Manager
+State Managers/Call State Manager
+State Managers/icon State Manager
+State Managers/OSD In-Out Animation
+State Managers/OverLay In-Out Animation
+State Managers/AirVolume State Manager
+State Managers/OSD_voiceText
+/overlay

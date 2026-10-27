@@ -1,0 +1,50 @@
+.class public interface abstract Lcom/alibaba/fastjson/serializer/ObjectSerializer;
+.super Ljava/lang/Object;
+.source "ObjectSerializer.java"
+
+# interfaces
+.implements Laem;
+
+
+# virtual methods
+.method public abstract write(Lcom/alibaba/fastjson/serializer/JSONSerializer;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/reflect/Type;I)V
+.end method
+
+.method public write(Lcom/alibaba/fastjson2/ab;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/reflect/Type;J)V
+    .locals 6
+
+    .line 14
+    new-instance v1, Lcom/alibaba/fastjson/serializer/JSONSerializer;
+
+    invoke-direct {v1, p1}, Lcom/alibaba/fastjson/serializer/JSONSerializer;-><init>(Lcom/alibaba/fastjson2/ab;)V
+
+    const/4 v5, 0x0
+
+    move-object v0, p0
+
+    move-object v2, p2
+
+    move-object v3, p3
+
+    move-object v4, p4
+
+    .line 16
+    :try_start_0
+    invoke-interface/range {v0 .. v5}, Lcom/alibaba/fastjson/serializer/ObjectSerializer;->write(Lcom/alibaba/fastjson/serializer/JSONSerializer;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/reflect/Type;I)V
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-void
+
+    :catch_0
+    move-exception p1
+
+    .line 18
+    new-instance p2, Lcom/alibaba/fastjson/JSONException;
+
+    const-string p3, "write error"
+
+    invoke-direct {p2, p3, p1}, Lcom/alibaba/fastjson/JSONException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    throw p2
+.end method

@@ -1,0 +1,198 @@
+
+ClusterLyrics/research/icm-root/icm-init:	file format elf32-littlearm
+
+Disassembly of section .text:
+
+00013c28 <_ZN3icm4initL12startProcessEPKcbb>:
+   13c28: e92d4800     	push	{r11, lr}
+   13c2c: e28db004     	add	r11, sp, #4
+   13c30: e24dd040     	sub	sp, sp, #64
+   13c34: e50b0040     	str	r0, [r11, #-0x40]
+   13c38: e1a03001     	mov	r3, r1
+   13c3c: e54b3041     	strb	r3, [r11, #-0x41]
+   13c40: e1a03002     	mov	r3, r2
+   13c44: e54b3042     	strb	r3, [r11, #-0x42]
+   13c48: e59f31b4     	ldr	r3, [pc, #0x1b4]        @ 0x13e04 <_ZN3icm4initL12startProcessEPKcbb+0x1dc>
+   13c4c: e5933000     	ldr	r3, [r3]
+   13c50: e50b3008     	str	r3, [r11, #-0x8]
+   13c54: ebfff942     	bl	0x12164 <.plt+0x38c>    @ imm = #-0x1af8
+   13c58: e1a03000     	mov	r3, r0
+   13c5c: e50b3030     	str	r3, [r11, #-0x30]
+   13c60: e51b3030     	ldr	r3, [r11, #-0x30]
+   13c64: e3530000     	cmp	r3, #0
+   13c68: aa00000a     	bge	0x13c98 <_ZN3icm4initL12startProcessEPKcbb+0x70> @ imm = #0x28
+   13c6c: ebfff915     	bl	0x120c8 <.plt+0x2f0>    @ imm = #-0x1bac
+   13c70: e1a03000     	mov	r3, r0
+   13c74: e5933000     	ldr	r3, [r3]
+   13c78: e1a00003     	mov	r0, r3
+   13c7c: ebfff8d8     	bl	0x11fe4 <.plt+0x20c>    @ imm = #-0x1ca0
+   13c80: e1a03000     	mov	r3, r0
+   13c84: e1a01003     	mov	r1, r3
+   13c88: e59f0178     	ldr	r0, [pc, #0x178]        @ 0x13e08 <_ZN3icm4initL12startProcessEPKcbb+0x1e0>
+   13c8c: ebfff9f4     	bl	0x12464 <_ZN3icm4init10_klogWriteEPKcz> @ imm = #-0x1830
+   13c90: e3e03000     	mvn	r3, #0
+   13c94: ea000051     	b	0x13de0 <_ZN3icm4initL12startProcessEPKcbb+0x1b8> @ imm = #0x144
+   13c98: e51b3030     	ldr	r3, [r11, #-0x30]
+   13c9c: e3530000     	cmp	r3, #0
+   13ca0: 1a000036     	bne	0x13d80 <_ZN3icm4initL12startProcessEPKcbb+0x158> @ imm = #0xd8
+   13ca4: e55b3041     	ldrb	r3, [r11, #-0x41]
+   13ca8: e2233001     	eor	r3, r3, #1
+   13cac: e20330ff     	and	r3, r3, #255
+   13cb0: e3530000     	cmp	r3, #0
+   13cb4: 0a000002     	beq	0x13cc4 <_ZN3icm4initL12startProcessEPKcbb+0x9c> @ imm = #0x8
+   13cb8: e51b0040     	ldr	r0, [r11, #-0x40]
+   13cbc: ebfffec1     	bl	0x137c8 <_ZN3icm4initL19openCrashLogToStdioEPKc> @ imm = #-0x4fc
+   13cc0: ea000001     	b	0x13ccc <_ZN3icm4initL12startProcessEPKcbb+0xa4> @ imm = #0x4
+   13cc4: ebfff8ea     	bl	0x12074 <.plt+0x29c>    @ imm = #-0x1c58
+   13cc8: eb0003f5     	bl	0x14ca4 <_ZN3icm4initL11openConsoleEv> @ imm = #0xfd4
+   13ccc: eb000dde     	bl	0x1744c <_ZN3icm4init17properties_initedEv> @ imm = #0x3778
+   13cd0: e1a03000     	mov	r3, r0
+   13cd4: e3530000     	cmp	r3, #0
+   13cd8: 13a03001     	movne	r3, #1
+   13cdc: 03a03000     	moveq	r3, #0
+   13ce0: e20330ff     	and	r3, r3, #255
+   13ce4: e3530000     	cmp	r3, #0
+   13ce8: 0a000015     	beq	0x13d44 <_ZN3icm4initL12startProcessEPKcbb+0x11c> @ imm = #0x54
+   13cec: e24b3028     	sub	r3, r11, #40
+   13cf0: e3a02020     	mov	r2, #32
+   13cf4: e3a01000     	mov	r1, #0
+   13cf8: e1a00003     	mov	r0, r3
+   13cfc: ebfff8fd     	bl	0x120f8 <.plt+0x320>    @ imm = #-0x1c0c
+   13d00: e24b2034     	sub	r2, r11, #52
+   13d04: e24b3038     	sub	r3, r11, #56
+   13d08: e1a01002     	mov	r1, r2
+   13d0c: e1a00003     	mov	r0, r3
+   13d10: eb000c83     	bl	0x16f24 <_ZN3icm4init22get_property_workspaceEPiS1_> @ imm = #0x320c
+   13d14: e51b3038     	ldr	r3, [r11, #-0x38]
+   13d18: e1a00003     	mov	r0, r3
+   13d1c: ebfff883     	bl	0x11f30 <.plt+0x158>    @ imm = #-0x1df4
+   13d20: e1a02000     	mov	r2, r0
+   13d24: e51b3034     	ldr	r3, [r11, #-0x34]
+   13d28: e24b0028     	sub	r0, r11, #40
+   13d2c: e59f10d8     	ldr	r1, [pc, #0xd8]         @ 0x13e0c <_ZN3icm4initL12startProcessEPKcbb+0x1e4>
+   13d30: ebfff91a     	bl	0x121a0 <.plt+0x3c8>    @ imm = #-0x1b98
+   13d34: e24b3028     	sub	r3, r11, #40
+   13d38: e1a01003     	mov	r1, r3
+   13d3c: e59f00cc     	ldr	r0, [pc, #0xcc]         @ 0x13e10 <_ZN3icm4initL12startProcessEPKcbb+0x1e8>
+   13d40: ebffff85     	bl	0x13b5c <_ZN3icm4initL15add_environmentEPKcS2_> @ imm = #-0x1ec
+   13d44: e3a01000     	mov	r1, #0
+   13d48: e51b0040     	ldr	r0, [r11, #-0x40]
+   13d4c: ebfff84a     	bl	0x11e7c <.plt+0xa4>     @ imm = #-0x1ed8
+   13d50: ebfff8dc     	bl	0x120c8 <.plt+0x2f0>    @ imm = #-0x1c90
+   13d54: e1a03000     	mov	r3, r0
+   13d58: e5933000     	ldr	r3, [r3]
+   13d5c: e1a00003     	mov	r0, r3
+   13d60: ebfff89f     	bl	0x11fe4 <.plt+0x20c>    @ imm = #-0x1d84
+   13d64: e1a03000     	mov	r3, r0
+   13d68: e1a02003     	mov	r2, r3
+   13d6c: e51b1040     	ldr	r1, [r11, #-0x40]
+   13d70: e59f009c     	ldr	r0, [pc, #0x9c]         @ 0x13e14 <_ZN3icm4initL12startProcessEPKcbb+0x1ec>
+   13d74: ebfff9ba     	bl	0x12464 <_ZN3icm4init10_klogWriteEPKcz> @ imm = #-0x1918
+   13d78: e3a0007f     	mov	r0, #127
+   13d7c: ebfff838     	bl	0x11e64 <.plt+0x8c>     @ imm = #-0x1f20
+   13d80: e55b3042     	ldrb	r3, [r11, #-0x42]
+   13d84: e3530000     	cmp	r3, #0
+   13d88: 0a000010     	beq	0x13dd0 <_ZN3icm4initL12startProcessEPKcbb+0x1a8> @ imm = #0x40
+   13d8c: e3a03000     	mov	r3, #0
+   13d90: e50b3034     	str	r3, [r11, #-0x34]
+   13d94: e24b3034     	sub	r3, r11, #52
+   13d98: e3a02000     	mov	r2, #0
+   13d9c: e1a01003     	mov	r1, r3
+   13da0: e51b0030     	ldr	r0, [r11, #-0x30]
+   13da4: ebfff879     	bl	0x11f90 <.plt+0x1b8>    @ imm = #-0x1e1c
+   13da8: e1a03000     	mov	r3, r0
+   13dac: e50b302c     	str	r3, [r11, #-0x2c]
+   13db0: e51b302c     	ldr	r3, [r11, #-0x2c]
+   13db4: e3730001     	cmn	r3, #1
+   13db8: 03a03001     	moveq	r3, #1
+   13dbc: 13a03000     	movne	r3, #0
+   13dc0: e20330ff     	and	r3, r3, #255
+   13dc4: e3530000     	cmp	r3, #0
+   13dc8: 0a000000     	beq	0x13dd0 <_ZN3icm4initL12startProcessEPKcbb+0x1a8> @ imm = #0x0
+   13dcc: eafffff0     	b	0x13d94 <_ZN3icm4initL12startProcessEPKcbb+0x16c> @ imm = #-0x40
+   13dd0: e51b1040     	ldr	r1, [r11, #-0x40]
+   13dd4: e59f003c     	ldr	r0, [pc, #0x3c]         @ 0x13e18 <_ZN3icm4initL12startProcessEPKcbb+0x1f0>
+   13dd8: ebfff9a1     	bl	0x12464 <_ZN3icm4init10_klogWriteEPKcz> @ imm = #-0x197c
+   13ddc: e51b3030     	ldr	r3, [r11, #-0x30]
+   13de0: e1a00003     	mov	r0, r3
+   13de4: e59f3018     	ldr	r3, [pc, #0x18]         @ 0x13e04 <_ZN3icm4initL12startProcessEPKcbb+0x1dc>
+   13de8: e51b2008     	ldr	r2, [r11, #-0x8]
+   13dec: e5933000     	ldr	r3, [r3]
+   13df0: e1520003     	cmp	r2, r3
+   13df4: 0a000000     	beq	0x13dfc <_ZN3icm4initL12startProcessEPKcbb+0x1d4> @ imm = #0x0
+   13df8: ebfff83a     	bl	0x11ee8 <.plt+0x110>    @ imm = #-0x1f18
+   13dfc: e24bd004     	sub	sp, r11, #4
+   13e00: e8bd8800     	pop	{r11, pc}
+
+0001441c <_ZN3icm4initL16startEclusterAppEv>:
+   1441c: e92d4810     	push	{r4, r11, lr}
+   14420: e28db008     	add	r11, sp, #8
+   14424: e24dd00c     	sub	sp, sp, #12
+   14428: e59f3108     	ldr	r3, [pc, #0x108]        @ 0x14538 <_ZN3icm4initL16startEclusterAppEv+0x11c>
+   1442c: e5933000     	ldr	r3, [r3]
+   14430: e1a00003     	mov	r0, r3
+   14434: ebfffd7e     	bl	0x13a34 <_ZN3icm4initL15addOrGetServiceEPKc> @ imm = #-0xa08
+   14438: e1a03000     	mov	r3, r0
+   1443c: e50b3014     	str	r3, [r11, #-0x14]
+   14440: e51b3014     	ldr	r3, [r11, #-0x14]
+   14444: e5933000     	ldr	r3, [r3]
+   14448: e3530000     	cmp	r3, #0
+   1444c: ca000037     	bgt	0x14530 <_ZN3icm4initL16startEclusterAppEv+0x114> @ imm = #0xdc
+   14450: ebfff743     	bl	0x12164 <.plt+0x38c>    @ imm = #-0x22f4
+   14454: e1a03000     	mov	r3, r0
+   14458: e50b3010     	str	r3, [r11, #-0x10]
+   1445c: e51b3010     	ldr	r3, [r11, #-0x10]
+   14460: e3530000     	cmp	r3, #0
+   14464: aa00000c     	bge	0x1449c <_ZN3icm4initL16startEclusterAppEv+0x80> @ imm = #0x30
+   14468: e59f30c8     	ldr	r3, [pc, #0xc8]         @ 0x14538 <_ZN3icm4initL16startEclusterAppEv+0x11c>
+   1446c: e5934000     	ldr	r4, [r3]
+   14470: ebfff714     	bl	0x120c8 <.plt+0x2f0>    @ imm = #-0x23b0
+   14474: e1a03000     	mov	r3, r0
+   14478: e5933000     	ldr	r3, [r3]
+   1447c: e1a00003     	mov	r0, r3
+   14480: ebfff6d7     	bl	0x11fe4 <.plt+0x20c>    @ imm = #-0x24a4
+   14484: e1a03000     	mov	r3, r0
+   14488: e1a02003     	mov	r2, r3
+   1448c: e1a01004     	mov	r1, r4
+   14490: e59f00a4     	ldr	r0, [pc, #0xa4]         @ 0x1453c <_ZN3icm4initL16startEclusterAppEv+0x120>
+   14494: ebfff7f2     	bl	0x12464 <_ZN3icm4init10_klogWriteEPKcz> @ imm = #-0x2038
+   14498: ea000024     	b	0x14530 <_ZN3icm4initL16startEclusterAppEv+0x114> @ imm = #0x90
+   1449c: e51b3010     	ldr	r3, [r11, #-0x10]
+   144a0: e3530000     	cmp	r3, #0
+   144a4: 1a00001b     	bne	0x14518 <_ZN3icm4initL16startEclusterAppEv+0xfc> @ imm = #0x6c
+   144a8: e59f3090     	ldr	r3, [pc, #0x90]         @ 0x14540 <_ZN3icm4initL16startEclusterAppEv+0x124>
+   144ac: e5933000     	ldr	r3, [r3]
+   144b0: e1a00003     	mov	r0, r3
+   144b4: ebfff6a3     	bl	0x11f48 <.plt+0x170>    @ imm = #-0x2574
+   144b8: ebfff6ed     	bl	0x12074 <.plt+0x29c>    @ imm = #-0x244c
+   144bc: e59f3074     	ldr	r3, [pc, #0x74]         @ 0x14538 <_ZN3icm4initL16startEclusterAppEv+0x11c>
+   144c0: e5933000     	ldr	r3, [r3]
+   144c4: e1a00003     	mov	r0, r3
+   144c8: ebfffcbe     	bl	0x137c8 <_ZN3icm4initL19openCrashLogToStdioEPKc> @ imm = #-0xd08
+   144cc: e59f3064     	ldr	r3, [pc, #0x64]         @ 0x14538 <_ZN3icm4initL16startEclusterAppEv+0x11c>
+   144d0: e5933000     	ldr	r3, [r3]
+   144d4: e3a01000     	mov	r1, #0
+   144d8: e1a00003     	mov	r0, r3
+   144dc: ebfff666     	bl	0x11e7c <.plt+0xa4>     @ imm = #-0x2668
+   144e0: e59f3050     	ldr	r3, [pc, #0x50]         @ 0x14538 <_ZN3icm4initL16startEclusterAppEv+0x11c>
+   144e4: e5934000     	ldr	r4, [r3]
+   144e8: ebfff6f6     	bl	0x120c8 <.plt+0x2f0>    @ imm = #-0x2428
+   144ec: e1a03000     	mov	r3, r0
+   144f0: e5933000     	ldr	r3, [r3]
+   144f4: e1a00003     	mov	r0, r3
+   144f8: ebfff6b9     	bl	0x11fe4 <.plt+0x20c>    @ imm = #-0x251c
+   144fc: e1a03000     	mov	r3, r0
+   14500: e1a02003     	mov	r2, r3
+   14504: e1a01004     	mov	r1, r4
+   14508: e59f0034     	ldr	r0, [pc, #0x34]         @ 0x14544 <_ZN3icm4initL16startEclusterAppEv+0x128>
+   1450c: ebfff7d4     	bl	0x12464 <_ZN3icm4init10_klogWriteEPKcz> @ imm = #-0x20b0
+   14510: e3a0007f     	mov	r0, #127
+   14514: ebfff6cd     	bl	0x12050 <.plt+0x278>    @ imm = #-0x24cc
+   14518: e51b3014     	ldr	r3, [r11, #-0x14]
+   1451c: e51b2010     	ldr	r2, [r11, #-0x10]
+   14520: e5832000     	str	r2, [r3]
+   14524: e59f101c     	ldr	r1, [pc, #0x1c]         @ 0x14548 <_ZN3icm4initL16startEclusterAppEv+0x12c>
+   14528: e59f001c     	ldr	r0, [pc, #0x1c]         @ 0x1454c <_ZN3icm4initL16startEclusterAppEv+0x130>
+   1452c: ebfff7cc     	bl	0x12464 <_ZN3icm4init10_klogWriteEPKcz> @ imm = #-0x20d0
+   14530: e24bd008     	sub	sp, r11, #8
+   14534: e8bd8810     	pop	{r4, r11, pc}

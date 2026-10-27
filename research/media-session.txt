@@ -1,0 +1,48 @@
+MEDIA SESSION SERVICE (dumpsys media_session)
+
+0 sessions listeners.
+Global priority session is null
+User Records:
+Record for full_user=0
+  Volume key long-press listener: null
+  Volume key long-press listener package: 
+  Media key listener: null
+  Media key listener package: 
+  Callback: null
+  Last MediaButtonReceiver: null
+  Restored MediaButtonReceiver: null
+  Media button session is com.xiaopeng.musicradio/MediaSession (userId=0)
+  Sessions Stack - have 2 sessions:
+    MediaSession com.xiaopeng.musicradio/MediaSession (userId=0)
+      ownerPid=2663, ownerUid=10042, userId=0
+      package=com.xiaopeng.musicradio
+      launchIntent=PendingIntent{e43e1cc: PendingIntentRecord{17b7c15 com.xiaopeng.musicradio startActivity}}
+      mediaButtonReceiver=null
+      active=true
+      flags=3
+      rating type=0
+      controllers: 1
+      state=PlaybackState {state=3, position=0, buffered position=0, speed=1.0, updated=247147525, actions=2361270, custom actions=[], active item id=-1, error=null}
+      audioAttrs=AudioAttributes: usage=USAGE_MEDIA content=CONTENT_TYPE_UNKNOWN flags=0x0 tags= bundle=null
+      volumeType=1, controlType=2, max=0, current=0
+      metadata:size=11, description=如果爱忘了, 戚薇, 戚薇
+      queueTitle=null, size=0
+
+    A2dpMediaBrowserService com.android.bluetooth/A2dpMediaBrowserService (userId=0)
+      ownerPid=29746, ownerUid=1002, userId=0
+      package=com.android.bluetooth
+      launchIntent=null
+      mediaButtonReceiver=null
+      active=false
+      flags=3
+      rating type=0
+      controllers: 0
+      state=PlaybackState {state=7, position=-1, buffered position=0, speed=1.0, updated=245901622, actions=54, custom actions=[], active item id=-1, error=蓝牙音频已断开连接}
+      audioAttrs=AudioAttributes: usage=USAGE_MEDIA content=CONTENT_TYPE_UNKNOWN flags=0x0 tags= bundle=null
+      volumeType=1, controlType=2, max=0, current=0
+      metadata:size=4, description=Donk天梯5180分了还在冲分 天梯双排(荒漠迷城mirage)(30-14)的第一视角POV解说版 , CS2仙鹤, Donk天梯5180分了还在冲分 天梯双排(荒漠迷城mirage)(30-14)的第一视角POV解说版
+      queueTitle=null, size=0
+
+Audio playback (lastly played comes first)
+  uid=10042 packages=com.xiaopeng.musicradio 
+  uid=1000 packages=com.xiaopeng.data.uploader com.android.certinstaller com.android.location.fused com.xiaopeng.xuiservice com.xiaopeng.carhvac com.xiaopeng.aiot.coreservice com.android.keychain com.xiaopeng.traffic.control com.xiaopeng.xpspeechservice.ms com.xiaopeng.device.communication com.xiaopeng.devtools com.android.wallpaperbackup com.xiaopeng.carcontrol com.android.providers.settings android com.xiaopeng.configurationcenter com.qualcomm.qti.auth.fidocryptoservice com.xiaopeng.airplay com.xiaopeng.ota com.xiaopeng.autopilot android.ProcessBwlHandleService com.xiaopeng.providers.notification com.xiaopeng.caraccount com.qualcomm.qti.perfdump com.xiaopeng.xgpt com.android.inputdevices com.xiaopeng.privacycentral com.xiaopeng.factory com.xiaopeng.oobe com.xiaopeng.cardiagnosis com.xiaopeng.diagnostic com.xiaopeng.car.settings com.xiaopeng.UnityService com.xiaopeng.systemui com.xiaopeng.xpime com.android.providers.downloads2 com.android.car com.xiaopeng.autoshow com.xiaopeng.btphone android.psoService 

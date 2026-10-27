@@ -1,0 +1,14 @@
+.class synthetic Lcom/xiaopeng/xuimanager/ambient/AmbientManager$1;
+.super Ljava/lang/Object;
+.source "AmbientManager.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/xiaopeng/xuimanager/ambient/AmbientManager;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1008
+    name = null
+.end annotation

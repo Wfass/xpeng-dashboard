@@ -1,0 +1,856 @@
+.class public Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;
+.super Ljava/lang/Object;
+.source "EventData.java"
+
+
+# annotations
+.annotation build Landroid/support/annotation/Keep;
+.end annotation
+
+
+# static fields
+.field private static final CALL_END:I = 0x11
+
+.field private static final CALL_START:I = 0x0
+
+.field private static final CONNECTION_ACQUIRED:I = 0x7
+
+.field private static final CONNECTION_RELEASED:I = 0x10
+
+.field private static final CONNECT_END:I = 0x6
+
+.field private static final CONNECT_START:I = 0x3
+
+.field private static final DNS_END:I = 0x2
+
+.field private static final DNS_START:I = 0x1
+
+.field private static final REQUEST_BODY_END:I = 0xb
+
+.field private static final REQUEST_BODY_START:I = 0xa
+
+.field private static final REQUEST_HEADERS_END:I = 0x9
+
+.field private static final REQUEST_HEADERS_START:I = 0x8
+
+.field private static final RESPONSE_BODY_END:I = 0xf
+
+.field private static final RESPONSE_BODY_START:I = 0xe
+
+.field private static final RESPONSE_HEADERS_END:I = 0xd
+
+.field private static final RESPONSE_HEADERS_START:I = 0xc
+
+.field private static final SECURE_CONNECT_END:I = 0x5
+
+.field private static final SECURE_CONNECT_START:I = 0x4
+
+
+# instance fields
+.field private mCallException:Ljava/lang/String;
+
+.field private mCallUrl:Ljava/lang/String;
+
+.field private mCreateTime:J
+
+.field private mMethod:Ljava/lang/String;
+
+.field private mNetStrength:I
+
+.field private mNetType:I
+
+.field private mReadyPublish:Z
+
+.field private mRespBodySize:J
+
+.field private mRespCode:J
+
+.field private mTimeArray:[J
+
+
+# direct methods
+.method public constructor <init>(Lokhttp3/Call;)V
+    .locals 3
+    .param p1, "call"    # Lokhttp3/Call;
+
+    .line 67
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 52
+    const-wide/16 v0, 0x0
+
+    iput-wide v0, p0, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->mRespCode:J
+
+    .line 53
+    iput-wide v0, p0, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->mRespBodySize:J
+
+    .line 55
+    const/16 v0, 0x12
+
+    new-array v0, v0, [J
+
+    iput-object v0, p0, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->mTimeArray:[J
+
+    .line 57
+    const/4 v0, 0x0
+
+    iput v0, p0, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->mNetType:I
+
+    .line 58
+    iput v0, p0, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->mNetStrength:I
+
+    .line 65
+    iput-boolean v0, p0, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->mReadyPublish:Z
+
+    .line 68
+    invoke-interface {p1}, Lokhttp3/Call;->request()Lokhttp3/Request;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lokhttp3/Request;->url()Lokhttp3/HttpUrl;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lokhttp3/HttpUrl;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    iput-object v1, p0, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->mCallUrl:Ljava/lang/String;
+
+    .line 69
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    move-result-wide v1
+
+    iput-wide v1, p0, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->mCreateTime:J
+
+    .line 71
+    iget-object v1, p0, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->mCallUrl:Ljava/lang/String;
+
+    invoke-virtual {v1}, Ljava/lang/String;->length()I
+
+    move-result v1
+
+    const/16 v2, 0x46
+
+    if-le v1, v2, :cond_0
+
+    .line 72
+    iget-object v1, p0, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->mCallUrl:Ljava/lang/String;
+
+    invoke-virtual {v1, v0, v2}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->mCallUrl:Ljava/lang/String;
+
+    .line 74
+    :cond_0
+    return-void
+.end method
+
+.method private array([J)Lorg/json/JSONArray;
+    .locals 5
+    .param p1, "data"    # [J
+
+    .line 210
+    new-instance v0, Lorg/json/JSONArray;
+
+    invoke-direct {v0}, Lorg/json/JSONArray;-><init>()V
+
+    .line 211
+    .local v0, "array":Lorg/json/JSONArray;
+    array-length v1, p1
+
+    const/4 v2, 0x0
+
+    :goto_0
+    if-ge v2, v1, :cond_0
+
+    aget-wide v3, p1, v2
+
+    .line 212
+    .local v3, "d":J
+    invoke-virtual {v0, v3, v4}, Lorg/json/JSONArray;->put(J)Lorg/json/JSONArray;
+
+    .line 211
+    .end local v3    # "d":J
+    add-int/lit8 v2, v2, 0x1
+
+    goto :goto_0
+
+    .line 214
+    :cond_0
+    return-object v0
+.end method
+
+.method private getExceptionString(Ljava/lang/Exception;)Ljava/lang/String;
+    .locals 3
+    .param p1, "e"    # Ljava/lang/Exception;
+
+    .line 166
+    invoke-virtual {p1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 167
+    .local v0, "s":Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/String;->length()I
+
+    move-result v1
+
+    const/16 v2, 0x46
+
+    if-le v1, v2, :cond_0
+
+    .line 168
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1, v2}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 170
+    :cond_0
+    return-object v0
+.end method
+
+.method private timeDiv()J
+    .locals 4
+
+    .line 206
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    move-result-wide v0
+
+    iget-wide v2, p0, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->mCreateTime:J
+
+    sub-long/2addr v0, v2
+
+    return-wide v0
+.end method
+
+
+# virtual methods
+.method public callEnd()V
+    .locals 4
+
+    .line 148
+    iget-object v0, p0, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->mTimeArray:[J
+
+    invoke-direct {p0}, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->timeDiv()J
+
+    move-result-wide v1
+
+    const/16 v3, 0x11
+
+    aput-wide v1, v0, v3
+
+    .line 149
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->mReadyPublish:Z
+
+    .line 150
+    invoke-static {}, Lcom/xiaopeng/lib/framework/netchannelmodule/common/ContextNetStatusProvider;->getNetType()I
+
+    move-result v0
+
+    iput v0, p0, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->mNetType:I
+
+    .line 151
+    invoke-static {}, Lcom/xiaopeng/lib/framework/netchannelmodule/common/ContextNetStatusProvider;->getNetStrength()I
+
+    move-result v0
+
+    iput v0, p0, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->mNetStrength:I
+
+    .line 152
+    return-void
+.end method
+
+.method public callFailed(Ljava/io/IOException;)V
+    .locals 4
+    .param p1, "ioe"    # Ljava/io/IOException;
+
+    .line 155
+    iget-object v0, p0, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->mTimeArray:[J
+
+    invoke-direct {p0}, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->timeDiv()J
+
+    move-result-wide v1
+
+    const/16 v3, 0x11
+
+    aput-wide v1, v0, v3
+
+    .line 156
+    invoke-direct {p0, p1}, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->getExceptionString(Ljava/lang/Exception;)Ljava/lang/String;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->mCallException:Ljava/lang/String;
+
+    .line 157
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->mReadyPublish:Z
+
+    .line 158
+    invoke-static {}, Lcom/xiaopeng/lib/framework/netchannelmodule/common/ContextNetStatusProvider;->getNetType()I
+
+    move-result v0
+
+    iput v0, p0, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->mNetType:I
+
+    .line 159
+    invoke-static {}, Lcom/xiaopeng/lib/framework/netchannelmodule/common/ContextNetStatusProvider;->getNetStrength()I
+
+    move-result v0
+
+    iput v0, p0, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->mNetStrength:I
+
+    .line 160
+    return-void
+.end method
+
+.method public callStart()V
+    .locals 4
+
+    .line 77
+    iget-object v0, p0, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->mTimeArray:[J
+
+    invoke-direct {p0}, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->timeDiv()J
+
+    move-result-wide v1
+
+    const/4 v3, 0x0
+
+    aput-wide v1, v0, v3
+
+    .line 78
+    return-void
+.end method
+
+.method public connectEnd(Ljava/net/InetSocketAddress;Ljava/net/Proxy;Lokhttp3/Protocol;)V
+    .locals 4
+    .param p1, "inetSocketAddress"    # Ljava/net/InetSocketAddress;
+    .param p2, "proxy"    # Ljava/net/Proxy;
+    .param p3, "protocol"    # Lokhttp3/Protocol;
+        .annotation build Landroid/support/annotation/Nullable;
+        .end annotation
+    .end param
+
+    .line 101
+    iget-object v0, p0, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->mTimeArray:[J
+
+    invoke-direct {p0}, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->timeDiv()J
+
+    move-result-wide v1
+
+    const/4 v3, 0x6
+
+    aput-wide v1, v0, v3
+
+    .line 102
+    return-void
+.end method
+
+.method public connectFailed(Ljava/net/InetSocketAddress;Ljava/net/Proxy;Lokhttp3/Protocol;Ljava/io/IOException;)V
+    .locals 0
+    .param p1, "inetSocketAddress"    # Ljava/net/InetSocketAddress;
+    .param p2, "proxy"    # Ljava/net/Proxy;
+    .param p3, "protocol"    # Lokhttp3/Protocol;
+        .annotation build Landroid/support/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p4, "ioe"    # Ljava/io/IOException;
+
+    .line 163
+    return-void
+.end method
+
+.method public connectStart(Ljava/net/InetSocketAddress;Ljava/net/Proxy;)V
+    .locals 4
+    .param p1, "inetSocketAddress"    # Ljava/net/InetSocketAddress;
+    .param p2, "proxy"    # Ljava/net/Proxy;
+
+    .line 89
+    iget-object v0, p0, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->mTimeArray:[J
+
+    invoke-direct {p0}, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->timeDiv()J
+
+    move-result-wide v1
+
+    const/4 v3, 0x3
+
+    aput-wide v1, v0, v3
+
+    .line 90
+    return-void
+.end method
+
+.method public connectionAcquired(Lokhttp3/Connection;)V
+    .locals 4
+    .param p1, "connection"    # Lokhttp3/Connection;
+
+    .line 105
+    iget-object v0, p0, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->mTimeArray:[J
+
+    invoke-direct {p0}, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->timeDiv()J
+
+    move-result-wide v1
+
+    const/4 v3, 0x7
+
+    aput-wide v1, v0, v3
+
+    .line 106
+    return-void
+.end method
+
+.method public connectionReleased(Lokhttp3/Connection;)V
+    .locals 4
+    .param p1, "connection"    # Lokhttp3/Connection;
+
+    .line 144
+    iget-object v0, p0, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->mTimeArray:[J
+
+    invoke-direct {p0}, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->timeDiv()J
+
+    move-result-wide v1
+
+    const/16 v3, 0x10
+
+    aput-wide v1, v0, v3
+
+    .line 145
+    return-void
+.end method
+
+.method public dnsEnd(Ljava/lang/String;Ljava/util/List;)V
+    .locals 4
+    .param p1, "domainName"    # Ljava/lang/String;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "Ljava/util/List<",
+            "Ljava/net/InetAddress;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 85
+    .local p2, "inetAddressList":Ljava/util/List;, "Ljava/util/List<Ljava/net/InetAddress;>;"
+    iget-object v0, p0, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->mTimeArray:[J
+
+    invoke-direct {p0}, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->timeDiv()J
+
+    move-result-wide v1
+
+    const/4 v3, 0x2
+
+    aput-wide v1, v0, v3
+
+    .line 86
+    return-void
+.end method
+
+.method public dnsStart(Ljava/lang/String;)V
+    .locals 4
+    .param p1, "domainName"    # Ljava/lang/String;
+
+    .line 81
+    iget-object v0, p0, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->mTimeArray:[J
+
+    invoke-direct {p0}, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->timeDiv()J
+
+    move-result-wide v1
+
+    const/4 v3, 0x1
+
+    aput-wide v1, v0, v3
+
+    .line 82
+    return-void
+.end method
+
+.method public readyPublish()Z
+    .locals 4
+
+    .line 174
+    iget-boolean v0, p0, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->mReadyPublish:Z
+
+    if-nez v0, :cond_1
+
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    move-result-wide v0
+
+    iget-wide v2, p0, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->mCreateTime:J
+
+    sub-long/2addr v0, v2
+
+    const-wide/32 v2, 0x927c0
+
+    cmp-long v0, v0, v2
+
+    if-lez v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    goto :goto_1
+
+    :cond_1
+    :goto_0
+    const/4 v0, 0x1
+
+    :goto_1
+    return v0
+.end method
+
+.method public requestBodyEnd(J)V
+    .locals 4
+    .param p1, "byteCount"    # J
+
+    .line 122
+    iget-object v0, p0, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->mTimeArray:[J
+
+    invoke-direct {p0}, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->timeDiv()J
+
+    move-result-wide v1
+
+    const/16 v3, 0xb
+
+    aput-wide v1, v0, v3
+
+    .line 123
+    return-void
+.end method
+
+.method public requestBodyStart()V
+    .locals 4
+
+    .line 118
+    iget-object v0, p0, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->mTimeArray:[J
+
+    invoke-direct {p0}, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->timeDiv()J
+
+    move-result-wide v1
+
+    const/16 v3, 0xa
+
+    aput-wide v1, v0, v3
+
+    .line 119
+    return-void
+.end method
+
+.method public requestHeadersEnd(Lokhttp3/Request;)V
+    .locals 4
+    .param p1, "request"    # Lokhttp3/Request;
+
+    .line 113
+    invoke-virtual {p1}, Lokhttp3/Request;->method()Ljava/lang/String;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->mMethod:Ljava/lang/String;
+
+    .line 114
+    iget-object v0, p0, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->mTimeArray:[J
+
+    invoke-direct {p0}, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->timeDiv()J
+
+    move-result-wide v1
+
+    const/16 v3, 0x9
+
+    aput-wide v1, v0, v3
+
+    .line 115
+    return-void
+.end method
+
+.method public requestHeadersStart()V
+    .locals 4
+
+    .line 109
+    iget-object v0, p0, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->mTimeArray:[J
+
+    invoke-direct {p0}, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->timeDiv()J
+
+    move-result-wide v1
+
+    const/16 v3, 0x8
+
+    aput-wide v1, v0, v3
+
+    .line 110
+    return-void
+.end method
+
+.method public responseBodyEnd(J)V
+    .locals 4
+    .param p1, "byteCount"    # J
+
+    .line 139
+    iput-wide p1, p0, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->mRespBodySize:J
+
+    .line 140
+    iget-object v0, p0, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->mTimeArray:[J
+
+    invoke-direct {p0}, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->timeDiv()J
+
+    move-result-wide v1
+
+    const/16 v3, 0xf
+
+    aput-wide v1, v0, v3
+
+    .line 141
+    return-void
+.end method
+
+.method public responseBodyStart()V
+    .locals 4
+
+    .line 135
+    iget-object v0, p0, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->mTimeArray:[J
+
+    invoke-direct {p0}, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->timeDiv()J
+
+    move-result-wide v1
+
+    const/16 v3, 0xe
+
+    aput-wide v1, v0, v3
+
+    .line 136
+    return-void
+.end method
+
+.method public responseHeadersEnd(Lokhttp3/Response;)V
+    .locals 4
+    .param p1, "response"    # Lokhttp3/Response;
+
+    .line 130
+    iget-object v0, p0, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->mTimeArray:[J
+
+    invoke-direct {p0}, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->timeDiv()J
+
+    move-result-wide v1
+
+    const/16 v3, 0xd
+
+    aput-wide v1, v0, v3
+
+    .line 131
+    invoke-virtual {p1}, Lokhttp3/Response;->code()I
+
+    move-result v0
+
+    int-to-long v0, v0
+
+    iput-wide v0, p0, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->mRespCode:J
+
+    .line 132
+    return-void
+.end method
+
+.method public responseHeadersStart()V
+    .locals 4
+
+    .line 126
+    iget-object v0, p0, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->mTimeArray:[J
+
+    invoke-direct {p0}, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->timeDiv()J
+
+    move-result-wide v1
+
+    const/16 v3, 0xc
+
+    aput-wide v1, v0, v3
+
+    .line 127
+    return-void
+.end method
+
+.method public secureConnectEnd(Lokhttp3/Handshake;)V
+    .locals 4
+    .param p1, "handshake"    # Lokhttp3/Handshake;
+        .annotation build Landroid/support/annotation/Nullable;
+        .end annotation
+    .end param
+
+    .line 97
+    iget-object v0, p0, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->mTimeArray:[J
+
+    invoke-direct {p0}, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->timeDiv()J
+
+    move-result-wide v1
+
+    const/4 v3, 0x5
+
+    aput-wide v1, v0, v3
+
+    .line 98
+    return-void
+.end method
+
+.method public secureConnectStart()V
+    .locals 4
+
+    .line 93
+    iget-object v0, p0, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->mTimeArray:[J
+
+    invoke-direct {p0}, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->timeDiv()J
+
+    move-result-wide v1
+
+    const/4 v3, 0x4
+
+    aput-wide v1, v0, v3
+
+    .line 94
+    return-void
+.end method
+
+.method public toJson()Lorg/json/JSONObject;
+    .locals 7
+
+    .line 178
+    new-instance v0, Lorg/json/JSONObject;
+
+    invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
+
+    .line 181
+    .local v0, "object":Lorg/json/JSONObject;
+    :try_start_0
+    const-string v1, "ti"
+
+    iget-wide v2, p0, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->mCreateTime:J
+
+    invoke-virtual {v0, v1, v2, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
+
+    .line 182
+    const-string v1, "u"
+
+    iget-object v2, p0, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->mCallUrl:Ljava/lang/String;
+
+    invoke-virtual {v0, v1, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    .line 183
+    const-string v1, "ne"
+
+    iget v2, p0, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->mNetType:I
+
+    invoke-virtual {v0, v1, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
+
+    .line 184
+    const-string v1, "ns"
+
+    iget v2, p0, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->mNetStrength:I
+
+    invoke-virtual {v0, v1, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
+
+    .line 185
+    iget-wide v1, p0, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->mRespBodySize:J
+
+    const-wide/16 v3, 0x0
+
+    cmp-long v1, v1, v3
+
+    if-lez v1, :cond_0
+
+    .line 186
+    const-string v1, "bs"
+
+    iget-wide v5, p0, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->mRespBodySize:J
+
+    invoke-virtual {v0, v1, v5, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
+
+    .line 188
+    :cond_0
+    iget-wide v1, p0, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->mRespCode:J
+
+    cmp-long v1, v1, v3
+
+    if-lez v1, :cond_1
+
+    .line 189
+    const-string v1, "cd"
+
+    iget-wide v2, p0, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->mRespCode:J
+
+    invoke-virtual {v0, v1, v2, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
+
+    .line 191
+    :cond_1
+    iget-object v1, p0, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->mCallException:Ljava/lang/String;
+
+    if-eqz v1, :cond_2
+
+    .line 192
+    const-string v1, "ce"
+
+    iget-object v2, p0, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->mCallException:Ljava/lang/String;
+
+    invoke-virtual {v0, v1, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    .line 193
+    const-string v1, "ta"
+
+    invoke-static {}, Lcom/xiaopeng/lib/utils/NetUtils;->getTrafficStatus()I
+
+    move-result v2
+
+    invoke-virtual {v0, v1, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
+
+    .line 195
+    :cond_2
+    iget-object v1, p0, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->mMethod:Ljava/lang/String;
+
+    if-eqz v1, :cond_3
+
+    .line 196
+    const-string v1, "md"
+
+    iget-object v2, p0, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->mMethod:Ljava/lang/String;
+
+    invoke-virtual {v0, v1, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    .line 198
+    :cond_3
+    const-string v1, "tt"
+
+    iget-object v2, p0, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->mTimeArray:[J
+
+    invoke-direct {p0, v2}, Lcom/xiaopeng/lib/framework/netchannelmodule/http/statistic/EventData;->array([J)Lorg/json/JSONArray;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v1, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+    :try_end_0
+    .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 201
+    goto :goto_0
+
+    .line 199
+    :catch_0
+    move-exception v1
+
+    .line 200
+    .local v1, "e":Lorg/json/JSONException;
+    invoke-virtual {v1}, Lorg/json/JSONException;->printStackTrace()V
+
+    .line 202
+    .end local v1    # "e":Lorg/json/JSONException;
+    :goto_0
+    return-object v0
+.end method

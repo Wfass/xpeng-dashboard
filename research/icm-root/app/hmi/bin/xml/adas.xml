@@ -1,0 +1,251 @@
+<Adas name="Adas">
+    <Light>
+        <DippedHeadlight type="bool">false</DippedHeadlight>
+        <FullBeamHeadlight type="bool">false</FullBeamHeadlight>
+        <DRL type="bool">false</DRL>
+        <ClearanceLamp type="bool">false</ClearanceLamp>
+        <SopLamp type="bool">false</SopLamp>
+        <RearFogLamp type="bool">false</RearFogLamp>
+		<PositionLamp type="bool">false</PositionLamp>
+    </Light>
+    <Road>
+        <LeftLeft>
+            <Type type="int">0</Type>
+            <Start type="int">0</Start>
+            <Range type="int">0</Range>
+            <C0 type="float">0</C0>
+            <C1 type="float">0</C1>
+            <C2 type="float">0</C2>
+            <C3 type="float">0</C3>
+        </LeftLeft>
+        <Left>
+            <Type type="int">0</Type>
+            <Start type="int">0</Start>
+            <Range type="int">0</Range>
+            <C0 type="float">0</C0>
+            <C1 type="float">0</C1>
+            <C2 type="float">0</C2>
+            <C3 type="float">0</C3>
+        </Left>
+        <Right>
+            <Type type="int">0</Type>
+            <Start type="int">0</Start>
+            <Range type="int">0</Range>
+            <C0 type="float">0</C0>
+            <C1 type="float">0</C1>
+            <C2 type="float">0</C2>
+            <C3 type="float">0</C3>
+        </Right>
+        <RightRight>
+            <Type type="int">0</Type>
+            <Start type="int">0</Start>
+            <Range type="int">0</Range>
+            <C0 type="float">0</C0>
+            <C1 type="float">0</C1>
+            <C2 type="float">0</C2>
+            <C3 type="float">0</C3>
+        </RightRight>
+		<NGPLineType type="int">0</NGPLineType>
+    </Road>
+    <Radar>
+        <Front>
+            <DistValue type="string">--</DistValue>
+            <CL>
+                <Color type="int">0</Color>
+                <Dist type="int">140</Dist>
+            </CL>
+            <CR>
+                <Color type="int">0</Color>
+                <Dist type="int">140</Dist>
+            </CR>
+            <OL>
+                <Color type="int">0</Color>
+                <Dist type="int">140</Dist>
+            </OL>
+            <OR>
+                <Color type="int">0</Color>
+                <Dist type="int">140</Dist>
+            </OR>
+            <SL>
+                <Color type="int">0</Color>
+                <Dist type="int">140</Dist>
+            </SL>
+            <SR>
+                <Color type="int">0</Color>
+                <Dist type="int">140</Dist>
+            </SR>
+        </Front>
+        <Behind>
+            <DistValue type="string">--</DistValue>
+            <CL>
+                <Color type="int">0</Color>
+                <Dist type="int">140</Dist>
+            </CL>
+            <CR>
+                <Color type="int">0</Color>
+                <Dist type="int">140</Dist>
+            </CR>
+            <OL>
+                <Color type="int">0</Color>
+                <Dist type="int">140</Dist>
+            </OL>
+            <OR>
+                <Color type="int">0</Color>
+                <Dist type="int">140</Dist>
+            </OR>
+            <SL>
+                <Color type="int">0</Color>
+                <Dist type="int">140</Dist>
+            </SL>
+            <SR>
+                <Color type="int">0</Color>
+                <Dist type="int">140</Dist>
+            </SR>
+        </Behind>
+    </Radar>
+    <RCTA>
+        <LeftVisible type="bool">false</LeftVisible>
+        <RightVisible type="bool">false</RightVisible>
+    </RCTA>
+    <ACC>
+        <State type="int">0</State>
+        <IsCC type="bool">false</IsCC>
+        <Speed type="int">0</Speed>
+        <SpeedColor type="int">0</SpeedColor>
+    </ACC>
+    <BSD>
+        <Left type="int">0</Left>
+        <Right type="int">0</Right>
+    </BSD>
+    <LCCState type="int">0</LCCState>
+	<NGPState type="int">0</NGPState>
+    <RCWVisible type="bool">false</RCWVisible>
+    <FCWVisible type="bool">false</FCWVisible>
+    <AEBVisible type="bool">false</AEBVisible>
+    <Vehlnfo1>
+        <Angle type="int">0</Angle>
+        <X type="float">0</X>
+        <Y type="float">0</Y>
+        <Color type="int">0</Color>
+        <Type type="int">0</Type>
+    </Vehlnfo1>
+    <Vehlnfo2>
+        <Angle type="int">0</Angle>
+        <X type="float">0</X>
+        <Y type="float">0</Y>
+        <Color type="int">0</Color>
+        <Type type="int">0</Type>
+    </Vehlnfo2>
+    <Vehlnfo3>
+        <Angle type="int">0</Angle>
+        <X type="float">0</X>
+        <Y type="float">0</Y>
+        <Color type="int">0</Color>
+        <Type type="int">0</Type>
+    </Vehlnfo3>
+    <Vehlnfo4>
+        <Angle type="int">0</Angle>
+        <X type="float">0</X>
+        <Y type="float">0</Y>
+        <Color type="int">0</Color>
+        <Type type="int">0</Type>
+    </Vehlnfo4>
+    <Vehlnfo5>
+        <Angle type="int">0</Angle>
+        <X type="float">0</X>
+        <Y type="float">0</Y>
+        <Color type="int">0</Color>
+        <Type type="int">0</Type>
+    </Vehlnfo5>
+    <Vehlnfo6>
+        <Angle type="int">0</Angle>
+        <X type="float">0</X>
+        <Y type="float">0</Y>
+        <Color type="int">0</Color>
+        <Type type="int">0</Type>
+    </Vehlnfo6>
+    <Vehlnfo7>
+        <Angle type="int">0</Angle>
+        <X type="float">0</X>
+        <Y type="float">0</Y>
+        <Color type="int">0</Color>
+        <Type type="int">0</Type>
+    </Vehlnfo7>
+    <Vehlnfo8>
+        <Angle type="int">0</Angle>
+        <X type="float">0</X>
+        <Y type="float">0</Y>
+        <Color type="int">0</Color>
+        <Type type="int">0</Type>
+    </Vehlnfo8>
+    <Vehlnfo9>
+        <Angle type="int">0</Angle>
+        <X type="float">0</X>
+        <Y type="float">0</Y>
+        <Color type="int">0</Color>
+        <Type type="int">0</Type>
+    </Vehlnfo9>
+    <Vehlnfo10>
+        <Angle type="int">0</Angle>
+        <X type="float">0</X>
+        <Y type="float">0</Y>
+        <Color type="int">0</Color>
+        <Type type="int">0</Type>
+    </Vehlnfo10>
+    <Vehlnfo11>
+        <Angle type="int">0</Angle>
+        <X type="float">0</X>
+        <Y type="float">0</Y>
+        <Color type="int">0</Color>
+        <Type type="int">0</Type>
+    </Vehlnfo11>
+    <ParkSpace>
+        <ALLState type="int">0</ALLState>
+        <L1State type="int">0</L1State>
+        <L2State type="int">0</L2State>
+        <L3State type="int">0</L3State>
+        <R1State type="int">0</R1State>
+        <R2State type="int">0</R2State>
+        <R3State type="int">0</R3State>
+    </ParkSpace>
+    <ALC>
+        <State type="int">0</State>
+        <X type="int">0</X>
+        <Y type="float">0</Y>
+        <Angle type="int">0</Angle>
+    </ALC>
+    <TSR>
+        <Forbid type="int">0</Forbid>
+        <Warning type="int">0</Warning>
+        <RateLimitingType type="int">0</RateLimitingType>
+        <RateLimitingValue type="int">0</RateLimitingValue>
+        <RateLimitingIcon type="int">0</RateLimitingIcon>
+    </TSR>
+    <Hold type="bool">false</Hold>
+
+	<TrafficCone1>
+        <X type="float">0</X>
+        <Y type="float">0</Y>
+        <Type type="int">0</Type>
+    </TrafficCone1>
+	<TrafficCone2>
+        <X type="float">0</X>
+        <Y type="float">0</Y>
+        <Type type="int">0</Type>
+    </TrafficCone2>
+	<TrafficCone3>
+        <X type="float">0</X>
+        <Y type="float">0</Y>
+        <Type type="int">0</Type>
+    </TrafficCone3>
+	<TrafficCone4>
+        <X type="float">0</X>
+        <Y type="float">0</Y>
+        <Type type="int">0</Type>
+    </TrafficCone4>
+	<TrafficCone5>
+        <X type="float">0</X>
+        <Y type="float">0</Y>
+        <Type type="int">0</Type>
+    </TrafficCone5>
+</Adas>

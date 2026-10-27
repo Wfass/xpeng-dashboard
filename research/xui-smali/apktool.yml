@@ -1,0 +1,9 @@
+version: 2.12.1
+apkFileName: XUIService.apk
+doNotCompress:
+- arsc
+- dex
+- mp4
+- png
+- wav
+- assets/index_kstp.html

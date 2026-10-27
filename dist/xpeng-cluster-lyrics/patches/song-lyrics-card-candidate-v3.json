@@ -1,0 +1,61 @@
+{
+  "status": "V3 DEPLOYED; ACTIVE READBACK AND POST-REBOOT HASH VERIFIED; PENDING LIVE VISUAL CHECK",
+  "source": "/Users/wayne/个人/xpeng/ClusterLyrics/research/icm-root/app/hmi/bin/card.kzb",
+  "source_sha256": "a742743904465ba1932f4363ca034e385490132a758a7a29412616ed56920eac",
+  "output": "/Users/wayne/个人/xpeng/ClusterLyrics/patches/card.song-lyrics.v3.kzb",
+  "output_sha256": "6bcbb9bd81512664f7a66742864a82df7097160492f235fd302706c1987c2a62",
+  "strategy": "Reuse the existing Trip card index (4) and replace its prefab with the Navigation card scene; keep the original Navigation card unchanged. Reuse MapBG at 660x660 and rebind NaviTexture references to MusicTexture.",
+  "changes": {
+    "trip_slot_prefab": "Card_Navigation with MusicTexture binding",
+    "map_bg": {
+      "width": 660,
+      "height": 660,
+      "translation": [
+        33,
+        64
+      ]
+    },
+    "texture_binding": {
+      "from_property_index": 118,
+      "to_property_index": 117,
+      "replaced_prefab_offsets": [
+        122,
+        456,
+        516,
+        540
+      ]
+    },
+    "selector_label": {
+      "from": "里程",
+      "to": "歌词"
+    },
+    "selector_icon": {
+      "from": "kzb://card/Textures/Icon/ic_applist_trip",
+      "to": "kzb://card/Textures/Icon/ic_applist_media"
+    },
+    "selector_prefabs": [
+      "/Prefabs/List_Icon_5_Left",
+      "/Prefabs/List_Icon_6_Left",
+      "/Prefabs/List_Icon_Right"
+    ]
+  },
+  "static_validation": "KZBF header and 446-entry directory parse; all non-target resource payloads are byte-identical; Trip slot points to the patched Navigation prefab; its four NaviTexture references now use MusicTexture; all selector resources contain the new label and media icon URL.",
+  "unvalidated": [
+    "physical instrument rendering, final spacing, and lyric readability require a fresh dashboard photo",
+    "whether Navigation-only Guidance/LaneIcon elements can overlay the lyrics while navigation is active",
+    "long lyric wrapping across multiple real songs"
+  ],
+  "deployment": {
+    "date": "2026-10-28",
+    "active_path": "/app/hmi/bin/card.kzb",
+    "active_bytes": 1255320,
+    "active_sha256": "6bcbb9bd81512664f7a66742864a82df7097160492f235fd302706c1987c2a62",
+    "readback_before_reboot": true,
+    "readback_after_reboot": true,
+    "backup": "backups/ICM-20261028-readonly/card.kzb.active-candidate-v3",
+    "previous_v2_backup_sha256": "9e9e1b27692b210719951f2db347333d1552bdfb1e0053c7d11c1b0aea304f87",
+    "post_reboot_root_mount": "read-only",
+    "ecluster_process_seen": true,
+    "lyrics_worker_log": "MUSIC_SUBMITTED; imageBytes=56599"
+  }
+}

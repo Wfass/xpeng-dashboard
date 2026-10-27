@@ -1,0 +1,262 @@
+.class final Lzipkin2/Call$ErrorHandling;
+.super Lzipkin2/Call$Base;
+.source "Call.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lzipkin2/Call;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = "ErrorHandling"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<V:",
+        "Ljava/lang/Object;",
+        ">",
+        "Lzipkin2/Call$Base<",
+        "TV;>;"
+    }
+.end annotation
+
+
+# static fields
+.field static final c:Ljava/lang/Object;
+
+
+# instance fields
+.field final d:Lzipkin2/Call$ErrorHandler;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lzipkin2/Call$ErrorHandler<",
+            "TV;>;"
+        }
+    .end annotation
+.end field
+
+.field final e:Lzipkin2/Call;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lzipkin2/Call<",
+            "TV;>;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 310
+    new-instance v0, Ljava/lang/Object;
+
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    sput-object v0, Lzipkin2/Call$ErrorHandling;->c:Ljava/lang/Object;
+
+    return-void
+.end method
+
+.method constructor <init>(Lzipkin2/Call$ErrorHandler;Lzipkin2/Call;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lzipkin2/Call$ErrorHandler<",
+            "TV;>;",
+            "Lzipkin2/Call<",
+            "TV;>;)V"
+        }
+    .end annotation
+
+    .line 314
+    invoke-direct {p0}, Lzipkin2/Call$Base;-><init>()V
+
+    .line 315
+    iput-object p1, p0, Lzipkin2/Call$ErrorHandling;->d:Lzipkin2/Call$ErrorHandler;
+
+    .line 316
+    iput-object p2, p0, Lzipkin2/Call$ErrorHandling;->e:Lzipkin2/Call;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic clone()Ljava/lang/Object;
+    .locals 1
+
+    .line 309
+    invoke-virtual {p0}, Lzipkin2/Call$ErrorHandling;->clone()Lzipkin2/Call;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public clone()Lzipkin2/Call;
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lzipkin2/Call<",
+            "TV;>;"
+        }
+    .end annotation
+
+    .line 359
+    new-instance v0, Lzipkin2/Call$ErrorHandling;
+
+    iget-object v1, p0, Lzipkin2/Call$ErrorHandling;->d:Lzipkin2/Call$ErrorHandler;
+
+    iget-object v2, p0, Lzipkin2/Call$ErrorHandling;->e:Lzipkin2/Call;
+
+    invoke-virtual {v2}, Lzipkin2/Call;->clone()Lzipkin2/Call;
+
+    move-result-object v2
+
+    invoke-direct {v0, v1, v2}, Lzipkin2/Call$ErrorHandling;-><init>(Lzipkin2/Call$ErrorHandler;Lzipkin2/Call;)V
+
+    return-object v0
+.end method
+
+.method protected doCancel()V
+    .locals 1
+
+    .line 351
+    iget-object v0, p0, Lzipkin2/Call$ErrorHandling;->e:Lzipkin2/Call;
+
+    invoke-virtual {v0}, Lzipkin2/Call;->cancel()V
+
+    return-void
+.end method
+
+.method protected doEnqueue(Lzipkin2/Callback;)V
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lzipkin2/Callback<",
+            "TV;>;)V"
+        }
+    .end annotation
+
+    .line 339
+    iget-object v0, p0, Lzipkin2/Call$ErrorHandling;->e:Lzipkin2/Call;
+
+    new-instance v1, Lzipkin2/Call$ErrorHandling$2;
+
+    invoke-direct {v1, p0, p1}, Lzipkin2/Call$ErrorHandling$2;-><init>(Lzipkin2/Call$ErrorHandling;Lzipkin2/Callback;)V
+
+    invoke-virtual {v0, v1}, Lzipkin2/Call;->enqueue(Lzipkin2/Callback;)V
+
+    return-void
+.end method
+
+.method protected doExecute()Ljava/lang/Object;
+    .locals 4
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()TV;"
+        }
+    .end annotation
+
+    .line 321
+    :try_start_0
+    iget-object v0, p0, Lzipkin2/Call$ErrorHandling;->e:Lzipkin2/Call;
+
+    invoke-virtual {v0}, Lzipkin2/Call;->execute()Ljava/lang/Object;
+
+    move-result-object v0
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_2
+    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/lang/Error; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-object v0
+
+    :catch_0
+    move-exception v0
+
+    goto :goto_0
+
+    :catch_1
+    move-exception v0
+
+    goto :goto_0
+
+    :catch_2
+    move-exception v0
+
+    .line 323
+    :goto_0
+    new-instance v1, Ljava/util/concurrent/atomic/AtomicReference;
+
+    sget-object v2, Lzipkin2/Call$ErrorHandling;->c:Ljava/lang/Object;
+
+    invoke-direct {v1, v2}, Ljava/util/concurrent/atomic/AtomicReference;-><init>(Ljava/lang/Object;)V
+
+    .line 324
+    iget-object v2, p0, Lzipkin2/Call$ErrorHandling;->d:Lzipkin2/Call$ErrorHandler;
+
+    new-instance v3, Lzipkin2/Call$ErrorHandling$1;
+
+    invoke-direct {v3, p0, v1}, Lzipkin2/Call$ErrorHandling$1;-><init>(Lzipkin2/Call$ErrorHandling;Ljava/util/concurrent/atomic/AtomicReference;)V
+
+    invoke-interface {v2, v0, v3}, Lzipkin2/Call$ErrorHandler;->onErrorReturn(Ljava/lang/Throwable;Lzipkin2/Callback;)V
+
+    .line 332
+    invoke-virtual {v1}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+
+    move-result-object v1
+
+    .line 333
+    sget-object v2, Lzipkin2/Call$ErrorHandling;->c:Ljava/lang/Object;
+
+    if-eq v2, v1, :cond_0
+
+    return-object v1
+
+    :cond_0
+    throw v0
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 2
+
+    .line 355
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "ErrorHandling{call="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lzipkin2/Call$ErrorHandling;->e:Lzipkin2/Call;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", errorHandler="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lzipkin2/Call$ErrorHandling;->d:Lzipkin2/Call$ErrorHandler;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string/jumbo v1, "}"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method

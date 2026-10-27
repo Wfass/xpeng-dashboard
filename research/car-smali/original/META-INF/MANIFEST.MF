@@ -1,0 +1,63 @@
+Manifest-Version: 1.0
+Created-By: 9 (Oracle Corporation)
+
+Name: AndroidManifest.xml
+SHA1-Digest: jeZHDUsvz/IXOxVMGa91nX82LAA=
+
+Name: classes.dex
+SHA1-Digest: Q7u9GyrnBwQdIXnEOilbOBYEMJU=
+
+Name: res/drawable-hdpi-v4/car_ic_error.png
+SHA1-Digest: dbj4Ed9qC8HbC38SzwPOi6gwpTw=
+
+Name: res/drawable-hdpi-v4/car_ic_mode.png
+SHA1-Digest: 2Gfbus7qgOceelszFDBTr/cFwR0=
+
+Name: res/drawable-mdpi-v4/car_ic_error.png
+SHA1-Digest: aYjs5bIBqwyByV3IMV0whecXzJE=
+
+Name: res/drawable-mdpi-v4/car_ic_mode.png
+SHA1-Digest: a8CbWtkwLRuJEtBFnIwZfxd34g0=
+
+Name: res/drawable-xhdpi-v4/car_ic_error.png
+SHA1-Digest: X0bkpwIE/2S0jOzEjqr1VxBBpqk=
+
+Name: res/drawable-xhdpi-v4/car_ic_mode.png
+SHA1-Digest: LRASCeYmrXEkD2jcQ3PH2t88vZE=
+
+Name: res/drawable-xxhdpi-v4/car_ic_error.png
+SHA1-Digest: EbKdu5Pyz+dNJL0zGfTLp9UYKQ0=
+
+Name: res/drawable-xxhdpi-v4/car_ic_mode.png
+SHA1-Digest: JHmpejijkriLNuSexi4uYkiviP8=
+
+Name: res/drawable/exit_button_background.xml
+SHA1-Digest: h190N4f16MSG27LhBuZtJqc/wz8=
+
+Name: res/drawable/exit_button_ripple_background.xml
+SHA1-Digest: Xlu6IqWp5UL3hvUO5fD7WO+FU2w=
+
+Name: res/drawable/yw_1222_0335.jpg
+SHA1-Digest: qvJ3MvlOUrbBb2Zae2i2KboK7Ag=
+
+Name: res/layout/activity_blocking.xml
+SHA1-Digest: BufuN8MyhjL+Vt9Athzth02nW+4=
+
+Name: res/layout/instrument_cluster.xml
+SHA1-Digest: 4q1Wpbz7D04bzIkQHEY5ALowPRY=
+
+Name: res/raw/car_config.json
+SHA1-Digest: EqthgXzMZXVOiahml3YzWwWPxSA=
+
+Name: res/raw/keep.xml
+SHA1-Digest: HfxuS5MqsvkqESCaMuFNyMjcsLc=
+
+Name: res/xml/car_ux_restrictions_map.xml
+SHA1-Digest: O4yjp/pm2OUcYcxP5FgVbC/hdew=
+
+Name: res/xml/car_volume_groups.xml
+SHA1-Digest: Gb0d6a9qrGgA8dvhAqzYG2o7Joo=
+
+Name: resources.arsc
+SHA1-Digest: 4xgcB9VqNI94rLWfhYEnHra38Q8=
+

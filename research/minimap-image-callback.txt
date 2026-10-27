@@ -1,0 +1,259 @@
+.class public Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper$a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/xiaopeng/montecarlo/service/minimap/LocalMiniMapSurface$e;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+
+# instance fields
+.field public final synthetic a:Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;
+
+
+# direct methods
+.method public constructor <init>(Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;)V
+    .registers 2
+
+    .line 1
+    iput-object p1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper$a;->a:Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(Landroid/view/Surface;II)V
+    .registers 5
+
+    .line 1
+    invoke-static {}, Lcom/xiaopeng/core/util/UiHandlerUtil;->getInstance()Lcom/xiaopeng/core/util/UiHandlerUtil;
+
+    move-result-object p1
+
+    new-instance v0, Lcom/xiaopeng/lib/bughunter/i6/z;
+
+    invoke-direct {v0, p0, p2, p3}, Lcom/xiaopeng/lib/bughunter/i6/z;-><init>(Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper$a;II)V
+
+    invoke-virtual {p1, v0}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+
+    return-void
+.end method
+
+.method public b(Landroid/view/Surface;II)V
+    .registers 7
+
+    .line 1
+    invoke-static {}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a()Lcom/xiaopeng/core/util/L$Tag;
+
+    move-result-object v0
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, ">>> onReaderSizeChanged width="
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v2, " height="
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Lcom/xiaopeng/core/util/L;->i(Lcom/xiaopeng/core/util/L$Tag;Ljava/lang/String;)V
+
+    .line 2
+    invoke-static {}, Lcom/xiaopeng/core/util/UiHandlerUtil;->getInstance()Lcom/xiaopeng/core/util/UiHandlerUtil;
+
+    move-result-object v0
+
+    new-instance v1, Lcom/xiaopeng/lib/bughunter/i6/a0;
+
+    invoke-direct {v1, p0, p2, p3, p1}, Lcom/xiaopeng/lib/bughunter/i6/a0;-><init>(Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper$a;IILandroid/view/Surface;)V
+
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+
+    return-void
+.end method
+
+.method public c()V
+    .registers 3
+
+    .line 1
+    invoke-static {}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a()Lcom/xiaopeng/core/util/L$Tag;
+
+    move-result-object v0
+
+    const-string v1, ">>> onImageReaderError"
+
+    invoke-static {v0, v1}, Lcom/xiaopeng/core/util/L;->i(Lcom/xiaopeng/core/util/L$Tag;Ljava/lang/String;)V
+
+    .line 2
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper$a;->a:Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;
+
+    invoke-virtual {v0}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->forceResetMiniMap()V
+
+    return-void
+.end method
+
+.method public d(Landroid/view/Surface;II)V
+    .registers 6
+
+    .line 1
+    invoke-static {}, Lcom/xiaopeng/core/util/UiHandlerUtil;->getInstance()Lcom/xiaopeng/core/util/UiHandlerUtil;
+
+    move-result-object v0
+
+    new-instance v1, Lcom/xiaopeng/lib/bughunter/i6/y;
+
+    invoke-direct {v1, p0, p2, p3, p1}, Lcom/xiaopeng/lib/bughunter/i6/y;-><init>(Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper$a;IILandroid/view/Surface;)V
+
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+
+    return-void
+.end method
+
+.method public e(Landroid/media/Image$Plane;II)V
+    .registers 7
+
+    .line 1
+    sget-boolean v0, Lcom/xiaopeng/core/util/L;->ENABLE:Z
+
+    if-eqz v0, :cond_32
+
+    .line 2
+    invoke-static {}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a()Lcom/xiaopeng/core/util/L$Tag;
+
+    move-result-object v0
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, ">>> onFrameUpdate width="
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v2, " height="
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v2, " mIsNeedSendToIcm="
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v2, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper$a;->a:Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;
+
+    invoke-static {v2}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->d(Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;)Z
+
+    move-result v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Lcom/xiaopeng/core/util/L;->d(Lcom/xiaopeng/core/util/L$Tag;Ljava/lang/String;)V
+
+    .line 3
+    :cond_32
+    invoke-static {}, Lcom/xiaopeng/core/util/RootUtil;->updateMiniMapTimeTick()V
+
+    .line 4
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper$a;->a:Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;
+
+    invoke-static {v0}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->d(Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_47
+
+    invoke-static {}, Lcom/xiaopeng/common/xptbt/TBTManager;->getInstance()Lcom/xiaopeng/common/xptbt/TBTManager;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/xiaopeng/common/xptbt/TBTManager;->isNeedMiniMap()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_76
+
+    .line 5
+    :cond_47
+    invoke-virtual {p1}, Landroid/media/Image$Plane;->getBuffer()Ljava/nio/ByteBuffer;
+
+    move-result-object p1
+
+    .line 6
+    invoke-virtual {p1}, Ljava/nio/ByteBuffer;->remaining()I
+
+    move-result v0
+
+    invoke-static {v0, p2, p3}, Lcom/xiaopeng/common/mapdisplay/PoolBytes;->obtainBytes(III)Lcom/xiaopeng/common/mapdisplay/PoolBytes;
+
+    move-result-object p2
+
+    .line 7
+    iget-object p3, p2, Lcom/xiaopeng/common/mapdisplay/PoolBytes;->mBytes:[B
+
+    invoke-virtual {p1, p3}, Ljava/nio/ByteBuffer;->get([B)Ljava/nio/ByteBuffer;
+
+    .line 8
+    iget-object p1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper$a;->a:Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;
+
+    invoke-static {p1}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->f(Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;)Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper$b;
+
+    move-result-object p1
+
+    iget-object p3, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper$a;->a:Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;
+
+    invoke-static {p3}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->e(Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;)I
+
+    move-result p3
+
+    invoke-virtual {p1, p2, p3}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper$b;->a(Lcom/xiaopeng/common/mapdisplay/PoolBytes;I)V
+
+    .line 9
+    iget-object p1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper$a;->a:Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;
+
+    invoke-static {p1}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->g(Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;)Landroid/os/Handler;
+
+    move-result-object p1
+
+    iget-object p2, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper$a;->a:Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;
+
+    invoke-static {p2}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->f(Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;)Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper$b;
+
+    move-result-object p2
+
+    invoke-virtual {p1, p2}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+
+    :cond_76
+    return-void
+.end method
+

@@ -1,0 +1,141 @@
+.class Landroid/support/rastermill/LoaderAsyncTask$1;
+.super Ljava/lang/Object;
+.source "LoaderAsyncTask.java"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Landroid/support/rastermill/LoaderAsyncTask;->execute()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Landroid/support/rastermill/LoaderAsyncTask;
+
+.field final synthetic val$loader:Landroid/support/rastermill/loader/ILoader;
+
+
+# direct methods
+.method constructor <init>(Landroid/support/rastermill/LoaderAsyncTask;Landroid/support/rastermill/loader/ILoader;)V
+    .locals 0
+    .param p1, "this$0"    # Landroid/support/rastermill/LoaderAsyncTask;
+
+    .line 29
+    iput-object p1, p0, Landroid/support/rastermill/LoaderAsyncTask$1;->this$0:Landroid/support/rastermill/LoaderAsyncTask;
+
+    iput-object p2, p0, Landroid/support/rastermill/LoaderAsyncTask$1;->val$loader:Landroid/support/rastermill/loader/ILoader;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public run()V
+    .locals 4
+
+    .line 32
+    const/4 v0, 0x0
+
+    move-object v1, v0
+
+    .line 34
+    .local v1, "drawable":Landroid/support/rastermill/FrameSequenceDrawable;
+    :try_start_0
+    iget-object v2, p0, Landroid/support/rastermill/LoaderAsyncTask$1;->this$0:Landroid/support/rastermill/LoaderAsyncTask;
+
+    invoke-static {v2}, Landroid/support/rastermill/LoaderAsyncTask;->access$000(Landroid/support/rastermill/LoaderAsyncTask;)Landroid/support/rastermill/FrameSequenceController;
+
+    move-result-object v2
+
+    iget-object v3, p0, Landroid/support/rastermill/LoaderAsyncTask$1;->val$loader:Landroid/support/rastermill/loader/ILoader;
+
+    invoke-virtual {v2, v3}, Landroid/support/rastermill/FrameSequenceController;->getFrameSequenceDrawable(Landroid/support/rastermill/loader/ILoader;)Landroid/support/rastermill/FrameSequenceDrawable;
+
+    move-result-object v2
+
+    move-object v1, v2
+
+    .line 35
+    invoke-static {}, Landroid/support/rastermill/LogUtil;->isLogEnable()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    .line 36
+    iget-object v2, p0, Landroid/support/rastermill/LoaderAsyncTask$1;->val$loader:Landroid/support/rastermill/loader/ILoader;
+
+    if-eqz v2, :cond_0
+
+    iget-object v0, p0, Landroid/support/rastermill/LoaderAsyncTask$1;->val$loader:Landroid/support/rastermill/loader/ILoader;
+
+    invoke-interface {v0}, Landroid/support/rastermill/loader/ILoader;->getKey()Ljava/lang/String;
+
+    move-result-object v0
+
+    nop
+
+    .line 37
+    .local v0, "key":Ljava/lang/String;
+    :cond_0
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "doInBackground : "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v2}, Landroid/support/rastermill/LogUtil;->e(Ljava/lang/String;)V
+    :try_end_0
+    .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 41
+    .end local v0    # "key":Ljava/lang/String;
+    :cond_1
+    goto :goto_0
+
+    .line 39
+    :catch_0
+    move-exception v0
+
+    .line 40
+    .local v0, "throwable":Ljava/lang/Throwable;
+    iget-object v2, p0, Landroid/support/rastermill/LoaderAsyncTask$1;->this$0:Landroid/support/rastermill/LoaderAsyncTask;
+
+    invoke-static {v2}, Landroid/support/rastermill/LoaderAsyncTask;->access$100(Landroid/support/rastermill/LoaderAsyncTask;)Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    move-result-object v2
+
+    const/4 v3, 0x1
+
+    invoke-virtual {v2, v3}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
+
+    .line 42
+    .end local v0    # "throwable":Ljava/lang/Throwable;
+    :goto_0
+    iget-object v0, p0, Landroid/support/rastermill/LoaderAsyncTask$1;->this$0:Landroid/support/rastermill/LoaderAsyncTask;
+
+    iget-object v2, p0, Landroid/support/rastermill/LoaderAsyncTask$1;->val$loader:Landroid/support/rastermill/loader/ILoader;
+
+    invoke-static {v0, v2, v1}, Landroid/support/rastermill/LoaderAsyncTask;->access$200(Landroid/support/rastermill/LoaderAsyncTask;Landroid/support/rastermill/loader/ILoader;Landroid/support/rastermill/FrameSequenceDrawable;)V
+
+    .line 43
+    return-void
+.end method

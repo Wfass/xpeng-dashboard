@@ -1,0 +1,662 @@
+.class public Landroid/support/rastermill/CacheEngine;
+.super Ljava/lang/Object;
+.source "CacheEngine.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroid/support/rastermill/CacheEngine$LazyDiskCacheProvider;,
+        Landroid/support/rastermill/CacheEngine$CacheCallback;
+    }
+.end annotation
+
+
+# static fields
+.field private static final DIR_NAME_WEBP_CACHE:Ljava/lang/String; = "webp_cache"
+
+.field private static sInstance:Landroid/support/rastermill/CacheEngine;
+
+.field private static sMainThreadHandler:Landroid/os/Handler;
+
+
+# instance fields
+.field private final diskCacheProvider:Landroid/support/rastermill/CacheEngine$LazyDiskCacheProvider;
+
+.field private mContext:Landroid/content/Context;
+
+.field private mFetchingSet:Ljava/util/HashSet;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/HashSet<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private mFutureMap:Ljava/util/HashMap;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/HashMap<",
+            "Ljava/lang/String;",
+            "Ljava/util/LinkedList<",
+            "Landroid/support/rastermill/CacheEngine$CacheCallback;",
+            ">;>;"
+        }
+    .end annotation
+.end field
+
+.field private mLock:Ljava/lang/Object;
+
+.field private final mSourceService:Ljava/util/concurrent/ExecutorService;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    .line 36
+    new-instance v0, Landroid/os/Handler;
+
+    invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+
+    sput-object v0, Landroid/support/rastermill/CacheEngine;->sMainThreadHandler:Landroid/os/Handler;
+
+    return-void
+.end method
+
+.method private constructor <init>(Landroid/content/Context;Landroid/support/rastermill/cache/DiskCache$Factory;)V
+    .locals 2
+    .param p1, "context"    # Landroid/content/Context;
+    .param p2, "diskCacheFactory"    # Landroid/support/rastermill/cache/DiskCache$Factory;
+
+    .line 63
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 44
+    new-instance v0, Ljava/util/HashMap;
+
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    iput-object v0, p0, Landroid/support/rastermill/CacheEngine;->mFutureMap:Ljava/util/HashMap;
+
+    .line 46
+    new-instance v0, Ljava/util/HashSet;
+
+    invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
+
+    iput-object v0, p0, Landroid/support/rastermill/CacheEngine;->mFetchingSet:Ljava/util/HashSet;
+
+    .line 48
+    new-instance v0, Ljava/lang/Object;
+
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    iput-object v0, p0, Landroid/support/rastermill/CacheEngine;->mLock:Ljava/lang/Object;
+
+    .line 64
+    iput-object p1, p0, Landroid/support/rastermill/CacheEngine;->mContext:Landroid/content/Context;
+
+    .line 65
+    new-instance v0, Landroid/support/rastermill/CacheEngine$LazyDiskCacheProvider;
+
+    invoke-direct {v0, p2}, Landroid/support/rastermill/CacheEngine$LazyDiskCacheProvider;-><init>(Landroid/support/rastermill/cache/DiskCache$Factory;)V
+
+    iput-object v0, p0, Landroid/support/rastermill/CacheEngine;->diskCacheProvider:Landroid/support/rastermill/CacheEngine$LazyDiskCacheProvider;
+
+    .line 66
+    invoke-static {}, Ljava/lang/Runtime;->getRuntime()Ljava/lang/Runtime;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/Runtime;->availableProcessors()I
+
+    move-result v0
+
+    const/4 v1, 0x1
+
+    invoke-static {v1, v0}, Ljava/lang/Math;->max(II)I
+
+    move-result v0
+
+    .line 67
+    .local v0, "cores":I
+    invoke-static {v0}, Ljava/util/concurrent/Executors;->newFixedThreadPool(I)Ljava/util/concurrent/ExecutorService;
+
+    move-result-object v1
+
+    iput-object v1, p0, Landroid/support/rastermill/CacheEngine;->mSourceService:Ljava/util/concurrent/ExecutorService;
+
+    .line 68
+    return-void
+.end method
+
+.method static synthetic access$000(Landroid/support/rastermill/CacheEngine;Ljava/lang/String;)V
+    .locals 0
+    .param p0, "x0"    # Landroid/support/rastermill/CacheEngine;
+    .param p1, "x1"    # Ljava/lang/String;
+
+    .line 32
+    invoke-direct {p0, p1}, Landroid/support/rastermill/CacheEngine;->onCacheFailure(Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method static synthetic access$100(Landroid/support/rastermill/CacheEngine;Ljava/lang/String;)V
+    .locals 0
+    .param p0, "x0"    # Landroid/support/rastermill/CacheEngine;
+    .param p1, "x1"    # Ljava/lang/String;
+
+    .line 32
+    invoke-direct {p0, p1}, Landroid/support/rastermill/CacheEngine;->onCacheFinished(Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public static copyToFile(Ljava/io/InputStream;Ljava/io/File;)Z
+    .locals 5
+    .param p0, "inputStream"    # Ljava/io/InputStream;
+    .param p1, "destFile"    # Ljava/io/File;
+
+    .line 177
+    const/4 v0, 0x0
+
+    :try_start_0
+    invoke-virtual {p1}, Ljava/io/File;->exists()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    .line 178
+    invoke-virtual {p1}, Ljava/io/File;->delete()Z
+
+    .line 180
+    :cond_0
+    new-instance v1, Ljava/io/FileOutputStream;
+
+    invoke-direct {v1, p1}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
+    :try_end_0
+    .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_2
+
+    .line 182
+    .local v1, "out":Ljava/io/FileOutputStream;
+    const/16 v2, 0x1000
+
+    :try_start_1
+    new-array v2, v2, [B
+
+    .line 184
+    .local v2, "buffer":[B
+    :goto_0
+    invoke-virtual {p0, v2}, Ljava/io/InputStream;->read([B)I
+
+    move-result v3
+
+    move v4, v3
+
+    .local v4, "bytesRead":I
+    if-ltz v3, :cond_1
+
+    .line 185
+    invoke-virtual {v1, v2, v0, v4}, Ljava/io/FileOutputStream;->write([BII)V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    goto :goto_0
+
+    .line 188
+    .end local v2    # "buffer":[B
+    .end local v4    # "bytesRead":I
+    :cond_1
+    :try_start_2
+    invoke-virtual {v1}, Ljava/io/FileOutputStream;->flush()V
+    :try_end_2
+    .catch Ljava/lang/Throwable; {:try_start_2 .. :try_end_2} :catch_2
+
+    .line 190
+    :try_start_3
+    invoke-virtual {v1}, Ljava/io/FileOutputStream;->getFD()Ljava/io/FileDescriptor;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/io/FileDescriptor;->sync()V
+    :try_end_3
+    .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_0
+    .catch Ljava/lang/Throwable; {:try_start_3 .. :try_end_3} :catch_2
+
+    .line 192
+    goto :goto_1
+
+    .line 191
+    :catch_0
+    move-exception v2
+
+    .line 193
+    :goto_1
+    :try_start_4
+    invoke-virtual {v1}, Ljava/io/FileOutputStream;->close()V
+
+    .line 194
+    nop
+
+    .line 195
+    const/4 v0, 0x1
+
+    return v0
+
+    .line 188
+    :catchall_0
+    move-exception v2
+
+    invoke-virtual {v1}, Ljava/io/FileOutputStream;->flush()V
+    :try_end_4
+    .catch Ljava/lang/Throwable; {:try_start_4 .. :try_end_4} :catch_2
+
+    .line 190
+    :try_start_5
+    invoke-virtual {v1}, Ljava/io/FileOutputStream;->getFD()Ljava/io/FileDescriptor;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/io/FileDescriptor;->sync()V
+    :try_end_5
+    .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_1
+    .catch Ljava/lang/Throwable; {:try_start_5 .. :try_end_5} :catch_2
+
+    .line 192
+    goto :goto_2
+
+    .line 191
+    :catch_1
+    move-exception v3
+
+    .line 193
+    :goto_2
+    :try_start_6
+    invoke-virtual {v1}, Ljava/io/FileOutputStream;->close()V
+
+    .line 194
+    throw v2
+    :try_end_6
+    .catch Ljava/lang/Throwable; {:try_start_6 .. :try_end_6} :catch_2
+
+    .line 196
+    .end local v1    # "out":Ljava/io/FileOutputStream;
+    :catch_2
+    move-exception v1
+
+    .line 197
+    .local v1, "e":Ljava/lang/Throwable;
+    const-string v2, "CacheEngine"
+
+    const-string v3, "copyToFile"
+
+    invoke-static {v2, v3, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+
+    .line 198
+    return v0
+.end method
+
+.method private getCallbackList(Ljava/lang/String;)Ljava/util/LinkedList;
+    .locals 4
+    .param p1, "url"    # Ljava/lang/String;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            ")",
+            "Ljava/util/LinkedList<",
+            "Landroid/support/rastermill/CacheEngine$CacheCallback;",
+            ">;"
+        }
+    .end annotation
+
+    .line 132
+    const/4 v0, 0x0
+
+    .line 133
+    .local v0, "callbackListCopied":Ljava/util/LinkedList;, "Ljava/util/LinkedList<Landroid/support/rastermill/CacheEngine$CacheCallback;>;"
+    iget-object v1, p0, Landroid/support/rastermill/CacheEngine;->mLock:Ljava/lang/Object;
+
+    monitor-enter v1
+
+    .line 134
+    :try_start_0
+    iget-object v2, p0, Landroid/support/rastermill/CacheEngine;->mFutureMap:Ljava/util/HashMap;
+
+    invoke-virtual {v2, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/util/LinkedList;
+
+    .line 135
+    .local v2, "callbackList":Ljava/util/LinkedList;, "Ljava/util/LinkedList<Landroid/support/rastermill/CacheEngine$CacheCallback;>;"
+    if-eqz v2, :cond_0
+
+    .line 136
+    new-instance v3, Ljava/util/LinkedList;
+
+    invoke-direct {v3, v2}, Ljava/util/LinkedList;-><init>(Ljava/util/Collection;)V
+
+    move-object v0, v3
+
+    .line 137
+    invoke-virtual {v2}, Ljava/util/LinkedList;->clear()V
+
+    .line 139
+    :cond_0
+    iget-object v3, p0, Landroid/support/rastermill/CacheEngine;->mFetchingSet:Ljava/util/HashSet;
+
+    invoke-virtual {v3, p1}, Ljava/util/HashSet;->remove(Ljava/lang/Object;)Z
+
+    .line 140
+    .end local v2    # "callbackList":Ljava/util/LinkedList;, "Ljava/util/LinkedList<Landroid/support/rastermill/CacheEngine$CacheCallback;>;"
+    monitor-exit v1
+
+    .line 141
+    return-object v0
+
+    .line 140
+    :catchall_0
+    move-exception v2
+
+    monitor-exit v1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v2
+.end method
+
+.method public static getInstance()Landroid/support/rastermill/CacheEngine;
+    .locals 2
+
+    .line 53
+    sget-object v0, Landroid/support/rastermill/CacheEngine;->sInstance:Landroid/support/rastermill/CacheEngine;
+
+    if-eqz v0, :cond_0
+
+    .line 56
+    sget-object v0, Landroid/support/rastermill/CacheEngine;->sInstance:Landroid/support/rastermill/CacheEngine;
+
+    return-object v0
+
+    .line 54
+    :cond_0
+    new-instance v0, Ljava/lang/RuntimeException;
+
+    const-string v1, "CacheEngine should be initialized."
+
+    invoke-direct {v0, v1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+.end method
+
+.method static init(Landroid/content/Context;Landroid/support/rastermill/cache/DiskCache$Factory;)V
+    .locals 2
+    .param p0, "context"    # Landroid/content/Context;
+    .param p1, "diskCacheFactory"    # Landroid/support/rastermill/cache/DiskCache$Factory;
+
+    .line 60
+    new-instance v0, Landroid/support/rastermill/CacheEngine;
+
+    invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1, p1}, Landroid/support/rastermill/CacheEngine;-><init>(Landroid/content/Context;Landroid/support/rastermill/cache/DiskCache$Factory;)V
+
+    sput-object v0, Landroid/support/rastermill/CacheEngine;->sInstance:Landroid/support/rastermill/CacheEngine;
+
+    .line 61
+    return-void
+.end method
+
+.method private isFetching(Ljava/lang/String;)Z
+    .locals 2
+    .param p1, "url"    # Ljava/lang/String;
+
+    .line 114
+    iget-object v0, p0, Landroid/support/rastermill/CacheEngine;->mLock:Ljava/lang/Object;
+
+    monitor-enter v0
+
+    .line 115
+    :try_start_0
+    iget-object v1, p0, Landroid/support/rastermill/CacheEngine;->mFetchingSet:Ljava/util/HashSet;
+
+    invoke-virtual {v1, p1}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    .line 116
+    .local v1, "fetching":Z
+    monitor-exit v0
+
+    .line 117
+    return v1
+
+    .line 116
+    .end local v1    # "fetching":Z
+    :catchall_0
+    move-exception v1
+
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v1
+.end method
+
+.method private onCacheFailure(Ljava/lang/String;)V
+    .locals 3
+    .param p1, "url"    # Ljava/lang/String;
+
+    .line 157
+    invoke-direct {p0, p1}, Landroid/support/rastermill/CacheEngine;->getCallbackList(Ljava/lang/String;)Ljava/util/LinkedList;
+
+    move-result-object v0
+
+    .line 158
+    .local v0, "callbackList":Ljava/util/LinkedList;, "Ljava/util/LinkedList<Landroid/support/rastermill/CacheEngine$CacheCallback;>;"
+    sget-object v1, Landroid/support/rastermill/CacheEngine;->sMainThreadHandler:Landroid/os/Handler;
+
+    new-instance v2, Landroid/support/rastermill/CacheEngine$3;
+
+    invoke-direct {v2, p0, v0, p1}, Landroid/support/rastermill/CacheEngine$3;-><init>(Landroid/support/rastermill/CacheEngine;Ljava/util/LinkedList;Ljava/lang/String;)V
+
+    invoke-virtual {v1, v2}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+
+    .line 166
+    return-void
+.end method
+
+.method private onCacheFinished(Ljava/lang/String;)V
+    .locals 3
+    .param p1, "url"    # Ljava/lang/String;
+
+    .line 145
+    invoke-direct {p0, p1}, Landroid/support/rastermill/CacheEngine;->getCallbackList(Ljava/lang/String;)Ljava/util/LinkedList;
+
+    move-result-object v0
+
+    .line 146
+    .local v0, "callbackList":Ljava/util/LinkedList;, "Ljava/util/LinkedList<Landroid/support/rastermill/CacheEngine$CacheCallback;>;"
+    sget-object v1, Landroid/support/rastermill/CacheEngine;->sMainThreadHandler:Landroid/os/Handler;
+
+    new-instance v2, Landroid/support/rastermill/CacheEngine$2;
+
+    invoke-direct {v2, p0, v0, p1}, Landroid/support/rastermill/CacheEngine$2;-><init>(Landroid/support/rastermill/CacheEngine;Ljava/util/LinkedList;Ljava/lang/String;)V
+
+    invoke-virtual {v1, v2}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+
+    .line 154
+    return-void
+.end method
+
+.method private putFetching(Ljava/lang/String;)V
+    .locals 2
+    .param p1, "url"    # Ljava/lang/String;
+
+    .line 107
+    iget-object v0, p0, Landroid/support/rastermill/CacheEngine;->mLock:Ljava/lang/Object;
+
+    monitor-enter v0
+
+    .line 108
+    :try_start_0
+    iget-object v1, p0, Landroid/support/rastermill/CacheEngine;->mFetchingSet:Ljava/util/HashSet;
+
+    invoke-virtual {v1, p1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+
+    .line 109
+    monitor-exit v0
+
+    .line 110
+    return-void
+
+    .line 109
+    :catchall_0
+    move-exception v1
+
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v1
+.end method
+
+.method private putFuture(Ljava/lang/String;Landroid/support/rastermill/CacheEngine$CacheCallback;)V
+    .locals 3
+    .param p1, "url"    # Ljava/lang/String;
+    .param p2, "callback"    # Landroid/support/rastermill/CacheEngine$CacheCallback;
+
+    .line 121
+    iget-object v0, p0, Landroid/support/rastermill/CacheEngine;->mLock:Ljava/lang/Object;
+
+    monitor-enter v0
+
+    .line 122
+    :try_start_0
+    iget-object v1, p0, Landroid/support/rastermill/CacheEngine;->mFutureMap:Ljava/util/HashMap;
+
+    invoke-virtual {v1, p2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/util/LinkedList;
+
+    .line 123
+    .local v1, "futureList":Ljava/util/LinkedList;, "Ljava/util/LinkedList<Landroid/support/rastermill/CacheEngine$CacheCallback;>;"
+    if-nez v1, :cond_0
+
+    .line 124
+    new-instance v2, Ljava/util/LinkedList;
+
+    invoke-direct {v2}, Ljava/util/LinkedList;-><init>()V
+
+    move-object v1, v2
+
+    .line 125
+    iget-object v2, p0, Landroid/support/rastermill/CacheEngine;->mFutureMap:Ljava/util/HashMap;
+
+    invoke-virtual {v2, p1, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 127
+    :cond_0
+    invoke-virtual {v1, p2}, Ljava/util/LinkedList;->add(Ljava/lang/Object;)Z
+
+    .line 128
+    .end local v1    # "futureList":Ljava/util/LinkedList;, "Ljava/util/LinkedList<Landroid/support/rastermill/CacheEngine$CacheCallback;>;"
+    monitor-exit v0
+
+    .line 129
+    return-void
+
+    .line 128
+    :catchall_0
+    move-exception v1
+
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v1
+.end method
+
+
+# virtual methods
+.method public cache(Ljava/lang/String;Landroid/support/rastermill/CacheEngine$CacheCallback;)Ljava/util/concurrent/Future;
+    .locals 2
+    .param p1, "url"    # Ljava/lang/String;
+    .param p2, "cacheCallback"    # Landroid/support/rastermill/CacheEngine$CacheCallback;
+
+    .line 71
+    iget-object v0, p0, Landroid/support/rastermill/CacheEngine;->mContext:Landroid/content/Context;
+
+    invoke-static {v0}, Landroid/support/rastermill/util/Util;->isNetworkAvailable(Landroid/content/Context;)Z
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_0
+
+    .line 72
+    invoke-interface {p2, v1}, Landroid/support/rastermill/CacheEngine$CacheCallback;->onCacheFailure(Ljava/lang/String;)V
+
+    .line 73
+    return-object v1
+
+    .line 75
+    :cond_0
+    invoke-direct {p0, p1, p2}, Landroid/support/rastermill/CacheEngine;->putFuture(Ljava/lang/String;Landroid/support/rastermill/CacheEngine$CacheCallback;)V
+
+    .line 76
+    invoke-direct {p0, p1}, Landroid/support/rastermill/CacheEngine;->isFetching(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    .line 77
+    return-object v1
+
+    .line 79
+    :cond_1
+    invoke-direct {p0, p1}, Landroid/support/rastermill/CacheEngine;->putFetching(Ljava/lang/String;)V
+
+    .line 80
+    iget-object v0, p0, Landroid/support/rastermill/CacheEngine;->mSourceService:Ljava/util/concurrent/ExecutorService;
+
+    new-instance v1, Landroid/support/rastermill/CacheEngine$1;
+
+    invoke-direct {v1, p0, p1, p2}, Landroid/support/rastermill/CacheEngine$1;-><init>(Landroid/support/rastermill/CacheEngine;Ljava/lang/String;Landroid/support/rastermill/CacheEngine$CacheCallback;)V
+
+    invoke-interface {v0, v1}, Ljava/util/concurrent/ExecutorService;->submit(Ljava/lang/Runnable;)Ljava/util/concurrent/Future;
+
+    move-result-object v0
+
+    .line 103
+    .local v0, "future":Ljava/util/concurrent/Future;
+    return-object v0
+.end method
+
+.method public getDiskCache()Landroid/support/rastermill/cache/DiskCache;
+    .locals 1
+
+    .line 203
+    iget-object v0, p0, Landroid/support/rastermill/CacheEngine;->diskCacheProvider:Landroid/support/rastermill/CacheEngine$LazyDiskCacheProvider;
+
+    invoke-virtual {v0}, Landroid/support/rastermill/CacheEngine$LazyDiskCacheProvider;->getDiskCache()Landroid/support/rastermill/cache/DiskCache;
+
+    move-result-object v0
+
+    return-object v0
+.end method

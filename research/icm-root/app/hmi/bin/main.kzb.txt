@@ -1,0 +1,103 @@
+﻿Files:
+PropertyTypeLibrary/DataLayer.Card.Image.GuidanceTexture
+PropertyTypeLibrary/DataLayer.Card.Image.MusicTexture
+PropertyTypeLibrary/DataLayer.Card.Image.NaviTexture
+PropertyTypeLibrary/Main.AnimationState
+PropertyTypeLibrary/Main.BatteryOverheatVisible
+PropertyTypeLibrary/Main.CarColorControProp
+PropertyTypeLibrary/Main.ChargingControProp
+PropertyTypeLibrary/Main.ColorTest
+PropertyTypeLibrary/Main.DayNightControlProp
+PropertyTypeLibrary/Main.Door.BL
+PropertyTypeLibrary/Main.Door.BR
+PropertyTypeLibrary/Main.Door.FL
+PropertyTypeLibrary/Main.Door.FR
+PropertyTypeLibrary/Main.E28CarType
+PropertyTypeLibrary/Main.ElectricityColorControlProp
+PropertyTypeLibrary/Main.ElectricityPercentProp
+PropertyTypeLibrary/Main.ElectricityPercentStr
+PropertyTypeLibrary/Main.EnduranceMileageProp
+PropertyTypeLibrary/Main.EnduranceMileageState
+PropertyTypeLibrary/Main.GearControlProp
+PropertyTypeLibrary/Main.Hood.Engine
+PropertyTypeLibrary/Main.Hood.FastCharge
+PropertyTypeLibrary/Main.Hood.NormalCharge
+PropertyTypeLibrary/Main.Hood.Trunk
+PropertyTypeLibrary/Main.IsHideUnderPage
+PropertyTypeLibrary/Main.IsOff
+PropertyTypeLibrary/Main.Speed
+PropertyTypeLibrary/Main.TrafficLightsState
+PropertyTypeLibrary/Main.TurnLeftLightControProp
+PropertyTypeLibrary/Main.TurnRightLightControProp
+PropertyTypeLibrary/Main.WarningIcon
+PropertyTypeLibrary/Main.WarningText
+PropertyTypeLibrary/XPP7.AbnormalStartup
+PropertyTypeLibrary/XPP7.BackgroundControProp
+PropertyTypeLibrary/XPP7.ChargingLoadCompletedMsg
+PropertyTypeLibrary/XPP7.Loaded
+PropertyTypeLibrary/XPP7.StartupState
+PropertyTypeLibrary/TAG_PROPERTY_TYPE_Transparent
+Screens/Screen/RootPage/LoadDataSource/ADAS
+Screens/Screen/RootPage/LoadDataSource/NormalInfo
+Screens/Screen/RootPage/LoadDataSource/Card
+Screens/Screen/RootPage/LoadDataSource/Overlay
+Screens/Screen/RootPage/LoadDataSource/Charging
+Screens/Screen/RootPage/LoadDataSource/OTA
+Screens/Screen/RootPage/Viewport 2D/Overlay/Level0
+Screens/Screen/RootPage/Viewport 2D/Overlay/Level1
+Screens/Screen/RootPage/Viewport 2D/Overlay/Level2
+Screens/Screen/RootPage/Viewport 2D/Warning125/IconMultiLine
+Screens/Screen/RootPage/Viewport 2D/Startup/Image
+Screens/Screen/RootPage/Viewport 2D/Colortest/top
+Screens/Screen/RootPage/Viewport 2D/Colortest/middle
+Screens/Screen/RootPage/Viewport 2D/Colortest/bottom
+Screens/Screen/RootPage/Viewport 2D/DataLayer
+Screens/Screen/RootPage/Viewport 2D/Background
+Screens/Screen/RootPage/Viewport 2D/ADAS
+Screens/Screen/RootPage/Viewport 2D/NormalInfo
+Screens/Screen/RootPage/Viewport 2D/Card
+Screens/Screen/RootPage/Viewport 2D/Overlay
+Screens/Screen/RootPage/Viewport 2D/Charging
+Screens/Screen/RootPage/Viewport 2D/Warning
+Screens/Screen/RootPage/Viewport 2D/OFF
+Screens/Screen/RootPage/Viewport 2D/Warning125
+Screens/Screen/RootPage/Viewport 2D/Telltale
+Screens/Screen/RootPage/Viewport 2D/OTA
+Screens/Screen/RootPage/Viewport 2D/Startup
+Screens/Screen/RootPage/Viewport 2D/Colortest
+Screens/Screen/RootPage/LoadDataSource
+Screens/Screen/RootPage/Viewport 2D
+Screens/Screen/<ResourceDictionaryInNode>
+Screens/Screen/RootPage
+Screens/Screen
+Material Types/VertexPhong
+Materials/VertexPhongMaterial
+Brushes/DefaultBackground
+Brushes/black
+Brushes/white
+Brushes/red
+Brushes/green
+Brushes/blue
+Brushes/Material Brush
+Prefabs/Background/Background/Image
+Prefabs/Background/Background
+Prefabs/Background
+Animation Data/Animation
+Data Sources/Data source
+Page Transitions/Default Transitions
+Resource Files/Images/bg_cluster_1_day.png
+Resource Files/Images/bg_cluster_2_day.png
+Resource Files/Images/bg_cluster_2_night.png
+Resource Files/Images/bg_cluster_1_night.png
+Resource Files/Images/startup.png
+Textures/bg_cluster_2_day
+Textures/bg_cluster_1_day
+Textures/bg_cluster_2_night
+Textures/bg_cluster_1_night
+Textures/startup
+Styles/Text Block 2D Style
+State Managers/Startup
+State Managers/Background
+State Managers/IN
+State Managers/Colortest
+/xpp7

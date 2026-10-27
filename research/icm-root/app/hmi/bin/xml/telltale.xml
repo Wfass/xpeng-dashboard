@@ -1,0 +1,262 @@
+<telltale>
+    <id type="int">0</id>
+	<name type="string">1-1</name>
+	<pos_x type="int">1530</pos_x>
+	<pos_y type="int">8</pos_y>
+    <url type="string">kzb://telltale/Textures/Telltale/1-1/制动防抱系统故障</url>
+</telltale>
+<telltale>
+    <id type="int">1</id>
+	<name type="string">1-2</name>
+	<pos_x type="int">262</pos_x>
+	<pos_y type="int">8</pos_y>
+    <url type="string">kzb://telltale/Textures/Telltale/1-2/后排左侧座椅安全带未系</url>
+</telltale>
+<telltale>
+    <id type="int">2</id>
+	<name type="string">1-2</name>
+	<pos_x type="int">262</pos_x>
+	<pos_y type="int">8</pos_y>
+    <url type="string">kzb://telltale/Textures/Telltale/1-2/后排左侧座椅安全带未系2</url>
+</telltale>
+<telltale>
+    <id type="int">3</id>
+	<name type="string">1-3</name>
+	<pos_x type="int">334</pos_x>
+	<pos_y type="int">8</pos_y>
+    <url type="string">kzb://telltale/Textures/Telltale/1-3/后排中间座椅安全带未系</url>
+</telltale>
+<telltale>
+    <id type="int">4</id>
+	<name type="string">1-3</name>
+	<pos_x type="int">334</pos_x>
+	<pos_y type="int">8</pos_y>
+    <url type="string">kzb://telltale/Textures/Telltale/1-3/后排中间座椅安全带未系2</url>
+</telltale>
+<telltale>
+    <id type="int">5</id>
+	<name type="string">1-4</name>
+	<pos_x type="int">406</pos_x>
+	<pos_y type="int">8</pos_y>
+    <url type="string">kzb://telltale/Textures/Telltale/1-4/后排右侧座椅安全带提示灯</url>
+</telltale>
+<telltale>
+    <id type="int">6</id>
+	<name type="string">1-4</name>
+	<pos_x type="int">406</pos_x>
+	<pos_y type="int">8</pos_y>
+    <url type="string">kzb://telltale/Textures/Telltale/1-4/后排右侧座椅安全带提示灯2</url>
+</telltale>
+<telltale>
+    <id type="int">7</id>
+	<name type="string">1-5</name>
+	<pos_x type="int">478</pos_x>
+	<pos_y type="int">8</pos_y>
+    <url type="string">kzb://telltale/Textures/Telltale/1-5/车门未关好</url>
+</telltale>
+<telltale>
+    <id type="int">8</id>
+	<name type="string">1-5</name>
+	<pos_x type="int">478</pos_x>
+	<pos_y type="int">8</pos_y>
+    <url type="string">kzb://telltale/Textures/Telltale/1-5/车门未关好1</url>
+</telltale>
+
+<telltale>
+    <id type="int">9</id>
+	<name type="string">1-5</name>
+	<pos_x type="int">478</pos_x>
+	<pos_y type="int">8</pos_y>
+    <url type="string">kzb://telltale/Textures/Telltale/1-5/车门未关好2</url>
+</telltale>
+
+<telltale>
+    <id type="int">10</id>
+	<name type="string">1-5</name>
+	<pos_x type="int">478</pos_x>
+	<pos_y type="int">8</pos_y>
+    <url type="string">kzb://telltale/Textures/Telltale/1-5/车门未关好3</url>
+</telltale>
+
+<telltale>
+    <id type="int">11</id>
+	<name type="string">1-5</name>
+	<pos_x type="int">478</pos_x>
+	<pos_y type="int">8</pos_y>
+    <url type="string">kzb://telltale/Textures/Telltale/1-5/车门未关好4</url>
+</telltale>
+<telltale>
+    <id type="int">12</id>
+	<name type="string">1-6</name>
+	<pos_x type="int">550</pos_x>
+	<pos_y type="int">8</pos_y>
+    <url type="string">kzb://telltale/Textures/Telltale/1-6/主驾座椅安全带未系</url>
+</telltale>
+<telltale>
+    <id type="int">13</id>
+	<name type="string">1-7</name>
+	<pos_x type="int">622</pos_x>
+	<pos_y type="int">8</pos_y>
+    <url type="string">kzb://telltale/Textures/Telltale/1-7/AVH自动驻车制动</url>
+</telltale>
+<telltale>
+    <id type="int">14</id>
+	<name type="string">1-7</name>
+	<pos_x type="int">622</pos_x>
+	<pos_y type="int">8</pos_y>
+    <url type="string">kzb://telltale/Textures/Telltale/1-7/AVH自动驻车制动故障</url>
+</telltale>
+<telltale>
+    <id type="int">15</id>
+	<name type="string">1-8</name>
+	<pos_x type="int">1098</pos_x>
+	<pos_y type="int">8</pos_y>
+    <url type="string">kzb://telltale/Textures/Telltale/1-8/位置灯</url>
+</telltale>
+<telltale>
+    <id type="int">16</id>
+	<name type="string">1-9</name>
+	<pos_x type="int">1170</pos_x>
+	<pos_y type="int">8</pos_y>
+    <url type="string">kzb://telltale/Textures/Telltale/1-9/前照灯近光</url>
+</telltale>
+<telltale>
+    <id type="int">17</id>
+	<name type="string">1-9</name>
+	<pos_x type="int">1170</pos_x>
+	<pos_y type="int">8</pos_y>
+    <url type="string">kzb://telltale/Textures/Telltale/1-9/前照灯远光</url>
+</telltale>
+<telltale>
+    <id type="int">30</id>
+	<name type="string">1-9</name>
+	<pos_x type="int">1170</pos_x>
+	<pos_y type="int">8</pos_y>
+    <url type="string">kzb://telltale/Textures/Telltale/1-9/自动前照灯近光</url>
+</telltale>
+<telltale>
+    <id type="int">18</id>
+	<name type="string">1-10</name>
+	<pos_x type="int">1386</pos_x>
+	<pos_y type="int">8</pos_y>
+    <url type="string">kzb://telltale/Textures/Telltale/1-10/驻车制动器处于制动状态</url>
+</telltale>
+<telltale>
+    <id type="int">19</id>
+	<name type="string">1-11</name>
+	<pos_x type="int">1314</pos_x>
+	<pos_y type="int">8</pos_y>
+    <url type="string">kzb://telltale/Textures/Telltale/1-11/副驾座椅安全带未系</url>
+</telltale>
+<telltale>
+    <id type="int">20</id>
+	<name type="string">1-12</name>
+	<pos_x type="int">1314</pos_x>
+	<pos_y type="int">88</pos_y>
+    <url type="string">kzb://telltale/Textures/Telltale/1-12/EPB电子刹车故障</url>
+</telltale>
+<telltale>
+    <id type="int">21</id>
+	<name type="string">1-13</name>
+	<pos_x type="int">1458</pos_x>
+	<pos_y type="int">8</pos_y>
+    <url type="string">kzb://telltale/Textures/Telltale/1-13/制动系统故障（制动防抱除外）</url>
+</telltale>
+<telltale>
+    <id type="int">36</id>
+	<name type="string">1-13</name>
+	<pos_x type="int">1458</pos_x>
+	<pos_y type="int">8</pos_y>
+    <url type="string">kzb://telltale/Textures/Telltale/1-13/ibooster 制动系统故障指示灯</url>
+</telltale>
+<telltale>
+    <id type="int">22</id>
+	<name type="string">1-14</name>
+	<pos_x type="int">1602</pos_x>
+	<pos_y type="int">8</pos_y>
+    <url type="string">kzb://telltale/Textures/Telltale/1-14/外部充电线连接</url>
+</telltale>
+<telltale>
+    <id type="int">23</id>
+	<name type="string">1-15</name>
+	<pos_x type="int">1746</pos_x>
+	<pos_y type="int">8</pos_y>
+    <url type="string">kzb://telltale/Textures/Telltale/1-15/定时充电</url>
+</telltale>
+<telltale>
+    <id type="int">24</id>
+	<name type="string">1-16</name>
+	<pos_x type="int">190</pos_x>
+	<pos_y type="int">8</pos_y>
+    <url type="string">kzb://telltale/Textures/Telltale/1-16/胎压异常、胎压监测系统故障</url>
+</telltale>
+<telltale>
+    <id type="int">25</id>
+	<name type="string">2-1</name>
+	<pos_x type="int">550</pos_x>
+	<pos_y type="int">88</pos_y>
+    <url type="string">kzb://telltale/Textures/Telltale/2-1/安全气囊故障</url>
+</telltale>
+<telltale>
+    <id type="int">26</id>
+	<name type="string">2-2</name>
+	<pos_x type="int">1674</pos_x>
+	<pos_y type="int">8</pos_y>
+    <url type="string">kzb://telltale/Textures/Telltale/2-2/12V蓄电池充电</url>
+</telltale>
+<telltale>
+    <id type="int">27</id>
+	<name type="string">2-3</name>
+	<pos_x type="int">623</pos_x>
+	<pos_y type="int">88</pos_y>
+    <url type="string">kzb://telltale/Textures/Telltale/2-3/前碰撞预警 指示灯</url>
+</telltale>
+<telltale>
+    <id type="int">28</id>
+	<name type="string">2-3</name>
+	<pos_x type="int">623</pos_x>
+	<pos_y type="int">88</pos_y>
+    <url type="string">kzb://telltale/Textures/Telltale/2-3/前碰撞预警功能关闭 指示灯</url>
+</telltale>
+<telltale>
+    <id type="int">29</id>
+	<name type="string">2-4</name>
+	<pos_x type="int">1242</pos_x>
+	<pos_y type="int">88</pos_y>
+    <url type="string">kzb://telltale/Textures/Telltale/2-4/后雾灯</url>
+</telltale>
+<telltale>
+    <id type="int">31</id>
+	<name type="string">2-5</name>
+	<pos_x type="int">1242</pos_x>
+	<pos_y type="int">8</pos_y>
+    <url type="string">kzb://telltale/Textures/Telltale/2-5/自适应前照灯远光</url>
+</telltale>
+<telltale>
+    <id type="int">32</id>
+	<name type="string">2-5</name>
+	<pos_x type="int">1242</pos_x>
+	<pos_y type="int">8</pos_y>
+    <url type="string">kzb://telltale/Textures/Telltale/2-5/自适应前照灯远光故障</url>
+</telltale>
+<telltale>
+    <id type="int">33</id>
+	<name type="string">2-6</name>
+	<pos_x type="int">118</pos_x>
+	<pos_y type="int">8</pos_y>
+    <url type="string">kzb://telltale/Textures/Telltale/2-6/主警告灯</url>
+</telltale>
+<telltale>
+    <id type="int">34</id>
+	<name type="string">2-5</name>
+	<pos_x type="int">1242</pos_x>
+	<pos_y type="int">8</pos_y>
+    <url type="string">kzb://telltale/Textures/Telltale/2-5/自适应前照灯远光开启</url>
+</telltale>
+<telltale>
+    <id type="int">35</id>
+	<name type="string">2-5</name>
+	<pos_x type="int">1242</pos_x>
+	<pos_y type="int">8</pos_y>
+    <url type="string">kzb://telltale/Textures/Telltale/2-5/自适应远光指示灯绿色</url>
+</telltale>

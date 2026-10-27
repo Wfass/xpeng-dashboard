@@ -1,0 +1,7 @@
+version: 2.12.1
+apkFileName: CarService.apk
+doNotCompress:
+- arsc
+- dex
+- jpg
+- png

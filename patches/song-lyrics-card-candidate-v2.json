@@ -1,0 +1,42 @@
+{
+  "status": "DEPLOYED TO ACTIVE INSTRUMENT RESOURCE; POST-BOOT READBACK MATCHED CANDIDATE; PHYSICAL V2 VISUAL REVIEW PENDING",
+  "source": "/Users/wayne/个人/xpeng/ClusterLyrics/research/icm-root/app/hmi/bin/card.kzb",
+  "source_sha256": "a742743904465ba1932f4363ca034e385490132a758a7a29412616ed56920eac",
+  "output": "/Users/wayne/个人/xpeng/ClusterLyrics/patches/card.song-lyrics.v2.kzb",
+  "output_sha256": "9e9e1b27692b210719951f2db347333d1552bdfb1e0053c7d11c1b0aea304f87",
+  "strategy": "Reuse the existing Trip card index (4) and replace its prefab with the Music prefab; keep the original Music card unchanged. Use a 600x430 image area above the existing title/artist rows at y=470 and y=537.",
+  "changes": {
+    "trip_slot_prefab": "Card_Music with MusicStateManager bindings",
+    "lyrics_image": {
+      "canvas": "660x473",
+      "display_box": "600x430",
+      "content": "previous/current/next lyric lines"
+    },
+    "selector_label": {
+      "from": "里程",
+      "to": "歌词"
+    },
+    "selector_icon": {
+      "from": "kzb://card/Textures/Icon/ic_applist_trip",
+      "to": "kzb://card/Textures/Icon/ic_applist_media"
+    },
+    "selector_prefabs": [
+      "/Prefabs/List_Icon_5_Left",
+      "/Prefabs/List_Icon_6_Left",
+      "/Prefabs/List_Icon_Right"
+    ],
+    "lrc_filter": "Skip timed metadata rows beginning with 词/曲/词曲/作词/作曲/编曲/演唱/制作/监制/出品/发行 followed by a colon."
+  },
+  "static_validation": "KZBF header and 446-entry directory parse; all non-target resource payloads are byte-identical; Trip slot points to the patched Music prefab; all selector resources contain the new label and media icon URL.",
+  "unvalidated": [
+    "Physical v2 visual spacing, clipping, and readability from the user display",
+    "Behavior with unusually long lyric lines and non-Chinese LRC metadata variants"
+  ],
+  "deployment": {
+    "active_path": "/app/hmi/bin/card.kzb",
+    "active_sha256_after_reboot": "9e9e1b27692b210719951f2db347333d1552bdfb1e0053c7d11c1b0aea304f87",
+    "rootfs_after_reboot": "read-only",
+    "ecluster_after_reboot": "process present",
+    "lyrics_renderer": "rebuilt and restarted on E28; submitted 660x473 PNG images"
+  }
+}

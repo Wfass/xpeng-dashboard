@@ -1,0 +1,1651 @@
+.class public Lcom/xiaopeng/speech/vui/task/TaskWrapper;
+.super Ljava/lang/Object;
+.source "TaskWrapper.java"
+
+
+# instance fields
+.field private customizeIds:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Ljava/lang/Integer;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private displayLocation:Ljava/lang/String;
+
+.field private elementGroupId:Ljava/lang/String;
+
+.field private elementListener:Ljava/lang/ref/SoftReference;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/lang/ref/SoftReference<",
+            "Lbxt;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private isContainNotChildrenView:Z
+
+.field private isWholeScene:Z
+
+.field private listener:Lbxv;
+
+.field private mSceneCallbackHandler:Lcom/xiaopeng/speech/vui/ISceneCallbackHandler;
+
+.field private parentElementId:Ljava/lang/String;
+
+.field private priority:Lbyb;
+
+.field private recyclerView:Ljava/lang/ref/SoftReference;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/lang/ref/SoftReference<",
+            "Landroidx/recyclerview/widget/RecyclerView;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private sceneId:Ljava/lang/String;
+
+.field private subSceneIds:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private taskType:Lcom/xiaopeng/speech/vui/task/TaskDispatcher$TaskType;
+
+.field private vid:Ljava/lang/String;
+
+.field private view:Ljava/lang/ref/SoftReference;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/lang/ref/SoftReference<",
+            "Landroid/view/View;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private viewList:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Ljava/lang/ref/SoftReference<",
+            "Landroid/view/View;",
+            ">;>;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 1
+
+    .line 71
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, 0x1
+
+    .line 40
+    iput-boolean v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->isWholeScene:Z
+
+    const/4 v0, 0x0
+
+    .line 42
+    iput-boolean v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->isContainNotChildrenView:Z
+
+    const-string v0, "primary"
+
+    .line 44
+    iput-object v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->displayLocation:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/view/View;ILjava/lang/String;Lcom/xiaopeng/speech/vui/task/TaskDispatcher$TaskType;)V
+    .locals 1
+
+    .line 110
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, 0x1
+
+    .line 40
+    iput-boolean v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->isWholeScene:Z
+
+    const/4 v0, 0x0
+
+    .line 42
+    iput-boolean v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->isContainNotChildrenView:Z
+
+    const-string v0, "primary"
+
+    .line 44
+    iput-object v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->displayLocation:Ljava/lang/String;
+
+    .line 111
+    iput-object p3, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->sceneId:Ljava/lang/String;
+
+    .line 112
+    iput-object p4, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->taskType:Lcom/xiaopeng/speech/vui/task/TaskDispatcher$TaskType;
+
+    .line 113
+    new-instance p3, Ljava/lang/ref/SoftReference;
+
+    invoke-direct {p3, p1}, Ljava/lang/ref/SoftReference;-><init>(Ljava/lang/Object;)V
+
+    iput-object p3, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->view:Ljava/lang/ref/SoftReference;
+
+    .line 114
+    invoke-static {p2}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->vid:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/view/View;ILjava/lang/String;Lcom/xiaopeng/speech/vui/task/TaskDispatcher$TaskType;Landroidx/recyclerview/widget/RecyclerView;)V
+    .locals 1
+
+    .line 117
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, 0x1
+
+    .line 40
+    iput-boolean v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->isWholeScene:Z
+
+    const/4 v0, 0x0
+
+    .line 42
+    iput-boolean v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->isContainNotChildrenView:Z
+
+    const-string v0, "primary"
+
+    .line 44
+    iput-object v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->displayLocation:Ljava/lang/String;
+
+    .line 118
+    iput-object p3, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->sceneId:Ljava/lang/String;
+
+    .line 119
+    iput-object p4, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->taskType:Lcom/xiaopeng/speech/vui/task/TaskDispatcher$TaskType;
+
+    .line 120
+    new-instance p3, Ljava/lang/ref/SoftReference;
+
+    invoke-direct {p3, p1}, Ljava/lang/ref/SoftReference;-><init>(Ljava/lang/Object;)V
+
+    iput-object p3, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->view:Ljava/lang/ref/SoftReference;
+
+    .line 121
+    invoke-static {p2}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->vid:Ljava/lang/String;
+
+    .line 122
+    new-instance p1, Ljava/lang/ref/SoftReference;
+
+    invoke-direct {p1, p5}, Ljava/lang/ref/SoftReference;-><init>(Ljava/lang/Object;)V
+
+    iput-object p1, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->recyclerView:Ljava/lang/ref/SoftReference;
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/view/View;Ljava/lang/String;ILcom/xiaopeng/speech/vui/task/TaskDispatcher$TaskType;Lbyb;Lbxv;)V
+    .locals 1
+
+    .line 133
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, 0x1
+
+    .line 40
+    iput-boolean v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->isWholeScene:Z
+
+    const/4 v0, 0x0
+
+    .line 42
+    iput-boolean v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->isContainNotChildrenView:Z
+
+    const-string v0, "primary"
+
+    .line 44
+    iput-object v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->displayLocation:Ljava/lang/String;
+
+    .line 134
+    new-instance v0, Ljava/lang/ref/SoftReference;
+
+    invoke-direct {v0, p1}, Ljava/lang/ref/SoftReference;-><init>(Ljava/lang/Object;)V
+
+    iput-object v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->view:Ljava/lang/ref/SoftReference;
+
+    .line 135
+    iput-object p2, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->sceneId:Ljava/lang/String;
+
+    .line 136
+    invoke-static {p3}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->vid:Ljava/lang/String;
+
+    .line 137
+    iput-object p4, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->taskType:Lcom/xiaopeng/speech/vui/task/TaskDispatcher$TaskType;
+
+    .line 138
+    iput-object p5, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->priority:Lbyb;
+
+    .line 139
+    iput-object p6, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->listener:Lbxv;
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/view/View;Ljava/lang/String;ILcom/xiaopeng/speech/vui/task/TaskDispatcher$TaskType;Ljava/lang/String;)V
+    .locals 1
+
+    .line 142
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, 0x1
+
+    .line 40
+    iput-boolean v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->isWholeScene:Z
+
+    const/4 v0, 0x0
+
+    .line 42
+    iput-boolean v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->isContainNotChildrenView:Z
+
+    const-string v0, "primary"
+
+    .line 44
+    iput-object v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->displayLocation:Ljava/lang/String;
+
+    .line 143
+    new-instance v0, Ljava/lang/ref/SoftReference;
+
+    invoke-direct {v0, p1}, Ljava/lang/ref/SoftReference;-><init>(Ljava/lang/Object;)V
+
+    iput-object v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->view:Ljava/lang/ref/SoftReference;
+
+    .line 144
+    iput-object p2, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->sceneId:Ljava/lang/String;
+
+    .line 145
+    invoke-static {p3}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->vid:Ljava/lang/String;
+
+    .line 146
+    iput-object p4, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->taskType:Lcom/xiaopeng/speech/vui/task/TaskDispatcher$TaskType;
+
+    .line 147
+    iput-object p5, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->parentElementId:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/view/View;Ljava/lang/String;ILcom/xiaopeng/speech/vui/task/TaskDispatcher$TaskType;Ljava/util/List;Lbxt;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/view/View;",
+            "Ljava/lang/String;",
+            "I",
+            "Lcom/xiaopeng/speech/vui/task/TaskDispatcher$TaskType;",
+            "Ljava/util/List<",
+            "Ljava/lang/Integer;",
+            ">;",
+            "Lbxt;",
+            ")V"
+        }
+    .end annotation
+
+    .line 151
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, 0x1
+
+    .line 40
+    iput-boolean v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->isWholeScene:Z
+
+    const/4 v0, 0x0
+
+    .line 42
+    iput-boolean v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->isContainNotChildrenView:Z
+
+    const-string v0, "primary"
+
+    .line 44
+    iput-object v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->displayLocation:Ljava/lang/String;
+
+    .line 152
+    new-instance v0, Ljava/lang/ref/SoftReference;
+
+    invoke-direct {v0, p1}, Ljava/lang/ref/SoftReference;-><init>(Ljava/lang/Object;)V
+
+    iput-object v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->view:Ljava/lang/ref/SoftReference;
+
+    .line 153
+    iput-object p2, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->sceneId:Ljava/lang/String;
+
+    .line 154
+    invoke-static {p3}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->vid:Ljava/lang/String;
+
+    .line 155
+    iput-object p4, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->taskType:Lcom/xiaopeng/speech/vui/task/TaskDispatcher$TaskType;
+
+    .line 156
+    iput-object p5, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->customizeIds:Ljava/util/List;
+
+    .line 157
+    new-instance p1, Ljava/lang/ref/SoftReference;
+
+    invoke-direct {p1, p6}, Ljava/lang/ref/SoftReference;-><init>(Ljava/lang/Object;)V
+
+    iput-object p1, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->elementListener:Ljava/lang/ref/SoftReference;
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/view/View;Ljava/lang/String;ILcom/xiaopeng/speech/vui/task/TaskDispatcher$TaskType;Ljava/util/List;Lbxt;Ljava/util/List;ZLcom/xiaopeng/speech/vui/ISceneCallbackHandler;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/view/View;",
+            "Ljava/lang/String;",
+            "I",
+            "Lcom/xiaopeng/speech/vui/task/TaskDispatcher$TaskType;",
+            "Ljava/util/List<",
+            "Ljava/lang/Integer;",
+            ">;",
+            "Lbxt;",
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;Z",
+            "Lcom/xiaopeng/speech/vui/ISceneCallbackHandler;",
+            ")V"
+        }
+    .end annotation
+
+    .line 176
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, 0x1
+
+    .line 40
+    iput-boolean v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->isWholeScene:Z
+
+    const/4 v0, 0x0
+
+    .line 42
+    iput-boolean v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->isContainNotChildrenView:Z
+
+    const-string v0, "primary"
+
+    .line 44
+    iput-object v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->displayLocation:Ljava/lang/String;
+
+    .line 177
+    new-instance v0, Ljava/lang/ref/SoftReference;
+
+    invoke-direct {v0, p1}, Ljava/lang/ref/SoftReference;-><init>(Ljava/lang/Object;)V
+
+    iput-object v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->view:Ljava/lang/ref/SoftReference;
+
+    .line 178
+    iput-object p2, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->sceneId:Ljava/lang/String;
+
+    .line 179
+    invoke-static {p3}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->vid:Ljava/lang/String;
+
+    .line 180
+    iput-object p4, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->taskType:Lcom/xiaopeng/speech/vui/task/TaskDispatcher$TaskType;
+
+    .line 181
+    iput-object p5, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->customizeIds:Ljava/util/List;
+
+    .line 182
+    new-instance p1, Ljava/lang/ref/SoftReference;
+
+    invoke-direct {p1, p6}, Ljava/lang/ref/SoftReference;-><init>(Ljava/lang/Object;)V
+
+    iput-object p1, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->elementListener:Ljava/lang/ref/SoftReference;
+
+    .line 183
+    iput-object p7, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->subSceneIds:Ljava/util/List;
+
+    .line 184
+    iput-boolean p8, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->isWholeScene:Z
+
+    .line 185
+    iput-object p9, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->mSceneCallbackHandler:Lcom/xiaopeng/speech/vui/ISceneCallbackHandler;
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/view/View;Ljava/lang/String;ILcom/xiaopeng/speech/vui/task/TaskDispatcher$TaskType;Ljava/util/List;Lbxt;Ljava/util/List;ZLcom/xiaopeng/speech/vui/ISceneCallbackHandler;Ljava/lang/String;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/view/View;",
+            "Ljava/lang/String;",
+            "I",
+            "Lcom/xiaopeng/speech/vui/task/TaskDispatcher$TaskType;",
+            "Ljava/util/List<",
+            "Ljava/lang/Integer;",
+            ">;",
+            "Lbxt;",
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;Z",
+            "Lcom/xiaopeng/speech/vui/ISceneCallbackHandler;",
+            "Ljava/lang/String;",
+            ")V"
+        }
+    .end annotation
+
+    .line 188
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, 0x1
+
+    .line 40
+    iput-boolean v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->isWholeScene:Z
+
+    const/4 v0, 0x0
+
+    .line 42
+    iput-boolean v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->isContainNotChildrenView:Z
+
+    const-string v0, "primary"
+
+    .line 44
+    iput-object v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->displayLocation:Ljava/lang/String;
+
+    .line 189
+    new-instance v0, Ljava/lang/ref/SoftReference;
+
+    invoke-direct {v0, p1}, Ljava/lang/ref/SoftReference;-><init>(Ljava/lang/Object;)V
+
+    iput-object v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->view:Ljava/lang/ref/SoftReference;
+
+    .line 190
+    iput-object p2, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->sceneId:Ljava/lang/String;
+
+    .line 191
+    invoke-static {p3}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->vid:Ljava/lang/String;
+
+    .line 192
+    iput-object p4, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->taskType:Lcom/xiaopeng/speech/vui/task/TaskDispatcher$TaskType;
+
+    .line 193
+    iput-object p5, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->customizeIds:Ljava/util/List;
+
+    .line 194
+    new-instance p1, Ljava/lang/ref/SoftReference;
+
+    invoke-direct {p1, p6}, Ljava/lang/ref/SoftReference;-><init>(Ljava/lang/Object;)V
+
+    iput-object p1, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->elementListener:Ljava/lang/ref/SoftReference;
+
+    .line 195
+    iput-object p7, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->subSceneIds:Ljava/util/List;
+
+    .line 196
+    iput-boolean p8, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->isWholeScene:Z
+
+    .line 197
+    iput-object p9, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->mSceneCallbackHandler:Lcom/xiaopeng/speech/vui/ISceneCallbackHandler;
+
+    .line 198
+    iput-object p10, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->displayLocation:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/view/View;Ljava/lang/String;ILcom/xiaopeng/speech/vui/task/TaskDispatcher$TaskType;Ljava/util/List;Lbxt;Ljava/util/List;ZLcom/xiaopeng/speech/vui/ISceneCallbackHandler;Ljava/lang/String;Lbxv;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/view/View;",
+            "Ljava/lang/String;",
+            "I",
+            "Lcom/xiaopeng/speech/vui/task/TaskDispatcher$TaskType;",
+            "Ljava/util/List<",
+            "Ljava/lang/Integer;",
+            ">;",
+            "Lbxt;",
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;Z",
+            "Lcom/xiaopeng/speech/vui/ISceneCallbackHandler;",
+            "Ljava/lang/String;",
+            "Lbxv;",
+            ")V"
+        }
+    .end annotation
+
+    .line 203
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, 0x1
+
+    .line 40
+    iput-boolean v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->isWholeScene:Z
+
+    const/4 v0, 0x0
+
+    .line 42
+    iput-boolean v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->isContainNotChildrenView:Z
+
+    const-string v0, "primary"
+
+    .line 44
+    iput-object v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->displayLocation:Ljava/lang/String;
+
+    .line 204
+    new-instance v0, Ljava/lang/ref/SoftReference;
+
+    invoke-direct {v0, p1}, Ljava/lang/ref/SoftReference;-><init>(Ljava/lang/Object;)V
+
+    iput-object v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->view:Ljava/lang/ref/SoftReference;
+
+    .line 205
+    iput-object p2, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->sceneId:Ljava/lang/String;
+
+    .line 206
+    invoke-static {p3}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->vid:Ljava/lang/String;
+
+    .line 207
+    iput-object p4, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->taskType:Lcom/xiaopeng/speech/vui/task/TaskDispatcher$TaskType;
+
+    .line 208
+    iput-object p5, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->customizeIds:Ljava/util/List;
+
+    .line 209
+    new-instance p1, Ljava/lang/ref/SoftReference;
+
+    invoke-direct {p1, p6}, Ljava/lang/ref/SoftReference;-><init>(Ljava/lang/Object;)V
+
+    iput-object p1, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->elementListener:Ljava/lang/ref/SoftReference;
+
+    .line 210
+    iput-object p7, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->subSceneIds:Ljava/util/List;
+
+    .line 211
+    iput-boolean p8, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->isWholeScene:Z
+
+    .line 212
+    iput-object p9, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->mSceneCallbackHandler:Lcom/xiaopeng/speech/vui/ISceneCallbackHandler;
+
+    .line 213
+    iput-object p10, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->displayLocation:Ljava/lang/String;
+
+    .line 214
+    iput-object p11, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->listener:Lbxv;
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/view/View;Ljava/lang/String;Lcom/xiaopeng/speech/vui/task/TaskDispatcher$TaskType;Lbxv;Ljava/lang/String;)V
+    .locals 1
+
+    .line 255
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, 0x1
+
+    .line 40
+    iput-boolean v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->isWholeScene:Z
+
+    const/4 v0, 0x0
+
+    .line 42
+    iput-boolean v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->isContainNotChildrenView:Z
+
+    const-string v0, "primary"
+
+    .line 44
+    iput-object v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->displayLocation:Ljava/lang/String;
+
+    .line 256
+    new-instance v0, Ljava/lang/ref/SoftReference;
+
+    invoke-direct {v0, p1}, Ljava/lang/ref/SoftReference;-><init>(Ljava/lang/Object;)V
+
+    iput-object v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->view:Ljava/lang/ref/SoftReference;
+
+    .line 257
+    iput-object p2, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->sceneId:Ljava/lang/String;
+
+    .line 258
+    iput-object p5, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->vid:Ljava/lang/String;
+
+    .line 259
+    iput-object p4, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->listener:Lbxv;
+
+    .line 260
+    iput-object p3, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->taskType:Lcom/xiaopeng/speech/vui/task/TaskDispatcher$TaskType;
+
+    .line 261
+    iput-object p5, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->elementGroupId:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/view/View;Ljava/lang/String;Lcom/xiaopeng/speech/vui/task/TaskDispatcher$TaskType;Ljava/util/List;Lbxt;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/view/View;",
+            "Ljava/lang/String;",
+            "Lcom/xiaopeng/speech/vui/task/TaskDispatcher$TaskType;",
+            "Ljava/util/List<",
+            "Ljava/lang/Integer;",
+            ">;",
+            "Lbxt;",
+            ")V"
+        }
+    .end annotation
+
+    .line 160
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, 0x1
+
+    .line 40
+    iput-boolean v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->isWholeScene:Z
+
+    const/4 v0, 0x0
+
+    .line 42
+    iput-boolean v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->isContainNotChildrenView:Z
+
+    const-string v0, "primary"
+
+    .line 44
+    iput-object v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->displayLocation:Ljava/lang/String;
+
+    .line 161
+    new-instance v0, Ljava/lang/ref/SoftReference;
+
+    invoke-direct {v0, p1}, Ljava/lang/ref/SoftReference;-><init>(Ljava/lang/Object;)V
+
+    iput-object v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->view:Ljava/lang/ref/SoftReference;
+
+    .line 162
+    iput-object p2, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->sceneId:Ljava/lang/String;
+
+    .line 163
+    iput-object p3, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->taskType:Lcom/xiaopeng/speech/vui/task/TaskDispatcher$TaskType;
+
+    .line 164
+    iput-object p4, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->customizeIds:Ljava/util/List;
+
+    .line 165
+    new-instance p1, Ljava/lang/ref/SoftReference;
+
+    invoke-direct {p1, p5}, Ljava/lang/ref/SoftReference;-><init>(Ljava/lang/Object;)V
+
+    iput-object p1, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->elementListener:Ljava/lang/ref/SoftReference;
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;Lbyb;Lcom/xiaopeng/speech/vui/task/TaskDispatcher$TaskType;Ljava/util/List;Z)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "Lbyb;",
+            "Lcom/xiaopeng/speech/vui/task/TaskDispatcher$TaskType;",
+            "Ljava/util/List<",
+            "Landroid/view/View;",
+            ">;Z)V"
+        }
+    .end annotation
+
+    .line 125
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, 0x1
+
+    .line 40
+    iput-boolean v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->isWholeScene:Z
+
+    const/4 v0, 0x0
+
+    .line 42
+    iput-boolean v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->isContainNotChildrenView:Z
+
+    const-string v0, "primary"
+
+    .line 44
+    iput-object v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->displayLocation:Ljava/lang/String;
+
+    .line 126
+    invoke-direct {p0, p4}, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->revertViewListToSoftReference(Ljava/util/List;)V
+
+    .line 127
+    iput-object p1, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->sceneId:Ljava/lang/String;
+
+    .line 128
+    iput-object p2, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->priority:Lbyb;
+
+    .line 129
+    iput-object p3, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->taskType:Lcom/xiaopeng/speech/vui/task/TaskDispatcher$TaskType;
+
+    .line 130
+    iput-boolean p5, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->isContainNotChildrenView:Z
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;Lcom/xiaopeng/speech/vui/task/TaskDispatcher$TaskType;Landroid/view/View;)V
+    .locals 1
+
+    .line 97
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, 0x1
+
+    .line 40
+    iput-boolean v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->isWholeScene:Z
+
+    const/4 v0, 0x0
+
+    .line 42
+    iput-boolean v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->isContainNotChildrenView:Z
+
+    const-string v0, "primary"
+
+    .line 44
+    iput-object v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->displayLocation:Ljava/lang/String;
+
+    .line 98
+    iput-object p1, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->sceneId:Ljava/lang/String;
+
+    .line 99
+    iput-object p2, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->taskType:Lcom/xiaopeng/speech/vui/task/TaskDispatcher$TaskType;
+
+    .line 100
+    new-instance p1, Ljava/lang/ref/SoftReference;
+
+    invoke-direct {p1, p3}, Ljava/lang/ref/SoftReference;-><init>(Ljava/lang/Object;)V
+
+    iput-object p1, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->view:Ljava/lang/ref/SoftReference;
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;Lcom/xiaopeng/speech/vui/task/TaskDispatcher$TaskType;Landroid/view/View;Landroidx/recyclerview/widget/RecyclerView;)V
+    .locals 1
+
+    .line 103
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, 0x1
+
+    .line 40
+    iput-boolean v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->isWholeScene:Z
+
+    const/4 v0, 0x0
+
+    .line 42
+    iput-boolean v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->isContainNotChildrenView:Z
+
+    const-string v0, "primary"
+
+    .line 44
+    iput-object v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->displayLocation:Ljava/lang/String;
+
+    .line 104
+    iput-object p1, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->sceneId:Ljava/lang/String;
+
+    .line 105
+    iput-object p2, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->taskType:Lcom/xiaopeng/speech/vui/task/TaskDispatcher$TaskType;
+
+    .line 106
+    new-instance p1, Ljava/lang/ref/SoftReference;
+
+    invoke-direct {p1, p3}, Ljava/lang/ref/SoftReference;-><init>(Ljava/lang/Object;)V
+
+    iput-object p1, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->view:Ljava/lang/ref/SoftReference;
+
+    .line 107
+    new-instance p1, Ljava/lang/ref/SoftReference;
+
+    invoke-direct {p1, p4}, Ljava/lang/ref/SoftReference;-><init>(Ljava/lang/Object;)V
+
+    iput-object p1, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->recyclerView:Ljava/lang/ref/SoftReference;
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;Lcom/xiaopeng/speech/vui/task/TaskDispatcher$TaskType;Ljava/util/List;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "Lcom/xiaopeng/speech/vui/task/TaskDispatcher$TaskType;",
+            "Ljava/util/List<",
+            "Landroid/view/View;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 74
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, 0x1
+
+    .line 40
+    iput-boolean v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->isWholeScene:Z
+
+    const/4 v0, 0x0
+
+    .line 42
+    iput-boolean v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->isContainNotChildrenView:Z
+
+    const-string v0, "primary"
+
+    .line 44
+    iput-object v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->displayLocation:Ljava/lang/String;
+
+    .line 75
+    iput-object p1, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->sceneId:Ljava/lang/String;
+
+    .line 76
+    iput-object p2, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->taskType:Lcom/xiaopeng/speech/vui/task/TaskDispatcher$TaskType;
+
+    .line 77
+    invoke-direct {p0, p3}, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->revertViewListToSoftReference(Ljava/util/List;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;Lcom/xiaopeng/speech/vui/task/TaskDispatcher$TaskType;Ljava/util/List;Landroidx/recyclerview/widget/RecyclerView;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "Lcom/xiaopeng/speech/vui/task/TaskDispatcher$TaskType;",
+            "Ljava/util/List<",
+            "Landroid/view/View;",
+            ">;",
+            "Landroidx/recyclerview/widget/RecyclerView;",
+            ")V"
+        }
+    .end annotation
+
+    .line 80
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, 0x1
+
+    .line 40
+    iput-boolean v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->isWholeScene:Z
+
+    const/4 v0, 0x0
+
+    .line 42
+    iput-boolean v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->isContainNotChildrenView:Z
+
+    const-string v0, "primary"
+
+    .line 44
+    iput-object v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->displayLocation:Ljava/lang/String;
+
+    .line 81
+    iput-object p1, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->sceneId:Ljava/lang/String;
+
+    .line 82
+    iput-object p2, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->taskType:Lcom/xiaopeng/speech/vui/task/TaskDispatcher$TaskType;
+
+    .line 83
+    invoke-direct {p0, p3}, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->revertViewListToSoftReference(Ljava/util/List;)V
+
+    .line 84
+    new-instance p1, Ljava/lang/ref/SoftReference;
+
+    invoke-direct {p1, p4}, Ljava/lang/ref/SoftReference;-><init>(Ljava/lang/Object;)V
+
+    iput-object p1, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->recyclerView:Ljava/lang/ref/SoftReference;
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/util/List;Ljava/lang/String;Lcom/xiaopeng/speech/vui/task/TaskDispatcher$TaskType;Ljava/util/List;Lbxt;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Landroid/view/View;",
+            ">;",
+            "Ljava/lang/String;",
+            "Lcom/xiaopeng/speech/vui/task/TaskDispatcher$TaskType;",
+            "Ljava/util/List<",
+            "Ljava/lang/Integer;",
+            ">;",
+            "Lbxt;",
+            ")V"
+        }
+    .end annotation
+
+    .line 168
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, 0x1
+
+    .line 40
+    iput-boolean v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->isWholeScene:Z
+
+    const/4 v0, 0x0
+
+    .line 42
+    iput-boolean v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->isContainNotChildrenView:Z
+
+    const-string v0, "primary"
+
+    .line 44
+    iput-object v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->displayLocation:Ljava/lang/String;
+
+    .line 169
+    invoke-direct {p0, p1}, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->revertViewListToSoftReference(Ljava/util/List;)V
+
+    .line 170
+    iput-object p2, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->sceneId:Ljava/lang/String;
+
+    .line 171
+    iput-object p3, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->taskType:Lcom/xiaopeng/speech/vui/task/TaskDispatcher$TaskType;
+
+    .line 172
+    new-instance p1, Ljava/lang/ref/SoftReference;
+
+    invoke-direct {p1, p5}, Ljava/lang/ref/SoftReference;-><init>(Ljava/lang/Object;)V
+
+    iput-object p1, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->elementListener:Ljava/lang/ref/SoftReference;
+
+    .line 173
+    iput-object p4, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->customizeIds:Ljava/util/List;
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/util/List;Ljava/lang/String;Lcom/xiaopeng/speech/vui/task/TaskDispatcher$TaskType;Ljava/util/List;Lbxt;Ljava/util/List;ZLcom/xiaopeng/speech/vui/ISceneCallbackHandler;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Landroid/view/View;",
+            ">;",
+            "Ljava/lang/String;",
+            "Lcom/xiaopeng/speech/vui/task/TaskDispatcher$TaskType;",
+            "Ljava/util/List<",
+            "Ljava/lang/Integer;",
+            ">;",
+            "Lbxt;",
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;Z",
+            "Lcom/xiaopeng/speech/vui/ISceneCallbackHandler;",
+            ")V"
+        }
+    .end annotation
+
+    .line 217
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, 0x1
+
+    .line 40
+    iput-boolean v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->isWholeScene:Z
+
+    const/4 v0, 0x0
+
+    .line 42
+    iput-boolean v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->isContainNotChildrenView:Z
+
+    const-string v0, "primary"
+
+    .line 44
+    iput-object v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->displayLocation:Ljava/lang/String;
+
+    .line 218
+    invoke-direct {p0, p1}, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->revertViewListToSoftReference(Ljava/util/List;)V
+
+    .line 219
+    iput-object p2, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->sceneId:Ljava/lang/String;
+
+    .line 220
+    iget-object p1, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->vid:Ljava/lang/String;
+
+    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->vid:Ljava/lang/String;
+
+    .line 221
+    iput-object p3, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->taskType:Lcom/xiaopeng/speech/vui/task/TaskDispatcher$TaskType;
+
+    .line 222
+    iput-object p4, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->customizeIds:Ljava/util/List;
+
+    .line 223
+    new-instance p1, Ljava/lang/ref/SoftReference;
+
+    invoke-direct {p1, p5}, Ljava/lang/ref/SoftReference;-><init>(Ljava/lang/Object;)V
+
+    iput-object p1, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->elementListener:Ljava/lang/ref/SoftReference;
+
+    .line 224
+    iput-object p6, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->subSceneIds:Ljava/util/List;
+
+    .line 225
+    iput-boolean p7, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->isWholeScene:Z
+
+    .line 226
+    iput-object p8, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->mSceneCallbackHandler:Lcom/xiaopeng/speech/vui/ISceneCallbackHandler;
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/util/List;Ljava/lang/String;Lcom/xiaopeng/speech/vui/task/TaskDispatcher$TaskType;Ljava/util/List;Lbxt;Ljava/util/List;ZLcom/xiaopeng/speech/vui/ISceneCallbackHandler;Ljava/lang/String;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Landroid/view/View;",
+            ">;",
+            "Ljava/lang/String;",
+            "Lcom/xiaopeng/speech/vui/task/TaskDispatcher$TaskType;",
+            "Ljava/util/List<",
+            "Ljava/lang/Integer;",
+            ">;",
+            "Lbxt;",
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;Z",
+            "Lcom/xiaopeng/speech/vui/ISceneCallbackHandler;",
+            "Ljava/lang/String;",
+            ")V"
+        }
+    .end annotation
+
+    .line 228
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, 0x1
+
+    .line 40
+    iput-boolean v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->isWholeScene:Z
+
+    const/4 v0, 0x0
+
+    .line 42
+    iput-boolean v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->isContainNotChildrenView:Z
+
+    const-string v0, "primary"
+
+    .line 44
+    iput-object v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->displayLocation:Ljava/lang/String;
+
+    .line 229
+    invoke-direct {p0, p1}, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->revertViewListToSoftReference(Ljava/util/List;)V
+
+    .line 230
+    iput-object p2, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->sceneId:Ljava/lang/String;
+
+    .line 231
+    iget-object p1, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->vid:Ljava/lang/String;
+
+    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->vid:Ljava/lang/String;
+
+    .line 232
+    iput-object p3, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->taskType:Lcom/xiaopeng/speech/vui/task/TaskDispatcher$TaskType;
+
+    .line 233
+    iput-object p4, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->customizeIds:Ljava/util/List;
+
+    .line 234
+    new-instance p1, Ljava/lang/ref/SoftReference;
+
+    invoke-direct {p1, p5}, Ljava/lang/ref/SoftReference;-><init>(Ljava/lang/Object;)V
+
+    iput-object p1, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->elementListener:Ljava/lang/ref/SoftReference;
+
+    .line 235
+    iput-object p6, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->subSceneIds:Ljava/util/List;
+
+    .line 236
+    iput-boolean p7, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->isWholeScene:Z
+
+    .line 237
+    iput-object p8, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->mSceneCallbackHandler:Lcom/xiaopeng/speech/vui/ISceneCallbackHandler;
+
+    .line 238
+    iput-object p9, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->displayLocation:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/util/List;Ljava/lang/String;Lcom/xiaopeng/speech/vui/task/TaskDispatcher$TaskType;Ljava/util/List;Lbxt;Ljava/util/List;ZLcom/xiaopeng/speech/vui/ISceneCallbackHandler;Ljava/lang/String;Lbxv;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Landroid/view/View;",
+            ">;",
+            "Ljava/lang/String;",
+            "Lcom/xiaopeng/speech/vui/task/TaskDispatcher$TaskType;",
+            "Ljava/util/List<",
+            "Ljava/lang/Integer;",
+            ">;",
+            "Lbxt;",
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;Z",
+            "Lcom/xiaopeng/speech/vui/ISceneCallbackHandler;",
+            "Ljava/lang/String;",
+            "Lbxv;",
+            ")V"
+        }
+    .end annotation
+
+    .line 242
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, 0x1
+
+    .line 40
+    iput-boolean v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->isWholeScene:Z
+
+    const/4 v0, 0x0
+
+    .line 42
+    iput-boolean v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->isContainNotChildrenView:Z
+
+    const-string v0, "primary"
+
+    .line 44
+    iput-object v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->displayLocation:Ljava/lang/String;
+
+    .line 243
+    invoke-direct {p0, p1}, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->revertViewListToSoftReference(Ljava/util/List;)V
+
+    .line 244
+    iput-object p2, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->sceneId:Ljava/lang/String;
+
+    .line 245
+    iget-object p1, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->vid:Ljava/lang/String;
+
+    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->vid:Ljava/lang/String;
+
+    .line 246
+    iput-object p3, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->taskType:Lcom/xiaopeng/speech/vui/task/TaskDispatcher$TaskType;
+
+    .line 247
+    iput-object p4, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->customizeIds:Ljava/util/List;
+
+    .line 248
+    new-instance p1, Ljava/lang/ref/SoftReference;
+
+    invoke-direct {p1, p5}, Ljava/lang/ref/SoftReference;-><init>(Ljava/lang/Object;)V
+
+    iput-object p1, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->elementListener:Ljava/lang/ref/SoftReference;
+
+    .line 249
+    iput-object p6, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->subSceneIds:Ljava/util/List;
+
+    .line 250
+    iput-boolean p7, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->isWholeScene:Z
+
+    .line 251
+    iput-object p8, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->mSceneCallbackHandler:Lcom/xiaopeng/speech/vui/ISceneCallbackHandler;
+
+    .line 252
+    iput-object p9, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->displayLocation:Ljava/lang/String;
+
+    .line 253
+    iput-object p10, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->listener:Lbxv;
+
+    return-void
+.end method
+
+.method private revertViewListToSoftReference(Ljava/util/List;)V
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Landroid/view/View;",
+            ">;)V"
+        }
+    .end annotation
+
+    if-eqz p1, :cond_0
+
+    .line 89
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->viewList:Ljava/util/List;
+
+    const/4 v0, 0x0
+
+    .line 90
+    :goto_0
+    invoke-interface {p1}, Ljava/util/List;->size()I
+
+    move-result v1
+
+    if-ge v0, v1, :cond_0
+
+    .line 91
+    new-instance v1, Ljava/lang/ref/SoftReference;
+
+    invoke-interface {p1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v2
+
+    invoke-direct {v1, v2}, Ljava/lang/ref/SoftReference;-><init>(Ljava/lang/Object;)V
+
+    .line 92
+    iget-object v2, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->viewList:Ljava/util/List;
+
+    invoke-interface {v2, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    return-void
+.end method
+
+
+# virtual methods
+.method public getCustomizeIds()Ljava/util/List;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Ljava/lang/Integer;",
+            ">;"
+        }
+    .end annotation
+
+    .line 269
+    iget-object v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->customizeIds:Ljava/util/List;
+
+    return-object v0
+.end method
+
+.method public getDisplayLocation()Ljava/lang/String;
+    .locals 1
+
+    .line 56
+    iget-object v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->displayLocation:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public getElementGroupId()Ljava/lang/String;
+    .locals 1
+
+    .line 293
+    iget-object v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->elementGroupId:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public getElementListener()Ljava/lang/ref/SoftReference;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/lang/ref/SoftReference<",
+            "Lbxt;",
+            ">;"
+        }
+    .end annotation
+
+    .line 309
+    iget-object v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->elementListener:Ljava/lang/ref/SoftReference;
+
+    return-object v0
+.end method
+
+.method public getListener()Lbxv;
+    .locals 1
+
+    .line 281
+    iget-object v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->listener:Lbxv;
+
+    return-object v0
+.end method
+
+.method public getParentElementId()Ljava/lang/String;
+    .locals 1
+
+    .line 289
+    iget-object v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->parentElementId:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public getPriority()Lbyb;
+    .locals 1
+
+    .line 273
+    iget-object v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->priority:Lbyb;
+
+    return-object v0
+.end method
+
+.method public getRecyclerView()Ljava/lang/ref/SoftReference;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/lang/ref/SoftReference<",
+            "Landroidx/recyclerview/widget/RecyclerView;",
+            ">;"
+        }
+    .end annotation
+
+    .line 354
+    iget-object v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->recyclerView:Ljava/lang/ref/SoftReference;
+
+    return-object v0
+.end method
+
+.method public getSceneCallbackHandler()Lcom/xiaopeng/speech/vui/ISceneCallbackHandler;
+    .locals 1
+
+    .line 346
+    iget-object v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->mSceneCallbackHandler:Lcom/xiaopeng/speech/vui/ISceneCallbackHandler;
+
+    return-object v0
+.end method
+
+.method public getSceneId()Ljava/lang/String;
+    .locals 1
+
+    .line 330
+    iget-object v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->sceneId:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public getSubSceneIds()Ljava/util/List;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+
+    .line 68
+    iget-object v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->subSceneIds:Ljava/util/List;
+
+    return-object v0
+.end method
+
+.method public getTaskType()Lcom/xiaopeng/speech/vui/task/TaskDispatcher$TaskType;
+    .locals 1
+
+    .line 265
+    iget-object v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->taskType:Lcom/xiaopeng/speech/vui/task/TaskDispatcher$TaskType;
+
+    return-object v0
+.end method
+
+.method public getVid()Ljava/lang/String;
+    .locals 1
+
+    .line 338
+    iget-object v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->vid:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public getView()Ljava/lang/ref/SoftReference;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/lang/ref/SoftReference<",
+            "Landroid/view/View;",
+            ">;"
+        }
+    .end annotation
+
+    .line 322
+    iget-object v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->view:Ljava/lang/ref/SoftReference;
+
+    return-object v0
+.end method
+
+.method public getViewList()Ljava/util/List;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Ljava/lang/ref/SoftReference<",
+            "Landroid/view/View;",
+            ">;>;"
+        }
+    .end annotation
+
+    .line 64
+    iget-object v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->viewList:Ljava/util/List;
+
+    return-object v0
+.end method
+
+.method public isContainNotChildrenView()Z
+    .locals 1
+
+    .line 48
+    iget-boolean v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->isContainNotChildrenView:Z
+
+    return v0
+.end method
+
+.method public isWholeScene()Z
+    .locals 1
+
+    .line 52
+    iget-boolean v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->isWholeScene:Z
+
+    return v0
+.end method
+
+.method public setCustomizeIds(Ljava/util/List;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Ljava/lang/Integer;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 305
+    iput-object p1, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->customizeIds:Ljava/util/List;
+
+    return-void
+.end method
+
+.method public setDisplayLocation(Ljava/lang/String;)V
+    .locals 0
+
+    .line 60
+    iput-object p1, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->displayLocation:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public setElementGroupId(Ljava/lang/String;)V
+    .locals 0
+
+    .line 297
+    iput-object p1, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->elementGroupId:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public setElementListener(Lbxt;)V
+    .locals 1
+
+    .line 313
+    new-instance v0, Ljava/lang/ref/SoftReference;
+
+    invoke-direct {v0, p1}, Ljava/lang/ref/SoftReference;-><init>(Ljava/lang/Object;)V
+
+    iput-object v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->elementListener:Ljava/lang/ref/SoftReference;
+
+    return-void
+.end method
+
+.method public setListener(Lbxv;)V
+    .locals 0
+
+    .line 285
+    iput-object p1, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->listener:Lbxv;
+
+    return-void
+.end method
+
+.method public setParentElementId(Ljava/lang/String;)V
+    .locals 0
+
+    .line 301
+    iput-object p1, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->parentElementId:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public setPriority(Lbyb;)V
+    .locals 0
+
+    .line 277
+    iput-object p1, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->priority:Lbyb;
+
+    return-void
+.end method
+
+.method public setReturnCallBack(Lcom/xiaopeng/speech/vui/ISceneCallbackHandler;)V
+    .locals 0
+
+    .line 350
+    iput-object p1, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->mSceneCallbackHandler:Lcom/xiaopeng/speech/vui/ISceneCallbackHandler;
+
+    return-void
+.end method
+
+.method public setSceneId(Ljava/lang/String;)V
+    .locals 0
+
+    .line 334
+    iput-object p1, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->sceneId:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public setTaskType(Lcom/xiaopeng/speech/vui/task/TaskDispatcher$TaskType;)V
+    .locals 0
+
+    .line 318
+    iput-object p1, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->taskType:Lcom/xiaopeng/speech/vui/task/TaskDispatcher$TaskType;
+
+    return-void
+.end method
+
+.method public setVid(Ljava/lang/String;)V
+    .locals 0
+
+    .line 342
+    iput-object p1, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->vid:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public setView(Landroid/view/View;)V
+    .locals 1
+
+    .line 326
+    new-instance v0, Ljava/lang/ref/SoftReference;
+
+    invoke-direct {v0, p1}, Ljava/lang/ref/SoftReference;-><init>(Ljava/lang/Object;)V
+
+    iput-object v0, p0, Lcom/xiaopeng/speech/vui/task/TaskWrapper;->view:Ljava/lang/ref/SoftReference;
+
+    return-void
+.end method

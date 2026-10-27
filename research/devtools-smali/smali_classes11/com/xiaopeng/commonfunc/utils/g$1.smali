@@ -1,0 +1,90 @@
+.class Lcom/xiaopeng/commonfunc/utils/g$1;
+.super Ljava/lang/Object;
+.source "FileUploadHelper.java"
+
+# interfaces
+.implements Lcom/xiaopeng/lib/framework/moduleinterface/netchannelmodule/remotestorage/Callback;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/xiaopeng/commonfunc/utils/g;->a(Landroid/app/Application;Ljava/lang/String;Lcom/xiaopeng/commonfunc/a/b;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic pc:Lcom/xiaopeng/commonfunc/a/b;
+
+
+# direct methods
+.method constructor <init>(Lcom/xiaopeng/commonfunc/a/b;)V
+    .locals 0
+
+    .line 213
+    iput-object p1, p0, Lcom/xiaopeng/commonfunc/utils/g$1;->pc:Lcom/xiaopeng/commonfunc/a/b;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onFailure(Ljava/lang/String;Ljava/lang/String;Lcom/xiaopeng/lib/framework/moduleinterface/netchannelmodule/remotestorage/StorageException;)V
+    .locals 1
+
+    .line 230
+    iget-object v0, p0, Lcom/xiaopeng/commonfunc/utils/g$1;->pc:Lcom/xiaopeng/commonfunc/a/b;
+
+    if-eqz v0, :cond_0
+
+    .line 231
+    iget-object v0, p0, Lcom/xiaopeng/commonfunc/utils/g$1;->pc:Lcom/xiaopeng/commonfunc/a/b;
+
+    invoke-interface {v0, p1, p2, p3}, Lcom/xiaopeng/commonfunc/a/b;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Exception;)V
+
+    .line 233
+    :cond_0
+    return-void
+.end method
+
+.method public onStart(Ljava/lang/String;Ljava/lang/String;)V
+    .locals 1
+
+    .line 216
+    iget-object v0, p0, Lcom/xiaopeng/commonfunc/utils/g$1;->pc:Lcom/xiaopeng/commonfunc/a/b;
+
+    if-eqz v0, :cond_0
+
+    .line 217
+    iget-object v0, p0, Lcom/xiaopeng/commonfunc/utils/g$1;->pc:Lcom/xiaopeng/commonfunc/a/b;
+
+    invoke-interface {v0, p1, p2}, Lcom/xiaopeng/commonfunc/a/b;->onStart(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 219
+    :cond_0
+    return-void
+.end method
+
+.method public onSuccess(Ljava/lang/String;Ljava/lang/String;)V
+    .locals 1
+
+    .line 223
+    iget-object v0, p0, Lcom/xiaopeng/commonfunc/utils/g$1;->pc:Lcom/xiaopeng/commonfunc/a/b;
+
+    if-eqz v0, :cond_0
+
+    .line 224
+    iget-object v0, p0, Lcom/xiaopeng/commonfunc/utils/g$1;->pc:Lcom/xiaopeng/commonfunc/a/b;
+
+    invoke-interface {v0, p1, p2}, Lcom/xiaopeng/commonfunc/a/b;->onSuccess(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 226
+    :cond_0
+    return-void
+.end method

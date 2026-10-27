@@ -1,0 +1,14 @@
+.class public interface abstract Lcom/xiaopeng/speech/protocol/query/phone/a;
+.super Ljava/lang/Object;
+.source "IPhoneQueryCaller.java"
+
+
+# virtual methods
+.method public abstract a(Ljava/lang/String;)I
+.end method
+
+.method public abstract a()Z
+.end method
+
+.method public abstract b()I
+.end method

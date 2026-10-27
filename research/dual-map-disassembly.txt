@@ -1,0 +1,75 @@
+
+ClusterLyrics/research/icm-root/app/hmi/bin/ECluster:	file format elf32-littlearm
+
+Disassembly of section .text:
+
+000d3f20 <_ZN9LampModel21solveLeftCardConflictERii>:
+   d3f20: e92d4010     	push	{r4, lr}
+   d3f24: e1a04001     	mov	r4, r1
+   d3f28: e5913000     	ldr	r3, [r1]
+   d3f2c: e1530002     	cmp	r3, r2
+   d3f30: 0a000001     	beq	0xd3f3c <_ZN9LampModel21solveLeftCardConflictERii+0x1c> @ imm = #0x4
+   d3f34: e3a00000     	mov	r0, #0
+   d3f38: e8bd8010     	pop	{r4, pc}
+   d3f3c: e2833001     	add	r3, r3, #1
+   d3f40: e5813000     	str	r3, [r1]
+   d3f44: ebffffe9     	bl	0xd3ef0 <_ZN9LampModel19handleLeftCardIndexERi> @ imm = #-0x5c
+   d3f48: eb000e9c     	bl	0xd79c0 <_ZN13HmiProperties11getInstanceEv> @ imm = #0x3a70
+   d3f4c: e5941000     	ldr	r1, [r4]
+   d3f50: eb000f0f     	bl	0xd7b94 <_ZNK13HmiProperties16setLeftCardIndexEi> @ imm = #0x3c3c
+   d3f54: e3a00001     	mov	r0, #1
+   d3f58: e8bd8010     	pop	{r4, pc}
+
+000d3f8c <_ZN9LampModel22solveRightCardConflictERii>:
+   d3f8c: e92d4010     	push	{r4, lr}
+   d3f90: e1a04001     	mov	r4, r1
+   d3f94: e5913000     	ldr	r3, [r1]
+   d3f98: e1530002     	cmp	r3, r2
+   d3f9c: 0a000001     	beq	0xd3fa8 <_ZN9LampModel22solveRightCardConflictERii+0x1c> @ imm = #0x4
+   d3fa0: e3a00000     	mov	r0, #0
+   d3fa4: e8bd8010     	pop	{r4, pc}
+   d3fa8: e2833001     	add	r3, r3, #1
+   d3fac: e5813000     	str	r3, [r1]
+   d3fb0: ebffffe9     	bl	0xd3f5c <_ZN9LampModel20handleRightCardIndexERi> @ imm = #-0x5c
+   d3fb4: eb000e81     	bl	0xd79c0 <_ZN13HmiProperties11getInstanceEv> @ imm = #0x3a04
+   d3fb8: e5941000     	ldr	r1, [r4]
+   d3fbc: eb000ef0     	bl	0xd7b84 <_ZNK13HmiProperties17setRightCardIndexEi> @ imm = #0x3bc0
+   d3fc0: e3a00001     	mov	r0, #1
+   d3fc4: e8bd8010     	pop	{r4, pc}
+
+000d960c <_ZN9KanziCard23refreshImageNaviTextureElPhii>:
+   d960c: e92d4070     	push	{r4, r5, r6, lr}
+   d9610: e1a05001     	mov	r5, r1
+   d9614: e59f107c     	ldr	r1, [pc, #0x7c]         @ 0xd9698 <_ZN9KanziCard23refreshImageNaviTextureElPhii+0x8c>
+   d9618: e24dd018     	sub	sp, sp, #24
+   d961c: e1a04002     	mov	r4, r2
+   d9620: e28d0008     	add	r0, sp, #8
+   d9624: e28d2010     	add	r2, sp, #16
+   d9628: e1a06003     	mov	r6, r3
+   d962c: e08f1001     	add	r1, pc, r1
+   d9630: ebfee8a7     	bl	0x938d4 <.plt+0x164c>   @ imm = #-0x45d64
+   d9634: e59f1060     	ldr	r1, [pc, #0x60]         @ 0xd969c <_ZN9KanziCard23refreshImageNaviTextureElPhii+0x90>
+   d9638: e28d000c     	add	r0, sp, #12
+   d963c: e28d2014     	add	r2, sp, #20
+   d9640: e08f1001     	add	r1, pc, r1
+   d9644: ebfee8a2     	bl	0x938d4 <.plt+0x164c>   @ imm = #-0x45d78
+   d9648: e59dc028     	ldr	r12, [sp, #0x28]
+   d964c: e28d0008     	add	r0, sp, #8
+   d9650: e28d100c     	add	r1, sp, #12
+   d9654: e1a02005     	mov	r2, r5
+   d9658: e1a03004     	mov	r3, r4
+   d965c: e58d6000     	str	r6, [sp]
+   d9660: e58dc004     	str	r12, [sp, #0x4]
+   d9664: eb002c4e     	bl	0xe47a4 <_ZN14KanziInterface16updateKanziImageESsSslPhii> @ imm = #0xb138
+   d9668: e28d000c     	add	r0, sp, #12
+   d966c: ebfee88c     	bl	0x938a4 <.plt+0x161c>   @ imm = #-0x45dd0
+   d9670: e28d0008     	add	r0, sp, #8
+   d9674: ebfee88a     	bl	0x938a4 <.plt+0x161c>   @ imm = #-0x45dd8
+   d9678: e28dd018     	add	sp, sp, #24
+   d967c: e8bd8070     	pop	{r4, r5, r6, pc}
+   d9680: e28d0008     	add	r0, sp, #8
+   d9684: ebfee886     	bl	0x938a4 <.plt+0x161c>   @ imm = #-0x45de8
+   d9688: ebfee77a     	bl	0x93478 <.plt+0x11f0>   @ imm = #-0x46218
+   d968c: e28d000c     	add	r0, sp, #12
+   d9690: ebfee883     	bl	0x938a4 <.plt+0x161c>   @ imm = #-0x45df4
+   d9694: eafffff9     	b	0xd9680 <_ZN9KanziCard23refreshImageNaviTextureElPhii+0x74> @ imm = #-0x1c

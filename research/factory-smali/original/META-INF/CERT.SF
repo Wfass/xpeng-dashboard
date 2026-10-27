@@ -1,0 +1,68 @@
+Signature-Version: 1.0
+Created-By: 1.0 (Android SignApk)
+SHA-256-Digest-Manifest: xmbt2HBnXoIMQ0663c7I6ulHxIQ2hmTkWUleox09QcA=
+X-Android-APK-Signed: 2, 3
+
+Name: AndroidManifest.xml
+SHA-256-Digest: oir2PhdCXllFgSGqL/2rkRCIo7W21cc8SzP2KUdJTvc=
+
+Name: assets/amap_bus.png
+SHA-256-Digest: 7QjkhZQov2QZEWZZlLteM32++Mr4kSGqd1Q4ESNcHAc=
+
+Name: assets/amap_car.png
+SHA-256-Digest: DuXOHE1C/S/IUo3rb4Wra33Fhggo4PbblExQ71NLA04=
+
+Name: assets/amap_end.png
+SHA-256-Digest: EYhgkA0JjV9IZSWyBhFvJujLj4OxGG/yGgzxWKA0MXw=
+
+Name: assets/amap_man.png
+SHA-256-Digest: ZxgkgcvYlwMQU5z1YkGWYLsWITC85UrwUCMFAs7wi7A=
+
+Name: assets/amap_start.png
+SHA-256-Digest: mQEFfNhqN/rJKPmPKn1DRzSpY/daNoRUqWcTUyMBvBY=
+
+Name: assets/index_kstp.html
+SHA-256-Digest: vjAqJoA1VwT9BshzF0/zvQjJXHMx0qIp9BTho6b3QXM=
+
+Name: assets/index_kstp_eu.html
+SHA-256-Digest: V8EBiGex6yX/nkVZCggiByupajUH83lFMxlBluVRwDc=
+
+Name: classes.dex
+SHA-256-Digest: QiH4V1p6jZFREuVmc50cjlhEJ5gHBCN+QqLv0Rf4rUA=
+
+Name: classes2.dex
+SHA-256-Digest: ZCi0E+pmQpi23MoeYWuBAkHeKPExH+CLCqv95U0cLk4=
+
+Name: com/alibaba/mtl/appmonitor/Transaction.aidl
+SHA-256-Digest: VhKnRYn81TGbtoEVRCPAx0QOkZPLr13BbtF/pGtTNhQ=
+
+Name: com/alibaba/mtl/appmonitor/model/Dimension.aidl
+SHA-256-Digest: BzTtcWD9434+wGoiydzm/1/gHbDe74wm/eQXPnEnRVY=
+
+Name: com/alibaba/mtl/appmonitor/model/DimensionSet.aidl
+SHA-256-Digest: gA5Hbokks5i9Ld/r4ItBnQME7FC2ONPDWu0FV/ME7qA=
+
+Name: com/alibaba/mtl/appmonitor/model/DimensionValueSet.aidl
+SHA-256-Digest: zJHNsfLdWjtgMWb0ye9kexY8U4iJUakEgLNpXqXSIC4=
+
+Name: com/alibaba/mtl/appmonitor/model/Measure.aidl
+SHA-256-Digest: XGeIYDjXV7qcIRGw5Rk0YglDm/jV5LUbEboAJ/UeL3g=
+
+Name: com/alibaba/mtl/appmonitor/model/MeasureSet.aidl
+SHA-256-Digest: v7Rvwh6y0HEcLad7Ez6DWHyJOhqSV/Ftob5qEbNJ+kY=
+
+Name: com/alibaba/mtl/appmonitor/model/MeasureValueSet.aidl
+SHA-256-Digest: FSikmxZk3L2IAtiU1zfIrVNP5vEIsLIS/vkddsTQ79A=
+
+Name: okhttp3/internal/publicsuffix/NOTICE
+SHA-256-Digest: jX9JruGK5ez+/1XZmYyo2xyogqpjI2P4C6YwmN2E9Kw=
+
+Name: okhttp3/internal/publicsuffix/publicsuffixes.gz
+SHA-256-Digest: Niuo7jd0ow3XQ+RgtKbydu8PHC5gXPv1EccSTPLDL5M=
+
+Name: res/raw/media_volume.ogg
+SHA-256-Digest: E7Zlo6Vu65S4sQw0/spPxTPgIX5BOqtK0WuTbWG5VnE=
+
+Name: resources.arsc
+SHA-256-Digest: T4sxGmy00QKvJqaONALRkJz4xyqIcVlt1sGhqt4O50U=
+

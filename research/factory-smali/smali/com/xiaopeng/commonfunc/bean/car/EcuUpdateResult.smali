@@ -1,0 +1,158 @@
+.class public Lcom/xiaopeng/commonfunc/bean/car/EcuUpdateResult;
+.super Ljava/lang/Object;
+.source "EcuUpdateResult.java"
+
+
+# static fields
+.field public static final FAIL_REASON_SEND_FILE_FAIL:Ljava/lang/String; = "fail send file to QNX"
+
+.field public static final RESULT_FAIL:Ljava/lang/String; = "fail"
+
+.field public static final RESULT_MORE:Ljava/lang/String; = "more"
+
+.field public static final RESULT_SUCCESS:Ljava/lang/String; = "success"
+
+
+# instance fields
+.field private Reason:Ljava/lang/String;
+
+.field private Result:Ljava/lang/String;
+
+.field private Target:Ljava/lang/String;
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 0
+    .param p1, "target"    # Ljava/lang/String;
+    .param p2, "result"    # Ljava/lang/String;
+    .param p3, "reason"    # Ljava/lang/String;
+
+    .line 13
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 14
+    iput-object p1, p0, Lcom/xiaopeng/commonfunc/bean/car/EcuUpdateResult;->Target:Ljava/lang/String;
+
+    .line 15
+    iput-object p2, p0, Lcom/xiaopeng/commonfunc/bean/car/EcuUpdateResult;->Result:Ljava/lang/String;
+
+    .line 16
+    iput-object p3, p0, Lcom/xiaopeng/commonfunc/bean/car/EcuUpdateResult;->Reason:Ljava/lang/String;
+
+    .line 17
+    return-void
+.end method
+
+
+# virtual methods
+.method public getReason()Ljava/lang/String;
+    .locals 1
+
+    .line 36
+    iget-object v0, p0, Lcom/xiaopeng/commonfunc/bean/car/EcuUpdateResult;->Reason:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public getResult()Ljava/lang/String;
+    .locals 1
+
+    .line 28
+    iget-object v0, p0, Lcom/xiaopeng/commonfunc/bean/car/EcuUpdateResult;->Result:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public getTarget()Ljava/lang/String;
+    .locals 1
+
+    .line 20
+    iget-object v0, p0, Lcom/xiaopeng/commonfunc/bean/car/EcuUpdateResult;->Target:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public setReason(Ljava/lang/String;)V
+    .locals 0
+    .param p1, "reason"    # Ljava/lang/String;
+
+    .line 40
+    iput-object p1, p0, Lcom/xiaopeng/commonfunc/bean/car/EcuUpdateResult;->Reason:Ljava/lang/String;
+
+    .line 41
+    return-void
+.end method
+
+.method public setResult(Ljava/lang/String;)V
+    .locals 0
+    .param p1, "result"    # Ljava/lang/String;
+
+    .line 32
+    iput-object p1, p0, Lcom/xiaopeng/commonfunc/bean/car/EcuUpdateResult;->Result:Ljava/lang/String;
+
+    .line 33
+    return-void
+.end method
+
+.method public setTarget(Ljava/lang/String;)V
+    .locals 0
+    .param p1, "target"    # Ljava/lang/String;
+
+    .line 24
+    iput-object p1, p0, Lcom/xiaopeng/commonfunc/bean/car/EcuUpdateResult;->Target:Ljava/lang/String;
+
+    .line 25
+    return-void
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 3
+
+    .line 45
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "EcuUpdateResult{Target=\'"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lcom/xiaopeng/commonfunc/bean/car/EcuUpdateResult;->Target:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const/16 v1, 0x27
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    const-string v2, ", Result=\'"
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v2, p0, Lcom/xiaopeng/commonfunc/bean/car/EcuUpdateResult;->Result:Ljava/lang/String;
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    const-string v2, ", Reason=\'"
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v2, p0, Lcom/xiaopeng/commonfunc/bean/car/EcuUpdateResult;->Reason:Ljava/lang/String;
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    const/16 v1, 0x7d
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method

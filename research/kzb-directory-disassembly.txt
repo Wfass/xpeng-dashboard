@@ -1,0 +1,761 @@
+
+ClusterLyrics/research/icm-root/app/hmi/bin/ECluster:	file format elf32-littlearm
+
+Disassembly of section .text:
+
+00242a60 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE>:
+  242a60: e92d4ff0     	push	{r4, r5, r6, r7, r8, r9, r10, r11, lr}
+  242a64: e3a0a000     	mov	r10, #0
+  242a68: e5912008     	ldr	r2, [r1, #0x8]
+  242a6c: e24dd0a4     	sub	sp, sp, #164
+  242a70: e1a0700a     	mov	r7, r10
+  242a74: e58da060     	str	r10, [sp, #0x60]
+  242a78: e58da064     	str	r10, [sp, #0x64]
+  242a7c: e2824004     	add	r4, r2, #4
+  242a80: e58da068     	str	r10, [sp, #0x68]
+  242a84: e58d0038     	str	r0, [sp, #0x38]
+  242a88: e5d20000     	ldrb	r0, [r2]
+  242a8c: e58d1014     	str	r1, [sp, #0x14]
+  242a90: e5d21001     	ldrb	r1, [r2, #0x1]
+  242a94: e7c77010     	bfi	r7, r0, #0, #8
+  242a98: e5d23002     	ldrb	r3, [r2, #0x2]
+  242a9c: e5d2c003     	ldrb	r12, [r2, #0x3]
+  242aa0: e1a02004     	mov	r2, r4
+  242aa4: e7cf7411     	bfi	r7, r1, #8, #8
+  242aa8: e58d7018     	str	r7, [sp, #0x18]
+  242aac: e59f79f8     	ldr	r7, [pc, #0x9f8]        @ 0x2434ac <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0xa4c>
+  242ab0: e58d7028     	str	r7, [sp, #0x28]
+  242ab4: e59d7018     	ldr	r7, [sp, #0x18]
+  242ab8: e7d77813     	bfi	r7, r3, #16, #8
+  242abc: e7df7c1c     	bfi	r7, r12, #24, #8
+  242ac0: e58d7018     	str	r7, [sp, #0x18]
+  242ac4: e59d7014     	ldr	r7, [sp, #0x14]
+  242ac8: e5874008     	str	r4, [r7, #0x8]
+  242acc: e59d7018     	ldr	r7, [sp, #0x18]
+  242ad0: e157000a     	cmp	r7, r10
+  242ad4: e59d7028     	ldr	r7, [sp, #0x28]
+  242ad8: 028d4060     	addeq	r4, sp, #96
+  242adc: 058d402c     	streq	r4, [sp, #0x2c]
+  242ae0: e08f7007     	add	r7, pc, r7
+  242ae4: e58d7028     	str	r7, [sp, #0x28]
+  242ae8: 0a000046     	beq	0x242c08 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x1a8> @ imm = #0x118
+  242aec: e28d7060     	add	r7, sp, #96
+  242af0: e1a0500a     	mov	r5, r10
+  242af4: e58d702c     	str	r7, [sp, #0x2c]
+  242af8: e1a0800a     	mov	r8, r10
+  242afc: e1a0700a     	mov	r7, r10
+  242b00: ea000024     	b	0x242b98 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x138> @ imm = #0x90
+  242b04: e3540000     	cmp	r4, #0
+  242b08: 0a000037     	beq	0x242bec <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x18c> @ imm = #0xdc
+  242b0c: e0640000     	rsb	r0, r4, r0
+  242b10: e3a01000     	mov	r1, #0
+  242b14: e28d209c     	add	r2, sp, #156
+  242b18: e58d0010     	str	r0, [sp, #0x10]
+  242b1c: ebf93f34     	bl	0x927f4 <.plt+0x56c>    @ imm = #-0x1b0330
+  242b20: e59d7010     	ldr	r7, [sp, #0x10]
+  242b24: e1a03000     	mov	r3, r0
+  242b28: e3570001     	cmp	r7, #1
+  242b2c: e280700c     	add	r7, r0, #12
+  242b30: 0a00002a     	beq	0x242be0 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x180> @ imm = #0xa8
+  242b34: e1a00007     	mov	r0, r7
+  242b38: e1a01004     	mov	r1, r4
+  242b3c: e59d2010     	ldr	r2, [sp, #0x10]
+  242b40: e58d300c     	str	r3, [sp, #0xc]
+  242b44: ebf94023     	bl	0x92bd8 <.plt+0x950>    @ imm = #-0x1aff74
+  242b48: e59d300c     	ldr	r3, [sp, #0xc]
+  242b4c: e59f295c     	ldr	r2, [pc, #0x95c]        @ 0x2434b0 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0xa50>
+  242b50: e59d4028     	ldr	r4, [sp, #0x28]
+  242b54: e7942002     	ldr	r2, [r4, r2]
+  242b58: e1530002     	cmp	r3, r2
+  242b5c: 1a00023f     	bne	0x243460 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0xa00> @ imm = #0x8fc
+  242b60: e78a7105     	str	r7, [r10, r5, lsl #2]
+  242b64: e59d3064     	ldr	r3, [sp, #0x64]
+  242b68: e2833001     	add	r3, r3, #1
+  242b6c: e58d3064     	str	r3, [sp, #0x64]
+  242b70: e59d4018     	ldr	r4, [sp, #0x18]
+  242b74: e2888001     	add	r8, r8, #1
+  242b78: e1580004     	cmp	r8, r4
+  242b7c: 0a00001f     	beq	0x242c00 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x1a0> @ imm = #0x7c
+  242b80: e59d402c     	ldr	r4, [sp, #0x2c]
+  242b84: e59dc014     	ldr	r12, [sp, #0x14]
+  242b88: e59d5064     	ldr	r5, [sp, #0x64]
+  242b8c: e5947008     	ldr	r7, [r4, #0x8]
+  242b90: e594a000     	ldr	r10, [r4]
+  242b94: e59c4008     	ldr	r4, [r12, #0x8]
+  242b98: e1a00004     	mov	r0, r4
+  242b9c: e58d406c     	str	r4, [sp, #0x6c]
+  242ba0: ebf940f6     	bl	0x92f80 <.plt+0xcf8>    @ imm = #-0x1afc28
+  242ba4: e1570005     	cmp	r7, r5
+  242ba8: e59d7014     	ldr	r7, [sp, #0x14]
+  242bac: e2803001     	add	r3, r0, #1
+  242bb0: e58d0070     	str	r0, [sp, #0x70]
+  242bb4: e0843003     	add	r3, r4, r3
+  242bb8: e5873008     	str	r3, [r7, #0x8]
+  242bbc: 9a00022e     	bls	0x24347c <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0xa1c> @ imm = #0x8b8
+  242bc0: e0840000     	add	r0, r4, r0
+  242bc4: e1500004     	cmp	r0, r4
+  242bc8: 1affffcd     	bne	0x242b04 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0xa4> @ imm = #-0xcc
+  242bcc: e59f38dc     	ldr	r3, [pc, #0x8dc]        @ 0x2434b0 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0xa50>
+  242bd0: e59d4028     	ldr	r4, [sp, #0x28]
+  242bd4: e7947003     	ldr	r7, [r4, r3]
+  242bd8: e287700c     	add	r7, r7, #12
+  242bdc: eaffffdf     	b	0x242b60 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x100> @ imm = #-0x84
+  242be0: e5d42000     	ldrb	r2, [r4]
+  242be4: e5c3200c     	strb	r2, [r3, #0xc]
+  242be8: eaffffd7     	b	0x242b4c <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0xec> @ imm = #-0xa4
+  242bec: e3500000     	cmp	r0, #0
+  242bf0: 0affffc5     	beq	0x242b0c <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0xac> @ imm = #-0xec
+  242bf4: e59f08b8     	ldr	r0, [pc, #0x8b8]        @ 0x2434b4 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0xa54>
+  242bf8: e08f0000     	add	r0, pc, r0
+  242bfc: ebf93dd3     	bl	0x92350 <.plt+0xc8>     @ imm = #-0x1b08b4
+  242c00: e59d7014     	ldr	r7, [sp, #0x14]
+  242c04: e5972008     	ldr	r2, [r7, #0x8]
+  242c08: e28d40a0     	add	r4, sp, #160
+  242c0c: e3a01000     	mov	r1, #0
+  242c10: e524105c     	str	r1, [r4, #-0x5c]!
+  242c14: e1a07001     	mov	r7, r1
+  242c18: e58d4048     	str	r4, [sp, #0x48]
+  242c1c: e2823004     	add	r3, r2, #4
+  242c20: e58d404c     	str	r4, [sp, #0x4c]
+  242c24: e58d1040     	str	r1, [sp, #0x40]
+  242c28: e5d20000     	ldrb	r0, [r2]
+  242c2c: e5d2c001     	ldrb	r12, [r2, #0x1]
+  242c30: e5d2e002     	ldrb	lr, [r2, #0x2]
+  242c34: e7c77010     	bfi	r7, r0, #0, #8
+  242c38: e5d22003     	ldrb	r2, [r2, #0x3]
+  242c3c: e7cf741c     	bfi	r7, r12, #8, #8
+  242c40: e58d4030     	str	r4, [sp, #0x30]
+  242c44: e7d7781e     	bfi	r7, lr, #16, #8
+  242c48: e59d4014     	ldr	r4, [sp, #0x14]
+  242c4c: e7df7c12     	bfi	r7, r2, #24, #8
+  242c50: e1570001     	cmp	r7, r1
+  242c54: e58d7034     	str	r7, [sp, #0x34]
+  242c58: 028d6040     	addeq	r6, sp, #64
+  242c5c: e5843008     	str	r3, [r4, #0x8]
+  242c60: 058d603c     	streq	r6, [sp, #0x3c]
+  242c64: 0a00010d     	beq	0x2430a0 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x640> @ imm = #0x434
+  242c68: e28d7040     	add	r7, sp, #64
+  242c6c: e58d1028     	str	r1, [sp, #0x28]
+  242c70: e58d703c     	str	r7, [sp, #0x3c]
+  242c74: e5d3e000     	ldrb	lr, [r3]
+  242c78: e2831004     	add	r1, r3, #4
+  242c7c: e5d3c001     	ldrb	r12, [r3, #0x1]
+  242c80: e2837008     	add	r7, r3, #8
+  242c84: e59d402c     	ldr	r4, [sp, #0x2c]
+  242c88: e283a00c     	add	r10, r3, #12
+  242c8c: e7c7601e     	bfi	r6, lr, #0, #8
+  242c90: e5d30002     	ldrb	r0, [r3, #0x2]
+  242c94: e7cf641c     	bfi	r6, r12, #8, #8
+  242c98: e5d32003     	ldrb	r2, [r3, #0x3]
+  242c9c: e594c000     	ldr	r12, [r4]
+  242ca0: e283e018     	add	lr, r3, #24
+  242ca4: e59d4014     	ldr	r4, [sp, #0x14]
+  242ca8: e7d76810     	bfi	r6, r0, #16, #8
+  242cac: e7df6c12     	bfi	r6, r2, #24, #8
+  242cb0: e58de018     	str	lr, [sp, #0x18]
+  242cb4: e2838010     	add	r8, r3, #16
+  242cb8: e3a00030     	mov	r0, #48
+  242cbc: e5841008     	str	r1, [r4, #0x8]
+  242cc0: e5d31004     	ldrb	r1, [r3, #0x4]
+  242cc4: e79c5106     	ldr	r5, [r12, r6, lsl #2]
+  242cc8: e283c014     	add	r12, r3, #20
+  242ccc: e5d32005     	ldrb	r2, [r3, #0x5]
+  242cd0: e7c79011     	bfi	r9, r1, #0, #8
+  242cd4: e59d1014     	ldr	r1, [sp, #0x14]
+  242cd8: e58dc010     	str	r12, [sp, #0x10]
+  242cdc: e5d3c006     	ldrb	r12, [r3, #0x6]
+  242ce0: e7cf9412     	bfi	r9, r2, #8, #8
+  242ce4: e5d3e007     	ldrb	lr, [r3, #0x7]
+  242ce8: e515400c     	ldr	r4, [r5, #-0xc]
+  242cec: e5817008     	str	r7, [r1, #0x8]
+  242cf0: e7d7981c     	bfi	r9, r12, #16, #8
+  242cf4: e5d31008     	ldrb	r1, [r3, #0x8]
+  242cf8: e7df9c1e     	bfi	r9, lr, #24, #8
+  242cfc: e5d32009     	ldrb	r2, [r3, #0x9]
+  242d00: e5d3c00a     	ldrb	r12, [r3, #0xa]
+  242d04: e5d3e00b     	ldrb	lr, [r3, #0xb]
+  242d08: e7c7b011     	bfi	r11, r1, #0, #8
+  242d0c: e59d7014     	ldr	r7, [sp, #0x14]
+  242d10: e7cfb412     	bfi	r11, r2, #8, #8
+  242d14: e7d7b81c     	bfi	r11, r12, #16, #8
+  242d18: e7dfbc1e     	bfi	r11, lr, #24, #8
+  242d1c: e59de024     	ldr	lr, [sp, #0x24]
+  242d20: e587a008     	str	r10, [r7, #0x8]
+  242d24: e5d3700c     	ldrb	r7, [r3, #0xc]
+  242d28: e5d3200d     	ldrb	r2, [r3, #0xd]
+  242d2c: e5d3100e     	ldrb	r1, [r3, #0xe]
+  242d30: e7c7e017     	bfi	lr, r7, #0, #8
+  242d34: e5d3c00f     	ldrb	r12, [r3, #0xf]
+  242d38: e7cfe412     	bfi	lr, r2, #8, #8
+  242d3c: e59d7014     	ldr	r7, [sp, #0x14]
+  242d40: e7d7e811     	bfi	lr, r1, #16, #8
+  242d44: e58de024     	str	lr, [sp, #0x24]
+  242d48: e59d1024     	ldr	r1, [sp, #0x24]
+  242d4c: e5878008     	str	r8, [r7, #0x8]
+  242d50: e5d37010     	ldrb	r7, [r3, #0x10]
+  242d54: e7df1c1c     	bfi	r1, r12, #24, #8
+  242d58: e5d3e011     	ldrb	lr, [r3, #0x11]
+  242d5c: e58d1024     	str	r1, [sp, #0x24]
+  242d60: e59dc020     	ldr	r12, [sp, #0x20]
+  242d64: e5d32012     	ldrb	r2, [r3, #0x12]
+  242d68: e5d31013     	ldrb	r1, [r3, #0x13]
+  242d6c: e7c7c017     	bfi	r12, r7, #0, #8
+  242d70: e59d7010     	ldr	r7, [sp, #0x10]
+  242d74: e58dc020     	str	r12, [sp, #0x20]
+  242d78: e59dc014     	ldr	r12, [sp, #0x14]
+  242d7c: e58c7008     	str	r7, [r12, #0x8]
+  242d80: e59d7020     	ldr	r7, [sp, #0x20]
+  242d84: e5d3c015     	ldrb	r12, [r3, #0x15]
+  242d88: e7cf741e     	bfi	r7, lr, #8, #8
+  242d8c: e5d3e014     	ldrb	lr, [r3, #0x14]
+  242d90: e7d77812     	bfi	r7, r2, #16, #8
+  242d94: e5d32016     	ldrb	r2, [r3, #0x16]
+  242d98: e7df7c11     	bfi	r7, r1, #24, #8
+  242d9c: e5d33017     	ldrb	r3, [r3, #0x17]
+  242da0: e58d7020     	str	r7, [sp, #0x20]
+  242da4: e59d701c     	ldr	r7, [sp, #0x1c]
+  242da8: e7c7701e     	bfi	r7, lr, #0, #8
+  242dac: e7cf741c     	bfi	r7, r12, #8, #8
+  242db0: e59dc018     	ldr	r12, [sp, #0x18]
+  242db4: e58d701c     	str	r7, [sp, #0x1c]
+  242db8: e59d7014     	ldr	r7, [sp, #0x14]
+  242dbc: e587c008     	str	r12, [r7, #0x8]
+  242dc0: e59d701c     	ldr	r7, [sp, #0x1c]
+  242dc4: e7d77812     	bfi	r7, r2, #16, #8
+  242dc8: e7df7c13     	bfi	r7, r3, #24, #8
+  242dcc: e58d701c     	str	r7, [sp, #0x1c]
+  242dd0: ebf93f9e     	bl	0x92c50 <.plt+0x9c8>    @ imm = #-0x1b0188
+  242dd4: e59dc044     	ldr	r12, [sp, #0x44]
+  242dd8: e59de024     	ldr	lr, [sp, #0x24]
+  242ddc: e59d1020     	ldr	r1, [sp, #0x20]
+  242de0: e59d201c     	ldr	r2, [sp, #0x1c]
+  242de4: e3dc7001     	bics	r7, r12, #1
+  242de8: 13a03000     	movne	r3, #0
+  242dec: e58d0010     	str	r0, [sp, #0x10]
+  242df0: e58dc018     	str	r12, [sp, #0x18]
+  242df4: 11a0a003     	movne	r10, r3
+  242df8: e580500c     	str	r5, [r0, #0xc]
+  242dfc: e5804010     	str	r4, [r0, #0x10]
+  242e00: e5805014     	str	r5, [r0, #0x14]
+  242e04: e5804018     	str	r4, [r0, #0x18]
+  242e08: e580901c     	str	r9, [r0, #0x1c]
+  242e0c: e580b020     	str	r11, [r0, #0x20]
+  242e10: e580e024     	str	lr, [r0, #0x24]
+  242e14: e5801028     	str	r1, [r0, #0x28]
+  242e18: e580202c     	str	r2, [r0, #0x2c]
+  242e1c: 1a000008     	bne	0x242e44 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x3e4> @ imm = #0x20
+  242e20: ea00002e     	b	0x242ee0 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x480> @ imm = #0xb8
+  242e24: e1580004     	cmp	r8, r4
+  242e28: 8a00000f     	bhi	0x242e6c <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x40c> @ imm = #0x3c
+  242e2c: e5973008     	ldr	r3, [r7, #0x8]
+  242e30: e1a0a007     	mov	r10, r7
+  242e34: e3a08000     	mov	r8, #0
+  242e38: e3530000     	cmp	r3, #0
+  242e3c: 0a00000e     	beq	0x242e7c <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x41c> @ imm = #0x38
+  242e40: e1a07003     	mov	r7, r3
+  242e44: e5978010     	ldr	r8, [r7, #0x10]
+  242e48: e1a00005     	mov	r0, r5
+  242e4c: e597100c     	ldr	r1, [r7, #0xc]
+  242e50: e1540008     	cmp	r4, r8
+  242e54: 31a02004     	movlo	r2, r4
+  242e58: 21a02008     	movhs	r2, r8
+  242e5c: ebf9415b     	bl	0x933d0 <.plt+0x1148>   @ imm = #-0x1afa94
+  242e60: e3500000     	cmp	r0, #0
+  242e64: 0affffee     	beq	0x242e24 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x3c4> @ imm = #-0x48
+  242e68: aaffffef     	bge	0x242e2c <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x3cc> @ imm = #-0x44
+  242e6c: e5973004     	ldr	r3, [r7, #0x4]
+  242e70: e3a08001     	mov	r8, #1
+  242e74: e3530000     	cmp	r3, #0
+  242e78: 1afffff0     	bne	0x242e40 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x3e0> @ imm = #-0x40
+  242e7c: e35a0000     	cmp	r10, #0
+  242e80: e1a0300a     	mov	r3, r10
+  242e84: 0a000017     	beq	0x242ee8 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x488> @ imm = #0x5c
+  242e88: e59aa010     	ldr	r10, [r10, #0x10]
+  242e8c: e1a01005     	mov	r1, r5
+  242e90: e593000c     	ldr	r0, [r3, #0xc]
+  242e94: e154000a     	cmp	r4, r10
+  242e98: 31a02004     	movlo	r2, r4
+  242e9c: 21a0200a     	movhs	r2, r10
+  242ea0: ebf9414a     	bl	0x933d0 <.plt+0x1148>   @ imm = #-0x1afad8
+  242ea4: e3500000     	cmp	r0, #0
+  242ea8: 1a000110     	bne	0x2432f0 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x890> @ imm = #0x440
+  242eac: e15a0004     	cmp	r10, r4
+  242eb0: 3a00000c     	blo	0x242ee8 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x488> @ imm = #0x30
+  242eb4: e59d0010     	ldr	r0, [sp, #0x10]
+  242eb8: ebf93f2e     	bl	0x92b78 <.plt+0x8f0>    @ imm = #-0x1b0348
+  242ebc: e59d4028     	ldr	r4, [sp, #0x28]
+  242ec0: e59d7034     	ldr	r7, [sp, #0x34]
+  242ec4: e2844001     	add	r4, r4, #1
+  242ec8: e1540007     	cmp	r4, r7
+  242ecc: e58d4028     	str	r4, [sp, #0x28]
+  242ed0: 0a000072     	beq	0x2430a0 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x640> @ imm = #0x1c8
+  242ed4: e59d4014     	ldr	r4, [sp, #0x14]
+  242ed8: e5943008     	ldr	r3, [r4, #0x8]
+  242edc: eaffff64     	b	0x242c74 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x214> @ imm = #-0x270
+  242ee0: e59d7030     	ldr	r7, [sp, #0x30]
+  242ee4: e3a08001     	mov	r8, #1
+  242ee8: e3580000     	cmp	r8, #0
+  242eec: e59da010     	ldr	r10, [sp, #0x10]
+  242ef0: 0a000102     	beq	0x243300 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x8a0> @ imm = #0x408
+  242ef4: e59d4030     	ldr	r4, [sp, #0x30]
+  242ef8: e1570004     	cmp	r7, r4
+  242efc: 0a000108     	beq	0x243324 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x8c4> @ imm = #0x420
+  242f00: e3580000     	cmp	r8, #0
+  242f04: 0a00010e     	beq	0x243344 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x8e4> @ imm = #0x438
+  242f08: e59dc010     	ldr	r12, [sp, #0x10]
+  242f0c: e587c004     	str	r12, [r7, #0x4]
+  242f10: e59d3048     	ldr	r3, [sp, #0x48]
+  242f14: e1570003     	cmp	r7, r3
+  242f18: 058dc048     	streq	r12, [sp, #0x48]
+  242f1c: e59d0030     	ldr	r0, [sp, #0x30]
+  242f20: e3c77001     	bic	r7, r7, #1
+  242f24: e59dc010     	ldr	r12, [sp, #0x10]
+  242f28: e3a0e000     	mov	lr, #0
+  242f2c: e1a04007     	mov	r4, r7
+  242f30: e1a01007     	mov	r1, r7
+  242f34: e1570000     	cmp	r7, r0
+  242f38: e58ce008     	str	lr, [r12, #0x8]
+  242f3c: e58ce004     	str	lr, [r12, #0x4]
+  242f40: e58c7000     	str	r7, [r12]
+  242f44: e5973000     	ldr	r3, [r7]
+  242f48: 0a000046     	beq	0x243068 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x608> @ imm = #0x118
+  242f4c: e3130001     	tst	r3, #1
+  242f50: 1a000044     	bne	0x243068 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x608> @ imm = #0x110
+  242f54: e3c33001     	bic	r3, r3, #1
+  242f58: e1530000     	cmp	r3, r0
+  242f5c: e1a05003     	mov	r5, r3
+  242f60: 159d7030     	ldrne	r7, [sp, #0x30]
+  242f64: 0a00003f     	beq	0x243068 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x608> @ imm = #0xfc
+  242f68: e5932004     	ldr	r2, [r3, #0x4]
+  242f6c: e593c000     	ldr	r12, [r3]
+  242f70: e0620001     	rsb	r0, r2, r1
+  242f74: e270e000     	rsbs	lr, r0, #0
+  242f78: e3ccc001     	bic	r12, r12, #1
+  242f7c: e0aee000     	adc	lr, lr, r0
+  242f80: e583c000     	str	r12, [r3]
+  242f84: e35e0000     	cmp	lr, #0
+  242f88: 15932008     	ldrne	r2, [r3, #0x8]
+  242f8c: e3520000     	cmp	r2, #0
+  242f90: 0a000002     	beq	0x242fa0 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x540> @ imm = #0x8
+  242f94: e5920000     	ldr	r0, [r2]
+  242f98: e3100001     	tst	r0, #1
+  242f9c: 0a0000c0     	beq	0x2432a4 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x844> @ imm = #0x300
+  242fa0: e5910004     	ldr	r0, [r1, #0x4]
+  242fa4: e060500a     	rsb	r5, r0, r10
+  242fa8: e2752000     	rsbs	r2, r5, #0
+  242fac: e0a22005     	adc	r2, r2, r5
+  242fb0: e35e0000     	cmp	lr, #0
+  242fb4: 0a0000e9     	beq	0x243360 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x900> @ imm = #0x3a4
+  242fb8: e3520000     	cmp	r2, #0
+  242fbc: 11a0a001     	movne	r10, r1
+  242fc0: 1a00000d     	bne	0x242ffc <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x59c> @ imm = #0x34
+  242fc4: e59a0004     	ldr	r0, [r10, #0x4]
+  242fc8: e3500000     	cmp	r0, #0
+  242fcc: e5810008     	str	r0, [r1, #0x8]
+  242fd0: 15902000     	ldrne	r2, [r0]
+  242fd4: 12022001     	andne	r2, r2, #1
+  242fd8: 11842002     	orrne	r2, r4, r2
+  242fdc: 15802000     	strne	r2, [r0]
+  242fe0: e58a1004     	str	r1, [r10, #0x4]
+  242fe4: e5912000     	ldr	r2, [r1]
+  242fe8: e2022001     	and	r2, r2, #1
+  242fec: e18a2002     	orr	r2, r10, r2
+  242ff0: e5812000     	str	r2, [r1]
+  242ff4: e1a0100a     	mov	r1, r10
+  242ff8: e593c000     	ldr	r12, [r3]
+  242ffc: e5912008     	ldr	r2, [r1, #0x8]
+  243000: e3ccc001     	bic	r12, r12, #1
+  243004: e59ce004     	ldr	lr, [r12, #0x4]
+  243008: e3520000     	cmp	r2, #0
+  24300c: e5832004     	str	r2, [r3, #0x4]
+  243010: 15920000     	ldrne	r0, [r2]
+  243014: 12000001     	andne	r0, r0, #1
+  243018: 11830000     	orrne	r0, r3, r0
+  24301c: 15820000     	strne	r0, [r2]
+  243020: e5813008     	str	r3, [r1, #0x8]
+  243024: e5932000     	ldr	r2, [r3]
+  243028: e59d4030     	ldr	r4, [sp, #0x30]
+  24302c: e2022001     	and	r2, r2, #1
+  243030: e18a2002     	orr	r2, r10, r2
+  243034: e15c0004     	cmp	r12, r4
+  243038: e5832000     	str	r2, [r3]
+  24303c: e5912000     	ldr	r2, [r1]
+  243040: e2022001     	and	r2, r2, #1
+  243044: e182200c     	orr	r2, r2, r12
+  243048: e5812000     	str	r2, [r1]
+  24304c: 0a0000df     	beq	0x2433d0 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x970> @ imm = #0x37c
+  243050: e15e0003     	cmp	lr, r3
+  243054: 058c1004     	streq	r1, [r12, #0x4]
+  243058: 158c1008     	strne	r1, [r12, #0x8]
+  24305c: e5913000     	ldr	r3, [r1]
+  243060: e3833001     	orr	r3, r3, #1
+  243064: e5813000     	str	r3, [r1]
+  243068: e59d3044     	ldr	r3, [sp, #0x44]
+  24306c: e59d4028     	ldr	r4, [sp, #0x28]
+  243070: e59d7034     	ldr	r7, [sp, #0x34]
+  243074: e3c33001     	bic	r3, r3, #1
+  243078: e5932000     	ldr	r2, [r3]
+  24307c: e2844001     	add	r4, r4, #1
+  243080: e1540007     	cmp	r4, r7
+  243084: e58d4028     	str	r4, [sp, #0x28]
+  243088: e3822001     	orr	r2, r2, #1
+  24308c: e5832000     	str	r2, [r3]
+  243090: e59d3040     	ldr	r3, [sp, #0x40]
+  243094: e2833001     	add	r3, r3, #1
+  243098: e58d3040     	str	r3, [sp, #0x40]
+  24309c: 1affff8c     	bne	0x242ed4 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x474> @ imm = #-0x1d0
+  2430a0: e59d6038     	ldr	r6, [sp, #0x38]
+  2430a4: e3a03000     	mov	r3, #0
+  2430a8: e59d702c     	ldr	r7, [sp, #0x2c]
+  2430ac: e28d4054     	add	r4, sp, #84
+  2430b0: e28d5050     	add	r5, sp, #80
+  2430b4: e58d3054     	str	r3, [sp, #0x54]
+  2430b8: e5962024     	ldr	r2, [r6, #0x24]
+  2430bc: e596e018     	ldr	lr, [r6, #0x18]
+  2430c0: e596001c     	ldr	r0, [r6, #0x1c]
+  2430c4: e597c004     	ldr	r12, [r7, #0x4]
+  2430c8: e1520003     	cmp	r2, r3
+  2430cc: e5971008     	ldr	r1, [r7, #0x8]
+  2430d0: e5962020     	ldr	r2, [r6, #0x20]
+  2430d4: e59d7038     	ldr	r7, [sp, #0x38]
+  2430d8: e59d6060     	ldr	r6, [sp, #0x60]
+  2430dc: e58d0064     	str	r0, [sp, #0x64]
+  2430e0: e58de060     	str	lr, [sp, #0x60]
+  2430e4: e5876018     	str	r6, [r7, #0x18]
+  2430e8: e587c01c     	str	r12, [r7, #0x1c]
+  2430ec: e5871020     	str	r1, [r7, #0x20]
+  2430f0: e58d2068     	str	r2, [sp, #0x68]
+  2430f4: e58d4058     	str	r4, [sp, #0x58]
+  2430f8: e58d405c     	str	r4, [sp, #0x5c]
+  2430fc: e58d3050     	str	r3, [sp, #0x50]
+  243100: 0a00001b     	beq	0x243174 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x714> @ imm = #0x6c
+  243104: e287c028     	add	r12, r7, #40
+  243108: e28d0098     	add	r0, sp, #152
+  24310c: e58dc098     	str	r12, [sp, #0x98]
+  243110: e28dc08c     	add	r12, sp, #140
+  243114: e58dc000     	str	r12, [sp]
+  243118: e28d1094     	add	r1, sp, #148
+  24311c: e28dc090     	add	r12, sp, #144
+  243120: e28d207c     	add	r2, sp, #124
+  243124: e28d3074     	add	r3, sp, #116
+  243128: e58d4094     	str	r4, [sp, #0x94]
+  24312c: e58d507c     	str	r5, [sp, #0x7c]
+  243130: e58d4080     	str	r4, [sp, #0x80]
+  243134: e58d5074     	str	r5, [sp, #0x74]
+  243138: e58d4078     	str	r4, [sp, #0x78]
+  24313c: e58dc004     	str	r12, [sp, #0x4]
+  243140: eb000551     	bl	0x24468c <_ZN5boost9intrusive17bstree_algorithmsINS0_18rbtree_node_traitsIPvLb1EEEE13clone_subtreeINS0_18rbtree_node_clonerIS4_NS0_6detail11node_clonerINS_9container16container_detail17node_alloc_holderINSA_13new_allocatorISt4pairIKNS_17basic_string_viewIcSt11char_traitsIcEEEN5kanzi7KzbFile9FileEntryEEEENS0_11rbtree_implINS0_8bhtraitsINSB_9tree_nodeISN_S3_LNSA_14tree_type_enumE0ELb1EEES4_LNS0_14link_mode_typeE0ENS0_7dft_tagELj3EEEvNSA_21value_to_node_compareIST_NS0_18tree_value_compareIPSN_St4lessISI_ENSB_9select1stISI_EELb0EEEEEjLb1EvEEE6clonerESW_LNS0_10algo_typesE5ELb1EEEEENS8_13node_disposerINSB_19allocator_destroyerINSD_IST_EEEESW_LS19_5EEEEEPNS0_19compact_rbtree_nodeIS3_EERKPKS1I_RKS1J_T_T0_RS1J_S1S_> @ imm = #0x1544
+  243144: e59d3094     	ldr	r3, [sp, #0x94]
+  243148: e5932000     	ldr	r2, [r3]
+  24314c: e2022001     	and	r2, r2, #1
+  243150: e1802002     	orr	r2, r0, r2
+  243154: e5832000     	str	r2, [r3]
+  243158: e59d3094     	ldr	r3, [sp, #0x94]
+  24315c: e59d208c     	ldr	r2, [sp, #0x8c]
+  243160: e5832004     	str	r2, [r3, #0x4]
+  243164: e59d2090     	ldr	r2, [sp, #0x90]
+  243168: e5832008     	str	r2, [r3, #0x8]
+  24316c: e5973024     	ldr	r3, [r7, #0x24]
+  243170: e58d3050     	str	r3, [sp, #0x50]
+  243174: e59d6038     	ldr	r6, [sp, #0x38]
+  243178: e59d103c     	ldr	r1, [sp, #0x3c]
+  24317c: e2860024     	add	r0, r6, #36
+  243180: eb000721     	bl	0x244e0c <_ZN5boost9container16container_detail4treeISt4pairIKNS_17basic_string_viewIcSt11char_traitsIcEEEN5kanzi7KzbFile9FileEntryEENS1_9select1stIS7_EESt4lessIS7_ENS0_13new_allocatorISC_EENS0_8tree_optILNS0_14tree_type_enumE0ELb1EEEEaSERKNS_2rvISM_EE> @ imm = #0x1c84
+  243184: e59d003c     	ldr	r0, [sp, #0x3c]
+  243188: e1a01005     	mov	r1, r5
+  24318c: eb00071e     	bl	0x244e0c <_ZN5boost9container16container_detail4treeISt4pairIKNS_17basic_string_viewIcSt11char_traitsIcEEEN5kanzi7KzbFile9FileEntryEENS1_9select1stIS7_EESt4lessIS7_ENS0_13new_allocatorISC_EENS0_8tree_optILNS0_14tree_type_enumE0ELb1EEEEaSERKNS_2rvISM_EE> @ imm = #0x1c78
+  243190: e59d3054     	ldr	r3, [sp, #0x54]
+  243194: e3d33001     	bics	r3, r3, #1
+  243198: 1a000004     	bne	0x2431b0 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x750> @ imm = #0x10
+  24319c: ea000010     	b	0x2431e4 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x784> @ imm = #0x40
+  2431a0: e5921008     	ldr	r1, [r2, #0x8]
+  2431a4: e5831004     	str	r1, [r3, #0x4]
+  2431a8: e5823008     	str	r3, [r2, #0x8]
+  2431ac: e1a03002     	mov	r3, r2
+  2431b0: e5932004     	ldr	r2, [r3, #0x4]
+  2431b4: e3520000     	cmp	r2, #0
+  2431b8: 1afffff8     	bne	0x2431a0 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x740> @ imm = #-0x20
+  2431bc: e5931000     	ldr	r1, [r3]
+  2431c0: e1a00003     	mov	r0, r3
+  2431c4: e5935008     	ldr	r5, [r3, #0x8]
+  2431c8: e5832004     	str	r2, [r3, #0x4]
+  2431cc: e2011001     	and	r1, r1, #1
+  2431d0: e5832008     	str	r2, [r3, #0x8]
+  2431d4: e5831000     	str	r1, [r3]
+  2431d8: ebf93e66     	bl	0x92b78 <.plt+0x8f0>    @ imm = #-0x1b0668
+  2431dc: e3550000     	cmp	r5, #0
+  2431e0: 1a00008f     	bne	0x243424 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x9c4> @ imm = #0x23c
+  2431e4: e59d3044     	ldr	r3, [sp, #0x44]
+  2431e8: e3a02000     	mov	r2, #0
+  2431ec: e58d4058     	str	r4, [sp, #0x58]
+  2431f0: e58d405c     	str	r4, [sp, #0x5c]
+  2431f4: e3d33001     	bics	r3, r3, #1
+  2431f8: e58d2054     	str	r2, [sp, #0x54]
+  2431fc: e58d2050     	str	r2, [sp, #0x50]
+  243200: 1a000004     	bne	0x243218 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x7b8> @ imm = #0x10
+  243204: ea000010     	b	0x24324c <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x7ec> @ imm = #0x40
+  243208: e5921008     	ldr	r1, [r2, #0x8]
+  24320c: e5831004     	str	r1, [r3, #0x4]
+  243210: e5823008     	str	r3, [r2, #0x8]
+  243214: e1a03002     	mov	r3, r2
+  243218: e5932004     	ldr	r2, [r3, #0x4]
+  24321c: e3520000     	cmp	r2, #0
+  243220: 1afffff8     	bne	0x243208 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x7a8> @ imm = #-0x20
+  243224: e5931000     	ldr	r1, [r3]
+  243228: e1a00003     	mov	r0, r3
+  24322c: e5934008     	ldr	r4, [r3, #0x8]
+  243230: e5832004     	str	r2, [r3, #0x4]
+  243234: e2011001     	and	r1, r1, #1
+  243238: e5832008     	str	r2, [r3, #0x8]
+  24323c: e5831000     	str	r1, [r3]
+  243240: ebf93e4c     	bl	0x92b78 <.plt+0x8f0>    @ imm = #-0x1b06d0
+  243244: e3540000     	cmp	r4, #0
+  243248: 1a000073     	bne	0x24341c <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x9bc> @ imm = #0x1cc
+  24324c: e59d4064     	ldr	r4, [sp, #0x64]
+  243250: e3a03000     	mov	r3, #0
+  243254: e59d7030     	ldr	r7, [sp, #0x30]
+  243258: e58d3044     	str	r3, [sp, #0x44]
+  24325c: e1540003     	cmp	r4, r3
+  243260: e58d3040     	str	r3, [sp, #0x40]
+  243264: e58d7048     	str	r7, [sp, #0x48]
+  243268: e58d704c     	str	r7, [sp, #0x4c]
+  24326c: e59d5060     	ldr	r5, [sp, #0x60]
+  243270: 0a000004     	beq	0x243288 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x828> @ imm = #0x10
+  243274: e1a00005     	mov	r0, r5
+  243278: e2855004     	add	r5, r5, #4
+  24327c: ebf94188     	bl	0x938a4 <.plt+0x161c>   @ imm = #-0x1af9e0
+  243280: e2544001     	subs	r4, r4, #1
+  243284: 1afffffa     	bne	0x243274 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x814> @ imm = #-0x18
+  243288: e59d3068     	ldr	r3, [sp, #0x68]
+  24328c: e3530000     	cmp	r3, #0
+  243290: 0a000001     	beq	0x24329c <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x83c> @ imm = #0x4
+  243294: e59d0060     	ldr	r0, [sp, #0x60]
+  243298: ebf93e36     	bl	0x92b78 <.plt+0x8f0>    @ imm = #-0x1b0728
+  24329c: e28dd0a4     	add	sp, sp, #164
+  2432a0: e8bd8ff0     	pop	{r4, r5, r6, r7, r8, r9, r10, r11, pc}
+  2432a4: e3800001     	orr	r0, r0, #1
+  2432a8: e5820000     	str	r0, [r2]
+  2432ac: e5912000     	ldr	r2, [r1]
+  2432b0: e3822001     	orr	r2, r2, #1
+  2432b4: e5812000     	str	r2, [r1]
+  2432b8: e5931000     	ldr	r1, [r3]
+  2432bc: e3c11001     	bic	r1, r1, #1
+  2432c0: e1510007     	cmp	r1, r7
+  2432c4: e1a04001     	mov	r4, r1
+  2432c8: e5913000     	ldr	r3, [r1]
+  2432cc: 0affff65     	beq	0x243068 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x608> @ imm = #-0x26c
+  2432d0: e3130001     	tst	r3, #1
+  2432d4: 1affff63     	bne	0x243068 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x608> @ imm = #-0x274
+  2432d8: e3c33001     	bic	r3, r3, #1
+  2432dc: e1530007     	cmp	r3, r7
+  2432e0: 0affff60     	beq	0x243068 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x608> @ imm = #-0x280
+  2432e4: e1a0a005     	mov	r10, r5
+  2432e8: e1a05003     	mov	r5, r3
+  2432ec: eaffff1d     	b	0x242f68 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x508> @ imm = #-0x38c
+  2432f0: aafffeef     	bge	0x242eb4 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x454> @ imm = #-0x444
+  2432f4: e3580000     	cmp	r8, #0
+  2432f8: e59da010     	ldr	r10, [sp, #0x10]
+  2432fc: 1afffefc     	bne	0x242ef4 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x494> @ imm = #-0x410
+  243300: e5973008     	ldr	r3, [r7, #0x8]
+  243304: e3530000     	cmp	r3, #0
+  243308: 0a000036     	beq	0x2433e8 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x988> @ imm = #0xd8
+  24330c: e5933004     	ldr	r3, [r3, #0x4]
+  243310: e3530000     	cmp	r3, #0
+  243314: 1afffffc     	bne	0x24330c <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x8ac> @ imm = #-0x10
+  243318: e59d4030     	ldr	r4, [sp, #0x30]
+  24331c: e1570004     	cmp	r7, r4
+  243320: 1afffef6     	bne	0x242f00 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x4a0> @ imm = #-0x428
+  243324: e59dc018     	ldr	r12, [sp, #0x18]
+  243328: e59d4010     	ldr	r4, [sp, #0x10]
+  24332c: e20c3001     	and	r3, r12, #1
+  243330: e1843003     	orr	r3, r4, r3
+  243334: e58d404c     	str	r4, [sp, #0x4c]
+  243338: e58d4048     	str	r4, [sp, #0x48]
+  24333c: e58d3044     	str	r3, [sp, #0x44]
+  243340: eafffef5     	b	0x242f1c <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x4bc> @ imm = #-0x42c
+  243344: e59d3010     	ldr	r3, [sp, #0x10]
+  243348: e5873008     	str	r3, [r7, #0x8]
+  24334c: e59d304c     	ldr	r3, [sp, #0x4c]
+  243350: e1570003     	cmp	r7, r3
+  243354: 059d4010     	ldreq	r4, [sp, #0x10]
+  243358: 058d404c     	streq	r4, [sp, #0x4c]
+  24335c: eafffeee     	b	0x242f1c <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x4bc> @ imm = #-0x448
+  243360: e3520000     	cmp	r2, #0
+  243364: 01a0a001     	moveq	r10, r1
+  243368: 0a00000e     	beq	0x2433a8 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x948> @ imm = #0x38
+  24336c: e59a0008     	ldr	r0, [r10, #0x8]
+  243370: e3500000     	cmp	r0, #0
+  243374: e5810004     	str	r0, [r1, #0x4]
+  243378: 15902000     	ldrne	r2, [r0]
+  24337c: 12022001     	andne	r2, r2, #1
+  243380: 11842002     	orrne	r2, r4, r2
+  243384: 15802000     	strne	r2, [r0]
+  243388: e58a1008     	str	r1, [r10, #0x8]
+  24338c: e5912000     	ldr	r2, [r1]
+  243390: e2022001     	and	r2, r2, #1
+  243394: e18a2002     	orr	r2, r10, r2
+  243398: e5812000     	str	r2, [r1]
+  24339c: e1a0100a     	mov	r1, r10
+  2433a0: e593c000     	ldr	r12, [r3]
+  2433a4: e59a0004     	ldr	r0, [r10, #0x4]
+  2433a8: e3500000     	cmp	r0, #0
+  2433ac: e3ccc001     	bic	r12, r12, #1
+  2433b0: e59ce004     	ldr	lr, [r12, #0x4]
+  2433b4: e5830008     	str	r0, [r3, #0x8]
+  2433b8: 15902000     	ldrne	r2, [r0]
+  2433bc: 12022001     	andne	r2, r2, #1
+  2433c0: 11822003     	orrne	r2, r2, r3
+  2433c4: 15802000     	strne	r2, [r0]
+  2433c8: e5813004     	str	r3, [r1, #0x4]
+  2433cc: eaffff14     	b	0x243024 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x5c4> @ imm = #-0x3b0
+  2433d0: e59d703c     	ldr	r7, [sp, #0x3c]
+  2433d4: e5973004     	ldr	r3, [r7, #0x4]
+  2433d8: e2033001     	and	r3, r3, #1
+  2433dc: e18a3003     	orr	r3, r10, r3
+  2433e0: e58d3044     	str	r3, [sp, #0x44]
+  2433e4: eaffff1c     	b	0x24305c <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x5fc> @ imm = #-0x390
+  2433e8: e5971000     	ldr	r1, [r7]
+  2433ec: e3c11001     	bic	r1, r1, #1
+  2433f0: e5913008     	ldr	r3, [r1, #0x8]
+  2433f4: e1530007     	cmp	r3, r7
+  2433f8: 0a000001     	beq	0x243404 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x9a4> @ imm = #0x4
+  2433fc: eafffebc     	b	0x242ef4 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x494> @ imm = #-0x510
+  243400: e1a01003     	mov	r1, r3
+  243404: e5913000     	ldr	r3, [r1]
+  243408: e3c33001     	bic	r3, r3, #1
+  24340c: e5932008     	ldr	r2, [r3, #0x8]
+  243410: e1510002     	cmp	r1, r2
+  243414: 0afffff9     	beq	0x243400 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x9a0> @ imm = #-0x1c
+  243418: eafffeb5     	b	0x242ef4 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x494> @ imm = #-0x52c
+  24341c: e1a03004     	mov	r3, r4
+  243420: eaffff7c     	b	0x243218 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x7b8> @ imm = #-0x210
+  243424: e1a03005     	mov	r3, r5
+  243428: eaffff60     	b	0x2431b0 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x750> @ imm = #-0x280
+  24342c: e59d002c     	ldr	r0, [sp, #0x2c]
+  243430: ebfe7687     	bl	0x1e0e54 <_ZN5boost9container6vectorISsNS0_13new_allocatorISsEEED2Ev> @ imm = #-0x625e4
+  243434: ebf9400f     	bl	0x93478 <.plt+0x11f0>   @ imm = #-0x1affc4
+  243438: e1a00005     	mov	r0, r5
+  24343c: ebffeff5     	bl	0x23f418 <_ZN5boost9intrusive11bstree_implINS0_8bhtraitsINS_9container16container_detail9tree_nodeISt4pairIKNS_17basic_string_viewIcSt11char_traitsIcEEEN5kanzi7KzbFile9FileEntryEEPvLNS3_14tree_type_enumE0ELb1EEENS0_18rbtree_node_traitsISG_Lb1EEELNS0_14link_mode_typeE0ENS0_7dft_tagELj3EEEvNS3_21value_to_node_compareISI_NS0_18tree_value_compareIPSF_St4lessISA_ENS4_9select1stISA_EELb0EEEEEjLb1ELNS0_10algo_typesE5EvE17clear_and_disposeINS4_19allocator_destroyerINS3_13new_allocatorISI_EEEEEEvT_.isra.655> @ imm = #-0x402c
+  243440: e1a00005     	mov	r0, r5
+  243444: ebffeff3     	bl	0x23f418 <_ZN5boost9intrusive11bstree_implINS0_8bhtraitsINS_9container16container_detail9tree_nodeISt4pairIKNS_17basic_string_viewIcSt11char_traitsIcEEEN5kanzi7KzbFile9FileEntryEEPvLNS3_14tree_type_enumE0ELb1EEENS0_18rbtree_node_traitsISG_Lb1EEELNS0_14link_mode_typeE0ENS0_7dft_tagELj3EEEvNS3_21value_to_node_compareISI_NS0_18tree_value_compareIPSF_St4lessISA_ENS4_9select1stISA_EELb0EEEEEjLb1ELNS0_10algo_typesE5EvE17clear_and_disposeINS4_19allocator_destroyerINS3_13new_allocatorISI_EEEEEEvT_.isra.655> @ imm = #-0x4034
+  243448: e59d003c     	ldr	r0, [sp, #0x3c]
+  24344c: ebffeff1     	bl	0x23f418 <_ZN5boost9intrusive11bstree_implINS0_8bhtraitsINS_9container16container_detail9tree_nodeISt4pairIKNS_17basic_string_viewIcSt11char_traitsIcEEEN5kanzi7KzbFile9FileEntryEEPvLNS3_14tree_type_enumE0ELb1EEENS0_18rbtree_node_traitsISG_Lb1EEELNS0_14link_mode_typeE0ENS0_7dft_tagELj3EEEvNS3_21value_to_node_compareISI_NS0_18tree_value_compareIPSF_St4lessISA_ENS4_9select1stISA_EELb0EEEEEjLb1ELNS0_10algo_typesE5EvE17clear_and_disposeINS4_19allocator_destroyerINS3_13new_allocatorISI_EEEEEEvT_.isra.655> @ imm = #-0x403c
+  243450: eafffff5     	b	0x24342c <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x9cc> @ imm = #-0x2c
+  243454: e1a00005     	mov	r0, r5
+  243458: ebffefee     	bl	0x23f418 <_ZN5boost9intrusive11bstree_implINS0_8bhtraitsINS_9container16container_detail9tree_nodeISt4pairIKNS_17basic_string_viewIcSt11char_traitsIcEEEN5kanzi7KzbFile9FileEntryEEPvLNS3_14tree_type_enumE0ELb1EEENS0_18rbtree_node_traitsISG_Lb1EEELNS0_14link_mode_typeE0ENS0_7dft_tagELj3EEEvNS3_21value_to_node_compareISI_NS0_18tree_value_compareIPSF_St4lessISA_ENS4_9select1stISA_EELb0EEEEEjLb1ELNS0_10algo_typesE5EvE17clear_and_disposeINS4_19allocator_destroyerINS3_13new_allocatorISI_EEEEEEvT_.isra.655> @ imm = #-0x4048
+  24345c: eafffff9     	b	0x243448 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x9e8> @ imm = #-0x1c
+  243460: e59d4010     	ldr	r4, [sp, #0x10]
+  243464: e3a02000     	mov	r2, #0
+  243468: e5832008     	str	r2, [r3, #0x8]
+  24346c: e5834000     	str	r4, [r3]
+  243470: e7c72004     	strb	r2, [r7, r4]
+  243474: eafffdb9     	b	0x242b60 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x100> @ imm = #-0x91c
+  243478: eafffff2     	b	0x243448 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x9e8> @ imm = #-0x38
+  24347c: e08ac105     	add	r12, r10, r5, lsl #2
+  243480: e28d706c     	add	r7, sp, #108
+  243484: e28d0088     	add	r0, sp, #136
+  243488: e59d102c     	ldr	r1, [sp, #0x2c]
+  24348c: e58dc084     	str	r12, [sp, #0x84]
+  243490: e28d2084     	add	r2, sp, #132
+  243494: e3a0c000     	mov	r12, #0
+  243498: e3a03001     	mov	r3, #1
+  24349c: e58d7000     	str	r7, [sp]
+  2434a0: e5cdc004     	strb	r12, [sp, #0x4]
+  2434a4: eb000350     	bl	0x2441ec <_ZN5boost9container6vectorISsNS0_13new_allocatorISsEEE37priv_forward_range_insert_no_capacityINS0_16container_detail25insert_emplace_proxy_arg1IS3_PSsNS_17basic_string_viewIcSt11char_traitsIcEEEEEEENS6_12vec_iteratorIS8_Lb0EEERKS8_jT_NS_11move_detail17integral_constantIjLj1EEE> @ imm = #0xd40
+  2434a8: eafffdb0     	b	0x242b70 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE+0x110> @ imm = #-0x940
+
+002434b8 <_ZN5kanzi7KzbFileC2EPNS_6DomainEN5boost7movelib10unique_ptrINS_4FileENS4_14default_deleteIS6_EEEE>:
+  2434b8: e3a03000     	mov	r3, #0
+  2434bc: e59fc16c     	ldr	r12, [pc, #0x16c]       @ 0x243630 <_ZN5kanzi7KzbFileC2EPNS_6DomainEN5boost7movelib10unique_ptrINS_4FileENS4_14default_deleteIS6_EEEE+0x178>
+  2434c0: e92d4030     	push	{r4, r5, lr}
+  2434c4: e1a04000     	mov	r4, r0
+  2434c8: e5801000     	str	r1, [r0]
+  2434cc: e1a01000     	mov	r1, r0
+  2434d0: e08fc00c     	add	r12, pc, r12
+  2434d4: e24dd01c     	sub	sp, sp, #28
+  2434d8: e592e000     	ldr	lr, [r2]
+  2434dc: e5823000     	str	r3, [r2]
+  2434e0: e59f214c     	ldr	r2, [pc, #0x14c]        @ 0x243634 <_ZN5kanzi7KzbFileC2EPNS_6DomainEN5boost7movelib10unique_ptrINS_4FileENS4_14default_deleteIS6_EEEE+0x17c>
+  2434e4: e580e004     	str	lr, [r0, #0x4]
+  2434e8: e1a0000e     	mov	r0, lr
+  2434ec: e79c2002     	ldr	r2, [r12, r2]
+  2434f0: e584300c     	str	r3, [r4, #0xc]
+  2434f4: e5843010     	str	r3, [r4, #0x10]
+  2434f8: e282200c     	add	r2, r2, #12
+  2434fc: e5843014     	str	r3, [r4, #0x14]
+  243500: e5842008     	str	r2, [r4, #0x8]
+  243504: e5843018     	str	r3, [r4, #0x18]
+  243508: e584301c     	str	r3, [r4, #0x1c]
+  24350c: e5843020     	str	r3, [r4, #0x20]
+  243510: e5a13028     	str	r3, [r1, #0x28]!
+  243514: e5843024     	str	r3, [r4, #0x24]
+  243518: e584102c     	str	r1, [r4, #0x2c]
+  24351c: e5841030     	str	r1, [r4, #0x30]
+  243520: e5843034     	str	r3, [r4, #0x34]
+  243524: e5843038     	str	r3, [r4, #0x38]
+  243528: e584303c     	str	r3, [r4, #0x3c]
+  24352c: e5843040     	str	r3, [r4, #0x40]
+  243530: e5843044     	str	r3, [r4, #0x44]
+  243534: e5843048     	str	r3, [r4, #0x48]
+  243538: e59e3000     	ldr	r3, [lr]
+  24353c: e593301c     	ldr	r3, [r3, #0x1c]
+  243540: e12fff33     	blx	r3
+  243544: e1a05000     	mov	r5, r0
+  243548: e5940004     	ldr	r0, [r4, #0x4]
+  24354c: e5903000     	ldr	r3, [r0]
+  243550: e5933010     	ldr	r3, [r3, #0x10]
+  243554: e12fff33     	blx	r3
+  243558: e58d0010     	str	r0, [sp, #0x10]
+  24355c: e3a03000     	mov	r3, #0
+  243560: e1a0100d     	mov	r1, sp
+  243564: e1a00004     	mov	r0, r4
+  243568: e88d0030     	stm	sp, {r4, r5}
+  24356c: e58d5008     	str	r5, [sp, #0x8]
+  243570: e58d3014     	str	r3, [sp, #0x14]
+  243574: ebfff0f5     	bl	0x23f950 <_ZN5kanzi7KzbFile21loadAndVerifyKzbMagicERNS_15KzbMemoryParserE> @ imm = #-0x3c2c
+  243578: e1a00004     	mov	r0, r4
+  24357c: e1a0100d     	mov	r1, sp
+  243580: ebfff271     	bl	0x23ff4c <_ZN5kanzi7KzbFile25loadVersionAndProjectNameERNS_15KzbMemoryParserE> @ imm = #-0x363c
+  243584: e1a00004     	mov	r0, r4
+  243588: e1a0100d     	mov	r1, sp
+  24358c: ebfffd33     	bl	0x242a60 <_ZN5kanzi7KzbFile18loadFileDictionaryERNS_15KzbMemoryParserE> @ imm = #-0xb34
+  243590: e1a00004     	mov	r0, r4
+  243594: ebfff162     	bl	0x23fb24 <_ZN5kanzi7KzbFile11loadPluginsEv> @ imm = #-0x3a78
+  243598: e1a00004     	mov	r0, r4
+  24359c: ebfff4f2     	bl	0x24096c <_ZN5kanzi7KzbFile20loadStringDictionaryEv> @ imm = #-0x2c38
+  2435a0: e1a00004     	mov	r0, r4
+  2435a4: ebfff19d     	bl	0x23fc20 <_ZN5kanzi7KzbFile23loadMetaclassDictionaryEv> @ imm = #-0x398c
+  2435a8: e1a00004     	mov	r0, r4
+  2435ac: ebfff599     	bl	0x240c18 <_ZN5kanzi7KzbFile23loadCustomPropertyTypesEv> @ imm = #-0x299c
+  2435b0: e1a00004     	mov	r0, r4
+  2435b4: ebfff357     	bl	0x240318 <_ZN5kanzi7KzbFile22loadCustomMessageTypesEv> @ imm = #-0x32a4
+  2435b8: e1a00004     	mov	r0, r4
+  2435bc: ebfffa72     	bl	0x241f8c <_ZN5kanzi7KzbFile26loadPropertyTypeDictionaryEv> @ imm = #-0x1638
+  2435c0: e1a00004     	mov	r0, r4
+  2435c4: e28dd01c     	add	sp, sp, #28
+  2435c8: e8bd8030     	pop	{r4, r5, pc}
+  2435cc: e5943048     	ldr	r3, [r4, #0x48]
+  2435d0: e3530000     	cmp	r3, #0
+  2435d4: 0a000001     	beq	0x2435e0 <_ZN5kanzi7KzbFileC2EPNS_6DomainEN5boost7movelib10unique_ptrINS_4FileENS4_14default_deleteIS6_EEEE+0x128> @ imm = #0x4
+  2435d8: e5940040     	ldr	r0, [r4, #0x40]
+  2435dc: ebf93d65     	bl	0x92b78 <.plt+0x8f0>    @ imm = #-0x1b0a6c
+  2435e0: e594303c     	ldr	r3, [r4, #0x3c]
+  2435e4: e3530000     	cmp	r3, #0
+  2435e8: 0a000001     	beq	0x2435f4 <_ZN5kanzi7KzbFileC2EPNS_6DomainEN5boost7movelib10unique_ptrINS_4FileENS4_14default_deleteIS6_EEEE+0x13c> @ imm = #0x4
+  2435ec: e5940034     	ldr	r0, [r4, #0x34]
+  2435f0: ebf93d60     	bl	0x92b78 <.plt+0x8f0>    @ imm = #-0x1b0a80
+  2435f4: e2840024     	add	r0, r4, #36
+  2435f8: ebffef86     	bl	0x23f418 <_ZN5boost9intrusive11bstree_implINS0_8bhtraitsINS_9container16container_detail9tree_nodeISt4pairIKNS_17basic_string_viewIcSt11char_traitsIcEEEN5kanzi7KzbFile9FileEntryEEPvLNS3_14tree_type_enumE0ELb1EEENS0_18rbtree_node_traitsISG_Lb1EEELNS0_14link_mode_typeE0ENS0_7dft_tagELj3EEEvNS3_21value_to_node_compareISI_NS0_18tree_value_compareIPSF_St4lessISA_ENS4_9select1stISA_EELb0EEEEEjLb1ELNS0_10algo_typesE5EvE17clear_and_disposeINS4_19allocator_destroyerINS3_13new_allocatorISI_EEEEEEvT_.isra.655> @ imm = #-0x41e8
+  2435fc: e2840018     	add	r0, r4, #24
+  243600: ebfe7613     	bl	0x1e0e54 <_ZN5boost9container6vectorISsNS0_13new_allocatorISsEEED2Ev> @ imm = #-0x627b4
+  243604: e284000c     	add	r0, r4, #12
+  243608: ebfe7611     	bl	0x1e0e54 <_ZN5boost9container6vectorISsNS0_13new_allocatorISsEEED2Ev> @ imm = #-0x627bc
+  24360c: e2840008     	add	r0, r4, #8
+  243610: ebf940a3     	bl	0x938a4 <.plt+0x161c>   @ imm = #-0x1afd74
+  243614: e5940004     	ldr	r0, [r4, #0x4]
+  243618: e3500000     	cmp	r0, #0
+  24361c: 0a000002     	beq	0x24362c <_ZN5kanzi7KzbFileC2EPNS_6DomainEN5boost7movelib10unique_ptrINS_4FileENS4_14default_deleteIS6_EEEE+0x174> @ imm = #0x8
+  243620: e5903000     	ldr	r3, [r0]
+  243624: e5933004     	ldr	r3, [r3, #0x4]
+  243628: e12fff33     	blx	r3
+  24362c: ebf93f91     	bl	0x93478 <.plt+0x11f0>   @ imm = #-0x1b01bc

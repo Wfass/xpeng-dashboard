@@ -1,0 +1,74 @@
+.class public final Lokhttp3/internal/platform/BouncyCastlePlatform$Companion;
+.super Ljava/lang/Object;
+.source "BouncyCastlePlatform.kt"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lokhttp3/internal/platform/BouncyCastlePlatform;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "Companion"
+.end annotation
+
+.annotation runtime Lkotlin/j;
+.end annotation
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 0
+
+    .line 84
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Lccc;)V
+    .locals 0
+
+    invoke-direct {p0}, Lokhttp3/internal/platform/BouncyCastlePlatform$Companion;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final buildIfSupported()Lokhttp3/internal/platform/BouncyCastlePlatform;
+    .locals 2
+
+    .line 94
+    invoke-virtual {p0}, Lokhttp3/internal/platform/BouncyCastlePlatform$Companion;->isSupported()Z
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_0
+
+    new-instance v0, Lokhttp3/internal/platform/BouncyCastlePlatform;
+
+    invoke-direct {v0, v1}, Lokhttp3/internal/platform/BouncyCastlePlatform;-><init>(Lccc;)V
+
+    goto :goto_0
+
+    :cond_0
+    move-object v0, v1
+
+    :goto_0
+    return-object v0
+.end method
+
+.method public final isSupported()Z
+    .locals 1
+
+    .line 85
+    invoke-static {}, Lokhttp3/internal/platform/BouncyCastlePlatform;->access$isSupported$cp()Z
+
+    move-result v0
+
+    return v0
+.end method

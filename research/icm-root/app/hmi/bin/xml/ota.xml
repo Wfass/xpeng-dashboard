@@ -1,0 +1,5 @@
+<Ota name="Ota">
+    <State type="int">0</State>
+    <ProgressBar type="int">0</ProgressBar>
+</Ota>
+

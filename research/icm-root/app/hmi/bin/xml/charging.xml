@@ -1,0 +1,37 @@
+<Charging name="Charging">
+    <State type="int">0</State>
+    <EsocmaxchgLine type="float">0.0</EsocmaxchgLine>
+    <BatteryLineVisible type="bool">false</BatteryLineVisible>		
+	<EnduranceMileageNumVisible type="bool">true</EnduranceMileageNumVisible>
+    <PowerInformation>
+        <Current type="string">0</Current>
+        <Voltage type="string">0</Voltage>
+        <Power type="string">0</Power>
+        <Visible type="bool">false</Visible>
+    </PowerInformation>
+    <Appointment>
+        <Hour type="string">- -</Hour>
+        <Minute type="string">- -</Minute>
+    </Appointment>
+    <HeatingOrCooling>
+        <Hour type="string">- -</Hour>
+        <Minute type="string">- -</Minute>
+        <TimeState type="int">0</TimeState>
+        <HourVisible type="bool">false</HourVisible>
+        <MinuteVisible type="bool">false</MinuteVisible>
+    </HeatingOrCooling>
+    <Complete>
+        <Hour type="string">- -</Hour>
+        <Minute type="string">- -</Minute>
+    </Complete>
+    <TimeRemaining>
+        <Hour type="string">- -</Hour>
+        <Minute type="string">- -</Minute>
+        <HourVisible type="bool">false</HourVisible>
+        <MinuteVisible type="bool">false</MinuteVisible>
+        <TipsState type="int">0</TipsState>
+    </TimeRemaining>
+    <IncreasedEndurance type="string">0.0</IncreasedEndurance>
+    <ConsumeEndurance type="string">0.0</ConsumeEndurance>
+    <ChargingTime type="int">0</ChargingTime>
+</Charging>

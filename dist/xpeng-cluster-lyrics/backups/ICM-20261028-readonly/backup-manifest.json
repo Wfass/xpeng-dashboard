@@ -1,0 +1,96 @@
+{
+  "captured": "2026-10-28",
+  "device": "instrument FTP 172.20.1.40:2221, read-only RETR",
+  "scope": "OTA/data partition files and selected persistent properties; not a dump of the active rootfs or live /app/hmi/bin/card.kzb; now also includes the live active card.kzb read from the running instrument",
+  "files": [
+    {
+      "file": "update.squashfs",
+      "bytes": 136323072,
+      "sha256": "67c94d38dc765facdf5a6c8aa913599a24f3b0d78c282c953f5d7812ff42db7b"
+    },
+    {
+      "file": "update.img",
+      "bytes": 6661732,
+      "sha256": "20494b643494ab5a929b2d97406967e66fcba48ccef5c93d5026aab6c36c334b"
+    },
+    {
+      "file": "OTA_PACKAGE.DAT",
+      "bytes": 142991360,
+      "sha256": "2872139327383dd6ab762e6262479f99afb77b435b55cfc90b77dda473f13ff0"
+    },
+    {
+      "file": "OTA_PACKAGE.SIG",
+      "bytes": 16,
+      "sha256": "88e24aaeedd9446e31e22002ba5402b18c01d1df62694b9b48c5816306e374d4"
+    },
+    {
+      "file": "persist.last.partition",
+      "bytes": 1,
+      "sha256": "df7e70e5021544f4834bbee64a9e3789febc4be81470df629cad6ddb03320a5c"
+    },
+    {
+      "file": "persist.hmi.left_card",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "file": "persist.hmi.right_card",
+      "bytes": 1,
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "file": "card.kzb.from-OTA-image.NOT-LIVE",
+      "bytes": 1250596,
+      "sha256": "a742743904465ba1932f4363ca034e385490132a758a7a29412616ed56920eac",
+      "source": "patches/card.original.kzb extracted from the OTA image; not read from the active partition"
+    },
+    {
+      "file": "OTA_FLAG1.DAT",
+      "bytes": 16,
+      "sha256": "a120d31f6ee576163479e8d17a9bc88ac9c48e59277915749a43755f16e300b5",
+      "source": "read-only FTP RETR /ota_flag/OTA_FLAG1.DAT"
+    },
+    {
+      "file": "OTA_FLAG_OLD.DAT",
+      "bytes": 16,
+      "sha256": "a120d31f6ee576163479e8d17a9bc88ac9c48e59277915749a43755f16e300b5",
+      "source": "read-only FTP RETR /ota_flag/OTA_FLAG_OLD.DAT"
+    },
+    {
+      "file": "ota-20261027.log",
+      "bytes": 2188,
+      "sha256": "f751da71bbee0eb96258af8ccfccb001847018db89215662ea950448f48e686b",
+      "source": "read-only FTP RETR /ota/log/20261027.log"
+    },
+    {
+      "file": "comparison/research/icm-original.squashfs",
+      "bytes": 136323072,
+      "sha256": "67c94d38dc765facdf5a6c8aa913599a24f3b0d78c282c953f5d7812ff42db7b",
+      "byte_identical_to_live_copy": true
+    },
+    {
+      "file": "card.kzb.active",
+      "bytes": 1250596,
+      "sha256": "a742743904465ba1932f4363ca034e385490132a758a7a29412616ed56920eac",
+      "source": "active /app/hmi/bin/card.kzb read via fixed read-only ICM management RPC through E28; remote size stable before and after transfer, local SHA-256 recorded"
+    },
+    {
+      "file": "card.kzb.active-candidate-v1",
+      "bytes": 1252900,
+      "sha256": "1529c9da55be139ff0c395d211666ead9e02a53bc4744fcba15f7c258b90b4d1",
+      "source": "active card.kzb read back from the running instrument through fixed ICM management RPC; backup before/after layout revision"
+    },
+    {
+      "file": "card.kzb.active-candidate-v2",
+      "bytes": 1252900,
+      "sha256": "9e9e1b27692b210719951f2db347333d1552bdfb1e0053c7d11c1b0aea304f87",
+      "source": "active card.kzb read back from the running instrument through fixed ICM management RPC; backup before/after layout revision"
+    },
+    {
+      "file": "card.kzb.active-candidate-v3",
+      "bytes": 1255320,
+      "sha256": "6bcbb9bd81512664f7a66742864a82df7097160492f235fd302706c1987c2a62",
+      "source": "active card.kzb read back before and after instrument reboot through fixed ICM management RPC; v2 remains separately backed up"
+    }
+  ]
+}

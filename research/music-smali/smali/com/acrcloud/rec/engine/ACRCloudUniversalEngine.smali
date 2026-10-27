@@ -1,0 +1,68 @@
+.class public Lcom/acrcloud/rec/engine/ACRCloudUniversalEngine;
+.super Ljava/lang/Object;
+.source "ACRCloudUniversalEngine.java"
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    :try_start_0
+    const-string v0, "ACRCloudUniversalEngine"
+
+    .line 16
+    invoke-static {v0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    .line 18
+    :catch_0
+    sget-object v0, Ljava/lang/System;->err:Ljava/io/PrintStream;
+
+    const-string v1, "ACRCloudUniversalEngine loadLibrary error!"
+
+    invoke-virtual {v0, v1}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
+
+    :goto_0
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    .line 10
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method protected static native native_create_fingerprint([BIILjava/lang/String;Ljava/lang/String;)[B
+.end method
+
+.method protected static native native_encrypt([BI[BI)[B
+.end method
+
+.method protected static native native_resample([BIIII)[B
+.end method
+
+.method protected static native native_set_log(I)V
+.end method
+
+
+# virtual methods
+.method protected native native_tinyalsa_get_buffer_size(J)I
+.end method
+
+.method protected native native_tinyalsa_get_recording_state(J)I
+.end method
+
+.method protected native native_tinyalsa_init(IIIIIII)J
+.end method
+
+.method protected native native_tinyalsa_read(JI)[B
+.end method
+
+.method protected native native_tinyalsa_release(J)V
+.end method

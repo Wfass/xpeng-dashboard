@@ -1,0 +1,7 @@
+.class public interface abstract Lcom/xiaopeng/lib/framework/netchannelmodule/messaging/MessagingConstants;
+.super Ljava/lang/Object;
+.source "MessagingConstants.java"
+
+
+# static fields
+.field public static final MQTT_KEY:Ljava/lang/String; = "0000037e0020f93e026600000000105125b34884533a94fb319990325744ee0a9cec7a5fd42faaee182296df465f016caed78124e8dba1ad17b618611f21958b56f1ac5b4be4afef560d982c9b1d684b94c8165845c8740f3c0731b56f7a75157694f311bf0304643a2b8ae755a2efa708f416bd4ff33a3938589b7c8811eabf50501f1f682cec5a399f6ff4f86aececabc1747ee7f925366cdac24363dd980f0bfc404f5656b55f6322beef905c89"

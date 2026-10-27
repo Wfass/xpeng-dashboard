@@ -1,0 +1,272 @@
+﻿Files:
+PropertyTypeLibrary/Charging.AppointmentHours
+PropertyTypeLibrary/Charging.AppointmentMinutes
+PropertyTypeLibrary/Charging.Bar
+PropertyTypeLibrary/Charging.BatteryColorState
+PropertyTypeLibrary/Charging.BatteryLineVisible
+PropertyTypeLibrary/Charging.ChargingTime
+PropertyTypeLibrary/Charging.ChargingTipsText
+PropertyTypeLibrary/Charging.CompleteHours
+PropertyTypeLibrary/Charging.CompleteMinutes
+PropertyTypeLibrary/Charging.ConsumeEndurance
+PropertyTypeLibrary/Charging.HeatBatteryHours
+PropertyTypeLibrary/Charging.HeatBatteryMinutes
+PropertyTypeLibrary/Charging.HourVisible
+PropertyTypeLibrary/Charging.IncreasedEndurance
+PropertyTypeLibrary/Charging.LightTransSpeed
+PropertyTypeLibrary/Charging.LineSite
+PropertyTypeLibrary/Charging.MainState
+PropertyTypeLibrary/Charging.MileageNumVisible
+PropertyTypeLibrary/Charging.MinuteVisible
+PropertyTypeLibrary/Charging.PowerInformation.Current
+PropertyTypeLibrary/Charging.PowerInformation.Power
+PropertyTypeLibrary/Charging.PowerInformation.Visible
+PropertyTypeLibrary/Charging.PowerInformation.Voltage
+PropertyTypeLibrary/Charging.TimeState
+PropertyTypeLibrary/LightColor
+PropertyTypeLibrary/Main.DayNightControlProp
+PropertyTypeLibrary/Main.ElectricityColorControlProp
+PropertyTypeLibrary/Main.ElectricityPercentProp
+PropertyTypeLibrary/Main.ElectricityPercentStr
+PropertyTypeLibrary/Main.EnduranceMileageProp
+PropertyTypeLibrary/Main.EnduranceMileageState
+PropertyTypeLibrary/TAG_PROPERTY_TYPE_Transparent
+Animation Clips/LineAnimation
+Screens/Screen/RootPage/ChargingMain
+Screens/Screen/<ResourceDictionaryInNode>
+Screens/Screen/RootPage
+Screens/Screen
+Material Types/MaskTexture
+Materials/MaskTextureMaterial
+Brushes/DefaultBackground
+Brushes/MaskTexture
+Brushes/LightMaterial Brush
+Prefabs/ChargingMain/ChargingMain/Charging/Battery/bar/Bar/green
+Prefabs/ChargingMain/ChargingMain/Charging/Battery/bar/Bar/Bar
+Prefabs/ChargingMain/ChargingMain/Charging/Battery/bar/Bar
+Prefabs/ChargingMain/ChargingMain/Charging/Battery/Charging/Image
+Prefabs/ChargingMain/ChargingMain/Charging/Battery/BG
+Prefabs/ChargingMain/ChargingMain/Charging/Battery/bar
+Prefabs/ChargingMain/ChargingMain/Charging/Battery/line
+Prefabs/ChargingMain/ChargingMain/Charging/Battery/Charging
+Prefabs/ChargingMain/ChargingMain/Charging/Battery/Light
+Prefabs/ChargingMain/ChargingMain/Charging/Battery/OutLine
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/TopLayout/TitleLayout/Icon
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/TopLayout/TitleLayout/Title
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/TopLayout/TitleLayout/Percent
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/TopLayout/MileageLayout/Value
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/TopLayout/MileageLayout/Unit
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/TopLayout/ProcessLayout/TimeRemaining/Layout/HourLayout/Hour
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/TopLayout/ProcessLayout/TimeRemaining/Layout/HourLayout/HourUnit
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/TopLayout/ProcessLayout/TimeRemaining/Layout/MinuteLayout/Minute
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/TopLayout/ProcessLayout/TimeRemaining/Layout/MinuteLayout/MinuteUnit
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/TopLayout/ProcessLayout/TimeRemaining/Layout/HourLayout
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/TopLayout/ProcessLayout/TimeRemaining/Layout/MinuteLayout
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/TopLayout/ProcessLayout/TimeRemaining/Datalayer
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/TopLayout/ProcessLayout/TimeRemaining/Hint
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/TopLayout/ProcessLayout/TimeRemaining/Layout
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/TopLayout/ProcessLayout/TimeRemaining/tips
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/TopLayout/ProcessLayout/MileageIncrease/Layout/Value
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/TopLayout/ProcessLayout/MileageIncrease/Layout/Unit
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/TopLayout/ProcessLayout/MileageIncrease/Hint
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/TopLayout/ProcessLayout/MileageIncrease/Layout
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/TopLayout/ProcessLayout/TimeTotal/Layout/Value
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/TopLayout/ProcessLayout/TimeTotal/Layout/Unit
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/TopLayout/ProcessLayout/TimeTotal/Hint
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/TopLayout/ProcessLayout/TimeTotal/Layout
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/TopLayout/ProcessLayout/TimeAppoint/Layout/Time
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/TopLayout/ProcessLayout/TimeAppoint/Hint
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/TopLayout/ProcessLayout/TimeAppoint/Layout
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/TopLayout/ProcessLayout/MileageCur/Layout/Value
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/TopLayout/ProcessLayout/MileageCur/Layout/Unit
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/TopLayout/ProcessLayout/MileageCur/Hint
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/TopLayout/ProcessLayout/MileageCur/Layout
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/TopLayout/ProcessLayout/SupplyPower/Layout/Value
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/TopLayout/ProcessLayout/SupplyPower/Layout/Unit
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/TopLayout/ProcessLayout/SupplyPower/Hint
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/TopLayout/ProcessLayout/SupplyPower/Layout
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/TopLayout/ProcessLayout/MileageDecrease/Layout/Value
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/TopLayout/ProcessLayout/MileageDecrease/Layout/Unit
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/TopLayout/ProcessLayout/MileageDecrease/Hint
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/TopLayout/ProcessLayout/MileageDecrease/Layout
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/TopLayout/ProcessLayout/SlipLine
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/TopLayout/ProcessLayout/TimeRemaining
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/TopLayout/ProcessLayout/MileageIncrease
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/TopLayout/ProcessLayout/TimeTotal
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/TopLayout/ProcessLayout/TimeAppoint
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/TopLayout/ProcessLayout/MileageCur
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/TopLayout/ProcessLayout/SupplyPower
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/TopLayout/ProcessLayout/MileageDecrease
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/TopLayout/TitleLayout
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/TopLayout/MileageLayout
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/TopLayout/ProcessLayout
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/PowerLayout/CurrentLayout/CurrentValue
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/PowerLayout/CurrentLayout/CurrentUnit
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/PowerLayout/VoltageLayout/VoltageValue
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/PowerLayout/VoltageLayout/VoltageUnit
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/PowerLayout/PowerLayout/PowerUnit
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/PowerLayout/PowerLayout/PowerValue
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/PowerLayout/CurrentLayout
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/PowerLayout/SlipLine
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/PowerLayout/VoltageLayout
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/PowerLayout/SlipLine_1
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/PowerLayout/PowerLayout
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/DataLayer
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/TopLayout
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/PowerLayout
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo/TipsView
+Prefabs/ChargingMain/ChargingMain/Charging/Left/MileageInfo/mileageValue
+Prefabs/ChargingMain/ChargingMain/Charging/Left/MileageInfo/mileageUnit
+Prefabs/ChargingMain/ChargingMain/Charging/Left/MileageInfo/percentValue
+Prefabs/ChargingMain/ChargingMain/Charging/Left/MileageInfo/percentUnit
+Prefabs/ChargingMain/ChargingMain/Charging/Left/PowerInfo/Flow Layout 2D/CurrentValue
+Prefabs/ChargingMain/ChargingMain/Charging/Left/PowerInfo/Flow Layout 2D/VoltageValue
+Prefabs/ChargingMain/ChargingMain/Charging/Left/PowerInfo/Flow Layout 2D/PowerValue
+Prefabs/ChargingMain/ChargingMain/Charging/Left/PowerInfo/BG
+Prefabs/ChargingMain/ChargingMain/Charging/Left/PowerInfo/Flow Layout 2D
+Prefabs/ChargingMain/ChargingMain/Charging/Left/EnduranceMileage
+Prefabs/ChargingMain/ChargingMain/Charging/Left/MileageInfo
+Prefabs/ChargingMain/ChargingMain/Charging/Left/PowerInfo
+Prefabs/ChargingMain/ChargingMain/Charging/Left/DataLayer
+Prefabs/ChargingMain/ChargingMain/Charging/Right/Appointment/Time/hour
+Prefabs/ChargingMain/ChargingMain/Charging/Right/Appointment/Time/dot
+Prefabs/ChargingMain/ChargingMain/Charging/Right/Appointment/Time/Minute
+Prefabs/ChargingMain/ChargingMain/Charging/Right/Appointment/Time/Empty
+Prefabs/ChargingMain/ChargingMain/Charging/Right/Appointment/Time/text
+Prefabs/ChargingMain/ChargingMain/Charging/Right/Appointment/Title
+Prefabs/ChargingMain/ChargingMain/Charging/Right/Appointment/Time
+Prefabs/ChargingMain/ChargingMain/Charging/Right/Appointment/Text
+Prefabs/ChargingMain/ChargingMain/Charging/Right/Appointment/Datalayer
+Prefabs/ChargingMain/ChargingMain/Charging/Right/Error/Text
+Prefabs/ChargingMain/ChargingMain/Charging/Right/Error/Text_1
+Prefabs/ChargingMain/ChargingMain/Charging/Right/HeatBattery/Hour/HourValue
+Prefabs/ChargingMain/ChargingMain/Charging/Right/HeatBattery/Hour/Empty
+Prefabs/ChargingMain/ChargingMain/Charging/Right/HeatBattery/Hour/HourUtil
+Prefabs/ChargingMain/ChargingMain/Charging/Right/HeatBattery/Minutes/MinutesValue
+Prefabs/ChargingMain/ChargingMain/Charging/Right/HeatBattery/Minutes/Empty
+Prefabs/ChargingMain/ChargingMain/Charging/Right/HeatBattery/Minutes/MinutesUnit
+Prefabs/ChargingMain/ChargingMain/Charging/Right/HeatBattery/HeatORrefrigeration
+Prefabs/ChargingMain/ChargingMain/Charging/Right/HeatBattery/Text
+Prefabs/ChargingMain/ChargingMain/Charging/Right/HeatBattery/Hour
+Prefabs/ChargingMain/ChargingMain/Charging/Right/HeatBattery/Minutes
+Prefabs/ChargingMain/ChargingMain/Charging/Right/HeatBattery/startSoon
+Prefabs/ChargingMain/ChargingMain/Charging/Right/HeatBattery/DataLayer
+Prefabs/ChargingMain/ChargingMain/Charging/Right/Over/Hour/HourValue
+Prefabs/ChargingMain/ChargingMain/Charging/Right/Over/Hour/Empty
+Prefabs/ChargingMain/ChargingMain/Charging/Right/Over/Hour/HourUtil
+Prefabs/ChargingMain/ChargingMain/Charging/Right/Over/Minutes/MinutesValue
+Prefabs/ChargingMain/ChargingMain/Charging/Right/Over/Minutes/Empty
+Prefabs/ChargingMain/ChargingMain/Charging/Right/Over/Minutes/MinutesUnit
+Prefabs/ChargingMain/ChargingMain/Charging/Right/Over/Over
+Prefabs/ChargingMain/ChargingMain/Charging/Right/Over/Text_1
+Prefabs/ChargingMain/ChargingMain/Charging/Right/Over/Hour
+Prefabs/ChargingMain/ChargingMain/Charging/Right/Over/Minutes
+Prefabs/ChargingMain/ChargingMain/Charging/Right/Ready/Bar/BG
+Prefabs/ChargingMain/ChargingMain/Charging/Right/Ready/Bar/Light
+Prefabs/ChargingMain/ChargingMain/Charging/Right/Ready/Bar
+Prefabs/ChargingMain/ChargingMain/Charging/Right/Runing/Hour/HourValue
+Prefabs/ChargingMain/ChargingMain/Charging/Right/Runing/Hour/Empty
+Prefabs/ChargingMain/ChargingMain/Charging/Right/Runing/Hour/HourUtil
+Prefabs/ChargingMain/ChargingMain/Charging/Right/Runing/Minutes/MinutesValue
+Prefabs/ChargingMain/ChargingMain/Charging/Right/Runing/Minutes/Empty
+Prefabs/ChargingMain/ChargingMain/Charging/Right/Runing/Minutes/MinutesUnit
+Prefabs/ChargingMain/ChargingMain/Charging/Right/Runing/RuningState
+Prefabs/ChargingMain/ChargingMain/Charging/Right/Runing/tips
+Prefabs/ChargingMain/ChargingMain/Charging/Right/Runing/Hour
+Prefabs/ChargingMain/ChargingMain/Charging/Right/Runing/Minutes
+Prefabs/ChargingMain/ChargingMain/Charging/Right/Runing/Text_1
+Prefabs/ChargingMain/ChargingMain/Charging/Right/Runing/Datalayer
+Prefabs/ChargingMain/ChargingMain/Charging/Right/Appointment
+Prefabs/ChargingMain/ChargingMain/Charging/Right/Error
+Prefabs/ChargingMain/ChargingMain/Charging/Right/HeatBattery
+Prefabs/ChargingMain/ChargingMain/Charging/Right/Over
+Prefabs/ChargingMain/ChargingMain/Charging/Right/Ready
+Prefabs/ChargingMain/ChargingMain/Charging/Right/Runing
+Prefabs/ChargingMain/ChargingMain/Charging/DataLayer
+Prefabs/ChargingMain/ChargingMain/Charging/BG
+Prefabs/ChargingMain/ChargingMain/Charging/Battery
+Prefabs/ChargingMain/ChargingMain/Charging/ChargeInfo
+Prefabs/ChargingMain/ChargingMain/Charging/Left
+Prefabs/ChargingMain/ChargingMain/Charging/Right
+Prefabs/ChargingMain/ChargingMain/Charging
+Prefabs/ChargingMain/ChargingMain
+Prefabs/LoadDataSource/LoadDataSource
+Prefabs/ChargingMain
+Prefabs/LoadDataSource
+Animation Data/LineAnimation
+Animation Data/ReadyBarAnimation
+Animation Data/BarLightAnimation
+Animation Data/ChargingOutSideAnimation
+Animation Data/ChargingLightAnimation
+Localization/charging
+Locales/neutral
+Locales/zh-CN
+Data Sources/Data source
+Page Transitions/Default Transitions
+Page Transitions/Transitions
+Resource Files/Images/bg_carbody_day.png
+Resource Files/Images/电池槽-day.png
+Resource Files/Images/电量绿.png
+Resource Files/Images/流光.png
+Resource Files/Images/bg_carbody_night.png
+Resource Files/Images/bg_limit_line.png
+Resource Files/Images/电池框-day.png
+Resource Files/Images/工作中电池框光晕-day.png
+Resource Files/Images/充电中电池框光晕-night.png
+Resource Files/Images/电池框-night.png
+Resource Files/Images/电量红.png
+Resource Files/Images/电量黄.png
+Resource Files/Images/电池槽-night.png
+Resource Files/Images/电流电压信息背景.png
+Resource Files/Images/bg_limit_line_day.png
+Resource Files/Images/充放电流动锯齿效果.png
+Resource Files/Images/ic_title_chargeheat_light.png
+Resource Files/Images/ic_title_charge_light.png
+Resource Files/Images/ic_title_error_light.png
+Resource Files/Images/ic_title_power_light.png
+Resource Files/Images/ic_title_subscribe_light.png
+Resource Files/Images/ic_title_chargeheat_night.png
+Resource Files/Images/ic_title_charge_night.png
+Resource Files/Images/ic_title_error_night.png
+Resource Files/Images/ic_title_power_night.png
+Resource Files/Images/ic_title_subscribe_night.png
+Textures/Day/bg_carbody_day
+Textures/Day/电池框-day
+Textures/Day/工作中电池框光晕-day
+Textures/Day/电池槽
+Textures/Day/ic_title_chargeheat_light
+Textures/Day/ic_title_charge_light
+Textures/Day/ic_title_error_light
+Textures/Day/ic_title_power_light
+Textures/Day/ic_title_subscribe_light
+Textures/Night/bg_carbody_night
+Textures/Night/充电中电池框光晕-night
+Textures/Night/电池框-night
+Textures/Night/电池槽-night
+Textures/Night/ic_title_chargeheat_night
+Textures/Night/ic_title_charge_night
+Textures/Night/ic_title_error_night
+Textures/Night/ic_title_power_night
+Textures/Night/ic_title_subscribe_night
+Textures/bg_limit_line
+Textures/流光
+Textures/当前电量
+Textures/电量红色
+Textures/电量黄色
+Textures/电流电压信息背景
+Textures/bg_limit_line_Day
+Textures/充放电流动锯齿效果
+Styles/Text Block 2D Style
+State Managers/BatteryColorManager
+State Managers/Main State Manager
+State Managers/HeatBattery State Manager
+State Managers/Runing State Manager
+State Managers/Over State Manager
+State Managers/Error State Manager
+State Managers/Ready State Manager
+State Managers/ChargingTipsText
+State Managers/MileageNum State Manager
+State Managers/Charge State Manager
+State Managers/Hour State Manager
+State Managers/Main State Manager New
+/charging

@@ -1,0 +1,154 @@
+﻿Files:
+PropertyTypeLibrary/Color1
+PropertyTypeLibrary/Color2
+PropertyTypeLibrary/OTA.AnimationControl
+PropertyTypeLibrary/OTA.BarSite
+PropertyTypeLibrary/OTA.State
+PropertyTypeLibrary/TAG_PROPERTY_TYPE_Transparent
+Screens/Screen/RootPage/OTAMain
+Screens/Screen/RootPage
+Screens/Screen
+Material Types/ColorTexture1
+Materials/ColorTextureMaterial
+Brushes/DefaultBackground
+Brushes/Material Brush
+Brushes/Color Brush
+Prefabs/OTAMain/OTAMain/Prefab View 2D
+Prefabs/OTAMain/OTAMain/DataLayer
+Prefabs/OTAMain/OTAMain
+Prefabs/Cluster/Cluster/Animation/Loop/Image
+Prefabs/Cluster/Cluster/Animation/Loop
+Prefabs/Cluster/Cluster/Bar/highlight/Image
+Prefabs/Cluster/Cluster/Bar/highlight/Image_1
+Prefabs/Cluster/Cluster/Bar/BG
+Prefabs/Cluster/Cluster/Bar/highlight
+Prefabs/Cluster/Cluster/Animation
+Prefabs/Cluster/Cluster/Bar
+Prefabs/Cluster/Cluster/Text Block 2D
+Prefabs/Cluster/Cluster/DataLayer
+Prefabs/Cluster/Cluster/DarkMask
+Prefabs/Cluster/Cluster
+Prefabs/XmartOS/XmartOS/Animation/Loop/Image
+Prefabs/XmartOS/XmartOS/Animation/Loop
+Prefabs/XmartOS/XmartOS/Animation
+Prefabs/XmartOS/XmartOS/Text Block 2D
+Prefabs/XmartOS/XmartOS/Text Block 2D_1
+Prefabs/XmartOS/XmartOS/DarkMask
+Prefabs/XmartOS/XmartOS
+Prefabs/LoadDataSource/LoadDataSource
+Prefabs/OTAMain
+Prefabs/Cluster
+Prefabs/XmartOS
+Prefabs/LoadDataSource
+Animation Data/BarAnimation
+Animation Data/LOOP
+Data Sources/Data source
+Page Transitions/Default Transitions
+Resource Files/Images/bg_progressbar.png
+Resource Files/Images/xplogo.png
+Resource Files/Images/进度.png
+Resource Files/Images/loop_000049.png
+Resource Files/Images/loop_000000.png
+Resource Files/Images/loop_000001.png
+Resource Files/Images/loop_000002.png
+Resource Files/Images/loop_000003.png
+Resource Files/Images/loop_000004.png
+Resource Files/Images/loop_000005.png
+Resource Files/Images/loop_000006.png
+Resource Files/Images/loop_000007.png
+Resource Files/Images/loop_000008.png
+Resource Files/Images/loop_000009.png
+Resource Files/Images/loop_000010.png
+Resource Files/Images/loop_000011.png
+Resource Files/Images/loop_000012.png
+Resource Files/Images/loop_000013.png
+Resource Files/Images/loop_000014.png
+Resource Files/Images/loop_000015.png
+Resource Files/Images/loop_000016.png
+Resource Files/Images/loop_000017.png
+Resource Files/Images/loop_000018.png
+Resource Files/Images/loop_000019.png
+Resource Files/Images/loop_000020.png
+Resource Files/Images/loop_000021.png
+Resource Files/Images/loop_000022.png
+Resource Files/Images/loop_000023.png
+Resource Files/Images/loop_000024.png
+Resource Files/Images/loop_000025.png
+Resource Files/Images/loop_000026.png
+Resource Files/Images/loop_000027.png
+Resource Files/Images/loop_000028.png
+Resource Files/Images/loop_000029.png
+Resource Files/Images/loop_000030.png
+Resource Files/Images/loop_000031.png
+Resource Files/Images/loop_000032.png
+Resource Files/Images/loop_000033.png
+Resource Files/Images/loop_000034.png
+Resource Files/Images/loop_000035.png
+Resource Files/Images/loop_000036.png
+Resource Files/Images/loop_000037.png
+Resource Files/Images/loop_000038.png
+Resource Files/Images/loop_000039.png
+Resource Files/Images/loop_000040.png
+Resource Files/Images/loop_000041.png
+Resource Files/Images/loop_000042.png
+Resource Files/Images/loop_000043.png
+Resource Files/Images/loop_000044.png
+Resource Files/Images/loop_000045.png
+Resource Files/Images/loop_000046.png
+Resource Files/Images/loop_000047.png
+Resource Files/Images/loop_000048.png
+Textures/Animation/Loop/loop_000000
+Textures/Animation/Loop/loop_000001
+Textures/Animation/Loop/loop_000002
+Textures/Animation/Loop/loop_000003
+Textures/Animation/Loop/loop_000004
+Textures/Animation/Loop/loop_000005
+Textures/Animation/Loop/loop_000006
+Textures/Animation/Loop/loop_000007
+Textures/Animation/Loop/loop_000008
+Textures/Animation/Loop/loop_000009
+Textures/Animation/Loop/loop_000010
+Textures/Animation/Loop/loop_000011
+Textures/Animation/Loop/loop_000012
+Textures/Animation/Loop/loop_000013
+Textures/Animation/Loop/loop_000014
+Textures/Animation/Loop/loop_000015
+Textures/Animation/Loop/loop_000016
+Textures/Animation/Loop/loop_000017
+Textures/Animation/Loop/loop_000018
+Textures/Animation/Loop/loop_000019
+Textures/Animation/Loop/loop_000020
+Textures/Animation/Loop/loop_000021
+Textures/Animation/Loop/loop_000022
+Textures/Animation/Loop/loop_000023
+Textures/Animation/Loop/loop_000024
+Textures/Animation/Loop/loop_000025
+Textures/Animation/Loop/loop_000026
+Textures/Animation/Loop/loop_000027
+Textures/Animation/Loop/loop_000028
+Textures/Animation/Loop/loop_000029
+Textures/Animation/Loop/loop_000030
+Textures/Animation/Loop/loop_000031
+Textures/Animation/Loop/loop_000032
+Textures/Animation/Loop/loop_000033
+Textures/Animation/Loop/loop_000034
+Textures/Animation/Loop/loop_000035
+Textures/Animation/Loop/loop_000036
+Textures/Animation/Loop/loop_000037
+Textures/Animation/Loop/loop_000038
+Textures/Animation/Loop/loop_000039
+Textures/Animation/Loop/loop_000040
+Textures/Animation/Loop/loop_000041
+Textures/Animation/Loop/loop_000042
+Textures/Animation/Loop/loop_000043
+Textures/Animation/Loop/loop_000044
+Textures/Animation/Loop/loop_000045
+Textures/Animation/Loop/loop_000046
+Textures/Animation/Loop/loop_000047
+Textures/Animation/Loop/loop_000048
+Textures/Animation/Loop/loop_000049
+Textures/bg_progressbar
+Textures/xplogo
+Textures/进度
+State Managers/State Manager
+/ota

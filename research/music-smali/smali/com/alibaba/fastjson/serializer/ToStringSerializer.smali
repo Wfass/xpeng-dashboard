@@ -1,0 +1,85 @@
+.class public final Lcom/alibaba/fastjson/serializer/ToStringSerializer;
+.super Ljava/lang/Object;
+.source "ToStringSerializer.java"
+
+# interfaces
+.implements Lcom/alibaba/fastjson/serializer/ObjectSerializer;
+
+
+# static fields
+.field public static final instance:Lcom/alibaba/fastjson/serializer/ToStringSerializer;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 10
+    new-instance v0, Lcom/alibaba/fastjson/serializer/ToStringSerializer;
+
+    invoke-direct {v0}, Lcom/alibaba/fastjson/serializer/ToStringSerializer;-><init>()V
+
+    sput-object v0, Lcom/alibaba/fastjson/serializer/ToStringSerializer;->instance:Lcom/alibaba/fastjson/serializer/ToStringSerializer;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    .line 8
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public write(Lcom/alibaba/fastjson/serializer/JSONSerializer;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/reflect/Type;I)V
+    .locals 0
+
+    .line 30
+    iget-object p1, p1, Lcom/alibaba/fastjson/serializer/JSONSerializer;->out:Lcom/alibaba/fastjson/serializer/SerializeWriter;
+
+    iget-object p1, p1, Lcom/alibaba/fastjson/serializer/SerializeWriter;->raw:Lcom/alibaba/fastjson2/ab;
+
+    if-nez p2, :cond_0
+
+    .line 32
+    invoke-virtual {p1}, Lcom/alibaba/fastjson2/ab;->q()V
+
+    return-void
+
+    .line 36
+    :cond_0
+    invoke-virtual {p2}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object p2
+
+    .line 37
+    invoke-virtual {p1, p2}, Lcom/alibaba/fastjson2/ab;->d(Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public write(Lcom/alibaba/fastjson2/ab;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/reflect/Type;J)V
+    .locals 0
+
+    if-nez p2, :cond_0
+
+    .line 15
+    invoke-virtual {p1}, Lcom/alibaba/fastjson2/ab;->q()V
+
+    return-void
+
+    .line 19
+    :cond_0
+    invoke-virtual {p2}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object p2
+
+    .line 20
+    invoke-virtual {p1, p2}, Lcom/alibaba/fastjson2/ab;->d(Ljava/lang/String;)V
+
+    return-void
+.end method

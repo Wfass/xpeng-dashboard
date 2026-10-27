@@ -1,0 +1,6303 @@
+.class public final Landroid/car/hardware/icm/CarIcmManager;
+.super Landroid/car/hardware/CarEcuManager;
+.source "CarIcmManager.java"
+
+
+# annotations
+.annotation runtime Landroid/annotation/SystemApi;
+.end annotation
+
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroid/car/hardware/icm/CarIcmManager$Icm_BtPhone_25;,
+        Landroid/car/hardware/icm/CarIcmManager$Icm_NaviInfo_30;,
+        Landroid/car/hardware/icm/CarIcmManager$Icm_TimeInfo_24;,
+        Landroid/car/hardware/icm/CarIcmManager$IcmAccount_23;,
+        Landroid/car/hardware/icm/CarIcmManager$Icm_Wheelkey_22;,
+        Landroid/car/hardware/icm/CarIcmManager$Icm_WeatherInfo_21;,
+        Landroid/car/hardware/icm/CarIcmManager$CarControl_20;,
+        Landroid/car/hardware/icm/CarIcmManager$CarCtl_msgData;,
+        Landroid/car/hardware/icm/CarIcmManager$InfoCard_C02;,
+        Landroid/car/hardware/icm/CarIcmManager$InfoCard_C01;,
+        Landroid/car/hardware/icm/CarIcmManager$InfoCard_04;,
+        Landroid/car/hardware/icm/CarIcmManager$InfoCard_06;,
+        Landroid/car/hardware/icm/CarIcmManager$InfoCard_07_msgList;,
+        Landroid/car/hardware/icm/CarIcmManager$InfoCard_05_cmd;,
+        Landroid/car/hardware/icm/CarIcmManager$InfoCard_msgData;,
+        Landroid/car/hardware/icm/CarIcmManager$InfoCard_03;,
+        Landroid/car/hardware/icm/CarIcmManager$InfoCard_A1;,
+        Landroid/car/hardware/icm/CarIcmManager$OsdShow;,
+        Landroid/car/hardware/icm/CarIcmManager$SyncSinal;,
+        Landroid/car/hardware/icm/CarIcmManager$FeedBack_Msg;,
+        Landroid/car/hardware/icm/CarIcmManager$CarIcmEventCallback;,
+        Landroid/car/hardware/icm/CarIcmManager$PropertyId;
+    }
+.end annotation
+
+
+# static fields
+.field public static final BRAKE_FLUID_LEVEL_LOW:I = 0x1
+
+.field public static final BRAKE_FLUID_LEVEL_NORMAL:I = 0x0
+
+.field public static final CARSETTING_ICM_ALARMVOLUMEL:Ljava/lang/String; = "setIcmAlarmVolume"
+
+.field public static final CARSETTING_ICM_BIRGHTNESS:Ljava/lang/String; = "setIcmBrightness"
+
+.field public static final CARSETTING_ICM_HVAC_BLOW_MODE:Ljava/lang/String; = "setHvacWindBlowMode"
+
+.field public static final CARSETTING_ICM_HVAC_DRIVER_TEMPVALUE:Ljava/lang/String; = "setHvacTempDriverValue"
+
+.field public static final CARSETTING_ICM_HVAC_FRONT_DEFROST:Ljava/lang/String; = "setHvacFrontDefrostMode"
+
+.field public static final CARSETTING_ICM_HVAC_SWEEP_WIND:Ljava/lang/String; = "setSweepWindStatus"
+
+.field public static final CARSETTING_ICM_HVAC_WIND_SPEED:Ljava/lang/String; = "setHvacWindSpeedLevel"
+
+.field public static final CARSETTING_ICM_RESETMETERMILEAGEA:Ljava/lang/String; = "resetMeterMileageA"
+
+.field public static final CARSETTING_ICM_RESETMETERMILEAGEB:Ljava/lang/String; = "resetMeterMileageB"
+
+.field public static final CARSETTING_ICM_SEAT_BLOW_LEVEL:Ljava/lang/String; = "setBCMSeatBlowLevel"
+
+.field public static final CARSETTING_ICM_SEAT_HEAT_LEVEL:Ljava/lang/String; = "setBCMSeatHeatLevel"
+
+.field public static final CARSETTING_ICM_TIMEFORMAT:Ljava/lang/String; = "setIcmTimeFormat"
+
+.field public static final CARSETTING_SPEEDLIMIT_WARNINGSWITCH:Ljava/lang/String; = "setSpeedLimitWarningSwitch"
+
+.field public static final CARSETTING_SPEEDLIMIT_WARNINGVALUE:Ljava/lang/String; = "setSpeedLimitWarningValue"
+
+.field public static final CHARGING_SCENARIO:F = 0.0f
+
+.field private static final DBG:Z = false
+
+.field public static final DISCHARGE_SCENARIO:F = 1.0f
+
+.field public static final DISTRACTION_LEVEL_L1:I = 0x1
+
+.field public static final DISTRACTION_LEVEL_NONE:I = 0x0
+
+.field public static final DMS_MODE_EXTENDED:I = 0x1
+
+.field public static final DMS_MODE_NORMAL:I = 0x0
+
+.field public static final FATIGUE_LEVEL_L1:I = 0x1
+
+.field public static final FATIGUE_LEVEL_L2:I = 0x2
+
+.field public static final FATIGUE_LEVEL_NONE:I = 0x0
+
+.field public static final FILE_TRANSFER_FAILURE:I = 0x1
+
+.field public static final FILE_TRANSFER_FINISHED:I = 0x0
+
+.field public static final ICM_ALARM_STATUS_VOLUME_POWER:I = 0x2
+
+.field public static final ICM_ALARM_STATUS_VOLUME_SOFT:I = 0x0
+
+.field public static final ICM_ALARM_STATUS_VOLUME_STANDARD:I = 0x1
+
+.field public static final ICM_ALART_VOLUME_HIGH:I = 0x3
+
+.field public static final ICM_ALART_VOLUME_LOW:I = 0x1
+
+.field public static final ICM_ALART_VOLUME_MEDIUM:I = 0x2
+
+.field public static final ICM_CONNECTED:I = 0x1
+
+.field public static final ICM_DAY_NIGHT_MODE_DAY:I = 0x0
+
+.field public static final ICM_DAY_NIGHT_MODE_NIGHT:I = 0x1
+
+.field public static final ICM_METER_ALARM_VOLUME_POWER:I = 0x2
+
+.field public static final ICM_METER_ALARM_VOLUME_SOFT:I = 0x0
+
+.field public static final ICM_METER_ALARM_VOLUME_STANDARD:I = 0x1
+
+.field public static final ICM_METER_SOUND_STREAM_COMMUNICATION:I = 0x0
+
+.field public static final ICM_METER_SOUND_STREAM_MEDIA:I = 0x3
+
+.field public static final ICM_METER_SOUND_STREAM_SYSTEM:I = 0x1
+
+.field public static final ICM_METER_SOUND_STREAM_VOICE:I = 0x4
+
+.field public static final ICM_METER_TIME_FORMAT_12_HOUR:I = 0x1
+
+.field public static final ICM_METER_TIME_FORMAT_24_HOUR:I = 0x0
+
+.field public static final ICM_NOT_CONNECTED:I = 0x0
+
+.field public static final ICM_ODOMETER_INVALID:I = 0x0
+
+.field public static final ICM_ODOMETER_VALID:I = 0x1
+
+.field public static final ICM_SWITCH_CLOSE:I = 0x0
+
+.field public static final ICM_SWITCH_OFF:I = 0x0
+
+.field public static final ICM_SWITCH_ON:I = 0x1
+
+.field public static final ICM_SWITCH_OPEN:I = 0x1
+
+.field public static final ICM_UPDATE_FAILED_DUE_TO_SOFTWARE_VERSION_MISMATCH:I = 0x1
+
+.field public static final ICM_UPDATE_SUCCESS:I = 0x0
+
+.field public static final ID_ICM_ACCOUNT:I = 0x2110161b
+
+.field public static final ID_ICM_ACCOUT_EVENT:I = 0x2170160c
+
+.field public static final ID_ICM_ACK_EVENT:I = 0x2141160a
+
+.field public static final ID_ICM_ALARM_VOLUME:I = 0x21401605
+
+.field public static final ID_ICM_ALARM_VOLUME_SP:I = 0x2140163d
+
+.field public static final ID_ICM_ALLCARD_REFRSH:I = 0x21101616
+
+.field public static final ID_ICM_ALL_LAMP_STATE_INFO:I = 0x21101661
+
+.field public static final ID_ICM_ALL_LAMP_STATE_REQ:I = 0x21401660
+
+.field public static final ID_ICM_APA_STATUS:I = 0x21401671
+
+.field public static final ID_ICM_BFLWARNING:I = 0x21401649
+
+.field public static final ID_ICM_BRIGHTNESS_SP:I = 0x2140163c
+
+.field public static final ID_ICM_BTPHONE_CALL:I = 0x21101640
+
+.field public static final ID_ICM_BT_EVENT:I = 0x2170160b
+
+.field public static final ID_ICM_CARSETTING:I = 0x21101618
+
+.field public static final ID_ICM_CHANGE_MILEAGE:I = 0x21611672
+
+.field public static final ID_ICM_CHARGING_DURATION:I = 0x21401675
+
+.field public static final ID_ICM_CONNECTED:I = 0x2140160e
+
+.field public static final ID_ICM_CONTROL_EVENT:I = 0x2170160d
+
+.field public static final ID_ICM_CRASH_INFO:I = 0x2110165d
+
+.field public static final ID_ICM_DAYNIGHT_SWITCH:I = 0x2140162a
+
+.field public static final ID_ICM_DIAGNOSIS_INFO:I = 0x2110165f
+
+.field public static final ID_ICM_DIST_LVL:I = 0x2140163a
+
+.field public static final ID_ICM_DMS_MODE_ST:I = 0x21401638
+
+.field public static final ID_ICM_DRIVER_TEMPERATURE:I = 0x21601635
+
+.field public static final ID_ICM_ELCD_BLIGHT:I = 0x2140166f
+
+.field public static final ID_ICM_FACE_INFO:I = 0x21101648
+
+.field public static final ID_ICM_FACTORY_RESET:I = 0x2140162b
+
+.field public static final ID_ICM_FATG_LVL:I = 0x21401639
+
+.field public static final ID_ICM_FEEDBACK:I = 0x2140164e
+
+.field public static final ID_ICM_FEEDBACK_SIGNAL:I = 0x21101610
+
+.field public static final ID_ICM_FNGP_NAVI_PATH_RETAIN_TIME:I = 0x2150166d
+
+.field public static final ID_ICM_FUSION_TRAFFIC_LIGHTS_COLOR:I = 0x21401674
+
+.field public static final ID_ICM_FUSION_TRAFFIC_LIGHTS_COUNTER:I = 0x21401673
+
+.field public static final ID_ICM_INFOCARD_ADD:I = 0x21101613
+
+.field public static final ID_ICM_INFOCARD_REMOVE:I = 0x21101615
+
+.field public static final ID_ICM_INFOCARD_UPDATE:I = 0x21101614
+
+.field public static final ID_ICM_INFOFLOW_MSG:I = 0x21101617
+
+.field public static final ID_ICM_LEFT_MENU_CONTROL:I = 0x21401662
+
+.field public static final ID_ICM_LIGHT_LEVER_ADJ:I = 0x21401628
+
+.field public static final ID_ICM_LOCALE_LANGUAGE:I = 0x21101676
+
+.field public static final ID_ICM_LOG_COMPRESS:I = 0x21101666
+
+.field public static final ID_ICM_LYRICS_MSG:I = 0x2170166e
+
+.field public static final ID_ICM_MEDIA_SOURCE:I = 0x21401636
+
+.field public static final ID_ICM_METER_SOUND_STATE:I = 0x21411626
+
+.field public static final ID_ICM_MUSIC_INFO:I = 0x21101643
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+.end field
+
+.field public static final ID_ICM_MUSIC_TIME_INFO:I = 0x21101644
+
+.field public static final ID_ICM_NAVIGATION:I = 0x2170161d
+
+.field public static final ID_ICM_NAVIGATION_INFO:I = 0x21701601
+
+.field public static final ID_ICM_NEEDNAVI:I = 0x21101645
+
+.field public static final ID_ICM_OSDSHOW:I = 0x21101612
+
+.field public static final ID_ICM_PARKING_SCENE:I = 0x2140167a
+
+.field public static final ID_ICM_RADIO_TYPE:I = 0x21401647
+
+.field public static final ID_ICM_RAIN_DETEC_SENCFG:I = 0x21401665
+
+.field public static final ID_ICM_RANDIS_DISPLAY_TYPE:I = 0x2110166c
+
+.field public static final ID_ICM_RATE_ANIM_TYPE:I = 0x21401679
+
+.field public static final ID_ICM_RATE_LIMIT_MSG:I = 0x21411678
+
+.field public static final ID_ICM_RESET_MM_A:I = 0x21401633
+
+.field public static final ID_ICM_RESET_MM_A_SP:I = 0x21401641
+
+.field public static final ID_ICM_RESET_MM_B:I = 0x21401634
+
+.field public static final ID_ICM_RESET_MM_B_SP:I = 0x21401642
+
+.field public static final ID_ICM_RIGHT_MENU_CONTROL:I = 0x21401663
+
+.field public static final ID_ICM_SCREEN_LIGHT:I = 0x21401637
+
+.field public static final ID_ICM_SEND_ACCOUNT_MSG:I = 0x21701604
+
+.field public static final ID_ICM_SEND_BT_MSG:I = 0x21701602
+
+.field public static final ID_ICM_SEND_MODE:I = 0x21411667
+
+.field public static final ID_ICM_SEND_MUSIC_ICM:I = 0x21701608
+
+.field public static final ID_ICM_SEND_NAVIGATION_ICM:I = 0x21701601
+
+.field public static final ID_ICM_SEND_NET_RADIO_ICM:I = 0x21701607
+
+.field public static final ID_ICM_SEND_NOTIFY_MSG:I = 0x21701606
+
+.field public static final ID_ICM_SEND_RADIO_ICM:I = 0x2170160f
+
+.field public static final ID_ICM_SEND_ROM_BIN:I = 0x21701609
+
+.field public static final ID_ICM_SEND_WEATHER_ICM:I = 0x21701603
+
+.field public static final ID_ICM_SET_TIME:I = 0x2141162c
+
+.field public static final ID_ICM_SLIDE_DOOR_SOUND_SW:I = 0x2140167c
+
+.field public static final ID_ICM_SOUND_THEME_TYPE:I = 0x21401669
+
+.field public static final ID_ICM_SPEED_LIMIT_WARNING_SWITCH:I = 0x21401622
+
+.field public static final ID_ICM_SPEED_LIMIT_WARNING_SWITCH_SP:I = 0x2140163f
+
+.field public static final ID_ICM_SPEED_LIMIT_WARNING_VALUE:I = 0x2140162d
+
+.field public static final ID_ICM_SPEED_LIMIT_WARNING_VALUE_SP:I = 0x2140163e
+
+.field public static final ID_ICM_SYNC_DAY_NIGHT_MODE:I = 0x2140161e
+
+.field public static final ID_ICM_SYNC_SIGNAL:I = 0x21101611
+
+.field public static final ID_ICM_SYNC_TIME:I = 0x2110161c
+
+.field public static final ID_ICM_TEMPERATURE:I = 0x21401625
+
+.field public static final ID_ICM_TIME_FORMAT:I = 0x21401620
+
+.field public static final ID_ICM_TIME_FORMAT_SP:I = 0x2140163b
+
+.field public static final ID_ICM_TOTAL_ODO_METER:I = 0x2160162e
+
+.field public static final ID_ICM_TRIPA:I = 0x21601631
+
+.field public static final ID_ICM_TRIPB:I = 0x21601632
+
+.field public static final ID_ICM_TRIP_SINCE_CHARGING:I = 0x21601630
+
+.field public static final ID_ICM_TRIP_SINCE_IGON:I = 0x2160162f
+
+.field public static final ID_ICM_UNIT_FORMAT:I = 0x2110167b
+
+.field public static final ID_ICM_UPDATE_PARTITION_PROGRESS:I = 0x2110165b
+
+.field public static final ID_ICM_UPDATE_PARTITION_RESULT:I = 0x2110165c
+
+.field public static final ID_ICM_UPDATE_PROGRESS:I = 0x2140164d
+
+.field public static final ID_ICM_UPDATE_REQ:I = 0x2110164a
+
+.field public static final ID_ICM_UPDATE_RESULT:I = 0x2140164b
+
+.field public static final ID_ICM_UPDATE_TRANS:I = 0x2140164c
+
+.field public static final ID_ICM_USER_SCENARIO_EXIT_DIALOG:I = 0x2140166b
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+.end field
+
+.field public static final ID_ICM_USER_SCENARIO_INFO:I = 0x2141166a
+
+.field public static final ID_ICM_VPA_STATUS:I = 0x21401670
+
+.field public static final ID_ICM_WEATHER:I = 0x21101619
+
+.field public static final ID_ICM_WHEEL_KEY:I = 0x2110161a
+
+.field public static final ID_ICM_WIND_BLOW_LEVEL:I = 0x2140161f
+
+.field public static final ID_ICM_WIND_BLOW_MODE:I = 0x21401624
+
+.field public static final ID_ICM_WIND_MODE:I = 0x21401621
+
+.field public static final ID_ICM_WIND_POWER:I = 0x21401627
+
+.field public static final KEYCODE_BACK:I = 0xd
+
+.field public static final KEYCODE_CAR_ENTER:I = 0xc
+
+.field public static final KEYCODE_CAR_LONG_ENTER:I = 0x1a
+
+.field public static final KEYCODE_CAR_LONG_MEDIA_NEXT:I = 0x19
+
+.field public static final KEYCODE_CAR_LONG_MEDIA_PREVIOUS:I = 0x18
+
+.field public static final KEYCODE_CAR_LONG_VOLUME_DOWN:I = 0x17
+
+.field public static final KEYCODE_CAR_LONG_VOLUME_UP:I = 0x16
+
+.field public static final KEYCODE_CAR_LT_CUSTOM:I = 0x31
+
+.field public static final KEYCODE_CAR_LT_ENTER:I = 0x36
+
+.field public static final KEYCODE_CAR_LT_MEDIA_NEXT:I = 0x35
+
+.field public static final KEYCODE_CAR_LT_MEDIA_PREVIOUS:I = 0x34
+
+.field public static final KEYCODE_CAR_LT_SPEECH:I = 0x30
+
+.field public static final KEYCODE_CAR_LT_VOLUME_DOWN:I = 0x33
+
+.field public static final KEYCODE_CAR_LT_VOLUME_UP:I = 0x32
+
+.field public static final KEYCODE_CAR_MEDIA_NEXT:I = 0xb
+
+.field public static final KEYCODE_CAR_MEDIA_PREVIOUS:I = 0xa
+
+.field public static final KEYCODE_CAR_SLIDE_DOWN:I = 0x3c
+
+.field public static final KEYCODE_CAR_SLIDE_UP:I = 0x3b
+
+.field public static final KEYCODE_CAR_ST_CUSTOM:I = 0x23
+
+.field public static final KEYCODE_CAR_ST_ENTER:I = 0x28
+
+.field public static final KEYCODE_CAR_ST_MEDIA_NEXT:I = 0x27
+
+.field public static final KEYCODE_CAR_ST_MEDIA_PREVIOUS:I = 0x26
+
+.field public static final KEYCODE_CAR_ST_SPEECH:I = 0x22
+
+.field public static final KEYCODE_CAR_ST_VOLUME_DOWN:I = 0x25
+
+.field public static final KEYCODE_CAR_ST_VOLUME_UP:I = 0x24
+
+.field public static final KEYCODE_CAR_VOLUME_DOWN:I = 0x9
+
+.field public static final KEYCODE_CAR_VOLUME_UP:I = 0x8
+
+.field public static final KEYCODE_CUSTOM:I = 0x7
+
+.field public static final KEYCODE_ICM_DOWN:I = 0x2
+
+.field public static final KEYCODE_ICM_ENTER:I = 0x5
+
+.field public static final KEYCODE_ICM_LEFT:I = 0x3
+
+.field public static final KEYCODE_ICM_LONG_DOWN:I = 0x10
+
+.field public static final KEYCODE_ICM_LONG_ENTER:I = 0x13
+
+.field public static final KEYCODE_ICM_LONG_LEFT:I = 0x11
+
+.field public static final KEYCODE_ICM_LONG_RIGHT:I = 0x12
+
+.field public static final KEYCODE_ICM_LONG_UP:I = 0xf
+
+.field public static final KEYCODE_ICM_LT_DOWN:I = 0x2c
+
+.field public static final KEYCODE_ICM_LT_ENTER:I = 0x2f
+
+.field public static final KEYCODE_ICM_LT_LEFT:I = 0x2d
+
+.field public static final KEYCODE_ICM_LT_RIGHT:I = 0x2e
+
+.field public static final KEYCODE_ICM_LT_UP:I = 0x2b
+
+.field public static final KEYCODE_ICM_RIGHT:I = 0x4
+
+.field public static final KEYCODE_ICM_SLIDE_DOWN:I = 0x3a
+
+.field public static final KEYCODE_ICM_SLIDE_UP:I = 0x39
+
+.field public static final KEYCODE_ICM_ST_DOWN:I = 0x1e
+
+.field public static final KEYCODE_ICM_ST_ENTER:I = 0x21
+
+.field public static final KEYCODE_ICM_ST_LEFT:I = 0x1f
+
+.field public static final KEYCODE_ICM_ST_RIGHT:I = 0x20
+
+.field public static final KEYCODE_ICM_ST_UP:I = 0x1d
+
+.field public static final KEYCODE_ICM_UP:I = 0x1
+
+.field public static final KEYCODE_LONG_BACK:I = 0x1b
+
+.field public static final KEYCODE_LONG_CUSTOM:I = 0x15
+
+.field public static final KEYCODE_LONG_MUTE:I = 0x1c
+
+.field public static final KEYCODE_LONG_SPEECH:I = 0x14
+
+.field public static final KEYCODE_LT_BACK:I = 0x37
+
+.field public static final KEYCODE_LT_MUTE:I = 0x38
+
+.field public static final KEYCODE_MUTE:I = 0xe
+
+.field public static final KEYCODE_SPEECH:I = 0x6
+
+.field public static final KEYCODE_ST_BACK:I = 0x29
+
+.field public static final KEYCODE_ST_MUTE:I = 0x2a
+
+.field public static final LOCAL_RADIO:I = 0x1
+
+.field public static final MAX_NAVI_BMP_SIZE:I = 0x500000
+
+.field public static final MSG_CONTENT_CONNECT:Ljava/lang/String; = "Connect"
+
+.field public static final MSG_CONTENT_DIALOUT:Ljava/lang/String; = "Dialout"
+
+.field public static final MSG_CONTENT_DISCONNECT:Ljava/lang/String; = "Disconnect"
+
+.field public static final MSG_CONTENT_NEXT:Ljava/lang/String; = "Next"
+
+.field public static final MSG_CONTENT_OPEN:Ljava/lang/String; = "Open"
+
+.field public static final MSG_CONTENT_PAUSE:Ljava/lang/String; = "Pause"
+
+.field public static final MSG_CONTENT_PLAY:Ljava/lang/String; = "Play"
+
+.field public static final MSG_NONE:Ljava/lang/String; = "None"
+
+.field public static final MSG_REQCARDSBACK:Ljava/lang/String; = "reqCardsBack"
+
+.field public static final NAVBMPPAGESIZE:I = 0x30d40
+
+.field public static final NET_RADIO:I = 0x2
+
+.field public static final NONE_RADIO:I = 0x3
+
+.field public static final OSDMODE_MEDIAVOLUME:Ljava/lang/String; = "Media Volume"
+
+.field public static final OSDMODE_PHONEVOLUME:Ljava/lang/String; = "Phone Volume"
+
+.field public static final OSDMODE_VOICEVOLUME:Ljava/lang/String; = "Voice Volume"
+
+.field public static final PARKING_STAT_ACTIVE:I = 0x2
+
+.field public static final PARKING_STAT_AVAILABLE:I = 0x1
+
+.field public static final PARKING_STAT_UNAVAILABLE:I = 0x0
+
+.field public static final SYNCMODE_ANIMATIONREADY:Ljava/lang/String; = "AnimReady"
+
+.field public static final SYNCMODE_DAYMODE:Ljava/lang/String; = "DayMode"
+
+.field public static final SYNCMODE_NIGHTMODE:Ljava/lang/String; = "NightMode"
+
+.field public static final SYNCMODE_OTA:Ljava/lang/String; = "OTA"
+
+.field public static final SYNCMODE_SYSTEMREADY:Ljava/lang/String; = "SysReady"
+
+.field private static final TAG:Ljava/lang/String; = "CarIcmManager"
+
+
+# instance fields
+.field private final mIcmPropertyIds:Landroid/util/ArraySet;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroid/util/ArraySet<",
+            "Ljava/lang/Integer;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+.field private final mSharedMemoryService:Landroid/car/xpsharedmemory/IXpSharedMemory;
+
+
+# direct methods
+.method private static synthetic $closeResource(Ljava/lang/Throwable;Ljava/lang/AutoCloseable;)V
+    .registers 3
+    .param p0, "x0"    # Ljava/lang/Throwable;
+    .param p1, "x1"    # Ljava/lang/AutoCloseable;
+
+    .line 1843
+    if-eqz p0, :cond_b
+
+    :try_start_2
+    invoke-interface {p1}, Ljava/lang/AutoCloseable;->close()V
+    :try_end_5
+    .catch Ljava/lang/Throwable; {:try_start_2 .. :try_end_5} :catch_6
+
+    goto :goto_e
+
+    :catch_6
+    move-exception v0
+
+    invoke-virtual {p0, v0}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+
+    goto :goto_e
+
+    :cond_b
+    invoke-interface {p1}, Ljava/lang/AutoCloseable;->close()V
+
+    :goto_e
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/car/Car;Landroid/os/IBinder;Landroid/os/IBinder;Landroid/content/Context;Landroid/os/Handler;)V
+    .registers 12
+    .param p1, "car"    # Landroid/car/Car;
+    .param p2, "service"    # Landroid/os/IBinder;
+    .param p3, "vehicleService"    # Landroid/os/IBinder;
+    .param p4, "context"    # Landroid/content/Context;
+    .param p5, "handler"    # Landroid/os/Handler;
+
+    .line 1409
+    const-string v0, "CarIcmManager"
+
+    const/4 v1, 0x0
+
+    invoke-direct {p0, p1, p2, v1, v0}, Landroid/car/hardware/CarEcuManager;-><init>(Landroid/car/Car;Landroid/os/IBinder;ZLjava/lang/String;)V
+
+    .line 1287
+    new-instance v0, Landroid/util/ArraySet;
+
+    const/16 v2, 0x66
+
+    new-array v2, v2, [Ljava/lang/Integer;
+
+    const v3, 0x21401633
+
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    aput-object v3, v2, v1
+
+    .line 1288
+    const v1, 0x21401634
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/4 v3, 0x1
+
+    aput-object v1, v2, v3
+
+    .line 1289
+    const v1, 0x21401605
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/4 v3, 0x2
+
+    aput-object v1, v2, v3
+
+    .line 1290
+    const v1, 0x21401620
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/4 v3, 0x3
+
+    aput-object v1, v2, v3
+
+    .line 1291
+    const v1, 0x21401625
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/4 v3, 0x4
+
+    aput-object v1, v2, v3
+
+    .line 1292
+    const v1, 0x21401627
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/4 v3, 0x5
+
+    aput-object v1, v2, v3
+
+    .line 1293
+    const v1, 0x21401621
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/4 v3, 0x6
+
+    aput-object v1, v2, v3
+
+    .line 1294
+    const v1, 0x21401636
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/4 v3, 0x7
+
+    aput-object v1, v2, v3
+
+    .line 1295
+    const v1, 0x21401637
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x8
+
+    aput-object v1, v2, v3
+
+    .line 1296
+    const v1, 0x2170161d
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    const/16 v4, 0x9
+
+    aput-object v3, v2, v4
+
+    .line 1297
+    const v3, 0x2140162a
+
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    const/16 v4, 0xa
+
+    aput-object v3, v2, v4
+
+    .line 1298
+    const v3, 0x21401622
+
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    const/16 v4, 0xb
+
+    aput-object v3, v2, v4
+
+    .line 1299
+    const v3, 0x2140162d
+
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    const/16 v4, 0xc
+
+    aput-object v3, v2, v4
+
+    .line 1300
+    const v3, 0x21401624
+
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    const/16 v4, 0xd
+
+    aput-object v3, v2, v4
+
+    .line 1301
+    const v3, 0x2140161f
+
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    const/16 v4, 0xe
+
+    aput-object v3, v2, v4
+
+    .line 1302
+    const v3, 0x21601635
+
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    const/16 v4, 0xf
+
+    aput-object v3, v2, v4
+
+    .line 1303
+    const v3, 0x21411626
+
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    const/16 v4, 0x10
+
+    aput-object v3, v2, v4
+
+    .line 1304
+    const v3, 0x21701603
+
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    const/16 v4, 0x11
+
+    aput-object v3, v2, v4
+
+    .line 1305
+    const v3, 0x21701601
+
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x12
+
+    aput-object v4, v2, v5
+
+    .line 1306
+    const v4, 0x21701608
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x13
+
+    aput-object v4, v2, v5
+
+    .line 1307
+    const v4, 0x21701607
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x14
+
+    aput-object v4, v2, v5
+
+    .line 1308
+    const v4, 0x2170160f
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x15
+
+    aput-object v4, v2, v5
+
+    .line 1309
+    const v4, 0x21701602
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x16
+
+    aput-object v4, v2, v5
+
+    .line 1310
+    const v4, 0x2141162c
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x17
+
+    aput-object v4, v2, v5
+
+    .line 1311
+    const v4, 0x2141160a
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x18
+
+    aput-object v4, v2, v5
+
+    .line 1312
+    const v4, 0x2170160b
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x19
+
+    aput-object v4, v2, v5
+
+    .line 1313
+    const v4, 0x2170160c
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x1a
+
+    aput-object v4, v2, v5
+
+    .line 1314
+    const v4, 0x2170160d
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x1b
+
+    aput-object v4, v2, v5
+
+    .line 1315
+    const v4, 0x21601632
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x1c
+
+    aput-object v4, v2, v5
+
+    .line 1316
+    const v4, 0x21601631
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x1d
+
+    aput-object v4, v2, v5
+
+    .line 1317
+    const v4, 0x2160162e
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x1e
+
+    aput-object v4, v2, v5
+
+    .line 1318
+    const v4, 0x21601630
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x1f
+
+    aput-object v4, v2, v5
+
+    .line 1319
+    const v4, 0x2160162f
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x20
+
+    aput-object v4, v2, v5
+
+    .line 1320
+    const v4, 0x21401628
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x21
+
+    aput-object v4, v2, v5
+
+    .line 1321
+    const v4, 0x21701606
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x22
+
+    aput-object v4, v2, v5
+
+    .line 1322
+    const v4, 0x2140162b
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x23
+
+    aput-object v4, v2, v5
+
+    .line 1323
+    const v4, 0x21701604
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x24
+
+    aput-object v4, v2, v5
+
+    .line 1324
+    const v4, 0x2140160e
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x25
+
+    aput-object v4, v2, v5
+
+    .line 1325
+    const v4, 0x21701609
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x26
+
+    aput-object v4, v2, v5
+
+    .line 1326
+    const v4, 0x21101610
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x27
+
+    aput-object v4, v2, v5
+
+    .line 1327
+    const v4, 0x21101611
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x28
+
+    aput-object v4, v2, v5
+
+    .line 1328
+    const v4, 0x21101612
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x29
+
+    aput-object v4, v2, v5
+
+    .line 1329
+    const v4, 0x21101613
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x2a
+
+    aput-object v4, v2, v5
+
+    .line 1330
+    const v4, 0x21101614
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x2b
+
+    aput-object v4, v2, v5
+
+    .line 1331
+    const v4, 0x21101615
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x2c
+
+    aput-object v4, v2, v5
+
+    .line 1332
+    const v4, 0x21101616
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x2d
+
+    aput-object v4, v2, v5
+
+    .line 1333
+    const v4, 0x21101617
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x2e
+
+    aput-object v4, v2, v5
+
+    .line 1334
+    const v4, 0x21101618
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x2f
+
+    aput-object v4, v2, v5
+
+    .line 1335
+    const v4, 0x21101619
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x30
+
+    aput-object v4, v2, v5
+
+    .line 1336
+    const v4, 0x2110161a
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x31
+
+    aput-object v4, v2, v5
+
+    .line 1337
+    const v4, 0x2110161b
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x32
+
+    aput-object v4, v2, v5
+
+    .line 1338
+    const v4, 0x2110161c
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x33
+
+    aput-object v4, v2, v5
+
+    .line 1339
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v4, 0x34
+
+    aput-object v1, v2, v4
+
+    .line 1340
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x35
+
+    aput-object v1, v2, v3
+
+    .line 1341
+    const v1, 0x2140163c
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x36
+
+    aput-object v1, v2, v3
+
+    .line 1342
+    const v1, 0x2140163a
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x37
+
+    aput-object v1, v2, v3
+
+    .line 1343
+    const v1, 0x21401639
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x38
+
+    aput-object v1, v2, v3
+
+    .line 1344
+    const v1, 0x21401638
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x39
+
+    aput-object v1, v2, v3
+
+    .line 1345
+    const v1, 0x2140163b
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x3a
+
+    aput-object v1, v2, v3
+
+    .line 1346
+    const v1, 0x2140163d
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x3b
+
+    aput-object v1, v2, v3
+
+    .line 1347
+    const v1, 0x2140163f
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x3c
+
+    aput-object v1, v2, v3
+
+    .line 1348
+    const v1, 0x2140163e
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x3d
+
+    aput-object v1, v2, v3
+
+    .line 1349
+    const v1, 0x21401641
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x3e
+
+    aput-object v1, v2, v3
+
+    .line 1350
+    const v1, 0x21401642
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x3f
+
+    aput-object v1, v2, v3
+
+    .line 1351
+    const v1, 0x21101645
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x40
+
+    aput-object v1, v2, v3
+
+    .line 1352
+    const v1, 0x21401647
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x41
+
+    aput-object v1, v2, v3
+
+    .line 1353
+    const v1, 0x21101648
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x42
+
+    aput-object v1, v2, v3
+
+    .line 1354
+    const v1, 0x21401649
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x43
+
+    aput-object v1, v2, v3
+
+    .line 1355
+    const v1, 0x2110164a
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x44
+
+    aput-object v1, v2, v3
+
+    .line 1356
+    const v1, 0x2140164c
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x45
+
+    aput-object v1, v2, v3
+
+    .line 1357
+    const v1, 0x2140164d
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x46
+
+    aput-object v1, v2, v3
+
+    .line 1358
+    const v1, 0x2140164b
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x47
+
+    aput-object v1, v2, v3
+
+    .line 1359
+    const v1, 0x2140164e
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x48
+
+    aput-object v1, v2, v3
+
+    .line 1360
+    const v1, 0x2140161e
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x49
+
+    aput-object v1, v2, v3
+
+    .line 1361
+    const v1, 0x2110165b
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x4a
+
+    aput-object v1, v2, v3
+
+    .line 1362
+    const v1, 0x2110165c
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x4b
+
+    aput-object v1, v2, v3
+
+    .line 1363
+    const v1, 0x2110165d
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x4c
+
+    aput-object v1, v2, v3
+
+    .line 1364
+    const v1, 0x2110165f
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x4d
+
+    aput-object v1, v2, v3
+
+    .line 1365
+    const v1, 0x21401660
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x4e
+
+    aput-object v1, v2, v3
+
+    .line 1366
+    const v1, 0x21101661
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x4f
+
+    aput-object v1, v2, v3
+
+    .line 1367
+    const v1, 0x21401662
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x50
+
+    aput-object v1, v2, v3
+
+    .line 1368
+    const v1, 0x21401663
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x51
+
+    aput-object v1, v2, v3
+
+    .line 1369
+    const v1, 0x21401665
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x52
+
+    aput-object v1, v2, v3
+
+    .line 1370
+    const v1, 0x21101666
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x53
+
+    aput-object v1, v2, v3
+
+    .line 1371
+    const v1, 0x21411667
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x54
+
+    aput-object v1, v2, v3
+
+    .line 1372
+    const v1, 0x21401669
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x55
+
+    aput-object v1, v2, v3
+
+    .line 1373
+    const v1, 0x2110166c
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x56
+
+    aput-object v1, v2, v3
+
+    .line 1374
+    const v1, 0x2170166e
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x57
+
+    aput-object v1, v2, v3
+
+    .line 1375
+    const v1, 0x2150166d
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x58
+
+    aput-object v1, v2, v3
+
+    .line 1376
+    const v1, 0x2140166f
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x59
+
+    aput-object v1, v2, v3
+
+    .line 1377
+    const v1, 0x21401670
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x5a
+
+    aput-object v1, v2, v3
+
+    .line 1378
+    const v1, 0x21401671
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x5b
+
+    aput-object v1, v2, v3
+
+    .line 1379
+    const v1, 0x21611672
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x5c
+
+    aput-object v1, v2, v3
+
+    .line 1380
+    const v1, 0x21401675
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x5d
+
+    aput-object v1, v2, v3
+
+    .line 1381
+    const v1, 0x21401673
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x5e
+
+    aput-object v1, v2, v3
+
+    .line 1382
+    const v1, 0x21401674
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x5f
+
+    aput-object v1, v2, v3
+
+    .line 1383
+    const v1, 0x21101676
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x60
+
+    aput-object v1, v2, v3
+
+    .line 1384
+    const v1, 0x21411678
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x61
+
+    aput-object v1, v2, v3
+
+    .line 1385
+    const v1, 0x21401679
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x62
+
+    aput-object v1, v2, v3
+
+    .line 1386
+    const v1, 0x2140167a
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x63
+
+    aput-object v1, v2, v3
+
+    .line 1387
+    const v1, 0x2110167b
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x64
+
+    aput-object v1, v2, v3
+
+    .line 1388
+    const v1, 0x2140167c
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x65
+
+    aput-object v1, v2, v3
+
+    .line 1287
+    invoke-static {v2}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Landroid/util/ArraySet;-><init>(Ljava/util/Collection;)V
+
+    iput-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mIcmPropertyIds:Landroid/util/ArraySet;
+
+    .line 1410
+    invoke-static {p3}, Landroid/car/hardware/XpVehicle/IXpVehicle$Stub;->asInterface(Landroid/os/IBinder;)Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    move-result-object v0
+
+    iput-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    .line 1411
+    const/4 v0, 0x0
+
+    iput-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mSharedMemoryService:Landroid/car/xpsharedmemory/IXpSharedMemory;
+
+    .line 1412
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/car/Car;Landroid/os/IBinder;Landroid/os/IBinder;Landroid/os/IBinder;Landroid/content/Context;Landroid/os/Handler;)V
+    .registers 13
+    .param p1, "car"    # Landroid/car/Car;
+    .param p2, "service"    # Landroid/os/IBinder;
+    .param p3, "vehicleService"    # Landroid/os/IBinder;
+    .param p4, "sharedMemoryService"    # Landroid/os/IBinder;
+    .param p5, "context"    # Landroid/content/Context;
+    .param p6, "handler"    # Landroid/os/Handler;
+
+    .line 1415
+    const-string v0, "CarIcmManager"
+
+    const/4 v1, 0x0
+
+    invoke-direct {p0, p1, p2, v1, v0}, Landroid/car/hardware/CarEcuManager;-><init>(Landroid/car/Car;Landroid/os/IBinder;ZLjava/lang/String;)V
+
+    .line 1287
+    new-instance v0, Landroid/util/ArraySet;
+
+    const/16 v2, 0x66
+
+    new-array v2, v2, [Ljava/lang/Integer;
+
+    const v3, 0x21401633
+
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    aput-object v3, v2, v1
+
+    .line 1288
+    const v1, 0x21401634
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/4 v3, 0x1
+
+    aput-object v1, v2, v3
+
+    .line 1289
+    const v1, 0x21401605
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/4 v3, 0x2
+
+    aput-object v1, v2, v3
+
+    .line 1290
+    const v1, 0x21401620
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/4 v3, 0x3
+
+    aput-object v1, v2, v3
+
+    .line 1291
+    const v1, 0x21401625
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/4 v3, 0x4
+
+    aput-object v1, v2, v3
+
+    .line 1292
+    const v1, 0x21401627
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/4 v3, 0x5
+
+    aput-object v1, v2, v3
+
+    .line 1293
+    const v1, 0x21401621
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/4 v3, 0x6
+
+    aput-object v1, v2, v3
+
+    .line 1294
+    const v1, 0x21401636
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/4 v3, 0x7
+
+    aput-object v1, v2, v3
+
+    .line 1295
+    const v1, 0x21401637
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x8
+
+    aput-object v1, v2, v3
+
+    .line 1296
+    const v1, 0x2170161d
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    const/16 v4, 0x9
+
+    aput-object v3, v2, v4
+
+    .line 1297
+    const v3, 0x2140162a
+
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    const/16 v4, 0xa
+
+    aput-object v3, v2, v4
+
+    .line 1298
+    const v3, 0x21401622
+
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    const/16 v4, 0xb
+
+    aput-object v3, v2, v4
+
+    .line 1299
+    const v3, 0x2140162d
+
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    const/16 v4, 0xc
+
+    aput-object v3, v2, v4
+
+    .line 1300
+    const v3, 0x21401624
+
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    const/16 v4, 0xd
+
+    aput-object v3, v2, v4
+
+    .line 1301
+    const v3, 0x2140161f
+
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    const/16 v4, 0xe
+
+    aput-object v3, v2, v4
+
+    .line 1302
+    const v3, 0x21601635
+
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    const/16 v4, 0xf
+
+    aput-object v3, v2, v4
+
+    .line 1303
+    const v3, 0x21411626
+
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    const/16 v4, 0x10
+
+    aput-object v3, v2, v4
+
+    .line 1304
+    const v3, 0x21701603
+
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    const/16 v4, 0x11
+
+    aput-object v3, v2, v4
+
+    .line 1305
+    const v3, 0x21701601
+
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x12
+
+    aput-object v4, v2, v5
+
+    .line 1306
+    const v4, 0x21701608
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x13
+
+    aput-object v4, v2, v5
+
+    .line 1307
+    const v4, 0x21701607
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x14
+
+    aput-object v4, v2, v5
+
+    .line 1308
+    const v4, 0x2170160f
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x15
+
+    aput-object v4, v2, v5
+
+    .line 1309
+    const v4, 0x21701602
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x16
+
+    aput-object v4, v2, v5
+
+    .line 1310
+    const v4, 0x2141162c
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x17
+
+    aput-object v4, v2, v5
+
+    .line 1311
+    const v4, 0x2141160a
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x18
+
+    aput-object v4, v2, v5
+
+    .line 1312
+    const v4, 0x2170160b
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x19
+
+    aput-object v4, v2, v5
+
+    .line 1313
+    const v4, 0x2170160c
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x1a
+
+    aput-object v4, v2, v5
+
+    .line 1314
+    const v4, 0x2170160d
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x1b
+
+    aput-object v4, v2, v5
+
+    .line 1315
+    const v4, 0x21601632
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x1c
+
+    aput-object v4, v2, v5
+
+    .line 1316
+    const v4, 0x21601631
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x1d
+
+    aput-object v4, v2, v5
+
+    .line 1317
+    const v4, 0x2160162e
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x1e
+
+    aput-object v4, v2, v5
+
+    .line 1318
+    const v4, 0x21601630
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x1f
+
+    aput-object v4, v2, v5
+
+    .line 1319
+    const v4, 0x2160162f
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x20
+
+    aput-object v4, v2, v5
+
+    .line 1320
+    const v4, 0x21401628
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x21
+
+    aput-object v4, v2, v5
+
+    .line 1321
+    const v4, 0x21701606
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x22
+
+    aput-object v4, v2, v5
+
+    .line 1322
+    const v4, 0x2140162b
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x23
+
+    aput-object v4, v2, v5
+
+    .line 1323
+    const v4, 0x21701604
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x24
+
+    aput-object v4, v2, v5
+
+    .line 1324
+    const v4, 0x2140160e
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x25
+
+    aput-object v4, v2, v5
+
+    .line 1325
+    const v4, 0x21701609
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x26
+
+    aput-object v4, v2, v5
+
+    .line 1326
+    const v4, 0x21101610
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x27
+
+    aput-object v4, v2, v5
+
+    .line 1327
+    const v4, 0x21101611
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x28
+
+    aput-object v4, v2, v5
+
+    .line 1328
+    const v4, 0x21101612
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x29
+
+    aput-object v4, v2, v5
+
+    .line 1329
+    const v4, 0x21101613
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x2a
+
+    aput-object v4, v2, v5
+
+    .line 1330
+    const v4, 0x21101614
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x2b
+
+    aput-object v4, v2, v5
+
+    .line 1331
+    const v4, 0x21101615
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x2c
+
+    aput-object v4, v2, v5
+
+    .line 1332
+    const v4, 0x21101616
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x2d
+
+    aput-object v4, v2, v5
+
+    .line 1333
+    const v4, 0x21101617
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x2e
+
+    aput-object v4, v2, v5
+
+    .line 1334
+    const v4, 0x21101618
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x2f
+
+    aput-object v4, v2, v5
+
+    .line 1335
+    const v4, 0x21101619
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x30
+
+    aput-object v4, v2, v5
+
+    .line 1336
+    const v4, 0x2110161a
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x31
+
+    aput-object v4, v2, v5
+
+    .line 1337
+    const v4, 0x2110161b
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x32
+
+    aput-object v4, v2, v5
+
+    .line 1338
+    const v4, 0x2110161c
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const/16 v5, 0x33
+
+    aput-object v4, v2, v5
+
+    .line 1339
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v4, 0x34
+
+    aput-object v1, v2, v4
+
+    .line 1340
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x35
+
+    aput-object v1, v2, v3
+
+    .line 1341
+    const v1, 0x2140163c
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x36
+
+    aput-object v1, v2, v3
+
+    .line 1342
+    const v1, 0x2140163a
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x37
+
+    aput-object v1, v2, v3
+
+    .line 1343
+    const v1, 0x21401639
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x38
+
+    aput-object v1, v2, v3
+
+    .line 1344
+    const v1, 0x21401638
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x39
+
+    aput-object v1, v2, v3
+
+    .line 1345
+    const v1, 0x2140163b
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x3a
+
+    aput-object v1, v2, v3
+
+    .line 1346
+    const v1, 0x2140163d
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x3b
+
+    aput-object v1, v2, v3
+
+    .line 1347
+    const v1, 0x2140163f
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x3c
+
+    aput-object v1, v2, v3
+
+    .line 1348
+    const v1, 0x2140163e
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x3d
+
+    aput-object v1, v2, v3
+
+    .line 1349
+    const v1, 0x21401641
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x3e
+
+    aput-object v1, v2, v3
+
+    .line 1350
+    const v1, 0x21401642
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x3f
+
+    aput-object v1, v2, v3
+
+    .line 1351
+    const v1, 0x21101645
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x40
+
+    aput-object v1, v2, v3
+
+    .line 1352
+    const v1, 0x21401647
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x41
+
+    aput-object v1, v2, v3
+
+    .line 1353
+    const v1, 0x21101648
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x42
+
+    aput-object v1, v2, v3
+
+    .line 1354
+    const v1, 0x21401649
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x43
+
+    aput-object v1, v2, v3
+
+    .line 1355
+    const v1, 0x2110164a
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x44
+
+    aput-object v1, v2, v3
+
+    .line 1356
+    const v1, 0x2140164c
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x45
+
+    aput-object v1, v2, v3
+
+    .line 1357
+    const v1, 0x2140164d
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x46
+
+    aput-object v1, v2, v3
+
+    .line 1358
+    const v1, 0x2140164b
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x47
+
+    aput-object v1, v2, v3
+
+    .line 1359
+    const v1, 0x2140164e
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x48
+
+    aput-object v1, v2, v3
+
+    .line 1360
+    const v1, 0x2140161e
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x49
+
+    aput-object v1, v2, v3
+
+    .line 1361
+    const v1, 0x2110165b
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x4a
+
+    aput-object v1, v2, v3
+
+    .line 1362
+    const v1, 0x2110165c
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x4b
+
+    aput-object v1, v2, v3
+
+    .line 1363
+    const v1, 0x2110165d
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x4c
+
+    aput-object v1, v2, v3
+
+    .line 1364
+    const v1, 0x2110165f
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x4d
+
+    aput-object v1, v2, v3
+
+    .line 1365
+    const v1, 0x21401660
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x4e
+
+    aput-object v1, v2, v3
+
+    .line 1366
+    const v1, 0x21101661
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x4f
+
+    aput-object v1, v2, v3
+
+    .line 1367
+    const v1, 0x21401662
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x50
+
+    aput-object v1, v2, v3
+
+    .line 1368
+    const v1, 0x21401663
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x51
+
+    aput-object v1, v2, v3
+
+    .line 1369
+    const v1, 0x21401665
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x52
+
+    aput-object v1, v2, v3
+
+    .line 1370
+    const v1, 0x21101666
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x53
+
+    aput-object v1, v2, v3
+
+    .line 1371
+    const v1, 0x21411667
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x54
+
+    aput-object v1, v2, v3
+
+    .line 1372
+    const v1, 0x21401669
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x55
+
+    aput-object v1, v2, v3
+
+    .line 1373
+    const v1, 0x2110166c
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x56
+
+    aput-object v1, v2, v3
+
+    .line 1374
+    const v1, 0x2170166e
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x57
+
+    aput-object v1, v2, v3
+
+    .line 1375
+    const v1, 0x2150166d
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x58
+
+    aput-object v1, v2, v3
+
+    .line 1376
+    const v1, 0x2140166f
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x59
+
+    aput-object v1, v2, v3
+
+    .line 1377
+    const v1, 0x21401670
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x5a
+
+    aput-object v1, v2, v3
+
+    .line 1378
+    const v1, 0x21401671
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x5b
+
+    aput-object v1, v2, v3
+
+    .line 1379
+    const v1, 0x21611672
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x5c
+
+    aput-object v1, v2, v3
+
+    .line 1380
+    const v1, 0x21401675
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x5d
+
+    aput-object v1, v2, v3
+
+    .line 1381
+    const v1, 0x21401673
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x5e
+
+    aput-object v1, v2, v3
+
+    .line 1382
+    const v1, 0x21401674
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x5f
+
+    aput-object v1, v2, v3
+
+    .line 1383
+    const v1, 0x21101676
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x60
+
+    aput-object v1, v2, v3
+
+    .line 1384
+    const v1, 0x21411678
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x61
+
+    aput-object v1, v2, v3
+
+    .line 1385
+    const v1, 0x21401679
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x62
+
+    aput-object v1, v2, v3
+
+    .line 1386
+    const v1, 0x2140167a
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x63
+
+    aput-object v1, v2, v3
+
+    .line 1387
+    const v1, 0x2110167b
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x64
+
+    aput-object v1, v2, v3
+
+    .line 1388
+    const v1, 0x2140167c
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/16 v3, 0x65
+
+    aput-object v1, v2, v3
+
+    .line 1287
+    invoke-static {v2}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Landroid/util/ArraySet;-><init>(Ljava/util/Collection;)V
+
+    iput-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mIcmPropertyIds:Landroid/util/ArraySet;
+
+    .line 1416
+    invoke-static {p3}, Landroid/car/hardware/XpVehicle/IXpVehicle$Stub;->asInterface(Landroid/os/IBinder;)Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    move-result-object v0
+
+    iput-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    .line 1417
+    invoke-static {p4}, Landroid/car/xpsharedmemory/IXpSharedMemory$Stub;->asInterface(Landroid/os/IBinder;)Landroid/car/xpsharedmemory/IXpSharedMemory;
+
+    move-result-object v0
+
+    iput-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mSharedMemoryService:Landroid/car/xpsharedmemory/IXpSharedMemory;
+
+    .line 1418
+    return-void
+.end method
+
+.method private byteMerge([B[B)[B
+    .registers 8
+    .param p1, "byte_1"    # [B
+    .param p2, "byte_2"    # [B
+
+    .line 1947
+    if-nez p1, :cond_6
+
+    if-nez p2, :cond_6
+
+    .line 1948
+    const/4 v0, 0x0
+
+    return-object v0
+
+    .line 1950
+    :cond_6
+    const/4 v0, 0x0
+
+    if-nez p1, :cond_1c
+
+    .line 1951
+    invoke-direct {p0, v0}, Landroid/car/hardware/icm/CarIcmManager;->intToByteArray(I)[B
+
+    move-result-object v1
+
+    .line 1952
+    .local v1, "byte1_length":[B
+    array-length v2, p2
+
+    array-length v3, v1
+
+    add-int/2addr v2, v3
+
+    new-array v2, v2, [B
+
+    .line 1953
+    .local v2, "byteArray":[B
+    array-length v3, v1
+
+    invoke-static {v1, v0, v2, v0, v3}, Ljava/lang/System;->arraycopy([BI[BII)V
+
+    .line 1954
+    array-length v3, v1
+
+    array-length v4, p2
+
+    invoke-static {p2, v0, v2, v3, v4}, Ljava/lang/System;->arraycopy([BI[BII)V
+
+    .line 1955
+    return-object v2
+
+    .line 1956
+    .end local v1    # "byte1_length":[B
+    .end local v2    # "byteArray":[B
+    :cond_1c
+    if-nez p2, :cond_32
+
+    .line 1957
+    array-length v1, p1
+
+    invoke-direct {p0, v1}, Landroid/car/hardware/icm/CarIcmManager;->intToByteArray(I)[B
+
+    move-result-object v1
+
+    .line 1958
+    .restart local v1    # "byte1_length":[B
+    array-length v2, p1
+
+    array-length v3, v1
+
+    add-int/2addr v2, v3
+
+    new-array v2, v2, [B
+
+    .line 1959
+    .restart local v2    # "byteArray":[B
+    array-length v3, v1
+
+    invoke-static {v1, v0, v2, v0, v3}, Ljava/lang/System;->arraycopy([BI[BII)V
+
+    .line 1960
+    array-length v3, v1
+
+    array-length v4, p1
+
+    invoke-static {p1, v0, v2, v3, v4}, Ljava/lang/System;->arraycopy([BI[BII)V
+
+    .line 1961
+    return-object v2
+
+    .line 1963
+    .end local v1    # "byte1_length":[B
+    .end local v2    # "byteArray":[B
+    :cond_32
+    array-length v1, p1
+
+    invoke-direct {p0, v1}, Landroid/car/hardware/icm/CarIcmManager;->intToByteArray(I)[B
+
+    move-result-object v1
+
+    .line 1964
+    .restart local v1    # "byte1_length":[B
+    array-length v2, p1
+
+    array-length v3, p2
+
+    add-int/2addr v2, v3
+
+    array-length v3, v1
+
+    add-int/2addr v2, v3
+
+    new-array v2, v2, [B
+
+    .line 1965
+    .restart local v2    # "byteArray":[B
+    array-length v3, v1
+
+    invoke-static {v1, v0, v2, v0, v3}, Ljava/lang/System;->arraycopy([BI[BII)V
+
+    .line 1966
+    array-length v3, v1
+
+    array-length v4, p1
+
+    invoke-static {p1, v0, v2, v3, v4}, Ljava/lang/System;->arraycopy([BI[BII)V
+
+    .line 1967
+    array-length v3, v1
+
+    array-length v4, p1
+
+    add-int/2addr v3, v4
+
+    array-length v4, p2
+
+    invoke-static {p2, v0, v2, v3, v4}, Ljava/lang/System;->arraycopy([BI[BII)V
+
+    .line 1968
+    return-object v2
+.end method
+
+.method private getIcmNavigation()I
+    .registers 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 1606
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0}, Landroid/car/hardware/XpVehicle/IXpVehicle;->getIcmNavigation()I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public static getServiceName()Ljava/lang/String;
+    .registers 1
+
+    .line 1436
+    const-string v0, "xp_icm"
+
+    return-object v0
+.end method
+
+.method private intToByteArray(I)[B
+    .registers 5
+    .param p1, "intData"    # I
+
+    .line 1933
+    const/4 v0, 0x4
+
+    new-array v0, v0, [B
+
+    .line 1934
+    .local v0, "byteArray":[B
+    shr-int/lit8 v1, p1, 0x18
+
+    and-int/lit16 v1, v1, 0xff
+
+    int-to-byte v1, v1
+
+    const/4 v2, 0x3
+
+    aput-byte v1, v0, v2
+
+    .line 1935
+    shr-int/lit8 v1, p1, 0x10
+
+    and-int/lit16 v1, v1, 0xff
+
+    int-to-byte v1, v1
+
+    const/4 v2, 0x2
+
+    aput-byte v1, v0, v2
+
+    .line 1936
+    shr-int/lit8 v1, p1, 0x8
+
+    and-int/lit16 v1, v1, 0xff
+
+    int-to-byte v1, v1
+
+    const/4 v2, 0x1
+
+    aput-byte v1, v0, v2
+
+    .line 1937
+    and-int/lit16 v1, p1, 0xff
+
+    int-to-byte v1, v1
+
+    const/4 v2, 0x0
+
+    aput-byte v1, v0, v2
+
+    .line 1938
+    return-object v0
+.end method
+
+.method public static isZonedProperty(I)Z
+    .registers 2
+    .param p0, "propertyId"    # I
+
+    .line 1427
+    const/4 v0, 0x1
+
+    return v0
+.end method
+
+.method private mergeData([B[B)[B
+    .registers 8
+    .param p1, "json"    # [B
+    .param p2, "image"    # [B
+
+    .line 1849
+    const/4 v0, 0x0
+
+    if-nez p1, :cond_5
+
+    move v1, v0
+
+    goto :goto_6
+
+    :cond_5
+    array-length v1, p1
+
+    .line 1850
+    .local v1, "jsonLength":I
+    :goto_6
+    if-nez p2, :cond_9
+
+    goto :goto_a
+
+    :cond_9
+    array-length v0, p2
+
+    .line 1851
+    .local v0, "imageLength":I
+    :goto_a
+    if-nez v1, :cond_10
+
+    if-nez v0, :cond_10
+
+    .line 1852
+    const/4 v2, 0x0
+
+    return-object v2
+
+    .line 1855
+    :cond_10
+    add-int v2, v1, v0
+
+    add-int/lit8 v2, v2, 0x4
+
+    new-array v2, v2, [B
+
+    .line 1856
+    .local v2, "data":[B
+    invoke-static {v2}, Ljava/nio/ByteBuffer;->wrap([B)Ljava/nio/ByteBuffer;
+
+    move-result-object v3
+
+    .line 1857
+    .local v3, "buffer":Ljava/nio/ByteBuffer;
+    sget-object v4, Ljava/nio/ByteOrder;->LITTLE_ENDIAN:Ljava/nio/ByteOrder;
+
+    invoke-virtual {v3, v4}, Ljava/nio/ByteBuffer;->order(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;
+
+    .line 1858
+    invoke-virtual {v3, v1}, Ljava/nio/ByteBuffer;->putInt(I)Ljava/nio/ByteBuffer;
+
+    .line 1859
+    if-eqz p1, :cond_27
+
+    .line 1860
+    invoke-virtual {v3, p1}, Ljava/nio/ByteBuffer;->put([B)Ljava/nio/ByteBuffer;
+
+    .line 1862
+    :cond_27
+    if-eqz p2, :cond_2c
+
+    .line 1863
+    invoke-virtual {v3, p2}, Ljava/nio/ByteBuffer;->put([B)Ljava/nio/ByteBuffer;
+
+    .line 1865
+    :cond_2c
+    return-object v2
+.end method
+
+.method private sendData(I[B[B)V
+    .registers 10
+    .param p1, "prop"    # I
+    .param p2, "data1"    # [B
+    .param p3, "data2"    # [B
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 1835
+    const/4 v0, 0x0
+
+    :try_start_1
+    invoke-static {p2, p3, v0}, Landroid/os/ParcelFileDescriptor;->fromData([B[BLjava/lang/String;)Landroid/os/ParcelFileDescriptor;
+
+    move-result-object v1
+    :try_end_5
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_5} :catch_32
+
+    .line 1836
+    .local v1, "pfd":Landroid/os/ParcelFileDescriptor;
+    if-eqz v1, :cond_1a
+
+    .line 1837
+    const/4 v2, 0x0
+
+    if-nez p2, :cond_c
+
+    move v3, v2
+
+    goto :goto_d
+
+    :cond_c
+    :try_start_c
+    array-length v3, p2
+
+    .line 1838
+    .local v3, "dataLength1":I
+    :goto_d
+    if-nez p3, :cond_10
+
+    goto :goto_11
+
+    :cond_10
+    array-length v2, p3
+
+    .line 1839
+    .local v2, "dataLength2":I
+    :goto_11
+    iget-object v4, p0, Landroid/car/hardware/icm/CarIcmManager;->mSharedMemoryService:Landroid/car/xpsharedmemory/IXpSharedMemory;
+
+    const/4 v5, 0x4
+
+    add-int/2addr v5, v3
+
+    add-int/2addr v5, v2
+
+    invoke-interface {v4, p1, v1, v5}, Landroid/car/xpsharedmemory/IXpSharedMemory;->queueMemoryBuffer(ILandroid/os/ParcelFileDescriptor;I)V
+
+    .line 1840
+    .end local v2    # "dataLength2":I
+    .end local v3    # "dataLength1":I
+    goto :goto_21
+
+    .line 1841
+    :cond_1a
+    const-string v2, "CarIcmManager"
+
+    const-string v3, "Cannot fetch pfd"
+
+    invoke-static {v2, v3}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    :try_end_21
+    .catch Ljava/lang/Throwable; {:try_start_c .. :try_end_21} :catch_2a
+    .catchall {:try_start_c .. :try_end_21} :catchall_28
+
+    .line 1843
+    :goto_21
+    if-eqz v1, :cond_26
+
+    :try_start_23
+    invoke-static {v0, v1}, Landroid/car/hardware/icm/CarIcmManager;->$closeResource(Ljava/lang/Throwable;Ljava/lang/AutoCloseable;)V
+    :try_end_26
+    .catch Ljava/lang/Exception; {:try_start_23 .. :try_end_26} :catch_32
+
+    .line 1846
+    .end local v1    # "pfd":Landroid/os/ParcelFileDescriptor;
+    :cond_26
+    nop
+
+    .line 1847
+    return-void
+
+    .line 1843
+    .restart local v1    # "pfd":Landroid/os/ParcelFileDescriptor;
+    :catchall_28
+    move-exception v2
+
+    goto :goto_2c
+
+    .line 1835
+    :catch_2a
+    move-exception v0
+
+    :try_start_2b
+    throw v0
+    :try_end_2c
+    .catchall {:try_start_2b .. :try_end_2c} :catchall_28
+
+    .line 1843
+    :goto_2c
+    if-eqz v1, :cond_31
+
+    :try_start_2e
+    invoke-static {v0, v1}, Landroid/car/hardware/icm/CarIcmManager;->$closeResource(Ljava/lang/Throwable;Ljava/lang/AutoCloseable;)V
+
+    :cond_31
+    throw v2
+    :try_end_32
+    .catch Ljava/lang/Exception; {:try_start_2e .. :try_end_32} :catch_32
+
+    .end local v1    # "pfd":Landroid/os/ParcelFileDescriptor;
+    :catch_32
+    move-exception v0
+
+    .line 1844
+    .local v0, "e":Ljava/lang/Exception;
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "send data using shared memory with exception"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, "CarIcmManager"
+
+    invoke-static {v2, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 1845
+    new-instance v1, Ljava/lang/IllegalStateException;
+
+    invoke-direct {v1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/Throwable;)V
+
+    throw v1
+.end method
+
+.method private setIcmNavigation(I)V
+    .registers 3
+    .param p1, "status"    # I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 1594
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->setIcmNavigation(I)V
+
+    .line 1595
+    return-void
+.end method
+
+
+# virtual methods
+.method public getBrakeFluidLevelWarningMessage()I
+    .registers 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 3391
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0}, Landroid/car/hardware/XpVehicle/IXpVehicle;->getIcmBrakeFluidLevelWarningMessage()I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public getCrashInfo()Ljava/lang/String;
+    .registers 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 3417
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0}, Landroid/car/hardware/XpVehicle/IXpVehicle;->getIcmCrashInfo()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public getDashboardLightsStatus()Ljava/lang/String;
+    .registers 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 3456
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0}, Landroid/car/hardware/XpVehicle/IXpVehicle;->getIcmDashboardLightsStatus()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public getDiagnosisInfo()Ljava/lang/String;
+    .registers 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 3430
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0}, Landroid/car/hardware/XpVehicle/IXpVehicle;->getIcmDiagnosisInfo()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public getDriveTotalMileage()F
+    .registers 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 2108
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0}, Landroid/car/hardware/XpVehicle/IXpVehicle;->getDriveTotalMileage()F
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public getEcuUpdateResult()Ljava/lang/String;
+    .registers 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 2826
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0}, Landroid/car/hardware/XpVehicle/IXpVehicle;->getIcmEcuUpdateResult()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public getIcmAlarmVolume()I
+    .registers 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 2620
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0}, Landroid/car/hardware/XpVehicle/IXpVehicle;->getIcmAlarmVolume()I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public getIcmBackLightValue()I
+    .registers 5
+
+    .line 2196
+    :try_start_0
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0}, Landroid/car/hardware/XpVehicle/IXpVehicle;->getIcmBackLightValue()I
+
+    move-result v0
+    :try_end_6
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_6} :catch_7
+    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_6} :catch_7
+
+    return v0
+
+    .line 2197
+    :catch_7
+    move-exception v0
+
+    .line 2198
+    .local v0, "e":Ljava/lang/Exception;
+    const-string v1, "CarIcmManager"
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "throw RemoteException | RuntimeException e:"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 2199
+    const/4 v1, 0x0
+
+    return v1
+.end method
+
+.method public getIcmBrightness()I
+    .registers 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 2666
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0}, Landroid/car/hardware/XpVehicle/IXpVehicle;->getIcmBrightness()I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public getIcmCabinAiFeedback()I
+    .registers 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 3404
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0}, Landroid/car/hardware/XpVehicle/IXpVehicle;->getIcmCabinAiFeedback()I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public getIcmConnectionState()I
+    .registers 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 2013
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0}, Landroid/car/hardware/XpVehicle/IXpVehicle;->getIcmConnectionState()I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public getIcmDayNightSwitch()I
+    .registers 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 1634
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0}, Landroid/car/hardware/XpVehicle/IXpVehicle;->getIcmDayNightSwitch()I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public getIcmDriverTempValue()F
+    .registers 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 1745
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0}, Landroid/car/hardware/XpVehicle/IXpVehicle;->getIcmDriverTempValue()F
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public getIcmMediaSource()I
+    .registers 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 1554
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0}, Landroid/car/hardware/XpVehicle/IXpVehicle;->getIcmMediaSource()I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public getIcmScreenLight()I
+    .registers 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 1582
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0}, Landroid/car/hardware/XpVehicle/IXpVehicle;->getIcmScreenLight()I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public getIcmTemperature()I
+    .registers 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 1468
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0}, Landroid/car/hardware/XpVehicle/IXpVehicle;->getIcmTemperature()I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public getIcmTimeFormat()I
+    .registers 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 2651
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0}, Landroid/car/hardware/XpVehicle/IXpVehicle;->getIcmTimeFormat()I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public getIcmWindBlowMode()I
+    .registers 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 1681
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0}, Landroid/car/hardware/XpVehicle/IXpVehicle;->getIcmWindBlowMode()I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public getIcmWindLevel()I
+    .registers 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 1713
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0}, Landroid/car/hardware/XpVehicle/IXpVehicle;->getIcmWindLevel()I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public getIcmWindMode()I
+    .registers 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 1526
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0}, Landroid/car/hardware/XpVehicle/IXpVehicle;->getIcmWindMode()I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public getIcmWindPower()I
+    .registers 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 1498
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0}, Landroid/car/hardware/XpVehicle/IXpVehicle;->getIcmWindPower()I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public getLastChargeMileage()F
+    .registers 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 2123
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0}, Landroid/car/hardware/XpVehicle/IXpVehicle;->getLastChargeMileage()F
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public getLastStartUpMileage()F
+    .registers 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 2138
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0}, Landroid/car/hardware/XpVehicle/IXpVehicle;->getLastStartUpMileage()F
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public getLogCompressInformation()Ljava/lang/String;
+    .registers 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 3589
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0}, Landroid/car/hardware/XpVehicle/IXpVehicle;->getIcmLogCompressInformation()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public getMeterMileageA()F
+    .registers 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 2075
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0}, Landroid/car/hardware/XpVehicle/IXpVehicle;->getMeterMileageA()F
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public getMeterMileageB()F
+    .registers 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 2091
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0}, Landroid/car/hardware/XpVehicle/IXpVehicle;->getMeterMileageB()F
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public getNaviBmpInfoRequiredByIcm()Ljava/lang/String;
+    .registers 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 3362
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0}, Landroid/car/hardware/XpVehicle/IXpVehicle;->getNaviBmpInfoRequiredByIcm()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method protected getPropertyIds()Landroid/util/ArraySet;
+    .registers 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Landroid/util/ArraySet<",
+            "Ljava/lang/Integer;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1432
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mIcmPropertyIds:Landroid/util/ArraySet;
+
+    return-object v0
+.end method
+
+.method public getSpeedLimitWarningSwitch()I
+    .registers 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 2722
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0}, Landroid/car/hardware/XpVehicle/IXpVehicle;->getSpeedLimitWarningSwitch()I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public getSpeedLimitWarningValue()I
+    .registers 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 2694
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0}, Landroid/car/hardware/XpVehicle/IXpVehicle;->getSpeedLimitWarningValue()I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public getUpdateProgress()I
+    .registers 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 2839
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0}, Landroid/car/hardware/XpVehicle/IXpVehicle;->getIcmUpdateProgress()I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public getUpdateResponse()Ljava/lang/String;
+    .registers 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 2780
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0}, Landroid/car/hardware/XpVehicle/IXpVehicle;->getIcmUpdateResponse()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public getUpdateResult()I
+    .registers 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 2813
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0}, Landroid/car/hardware/XpVehicle/IXpVehicle;->getIcmUpdateResult()I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public getUpdatingPartitionAndProgress()Ljava/lang/String;
+    .registers 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 2852
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0}, Landroid/car/hardware/XpVehicle/IXpVehicle;->getIcmUpdatingPartitionAndProgress()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public requestDashboardLightsStatus()V
+    .registers 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 3443
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0}, Landroid/car/hardware/XpVehicle/IXpVehicle;->requestIcmDashboardLightsStatus()V
+
+    .line 3444
+    return-void
+.end method
+
+.method public resetMeterMileageA()V
+    .registers 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 2574
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0}, Landroid/car/hardware/XpVehicle/IXpVehicle;->resetIcmMeterMileageA()V
+
+    .line 2575
+    return-void
+.end method
+
+.method public resetMeterMileageB()V
+    .registers 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 2587
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0}, Landroid/car/hardware/XpVehicle/IXpVehicle;->resetIcmMeterMileageB()V
+
+    .line 2588
+    return-void
+.end method
+
+.method public sendContacts([B)V
+    .registers 3
+    .param p1, "json"    # [B
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 1782
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->sendContacts([B)V
+
+    .line 1783
+    return-void
+.end method
+
+.method public sendICMRateAnimType(I)V
+    .registers 6
+    .param p1, "type"    # I
+
+    .line 3854
+    const v0, 0x21401679
+
+    const/4 v1, 0x0
+
+    :try_start_4
+    invoke-virtual {p0, v0, v1, p1}, Landroid/car/hardware/icm/CarIcmManager;->setIntProperty(III)V
+    :try_end_7
+    .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_7} :catch_8
+
+    .line 3857
+    goto :goto_23
+
+    .line 3855
+    :catch_8
+    move-exception v0
+
+    .line 3856
+    .local v0, "e":Ljava/lang/Exception;
+    const-string v1, "CarIcmManager"
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "throw Exception e "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 3858
+    .end local v0    # "e":Ljava/lang/Exception;
+    :goto_23
+    return-void
+.end method
+
+.method public sendICMRateLimitMsg(II)V
+    .registers 7
+    .param p1, "type"    # I
+    .param p2, "speed"    # I
+
+    .line 3814
+    const/4 v0, 0x2
+
+    :try_start_1
+    new-array v0, v0, [I
+
+    const/4 v1, 0x0
+
+    aput p1, v0, v1
+
+    const/4 v2, 0x1
+
+    aput p2, v0, v2
+
+    .line 3815
+    .local v0, "msg":[I
+    const v2, 0x21411678
+
+    invoke-virtual {p0, v2, v1, v0}, Landroid/car/hardware/icm/CarIcmManager;->setIntVectorProperty(II[I)V
+    :try_end_f
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_f} :catch_10
+
+    .line 3818
+    .end local v0    # "msg":[I
+    goto :goto_2b
+
+    .line 3816
+    :catch_10
+    move-exception v0
+
+    .line 3817
+    .local v0, "e":Ljava/lang/Exception;
+    const-string v1, "CarIcmManager"
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "throw Exception e "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 3819
+    .end local v0    # "e":Ljava/lang/Exception;
+    :goto_2b
+    return-void
+.end method
+
+.method public sendICMRateLimitMsg(III)V
+    .registers 8
+    .param p1, "aniType"    # I
+    .param p2, "type"    # I
+    .param p3, "speed"    # I
+
+    .line 3835
+    const/4 v0, 0x3
+
+    :try_start_1
+    new-array v0, v0, [I
+
+    const/4 v1, 0x0
+
+    aput p1, v0, v1
+
+    const/4 v2, 0x1
+
+    aput p2, v0, v2
+
+    const/4 v2, 0x2
+
+    aput p3, v0, v2
+
+    .line 3836
+    .local v0, "msg":[I
+    const v2, 0x21411678
+
+    invoke-virtual {p0, v2, v1, v0}, Landroid/car/hardware/icm/CarIcmManager;->setIntVectorProperty(II[I)V
+    :try_end_12
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_12} :catch_13
+
+    .line 3839
+    .end local v0    # "msg":[I
+    goto :goto_2e
+
+    .line 3837
+    :catch_13
+    move-exception v0
+
+    .line 3838
+    .local v0, "e":Ljava/lang/Exception;
+    const-string v1, "CarIcmManager"
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "throw Exception e "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 3840
+    .end local v0    # "e":Ljava/lang/Exception;
+    :goto_2e
+    return-void
+.end method
+
+.method public sendICMTrafficLightsColor(I)V
+    .registers 6
+    .param p1, "color"    # I
+
+    .line 3794
+    :try_start_0
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->sendICMTrafficLightsColor(I)V
+    :try_end_5
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_5} :catch_6
+    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_5} :catch_6
+
+    .line 3797
+    goto :goto_21
+
+    .line 3795
+    :catch_6
+    move-exception v0
+
+    .line 3796
+    .local v0, "e":Ljava/lang/Exception;
+    const-string v1, "CarIcmManager"
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "throw RemoteException | RuntimeException e:"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 3798
+    .end local v0    # "e":Ljava/lang/Exception;
+    :goto_21
+    return-void
+.end method
+
+.method public sendICMTrafficLightsCounter(I)V
+    .registers 6
+    .param p1, "counter"    # I
+
+    .line 3776
+    :try_start_0
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->sendICMTrafficLightsCounter(I)V
+    :try_end_5
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_5} :catch_6
+    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_5} :catch_6
+
+    .line 3779
+    goto :goto_21
+
+    .line 3777
+    :catch_6
+    move-exception v0
+
+    .line 3778
+    .local v0, "e":Ljava/lang/Exception;
+    const-string v1, "CarIcmManager"
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "throw RemoteException | RuntimeException e:"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 3780
+    .end local v0    # "e":Ljava/lang/Exception;
+    :goto_21
+    return-void
+.end method
+
+.method public sendIcmApaStatus(I)V
+    .registers 6
+    .param p1, "status"    # I
+
+    .line 3719
+    :try_start_0
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->sendIcmApaStatus(I)V
+    :try_end_5
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_5} :catch_6
+    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_5} :catch_6
+
+    .line 3722
+    goto :goto_21
+
+    .line 3720
+    :catch_6
+    move-exception v0
+
+    .line 3721
+    .local v0, "e":Ljava/lang/Exception;
+    const-string v1, "CarIcmManager"
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "throw RemoteException | RuntimeException e:"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 3723
+    .end local v0    # "e":Ljava/lang/Exception;
+    :goto_21
+    return-void
+.end method
+
+.method public sendIcmChangeMileage(FF)V
+    .registers 7
+    .param p1, "type"    # F
+    .param p2, "mileage"    # F
+
+    .line 3740
+    :try_start_0
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1, p2}, Landroid/car/hardware/XpVehicle/IXpVehicle;->sendIcmChangeMileage(FF)V
+    :try_end_5
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_5} :catch_6
+    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_5} :catch_6
+
+    .line 3743
+    goto :goto_21
+
+    .line 3741
+    :catch_6
+    move-exception v0
+
+    .line 3742
+    .local v0, "e":Ljava/lang/Exception;
+    const-string v1, "CarIcmManager"
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "throw RemoteException | RuntimeException e:"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 3744
+    .end local v0    # "e":Ljava/lang/Exception;
+    :goto_21
+    return-void
+.end method
+
+.method public sendIcmCharingDuration(I)V
+    .registers 6
+    .param p1, "duration"    # I
+
+    .line 3758
+    :try_start_0
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->sendIcmCharingDuration(I)V
+    :try_end_5
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_5} :catch_6
+    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_5} :catch_6
+
+    .line 3761
+    goto :goto_21
+
+    .line 3759
+    :catch_6
+    move-exception v0
+
+    .line 3760
+    .local v0, "e":Ljava/lang/Exception;
+    const-string v1, "CarIcmManager"
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "throw RemoteException | RuntimeException e:"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 3762
+    .end local v0    # "e":Ljava/lang/Exception;
+    :goto_21
+    return-void
+.end method
+
+.method public sendIcmLocaleLanguage(Ljava/lang/String;)V
+    .registers 6
+    .param p1, "data"    # Ljava/lang/String;
+
+    .line 3929
+    :try_start_0
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->sendIcmLocaleLanguage(Ljava/lang/String;)V
+    :try_end_5
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_5} :catch_6
+    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_5} :catch_6
+
+    .line 3932
+    goto :goto_21
+
+    .line 3930
+    :catch_6
+    move-exception v0
+
+    .line 3931
+    .local v0, "e":Ljava/lang/Exception;
+    const-string v1, "CarIcmManager"
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "throw RemoteException | RuntimeException e:"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 3933
+    .end local v0    # "e":Ljava/lang/Exception;
+    :goto_21
+    return-void
+.end method
+
+.method public sendIcmUnitFormat(Ljava/lang/String;)V
+    .registers 6
+    .param p1, "data"    # Ljava/lang/String;
+
+    .line 3890
+    const v0, 0x2110167b
+
+    const/4 v1, 0x0
+
+    :try_start_4
+    invoke-virtual {p0, v0, v1, p1}, Landroid/car/hardware/icm/CarIcmManager;->setStringProperty(IILjava/lang/String;)V
+    :try_end_7
+    .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_7} :catch_8
+
+    .line 3893
+    goto :goto_23
+
+    .line 3891
+    :catch_8
+    move-exception v0
+
+    .line 3892
+    .local v0, "e":Ljava/lang/Exception;
+    const-string v1, "CarIcmManager"
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "throw Exception e "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 3894
+    .end local v0    # "e":Ljava/lang/Exception;
+    :goto_23
+    return-void
+.end method
+
+.method public sendIcmVpaStatus(I)V
+    .registers 6
+    .param p1, "status"    # I
+
+    .line 3699
+    :try_start_0
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->sendIcmVpaStatus(I)V
+    :try_end_5
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_5} :catch_6
+    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_5} :catch_6
+
+    .line 3702
+    goto :goto_21
+
+    .line 3700
+    :catch_6
+    move-exception v0
+
+    .line 3701
+    .local v0, "e":Ljava/lang/Exception;
+    const-string v1, "CarIcmManager"
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "throw RemoteException | RuntimeException e:"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 3703
+    .end local v0    # "e":Ljava/lang/Exception;
+    :goto_21
+    return-void
+.end method
+
+.method public sendLogCompressRequest(Ljava/lang/String;)V
+    .registers 3
+    .param p1, "req"    # Ljava/lang/String;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 3575
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->sendIcmLogCompressRequest(Ljava/lang/String;)V
+
+    .line 3576
+    return-void
+.end method
+
+.method public sendLyricsMessage([B)V
+    .registers 6
+    .param p1, "info"    # [B
+
+    .line 3679
+    :try_start_0
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->sendLyricsMessage([B)V
+    :try_end_5
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_5} :catch_6
+    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_5} :catch_6
+
+    .line 3682
+    goto :goto_21
+
+    .line 3680
+    :catch_6
+    move-exception v0
+
+    .line 3681
+    .local v0, "e":Ljava/lang/Exception;
+    const-string v1, "CarIcmManager"
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "throw RemoteException | RuntimeException e:"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 3683
+    .end local v0    # "e":Ljava/lang/Exception;
+    :goto_21
+    return-void
+.end method
+
+.method public sendParkingScene(I)V
+    .registers 6
+    .param p1, "type"    # I
+
+    .line 3872
+    const v0, 0x2140167a
+
+    const/4 v1, 0x0
+
+    :try_start_4
+    invoke-virtual {p0, v0, v1, p1}, Landroid/car/hardware/icm/CarIcmManager;->setIntProperty(III)V
+    :try_end_7
+    .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_7} :catch_8
+
+    .line 3875
+    goto :goto_23
+
+    .line 3873
+    :catch_8
+    move-exception v0
+
+    .line 3874
+    .local v0, "e":Ljava/lang/Exception;
+    const-string v1, "CarIcmManager"
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "throw Exception e "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 3876
+    .end local v0    # "e":Ljava/lang/Exception;
+    :goto_23
+    return-void
+.end method
+
+.method public sendRandisDisplayType(Ljava/lang/String;)V
+    .registers 3
+    .param p1, "info"    # Ljava/lang/String;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 3640
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->sendIcmRandisDisplayType(Ljava/lang/String;)V
+
+    .line 3641
+    return-void
+.end method
+
+.method public sendRomBinMsg(I[B[B)V
+    .registers 5
+    .param p1, "rpcNum"    # I
+    .param p2, "bjson"    # [B
+    .param p3, "bin"    # [B
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 2036
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1, p2, p3}, Landroid/car/hardware/XpVehicle/IXpVehicle;->sendRomBinMsg(I[B[B)V
+
+    .line 2037
+    return-void
+.end method
+
+.method public sendUpdateRequest(Ljava/lang/String;)V
+    .registers 3
+    .param p1, "req"    # Ljava/lang/String;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 2767
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->sendIcmUpdateRequest(Ljava/lang/String;)V
+
+    .line 2768
+    return-void
+.end method
+
+.method public setBtMusicState([B)V
+    .registers 3
+    .param p1, "json"    # [B
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 1914
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->setBtMusicState([B)V
+
+    .line 1915
+    return-void
+.end method
+
+.method public setBtPhoneCall(Ljava/lang/String;)V
+    .registers 3
+    .param p1, "info"    # Ljava/lang/String;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 3323
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->setBtPhoneCall(Ljava/lang/String;)V
+
+    .line 3324
+    return-void
+.end method
+
+.method public setFNgpNaviPathRetainTime(J)I
+    .registers 7
+    .param p1, "second"    # J
+
+    .line 3658
+    :try_start_0
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1, p2}, Landroid/car/hardware/XpVehicle/IXpVehicle;->setFNgpNaviPathRetainTime(J)I
+
+    move-result v0
+    :try_end_6
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_6} :catch_7
+    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_6} :catch_7
+
+    return v0
+
+    .line 3659
+    :catch_7
+    move-exception v0
+
+    .line 3660
+    .local v0, "e":Ljava/lang/Exception;
+    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
+
+    .line 3661
+    const-string v1, "CarIcmManager"
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "setFNgpNaviPathRetainTime throw RemoteException | RuntimeException e "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v1, v2}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 3662
+    const/4 v1, 0x1
+
+    return v1
+.end method
+
+.method public setFaceInfo(Ljava/lang/String;)V
+    .registers 3
+    .param p1, "faceInfo"    # Ljava/lang/String;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 3375
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->setIcmFaceInfo(Ljava/lang/String;)V
+
+    .line 3376
+    return-void
+.end method
+
+.method public setIcmAccount(Ljava/lang/String;)V
+    .registers 3
+    .param p1, "account"    # Ljava/lang/String;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 3217
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->setIcmAccount(Ljava/lang/String;)V
+
+    .line 3218
+    return-void
+.end method
+
+.method public setIcmAlarmVolume(I)V
+    .registers 3
+    .param p1, "volumeType"    # I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 2603
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->setIcmAlarmVolume(I)V
+
+    .line 2604
+    return-void
+.end method
+
+.method public setIcmAllCardsRefresh(Ljava/lang/String;)V
+    .registers 3
+    .param p1, "cards"    # Ljava/lang/String;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 2445
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->setIcmAllCardsRefresh(Ljava/lang/String;)V
+
+    .line 2446
+    return-void
+.end method
+
+.method public setIcmBrightness(I)V
+    .registers 3
+    .param p1, "level"    # I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 2680
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->setIcmBrightness(I)V
+
+    .line 2681
+    return-void
+.end method
+
+.method public setIcmCarSetting(Ljava/lang/String;)V
+    .registers 3
+    .param p1, "cmd"    # Ljava/lang/String;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 2561
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->setIcmCarSetting(Ljava/lang/String;)V
+
+    .line 2562
+    return-void
+.end method
+
+.method public setIcmDayNightMode(I)V
+    .registers 3
+    .param p1, "mode"    # I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 1651
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->setIcmDayNightMode(I)V
+
+    .line 1652
+    return-void
+.end method
+
+.method public setIcmDayNightSwitch(I)V
+    .registers 3
+    .param p1, "status"    # I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 1620
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->setIcmDayNightSwitch(I)V
+
+    .line 1621
+    return-void
+.end method
+
+.method public setIcmDistractionLevel(I)V
+    .registers 3
+    .param p1, "level"    # I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 2182
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->setIcmDistractionLevel(I)V
+
+    .line 2184
+    return-void
+.end method
+
+.method public setIcmDmsMode(I)V
+    .registers 3
+    .param p1, "mode"    # I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 2153
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->setIcmDmsMode(I)V
+
+    .line 2154
+    return-void
+.end method
+
+.method public setIcmDriverTempValue(F)V
+    .registers 3
+    .param p1, "value"    # F
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 1729
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->setIcmDriverTempValue(F)V
+
+    .line 1730
+    return-void
+.end method
+
+.method public setIcmFatigueLevel(I)V
+    .registers 3
+    .param p1, "level"    # I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 2167
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->setIcmFatigueLevel(I)V
+
+    .line 2169
+    return-void
+.end method
+
+.method public setIcmInfoCardAdd(Ljava/lang/String;)V
+    .registers 3
+    .param p1, "card"    # Ljava/lang/String;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 2406
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->setIcmInfoCardAdd(Ljava/lang/String;)V
+
+    .line 2407
+    return-void
+.end method
+
+.method public setIcmInfoCardRemove(Ljava/lang/String;)V
+    .registers 3
+    .param p1, "card"    # Ljava/lang/String;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 2432
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->setIcmInfoCardRemove(Ljava/lang/String;)V
+
+    .line 2433
+    return-void
+.end method
+
+.method public setIcmInfoCardUpdate(Ljava/lang/String;)V
+    .registers 3
+    .param p1, "card"    # Ljava/lang/String;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 2419
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->setIcmInfoCardUpdate(Ljava/lang/String;)V
+
+    .line 2420
+    return-void
+.end method
+
+.method public setIcmInfoFlowMsg(Ljava/lang/String;)V
+    .registers 3
+    .param p1, "msg"    # Ljava/lang/String;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 2458
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->setIcmInfoFlowMsg(Ljava/lang/String;)V
+
+    .line 2459
+    return-void
+.end method
+
+.method public setIcmMediaSource(I)V
+    .registers 3
+    .param p1, "status"    # I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 1540
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->setIcmMediaSource(I)V
+
+    .line 1541
+    return-void
+.end method
+
+.method public setIcmNavigationBmp([B)V
+    .registers 7
+    .param p1, "data"    # [B
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 3249
+    if-eqz p1, :cond_70
+
+    .line 3254
+    array-length v0, p1
+
+    .line 3257
+    .local v0, "length":I
+    if-eqz v0, :cond_61
+
+    .line 3260
+    const/high16 v1, 0x500000
+
+    if-gt v0, v1, :cond_52
+
+    .line 3265
+    iget-object v1, p0, Landroid/car/hardware/icm/CarIcmManager;->mSharedMemoryService:Landroid/car/xpsharedmemory/IXpSharedMemory;
+
+    const v2, 0x2170161d
+
+    if-nez v1, :cond_15
+
+    .line 3267
+    const/4 v1, 0x0
+
+    invoke-virtual {p0, v2, v1, p1}, Landroid/car/hardware/icm/CarIcmManager;->setByteVectorProperty(II[B)V
+
+    goto :goto_51
+
+    .line 3269
+    :cond_15
+    const/4 v1, 0x0
+
+    :try_start_16
+    invoke-static {p1, v1}, Landroid/os/ParcelFileDescriptor;->fromData([BLjava/lang/String;)Landroid/os/ParcelFileDescriptor;
+
+    move-result-object v3
+    :try_end_1a
+    .catch Ljava/lang/Exception; {:try_start_16 .. :try_end_1a} :catch_3a
+
+    .line 3270
+    .local v3, "pfd":Landroid/os/ParcelFileDescriptor;
+    if-eqz v3, :cond_26
+
+    .line 3271
+    :try_start_1c
+    iget-object v4, p0, Landroid/car/hardware/icm/CarIcmManager;->mSharedMemoryService:Landroid/car/xpsharedmemory/IXpSharedMemory;
+
+    invoke-interface {v4, v2, v3, v0}, Landroid/car/xpsharedmemory/IXpSharedMemory;->queueMemoryBuffer(ILandroid/os/ParcelFileDescriptor;I)V
+
+    goto :goto_2d
+
+    .line 3275
+    :catchall_22
+    move-exception v2
+
+    goto :goto_34
+
+    .line 3269
+    :catch_24
+    move-exception v1
+
+    goto :goto_33
+
+    .line 3273
+    :cond_26
+    const-string v2, "CarIcmManager"
+
+    const-string v4, "Cannot fetch pfd"
+
+    invoke-static {v2, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    :try_end_2d
+    .catch Ljava/lang/Throwable; {:try_start_1c .. :try_end_2d} :catch_24
+    .catchall {:try_start_1c .. :try_end_2d} :catchall_22
+
+    .line 3275
+    :goto_2d
+    if-eqz v3, :cond_32
+
+    :try_start_2f
+    invoke-static {v1, v3}, Landroid/car/hardware/icm/CarIcmManager;->$closeResource(Ljava/lang/Throwable;Ljava/lang/AutoCloseable;)V
+    :try_end_32
+    .catch Ljava/lang/Exception; {:try_start_2f .. :try_end_32} :catch_3a
+
+    .line 3277
+    .end local v3    # "pfd":Landroid/os/ParcelFileDescriptor;
+    :cond_32
+    goto :goto_51
+
+    .line 3269
+    .restart local v3    # "pfd":Landroid/os/ParcelFileDescriptor;
+    :goto_33
+    :try_start_33
+    throw v1
+    :try_end_34
+    .catchall {:try_start_33 .. :try_end_34} :catchall_22
+
+    .line 3275
+    :goto_34
+    if-eqz v3, :cond_39
+
+    :try_start_36
+    invoke-static {v1, v3}, Landroid/car/hardware/icm/CarIcmManager;->$closeResource(Ljava/lang/Throwable;Ljava/lang/AutoCloseable;)V
+
+    :cond_39
+    throw v2
+    :try_end_3a
+    .catch Ljava/lang/Exception; {:try_start_36 .. :try_end_3a} :catch_3a
+
+    .end local v3    # "pfd":Landroid/os/ParcelFileDescriptor;
+    :catch_3a
+    move-exception v1
+
+    .line 3276
+    .local v1, "e":Ljava/lang/Exception;
+    const-string v2, "CarIcmManager"
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, "send the navigation bmp with exception: "
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v2, v3}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 3280
+    .end local v1    # "e":Ljava/lang/Exception;
+    :goto_51
+    return-void
+
+    .line 3261
+    :cond_52
+    const-string v1, "CarIcmManager"
+
+    const-string v2, "data is too large"
+
+    invoke-static {v1, v2}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 3262
+    new-instance v1, Ljava/lang/IllegalArgumentException;
+
+    const-string v2, "data is too large"
+
+    invoke-direct {v1, v2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw v1
+
+    .line 3258
+    :cond_61
+    const-string v1, "CarIcmManager"
+
+    const-string v2, "data size is 0"
+
+    invoke-static {v1, v2}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 3259
+    new-instance v1, Ljava/lang/IllegalArgumentException;
+
+    const-string v2, "data size is 0"
+
+    invoke-direct {v1, v2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw v1
+
+    .line 3250
+    .end local v0    # "length":I
+    :cond_70
+    const-string v0, "CarIcmManager"
+
+    const-string v1, "data is null"
+
+    invoke-static {v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 3251
+    new-instance v0, Ljava/lang/IllegalArgumentException;
+
+    const-string v1, "data is null"
+
+    invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+.end method
+
+.method public setIcmNavigationInfo(Ljava/lang/String;)V
+    .registers 3
+    .param p1, "navInfo"    # Ljava/lang/String;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 3298
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->setIcmNavigationInfo(Ljava/lang/String;)V
+
+    .line 3299
+    return-void
+.end method
+
+.method public setIcmOsdShow(Ljava/lang/String;)V
+    .registers 3
+    .param p1, "mOsdShow"    # Ljava/lang/String;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 2288
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->setIcmOsdShow(Ljava/lang/String;)V
+
+    .line 2289
+    return-void
+.end method
+
+.method public setIcmScreenLight(I)V
+    .registers 3
+    .param p1, "status"    # I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 1568
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->setIcmScreenLight(I)V
+
+    .line 1569
+    return-void
+.end method
+
+.method public setIcmSyncSignal(Ljava/lang/String;)V
+    .registers 3
+    .param p1, "mSyncSinal"    # Ljava/lang/String;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 2270
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->setIcmSyncSignal(Ljava/lang/String;)V
+
+    .line 2271
+    return-void
+.end method
+
+.method public setIcmSyncTime(Ljava/lang/String;)V
+    .registers 3
+    .param p1, "tinfo"    # Ljava/lang/String;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 3240
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->setIcmSyncTime(Ljava/lang/String;)V
+
+    .line 3241
+    return-void
+.end method
+
+.method public setIcmSystemTimeValue(II)V
+    .registers 4
+    .param p1, "hour"    # I
+    .param p2, "minutes"    # I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 1929
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1, p2}, Landroid/car/hardware/XpVehicle/IXpVehicle;->setIcmSystemTimeValue(II)V
+
+    .line 1930
+    return-void
+.end method
+
+.method public setIcmTemperature(I)V
+    .registers 3
+    .param p1, "status"    # I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 1454
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->setIcmTemperature(I)V
+
+    .line 1455
+    return-void
+.end method
+
+.method public setIcmTimeFormat(I)V
+    .registers 3
+    .param p1, "index"    # I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 2635
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->setIcmTimeFormat(I)V
+
+    .line 2636
+    return-void
+.end method
+
+.method public setIcmWeather(Ljava/lang/String;)V
+    .registers 3
+    .param p1, "data"    # Ljava/lang/String;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 2877
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->setIcmWeather(Ljava/lang/String;)V
+
+    .line 2878
+    return-void
+.end method
+
+.method public setIcmWheelkey(I)V
+    .registers 3
+    .param p1, "key"    # I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 3198
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->setIcmWheelkey(I)V
+
+    .line 3199
+    return-void
+.end method
+
+.method public setIcmWindBlowMode(I)V
+    .registers 3
+    .param p1, "mode"    # I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 1666
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->setIcmWindBlowMode(I)V
+
+    .line 1667
+    return-void
+.end method
+
+.method public setIcmWindLevel(I)V
+    .registers 3
+    .param p1, "level"    # I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 1697
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->setIcmWindLevel(I)V
+
+    .line 1698
+    return-void
+.end method
+
+.method public setIcmWindMode(I)V
+    .registers 3
+    .param p1, "status"    # I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 1512
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->setIcmWindMode(I)V
+
+    .line 1513
+    return-void
+.end method
+
+.method public setIcmWindPower(I)V
+    .registers 3
+    .param p1, "status"    # I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 1484
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->setIcmWindPower(I)V
+
+    .line 1485
+    return-void
+.end method
+
+.method public setLeftCard(I)V
+    .registers 3
+    .param p1, "index"    # I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 3470
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->setIcmLeftCard(I)V
+
+    .line 3471
+    return-void
+.end method
+
+.method public setMeterBackLightLevel(I)V
+    .registers 3
+    .param p1, "level"    # I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    .line 1984
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->setMeterBackLightLevel(I)V
+
+    .line 1985
+    return-void
+.end method
+
+.method public setMeterSoundState(III)V
+    .registers 5
+    .param p1, "type"    # I
+    .param p2, "volume"    # I
+    .param p3, "mute"    # I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 1767
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1, p2, p3}, Landroid/car/hardware/XpVehicle/IXpVehicle;->setMeterSoundState(III)V
+
+    .line 1768
+    return-void
+.end method
+
+.method public setModeInfo(II)V
+    .registers 4
+    .param p1, "name"    # I
+    .param p2, "status"    # I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 3514
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1, p2}, Landroid/car/hardware/XpVehicle/IXpVehicle;->setIcmModeInfoArray(II)V
+
+    .line 3515
+    return-void
+.end method
+
+.method public setMusicInfo(Ljava/lang/String;)V
+    .registers 3
+    .param p1, "musicInfo"    # Ljava/lang/String;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    .line 3338
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->setIcmMusicInfo(Ljava/lang/String;)V
+
+    .line 3339
+    return-void
+.end method
+
+.method public setMusicInfo([B[B)V
+    .registers 7
+    .param p1, "json"    # [B
+    .param p2, "image"    # [B
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 1822
+    invoke-direct {p0, p1, p2}, Landroid/car/hardware/icm/CarIcmManager;->mergeData([B[B)[B
+
+    move-result-object v0
+
+    .line 1823
+    .local v0, "data":[B
+    if-nez v0, :cond_24
+
+    .line 1824
+    const-string v1, "CarIcmManager"
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "Failed to merge data! json = "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v3, ", image = "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 1826
+    :cond_24
+    iget-object v1, p0, Landroid/car/hardware/icm/CarIcmManager;->mSharedMemoryService:Landroid/car/xpsharedmemory/IXpSharedMemory;
+
+    const v2, 0x21701608
+
+    if-nez v1, :cond_30
+
+    .line 1828
+    const/4 v1, 0x0
+
+    invoke-virtual {p0, v2, v1, v0}, Landroid/car/hardware/icm/CarIcmManager;->setByteVectorProperty(II[B)V
+
+    goto :goto_33
+
+    .line 1830
+    :cond_30
+    invoke-direct {p0, v2, p1, p2}, Landroid/car/hardware/icm/CarIcmManager;->sendData(I[B[B)V
+
+    .line 1832
+    :goto_33
+    return-void
+.end method
+
+.method public setMusicPlaybackTimeInfo(Ljava/lang/String;)V
+    .registers 3
+    .param p1, "timeInfo"    # Ljava/lang/String;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 3349
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->setIcmMusicPlaybackTimeInfo(Ljava/lang/String;)V
+
+    .line 3350
+    return-void
+.end method
+
+.method public setNavigationInfo([B)V
+    .registers 3
+    .param p1, "json"    # [B
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 1812
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->setNavigationInfo([B)V
+
+    .line 1813
+    return-void
+.end method
+
+.method public setNetRadioInfo([B[B)V
+    .registers 7
+    .param p1, "json"    # [B
+    .param p2, "image"    # [B
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 1874
+    invoke-direct {p0, p1, p2}, Landroid/car/hardware/icm/CarIcmManager;->mergeData([B[B)[B
+
+    move-result-object v0
+
+    .line 1875
+    .local v0, "data":[B
+    if-nez v0, :cond_24
+
+    .line 1876
+    const-string v1, "CarIcmManager"
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "Failed to merge data! json = "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v3, ", image = "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 1878
+    :cond_24
+    iget-object v1, p0, Landroid/car/hardware/icm/CarIcmManager;->mSharedMemoryService:Landroid/car/xpsharedmemory/IXpSharedMemory;
+
+    const v2, 0x21701607
+
+    if-nez v1, :cond_30
+
+    .line 1880
+    const/4 v1, 0x0
+
+    invoke-virtual {p0, v2, v1, v0}, Landroid/car/hardware/icm/CarIcmManager;->setByteVectorProperty(II[B)V
+
+    goto :goto_33
+
+    .line 1883
+    :cond_30
+    invoke-direct {p0, v2, p1, p2}, Landroid/car/hardware/icm/CarIcmManager;->sendData(I[B[B)V
+
+    .line 1885
+    :goto_33
+    return-void
+.end method
+
+.method public setNotifyMessage([B)V
+    .registers 3
+    .param p1, "info"    # [B
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 2057
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->setNotifyMessage([B)V
+
+    .line 2058
+    return-void
+.end method
+
+.method public setRadioInfo([B)V
+    .registers 3
+    .param p1, "json"    # [B
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 1899
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->setRadioInfo([B)V
+
+    .line 1900
+    return-void
+.end method
+
+.method public setRadioType(I)V
+    .registers 3
+    .param p1, "type"    # I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 2754
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->setIcmRadioType(I)V
+
+    .line 2755
+    return-void
+.end method
+
+.method public setRightCard(I)V
+    .registers 3
+    .param p1, "index"    # I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 3483
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->setIcmRightCard(I)V
+
+    .line 3484
+    return-void
+.end method
+
+.method public setSlideDoorSoundSW(I)V
+    .registers 6
+    .param p1, "sw"    # I
+
+    .line 3910
+    const v0, 0x2140167c
+
+    const/4 v1, 0x0
+
+    :try_start_4
+    invoke-virtual {p0, v0, v1, p1}, Landroid/car/hardware/icm/CarIcmManager;->setIntProperty(III)V
+    :try_end_7
+    .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_7} :catch_8
+
+    .line 3913
+    goto :goto_23
+
+    .line 3911
+    :catch_8
+    move-exception v0
+
+    .line 3912
+    .local v0, "e":Ljava/lang/Exception;
+    const-string v1, "CarIcmManager"
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "throw Exception e "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 3914
+    .end local v0    # "e":Ljava/lang/Exception;
+    :goto_23
+    return-void
+.end method
+
+.method public setSoundThemeType(I)V
+    .registers 3
+    .param p1, "type"    # I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 3606
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->setIcmSoundThemeType(I)V
+
+    .line 3607
+    return-void
+.end method
+
+.method public setSpeechStateInfo([B)V
+    .registers 3
+    .param p1, "info"    # [B
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 1999
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->setSpeechStateInfo([B)V
+
+    .line 2000
+    return-void
+.end method
+
+.method public setSpeedLimitWarningSwitch(I)V
+    .registers 3
+    .param p1, "status"    # I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 2737
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->setSpeedLimitWarningSwitch(I)V
+
+    .line 2738
+    return-void
+.end method
+
+.method public setSpeedLimitWarningValue(I)V
+    .registers 3
+    .param p1, "level"    # I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 2708
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->setSpeedLimitWarningValue(I)V
+
+    .line 2709
+    return-void
+.end method
+
+.method public setUpdateFileTransferStatus(I)V
+    .registers 3
+    .param p1, "status"    # I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 2796
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->setIcmUpdateFileTransferStatus(I)V
+
+    .line 2797
+    return-void
+.end method
+
+.method public setUserScenarioExitDialog(I)V
+    .registers 2
+    .param p1, "status"    # I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    .line 3625
+    return-void
+.end method
+
+.method public setUserScenarioInfo([I)V
+    .registers 4
+    .param p1, "info"    # [I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 3533
+    if-eqz p1, :cond_c
+
+    array-length v0, p1
+
+    const/4 v1, 0x3
+
+    if-ne v0, v1, :cond_c
+
+    .line 3536
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->setIcmUserScenarioInfo([I)V
+
+    .line 3537
+    return-void
+
+    .line 3534
+    :cond_c
+    new-instance v0, Ljava/lang/IllegalArgumentException;
+
+    const-string v1, "setUserScenarioModeInfo param count is not 3"
+
+    invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+.end method
+
+.method public setWeatherInfo([B)V
+    .registers 3
+    .param p1, "json"    # [B
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 1797
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->setWeatherInfo([B)V
+
+    .line 1798
+    return-void
+.end method
+
+.method public setWiperRainDetectSensitivity(I)V
+    .registers 3
+    .param p1, "level"    # I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .line 3561
+    iget-object v0, p0, Landroid/car/hardware/icm/CarIcmManager;->mService:Landroid/car/hardware/XpVehicle/IXpVehicle;
+
+    invoke-interface {v0, p1}, Landroid/car/hardware/XpVehicle/IXpVehicle;->setIcmWiperRainDetectSensitivity(I)V
+
+    .line 3562
+    return-void
+.end method
+

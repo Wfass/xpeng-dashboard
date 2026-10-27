@@ -1,0 +1,36 @@
+.class public final synthetic Lcom/xiaopeng/unity/carcontrol/-$$Lambda$MainControlManager$r65so7RcRDP4SJ_UZRzBt2OGfE4;
+.super Ljava/lang/Object;
+.source "lambda"
+
+# interfaces
+.implements Landroidx/lifecycle/Observer;
+
+
+# instance fields
+.field public final synthetic f$0:Lcom/xiaopeng/unity/carcontrol/MainControlManager;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcom/xiaopeng/unity/carcontrol/MainControlManager;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/xiaopeng/unity/carcontrol/-$$Lambda$MainControlManager$r65so7RcRDP4SJ_UZRzBt2OGfE4;->f$0:Lcom/xiaopeng/unity/carcontrol/MainControlManager;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onChanged(Ljava/lang/Object;)V
+    .locals 1
+
+    iget-object v0, p0, Lcom/xiaopeng/unity/carcontrol/-$$Lambda$MainControlManager$r65so7RcRDP4SJ_UZRzBt2OGfE4;->f$0:Lcom/xiaopeng/unity/carcontrol/MainControlManager;
+
+    check-cast p1, Lcom/xiaopeng/carcontrol/viewmodel/carsettings/ChargePortState;
+
+    invoke-virtual {v0, p1}, Lcom/xiaopeng/unity/carcontrol/MainControlManager;->lambda$observeData$2$MainControlManager(Lcom/xiaopeng/carcontrol/viewmodel/carsettings/ChargePortState;)V
+
+    return-void
+.end method

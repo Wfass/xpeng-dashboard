@@ -1,0 +1,78 @@
+#!/bin/sh
+
+if [ "$1" = "stop" ]
+then
+    echo Unmounting filesystems
+    umount -a -r
+    mount -o remount -r %root% /
+    [ -x /sbin/swapoff ] && swapoff -a
+fi
+
+if [ "$1" = "start" ]
+then
+    echo Mount data start
+    bootmode=`update_mcu_flag get | grep "true" > /dev/null && echo mcu_update || echo normal`
+
+    if [ $bootmode = "mcu_update" ]; then
+        echo "ota update mode"
+        fs_type=`e2fsck -p /dev/mmcblk0p6 | grep "vfat" > /dev/null && echo vfat || echo ext4`
+        if [ $fs_type = "vfat" ]; then
+            echo "fs_type vfat"
+            fsck.fat -a /dev/mmcblk0p6
+            mount -t vfat /dev/mmcblk0p6 /data
+        else
+            mount -t ext4 /dev/mmcblk0p6 /data
+        fi
+    else
+        fs_mgr_main -a /etc/fstab.data
+    fi
+    echo Mount data end
+#    if [ "$TMPFS" = "tmpfs" ]
+#    then
+#        mount -n -t $TMPFS shm /dev/shm
+#    fi
+#    if [ -n "$TMPFS" ]
+#    then
+#        mount -n -t $TMPFS rwfs /mnt/rwfs -o size=$TMPFS_SIZE
+#    fi
+#    if [ "$READONLY_FS" != "y" ]
+#    then
+#        mount -n -o remount -w %root% /
+#		echo "mount -n -o remount -w %root% /"
+#        NFSBOOT="`cat /proc/cmdline | grep -q /dev/nfs ; echo $?`"
+#		echo "NFSBOOT=$NFSBOOT"
+#        if [ "$NFSBOOT" == "0"  -a  -n "$RAMDIRS" ]
+#        then
+#            echo "Booted NFS, not relocating: $RAMDIRS"
+#            RAMDIRS=""
+#        fi
+#    else
+#        # initramfs, ramdisks, others? come up read/write by default
+#        mount -n -o remount -r %root% /
+#        RAMDIRS="$RAMDIRS /tmp /etc /var"
+#		echo "mount -n -o remount -r %root% /"
+#		echo "RAMDIRS=$RAMDIRS"
+#    fi
+#	echo "RAMDISK: $RAMDIRS"
+#    if [ -n "$RAMDIRS" ]
+#    then
+#        for i in $RAMDIRS
+#        do
+#            if [ ! -e /mnt/rwfs/$i ]
+#            then
+#                cp -a $i /mnt/rwfs/
+#                mount -n -o bind /mnt/rwfs/$i $i
+#            fi
+#        done
+#    fi
+#    if [ -e /etc/mtab ]
+#    then
+#        rm -f /etc/mtab
+#    fi
+#    ln -s /proc/mounts /etc/mtab
+#    if [ ! -d /dev/pts ]
+#    then
+#        mkdir /dev/pts
+#    fi
+#    mount -a
+fi

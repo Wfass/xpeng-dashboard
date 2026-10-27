@@ -1,0 +1,88 @@
+.class public interface abstract Lcom/xiaopeng/aicabin/action/IAction;
+.super Ljava/lang/Object;
+.source "IAction.java"
+
+
+# virtual methods
+.method public getName()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object v0
+
+    const-class v1, Lcom/xiaopeng/aicabin/action/ActionImpl;
+
+    invoke-virtual {v0, v1}, Ljava/lang/Class;->getAnnotation(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/xiaopeng/aicabin/action/ActionImpl;
+
+    if-nez v0, :cond_0
+
+    const-string v0, "NULLAnnotation"
+
+    goto :goto_0
+
+    .line 2
+    :cond_0
+    invoke-interface {v0}, Lcom/xiaopeng/aicabin/action/ActionImpl;->name()Ljava/lang/String;
+
+    move-result-object v0
+
+    :goto_0
+    return-object v0
+.end method
+
+.method public abstract onCreate(Landroid/content/Context;)V
+.end method
+
+.method public abstract onDestroy(Landroid/content/Context;)V
+.end method
+
+.method public string()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "IAction{ name="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 2
+    invoke-interface {p0}, Lcom/xiaopeng/aicabin/action/IAction;->getName()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", cls="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 3
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const/16 v1, 0x7d
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method

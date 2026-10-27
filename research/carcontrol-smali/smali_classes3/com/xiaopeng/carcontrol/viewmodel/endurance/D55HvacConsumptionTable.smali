@@ -1,0 +1,2753 @@
+.class Lcom/xiaopeng/carcontrol/viewmodel/endurance/D55HvacConsumptionTable;
+.super Lcom/xiaopeng/carcontrol/viewmodel/endurance/HvacConsumptionTable;
+.source "D55HvacConsumptionTable.java"
+
+
+# static fields
+.field private static final HVAC_MAX_TEMP:I = 0x20
+
+.field private static final HVAC_MIN_TEMP:I = 0x12
+
+.field private static final HVAC_TEMP_MAX_IDX:I = 0xe
+
+.field private static final HVAC_TEMP_STEP:I = 0x1
+
+.field private static final INNER_TABLE:[[I
+
+.field private static final OUTER_MAX_TEMP:I = 0x2d
+
+.field private static final OUTER_MIN_TEMP:I = -0x19
+
+.field private static final OUTER_TABLE:[[I
+
+.field private static final OUTER_TEMP_MAX_IDX:I = 0x46
+
+.field private static final OUTER_TEMP_STEP:I = 0x1
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 19
+
+    const/16 v0, 0xf
+
+    new-array v1, v0, [[I
+
+    const/16 v2, 0x47
+
+    new-array v3, v2, [I
+
+    .line 20
+    fill-array-data v3, :array_0
+
+    const/4 v4, 0x0
+
+    aput-object v3, v1, v4
+
+    new-array v3, v2, [I
+
+    fill-array-data v3, :array_1
+
+    const/4 v5, 0x1
+
+    aput-object v3, v1, v5
+
+    new-array v3, v2, [I
+
+    fill-array-data v3, :array_2
+
+    const/4 v6, 0x2
+
+    aput-object v3, v1, v6
+
+    new-array v3, v2, [I
+
+    fill-array-data v3, :array_3
+
+    const/4 v7, 0x3
+
+    aput-object v3, v1, v7
+
+    new-array v3, v2, [I
+
+    fill-array-data v3, :array_4
+
+    const/4 v8, 0x4
+
+    aput-object v3, v1, v8
+
+    new-array v3, v2, [I
+
+    fill-array-data v3, :array_5
+
+    const/4 v9, 0x5
+
+    aput-object v3, v1, v9
+
+    new-array v3, v2, [I
+
+    fill-array-data v3, :array_6
+
+    const/4 v10, 0x6
+
+    aput-object v3, v1, v10
+
+    new-array v3, v2, [I
+
+    fill-array-data v3, :array_7
+
+    const/4 v11, 0x7
+
+    aput-object v3, v1, v11
+
+    new-array v3, v2, [I
+
+    fill-array-data v3, :array_8
+
+    const/16 v12, 0x8
+
+    aput-object v3, v1, v12
+
+    new-array v3, v2, [I
+
+    fill-array-data v3, :array_9
+
+    const/16 v13, 0x9
+
+    aput-object v3, v1, v13
+
+    new-array v3, v2, [I
+
+    fill-array-data v3, :array_a
+
+    const/16 v14, 0xa
+
+    aput-object v3, v1, v14
+
+    new-array v3, v2, [I
+
+    fill-array-data v3, :array_b
+
+    const/16 v15, 0xb
+
+    aput-object v3, v1, v15
+
+    new-array v3, v2, [I
+
+    fill-array-data v3, :array_c
+
+    const/16 v16, 0xc
+
+    aput-object v3, v1, v16
+
+    new-array v3, v2, [I
+
+    fill-array-data v3, :array_d
+
+    const/16 v17, 0xd
+
+    aput-object v3, v1, v17
+
+    new-array v3, v2, [I
+
+    fill-array-data v3, :array_e
+
+    const/16 v18, 0xe
+
+    aput-object v3, v1, v18
+
+    sput-object v1, Lcom/xiaopeng/carcontrol/viewmodel/endurance/D55HvacConsumptionTable;->INNER_TABLE:[[I
+
+    new-array v0, v0, [[I
+
+    new-array v1, v2, [I
+
+    .line 173
+    fill-array-data v1, :array_f
+
+    aput-object v1, v0, v4
+
+    new-array v1, v2, [I
+
+    fill-array-data v1, :array_10
+
+    aput-object v1, v0, v5
+
+    new-array v1, v2, [I
+
+    fill-array-data v1, :array_11
+
+    aput-object v1, v0, v6
+
+    new-array v1, v2, [I
+
+    fill-array-data v1, :array_12
+
+    aput-object v1, v0, v7
+
+    new-array v1, v2, [I
+
+    fill-array-data v1, :array_13
+
+    aput-object v1, v0, v8
+
+    new-array v1, v2, [I
+
+    fill-array-data v1, :array_14
+
+    aput-object v1, v0, v9
+
+    new-array v1, v2, [I
+
+    fill-array-data v1, :array_15
+
+    aput-object v1, v0, v10
+
+    new-array v1, v2, [I
+
+    fill-array-data v1, :array_16
+
+    aput-object v1, v0, v11
+
+    new-array v1, v2, [I
+
+    fill-array-data v1, :array_17
+
+    aput-object v1, v0, v12
+
+    new-array v1, v2, [I
+
+    fill-array-data v1, :array_18
+
+    aput-object v1, v0, v13
+
+    new-array v1, v2, [I
+
+    fill-array-data v1, :array_19
+
+    aput-object v1, v0, v14
+
+    new-array v1, v2, [I
+
+    fill-array-data v1, :array_1a
+
+    aput-object v1, v0, v15
+
+    new-array v1, v2, [I
+
+    fill-array-data v1, :array_1b
+
+    aput-object v1, v0, v16
+
+    new-array v1, v2, [I
+
+    fill-array-data v1, :array_1c
+
+    aput-object v1, v0, v17
+
+    new-array v1, v2, [I
+
+    fill-array-data v1, :array_1d
+
+    aput-object v1, v0, v18
+
+    sput-object v0, Lcom/xiaopeng/carcontrol/viewmodel/endurance/D55HvacConsumptionTable;->OUTER_TABLE:[[I
+
+    return-void
+
+    nop
+
+    :array_0
+    .array-data 4
+        0x4b0
+        0x488
+        0x460
+        0x438
+        0x410
+        0x3e8
+        0x3de
+        0x3d4
+        0x3ca
+        0x3c0
+        0x3b6
+        0x35c
+        0x302
+        0x2a8
+        0x24e
+        0x1f4
+        0x1ea
+        0x1e0
+        0x1d6
+        0x1cc
+        0x1c2
+        0x1b8
+        0x1ae
+        0x1a4
+        0x19a
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x1cc
+        0x208
+        0x244
+        0x280
+        0x2bc
+        0x2d0
+        0x2e4
+        0x2f8
+        0x30c
+        0x320
+        0x33e
+        0x35c
+        0x37a
+        0x398
+        0x3b6
+        0x410
+        0x46a
+        0x4c4
+        0x51e
+        0x578
+    .end array-data
+
+    :array_1
+    .array-data 4
+        0x4fb
+        0x4ce
+        0x4a1
+        0x474
+        0x447
+        0x41a
+        0x40b
+        0x3fc
+        0x3ed
+        0x3de
+        0x3cf
+        0x375
+        0x31b
+        0x2c1
+        0x267
+        0x20d
+        0x203
+        0x1f9
+        0x1ef
+        0x1e5
+        0x1db
+        0x1cc
+        0x1bd
+        0x1ae
+        0x19f
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x195
+        0x19a
+        0x19f
+        0x1a4
+        0x1a9
+        0x1a9
+        0x1a9
+        0x1a9
+        0x1a9
+        0x1a9
+        0x1a9
+        0x1a9
+        0x1a9
+        0x1a9
+        0x1a9
+        0x1c7
+        0x1e5
+        0x203
+        0x221
+        0x23f
+        0x262
+        0x285
+        0x2a8
+        0x2cb
+        0x2ee
+        0x30c
+        0x32a
+        0x348
+        0x366
+        0x384
+        0x3d4
+        0x424
+        0x474
+        0x4c4
+        0x514
+    .end array-data
+
+    :array_2
+    .array-data 4
+        0x546
+        0x514
+        0x4e2
+        0x4b0
+        0x47e
+        0x44c
+        0x438
+        0x424
+        0x410
+        0x3fc
+        0x44c
+        0x38e
+        0x334
+        0x2da
+        0x280
+        0x226
+        0x21c
+        0x212
+        0x208
+        0x1fe
+        0x1f4
+        0x1e0
+        0x1cc
+        0x1b8
+        0x1a4
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x19a
+        0x1a4
+        0x1ae
+        0x1b8
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1f4
+        0x226
+        0x258
+        0x28a
+        0x2bc
+        0x2da
+        0x2f8
+        0x316
+        0x334
+        0x352
+        0x398
+        0x3de
+        0x424
+        0x46a
+        0x4b0
+    .end array-data
+
+    :array_3
+    .array-data 4
+        0x55f
+        0x537
+        0x50f
+        0x4e7
+        0x4bf
+        0x497
+        0x47e
+        0x465
+        0x44c
+        0x433
+        0x41a
+        0x3bb
+        0x35c
+        0x2fd
+        0x29e
+        0x23f
+        0x235
+        0x22b
+        0x221
+        0x217
+        0x20d
+        0x1f9
+        0x1e5
+        0x1d1
+        0x1bd
+        0x1a9
+        0x1a4
+        0x19f
+        0x19a
+        0x195
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x19a
+        0x1a4
+        0x1ae
+        0x1b8
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1bd
+        0x1b8
+        0x1b3
+        0x1ae
+        0x1a9
+        0x1db
+        0x20d
+        0x23f
+        0x271
+        0x2a3
+        0x2bc
+        0x2d5
+        0x2ee
+        0x307
+        0x320
+        0x35c
+        0x398
+        0x3d4
+        0x410
+        0x3e8
+    .end array-data
+
+    :array_4
+    .array-data 4
+        0x578
+        0x55a
+        0x53c
+        0x51e
+        0x500
+        0x4e2
+        0x4c4
+        0x4a6
+        0x488
+        0x46a
+        0x44c
+        0x3e8
+        0x384
+        0x320
+        0x2bc
+        0x258
+        0x24e
+        0x244
+        0x23a
+        0x230
+        0x226
+        0x212
+        0x1fe
+        0x1ea
+        0x1d6
+        0x1c2
+        0x1b8
+        0x1ae
+        0x1a4
+        0x19a
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x19a
+        0x1a4
+        0x1ae
+        0x1b8
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1b8
+        0x1ae
+        0x1a4
+        0x19a
+        0x190
+        0x1c2
+        0x1f4
+        0x226
+        0x258
+        0x28a
+        0x29e
+        0x2b2
+        0x2c6
+        0x2da
+        0x2ee
+        0x320
+        0x352
+        0x384
+        0x3b6
+        0x3e8
+    .end array-data
+
+    :array_5
+    .array-data 4
+        0x591
+        0x573
+        0x555
+        0x537
+        0x519
+        0x4fb
+        0x4dd
+        0x4bf
+        0x4a1
+        0x483
+        0x465
+        0x401
+        0x39d
+        0x339
+        0x2d5
+        0x271
+        0x265
+        0x258
+        0x24c
+        0x23f
+        0x233
+        0x221
+        0x210
+        0x1fe
+        0x1ed
+        0x1db
+        0x1d1
+        0x1c7
+        0x1bd
+        0x1b3
+        0x1a9
+        0x1a4
+        0x19f
+        0x19a
+        0x195
+        0x190
+        0x19a
+        0x1a4
+        0x1ae
+        0x1b8
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1b8
+        0x1ae
+        0x1a4
+        0x19a
+        0x190
+        0x1ae
+        0x1cc
+        0x1ea
+        0x208
+        0x226
+        0x23a
+        0x24e
+        0x262
+        0x276
+        0x28a
+        0x2bc
+        0x2ee
+        0x320
+        0x352
+        0x384
+    .end array-data
+
+    :array_6
+    .array-data 4
+        0x5aa
+        0x58c
+        0x56e
+        0x550
+        0x532
+        0x514
+        0x4f6
+        0x4d8
+        0x4ba
+        0x49c
+        0x47e
+        0x41a
+        0x3b6
+        0x352
+        0x2ee
+        0x28a
+        0x27b
+        0x26c
+        0x25d
+        0x24e
+        0x23f
+        0x230
+        0x221
+        0x212
+        0x203
+        0x1f4
+        0x1ea
+        0x1e0
+        0x1d6
+        0x1cc
+        0x1c2
+        0x1b8
+        0x1ae
+        0x1a4
+        0x19a
+        0x190
+        0x19a
+        0x1a4
+        0x1ae
+        0x1b8
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1b8
+        0x1ae
+        0x1a4
+        0x19a
+        0x190
+        0x19a
+        0x1a4
+        0x1ae
+        0x1b8
+        0x1c2
+        0x1d6
+        0x1ea
+        0x1fe
+        0x212
+        0x226
+        0x258
+        0x28a
+        0x2bc
+        0x2ee
+        0x320
+    .end array-data
+
+    :array_7
+    .array-data 4
+        0x5c3
+        0x5a5
+        0x587
+        0x569
+        0x54b
+        0x52d
+        0x50f
+        0x4f1
+        0x4d3
+        0x4b5
+        0x497
+        0x433
+        0x3cf
+        0x36b
+        0x307
+        0x2a3
+        0x2ba
+        0x2d0
+        0x2e7
+        0x2fd
+        0x24c
+        0x23f
+        0x233
+        0x226
+        0x21a
+        0x20d
+        0x203
+        0x1f9
+        0x1ef
+        0x1e5
+        0x1db
+        0x1d1
+        0x1c7
+        0x1bd
+        0x1b3
+        0x1a9
+        0x1ae
+        0x1b3
+        0x1b8
+        0x1bd
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1b8
+        0x1ae
+        0x1a4
+        0x19a
+        0x190
+        0x199
+        0x1a2
+        0x1ab
+        0x1b4
+        0x1bd
+        0x1c8
+        0x1d3
+        0x1de
+        0x1e9
+        0x1f4
+        0x221
+        0x24e
+        0x27b
+        0x2a8
+        0x2d5
+    .end array-data
+
+    :array_8
+    .array-data 4
+        0x5dc
+        0x5be
+        0x5a0
+        0x582
+        0x564
+        0x546
+        0x528
+        0x50a
+        0x4ec
+        0x4ce
+        0x4b0
+        0x44c
+        0x3e8
+        0x384
+        0x320
+        0x2bc
+        0x2a8
+        0x294
+        0x280
+        0x26c
+        0x258
+        0x24e
+        0x244
+        0x23a
+        0x230
+        0x226
+        0x21c
+        0x212
+        0x208
+        0x1fe
+        0x1f4
+        0x1ea
+        0x1e0
+        0x1d6
+        0x1cc
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1b8
+        0x1ae
+        0x1a4
+        0x19a
+        0x190
+        0x198
+        0x1a0
+        0x1a8
+        0x1b0
+        0x1b8
+        0x1ba
+        0x1bc
+        0x1be
+        0x1c0
+        0x1c2
+        0x1ea
+        0x212
+        0x23a
+        0x262
+        0x28a
+    .end array-data
+
+    :array_9
+    .array-data 4
+        0x5f5
+        0x5d7
+        0x5b9
+        0x59b
+        0x57d
+        0x55f
+        0x541
+        0x523
+        0x505
+        0x4e7
+        0x4c9
+        0x465
+        0x401
+        0x39d
+        0x339
+        0x2d5
+        0x2c6
+        0x2b7
+        0x2a8
+        0x299
+        0x28a
+        0x27b
+        0x26c
+        0x25d
+        0x24e
+        0x23f
+        0x235
+        0x22b
+        0x221
+        0x217
+        0x20d
+        0x203
+        0x1f9
+        0x1ef
+        0x1e5
+        0x1db
+        0x1d6
+        0x1d1
+        0x1cc
+        0x1c7
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1bd
+        0x1b8
+        0x1b3
+        0x1ae
+        0x1a9
+        0x1ac
+        0x1af
+        0x1b2
+        0x1b5
+        0x1b8
+        0x1b5
+        0x1b2
+        0x1af
+        0x1ac
+        0x1a9
+        0x1d1
+        0x1f9
+        0x221
+        0x249
+        0x271
+    .end array-data
+
+    :array_a
+    .array-data 4
+        0x60e
+        0x5f0
+        0x5d2
+        0x5b4
+        0x596
+        0x578
+        0x55a
+        0x53c
+        0x51e
+        0x500
+        0x4e2
+        0x47e
+        0x41a
+        0x3b6
+        0x352
+        0x2ee
+        0x2e4
+        0x2da
+        0x2d0
+        0x2c6
+        0x2bc
+        0x2a8
+        0x294
+        0x280
+        0x26c
+        0x258
+        0x24e
+        0x244
+        0x23a
+        0x230
+        0x226
+        0x21c
+        0x212
+        0x208
+        0x1fe
+        0x1f4
+        0x1ea
+        0x1e0
+        0x1d6
+        0x1cc
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c0
+        0x1be
+        0x1bc
+        0x1ba
+        0x1b8
+        0x1b0
+        0x1a8
+        0x1a0
+        0x198
+        0x190
+        0x1b8
+        0x1e0
+        0x208
+        0x230
+        0x258
+    .end array-data
+
+    :array_b
+    .array-data 4
+        0x640
+        0x622
+        0x604
+        0x5e6
+        0x5c8
+        0x5aa
+        0x587
+        0x564
+        0x541
+        0x51e
+        0x4fb
+        0x497
+        0x433
+        0x3cf
+        0x36b
+        0x307
+        0x2fd
+        0x2f3
+        0x2e9
+        0x2df
+        0x2d5
+        0x2c1
+        0x2ad
+        0x299
+        0x285
+        0x271
+        0x267
+        0x25d
+        0x253
+        0x249
+        0x23f
+        0x235
+        0x22b
+        0x221
+        0x217
+        0x20d
+        0x203
+        0x1f9
+        0x1ef
+        0x1e5
+        0x1db
+        0x1d6
+        0x1d1
+        0x1cc
+        0x1c7
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c0
+        0x1be
+        0x1bc
+        0x1ba
+        0x1b8
+        0x1b0
+        0x1a8
+        0x1a0
+        0x198
+        0x190
+        0x1b3
+        0x1d6
+        0x1f9
+        0x21c
+        0x23f
+    .end array-data
+
+    :array_c
+    .array-data 4
+        0x672
+        0x654
+        0x636
+        0x618
+        0x5fa
+        0x5dc
+        0x5b4
+        0x58c
+        0x564
+        0x53c
+        0x514
+        0x4b0
+        0x44c
+        0x3e8
+        0x384
+        0x320
+        0x316
+        0x30c
+        0x302
+        0x2f8
+        0x2ee
+        0x2da
+        0x2c6
+        0x2b2
+        0x29e
+        0x28a
+        0x280
+        0x276
+        0x26c
+        0x262
+        0x258
+        0x24e
+        0x244
+        0x23a
+        0x230
+        0x226
+        0x21c
+        0x212
+        0x208
+        0x1fe
+        0x1f4
+        0x1ea
+        0x1e0
+        0x1d6
+        0x1cc
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c0
+        0x1be
+        0x1bc
+        0x1ba
+        0x1b8
+        0x1b0
+        0x1a8
+        0x1a0
+        0x198
+        0x190
+        0x1ae
+        0x1cc
+        0x1ea
+        0x208
+        0x226
+    .end array-data
+
+    :array_d
+    .array-data 4
+        0x6d6
+        0x6b8
+        0x69a
+        0x67c
+        0x65e
+        0x640
+        0x618
+        0x5f0
+        0x5c8
+        0x5a0
+        0x578
+        0x514
+        0x4b0
+        0x44c
+        0x3e8
+        0x384
+        0x375
+        0x366
+        0x352
+        0x348
+        0x339
+        0x325
+        0x311
+        0x2fd
+        0x2e9
+        0x2d5
+        0x2c6
+        0x2b7
+        0x2a8
+        0x299
+        0x28a
+        0x27b
+        0x26c
+        0x25d
+        0x24e
+        0x23f
+        0x235
+        0x22b
+        0x221
+        0x217
+        0x20d
+        0x203
+        0x1f9
+        0x1ef
+        0x1e5
+        0x1db
+        0x1db
+        0x1db
+        0x1db
+        0x1db
+        0x1db
+        0x1db
+        0x1db
+        0x1db
+        0x1db
+        0x1db
+        0x1d4
+        0x1cd
+        0x1c6
+        0x1bf
+        0x1b8
+        0x1b4
+        0x1b0
+        0x1ac
+        0x1a8
+        0x1a4
+        0x1b9
+        0x1ce
+        0x1e3
+        0x1f8
+        0x20d
+    .end array-data
+
+    :array_e
+    .array-data 4
+        0x73a
+        0x71c
+        0x6fe
+        0x6e0
+        0x6c2
+        0x6a4
+        0x67c
+        0x654
+        0x62c
+        0x604
+        0x5dc
+        0x578
+        0x514
+        0x4b0
+        0x44c
+        0x3e8
+        0x3d4
+        0x3c0
+        0x3ac
+        0x398
+        0x384
+        0x370
+        0x35c
+        0x348
+        0x334
+        0x320
+        0x30c
+        0x2f8
+        0x2e4
+        0x2d0
+        0x2bc
+        0x2a8
+        0x294
+        0x280
+        0x26c
+        0x258
+        0x24e
+        0x244
+        0x23a
+        0x230
+        0x226
+        0x21c
+        0x212
+        0x208
+        0x1fe
+        0x1f4
+        0x1f4
+        0x1f4
+        0x1f4
+        0x190
+        0x1f4
+        0x1f4
+        0x1f4
+        0x1f4
+        0x1f4
+        0x1f4
+        0x1e8
+        0x1dc
+        0x1d0
+        0x1c4
+        0x1b8
+        0x1b8
+        0x1b8
+        0x1b8
+        0x1b8
+        0x1b8
+        0x1c4
+        0x1d0
+        0x1dc
+        0x1e8
+        0x1f4
+    .end array-data
+
+    :array_f
+    .array-data 4
+        0xdac
+        0xce4
+        0xc1c
+        0xb54
+        0xa8c
+        0x9c4
+        0x960
+        0x8fc
+        0x898
+        0x834
+        0x7d0
+        0x6b8
+        0x5a0
+        0x488
+        0x370
+        0x258
+        0x230
+        0x208
+        0x1e0
+        0x1b8
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x19a
+        0x1a4
+        0x1ae
+        0x1b8
+        0x1c2
+        0x1b8
+        0x1ae
+        0x1a4
+        0x19a
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x1e0
+        0x230
+        0x280
+        0x2d0
+        0x320
+        0x348
+        0x370
+        0x398
+        0x3c0
+        0x3e8
+        0x474
+        0x500
+        0x58c
+        0x618
+        0x6a4
+        0x744
+        0x7e4
+        0x884
+        0x924
+        0x9c4
+    .end array-data
+
+    :array_10
+    .array-data 4
+        0xfa0
+        0xea6
+        0xdac
+        0xcb2
+        0xbb8
+        0xabe
+        0xa5a
+        0x9f6
+        0x992
+        0x92e
+        0x8ca
+        0x785
+        0x640
+        0x4fb
+        0x3b6
+        0x271
+        0x249
+        0x221
+        0x1f9
+        0x1d1
+        0x1a9
+        0x1a9
+        0x1a9
+        0x1a9
+        0x1a9
+        0x1a9
+        0x1ae
+        0x1b3
+        0x1b8
+        0x1bd
+        0x1c2
+        0x1b8
+        0x1ae
+        0x1a4
+        0x19a
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x195
+        0x19a
+        0x19f
+        0x1a4
+        0x1a9
+        0x1a9
+        0x1a9
+        0x1a9
+        0x1a9
+        0x1a9
+        0x1e5
+        0x221
+        0x25d
+        0x299
+        0x2d5
+        0x2fd
+        0x325
+        0x34d
+        0x375
+        0x39d
+        0x41a
+        0x497
+        0x514
+        0x591
+        0x60e
+        0x6ae
+        0x74e
+        0x7ee
+        0x88e
+        0x92e
+    .end array-data
+
+    :array_11
+    .array-data 4
+        0x1194
+        0x1068
+        0xf3c
+        0xe10
+        0xce4
+        0xbb8
+        0xb54
+        0xaf0
+        0xa8c
+        0xa28
+        0x9c4
+        0x852
+        0x6e0
+        0x56e
+        0x3fc
+        0x28a
+        0x262
+        0x23a
+        0x212
+        0x1ea
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1b8
+        0x1ae
+        0x1a4
+        0x19a
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x19a
+        0x1a4
+        0x1ae
+        0x1b8
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1ea
+        0x212
+        0x23a
+        0x262
+        0x28a
+        0x2b2
+        0x2da
+        0x302
+        0x32a
+        0x352
+        0x3c0
+        0x42e
+        0x49c
+        0x50a
+        0x578
+        0x618
+        0x6b8
+        0x758
+        0x7f8
+        0x898
+    .end array-data
+
+    :array_12
+    .array-data 4
+        0x12f2
+        0x1194
+        0x1036
+        0xed8
+        0xd7a
+        0xc1c
+        0xbb8
+        0xb54
+        0xaf0
+        0xa8c
+        0xa28
+        0x8b1
+        0x73a
+        0x5c3
+        0x44c
+        0x2d5
+        0x2a3
+        0x271
+        0x23f
+        0x20d
+        0x1db
+        0x1db
+        0x1db
+        0x1db
+        0x1db
+        0x1db
+        0x1db
+        0x1db
+        0x1db
+        0x1db
+        0x1db
+        0x1cc
+        0x1bd
+        0x1ae
+        0x19f
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x19a
+        0x1a4
+        0x1ae
+        0x1b8
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1e0
+        0x1fe
+        0x21c
+        0x23a
+        0x258
+        0x280
+        0x2a8
+        0x2d0
+        0x2f8
+        0x320
+        0x384
+        0x3e8
+        0x44c
+        0x4b0
+        0x514
+        0x5aa
+        0x640
+        0x6d6
+        0x76c
+        0x802
+    .end array-data
+
+    :array_13
+    .array-data 4
+        0x1450
+        0x12c0
+        0x1130
+        0xfa0
+        0xe10
+        0xc80
+        0xc1c
+        0xbb8
+        0xb54
+        0xaf0
+        0xa8c
+        0x910
+        0x794
+        0x618
+        0x49c
+        0x320
+        0x2e4
+        0x2a8
+        0x26c
+        0x230
+        0x1f4
+        0x1f4
+        0x1f4
+        0x1f4
+        0x1f4
+        0x1f4
+        0x1f4
+        0x1f4
+        0x1f4
+        0x1f4
+        0x1f4
+        0x1e0
+        0x1cc
+        0x1b8
+        0x1a4
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x190
+        0x19a
+        0x1a4
+        0x1ae
+        0x1b8
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1d6
+        0x1ea
+        0x1fe
+        0x212
+        0x226
+        0x24e
+        0x276
+        0x29e
+        0x2c6
+        0x2ee
+        0x348
+        0x3a2
+        0x3fc
+        0x456
+        0x4b0
+        0x53c
+        0x5c8
+        0x654
+        0x6e0
+        0x76c
+    .end array-data
+
+    :array_14
+    .array-data 4
+        0x1450
+        0x12de
+        0x116c
+        0xffa
+        0xe88
+        0xd16
+        0xcb2
+        0xc4e
+        0xbea
+        0xb86
+        0xb22
+        0x99c
+        0x816
+        0x690
+        0x50a
+        0x384
+        0x33e
+        0x2f8
+        0x2b2
+        0x26c
+        0x226
+        0x221
+        0x21c
+        0x217
+        0x212
+        0x20d
+        0x20d
+        0x20d
+        0x20d
+        0x20d
+        0x20d
+        0x1fe
+        0x1ef
+        0x1e0
+        0x1d1
+        0x1c2
+        0x1b8
+        0x1ae
+        0x1a4
+        0x19a
+        0x190
+        0x19a
+        0x1a4
+        0x1ae
+        0x1b8
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1cc
+        0x1d6
+        0x1e0
+        0x1ea
+        0x1f4
+        0x21c
+        0x244
+        0x26c
+        0x294
+        0x2bc
+        0x30c
+        0x35c
+        0x3ac
+        0x3fc
+        0x44c
+        0x4d8
+        0x564
+        0x5f0
+        0x67c
+        0x708
+    .end array-data
+
+    :array_15
+    .array-data 4
+        0x1450
+        0x12fc
+        0x11a8
+        0x1054
+        0xf00
+        0xdac
+        0xd48
+        0xce4
+        0xc80
+        0xc1c
+        0xbb8
+        0xa28
+        0x898
+        0x708
+        0x578
+        0x3e8
+        0x398
+        0x348
+        0x2f8
+        0x2a8
+        0x258
+        0x24e
+        0x244
+        0x23a
+        0x230
+        0x226
+        0x226
+        0x226
+        0x226
+        0x226
+        0x226
+        0x21c
+        0x212
+        0x208
+        0x1fe
+        0x1f4
+        0x1e0
+        0x1cc
+        0x1b8
+        0x1a4
+        0x190
+        0x19a
+        0x1a4
+        0x1ae
+        0x1b8
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1ea
+        0x212
+        0x23a
+        0x262
+        0x28a
+        0x2d0
+        0x316
+        0x35c
+        0x3a2
+        0x3e8
+        0x474
+        0x500
+        0x58c
+        0x618
+        0x6a4
+    .end array-data
+
+    :array_16
+    .array-data 4
+        0x15e0
+        0x146e
+        0x12fc
+        0x118a
+        0x1018
+        0xea6
+        0xe42
+        0xdde
+        0xd7a
+        0xd16
+        0xcb2
+        0xb18
+        0x97e
+        0x7e4
+        0x64a
+        0x4b0
+        0x44c
+        0x3e8
+        0x384
+        0x320
+        0x2bc
+        0x2ad
+        0x29e
+        0x28f
+        0x280
+        0x271
+        0x271
+        0x271
+        0x271
+        0x271
+        0x271
+        0x267
+        0x25d
+        0x253
+        0x249
+        0x23f
+        0x226
+        0x20d
+        0x1f4
+        0x1db
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1bd
+        0x1b8
+        0x1b3
+        0x1ae
+        0x1a9
+        0x1d1
+        0x1f9
+        0x221
+        0x249
+        0x271
+        0x2b2
+        0x2f3
+        0x334
+        0x375
+        0x3b6
+        0x43d
+        0x4c4
+        0x54b
+        0x5d2
+        0x659
+    .end array-data
+
+    :array_17
+    .array-data 4
+        0x1770
+        0x15e0
+        0x1450
+        0x12c0
+        0x1130
+        0xfa0
+        0xf3c
+        0xed8
+        0xe74
+        0xe10
+        0xdac
+        0xc08
+        0xa64
+        0x8c0
+        0x71c
+        0x578
+        0x500
+        0x488
+        0x410
+        0x398
+        0x320
+        0x30c
+        0x2f8
+        0x2e4
+        0x2d0
+        0x2bc
+        0x2bc
+        0x2bc
+        0x2bc
+        0x2bc
+        0x2bc
+        0x2b2
+        0x2a8
+        0x29e
+        0x294
+        0x28a
+        0x26c
+        0x24e
+        0x230
+        0x212
+        0x1f4
+        0x1ea
+        0x1e0
+        0x1d6
+        0x1cc
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1b8
+        0x1ae
+        0x1a4
+        0x19a
+        0x190
+        0x1b8
+        0x1e0
+        0x208
+        0x230
+        0x258
+        0x294
+        0x2d0
+        0x30c
+        0x348
+        0x384
+        0x406
+        0x488
+        0x50a
+        0x58c
+        0x60e
+    .end array-data
+
+    :array_18
+    .array-data 4
+        0x1770
+        0x1612
+        0x14b4
+        0x1356
+        0x11f8
+        0x109a
+        0x1036
+        0xfd2
+        0xf6e
+        0xf0a
+        0xea6
+        0xcee
+        0xb36
+        0x97e
+        0x7c6
+        0x60e
+        0x596
+        0x50a
+        0x488
+        0x406
+        0x384
+        0x370
+        0x35c
+        0x348
+        0x334
+        0x320
+        0x311
+        0x302
+        0x2f3
+        0x2e4
+        0x2d5
+        0x2cb
+        0x2c1
+        0x2b7
+        0x2ad
+        0x2a3
+        0x280
+        0x25d
+        0x23a
+        0x217
+        0x1f4
+        0x1ea
+        0x1e0
+        0x1d6
+        0x1cc
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1bc
+        0x1b6
+        0x1b0
+        0x1aa
+        0x1a4
+        0x1c3
+        0x1e3
+        0x201
+        0x220
+        0x23f
+        0x276
+        0x2ad
+        0x2e4
+        0x31b
+        0x352
+        0x3ca
+        0x442
+        0x4ba
+        0x514
+        0x5aa
+    .end array-data
+
+    :array_19
+    .array-data 4
+        0x1770
+        0x1644
+        0x1518
+        0x13ec
+        0x12c0
+        0x1194
+        0x1130
+        0x10cc
+        0x1068
+        0x1004
+        0xfa0
+        0xdd4
+        0xc08
+        0xa3c
+        0x870
+        0x6a4
+        0x618
+        0x58c
+        0x500
+        0x474
+        0x3e8
+        0x3d4
+        0x3c0
+        0x3ac
+        0x398
+        0x384
+        0x366
+        0x348
+        0x32a
+        0x30c
+        0x2ee
+        0x2e4
+        0x2da
+        0x2d0
+        0x2c6
+        0x2bc
+        0x294
+        0x26c
+        0x244
+        0x21c
+        0x1f4
+        0x1ea
+        0x1e0
+        0x1d6
+        0x1cc
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c0
+        0x1be
+        0x1bc
+        0x1ba
+        0x1b8
+        0x1ce
+        0x1e4
+        0x1fa
+        0x210
+        0x226
+        0x258
+        0x28a
+        0x2bc
+        0x2ee
+        0x320
+        0x38e
+        0x3fc
+        0x46a
+        0x4d8
+        0x546
+    .end array-data
+
+    :array_1a
+    .array-data 4
+        0x1770
+        0x1676
+        0x157c
+        0x1482
+        0x1388
+        0x128e
+        0x122a
+        0x11c6
+        0x1162
+        0x10fe
+        0x109a
+        0xeba
+        0xcda
+        0xafa
+        0x91a
+        0x73a
+        0x6ae
+        0x622
+        0x596
+        0x50a
+        0x47e
+        0x46a
+        0x44c
+        0x442
+        0x42e
+        0x41a
+        0x3e3
+        0x3ac
+        0x375
+        0x33e
+        0x307
+        0x2fd
+        0x2f3
+        0x2e9
+        0x2df
+        0x2d5
+        0x2b2
+        0x28f
+        0x26c
+        0x249
+        0x226
+        0x212
+        0x1fe
+        0x1ea
+        0x1d6
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c0
+        0x1be
+        0x1bc
+        0x1ba
+        0x1b8
+        0x1c9
+        0x1da
+        0x1eb
+        0x1fc
+        0x20d
+        0x235
+        0x25d
+        0x285
+        0x2ad
+        0x2d5
+        0x33e
+        0x3a7
+        0x410
+        0x479
+        0x4e2
+    .end array-data
+
+    :array_1b
+    .array-data 4
+        0x1770
+        0x16a8
+        0x15e0
+        0x1518
+        0x1450
+        0x1388
+        0x1324
+        0x12c0
+        0x125c
+        0x11f8
+        0x1194
+        0xfa0
+        0xdac
+        0xbb8
+        0x9c4
+        0x7d0
+        0x744
+        0x6b8
+        0x62c
+        0x5a0
+        0x514
+        0x500
+        0x4ec
+        0x4d8
+        0x4c4
+        0x4b0
+        0x460
+        0x410
+        0x3c0
+        0x370
+        0x320
+        0x316
+        0x30c
+        0x302
+        0x2f8
+        0x2ee
+        0x2d0
+        0x2b2
+        0x294
+        0x276
+        0x258
+        0x23a
+        0x21c
+        0x1fe
+        0x1e0
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c2
+        0x1c0
+        0x1be
+        0x1bc
+        0x1ba
+        0x1b8
+        0x1c4
+        0x1d0
+        0x1dc
+        0x1e8
+        0x1f4
+        0x212
+        0x230
+        0x24e
+        0x26c
+        0x28a
+        0x2ee
+        0x352
+        0x3b6
+        0x41a
+        0x47e
+    .end array-data
+
+    :array_1c
+    .array-data 4
+        0x1770
+        0x170c
+        0x16a8
+        0x1644
+        0x15e0
+        0x157c
+        0x1518
+        0x14b4
+        0x1450
+        0x13ec
+        0x1388
+        0x1162
+        0xf3c
+        0xd16
+        0xaf0
+        0x8ca
+        0x83e
+        0x7b2
+        0x726
+        0x69a
+        0x60e
+        0x5e6
+        0x5be
+        0x596
+        0x56e
+        0x546
+        0x4e2
+        0x47e
+        0x41a
+        0x3b6
+        0x352
+        0x33e
+        0x32a
+        0x316
+        0x302
+        0x2ee
+        0x2d5
+        0x2bc
+        0x2a3
+        0x28a
+        0x271
+        0x25d
+        0x249
+        0x235
+        0x221
+        0x20d
+        0x208
+        0x203
+        0x1fe
+        0x1f9
+        0x1f4
+        0x1f0
+        0x1ec
+        0x1e8
+        0x1e4
+        0x1e0
+        0x1df
+        0x1de
+        0x1dd
+        0x1dc
+        0x1db
+        0x1ef
+        0x203
+        0x217
+        0x22b
+        0x23f
+        0x2a3
+        0x307
+        0x36b
+        0x3cf
+        0x433
+    .end array-data
+
+    :array_1d
+    .array-data 4
+        0x1770
+        0x1770
+        0x1770
+        0x1770
+        0x1770
+        0x1770
+        0x170c
+        0x16a8
+        0x1644
+        0x15e0
+        0x157c
+        0x1324
+        0x10cc
+        0xe74
+        0xc1c
+        0x9c4
+        0x938
+        0x8ac
+        0x820
+        0x794
+        0x708
+        0x6cc
+        0x690
+        0x654
+        0x618
+        0x5dc
+        0x564
+        0x4ec
+        0x474
+        0x3fc
+        0x384
+        0x366
+        0x348
+        0x32a
+        0x30c
+        0x2ee
+        0x2da
+        0x2c6
+        0x2b2
+        0x29e
+        0x28a
+        0x280
+        0x276
+        0x26c
+        0x262
+        0x258
+        0x24e
+        0x244
+        0x23a
+        0x230
+        0x226
+        0x220
+        0x21a
+        0x214
+        0x20e
+        0x208
+        0x1fa
+        0x1ec
+        0x1de
+        0x1d0
+        0x1c2
+        0x1cc
+        0x1d6
+        0x1e0
+        0x1ea
+        0x1f4
+        0x258
+        0x2bc
+        0x320
+        0x384
+        0x3e8
+    .end array-data
+.end method
+
+.method constructor <init>()V
+    .locals 0
+
+    .line 8
+    invoke-direct {p0}, Lcom/xiaopeng/carcontrol/viewmodel/endurance/HvacConsumptionTable;-><init>()V
+
+    return-void
+.end method
+
+.method private checkOuterTempIdx(F)I
+    .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "outTemp"
+        }
+    .end annotation
+
+    const/high16 v0, -0x3e380000    # -25.0f
+
+    cmpg-float v0, p1, v0
+
+    const/4 v1, 0x0
+
+    if-gez v0, :cond_0
+
+    move p1, v1
+
+    goto :goto_0
+
+    :cond_0
+    const/high16 v0, 0x42340000    # 45.0f
+
+    cmpl-float v0, p1, v0
+
+    if-lez v0, :cond_1
+
+    const/16 p1, 0x46
+
+    goto :goto_0
+
+    :cond_1
+    float-to-double v2, p1
+
+    .line 363
+    invoke-static {v2, v3}, Ljava/lang/Math;->ceil(D)D
+
+    move-result-wide v2
+
+    double-to-int p1, v2
+
+    add-int/lit8 p1, p1, 0x19
+
+    div-int/lit8 p1, p1, 0x1
+
+    .line 366
+    :goto_0
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "checkOuterTempIdx: "
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v2, "HvacConsumptionTable"
+
+    invoke-static {v2, v0, v1}, Lcom/xiaopeng/carcontrol/util/LogUtils;->i(Ljava/lang/String;Ljava/lang/String;Z)V
+
+    return p1
+.end method
+
+.method private checkTargetTempIdx(F)I
+    .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "targetTemp"
+        }
+    .end annotation
+
+    const/high16 v0, 0x41900000    # 18.0f
+
+    cmpg-float v0, p1, v0
+
+    const/4 v1, 0x0
+
+    if-gez v0, :cond_0
+
+    move p1, v1
+
+    goto :goto_0
+
+    :cond_0
+    const/high16 v0, 0x42000000    # 32.0f
+
+    cmpl-float v0, p1, v0
+
+    if-lez v0, :cond_1
+
+    const/16 p1, 0xe
+
+    goto :goto_0
+
+    :cond_1
+    float-to-double v2, p1
+
+    .line 349
+    invoke-static {v2, v3}, Ljava/lang/Math;->ceil(D)D
+
+    move-result-wide v2
+
+    double-to-int p1, v2
+
+    add-int/lit8 p1, p1, -0x12
+
+    div-int/lit8 p1, p1, 0x1
+
+    .line 352
+    :goto_0
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "checkTargetTempIdx: "
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v2, "HvacConsumptionTable"
+
+    invoke-static {v2, v0, v1}, Lcom/xiaopeng/carcontrol/util/LogUtils;->i(Ljava/lang/String;Ljava/lang/String;Z)V
+
+    return p1
+.end method
+
+
+# virtual methods
+.method public getHvacStableConsumption(ZFF)I
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "isInnerCircle",
+            "targetTemp",
+            "outTemp"
+        }
+    .end annotation
+
+    .line 328
+    invoke-direct {p0, p2}, Lcom/xiaopeng/carcontrol/viewmodel/endurance/D55HvacConsumptionTable;->checkTargetTempIdx(F)I
+
+    move-result p2
+
+    .line 329
+    invoke-direct {p0, p3}, Lcom/xiaopeng/carcontrol/viewmodel/endurance/D55HvacConsumptionTable;->checkOuterTempIdx(F)I
+
+    move-result p3
+
+    const-string v0, "HvacConsumptionTable"
+
+    const/4 v1, 0x0
+
+    if-eqz p1, :cond_0
+
+    .line 332
+    :try_start_0
+    sget-object p1, Lcom/xiaopeng/carcontrol/viewmodel/endurance/D55HvacConsumptionTable;->INNER_TABLE:[[I
+
+    aget-object p1, p1, p2
+
+    aget p1, p1, p3
+
+    goto :goto_0
+
+    :cond_0
+    sget-object p1, Lcom/xiaopeng/carcontrol/viewmodel/endurance/D55HvacConsumptionTable;->OUTER_TABLE:[[I
+
+    aget-object p1, p1, p2
+
+    aget p1, p1, p3
+
+    .line 334
+    :goto_0
+    new-instance p2, Ljava/lang/StringBuilder;
+
+    invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string p3, "Hvac stable consumption: "
+
+    invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p2
+
+    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object p2
+
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p2
+
+    invoke-static {v0, p2, v1}, Lcom/xiaopeng/carcontrol/util/LogUtils;->i(Ljava/lang/String;Ljava/lang/String;Z)V
+    :try_end_0
+    .catch Ljava/lang/IndexOutOfBoundsException; {:try_start_0 .. :try_end_0} :catch_0
+
+    return p1
+
+    :catch_0
+    const-string p1, "getHvacStableConsumption failed due to idx out of bound"
+
+    .line 337
+    invoke-static {v0, p1, v1}, Lcom/xiaopeng/carcontrol/util/LogUtils;->w(Ljava/lang/String;Ljava/lang/String;Z)V
+
+    return v1
+.end method

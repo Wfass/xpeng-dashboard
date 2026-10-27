@@ -1,0 +1,65 @@
+Signature-Version: 1.0
+Created-By: 1.0 (Android SignApk)
+SHA1-Digest-Manifest: Jzz+vEuxtMoq9T2Qz/1Up5xmGwY=
+X-Android-APK-Signed: 2, 3
+
+Name: AndroidManifest.xml
+SHA1-Digest: PK6mRpmEZn23w+jtDv74ggMDNWQ=
+
+Name: classes.dex
+SHA1-Digest: AWVIZ+lRShe7MuHDMQMk119MC4I=
+
+Name: res/drawable-hdpi-v4/car_ic_error.png
+SHA1-Digest: nX6peI7GmDI2hgWUseB8YBsMvwc=
+
+Name: res/drawable-hdpi-v4/car_ic_mode.png
+SHA1-Digest: 1T9vk9HQs+4s+6JxeEi1W0COSAI=
+
+Name: res/drawable-mdpi-v4/car_ic_error.png
+SHA1-Digest: R7DOs4b8WExkUUjDeDixqveLFjU=
+
+Name: res/drawable-mdpi-v4/car_ic_mode.png
+SHA1-Digest: d4SxAdMJu3hj0nwLcIyNneCcpWw=
+
+Name: res/drawable-xhdpi-v4/car_ic_error.png
+SHA1-Digest: tKQk2xldU/jEhsvoQ0gV3Bd9FaE=
+
+Name: res/drawable-xhdpi-v4/car_ic_mode.png
+SHA1-Digest: pGi5yewh9+KPHfWiqdGrxxqMI7s=
+
+Name: res/drawable-xxhdpi-v4/car_ic_error.png
+SHA1-Digest: pbedeD6Qu/zWUDH6cggDAInksjo=
+
+Name: res/drawable-xxhdpi-v4/car_ic_mode.png
+SHA1-Digest: TM+DeQuLiIlIqptCrT4EY8aTjLE=
+
+Name: res/drawable/exit_button_background.xml
+SHA1-Digest: vASp5RPHSbgnObcyFYqqMthR2DQ=
+
+Name: res/drawable/exit_button_ripple_background.xml
+SHA1-Digest: ArD8Fvl6y0VlGkHhVg5woUIHIi0=
+
+Name: res/drawable/yw_1222_0335.jpg
+SHA1-Digest: /i8cKalbnykcSKidug5hDjibqO8=
+
+Name: res/layout/activity_blocking.xml
+SHA1-Digest: aMQCM9PIhPHbOLtjHn+QqZjKi0s=
+
+Name: res/layout/instrument_cluster.xml
+SHA1-Digest: VESRxZjQa8n0Zxt2kVulYUS4+nY=
+
+Name: res/raw/car_config.json
+SHA1-Digest: lUAXXvRHNC4IWaWwDmxnyzRnqFI=
+
+Name: res/raw/keep.xml
+SHA1-Digest: qPUpxpak/nhIIc72/o6AUb7j9NY=
+
+Name: res/xml/car_ux_restrictions_map.xml
+SHA1-Digest: QUHe1WNeKhoTs8HbrZnAztdcl4I=
+
+Name: res/xml/car_volume_groups.xml
+SHA1-Digest: wu/ZrKVXro6EmsFtrpFv/oPNXoA=
+
+Name: resources.arsc
+SHA1-Digest: /2icq97WYF21JDmVOmvk73ZwsrA=
+

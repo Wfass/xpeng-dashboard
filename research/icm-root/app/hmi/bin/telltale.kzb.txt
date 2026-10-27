@@ -1,0 +1,164 @@
+﻿Files:
+PropertyTypeLibrary/CubemapColor
+PropertyTypeLibrary/Main.ChargingControProp
+PropertyTypeLibrary/Main.TurnLeftLightControProp
+PropertyTypeLibrary/Main.TurnRightLightControProp
+PropertyTypeLibrary/offset
+PropertyTypeLibrary/smoothing
+PropertyTypeLibrary/Texture2
+PropertyTypeLibrary/TextureCube
+PropertyTypeLibrary/TAG_PROPERTY_TYPE_Transparent
+Animation Clips/Animation Clip
+Screens/Screen/RootPage/Viewport 2D/Scene/Camera
+Screens/Screen/RootPage/Viewport 2D/Scene/Directional Light
+Screens/Screen/RootPage/Viewport 2D/Scene
+Screens/Screen/RootPage/Viewport 2D
+Screens/Screen/RootPage/Telltale
+Screens/Screen/<ResourceDictionaryInNode>
+Screens/Screen/RootPage
+Screens/Screen
+Material Types/VertexPhong
+Materials/VertexPhongMaterial
+Brushes/DefaultBackground
+Prefabs/Telltale/Telltale/TelltaleComponentType
+Prefabs/Telltale/Telltale/UnsetTelltaleTelltaleComponent
+Prefabs/Telltale/Telltale/TurnLight
+Prefabs/Telltale/Telltale
+Prefabs/TurnLight/TurnLight/Right
+Prefabs/TurnLight/TurnLight/Left
+Prefabs/TurnLight/TurnLight/DataLayer
+Prefabs/TurnLight/TurnLight
+Prefabs/Telltale
+Prefabs/TurnLight
+Page Transitions/Default Transitions
+Resource Files/Images/cubemaps/DefaultCubeMap.dds posX.png
+Resource Files/Images/cubemaps/DefaultCubeMap.dds negX.png
+Resource Files/Images/cubemaps/DefaultCubeMap.dds posY.png
+Resource Files/Images/cubemaps/DefaultCubeMap.dds negY.png
+Resource Files/Images/cubemaps/DefaultCubeMap.dds posZ.png
+Resource Files/Images/cubemaps/DefaultCubeMap.dds negZ.png
+Resource Files/Images/DefaultBackground.png
+Resource Files/Images/DefaultTextureImage.png
+Resource Files/Images/EPB电子刹车故障.png
+Resource Files/Images/EPS电子助力转向.png
+Resource Files/Images/ESP电子稳定系统.png
+Resource Files/Images/ESP电子稳定系统off.png
+Resource Files/Images/HDC陡坡缓降控制系统.png
+Resource Files/Images/XPILOT故障.png
+Resource Files/Images/电动系统故障.png
+Resource Files/Images/电机及控制器过热.png
+Resource Files/Images/动力蓄电池低荷电状态.png
+Resource Files/Images/动力蓄电池高温.png
+Resource Files/Images/动力蓄电池故障.png
+Resource Files/Images/动力蓄电池过冷.png
+Resource Files/Images/动力蓄电池切断黄色.png
+Resource Files/Images/防盗启动锁止 系统指示灯.png
+Resource Files/Images/驱动电机故障.png
+Resource Files/Images/驱动功率限制.png
+Resource Files/Images/热管理冷却液温度高.png
+Resource Files/Images/洗涤液位低.png
+Resource Files/Images/智能系统故障.png
+Resource Files/Images/制动防抱系统故障.png
+Resource Files/Images/后排左侧座椅安全带未系.png
+Resource Files/Images/后排左侧座椅安全带未系2.png
+Resource Files/Images/后排中间座椅安全带未系.png
+Resource Files/Images/后排中间座椅安全带未系2.png
+Resource Files/Images/后排右侧座椅安全带提示灯.png
+Resource Files/Images/后排右侧座椅安全带提示灯2.png
+Resource Files/Images/车门未关好.png
+Resource Files/Images/车门未关好1.png
+Resource Files/Images/车门未关好2.png
+Resource Files/Images/车门未关好3.png
+Resource Files/Images/车门未关好4.png
+Resource Files/Images/主驾座椅安全带未系.png
+Resource Files/Images/AVH自动驻车制动.png
+Resource Files/Images/AVH自动驻车制动故障.png
+Resource Files/Images/位置灯.png
+Resource Files/Images/前照灯近光.png
+Resource Files/Images/前照灯远光.png
+Resource Files/Images/驻车制动器处于制动状态.png
+Resource Files/Images/副驾座椅安全带未系.png
+Resource Files/Images/制动系统故障（制动防抱除外）.png
+Resource Files/Images/外部充电线连接.png
+Resource Files/Images/定时充电.png
+Resource Files/Images/胎压异常、胎压监测系统故障.png
+Resource Files/Images/安全气囊故障.png
+Resource Files/Images/12V蓄电池充电.png
+Resource Files/Images/前碰撞预警 指示灯.png
+Resource Files/Images/前碰撞预警功能关闭 指示灯.png
+Resource Files/Images/后雾灯.png
+Resource Files/Images/自动前照灯近光.png
+Resource Files/Images/自适应前照灯远光.png
+Resource Files/Images/自适应前照灯远光故障.png
+Resource Files/Images/主警告灯.png
+Resource Files/Images/左转向灯.png
+Resource Files/Images/右转向灯.png
+Resource Files/Images/Null.png
+Resource Files/Images/自适应前照灯远光开启.png
+Resource Files/Images/ibooster 制动系统故障指示灯.png
+Resource Files/Images/前碰撞预警功能关闭2 指示灯.png
+Resource Files/Images/自适应远光指示灯绿色.png
+Textures/UnsetTelltale/EPS电子助力转向
+Textures/UnsetTelltale/ESP电子稳定系统
+Textures/UnsetTelltale/ESP电子稳定系统off
+Textures/UnsetTelltale/HDC陡坡缓降控制系统
+Textures/UnsetTelltale/XPILOT故障
+Textures/UnsetTelltale/电动系统故障
+Textures/UnsetTelltale/电机及控制器过热
+Textures/UnsetTelltale/动力蓄电池低荷电状态
+Textures/UnsetTelltale/动力蓄电池高温
+Textures/UnsetTelltale/动力蓄电池故障
+Textures/UnsetTelltale/动力蓄电池过冷
+Textures/UnsetTelltale/动力蓄电池切断黄色
+Textures/UnsetTelltale/防盗启动锁止 系统指示灯
+Textures/UnsetTelltale/驱动电机故障
+Textures/UnsetTelltale/驱动功率限制
+Textures/UnsetTelltale/热管理冷却液温度高
+Textures/UnsetTelltale/洗涤液位低
+Textures/UnsetTelltale/智能系统故障
+Textures/UnsetTelltale/Null
+Textures/UnsetTelltale/前碰撞预警功能关闭
+Textures/Telltale/1-1/制动防抱系统故障
+Textures/Telltale/1-2/后排左侧座椅安全带未系
+Textures/Telltale/1-2/后排左侧座椅安全带未系2
+Textures/Telltale/1-3/后排中间座椅安全带未系
+Textures/Telltale/1-3/后排中间座椅安全带未系2
+Textures/Telltale/1-4/后排右侧座椅安全带提示灯
+Textures/Telltale/1-4/后排右侧座椅安全带提示灯2
+Textures/Telltale/1-5/车门未关好
+Textures/Telltale/1-5/车门未关好1
+Textures/Telltale/1-5/车门未关好2
+Textures/Telltale/1-5/车门未关好3
+Textures/Telltale/1-5/车门未关好4
+Textures/Telltale/1-6/主驾座椅安全带未系
+Textures/Telltale/1-7/AVH自动驻车制动
+Textures/Telltale/1-7/AVH自动驻车制动故障
+Textures/Telltale/1-8/位置灯
+Textures/Telltale/1-9/前照灯近光
+Textures/Telltale/1-9/前照灯远光
+Textures/Telltale/1-9/自动前照灯近光
+Textures/Telltale/1-10/驻车制动器处于制动状态
+Textures/Telltale/1-11/副驾座椅安全带未系
+Textures/Telltale/1-12/EPB电子刹车故障
+Textures/Telltale/1-13/制动系统故障（制动防抱除外）
+Textures/Telltale/1-13/ibooster 制动系统故障指示灯
+Textures/Telltale/1-14/外部充电线连接
+Textures/Telltale/1-15/定时充电
+Textures/Telltale/1-16/胎压异常、胎压监测系统故障
+Textures/Telltale/2-1/安全气囊故障
+Textures/Telltale/2-2/12V蓄电池充电
+Textures/Telltale/2-3/前碰撞预警 指示灯
+Textures/Telltale/2-3/前碰撞预警功能关闭 指示灯
+Textures/Telltale/2-4/后雾灯
+Textures/Telltale/2-5/自适应前照灯远光
+Textures/Telltale/2-5/自适应前照灯远光故障
+Textures/Telltale/2-5/自适应前照灯远光开启
+Textures/Telltale/2-5/自适应远光指示灯绿色
+Textures/Telltale/2-6/主警告灯
+Textures/Telltale/3-1/左转向灯
+Textures/Telltale/3-2/右转向灯
+Textures/DefaultBackground
+Textures/Default Texture
+Styles/Text Block 2D Style
+State Managers/TurnLight
+/telltale

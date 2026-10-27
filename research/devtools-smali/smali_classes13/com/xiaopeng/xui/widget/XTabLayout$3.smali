@@ -1,0 +1,183 @@
+.class Lcom/xiaopeng/xui/widget/XTabLayout$3;
+.super Ljava/lang/Object;
+.source "XTabLayout.java"
+
+# interfaces
+.implements Lcom/xiaopeng/xui/widget/XTabLayout$a;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/xiaopeng/xui/widget/XTabLayout;->b(IZZ)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic ahm:Lcom/xiaopeng/xui/widget/XTabLayout;
+
+.field final synthetic ahq:Z
+
+.field final synthetic ahr:Landroid/view/View;
+
+.field final synthetic val$fromUser:Z
+
+.field final synthetic val$index:I
+
+
+# direct methods
+.method constructor <init>(Lcom/xiaopeng/xui/widget/XTabLayout;ZLandroid/view/View;ZI)V
+    .locals 0
+
+    .line 512
+    iput-object p1, p0, Lcom/xiaopeng/xui/widget/XTabLayout$3;->ahm:Lcom/xiaopeng/xui/widget/XTabLayout;
+
+    iput-boolean p2, p0, Lcom/xiaopeng/xui/widget/XTabLayout$3;->ahq:Z
+
+    iput-object p3, p0, Lcom/xiaopeng/xui/widget/XTabLayout$3;->ahr:Landroid/view/View;
+
+    iput-boolean p4, p0, Lcom/xiaopeng/xui/widget/XTabLayout$3;->val$fromUser:Z
+
+    iput p5, p0, Lcom/xiaopeng/xui/widget/XTabLayout$3;->val$index:I
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onEnd()V
+    .locals 5
+
+    .line 526
+    iget-boolean v0, p0, Lcom/xiaopeng/xui/widget/XTabLayout$3;->ahq:Z
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, p0, Lcom/xiaopeng/xui/widget/XTabLayout$3;->ahm:Lcom/xiaopeng/xui/widget/XTabLayout;
+
+    invoke-static {v0}, Lcom/xiaopeng/xui/widget/XTabLayout;->b(Lcom/xiaopeng/xui/widget/XTabLayout;)Lcom/xiaopeng/xui/widget/XTabLayout$b;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_1
+
+    .line 527
+    iget-object v0, p0, Lcom/xiaopeng/xui/widget/XTabLayout$3;->ahr:Landroid/view/View;
+
+    const/4 v1, 0x1
+
+    if-nez v0, :cond_0
+
+    .line 528
+    iget-object v0, p0, Lcom/xiaopeng/xui/widget/XTabLayout$3;->ahm:Lcom/xiaopeng/xui/widget/XTabLayout;
+
+    invoke-static {v0}, Lcom/xiaopeng/xui/widget/XTabLayout;->b(Lcom/xiaopeng/xui/widget/XTabLayout;)Lcom/xiaopeng/xui/widget/XTabLayout$b;
+
+    move-result-object v0
+
+    iget-object v2, p0, Lcom/xiaopeng/xui/widget/XTabLayout$3;->ahm:Lcom/xiaopeng/xui/widget/XTabLayout;
+
+    const/4 v3, -0x1
+
+    iget-boolean v4, p0, Lcom/xiaopeng/xui/widget/XTabLayout$3;->val$fromUser:Z
+
+    invoke-interface {v0, v2, v3, v1, v4}, Lcom/xiaopeng/xui/widget/XTabLayout$b;->d(Lcom/xiaopeng/xui/widget/XTabLayout;IZZ)V
+
+    goto :goto_0
+
+    .line 530
+    :cond_0
+    iget-object v0, p0, Lcom/xiaopeng/xui/widget/XTabLayout$3;->ahm:Lcom/xiaopeng/xui/widget/XTabLayout;
+
+    invoke-static {v0}, Lcom/xiaopeng/xui/widget/XTabLayout;->b(Lcom/xiaopeng/xui/widget/XTabLayout;)Lcom/xiaopeng/xui/widget/XTabLayout$b;
+
+    move-result-object v0
+
+    iget-object v2, p0, Lcom/xiaopeng/xui/widget/XTabLayout$3;->ahm:Lcom/xiaopeng/xui/widget/XTabLayout;
+
+    iget v3, p0, Lcom/xiaopeng/xui/widget/XTabLayout$3;->val$index:I
+
+    iget-boolean v4, p0, Lcom/xiaopeng/xui/widget/XTabLayout$3;->val$fromUser:Z
+
+    invoke-interface {v0, v2, v3, v1, v4}, Lcom/xiaopeng/xui/widget/XTabLayout$b;->d(Lcom/xiaopeng/xui/widget/XTabLayout;IZZ)V
+
+    .line 533
+    :cond_1
+    :goto_0
+    iget-object v0, p0, Lcom/xiaopeng/xui/widget/XTabLayout$3;->ahm:Lcom/xiaopeng/xui/widget/XTabLayout;
+
+    iget-object v1, p0, Lcom/xiaopeng/xui/widget/XTabLayout$3;->ahm:Lcom/xiaopeng/xui/widget/XTabLayout;
+
+    invoke-virtual {v0, v1}, Lcom/xiaopeng/xui/widget/XTabLayout;->l(Landroid/view/View;)V
+
+    .line 534
+    return-void
+.end method
+
+.method public onStart()V
+    .locals 5
+
+    .line 515
+    iget-boolean v0, p0, Lcom/xiaopeng/xui/widget/XTabLayout$3;->ahq:Z
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, p0, Lcom/xiaopeng/xui/widget/XTabLayout$3;->ahm:Lcom/xiaopeng/xui/widget/XTabLayout;
+
+    invoke-static {v0}, Lcom/xiaopeng/xui/widget/XTabLayout;->b(Lcom/xiaopeng/xui/widget/XTabLayout;)Lcom/xiaopeng/xui/widget/XTabLayout$b;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_1
+
+    .line 516
+    iget-object v0, p0, Lcom/xiaopeng/xui/widget/XTabLayout$3;->ahr:Landroid/view/View;
+
+    const/4 v1, 0x1
+
+    if-nez v0, :cond_0
+
+    .line 517
+    iget-object v0, p0, Lcom/xiaopeng/xui/widget/XTabLayout$3;->ahm:Lcom/xiaopeng/xui/widget/XTabLayout;
+
+    invoke-static {v0}, Lcom/xiaopeng/xui/widget/XTabLayout;->b(Lcom/xiaopeng/xui/widget/XTabLayout;)Lcom/xiaopeng/xui/widget/XTabLayout$b;
+
+    move-result-object v0
+
+    iget-object v2, p0, Lcom/xiaopeng/xui/widget/XTabLayout$3;->ahm:Lcom/xiaopeng/xui/widget/XTabLayout;
+
+    const/4 v3, -0x1
+
+    iget-boolean v4, p0, Lcom/xiaopeng/xui/widget/XTabLayout$3;->val$fromUser:Z
+
+    invoke-interface {v0, v2, v3, v1, v4}, Lcom/xiaopeng/xui/widget/XTabLayout$b;->c(Lcom/xiaopeng/xui/widget/XTabLayout;IZZ)V
+
+    goto :goto_0
+
+    .line 519
+    :cond_0
+    iget-object v0, p0, Lcom/xiaopeng/xui/widget/XTabLayout$3;->ahm:Lcom/xiaopeng/xui/widget/XTabLayout;
+
+    invoke-static {v0}, Lcom/xiaopeng/xui/widget/XTabLayout;->b(Lcom/xiaopeng/xui/widget/XTabLayout;)Lcom/xiaopeng/xui/widget/XTabLayout$b;
+
+    move-result-object v0
+
+    iget-object v2, p0, Lcom/xiaopeng/xui/widget/XTabLayout$3;->ahm:Lcom/xiaopeng/xui/widget/XTabLayout;
+
+    iget v3, p0, Lcom/xiaopeng/xui/widget/XTabLayout$3;->val$index:I
+
+    iget-boolean v4, p0, Lcom/xiaopeng/xui/widget/XTabLayout$3;->val$fromUser:Z
+
+    invoke-interface {v0, v2, v3, v1, v4}, Lcom/xiaopeng/xui/widget/XTabLayout$b;->c(Lcom/xiaopeng/xui/widget/XTabLayout;IZZ)V
+
+    .line 522
+    :cond_1
+    :goto_0
+    return-void
+.end method

@@ -1,0 +1,53 @@
+.class Lcom/xiaopeng/xuimanager/operation/OperationManager$OperationManagerHolder;
+.super Ljava/lang/Object;
+.source "OperationManager.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/xiaopeng/xuimanager/operation/OperationManager;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0xa
+    name = "OperationManagerHolder"
+.end annotation
+
+
+# static fields
+.field private static final INSTANCE:Lcom/xiaopeng/xuimanager/operation/OperationManager;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    .line 81
+    new-instance v0, Lcom/xiaopeng/xuimanager/operation/OperationManager;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, v1}, Lcom/xiaopeng/xuimanager/operation/OperationManager;-><init>(Lcom/xiaopeng/xuimanager/operation/OperationManager$1;)V
+
+    sput-object v0, Lcom/xiaopeng/xuimanager/operation/OperationManager$OperationManagerHolder;->INSTANCE:Lcom/xiaopeng/xuimanager/operation/OperationManager;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 0
+
+    .line 80
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method static synthetic access$200()Lcom/xiaopeng/xuimanager/operation/OperationManager;
+    .locals 1
+
+    .line 80
+    sget-object v0, Lcom/xiaopeng/xuimanager/operation/OperationManager$OperationManagerHolder;->INSTANCE:Lcom/xiaopeng/xuimanager/operation/OperationManager;
+
+    return-object v0
+.end method

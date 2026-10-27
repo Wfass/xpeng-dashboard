@@ -1,0 +1,19 @@
+.class public interface abstract Lcom/xiaopeng/musicradio/music/concentration/daily/view/c;
+.super Ljava/lang/Object;
+.source "INewSongView.java"
+
+# interfaces
+.implements Lcom/xiaopeng/musicradio/widget/lifecycle/d;
+
+
+# virtual methods
+.method public abstract getData(Ljava/util/ArrayList;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/ArrayList<",
+            "Lcom/xiaopeng/musicradio/bean/db/MusicInfo;",
+            ">;)V"
+        }
+    .end annotation
+.end method

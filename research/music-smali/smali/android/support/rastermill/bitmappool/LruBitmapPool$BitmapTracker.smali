@@ -1,0 +1,22 @@
+.class interface abstract Landroid/support/rastermill/bitmappool/LruBitmapPool$BitmapTracker;
+.super Ljava/lang/Object;
+.source "LruBitmapPool.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/rastermill/bitmappool/LruBitmapPool;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x60a
+    name = "BitmapTracker"
+.end annotation
+
+
+# virtual methods
+.method public abstract add(Landroid/graphics/Bitmap;)V
+.end method
+
+.method public abstract remove(Landroid/graphics/Bitmap;)V
+.end method

@@ -1,0 +1,47 @@
+.class Lcom/xiaopeng/musicradio/webview/view/WebViewFragment$1;
+.super Ljava/lang/Object;
+.source "WebViewFragment.java"
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/xiaopeng/musicradio/webview/view/WebViewFragment;->setView()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Lcom/xiaopeng/musicradio/webview/view/WebViewFragment;
+
+
+# direct methods
+.method constructor <init>(Lcom/xiaopeng/musicradio/webview/view/WebViewFragment;)V
+    .locals 0
+
+    .line 121
+    iput-object p1, p0, Lcom/xiaopeng/musicradio/webview/view/WebViewFragment$1;->a:Lcom/xiaopeng/musicradio/webview/view/WebViewFragment;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onClick(Landroid/view/View;)V
+    .locals 0
+
+    .line 124
+    iget-object p1, p0, Lcom/xiaopeng/musicradio/webview/view/WebViewFragment$1;->a:Lcom/xiaopeng/musicradio/webview/view/WebViewFragment;
+
+    invoke-virtual {p1}, Lcom/xiaopeng/musicradio/webview/view/WebViewFragment;->onBackPressed()V
+
+    return-void
+.end method

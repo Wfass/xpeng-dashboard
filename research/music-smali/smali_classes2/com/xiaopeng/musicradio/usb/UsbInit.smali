@@ -1,0 +1,83 @@
+.class public Lcom/xiaopeng/musicradio/usb/UsbInit;
+.super Lbex;
+.source "UsbInit.java"
+
+
+# static fields
+.field private static final TAG:Ljava/lang/String; = "UsbInit"
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 12
+    invoke-direct {p0}, Lbex;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public igOff()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public igOn()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public initDelay()V
+    .locals 2
+
+    const-string v0, "UsbInit"
+
+    const-string v1, "initDelay: ====="
+
+    .line 25
+    invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 26
+    invoke-static {}, Lcom/xiaopeng/musicradio/usb/model/b;->a()Lcom/xiaopeng/musicradio/usb/model/b;
+
+    return-void
+.end method
+
+.method public initNow()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public initPlayer()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public onMusicBinded()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public registerService()V
+    .locals 3
+
+    .line 31
+    invoke-static {}, Lcom/xiaopeng/musicradio/service/c;->a()Lcom/xiaopeng/musicradio/service/c;
+
+    move-result-object v0
+
+    const-class v1, Lbqr;
+
+    const-string v2, "com.xiaopeng.musicradio.service.UsbService"
+
+    invoke-virtual {v0, v1, v2}, Lcom/xiaopeng/musicradio/service/c;->a(Ljava/lang/Class;Ljava/lang/String;)V
+
+    return-void
+.end method

@@ -1,0 +1,3675 @@
+.class public Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/xiaopeng/common/mapdisplay/IXPMapSurfaceListener;
+.implements Lcom/xiaopeng/common/sr/ISRInfoChangedListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper$b;
+    }
+.end annotation
+
+
+# static fields
+.field public static final u:Lcom/xiaopeng/core/util/L$Tag;
+
+.field public static final v:Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;
+
+.field public static w:Lcom/xiaopeng/montecarlo/service/minimap/MiniMapXPCarStateListener;
+
+
+# instance fields
+.field public a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+.field public b:I
+
+.field public c:I
+
+.field public d:Lcom/xiaopeng/montecarlo/service/minimap/MiniMapAccountEventCallback;
+
+.field public e:Lcom/xiaopeng/montecarlo/service/minimap/MiniNaviListener;
+
+.field public f:Lcom/xiaopeng/montecarlo/service/minimap/dynamiclevel/MiniMapGuideDynamicLevelHelper;
+
+.field public g:Lcom/xiaopeng/montecarlo/service/minimap/dynamiclevel/MiniMapCruiseDynamicLevelHelper;
+
+.field public h:Z
+
+.field public i:I
+
+.field public j:Z
+
+.field public k:[B
+
+.field public l:Landroid/graphics/Bitmap;
+
+.field public m:Landroid/view/Surface;
+
+.field public final n:Ljava/util/concurrent/locks/Lock;
+
+.field public o:Z
+
+.field public final p:Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper$b;
+
+.field public q:Lcom/xiaopeng/montecarlo/service/minimap/LocalMiniMapSurface;
+
+.field public r:I
+
+.field public final s:Landroid/os/Handler;
+
+.field public t:Lcom/xiaopeng/montecarlo/service/minimap/LocalMiniMapSurface$e;
+
+
+# direct methods
+.method public static constructor <clinit>()V
+    .registers 2
+
+    .line 1
+    new-instance v0, Lcom/xiaopeng/core/util/L$Tag;
+
+    const-string v1, "MiniMapServiceHelper"
+
+    invoke-direct {v0, v1}, Lcom/xiaopeng/core/util/L$Tag;-><init>(Ljava/lang/String;)V
+
+    sput-object v0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->u:Lcom/xiaopeng/core/util/L$Tag;
+
+    .line 2
+    new-instance v0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;
+
+    invoke-direct {v0}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;-><init>()V
+
+    sput-object v0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->v:Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .registers 3
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/16 v0, 0x208
+
+    .line 2
+    iput v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->b:I
+
+    const/16 v0, 0x244
+
+    .line 3
+    iput v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->c:I
+
+    const/4 v0, 0x1
+
+    .line 4
+    iput-boolean v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->h:Z
+
+    const/4 v1, 0x0
+
+    .line 5
+    iput-boolean v1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->j:Z
+
+    const/4 v1, 0x0
+
+    .line 6
+    iput-object v1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->m:Landroid/view/Surface;
+
+    .line 7
+    new-instance v1, Ljava/util/concurrent/locks/ReentrantLock;
+
+    invoke-direct {v1}, Ljava/util/concurrent/locks/ReentrantLock;-><init>()V
+
+    iput-object v1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->n:Ljava/util/concurrent/locks/Lock;
+
+    .line 8
+    iput-boolean v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->o:Z
+
+    const/4 v0, 0x2
+
+    .line 9
+    iput v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->r:I
+
+    .line 10
+    new-instance v0, Landroid/os/Handler;
+
+    invoke-static {}, Lcom/xiaopeng/core/util/WorkThreadUtil;->getInstance()Lcom/xiaopeng/core/util/WorkThreadUtil;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/xiaopeng/core/util/WorkThreadUtil;->getMiniMapThreadLooper()Landroid/os/Looper;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+
+    iput-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->s:Landroid/os/Handler;
+
+    .line 11
+    new-instance v0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper$a;
+
+    invoke-direct {v0, p0}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper$a;-><init>(Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;)V
+
+    iput-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->t:Lcom/xiaopeng/montecarlo/service/minimap/LocalMiniMapSurface$e;
+
+    .line 12
+    sget-object v0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->u:Lcom/xiaopeng/core/util/L$Tag;
+
+    const-string v1, "MiniMapServiceHelper()"
+
+    invoke-static {v0, v1}, Lcom/xiaopeng/core/util/L;->i(Lcom/xiaopeng/core/util/L$Tag;Ljava/lang/String;)V
+
+    .line 13
+    new-instance v0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper$b;
+
+    invoke-direct {v0, p0}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper$b;-><init>(Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;)V
+
+    iput-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->p:Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper$b;
+
+    return-void
+.end method
+
+.method private synthetic A()V
+    .registers 2
+
+    .line 1
+    invoke-static {}, Lcom/xiaopeng/common/sr/SRNaviManager;->getInstance()Lcom/xiaopeng/common/sr/SRNaviManager;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/xiaopeng/common/sr/SRNaviManager;->canShowSRScene()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_f
+
+    const/4 v0, 0x1
+
+    .line 2
+    invoke-virtual {p0, v0}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->r(Z)V
+
+    goto :goto_13
+
+    :cond_f
+    const/4 v0, 0x0
+
+    .line 3
+    invoke-virtual {p0, v0}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->r(Z)V
+
+    :goto_13
+    return-void
+.end method
+
+.method private synthetic C(IILandroid/view/Surface;)V
+    .registers 7
+
+    .line 1
+    sget-object v0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->u:Lcom/xiaopeng/core/util/L$Tag;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v2, "surfaceCreate() start width= "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v2, " height= "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Lcom/xiaopeng/core/util/L;->i(Lcom/xiaopeng/core/util/L$Tag;Ljava/lang/String;)V
+
+    .line 2
+    iput p1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->b:I
+
+    .line 3
+    iput p2, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->c:I
+
+    .line 4
+    iget-object v1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    if-nez v1, :cond_31
+
+    const-string/jumbo p1, "surfaceCreate() mMapViewWrapper = null"
+
+    .line 5
+    invoke-static {v0, p1}, Lcom/xiaopeng/core/util/L;->i(Lcom/xiaopeng/core/util/L$Tag;Ljava/lang/String;)V
+
+    .line 6
+    invoke-virtual {p0, p3}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->K(Landroid/view/Surface;)V
+
+    return-void
+
+    .line 7
+    :cond_31
+    invoke-virtual {p0, p3}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->K(Landroid/view/Surface;)V
+
+    .line 8
+    iget-object v1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    invoke-virtual {v1}, Lcom/xiaopeng/common/mapdisplay/MapViewWrapper;->getGLMapView()Lcom/autonavi/gbl/map/MapView;
+
+    move-result-object v1
+
+    if-nez v1, :cond_42
+
+    const-string p1, "glMapView is null"
+
+    .line 9
+    invoke-static {v0, p1}, Lcom/xiaopeng/core/util/L;->w(Lcom/xiaopeng/core/util/L$Tag;Ljava/lang/String;)V
+
+    return-void
+
+    .line 10
+    :cond_42
+    iget-object v1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    invoke-static {}, Lcom/xiaopeng/common/theme/LocalThemeManager;->getInstance()Lcom/xiaopeng/common/theme/LocalThemeManager;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Lcom/xiaopeng/common/theme/LocalThemeManager;->getMapModeByTheme()I
+
+    move-result v2
+
+    invoke-virtual {v1, p3, p1, p2, v2}, Lcom/xiaopeng/common/mapdisplay/MapViewWrapper;->bindSurface(Landroid/view/Surface;III)V
+
+    .line 11
+    iget-object p1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    invoke-virtual {p1}, Lcom/xiaopeng/common/mapdisplay/MapViewWrapper;->resetCrossImgShowRect()V
+
+    .line 12
+    iget-object p1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    invoke-virtual {p1}, Lcom/xiaopeng/common/mapdisplay/MapViewWrapper;->unCreateBitmapFromGLSurface()V
+
+    .line 13
+    invoke-static {}, Lcom/xiaopeng/core/util/RootUtil;->startExceptionWatcher()V
+
+    const-string/jumbo p1, "surfaceCreate() end"
+
+    .line 14
+    invoke-static {v0, p1}, Lcom/xiaopeng/core/util/L;->i(Lcom/xiaopeng/core/util/L$Tag;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method private synthetic E()V
+    .registers 2
+
+    const/4 v0, 0x0
+
+    .line 1
+    invoke-virtual {p0, v0}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->K(Landroid/view/Surface;)V
+
+    .line 2
+    invoke-static {}, Lcom/xiaopeng/core/util/RootUtil;->stopExceptionWatcher()V
+
+    .line 3
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    if-eqz v0, :cond_e
+
+    .line 4
+    invoke-virtual {v0}, Lcom/xiaopeng/common/mapdisplay/MapViewWrapper;->unbindSurface()V
+
+    :cond_e
+    return-void
+.end method
+
+.method private synthetic G(IILandroid/view/Surface;)V
+    .registers 6
+
+    .line 1
+    iput p1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->b:I
+
+    .line 2
+    iput p2, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->c:I
+
+    .line 3
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    if-nez v0, :cond_14
+
+    .line 4
+    sget-object p1, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->u:Lcom/xiaopeng/core/util/L$Tag;
+
+    const-string/jumbo p2, "surfaceSizeChanged() mMapViewWrapper = null"
+
+    invoke-static {p1, p2}, Lcom/xiaopeng/core/util/L;->i(Lcom/xiaopeng/core/util/L$Tag;Ljava/lang/String;)V
+
+    .line 5
+    invoke-virtual {p0, p3}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->K(Landroid/view/Surface;)V
+
+    return-void
+
+    .line 6
+    :cond_14
+    invoke-virtual {p0, p3}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->K(Landroid/view/Surface;)V
+
+    .line 7
+    invoke-static {}, Lcom/xiaopeng/core/util/RootUtil;->stopExceptionWatcher()V
+
+    .line 8
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    invoke-virtual {v0}, Lcom/xiaopeng/common/mapdisplay/MapViewWrapper;->getGLMapView()Lcom/autonavi/gbl/map/MapView;
+
+    move-result-object v0
+
+    if-nez v0, :cond_23
+
+    return-void
+
+    .line 9
+    :cond_23
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    invoke-static {}, Lcom/xiaopeng/common/theme/LocalThemeManager;->getInstance()Lcom/xiaopeng/common/theme/LocalThemeManager;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/xiaopeng/common/theme/LocalThemeManager;->getMapModeByTheme()I
+
+    move-result v1
+
+    invoke-virtual {v0, p3, p1, p2, v1}, Lcom/xiaopeng/common/mapdisplay/MapViewWrapper;->bindSurface(Landroid/view/Surface;III)V
+
+    .line 10
+    iget-object p3, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    invoke-virtual {p3, p1, p2}, Lcom/xiaopeng/common/mapdisplay/MapViewWrapper;->resetMapviewPort(II)V
+
+    .line 11
+    iget-object p1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    invoke-virtual {p1}, Lcom/xiaopeng/common/mapdisplay/MapViewWrapper;->resetCrossImgShowRect()V
+
+    .line 12
+    iget-object p1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    invoke-virtual {p1}, Lcom/xiaopeng/common/mapdisplay/MapViewWrapper;->unCreateBitmapFromGLSurface()V
+
+    const/4 p1, 0x0
+
+    .line 13
+    iput-boolean p1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->j:Z
+
+    .line 14
+    invoke-static {}, Lcom/xiaopeng/core/util/RootUtil;->startExceptionWatcher()V
+
+    return-void
+.end method
+
+.method public static synthetic a()Lcom/xiaopeng/core/util/L$Tag;
+    .registers 1
+
+    .line 1
+    sget-object v0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->u:Lcom/xiaopeng/core/util/L$Tag;
+
+    return-object v0
+.end method
+
+.method public static synthetic b(Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;)Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+    .registers 1
+
+    .line 1
+    iget-object p0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    return-object p0
+.end method
+
+.method public static synthetic c(Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;)Landroid/graphics/Bitmap;
+    .registers 1
+
+    .line 1
+    iget-object p0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->l:Landroid/graphics/Bitmap;
+
+    return-object p0
+.end method
+
+.method public static synthetic d(Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;)Z
+    .registers 1
+
+    .line 1
+    iget-boolean p0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->h:Z
+
+    return p0
+.end method
+
+.method public static synthetic e(Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;)I
+    .registers 1
+
+    .line 1
+    iget p0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->r:I
+
+    return p0
+.end method
+
+.method public static synthetic f(Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;)Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper$b;
+    .registers 1
+
+    .line 1
+    iget-object p0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->p:Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper$b;
+
+    return-object p0
+.end method
+
+.method public static synthetic g(Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;)Landroid/os/Handler;
+    .registers 1
+
+    .line 1
+    iget-object p0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->s:Landroid/os/Handler;
+
+    return-object p0
+.end method
+
+.method public static getInstance()Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;
+    .registers 1
+
+    .line 1
+    sget-object v0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->v:Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;
+
+    return-object v0
+.end method
+
+.method public static synthetic h(Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;)Z
+    .registers 1
+
+    .line 1
+    iget-boolean p0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->j:Z
+
+    return p0
+.end method
+
+.method public static synthetic i(Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;)[B
+    .registers 1
+
+    .line 1
+    iget-object p0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->k:[B
+
+    return-object p0
+.end method
+
+.method public static synthetic j(Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;[B)[B
+    .registers 2
+
+    .line 1
+    iput-object p1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->k:[B
+
+    return-object p1
+.end method
+
+.method public static synthetic k(Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;)I
+    .registers 1
+
+    .line 1
+    iget p0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->b:I
+
+    return p0
+.end method
+
+.method public static synthetic l(Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;)I
+    .registers 1
+
+    .line 1
+    iget p0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->c:I
+
+    return p0
+.end method
+
+.method private synthetic u()V
+    .registers 3
+
+    .line 1
+    sget-object v0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->u:Lcom/xiaopeng/core/util/L$Tag;
+
+    const-string v1, "checkBLInitialized() BL init complete"
+
+    invoke-static {v0, v1}, Lcom/xiaopeng/core/util/L;->i(Lcom/xiaopeng/core/util/L$Tag;Ljava/lang/String;)V
+
+    .line 2
+    invoke-static {}, Lcom/xiaopeng/core/util/UiHandlerUtil;->getInstance()Lcom/xiaopeng/core/util/UiHandlerUtil;
+
+    move-result-object v0
+
+    new-instance v1, Lcom/xiaopeng/lib/bughunter/i6/a;
+
+    invoke-direct {v1, p0}, Lcom/xiaopeng/lib/bughunter/i6/a;-><init>(Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;)V
+
+    invoke-virtual {v0, v1}, Lcom/xiaopeng/core/util/UiHandlerUtil;->runOnUiThread(Ljava/lang/Runnable;)V
+
+    return-void
+.end method
+
+.method private synthetic w(I)V
+    .registers 4
+
+    .line 1
+    invoke-static {}, Lcom/xiaopeng/common/sr/LaneServiceManager;->getInstance()Lcom/xiaopeng/common/sr/LaneServiceManager;
+
+    move-result-object v0
+
+    .line 2
+    invoke-static {p1}, Lcom/xiaopeng/common/sr/SRDataUtil;->isNgpDriveMode(I)Z
+
+    move-result p1
+
+    if-nez p1, :cond_1c
+
+    invoke-virtual {p0}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->isMiniMapLaneMode()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_1c
+
+    invoke-static {}, Lcom/xiaopeng/common/sr/SRNaviManager;->getInstance()Lcom/xiaopeng/common/sr/SRNaviManager;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Lcom/xiaopeng/common/sr/SRNaviManager;->isLaneEnabled()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_1c
+
+    const/4 p1, 0x1
+
+    goto :goto_1d
+
+    :cond_1c
+    const/4 p1, 0x0
+
+    :goto_1d
+    const/4 v1, 0x3
+
+    .line 3
+    invoke-virtual {v0, v1, p1}, Lcom/xiaopeng/common/sr/LaneServiceManager;->openNaviLineRender(IZ)V
+
+    return-void
+.end method
+
+.method private synthetic y()V
+    .registers 2
+
+    .line 1
+    invoke-static {}, Lcom/xiaopeng/common/sr/SRNaviManager;->getInstance()Lcom/xiaopeng/common/sr/SRNaviManager;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/xiaopeng/common/sr/SRNaviManager;->canShowSRScene()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_f
+
+    const/4 v0, 0x1
+
+    .line 2
+    invoke-virtual {p0, v0}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->r(Z)V
+
+    goto :goto_13
+
+    :cond_f
+    const/4 v0, 0x0
+
+    .line 3
+    invoke-virtual {p0, v0}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->r(Z)V
+
+    :goto_13
+    return-void
+.end method
+
+
+# virtual methods
+.method public synthetic B()V
+    .registers 1
+
+    invoke-direct {p0}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->A()V
+
+    return-void
+.end method
+
+.method public synthetic D(IILandroid/view/Surface;)V
+    .registers 4
+
+    invoke-direct {p0, p1, p2, p3}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->C(IILandroid/view/Surface;)V
+
+    return-void
+.end method
+
+.method public synthetic F()V
+    .registers 1
+
+    invoke-direct {p0}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->E()V
+
+    return-void
+.end method
+
+.method public synthetic H(IILandroid/view/Surface;)V
+    .registers 4
+
+    invoke-direct {p0, p1, p2, p3}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->G(IILandroid/view/Surface;)V
+
+    return-void
+.end method
+
+.method public final I(Z)V
+    .registers 4
+
+    .line 1
+    iget-boolean v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->o:Z
+
+    if-eqz v0, :cond_16
+
+    .line 2
+    sget-object v0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->u:Lcom/xiaopeng/core/util/L$Tag;
+
+    const-string v1, "nofityInstrumentStatus"
+
+    invoke-static {v0, v1}, Lcom/xiaopeng/core/util/L;->i(Lcom/xiaopeng/core/util/L$Tag;Ljava/lang/String;)V
+
+    const/4 v0, 0x0
+
+    .line 3
+    iput-boolean v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->o:Z
+
+    .line 4
+    invoke-static {}, Lcom/xiaopeng/common/xptbt/TBTManager;->getInstance()Lcom/xiaopeng/common/xptbt/TBTManager;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1}, Lcom/xiaopeng/common/xptbt/TBTManager;->updateSRInfo(Z)V
+
+    goto :goto_2f
+
+    .line 5
+    :cond_16
+    invoke-virtual {p0}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->isMiniMapLaneMode()Z
+
+    move-result v0
+
+    if-ne v0, p1, :cond_28
+
+    .line 6
+    sget-boolean p1, Lcom/xiaopeng/core/util/L;->ENABLE:Z
+
+    if-eqz p1, :cond_27
+
+    .line 7
+    sget-object p1, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->u:Lcom/xiaopeng/core/util/L$Tag;
+
+    const-string v0, "nofityInstrumentStatus ignore"
+
+    invoke-static {p1, v0}, Lcom/xiaopeng/core/util/L;->d(Lcom/xiaopeng/core/util/L$Tag;Ljava/lang/String;)V
+
+    :cond_27
+    return-void
+
+    .line 8
+    :cond_28
+    invoke-static {}, Lcom/xiaopeng/common/xptbt/TBTManager;->getInstance()Lcom/xiaopeng/common/xptbt/TBTManager;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1}, Lcom/xiaopeng/common/xptbt/TBTManager;->updateSRInfo(Z)V
+
+    :goto_2f
+    return-void
+.end method
+
+.method public final J(I)V
+    .registers 4
+
+    if-lez p1, :cond_14
+
+    .line 1
+    iget-object p1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    if-eqz p1, :cond_14
+
+    const/4 v0, 0x0
+
+    .line 2
+    iget v1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->i:I
+
+    invoke-virtual {p1, v0, v1}, Lcom/xiaopeng/common/mapdisplay/MapViewWrapper;->setRenderFpsByMode(II)Z
+
+    .line 3
+    iget-object p1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    const/4 v0, 0x1
+
+    iget v1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->i:I
+
+    invoke-virtual {p1, v0, v1}, Lcom/xiaopeng/common/mapdisplay/MapViewWrapper;->setRenderFpsByMode(II)Z
+
+    :cond_14
+    return-void
+.end method
+
+.method public final K(Landroid/view/Surface;)V
+    .registers 5
+
+    .line 1
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->n:Ljava/util/concurrent/locks/Lock;
+
+    invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->lock()V
+
+    .line 2
+    :try_start_5
+    sget-object v0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->u:Lcom/xiaopeng/core/util/L$Tag;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "safeUpdateSurface surface="
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v2, ", mSurface="
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v2, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->m:Landroid/view/Surface;
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Lcom/xiaopeng/core/util/L;->i(Lcom/xiaopeng/core/util/L$Tag;Ljava/lang/String;)V
+
+    if-eqz p1, :cond_3f
+
+    .line 3
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "safeUpdateSurface surface isvalid="
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Landroid/view/Surface;->isValid()Z
+
+    move-result v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Lcom/xiaopeng/core/util/L;->i(Lcom/xiaopeng/core/util/L$Tag;Ljava/lang/String;)V
+
+    .line 4
+    :cond_3f
+    iget-object v1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->m:Landroid/view/Surface;
+
+    if-eqz v1, :cond_5d
+
+    .line 5
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "safeUpdateSurface mSurface isvalid="
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v2, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->m:Landroid/view/Surface;
+
+    invoke-virtual {v2}, Landroid/view/Surface;->isValid()Z
+
+    move-result v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Lcom/xiaopeng/core/util/L;->i(Lcom/xiaopeng/core/util/L$Tag;Ljava/lang/String;)V
+
+    .line 6
+    :cond_5d
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->m:Landroid/view/Surface;
+
+    if-eq v0, p1, :cond_72
+
+    if-eqz v0, :cond_69
+
+    .line 7
+    invoke-virtual {v0}, Landroid/view/Surface;->release()V
+
+    const/4 v0, 0x0
+
+    .line 8
+    iput-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->m:Landroid/view/Surface;
+
+    .line 9
+    :cond_69
+    iput-object p1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->m:Landroid/view/Surface;
+    :try_end_6b
+    .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_6b} :catch_6e
+    .catchall {:try_start_5 .. :try_end_6b} :catchall_6c
+
+    goto :goto_72
+
+    :catchall_6c
+    move-exception p1
+
+    goto :goto_78
+
+    :catch_6e
+    move-exception p1
+
+    .line 10
+    :try_start_6f
+    invoke-virtual {p1}, Ljava/lang/Exception;->printStackTrace()V
+    :try_end_72
+    .catchall {:try_start_6f .. :try_end_72} :catchall_6c
+
+    .line 11
+    :cond_72
+    :goto_72
+    iget-object p1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->n:Ljava/util/concurrent/locks/Lock;
+
+    invoke-interface {p1}, Ljava/util/concurrent/locks/Lock;->unlock()V
+
+    return-void
+
+    :goto_78
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->n:Ljava/util/concurrent/locks/Lock;
+
+    invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->unlock()V
+
+    .line 12
+    throw p1
+.end method
+
+.method public final L()V
+    .registers 7
+
+    .line 1
+    invoke-static {}, Lcom/xiaopeng/common/setting/SettingWrapper;->getCurrentMinimapMapMode()I
+
+    move-result v0
+
+    .line 2
+    invoke-static {}, Lcom/xiaopeng/common/xptbt/TBTManager;->getInstance()Lcom/xiaopeng/common/xptbt/TBTManager;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/xiaopeng/common/xptbt/TBTManager;->getCurrentStatus()I
+
+    move-result v1
+
+    const/4 v2, 0x1
+
+    if-eqz v1, :cond_11
+
+    move v1, v2
+
+    goto :goto_12
+
+    :cond_11
+    const/4 v1, 0x0
+
+    .line 3
+    :goto_12
+    sget-object v3, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->u:Lcom/xiaopeng/core/util/L$Tag;
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v5, "setNormalPSceneMode() mapMode:"
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v5, ";isNavigation:"
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v3, v4}, Lcom/xiaopeng/core/util/L;->i(Lcom/xiaopeng/core/util/L$Tag;Ljava/lang/String;)V
+
+    if-eqz v0, :cond_39
+
+    .line 4
+    iget-object v3, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    xor-int/lit8 v4, v1, 0x1
+
+    invoke-virtual {v3, v0, v4, v2}, Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;->setMapMode(IZZ)V
+
+    .line 5
+    :cond_39
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    invoke-virtual {v0}, Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;->restoreCarPosition()V
+
+    .line 6
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    xor-int/lit8 v3, v1, 0x1
+
+    invoke-virtual {v0, v2, v1, v3}, Lcom/xiaopeng/common/mapdisplay/MapViewWrapper;->goBackCenter(ZZZ)V
+
+    return-void
+.end method
+
+.method public clearOverlay()V
+    .registers 2
+    .annotation build Landroid/annotation/SuppressLint;
+        value = {
+            "WrongConstant"
+        }
+    .end annotation
+
+    .annotation build Landroidx/annotation/MainThread;
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    if-eqz v0, :cond_b
+
+    .line 2
+    invoke-virtual {v0}, Lcom/xiaopeng/common/mapdisplay/MapViewWrapper;->getBizControlManager()Lcom/xiaopeng/common/control/BizControlManager;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/xiaopeng/common/control/BizControlManager;->clearOverlay()V
+
+    :cond_b
+    return-void
+.end method
+
+.method public createMapView(II)V
+    .registers 7
+
+    const-string v0, " height="
+
+    if-lez p1, :cond_ad
+
+    if-gtz p2, :cond_8
+
+    goto/16 :goto_ad
+
+    .line 1
+    :cond_8
+    sget-object v1, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->u:Lcom/xiaopeng/core/util/L$Tag;
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "createMapView width="
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v1, v0}, Lcom/xiaopeng/core/util/L;->i(Lcom/xiaopeng/core/util/L$Tag;Ljava/lang/String;)V
+
+    .line 2
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    if-nez v0, :cond_82
+
+    .line 3
+    invoke-static {}, Lcom/xiaopeng/common/mapdisplay/MapDisplayManager;->getInstance()Lcom/xiaopeng/common/mapdisplay/MapDisplayManager;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p0}, Lcom/xiaopeng/common/mapdisplay/MapDisplayManager;->setMiniMapSurfaceListener(Lcom/xiaopeng/common/mapdisplay/IXPMapSurfaceListener;)V
+
+    .line 4
+    invoke-static {}, Lcom/xiaopeng/common/mapdisplay/MapDisplayManager;->getInstance()Lcom/xiaopeng/common/mapdisplay/MapDisplayManager;
+
+    move-result-object v0
+
+    new-instance v1, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapListener;
+
+    invoke-direct {v1}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapListener;-><init>()V
+
+    invoke-virtual {v0, v1}, Lcom/xiaopeng/common/mapdisplay/MapDisplayManager;->setMiniMapListener(Lcom/xiaopeng/common/mapdisplay/IMapListener;)V
+
+    .line 5
+    new-instance v0, Lcom/xiaopeng/montecarlo/scenes/mapscene/MapPrepareLayerStyle;
+
+    invoke-direct {v0}, Lcom/xiaopeng/montecarlo/scenes/mapscene/MapPrepareLayerStyle;-><init>()V
+
+    .line 6
+    invoke-static {}, Lcom/xiaopeng/common/mapdisplay/MapDisplayManager;->getInstance()Lcom/xiaopeng/common/mapdisplay/MapDisplayManager;
+
+    move-result-object v1
+
+    invoke-virtual {v1, p1, p2, v0}, Lcom/xiaopeng/common/mapdisplay/MapDisplayManager;->initMiniMainMapEngine(IILcom/xiaopeng/common/mapdisplay/IXPPrepareLayerStyle;)Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    .line 7
+    invoke-virtual {v0}, Lcom/xiaopeng/common/mapdisplay/MapViewWrapper;->getBizControlManager()Lcom/xiaopeng/common/control/BizControlManager;
+
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1, v1}, Lcom/xiaopeng/common/control/BizControlManager;->setDrawFlyLine(ZZ)V
+
+    .line 8
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    invoke-virtual {v0, v1}, Lcom/xiaopeng/common/mapdisplay/MapViewWrapper;->setBldAndModelVisibility(Z)Z
+
+    .line 9
+    invoke-static {}, Lcom/xiaopeng/montecarlo/scenes/mapscene/CarLocIconHelper;->getInstance()Lcom/xiaopeng/montecarlo/scenes/mapscene/CarLocIconHelper;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/xiaopeng/montecarlo/scenes/mapscene/CarLocIconHelper;->updateCarLocTextures()V
+
+    .line 10
+    invoke-static {}, Lcom/xiaopeng/montecarlo/scenes/mapscene/CarCompassHelper;->getInstance()Lcom/xiaopeng/montecarlo/scenes/mapscene/CarCompassHelper;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v1}, Lcom/xiaopeng/montecarlo/scenes/mapscene/CarCompassHelper;->setCarCompassVisible(Z)V
+
+    .line 11
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    invoke-virtual {v0}, Lcom/xiaopeng/common/mapdisplay/MapViewWrapper;->getBizControlManager()Lcom/xiaopeng/common/control/BizControlManager;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v1}, Lcom/xiaopeng/common/control/BizControlManager;->setCarLineAndNaviEndVisible(Z)V
+
+    .line 12
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    const/4 v2, 0x1
+
+    invoke-virtual {v0, v2, v1, v1}, Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;->setMapMode(IZZ)V
+
+    .line 13
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    invoke-virtual {v0}, Lcom/xiaopeng/common/mapdisplay/MapViewWrapper;->getBizControlManager()Lcom/xiaopeng/common/control/BizControlManager;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v2}, Lcom/xiaopeng/common/control/BizControlManager;->setCarUpMode(Z)V
+
+    .line 14
+    iget v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->i:I
+
+    invoke-virtual {p0, v0}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->J(I)V
+
+    .line 15
+    :cond_82
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->q:Lcom/xiaopeng/montecarlo/service/minimap/LocalMiniMapSurface;
+
+    if-nez v0, :cond_92
+
+    .line 16
+    new-instance v0, Lcom/xiaopeng/montecarlo/service/minimap/LocalMiniMapSurface;
+
+    iget-object v1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->t:Lcom/xiaopeng/montecarlo/service/minimap/LocalMiniMapSurface$e;
+
+    invoke-direct {v0, v1}, Lcom/xiaopeng/montecarlo/service/minimap/LocalMiniMapSurface;-><init>(Lcom/xiaopeng/montecarlo/service/minimap/LocalMiniMapSurface$e;)V
+
+    iput-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->q:Lcom/xiaopeng/montecarlo/service/minimap/LocalMiniMapSurface;
+
+    .line 17
+    invoke-virtual {v0, p1, p2}, Lcom/xiaopeng/montecarlo/service/minimap/LocalMiniMapSurface;->initCodec(II)V
+
+    .line 18
+    :cond_92
+    iget-object p1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->g:Lcom/xiaopeng/montecarlo/service/minimap/dynamiclevel/MiniMapCruiseDynamicLevelHelper;
+
+    if-nez p1, :cond_9f
+
+    .line 19
+    new-instance p1, Lcom/xiaopeng/montecarlo/service/minimap/dynamiclevel/MiniMapCruiseDynamicLevelHelper;
+
+    iget-object p2, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    invoke-direct {p1, p2}, Lcom/xiaopeng/montecarlo/service/minimap/dynamiclevel/MiniMapCruiseDynamicLevelHelper;-><init>(Lcom/xiaopeng/common/mapdisplay/MapViewWrapper;)V
+
+    iput-object p1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->g:Lcom/xiaopeng/montecarlo/service/minimap/dynamiclevel/MiniMapCruiseDynamicLevelHelper;
+
+    .line 20
+    :cond_9f
+    iget-object p1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->f:Lcom/xiaopeng/montecarlo/service/minimap/dynamiclevel/MiniMapGuideDynamicLevelHelper;
+
+    if-nez p1, :cond_ac
+
+    .line 21
+    new-instance p1, Lcom/xiaopeng/montecarlo/service/minimap/dynamiclevel/MiniMapGuideDynamicLevelHelper;
+
+    iget-object p2, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    invoke-direct {p1, p2}, Lcom/xiaopeng/montecarlo/service/minimap/dynamiclevel/MiniMapGuideDynamicLevelHelper;-><init>(Lcom/xiaopeng/common/mapdisplay/MapViewWrapper;)V
+
+    iput-object p1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->f:Lcom/xiaopeng/montecarlo/service/minimap/dynamiclevel/MiniMapGuideDynamicLevelHelper;
+
+    :cond_ac
+    return-void
+
+    .line 22
+    :cond_ad
+    :goto_ad
+    sget-object v1, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->u:Lcom/xiaopeng/core/util/L$Tag;
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "createMapView but width or height was 0 width="
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-static {v1, p1}, Lcom/xiaopeng/core/util/L;->w(Lcom/xiaopeng/core/util/L$Tag;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public deletePath(Z)V
+    .registers 5
+    .annotation build Landroid/annotation/SuppressLint;
+        value = {
+            "WrongConstant"
+        }
+    .end annotation
+
+    .annotation build Landroidx/annotation/MainThread;
+    .end annotation
+
+    .line 1
+    sget-object v0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->u:Lcom/xiaopeng/core/util/L$Tag;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "minimap onDeletePath: isStopDelete="
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Lcom/xiaopeng/core/util/L;->i(Lcom/xiaopeng/core/util/L$Tag;Ljava/lang/String;)V
+
+    .line 2
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    invoke-virtual {v0}, Lcom/xiaopeng/common/mapdisplay/MapViewWrapper;->getBizControlManager()Lcom/xiaopeng/common/control/BizControlManager;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/xiaopeng/common/control/BizControlManager;->deletePath()V
+
+    if-nez p1, :cond_2f
+
+    .line 3
+    invoke-virtual {p0}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->drawRoute()V
+
+    .line 4
+    invoke-static {}, Lcom/xiaopeng/common/xptbt/TBTManager;->getInstance()Lcom/xiaopeng/common/xptbt/TBTManager;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Lcom/xiaopeng/common/xptbt/TBTManager;->getNaviManeuverInfo()Lcom/xiaopeng/common/xptbt/tbtdata/XPManeuverInfo;
+
+    move-result-object p1
+
+    .line 5
+    invoke-virtual {p0, p1}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->showNaviManeuver(Lcom/xiaopeng/common/xptbt/tbtdata/XPManeuverInfo;)V
+
+    :cond_2f
+    return-void
+.end method
+
+.method public drawRoute()V
+    .registers 10
+    .annotation build Landroidx/annotation/MainThread;
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    if-nez v0, :cond_c
+
+    .line 2
+    sget-object v0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->u:Lcom/xiaopeng/core/util/L$Tag;
+
+    const-string v1, "drawRoute() mMapViewWrapper is null"
+
+    invoke-static {v0, v1}, Lcom/xiaopeng/core/util/L;->w(Lcom/xiaopeng/core/util/L$Tag;Ljava/lang/String;)V
+
+    return-void
+
+    .line 3
+    :cond_c
+    invoke-static {}, Lcom/xiaopeng/common/xptbt/TBTManager;->getInstance()Lcom/xiaopeng/common/xptbt/TBTManager;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/xiaopeng/common/xptbt/TBTManager;->getCurrentNaviId()J
+
+    move-result-wide v5
+
+    .line 4
+    invoke-static {}, Lcom/xiaopeng/common/xptbt/TBTManager;->getInstance()Lcom/xiaopeng/common/xptbt/TBTManager;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/xiaopeng/common/xptbt/TBTManager;->getCurrentNaviPathIndex()I
+
+    move-result v7
+
+    const-wide/16 v0, -0x1
+
+    cmp-long v0, v0, v5
+
+    if-eqz v0, :cond_3e
+
+    .line 5
+    invoke-static {}, Lcom/xiaopeng/common/xptbt/TBTManager;->getInstance()Lcom/xiaopeng/common/xptbt/TBTManager;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/xiaopeng/common/xptbt/TBTManager;->getCurrentNaviPathResult()Lcom/xiaopeng/common/xptbt/tbtdata/IPathResult;
+
+    move-result-object v3
+
+    .line 6
+    invoke-static {}, Lcom/xiaopeng/common/xptbt/TBTManager;->getInstance()Lcom/xiaopeng/common/xptbt/TBTManager;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/xiaopeng/common/xptbt/TBTManager;->getCurrentNaviRouteParams()Lcom/xiaopeng/common/xptbt/tbtdata/RouteParams;
+
+    move-result-object v4
+
+    .line 7
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    invoke-virtual {v0}, Lcom/xiaopeng/common/mapdisplay/MapViewWrapper;->getBizControlManager()Lcom/xiaopeng/common/control/BizControlManager;
+
+    move-result-object v1
+
+    const/16 v2, 0x303
+
+    const/4 v8, 0x1
+
+    invoke-virtual/range {v1 .. v8}, Lcom/xiaopeng/common/control/BizControlManager;->drawRoute(ILcom/xiaopeng/common/xptbt/tbtdata/IPathResult;Lcom/xiaopeng/common/xptbt/tbtdata/RouteParams;JIZ)Lcom/autonavi/gbl/common/model/RectDouble;
+
+    :cond_3e
+    return-void
+.end method
+
+.method public forceResetMiniMap()V
+    .registers 4
+
+    const/4 v0, 0x1
+
+    .line 1
+    iput-boolean v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->j:Z
+
+    .line 2
+    sget-object v0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->u:Lcom/xiaopeng/core/util/L$Tag;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "forceResetMiniMap:"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v2, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->b:I
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string/jumbo v2, "x"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v2, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->c:I
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Lcom/xiaopeng/core/util/L;->i(Lcom/xiaopeng/core/util/L$Tag;Ljava/lang/String;)V
+
+    .line 3
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->q:Lcom/xiaopeng/montecarlo/service/minimap/LocalMiniMapSurface;
+
+    if-eqz v0, :cond_31
+
+    .line 4
+    iget v1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->b:I
+
+    iget v2, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->c:I
+
+    invoke-virtual {v0, v1, v2}, Lcom/xiaopeng/montecarlo/service/minimap/LocalMiniMapSurface;->updateSize(II)V
+
+    .line 5
+    :cond_31
+    sget-object v0, Lcom/xiaopeng/core/datalog/PageType;->NONE_UI_RELATED:Lcom/xiaopeng/core/datalog/PageType;
+
+    sget-object v1, Lcom/xiaopeng/core/datalog/BtnType;->RESET_MINIMAP:Lcom/xiaopeng/core/datalog/BtnType;
+
+    const/4 v2, 0x0
+
+    new-array v2, v2, [Ljava/lang/Object;
+
+    invoke-static {v0, v1, v2}, Lcom/xiaopeng/core/datalog/DataLogUtil;->sendStatData(Lcom/xiaopeng/core/datalog/PageType;Lcom/xiaopeng/core/datalog/BtnType;[Ljava/lang/Object;)V
+
+    return-void
+.end method
+
+.method public getMiniMapHeight()I
+    .registers 2
+
+    .line 1
+    iget v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->c:I
+
+    return v0
+.end method
+
+.method public getMiniMapWidth()I
+    .registers 2
+
+    .line 1
+    iget v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->b:I
+
+    return v0
+.end method
+
+.method public goBackCenter()V
+    .registers 4
+
+    .line 1
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    if-eqz v0, :cond_9
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
+
+    .line 2
+    invoke-virtual {v0, v2, v2, v1}, Lcom/xiaopeng/common/mapdisplay/MapViewWrapper;->goBackCenter(ZZZ)V
+
+    :cond_9
+    return-void
+.end method
+
+.method public init()V
+    .registers 4
+
+    .line 1
+    invoke-static {}, Lcom/xiaopeng/montecarlo/InitializerManager;->getInstance()Lcom/xiaopeng/montecarlo/InitializerManager;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/xiaopeng/montecarlo/InitializerManager;->isBLInitialized()Z
+
+    move-result v0
+
+    if-nez v0, :cond_15
+
+    .line 2
+    sget-object v0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->u:Lcom/xiaopeng/core/util/L$Tag;
+
+    const-string v1, "init() but bl is not initialized!!!"
+
+    invoke-static {v0, v1}, Lcom/xiaopeng/core/util/L;->w(Lcom/xiaopeng/core/util/L$Tag;Ljava/lang/String;)V
+
+    .line 3
+    invoke-virtual {p0}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->m()V
+
+    return-void
+
+    .line 4
+    :cond_15
+    invoke-static {}, Lcom/xiaopeng/common/carservice/CarServiceManager;->getInstance()Lcom/xiaopeng/common/carservice/CarServiceManager;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/xiaopeng/common/carservice/CarServiceManager;->getIcmMapWidth()I
+
+    move-result v0
+
+    if-lez v0, :cond_21
+
+    .line 5
+    iput v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->b:I
+
+    .line 6
+    :cond_21
+    invoke-static {}, Lcom/xiaopeng/common/carservice/CarServiceManager;->getInstance()Lcom/xiaopeng/common/carservice/CarServiceManager;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/xiaopeng/common/carservice/CarServiceManager;->getIcmMapHeight()I
+
+    move-result v0
+
+    if-lez v0, :cond_2d
+
+    .line 7
+    iput v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->c:I
+
+    .line 8
+    :cond_2d
+    invoke-static {}, Lcom/xiaopeng/common/carservice/CarServiceManager;->getInstance()Lcom/xiaopeng/common/carservice/CarServiceManager;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/xiaopeng/common/carservice/CarServiceManager;->getIcmMapImageType()I
+
+    move-result v0
+
+    const/4 v1, -0x1
+
+    if-eq v0, v1, :cond_3a
+
+    .line 9
+    iput v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->r:I
+
+    .line 10
+    :cond_3a
+    invoke-static {}, Lcom/xiaopeng/common/carservice/CarServiceManager;->getInstance()Lcom/xiaopeng/common/carservice/CarServiceManager;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/xiaopeng/common/carservice/CarServiceManager;->getIcmMapFps()I
+
+    move-result v0
+
+    if-lez v0, :cond_46
+
+    .line 11
+    iput v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->i:I
+
+    .line 12
+    :cond_46
+    sget-object v0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->u:Lcom/xiaopeng/core/util/L$Tag;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "init() start  mMiniMapFps: "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v2, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->i:I
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v2, ";mMiniMapWidth:"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v2, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->b:I
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v2, ";mMiniMapHeight:"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v2, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->c:I
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v2, ";mSendMapImageType:"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v2, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->r:I
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Lcom/xiaopeng/core/util/L;->i(Lcom/xiaopeng/core/util/L$Tag;Ljava/lang/String;)V
+
+    .line 13
+    iget v1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->b:I
+
+    iget v2, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->c:I
+
+    invoke-virtual {p0, v1, v2}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->n(II)V
+
+    .line 14
+    iget v1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->b:I
+
+    iget v2, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->c:I
+
+    invoke-virtual {p0, v1, v2}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->createMapView(II)V
+
+    .line 15
+    invoke-virtual {p0}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->s()V
+
+    .line 16
+    invoke-virtual {p0}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->t()V
+
+    const-string v1, "init() end"
+
+    .line 17
+    invoke-static {v0, v1}, Lcom/xiaopeng/core/util/L;->i(Lcom/xiaopeng/core/util/L$Tag;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public isMiniMapLaneEnable()Z
+    .registers 2
+
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public isMiniMapLaneMode()Z
+    .registers 2
+
+    .line 1
+    invoke-virtual {p0}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->isMiniMapLaneEnable()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_12
+
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    if-eqz v0, :cond_12
+
+    invoke-virtual {v0}, Lcom/xiaopeng/common/mapdisplay/MapViewWrapper;->isLaneMode()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_12
+
+    const/4 v0, 0x1
+
+    goto :goto_13
+
+    :cond_12
+    const/4 v0, 0x0
+
+    :goto_13
+    return v0
+.end method
+
+.method public final m()V
+    .registers 3
+
+    .line 1
+    invoke-static {}, Lcom/xiaopeng/montecarlo/InitializerManager;->getInstance()Lcom/xiaopeng/montecarlo/InitializerManager;
+
+    move-result-object v0
+
+    new-instance v1, Lcom/xiaopeng/lib/bughunter/i6/p;
+
+    invoke-direct {v1, p0}, Lcom/xiaopeng/lib/bughunter/i6/p;-><init>(Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;)V
+
+    invoke-virtual {v0, v1}, Lcom/xiaopeng/montecarlo/InitializerManager;->addBLInitCompleteListener(Lcom/xiaopeng/montecarlo/IInitCallback;)V
+
+    return-void
+.end method
+
+.method public final declared-synchronized n(II)V
+    .registers 6
+
+    monitor-enter p0
+
+    .line 1
+    :try_start_1
+    sget-object v0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->u:Lcom/xiaopeng/core/util/L$Tag;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "createBitmap width:"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v2, " height:"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Lcom/xiaopeng/core/util/L;->i(Lcom/xiaopeng/core/util/L$Tag;Ljava/lang/String;)V
+
+    if-lez p1, :cond_40
+
+    if-gtz p2, :cond_24
+
+    goto :goto_40
+
+    .line 2
+    :cond_24
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->l:Landroid/graphics/Bitmap;
+
+    if-eqz v0, :cond_36
+
+    invoke-virtual {v0}, Landroid/graphics/Bitmap;->isRecycled()Z
+
+    move-result v0
+
+    if-nez v0, :cond_36
+
+    .line 3
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->l:Landroid/graphics/Bitmap;
+
+    invoke-virtual {v0}, Landroid/graphics/Bitmap;->recycle()V
+
+    const/4 v0, 0x0
+
+    .line 4
+    iput-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->l:Landroid/graphics/Bitmap;
+
+    .line 5
+    :cond_36
+    sget-object v0, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
+
+    invoke-static {p1, p2, v0}, Landroid/graphics/Bitmap;->createBitmap(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->l:Landroid/graphics/Bitmap;
+    :try_end_3e
+    .catchall {:try_start_1 .. :try_end_3e} :catchall_42
+
+    .line 6
+    monitor-exit p0
+
+    return-void
+
+    .line 7
+    :cond_40
+    :goto_40
+    monitor-exit p0
+
+    return-void
+
+    :catchall_42
+    move-exception p1
+
+    monitor-exit p0
+
+    throw p1
+.end method
+
+.method public final o()V
+    .registers 2
+
+    .line 1
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->g:Lcom/xiaopeng/montecarlo/service/minimap/dynamiclevel/MiniMapCruiseDynamicLevelHelper;
+
+    if-eqz v0, :cond_7
+
+    .line 2
+    invoke-virtual {v0}, Lcom/xiaopeng/montecarlo/dynamiclevel/base/DynamicLevelHelper;->disableDynamicLevel()V
+
+    .line 3
+    :cond_7
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->f:Lcom/xiaopeng/montecarlo/service/minimap/dynamiclevel/MiniMapGuideDynamicLevelHelper;
+
+    if-eqz v0, :cond_e
+
+    .line 4
+    invoke-virtual {v0}, Lcom/xiaopeng/montecarlo/dynamiclevel/base/DynamicLevelHelper;->disableDynamicLevel()V
+
+    :cond_e
+    return-void
+.end method
+
+.method public onDeviceRender(II)V
+    .registers 3
+
+    return-void
+.end method
+
+.method public onDriveModeChanged(I)V
+    .registers 4
+
+    .line 1
+    invoke-static {}, Lcom/xiaopeng/core/util/UiHandlerUtil;->getInstance()Lcom/xiaopeng/core/util/UiHandlerUtil;
+
+    move-result-object v0
+
+    new-instance v1, Lcom/xiaopeng/lib/bughunter/i6/l;
+
+    invoke-direct {v1, p0, p1}, Lcom/xiaopeng/lib/bughunter/i6/l;-><init>(Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;I)V
+
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+
+    return-void
+.end method
+
+.method public onLaneViewDisplayChanged(I)V
+    .registers 3
+
+    .line 1
+    invoke-static {}, Lcom/xiaopeng/core/util/UiHandlerUtil;->getInstance()Lcom/xiaopeng/core/util/UiHandlerUtil;
+
+    move-result-object p1
+
+    new-instance v0, Lcom/xiaopeng/lib/bughunter/i6/o;
+
+    invoke-direct {v0, p0}, Lcom/xiaopeng/lib/bughunter/i6/o;-><init>(Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;)V
+
+    invoke-virtual {p1, v0}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+
+    return-void
+.end method
+
+.method public onNaviStop(I)V
+    .registers 11
+    .annotation build Landroid/annotation/SuppressLint;
+        value = {
+            "WrongConstant"
+        }
+    .end annotation
+
+    .annotation build Landroidx/annotation/MainThread;
+    .end annotation
+
+    .line 1
+    sget-object v0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->u:Lcom/xiaopeng/core/util/L$Tag;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "onNaviStop() naviType:"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Lcom/xiaopeng/core/util/L;->i(Lcom/xiaopeng/core/util/L$Tag;Ljava/lang/String;)V
+
+    .line 2
+    iget-object v1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    if-nez v1, :cond_20
+
+    const-string p1, "onNaviStop() mMapViewWrapper is null"
+
+    .line 3
+    invoke-static {v0, p1}, Lcom/xiaopeng/core/util/L;->w(Lcom/xiaopeng/core/util/L$Tag;Ljava/lang/String;)V
+
+    return-void
+
+    :cond_20
+    const/4 v0, 0x2
+
+    if-eq v0, p1, :cond_77
+
+    .line 4
+    invoke-virtual {p0}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->clearOverlay()V
+
+    .line 5
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    invoke-virtual {v0}, Lcom/xiaopeng/common/mapdisplay/MapViewWrapper;->getBizControlManager()Lcom/xiaopeng/common/control/BizControlManager;
+
+    move-result-object v0
+
+    const-wide/16 v1, 0x178f
+
+    const-string v3, "GuideRouteControlProxy"
+
+    invoke-virtual {v0, v3, v1, v2}, Lcom/xiaopeng/common/control/BizControlManager;->clearAllItems(Ljava/lang/String;J)V
+
+    const/4 v0, 0x1
+
+    if-ne v0, p1, :cond_77
+
+    .line 6
+    invoke-static {}, Lcom/xiaopeng/common/xptbt/TBTManager;->getInstance()Lcom/xiaopeng/common/xptbt/TBTManager;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Lcom/xiaopeng/common/xptbt/TBTManager;->getOriginCarLocation()Lcom/autonavi/gbl/map/layer/model/CarLoc;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_77
+
+    .line 7
+    iget-object v1, p1, Lcom/autonavi/gbl/map/layer/model/CarLoc;->vecPathMatchInfo:Ljava/util/ArrayList;
+
+    invoke-static {v1}, Lcom/xiaopeng/core/util/CollectionUtils;->isNotEmpty(Ljava/util/Collection;)Z
+
+    move-result v1
+
+    const/4 v2, 0x0
+
+    if-eqz v1, :cond_67
+
+    .line 8
+    iget-object v1, p1, Lcom/autonavi/gbl/map/layer/model/CarLoc;->vecPathMatchInfo:Ljava/util/ArrayList;
+
+    invoke-virtual {v1, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/autonavi/gbl/map/layer/model/PathMatchInfo;
+
+    if-eqz v1, :cond_67
+
+    .line 9
+    invoke-static {}, Lcom/xiaopeng/common/xptbt/TBTManager;->getInstance()Lcom/xiaopeng/common/xptbt/TBTManager;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Lcom/xiaopeng/common/xptbt/TBTManager;->getPosServiceWrapper()Lcom/xiaopeng/common/xptbt/PosServiceWrapper;
+
+    move-result-object v3
+
+    new-instance v4, Lcom/xiaopeng/common/bean/search/XPCoordinate2DDouble;
+
+    iget-wide v5, v1, Lcom/autonavi/gbl/map/layer/model/PathMatchInfo;->longitude:D
+
+    iget-wide v7, v1, Lcom/autonavi/gbl/map/layer/model/PathMatchInfo;->latitude:D
+
+    invoke-direct {v4, v5, v6, v7, v8}, Lcom/xiaopeng/common/bean/search/XPCoordinate2DDouble;-><init>(DD)V
+
+    invoke-virtual {v3, v4}, Lcom/xiaopeng/common/xptbt/PosServiceWrapper;->setMockCarLocation(Lcom/xiaopeng/common/bean/search/XPCoordinate2DDouble;)V
+
+    .line 10
+    :cond_67
+    iget-object v1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    invoke-virtual {v1}, Lcom/xiaopeng/common/mapdisplay/MapViewWrapper;->getBizControlManager()Lcom/xiaopeng/common/control/BizControlManager;
+
+    move-result-object v1
+
+    invoke-virtual {v1, p1}, Lcom/xiaopeng/common/control/BizControlManager;->setCarLocation(Lcom/autonavi/gbl/map/layer/model/CarLoc;)V
+
+    .line 11
+    invoke-static {}, Lcom/xiaopeng/common/setting/SettingWrapper;->getCurrentMinimapMapMode()I
+
+    move-result p1
+
+    .line 12
+    invoke-virtual {p0, p1, v0, v2}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->setMiniMapMode(IZZ)V
+
+    :cond_77
+    return-void
+.end method
+
+.method public onSurfaceChanged(III)V
+    .registers 7
+
+    .line 1
+    sget-object v0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->u:Lcom/xiaopeng/core/util/L$Tag;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "onSurfaceChanged() deviceId:"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string p1, ", width:"
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string p1, ", height:"
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-static {v0, p1}, Lcom/xiaopeng/core/util/L;->i(Lcom/xiaopeng/core/util/L$Tag;Ljava/lang/String;)V
+
+    .line 2
+    iget-object p1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    invoke-virtual {p1, p2, p3}, Lcom/xiaopeng/common/mapdisplay/MapViewWrapper;->resetMapviewPort(II)V
+
+    .line 3
+    invoke-virtual {p0}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->L()V
+
+    return-void
+.end method
+
+.method public onSurfaceCreated(I)V
+    .registers 5
+
+    .line 1
+    sget-object v0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->u:Lcom/xiaopeng/core/util/L$Tag;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "onSurfaceCreated() deviceId:"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-static {v0, p1}, Lcom/xiaopeng/core/util/L;->i(Lcom/xiaopeng/core/util/L$Tag;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public onSurfaceDestroy(I)V
+    .registers 5
+
+    .line 1
+    sget-object v0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->u:Lcom/xiaopeng/core/util/L$Tag;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "onSurfaceDestroy() deviceId:"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-static {v0, p1}, Lcom/xiaopeng/core/util/L;->i(Lcom/xiaopeng/core/util/L$Tag;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public onXpuSRDisplayStChanged(I)V
+    .registers 3
+
+    .line 1
+    invoke-static {}, Lcom/xiaopeng/core/util/UiHandlerUtil;->getInstance()Lcom/xiaopeng/core/util/UiHandlerUtil;
+
+    move-result-object p1
+
+    new-instance v0, Lcom/xiaopeng/lib/bughunter/i6/n;
+
+    invoke-direct {v0, p0}, Lcom/xiaopeng/lib/bughunter/i6/n;-><init>(Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;)V
+
+    invoke-virtual {p1, v0}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+
+    return-void
+.end method
+
+.method public final p()V
+    .registers 2
+
+    .line 1
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->f:Lcom/xiaopeng/montecarlo/service/minimap/dynamiclevel/MiniMapGuideDynamicLevelHelper;
+
+    if-eqz v0, :cond_7
+
+    .line 2
+    invoke-virtual {v0}, Lcom/xiaopeng/montecarlo/dynamiclevel/base/DynamicLevelHelper;->disableDynamicLevel()V
+
+    .line 3
+    :cond_7
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->g:Lcom/xiaopeng/montecarlo/service/minimap/dynamiclevel/MiniMapCruiseDynamicLevelHelper;
+
+    if-eqz v0, :cond_e
+
+    .line 4
+    invoke-virtual {v0}, Lcom/xiaopeng/montecarlo/dynamiclevel/base/DynamicLevelHelper;->enableDynamicLevel()V
+
+    :cond_e
+    return-void
+.end method
+
+.method public final q()V
+    .registers 2
+
+    .line 1
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->g:Lcom/xiaopeng/montecarlo/service/minimap/dynamiclevel/MiniMapCruiseDynamicLevelHelper;
+
+    if-eqz v0, :cond_7
+
+    .line 2
+    invoke-virtual {v0}, Lcom/xiaopeng/montecarlo/dynamiclevel/base/DynamicLevelHelper;->disableDynamicLevel()V
+
+    .line 3
+    :cond_7
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->f:Lcom/xiaopeng/montecarlo/service/minimap/dynamiclevel/MiniMapGuideDynamicLevelHelper;
+
+    if-eqz v0, :cond_e
+
+    .line 4
+    invoke-virtual {v0}, Lcom/xiaopeng/montecarlo/dynamiclevel/base/DynamicLevelHelper;->enableDynamicLevel()V
+
+    :cond_e
+    return-void
+.end method
+
+.method public final r(Z)V
+    .registers 2
+
+    return-void
+.end method
+
+.method public release()V
+    .registers 4
+
+    .line 1
+    invoke-static {}, Lcom/xiaopeng/common/carservice/CarServiceManager;->getInstance()Lcom/xiaopeng/common/carservice/CarServiceManager;
+
+    move-result-object v0
+
+    sget-object v1, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->w:Lcom/xiaopeng/montecarlo/service/minimap/MiniMapXPCarStateListener;
+
+    invoke-virtual {v0, v1}, Lcom/xiaopeng/common/carservice/CarServiceManager;->removeCarStateListener(Lcom/xiaopeng/common/carservice/CarServiceManager$IXPCarStateListener;)V
+
+    const/4 v0, 0x0
+
+    .line 2
+    sput-object v0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->w:Lcom/xiaopeng/montecarlo/service/minimap/MiniMapXPCarStateListener;
+
+    .line 3
+    invoke-static {}, Lcom/xiaopeng/common/account/XPAccountServiceWrapper;->getInstance()Lcom/xiaopeng/common/account/XPAccountServiceWrapper;
+
+    move-result-object v1
+
+    iget-object v2, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->d:Lcom/xiaopeng/montecarlo/service/minimap/MiniMapAccountEventCallback;
+
+    invoke-virtual {v1, v2}, Lcom/xiaopeng/common/account/XPAccountServiceWrapper;->unRegisterAccountEventCallback(Lcom/xiaopeng/core/account/AccountEventCallback;)V
+
+    .line 4
+    iput-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->d:Lcom/xiaopeng/montecarlo/service/minimap/MiniMapAccountEventCallback;
+
+    .line 5
+    invoke-static {}, Lcom/xiaopeng/common/sr/SRNaviManager;->getInstance()Lcom/xiaopeng/common/sr/SRNaviManager;
+
+    move-result-object v1
+
+    invoke-virtual {v1, p0}, Lcom/xiaopeng/common/sr/SRNaviManager;->removeSRInfoChangedListener(Lcom/xiaopeng/common/sr/ISRInfoChangedListener;)V
+
+    .line 6
+    invoke-virtual {p0}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->removeMapView()V
+
+    .line 7
+    iget-object v1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->l:Landroid/graphics/Bitmap;
+
+    if-eqz v1, :cond_32
+
+    invoke-virtual {v1}, Landroid/graphics/Bitmap;->isRecycled()Z
+
+    move-result v1
+
+    if-nez v1, :cond_32
+
+    .line 8
+    iget-object v1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->l:Landroid/graphics/Bitmap;
+
+    invoke-virtual {v1}, Landroid/graphics/Bitmap;->recycle()V
+
+    .line 9
+    iput-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->l:Landroid/graphics/Bitmap;
+
+    :cond_32
+    return-void
+.end method
+
+.method public removeMapView()V
+    .registers 3
+
+    .line 1
+    sget-object v0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->u:Lcom/xiaopeng/core/util/L$Tag;
+
+    const-string v1, "removeMapView"
+
+    invoke-static {v0, v1}, Lcom/xiaopeng/core/util/L;->i(Lcom/xiaopeng/core/util/L$Tag;Ljava/lang/String;)V
+
+    .line 2
+    invoke-static {}, Lcom/xiaopeng/common/xptbt/TBTManager;->getInstance()Lcom/xiaopeng/common/xptbt/TBTManager;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->e:Lcom/xiaopeng/montecarlo/service/minimap/MiniNaviListener;
+
+    invoke-virtual {v0, v1}, Lcom/xiaopeng/common/xptbt/TBTManager;->removeNaviListener(Lcom/xiaopeng/common/xptbt/INaviListener;)V
+
+    .line 3
+    invoke-static {}, Lcom/xiaopeng/common/xptbt/TBTManager;->getInstance()Lcom/xiaopeng/common/xptbt/TBTManager;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->e:Lcom/xiaopeng/montecarlo/service/minimap/MiniNaviListener;
+
+    invoke-virtual {v0, v1}, Lcom/xiaopeng/common/xptbt/TBTManager;->removeRerouteListener(Lcom/xiaopeng/common/xptbt/GuideManager$IRerouteListener;)V
+
+    .line 4
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->e:Lcom/xiaopeng/montecarlo/service/minimap/MiniNaviListener;
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_23
+
+    .line 5
+    invoke-virtual {v0}, Lcom/xiaopeng/montecarlo/service/minimap/MiniNaviListener;->release()V
+
+    .line 6
+    iput-object v1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->e:Lcom/xiaopeng/montecarlo/service/minimap/MiniNaviListener;
+
+    .line 7
+    :cond_23
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->g:Lcom/xiaopeng/montecarlo/service/minimap/dynamiclevel/MiniMapCruiseDynamicLevelHelper;
+
+    if-eqz v0, :cond_2c
+
+    .line 8
+    invoke-virtual {v0}, Lcom/xiaopeng/montecarlo/dynamiclevel/base/DynamicLevelHelper;->release()V
+
+    .line 9
+    iput-object v1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->g:Lcom/xiaopeng/montecarlo/service/minimap/dynamiclevel/MiniMapCruiseDynamicLevelHelper;
+
+    .line 10
+    :cond_2c
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->f:Lcom/xiaopeng/montecarlo/service/minimap/dynamiclevel/MiniMapGuideDynamicLevelHelper;
+
+    if-eqz v0, :cond_35
+
+    .line 11
+    invoke-virtual {v0}, Lcom/xiaopeng/montecarlo/dynamiclevel/base/DynamicLevelHelper;->release()V
+
+    .line 12
+    iput-object v1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->f:Lcom/xiaopeng/montecarlo/service/minimap/dynamiclevel/MiniMapGuideDynamicLevelHelper;
+
+    .line 13
+    :cond_35
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->q:Lcom/xiaopeng/montecarlo/service/minimap/LocalMiniMapSurface;
+
+    if-eqz v0, :cond_3c
+
+    .line 14
+    invoke-virtual {v0}, Lcom/xiaopeng/montecarlo/service/minimap/LocalMiniMapSurface;->release()V
+
+    :cond_3c
+    return-void
+.end method
+
+.method public final s()V
+    .registers 3
+
+    .line 1
+    sget-object v0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->w:Lcom/xiaopeng/montecarlo/service/minimap/MiniMapXPCarStateListener;
+
+    if-nez v0, :cond_14
+
+    .line 2
+    new-instance v0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapXPCarStateListener;
+
+    invoke-direct {v0, p0}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapXPCarStateListener;-><init>(Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;)V
+
+    sput-object v0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->w:Lcom/xiaopeng/montecarlo/service/minimap/MiniMapXPCarStateListener;
+
+    .line 3
+    invoke-static {}, Lcom/xiaopeng/common/carservice/CarServiceManager;->getInstance()Lcom/xiaopeng/common/carservice/CarServiceManager;
+
+    move-result-object v0
+
+    sget-object v1, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->w:Lcom/xiaopeng/montecarlo/service/minimap/MiniMapXPCarStateListener;
+
+    invoke-virtual {v0, v1}, Lcom/xiaopeng/common/carservice/CarServiceManager;->addCarStateListener(Lcom/xiaopeng/common/carservice/CarServiceManager$IXPCarStateListener;)V
+
+    .line 4
+    :cond_14
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->e:Lcom/xiaopeng/montecarlo/service/minimap/MiniNaviListener;
+
+    if-nez v0, :cond_31
+
+    .line 5
+    new-instance v0, Lcom/xiaopeng/montecarlo/service/minimap/MiniNaviListener;
+
+    invoke-direct {v0, p0}, Lcom/xiaopeng/montecarlo/service/minimap/MiniNaviListener;-><init>(Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;)V
+
+    iput-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->e:Lcom/xiaopeng/montecarlo/service/minimap/MiniNaviListener;
+
+    .line 6
+    invoke-static {}, Lcom/xiaopeng/common/xptbt/TBTManager;->getInstance()Lcom/xiaopeng/common/xptbt/TBTManager;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->e:Lcom/xiaopeng/montecarlo/service/minimap/MiniNaviListener;
+
+    invoke-virtual {v0, v1}, Lcom/xiaopeng/common/xptbt/TBTManager;->addNaviListener(Lcom/xiaopeng/common/xptbt/INaviListener;)V
+
+    .line 7
+    invoke-static {}, Lcom/xiaopeng/common/xptbt/TBTManager;->getInstance()Lcom/xiaopeng/common/xptbt/TBTManager;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->e:Lcom/xiaopeng/montecarlo/service/minimap/MiniNaviListener;
+
+    invoke-virtual {v0, v1}, Lcom/xiaopeng/common/xptbt/TBTManager;->addRerouteListener(Lcom/xiaopeng/common/xptbt/GuideManager$IRerouteListener;)V
+
+    .line 8
+    :cond_31
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->d:Lcom/xiaopeng/montecarlo/service/minimap/MiniMapAccountEventCallback;
+
+    if-nez v0, :cond_45
+
+    .line 9
+    new-instance v0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapAccountEventCallback;
+
+    invoke-direct {v0}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapAccountEventCallback;-><init>()V
+
+    iput-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->d:Lcom/xiaopeng/montecarlo/service/minimap/MiniMapAccountEventCallback;
+
+    .line 10
+    invoke-static {}, Lcom/xiaopeng/common/account/XPAccountServiceWrapper;->getInstance()Lcom/xiaopeng/common/account/XPAccountServiceWrapper;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->d:Lcom/xiaopeng/montecarlo/service/minimap/MiniMapAccountEventCallback;
+
+    invoke-virtual {v0, v1}, Lcom/xiaopeng/common/account/XPAccountServiceWrapper;->registerAccountEventCallback(Lcom/xiaopeng/core/account/AccountEventCallback;)V
+
+    .line 11
+    :cond_45
+    invoke-static {}, Lcom/xiaopeng/common/sr/SRNaviManager;->getInstance()Lcom/xiaopeng/common/sr/SRNaviManager;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p0}, Lcom/xiaopeng/common/sr/SRNaviManager;->addSRInfoChangedListener(Lcom/xiaopeng/common/sr/ISRInfoChangedListener;)V
+
+    return-void
+.end method
+
+.method public selectMainPath(J)V
+    .registers 6
+    .annotation build Landroidx/annotation/MainThread;
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    if-nez v0, :cond_c
+
+    .line 2
+    sget-object p1, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->u:Lcom/xiaopeng/core/util/L$Tag;
+
+    const-string p2, "selectMainPath() mMapViewWrapper is null"
+
+    invoke-static {p1, p2}, Lcom/xiaopeng/core/util/L;->w(Lcom/xiaopeng/core/util/L$Tag;Ljava/lang/String;)V
+
+    return-void
+
+    .line 3
+    :cond_c
+    invoke-static {}, Lcom/xiaopeng/common/xptbt/TBTManager;->getInstance()Lcom/xiaopeng/common/xptbt/TBTManager;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/xiaopeng/common/xptbt/TBTManager;->getCurrentNaviPathResult()Lcom/xiaopeng/common/xptbt/tbtdata/IPathResult;
+
+    move-result-object v0
+
+    .line 4
+    invoke-static {v0, p1, p2}, Lcom/xiaopeng/common/util/TBTUtil;->getPathIndexFromPathId(Lcom/xiaopeng/common/xptbt/tbtdata/IPathResult;J)I
+
+    move-result p1
+
+    const/4 p2, -0x1
+
+    if-le p1, p2, :cond_2e
+
+    .line 5
+    iget-object p2, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    invoke-virtual {p2}, Lcom/xiaopeng/common/mapdisplay/MapViewWrapper;->getBizControlManager()Lcom/xiaopeng/common/control/BizControlManager;
+
+    move-result-object p2
+
+    const/16 v0, 0x303
+
+    invoke-static {}, Lcom/xiaopeng/common/xptbt/TBTManager;->getInstance()Lcom/xiaopeng/common/xptbt/TBTManager;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/xiaopeng/common/xptbt/TBTManager;->getCurrentNaviId()J
+
+    move-result-wide v1
+
+    invoke-virtual {p2, v0, v1, v2, p1}, Lcom/xiaopeng/common/control/BizControlManager;->setSelectedPath(IJI)V
+
+    :cond_2e
+    return-void
+.end method
+
+.method public setCameraDegree(F)V
+    .registers 3
+
+    .line 1
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    if-eqz v0, :cond_7
+
+    .line 2
+    invoke-virtual {v0, p1}, Lcom/xiaopeng/common/mapdisplay/MapViewWrapper;->setCameraDegree(F)V
+
+    :cond_7
+    return-void
+.end method
+
+.method public setCarPositionRatio(FF)V
+    .registers 4
+
+    .line 1
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    if-eqz v0, :cond_7
+
+    .line 2
+    invoke-virtual {v0, p1, p2}, Lcom/xiaopeng/common/mapdisplay/MapViewWrapper;->setCarPositionRatio(FF)V
+
+    :cond_7
+    return-void
+.end method
+
+.method public setMapDensityDpiByHW(II)V
+    .registers 4
+
+    .line 1
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    if-eqz v0, :cond_7
+
+    .line 2
+    invoke-virtual {v0, p1, p2}, Lcom/xiaopeng/common/mapdisplay/MapViewWrapper;->setMapDensityDpiByHW(II)V
+
+    :cond_7
+    return-void
+.end method
+
+.method public setMapLevel(F)V
+    .registers 3
+
+    .line 1
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    if-eqz v0, :cond_7
+
+    .line 2
+    invoke-virtual {v0, p1}, Lcom/xiaopeng/common/mapdisplay/MapViewWrapper;->setMapLevel(F)V
+
+    :cond_7
+    return-void
+.end method
+
+.method public setMiniMapMode(IZZ)V
+    .registers 7
+
+    .line 1
+    sget-object v0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->u:Lcom/xiaopeng/core/util/L$Tag;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "setMiniMapMode() mode:"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v2, ", animation: "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    const-string v2, ", changeCenter: "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p3}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Lcom/xiaopeng/core/util/L;->i(Lcom/xiaopeng/core/util/L$Tag;Ljava/lang/String;)V
+
+    .line 2
+    iget-object v1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    if-nez v1, :cond_30
+
+    const-string p1, "setMiniMapMode() mMapViewWrapper is null"
+
+    .line 3
+    invoke-static {v0, p1}, Lcom/xiaopeng/core/util/L;->w(Lcom/xiaopeng/core/util/L$Tag;Ljava/lang/String;)V
+
+    return-void
+
+    .line 4
+    :cond_30
+    invoke-static {}, Lcom/xiaopeng/common/xptbt/TBTManager;->getInstance()Lcom/xiaopeng/common/xptbt/TBTManager;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/xiaopeng/common/xptbt/TBTManager;->getCurrentStatus()I
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
+
+    if-eqz v0, :cond_3e
+
+    move v0, v2
+
+    goto :goto_3f
+
+    :cond_3e
+    move v0, v1
+
+    :goto_3f
+    if-eqz p2, :cond_44
+
+    if-nez v0, :cond_44
+
+    move v1, v2
+
+    .line 5
+    :cond_44
+    iget-object p2, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    invoke-virtual {p2, p1, v1, p3}, Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;->setMapMode(IZZ)V
+
+    .line 6
+    iget-object p1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    invoke-virtual {p1}, Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;->restoreCarPosition()V
+
+    .line 7
+    iget-object p1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    xor-int/lit8 p2, v1, 0x1
+
+    invoke-virtual {p1, v2, p2, v1}, Lcom/xiaopeng/common/mapdisplay/MapViewWrapper;->goBackCenter(ZZZ)V
+
+    return-void
+.end method
+
+.method public showNaviManeuver(Lcom/xiaopeng/common/xptbt/tbtdata/XPManeuverInfo;)V
+    .registers 5
+    .annotation build Landroid/annotation/SuppressLint;
+        value = {
+            "WrongConstant"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    if-eqz v0, :cond_1e
+
+    if-eqz p1, :cond_1e
+
+    .line 2
+    new-instance v0, Ljava/util/ArrayList;
+
+    const/4 v1, 0x1
+
+    invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
+
+    .line 3
+    iget-wide v1, p1, Lcom/xiaopeng/common/xptbt/tbtdata/XPManeuverInfo;->mSegmentIndex:J
+
+    invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    move-result-object p1
+
+    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 4
+    iget-object p1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    invoke-virtual {p1}, Lcom/xiaopeng/common/mapdisplay/MapViewWrapper;->getBizControlManager()Lcom/xiaopeng/common/control/BizControlManager;
+
+    move-result-object p1
+
+    invoke-virtual {p1, v0}, Lcom/xiaopeng/common/control/BizControlManager;->setRouteArrowShowSegment(Ljava/util/ArrayList;)V
+
+    :cond_1e
+    return-void
+.end method
+
+.method public startCruise()V
+    .registers 3
+    .annotation build Landroidx/annotation/MainThread;
+    .end annotation
+
+    .line 1
+    sget-object v0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->u:Lcom/xiaopeng/core/util/L$Tag;
+
+    const-string v1, ">>> startCruise"
+
+    invoke-static {v0, v1}, Lcom/xiaopeng/core/util/L;->i(Lcom/xiaopeng/core/util/L$Tag;Ljava/lang/String;)V
+
+    .line 2
+    iget-object v1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    if-nez v1, :cond_11
+
+    const-string v1, "startCruise() mMapViewWrapper is null"
+
+    .line 3
+    invoke-static {v0, v1}, Lcom/xiaopeng/core/util/L;->w(Lcom/xiaopeng/core/util/L$Tag;Ljava/lang/String;)V
+
+    return-void
+
+    :cond_11
+    const/4 v0, 0x1
+
+    .line 4
+    invoke-virtual {p0, v0}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->updateRealTimeTrafficState(Z)V
+
+    const/4 v0, 0x0
+
+    .line 5
+    invoke-virtual {p0, v0}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->I(Z)V
+
+    .line 6
+    invoke-virtual {p0}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->L()V
+
+    .line 7
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    invoke-static {}, Lcom/xiaopeng/common/theme/LocalThemeManager;->getInstance()Lcom/xiaopeng/common/theme/LocalThemeManager;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/xiaopeng/common/theme/LocalThemeManager;->getMapModeByTheme()I
+
+    move-result v1
+
+    invoke-virtual {v0, v1}, Lcom/xiaopeng/common/mapdisplay/MapViewWrapper;->initCruiseCar(I)V
+
+    .line 8
+    invoke-virtual {p0}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->clearOverlay()V
+
+    .line 9
+    invoke-virtual {p0}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->p()V
+
+    return-void
+.end method
+
+.method public startNavi()V
+    .registers 4
+    .annotation build Landroidx/annotation/MainThread;
+    .end annotation
+
+    .line 1
+    sget-object v0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->u:Lcom/xiaopeng/core/util/L$Tag;
+
+    const-string v1, ">>> startNavi"
+
+    invoke-static {v0, v1}, Lcom/xiaopeng/core/util/L;->i(Lcom/xiaopeng/core/util/L$Tag;Ljava/lang/String;)V
+
+    .line 2
+    iget-object v1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    if-nez v1, :cond_11
+
+    const-string v1, "startNavi() mMapViewWrapper is null"
+
+    .line 3
+    invoke-static {v0, v1}, Lcom/xiaopeng/core/util/L;->w(Lcom/xiaopeng/core/util/L$Tag;Ljava/lang/String;)V
+
+    return-void
+
+    :cond_11
+    const/4 v0, 0x0
+
+    .line 4
+    invoke-virtual {p0, v0}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->updateRealTimeTrafficState(Z)V
+
+    .line 5
+    invoke-virtual {p0}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->L()V
+
+    .line 6
+    iget-object v1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    invoke-static {}, Lcom/xiaopeng/common/theme/LocalThemeManager;->getInstance()Lcom/xiaopeng/common/theme/LocalThemeManager;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Lcom/xiaopeng/common/theme/LocalThemeManager;->getMapModeByTheme()I
+
+    move-result v2
+
+    invoke-virtual {v1, v2}, Lcom/xiaopeng/common/mapdisplay/MapViewWrapper;->initNaviCar(I)V
+
+    .line 7
+    iget-object v1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    invoke-virtual {v1}, Lcom/xiaopeng/common/mapdisplay/MapViewWrapper;->getBizControlManager()Lcom/xiaopeng/common/control/BizControlManager;
+
+    move-result-object v1
+
+    const/4 v2, 0x1
+
+    invoke-virtual {v1, v2}, Lcom/xiaopeng/common/control/BizControlManager;->initNaviCar(Z)V
+
+    .line 8
+    invoke-virtual {p0}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->drawRoute()V
+
+    .line 9
+    invoke-static {}, Lcom/xiaopeng/common/xptbt/TBTManager;->getInstance()Lcom/xiaopeng/common/xptbt/TBTManager;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/xiaopeng/common/xptbt/TBTManager;->getNaviManeuverInfo()Lcom/xiaopeng/common/xptbt/tbtdata/XPManeuverInfo;
+
+    move-result-object v1
+
+    .line 10
+    invoke-virtual {p0, v1}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->showNaviManeuver(Lcom/xiaopeng/common/xptbt/tbtdata/XPManeuverInfo;)V
+
+    .line 11
+    invoke-virtual {p0}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->q()V
+
+    .line 12
+    iget-object v1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    invoke-virtual {v1}, Lcom/xiaopeng/common/mapdisplay/MapViewWrapper;->getBizControlManager()Lcom/xiaopeng/common/control/BizControlManager;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v0}, Lcom/xiaopeng/common/control/BizControlManager;->setCarLineAndNaviEndVisible(Z)V
+
+    return-void
+.end method
+
+.method public surfaceCreate(Landroid/view/Surface;II)V
+    .registers 6
+
+    .line 1
+    invoke-static {}, Lcom/xiaopeng/core/util/UiHandlerUtil;->getInstance()Lcom/xiaopeng/core/util/UiHandlerUtil;
+
+    move-result-object v0
+
+    new-instance v1, Lcom/xiaopeng/lib/bughunter/i6/k;
+
+    invoke-direct {v1, p0, p2, p3, p1}, Lcom/xiaopeng/lib/bughunter/i6/k;-><init>(Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;IILandroid/view/Surface;)V
+
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+
+    return-void
+.end method
+
+.method public surfaceDestroy()V
+    .registers 3
+
+    .line 1
+    sget-object v0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->u:Lcom/xiaopeng/core/util/L$Tag;
+
+    const-string/jumbo v1, "surfaceDestroy"
+
+    invoke-static {v0, v1}, Lcom/xiaopeng/core/util/L;->i(Lcom/xiaopeng/core/util/L$Tag;Ljava/lang/String;)V
+
+    .line 2
+    invoke-static {}, Lcom/xiaopeng/core/util/UiHandlerUtil;->getInstance()Lcom/xiaopeng/core/util/UiHandlerUtil;
+
+    move-result-object v0
+
+    new-instance v1, Lcom/xiaopeng/lib/bughunter/i6/m;
+
+    invoke-direct {v1, p0}, Lcom/xiaopeng/lib/bughunter/i6/m;-><init>(Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;)V
+
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+
+    return-void
+.end method
+
+.method public surfaceSizeChanged(Landroid/view/Surface;II)V
+    .registers 7
+
+    .line 1
+    sget-object v0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->u:Lcom/xiaopeng/core/util/L$Tag;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v2, "surfaceSizeChanged() width="
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v2, " height="
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Lcom/xiaopeng/core/util/L;->i(Lcom/xiaopeng/core/util/L$Tag;Ljava/lang/String;)V
+
+    .line 2
+    invoke-static {}, Lcom/xiaopeng/core/util/UiHandlerUtil;->getInstance()Lcom/xiaopeng/core/util/UiHandlerUtil;
+
+    move-result-object v0
+
+    new-instance v1, Lcom/xiaopeng/lib/bughunter/i6/q;
+
+    invoke-direct {v1, p0, p2, p3, p1}, Lcom/xiaopeng/lib/bughunter/i6/q;-><init>(Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;IILandroid/view/Surface;)V
+
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+
+    return-void
+.end method
+
+.method public final t()V
+    .registers 5
+
+    .line 1
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    const/16 v1, 0x12
+
+    invoke-virtual {v0, v1}, Lcom/xiaopeng/common/mapdisplay/MapViewWrapper;->setMapLevel(I)V
+
+    .line 2
+    invoke-static {}, Lcom/xiaopeng/common/xptbt/TBTManager;->getInstance()Lcom/xiaopeng/common/xptbt/TBTManager;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/xiaopeng/common/xptbt/TBTManager;->getCurrentStatus()I
+
+    move-result v0
+
+    .line 3
+    sget-object v1, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->u:Lcom/xiaopeng/core/util/L$Tag;
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "initMiniMapView() state= "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v1, v2}, Lcom/xiaopeng/core/util/L;->i(Lcom/xiaopeng/core/util/L$Tag;Ljava/lang/String;)V
+
+    if-nez v0, :cond_2b
+
+    .line 4
+    invoke-virtual {p0}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->startCruise()V
+
+    goto :goto_2e
+
+    .line 5
+    :cond_2b
+    invoke-virtual {p0}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->startNavi()V
+
+    :goto_2e
+    return-void
+.end method
+
+.method public updateCarIcon()V
+    .registers 2
+
+    .line 1
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    if-eqz v0, :cond_b
+
+    .line 2
+    invoke-static {}, Lcom/xiaopeng/montecarlo/scenes/mapscene/CarLocIconHelper;->getInstance()Lcom/xiaopeng/montecarlo/scenes/mapscene/CarLocIconHelper;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/xiaopeng/montecarlo/scenes/mapscene/CarLocIconHelper;->updateCarLocIcon()V
+
+    :cond_b
+    return-void
+.end method
+
+.method public updateDayNightMode(ILcom/xiaopeng/core/theme/ThemeType;)V
+    .registers 4
+
+    .line 1
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    if-eqz v0, :cond_1f
+
+    .line 2
+    invoke-virtual {v0, p1, p2}, Lcom/xiaopeng/common/mapdisplay/MapViewWrapper;->updateDayNightMode(ILcom/xiaopeng/core/theme/ThemeType;)V
+
+    .line 3
+    invoke-static {}, Lcom/xiaopeng/common/mapdisplay/MapTextureResourcesHelper;->clearResources()V
+
+    .line 4
+    sget-object p1, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->u:Lcom/xiaopeng/core/util/L$Tag;
+
+    const-string p2, "addOverlayTexturesAsync"
+
+    invoke-static {p2}, Lcom/xiaopeng/core/util/L;->formatDayNightSwitchLog(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p2
+
+    invoke-static {p1, p2}, Lcom/xiaopeng/core/util/L;->i(Lcom/xiaopeng/core/util/L$Tag;Ljava/lang/String;)V
+
+    .line 5
+    invoke-static {}, Lcom/xiaopeng/common/mapdisplay/MapTextureResourcesHelper;->getDefaultMapTextureResources()Landroid/util/SparseArray;
+
+    .line 6
+    invoke-static {}, Lcom/xiaopeng/montecarlo/scenes/mapscene/CarLocIconHelper;->getInstance()Lcom/xiaopeng/montecarlo/scenes/mapscene/CarLocIconHelper;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Lcom/xiaopeng/montecarlo/scenes/mapscene/CarLocIconHelper;->updateCarLocIcon()V
+
+    :cond_1f
+    return-void
+.end method
+
+.method public updateFps(I)V
+    .registers 3
+
+    .line 1
+    iget v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->i:I
+
+    if-eq p1, v0, :cond_b
+
+    if-lez p1, :cond_b
+
+    .line 2
+    iput p1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->i:I
+
+    .line 3
+    invoke-virtual {p0, p1}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->J(I)V
+
+    :cond_b
+    return-void
+.end method
+
+.method public updateMapImageType(I)V
+    .registers 5
+
+    .line 1
+    sget-object v0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->u:Lcom/xiaopeng/core/util/L$Tag;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v2, "updateMapImageType sendMapImageType:"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Lcom/xiaopeng/core/util/L;->i(Lcom/xiaopeng/core/util/L$Tag;Ljava/lang/String;)V
+
+    .line 2
+    iput p1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->r:I
+
+    const/4 p1, 0x0
+
+    .line 3
+    iput-object p1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->k:[B
+
+    return-void
+.end method
+
+.method public updateMapViewState(ZZ)V
+    .registers 6
+
+    if-eqz p1, :cond_42
+
+    .line 1
+    invoke-static {}, Lcom/xiaopeng/common/carservice/CarServiceManager;->getInstance()Lcom/xiaopeng/common/carservice/CarServiceManager;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/xiaopeng/common/carservice/CarServiceManager;->getIcmSrMapWidth()I
+
+    move-result v0
+
+    if-lez v0, :cond_15
+
+    invoke-static {}, Lcom/xiaopeng/common/carservice/CarServiceManager;->getInstance()Lcom/xiaopeng/common/carservice/CarServiceManager;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/xiaopeng/common/carservice/CarServiceManager;->getIcmSrMapWidth()I
+
+    move-result v0
+
+    goto :goto_17
+
+    :cond_15
+    iget v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->b:I
+
+    .line 2
+    :goto_17
+    invoke-static {}, Lcom/xiaopeng/common/carservice/CarServiceManager;->getInstance()Lcom/xiaopeng/common/carservice/CarServiceManager;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/xiaopeng/common/carservice/CarServiceManager;->getIcmSrMapHeight()I
+
+    move-result v1
+
+    if-lez v1, :cond_2a
+
+    invoke-static {}, Lcom/xiaopeng/common/carservice/CarServiceManager;->getInstance()Lcom/xiaopeng/common/carservice/CarServiceManager;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/xiaopeng/common/carservice/CarServiceManager;->getIcmSrMapHeight()I
+
+    move-result v1
+
+    goto :goto_2c
+
+    :cond_2a
+    iget v1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->c:I
+
+    .line 3
+    :goto_2c
+    invoke-static {}, Lcom/xiaopeng/common/carservice/CarServiceManager;->getInstance()Lcom/xiaopeng/common/carservice/CarServiceManager;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Lcom/xiaopeng/common/carservice/CarServiceManager;->getIcmSrMapFps()I
+
+    move-result v2
+
+    if-lez v2, :cond_3f
+
+    invoke-static {}, Lcom/xiaopeng/common/carservice/CarServiceManager;->getInstance()Lcom/xiaopeng/common/carservice/CarServiceManager;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Lcom/xiaopeng/common/carservice/CarServiceManager;->getIcmSrMapFps()I
+
+    move-result v2
+
+    goto :goto_81
+
+    :cond_3f
+    iget v2, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->i:I
+
+    goto :goto_81
+
+    .line 4
+    :cond_42
+    invoke-static {}, Lcom/xiaopeng/common/carservice/CarServiceManager;->getInstance()Lcom/xiaopeng/common/carservice/CarServiceManager;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/xiaopeng/common/carservice/CarServiceManager;->getIcmMapWidth()I
+
+    move-result v0
+
+    if-lez v0, :cond_55
+
+    invoke-static {}, Lcom/xiaopeng/common/carservice/CarServiceManager;->getInstance()Lcom/xiaopeng/common/carservice/CarServiceManager;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/xiaopeng/common/carservice/CarServiceManager;->getIcmMapWidth()I
+
+    move-result v0
+
+    goto :goto_57
+
+    :cond_55
+    iget v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->b:I
+
+    .line 5
+    :goto_57
+    invoke-static {}, Lcom/xiaopeng/common/carservice/CarServiceManager;->getInstance()Lcom/xiaopeng/common/carservice/CarServiceManager;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/xiaopeng/common/carservice/CarServiceManager;->getIcmMapHeight()I
+
+    move-result v1
+
+    if-lez v1, :cond_6a
+
+    invoke-static {}, Lcom/xiaopeng/common/carservice/CarServiceManager;->getInstance()Lcom/xiaopeng/common/carservice/CarServiceManager;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/xiaopeng/common/carservice/CarServiceManager;->getIcmMapHeight()I
+
+    move-result v1
+
+    goto :goto_6c
+
+    :cond_6a
+    iget v1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->c:I
+
+    .line 6
+    :goto_6c
+    invoke-static {}, Lcom/xiaopeng/common/carservice/CarServiceManager;->getInstance()Lcom/xiaopeng/common/carservice/CarServiceManager;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Lcom/xiaopeng/common/carservice/CarServiceManager;->getIcmMapFps()I
+
+    move-result v2
+
+    if-lez v2, :cond_7f
+
+    invoke-static {}, Lcom/xiaopeng/common/carservice/CarServiceManager;->getInstance()Lcom/xiaopeng/common/carservice/CarServiceManager;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Lcom/xiaopeng/common/carservice/CarServiceManager;->getIcmMapFps()I
+
+    move-result v2
+
+    goto :goto_81
+
+    :cond_7f
+    iget v2, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->i:I
+
+    :goto_81
+    if-eqz v0, :cond_e3
+
+    if-nez v1, :cond_86
+
+    goto :goto_e3
+
+    .line 7
+    :cond_86
+    iget v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->b:I
+
+    iget v1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->c:I
+
+    invoke-virtual {p0, v0, v1}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->updateMiniMapSize(II)V
+
+    .line 8
+    invoke-virtual {p0, v2}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->updateFps(I)V
+
+    .line 9
+    invoke-virtual {p0, p1}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->I(Z)V
+
+    .line 10
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    if-eqz v0, :cond_e2
+
+    if-eqz p1, :cond_aa
+
+    .line 11
+    invoke-virtual {p0}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->o()V
+
+    .line 12
+    iget-object p1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    invoke-static {}, Lcom/xiaopeng/common/theme/LocalThemeManager;->getInstance()Lcom/xiaopeng/common/theme/LocalThemeManager;
+
+    move-result-object p2
+
+    invoke-virtual {p2}, Lcom/xiaopeng/common/theme/LocalThemeManager;->getMapModeByTheme()I
+
+    move-result p2
+
+    invoke-virtual {p1, p2}, Lcom/xiaopeng/common/mapdisplay/MapViewWrapper;->switchToLane(I)V
+
+    goto :goto_e2
+
+    .line 13
+    :cond_aa
+    invoke-static {}, Lcom/xiaopeng/common/xptbt/TBTManager;->getInstance()Lcom/xiaopeng/common/xptbt/TBTManager;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Lcom/xiaopeng/common/xptbt/TBTManager;->getCurrentStatus()I
+
+    move-result p1
+
+    if-nez p1, :cond_b8
+
+    .line 14
+    invoke-virtual {p0}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->p()V
+
+    goto :goto_bb
+
+    .line 15
+    :cond_b8
+    invoke-virtual {p0}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->q()V
+
+    :goto_bb
+    if-eqz p2, :cond_d5
+
+    .line 16
+    iget-object p1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    invoke-static {}, Lcom/xiaopeng/common/theme/LocalThemeManager;->getInstance()Lcom/xiaopeng/common/theme/LocalThemeManager;
+
+    move-result-object p2
+
+    invoke-virtual {p2}, Lcom/xiaopeng/common/theme/LocalThemeManager;->getMapModeByTheme()I
+
+    move-result p2
+
+    invoke-virtual {p1, p2}, Lcom/xiaopeng/common/mapdisplay/MapViewWrapper;->initNaviCar(I)V
+
+    .line 17
+    iget-object p1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    invoke-virtual {p1}, Lcom/xiaopeng/common/mapdisplay/MapViewWrapper;->getBizControlManager()Lcom/xiaopeng/common/control/BizControlManager;
+
+    move-result-object p1
+
+    const/4 p2, 0x1
+
+    invoke-virtual {p1, p2}, Lcom/xiaopeng/common/control/BizControlManager;->initNaviCar(Z)V
+
+    goto :goto_e2
+
+    .line 18
+    :cond_d5
+    iget-object p1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    invoke-static {}, Lcom/xiaopeng/common/theme/LocalThemeManager;->getInstance()Lcom/xiaopeng/common/theme/LocalThemeManager;
+
+    move-result-object p2
+
+    invoke-virtual {p2}, Lcom/xiaopeng/common/theme/LocalThemeManager;->getMapModeByTheme()I
+
+    move-result p2
+
+    invoke-virtual {p1, p2}, Lcom/xiaopeng/common/mapdisplay/MapViewWrapper;->switchToSD(I)V
+
+    :cond_e2
+    :goto_e2
+    return-void
+
+    .line 19
+    :cond_e3
+    :goto_e3
+    sget-object p1, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->u:Lcom/xiaopeng/core/util/L$Tag;
+
+    new-instance p2, Ljava/lang/StringBuilder;
+
+    invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v2, "updateMapViewState width:"
+
+    invoke-virtual {p2, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v0, ", height:"
+
+    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p2, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p2
+
+    invoke-static {p1, p2}, Lcom/xiaopeng/core/util/L;->e(Lcom/xiaopeng/core/util/L$Tag;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public updateMiniMapDisplayState(Z)V
+    .registers 4
+
+    const/4 p1, 0x1
+
+    .line 1
+    iput-boolean p1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->h:Z
+
+    .line 2
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    if-eqz v0, :cond_2b
+
+    .line 3
+    invoke-virtual {v0}, Lcom/xiaopeng/common/mapdisplay/MapViewWrapper;->isRenderPaused()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_15
+
+    .line 4
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    invoke-virtual {v0}, Lcom/xiaopeng/common/mapdisplay/MapViewWrapper;->renderResume()V
+
+    .line 5
+    invoke-static {}, Lcom/xiaopeng/core/util/RootUtil;->startExceptionWatcher()V
+
+    .line 6
+    :cond_15
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    invoke-virtual {v0}, Lcom/xiaopeng/common/mapdisplay/MapViewWrapper;->getBizControlManager()Lcom/xiaopeng/common/control/BizControlManager;
+
+    move-result-object v0
+
+    invoke-static {}, Lcom/xiaopeng/common/theme/LocalThemeManager;->getInstance()Lcom/xiaopeng/common/theme/LocalThemeManager;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/xiaopeng/common/theme/LocalThemeManager;->isDayMode()Z
+
+    move-result v1
+
+    invoke-virtual {v0, v1}, Lcom/xiaopeng/common/control/BizControlManager;->updateResMarker(Z)V
+
+    .line 7
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    invoke-virtual {v0, p1}, Lcom/xiaopeng/common/mapdisplay/MapViewWrapper;->resetTickCount(I)V
+
+    :cond_2b
+    return-void
+.end method
+
+.method public updateMiniMapSize(II)V
+    .registers 6
+
+    .line 1
+    sget-object v0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->u:Lcom/xiaopeng/core/util/L$Tag;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v2, "updateMiniMapSize width="
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v2, " height="
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Lcom/xiaopeng/core/util/L;->i(Lcom/xiaopeng/core/util/L$Tag;Ljava/lang/String;)V
+
+    .line 2
+    invoke-static {}, Lcom/xiaopeng/montecarlo/InitializerManager;->getInstance()Lcom/xiaopeng/montecarlo/InitializerManager;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/xiaopeng/montecarlo/InitializerManager;->isBLInitialized()Z
+
+    move-result v1
+
+    if-nez v1, :cond_33
+
+    const-string/jumbo p1, "updateMiniMapSize but bl is not initialized!!!"
+
+    .line 3
+    invoke-static {v0, p1}, Lcom/xiaopeng/core/util/L;->w(Lcom/xiaopeng/core/util/L$Tag;Ljava/lang/String;)V
+
+    .line 4
+    invoke-virtual {p0}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->m()V
+
+    return-void
+
+    .line 5
+    :cond_33
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    if-nez v0, :cond_42
+
+    .line 6
+    iput p1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->b:I
+
+    .line 7
+    iput p2, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->c:I
+
+    .line 8
+    invoke-virtual {p0, p1, p2}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->n(II)V
+
+    .line 9
+    invoke-virtual {p0, p1, p2}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->createMapView(II)V
+
+    goto :goto_5e
+
+    .line 10
+    :cond_42
+    iget v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->b:I
+
+    if-ne v0, p1, :cond_4a
+
+    iget v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->c:I
+
+    if-eq v0, p2, :cond_5e
+
+    :cond_4a
+    const/4 v0, 0x1
+
+    .line 11
+    iput-boolean v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->j:Z
+
+    const/4 v0, 0x0
+
+    .line 12
+    iput-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->k:[B
+
+    .line 13
+    iput p1, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->b:I
+
+    .line 14
+    iput p2, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->c:I
+
+    .line 15
+    invoke-virtual {p0, p1, p2}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->n(II)V
+
+    .line 16
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->q:Lcom/xiaopeng/montecarlo/service/minimap/LocalMiniMapSurface;
+
+    if-eqz v0, :cond_5e
+
+    .line 17
+    invoke-virtual {v0, p1, p2}, Lcom/xiaopeng/montecarlo/service/minimap/LocalMiniMapSurface;->updateSize(II)V
+
+    :cond_5e
+    :goto_5e
+    return-void
+.end method
+
+.method public updateNaviInfo(Lcom/xiaopeng/common/xptbt/tbtdata/XPNaviInfo;)V
+    .registers 3
+
+    .line 1
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->f:Lcom/xiaopeng/montecarlo/service/minimap/dynamiclevel/MiniMapGuideDynamicLevelHelper;
+
+    if-eqz v0, :cond_7
+
+    .line 2
+    invoke-virtual {v0, p1}, Lcom/xiaopeng/montecarlo/dynamiclevel/base/DynamicLevelHelper;->sendUpdateInfoMsg(Ljava/lang/Object;)V
+
+    :cond_7
+    return-void
+.end method
+
+.method public updateRealTimeTrafficState(Z)V
+    .registers 3
+
+    .line 1
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    if-eqz v0, :cond_7
+
+    .line 2
+    invoke-virtual {v0, p1}, Lcom/xiaopeng/common/mapdisplay/MapViewWrapper;->setTrafficState(Z)V
+
+    :cond_7
+    return-void
+.end method
+
+.method public updateResMarker()V
+    .registers 3
+
+    .line 1
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    if-eqz v0, :cond_13
+
+    .line 2
+    invoke-virtual {v0}, Lcom/xiaopeng/common/mapdisplay/MapViewWrapper;->getBizControlManager()Lcom/xiaopeng/common/control/BizControlManager;
+
+    move-result-object v0
+
+    invoke-static {}, Lcom/xiaopeng/common/theme/LocalThemeManager;->getInstance()Lcom/xiaopeng/common/theme/LocalThemeManager;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/xiaopeng/common/theme/LocalThemeManager;->isDayMode()Z
+
+    move-result v1
+
+    invoke-virtual {v0, v1}, Lcom/xiaopeng/common/control/BizControlManager;->updateResMarker(Z)V
+
+    :cond_13
+    return-void
+.end method
+
+.method public updateRouteTmc(Ljava/util/List;)V
+    .registers 3
+    .annotation build Landroidx/annotation/MainThread;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Lcom/xiaopeng/common/xptbt/tbtdata/ILightBarInfo;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    if-eqz v0, :cond_b
+
+    .line 2
+    invoke-virtual {v0}, Lcom/xiaopeng/common/mapdisplay/MapViewWrapper;->getBizControlManager()Lcom/xiaopeng/common/control/BizControlManager;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1}, Lcom/xiaopeng/common/control/BizControlManager;->updateRouteTmc(Ljava/util/List;)V
+
+    :cond_b
+    return-void
+.end method
+
+.method public updateViaPass()V
+    .registers 6
+    .annotation build Landroid/annotation/SuppressLint;
+        value = {
+            "WrongConstant"
+        }
+    .end annotation
+
+    .line 1
+    invoke-static {}, Lcom/xiaopeng/common/xptbt/TBTManager;->getInstance()Lcom/xiaopeng/common/xptbt/TBTManager;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/xiaopeng/common/xptbt/TBTManager;->getCurrentNaviId()J
+
+    move-result-wide v0
+
+    .line 2
+    sget-object v2, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->u:Lcom/xiaopeng/core/util/L$Tag;
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, ">>>updatePaths updateViaPass requestId : "
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v2, v3}, Lcom/xiaopeng/core/util/L;->i(Lcom/xiaopeng/core/util/L$Tag;Ljava/lang/String;)V
+
+    .line 3
+    iget-object v2, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    if-eqz v2, :cond_38
+
+    const-wide/16 v3, -0x1
+
+    cmp-long v3, v3, v0
+
+    if-eqz v3, :cond_38
+
+    .line 4
+    invoke-virtual {v2}, Lcom/xiaopeng/common/mapdisplay/MapViewWrapper;->getBizControlManager()Lcom/xiaopeng/common/control/BizControlManager;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v0, v1}, Lcom/xiaopeng/common/control/BizControlManager;->updateRouteOverlayElem(J)V
+
+    .line 5
+    iget-object v0, p0, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->a:Lcom/xiaopeng/common/mapdisplay/MiniMapViewWrapper;
+
+    invoke-virtual {v0}, Lcom/xiaopeng/common/mapdisplay/MapViewWrapper;->getBizControlManager()Lcom/xiaopeng/common/control/BizControlManager;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/xiaopeng/common/control/BizControlManager;->updatePaths()V
+
+    :cond_38
+    return-void
+.end method
+
+.method public synthetic v()V
+    .registers 1
+
+    invoke-direct {p0}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->u()V
+
+    return-void
+.end method
+
+.method public synthetic x(I)V
+    .registers 2
+
+    invoke-direct {p0, p1}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->w(I)V
+
+    return-void
+.end method
+
+.method public synthetic z()V
+    .registers 1
+
+    invoke-direct {p0}, Lcom/xiaopeng/montecarlo/service/minimap/MiniMapServiceHelper;->y()V
+
+    return-void
+.end method
+

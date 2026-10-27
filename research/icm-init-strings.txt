@@ -1,0 +1,5028 @@
+/lib/ld-linux.so.3
+!9(*
+dvT<
+W-'Qh
+libproperty.so
+_ITM_deregisterTMCloneTable
+__gmon_start__
+_Jv_RegisterClasses
+_ITM_registerTMCloneTable
+__system_property_find
+__system_property_get
+__system_property_area_init
+__system_property_add
+property_get_int32
+__system_property_update
+libgcc_s.so.1
+__aeabi_unwind_cpp_pr0
+__aeabi_unwind_cpp_pr1
+libc.so.6
+socket
+strcpy
+readdir
+sprintf
+fopen
+strncmp
+strrchr
+closedir
+signal
+strncpy
+sigprocmask
+sigfillset
+__stack_chk_fail
+unlink
+listen
+mkdir
+fsync
+abort
+_exit
+socketpair
+getpid
+kill
+strdup
+strftime
+chmod
+mkstemp
+isspace
+reboot
+fgets
+strlen
+sigemptyset
+memset
+__errno_location
+bind
+chdir
+memcmp
+getsockopt
+msgget
+dup2
+vsnprintf
+poll
+putenv
+recv
+lseek
+memcpy
+fclose
+setsockopt
+malloc
+opendir
+alarm
+msgsnd
+setrlimit
+execvp
+strncat
+usleep
+chown
+fread
+rename
+sigaction
+atoi
+waitpid
+localtime
+umount
+strchr
+vfork
+accept
+setsid
+fcntl
+openat
+getrlimit
+access
+strcmp
+strerror
+__libc_start_main
+dirfd
+setenv
+write
+free
+__fxstat
+__xmknod
+ld-linux.so.3
+__stack_chk_guard
+_edata
+__bss_start
+__bss_start__
+__bss_end__
+__end__
+_end
+/home/jenkins/workspace/SourceCode/out/sysroot/usr/lib:
+__libc_csu_fini
+_ZN3icm4init22handle_property_set_fdEv
+_ZN3icm4init14__property_getEPKcPc
+_ZN3icm4init22get_property_workspaceEPiS1_
+_ZN3icm4init17checkEthMasterCfgEv
+_ZN3icm4init27property_load_boot_defaultsEv
+_ZN3icm4init17signalHandlerInitEv
+_ZN3icm4init14rebootPowerOffEi
+_ZN3icm4init10_klogWriteEPKcz
+_ZN3icm4init4mainEiPPc
+_ZN3icm4init11getDeviceFdEv
+_ZN3icm4init29resetSigHandlerAndUnblockSigsEv
+_ZN3icm4init12property_setEPKcS2_
+_ZN3icm4init22start_property_serviceEv
+_ZN3icm4init11serviceInfoC1Ev
+__data_start
+_IO_stdin_used
+_ZN3icm4init19get_property_set_fdEv
+_ZN3icm4init10deviceInitEv
+__libc_csu_init
+_ZN3icm4init15isMcuUpdateModeEv
+_ZN3icm4init12initPowerOffEi
+_ZN3icm4init18mcuUpdateModeStateEi
+_ZN3icm4init17properties_initedEv
+_ZN3icm4init11serviceInfoC2Ev
+_ZN3icm4init15getServiceByPidEi
+_ZN3icm4init13property_initEv
+_ZN3icm4init24notifyServiceStateChangeEPNS0_11serviceInfoEi
+_ZN3icm4init18monitorCoreServiceEi
+_ZN3icm4init15getSigHandlerFdEv
+_ZN3icm4init18sigProcMaskAllSigsEi
+_ZN3icm4init13configNetworkEv
+_ZN3icm4init17handleDeviceEventEv
+_ZN3icm4init8klogInitEv
+_ZN3icm4init10reportTickEi
+_ZN3icm4init18load_persist_propsEv
+_ZN3icm4init12handleSignalEv
+GLIBC_2.4
+GCC_3.5
+/dev/kmsg
+ACTION=
+DEVPATH=
+SUBSYSTEM=
+MAJOR=
+MINOR=
+INTERFACE
+init: %s is added
+remove
+init: %s is removed
+init: fail to init device:%s
+init: deviceInit(): done
+/sys/class/net/eth0
+/sys/bus/mdio_bus/devices/1:00/configuration/master_cfg
+init: fail to open eth config: %s
+init: eth mode is %s
+slave
+master
+init: waitForProcess: %d
+init: child %ld exit with status: %d
+init: child %ld killed by signal %d
+init: child %ld stopped by signal %d
+init: signalHandlerInit(): done
+/root/startup.sh
+/root/network.sh
+/bin/sh
+/dev/null
+/dev/console
+/dev/urandom
+/tmp/core_services
+/dev/tty
+/dev/ttymxc3
+/sys/kernel/xp_display_mcu/display_mcu
+/etc/rc.d/rc_gpu.S
+/etc/rc.d/rcS
+/root/core_services
+/tmp/dbus_env
+DBUS_SESSION_BUS_ADDRESS
+DBUS_SESSION_BUS_PID
+dbus-daemon
+carservice
+ota_app_icm
+ECluster
+audio
+factory_tool
+ftpd
+sshd
+/app/hmi/bin/
+/data/Log/log0
+init: msgget create failed
+init: msgget malloc failed
+init: msgsnd failed
+init: msgsnd %s success
+/proc/boot_reason
+init: bootReason:%s
+panic_
+system reboot
+persist.audio.retry.reset
+init: report tas2505 Err :%d
+tas2505 ERR:%d
+%s %s
+crash
+init: fail to open %s: %s
+init: %s: numOfServices=%d
+%s=%s
+init: fail to fork: %s
+%d,%d
+ANDROID_PROPERTY_WORKSPACE
+init: fail to exec cmd: %s with %s
+init: startProcess(): %s done
+init: %s: fail to fork %s
+init: %s: dbus launch done
+/usr/bin/dbus-launch
+init: fail to exec dbus-launch:%s
+dbus-launch
+--config-file=/etc/session.conf
+init: %s: done
+init: %s is already running
+tcpsvd
+init: %s: fail to start ftpd:%s
+root:root
+172.20.1.40
+2221
+/data
+init: fail to run %s: %s
+init: fail to exec %s: %s
+init: fail to kill %s:%s
+init: kill %s done
+init: no svc to kill
+init: %s: start
+init: fail to open file %s: %s
+init: fail to setenv:%s
+init: %s: pid=%d
+init: The system is going down now!
+TERM
+init: Sent SIG%s to all processes
+KILL
+init: fail to turn of BL %s
+init: Requesting system reboot
+init: Requesting system Shutdown
+-a -r -l
+init: 
+Requesting lowlevel shutdown
+init: fail to make %s: %s
+_%Y%m%d_%H%m%S
+_%d%d%d_%d%d%d
+init: fail to rename %s crash log: %s
+init: saveCrashLog(): %s crash more than %d times
+init: service %s exited, try to restarting
+init: runInitScript(): done
+init: configNetwork(): done
+/dev
+/proc
+/sys
+proc
+sysfs
+tmpfs
+mode=0755
+/dev/shm
+/dev/pts
+devpts
+mode=0600
+usbfs
+/proc/bus/usb
+usdfs
+/tmp
+size=64m
+init: Tick report invaild! %d
+sys.xiaopeng.debug
+init: Restart HMI from 0x%x not update yet!
+init: kill %s done by SIGQUIT
+init: svc Invaild
+sys.xiaopeng.hmi_logo
+init: Restart HMI fail tick again, REBOOT NOW.
+init: Restart Car Service from 0x%x not update yet!
+init: kill %s done by SIGABRT
+init: Restart Car Service fail tick again, REBOOT NOW.
+PATH=/sbin:/usr/bin:/bin:/usr/sbin:/app/hmi/bin/
+SHELL=/bin/sh
+HOME=/
+USER=root
+TERM=/vt100
+SEGFAULT_SIGNALS="abrt segv ill fpe bus"
+LD_PRELOAD=/usr/lib/libsegfault.so
+DBUS_SESSION_BUS_ADDRESS=
+DBUS_SESSION_BUS_PID=
+DBUS_DEBUG_OUTPUT=true
+init: init start
+init: setrlimit returned error.
+ro.mcu.update_mode
+init: not in MCU uppdate mode, Start monitor!
+init: %s is ready
+init: under MCU update mode
+getServiceByName
+startDbusDaemon
+startCarService
+startOtaApp
+startFactoryTool
+startFtpd
+startEclusterApp
+startAudioApp
+saveDbusEnv
+runMcuUpdateModeServices
+/dev/__properties__
+init: Failed to open socket '%s': %s
+/tmp/%s
+init: Failed to unlink old socket '%s': %s
+init: Failed to bind socket '%s': %s
+init: Created socket '%s' with mode '%o', user '%d', group '%d'
+init: fstat failed for '%s'
+init: skipping insecure file '%s'
+/data/property
+%s/.temp.XXXXXX
+init: Unable to write persistent property to temp file %s: %s
+%s/%s
+init: Unable to rename persistent property file %s to %s
+init: Failed to set '%s'='%s'
+init: set '%s'='%s'
+net.
+net.change
+persist.
+init: Unable to receive socket options
+init: sys_prop: mis-match msg size received: %d expected: %d errno: %d
+init: sys_prop: illegal property name. Got: "%s"
+ctl.
+init: sys_prop: Unable to %s service ctl [%s] uid:%d gid:%d pid:%d
+init: sys_prop: permission denied uid:%d  name:%s
+init: Unable to open persistent property file "%s" errno: %d
+init: fstat on property file "%s" failed errno: %d
+init: Unable to read persistent property file %s errno: %d
+init: Unable to open persistent property directory %s errno: %d
+/default.prop
+/etc/build.prop
+property_service
+/data/ota_flag/mcu_flag.DAT
+init: fail to open %s:%s
+init: %s:update flag=%d
+/dev/mmcblk0p3
+init: fail to open %s: %s
+init: fail to read mcu update flag:%s
+isMcuUpdateFlagSet
+isMcuUpdateMode
+GCC: (Ubuntu/Linaro 5.4.0-6ubuntu1~16.04.9) 5.4.0 20160609
+aeabi
+&msg
+`(len
+l) )
+(ptr
+(msg
+L(buf
+T(res
+\*pid
+d*sig
+h*svc
+*sfd
+*tmp
+p*bit
+(how
+~*set
+(ENV
+0ret
+`0fd
+{0fd
+l0svc
+6key
+\6val
+0len
+8pid
+D8sz
+8tmp
+8svc
+}8fd
+}8pid
+8svc
+8pid
+8svc
+8pid
+8svc
+8pid
+8svc
+8pid
+D5HC
+8svc
+8pid
+8svc
+8pid
+;svc
+}8ptr
+}5TH
+8svc
+l8pid
+;sig
+;sig
+;sig
+;svc
+{8tm
+}8len
+;svc
+l;sig
+;pid
+;sig
+;sig
+8svc
+8fds
+\:{,
+L5d\
+8res
+P9P]
+l)>Z
+t(uid
+p(gid
+l)#[
+~(uid
+~(gid
+~+ret
+(_sz
+_+fd
+l)>H
+`+pi
+p+ret
+t1>H
+h15\
+2msg
+}3res
+}1;Z
+t5sz
+\2key
+h2eol
+t2sol
+l2tmp
+p2sz
+2dir
+~1vR
+~1nB
+~2sb
+/home/jenkins/workspace/SourceCode/applications/init
+/usr/arm-linux-gnueabi/include
+/usr/arm-linux-gnueabi/include/sys
+/usr/arm-linux-gnueabi/include/bits
+/usr/arm-linux-gnueabi/include/gnu
+/usr/lib/gcc-cross/arm-linux-gnueabi/5/include
+main.cpp
+init.h
+stdc-predef.h
+types.h
+features.h
+cdefs.h
+wordsize.h
+stubs.h
+stubs-soft.h
+types.h
+typesizes.h
+time.h
+stddef.h
+endian.h
+endian.h
+byteswap.h
+byteswap-16.h
+select.h
+select.h
+sigset.h
+time.h
+sysmacros.h
+pthreadtypes.h
+string.h
+xlocale.h
+/home/jenkins/workspace/SourceCode/applications/init
+/usr/lib/gcc-cross/arm-linux-gnueabi/5/include
+/usr/arm-linux-gnueabi/include/bits
+/usr/arm-linux-gnueabi/include
+/usr/arm-linux-gnueabi/include/sys
+/usr/arm-linux-gnueabi/include/gnu
+klogger.cpp
+stdarg.h
+fcntl-linux.h
+<built-in>
+confname.h
+stdc-predef.h
+fcntl.h
+features.h
+cdefs.h
+wordsize.h
+stubs.h
+stubs-soft.h
+types.h
+typesizes.h
+fcntl.h
+uio.h
+types.h
+time.h
+stddef.h
+endian.h
+endian.h
+byteswap.h
+byteswap-16.h
+select.h
+select.h
+sigset.h
+time.h
+sysmacros.h
+pthreadtypes.h
+stat.h
+stat.h
+stdio.h
+libio.h
+_G_config.h
+wchar.h
+stdio_lim.h
+sys_errlist.h
+unistd.h
+posix_opt.h
+environments.h
+getopt.h
+/home/jenkins/workspace/SourceCode/applications/init
+/usr/arm-linux-gnueabi/include/bits
+/usr/lib/gcc-cross/arm-linux-gnueabi/5/include
+/usr/arm-linux-gnueabi/include/asm-generic
+/usr/arm-linux-gnueabi/include/linux
+/usr/arm-linux-gnueabi/include
+/usr/arm-linux-gnueabi/include/sys
+/usr/arm-linux-gnueabi/include/gnu
+/usr/arm-linux-gnueabi/include/asm
+devices.cpp
+fcntl-linux.h
+socket_type.h
+stddef.h
+sockaddr.h
+socket.h
+int-ll64.h
+socket.h
+netlink.h
+confname.h
+devices.h
+stdc-predef.h
+types.h
+features.h
+cdefs.h
+wordsize.h
+stubs.h
+stubs-soft.h
+types.h
+typesizes.h
+time.h
+endian.h
+endian.h
+byteswap.h
+byteswap-16.h
+select.h
+select.h
+sigset.h
+time.h
+sysmacros.h
+pthreadtypes.h
+stat.h
+stat.h
+fcntl.h
+fcntl.h
+uio.h
+string.h
+xlocale.h
+socket.h
+uio.h
+socket.h
+socket.h
+sockios.h
+sockios.h
+un.h
+kernel.h
+sysinfo.h
+types.h
+types.h
+bitsperlong.h
+bitsperlong.h
+posix_types.h
+stddef.h
+posix_types.h
+posix_types.h
+dirent.h
+dirent.h
+posix1_lim.h
+local_lim.h
+limits.h
+unistd.h
+posix_opt.h
+environments.h
+getopt.h
+stdlib.h
+waitflags.h
+waitstatus.h
+alloca.h
+stdlib-float.h
+errno.h
+errno.h
+errno.h
+errno.h
+errno.h
+errno-base.h
+klogger.h
+init.h
+ggggg
+/home/jenkins/workspace/SourceCode/applications/init
+/usr/arm-linux-gnueabi/include/bits
+/usr/arm-linux-gnueabi/include/sys
+/usr/arm-linux-gnueabi/include
+/usr/arm-linux-gnueabi/include/gnu
+/usr/lib/gcc-cross/arm-linux-gnueabi/5/include
+/usr/arm-linux-gnueabi/include/linux
+/usr/arm-linux-gnueabi/include/asm
+/usr/arm-linux-gnueabi/include/asm-generic
+signal_handler.cpp
+types.h
+types.h
+sigset.h
+select.h
+siginfo.h
+signal.h
+sigaction.h
+fcntl-linux.h
+socket_type.h
+confname.h
+socket.h
+init.h
+signal_handler.h
+stdc-predef.h
+stdio.h
+features.h
+cdefs.h
+wordsize.h
+stubs.h
+stubs-soft.h
+stddef.h
+typesizes.h
+libio.h
+_G_config.h
+wchar.h
+stdarg.h
+stdio_lim.h
+sys_errlist.h
+stdlib.h
+waitflags.h
+waitstatus.h
+endian.h
+endian.h
+byteswap.h
+byteswap-16.h
+xlocale.h
+time.h
+select.h
+time.h
+sysmacros.h
+pthreadtypes.h
+alloca.h
+stdlib-float.h
+errno.h
+errno.h
+errno.h
+errno.h
+errno.h
+errno-base.h
+signum.h
+sigcontext.h
+sigcontext.h
+sigstack.h
+ucontext.h
+sigthread.h
+unistd.h
+posix_opt.h
+environments.h
+getopt.h
+fcntl.h
+fcntl.h
+uio.h
+stat.h
+socket.h
+uio.h
+sockaddr.h
+socket.h
+socket.h
+sockios.h
+sockios.h
+wait.h
+string.h
+klogger.h
+fighi
+gghK
+zf6i
+/home/jenkins/workspace/SourceCode/applications/init
+/usr/arm-linux-gnueabi/include/bits
+/usr/arm-linux-gnueabi/include/sys
+/usr/arm-linux-gnueabi/include
+/usr/lib/gcc-cross/arm-linux-gnueabi/5/include
+/usr/arm-linux-gnueabi/include/gnu
+/usr/arm-linux-gnueabi/include/asm
+/usr/arm-linux-gnueabi/include/asm-generic
+/usr/arm-linux-gnueabi/include/linux
+/home/jenkins/workspace/SourceCode/out/sysroot/usr/include
+init.h
+init.cpp
+types.h
+poll.h
+types.h
+time.h
+stddef.h
+mount.h
+confname.h
+stdio.h
+libio.h
+fcntl-linux.h
+resource.h
+msg.h
+stdc-predef.h
+features.h
+cdefs.h
+wordsize.h
+stubs.h
+stubs-soft.h
+poll.h
+sigset.h
+typesizes.h
+endian.h
+endian.h
+byteswap.h
+byteswap-16.h
+select.h
+select.h
+time.h
+sysmacros.h
+pthreadtypes.h
+stat.h
+stat.h
+wait.h
+signal.h
+signum.h
+siginfo.h
+sigaction.h
+sigcontext.h
+sigcontext.h
+sigstack.h
+ucontext.h
+sigthread.h
+waitflags.h
+waitstatus.h
+ioctl.h
+ioctls.h
+ioctls.h
+ioctls.h
+ioctl.h
+ioctl.h
+ioctl.h
+ioctl-types.h
+ttydefaults.h
+fcntl.h
+fcntl.h
+uio.h
+unistd.h
+posix_opt.h
+environments.h
+getopt.h
+errno.h
+errno.h
+errno.h
+errno.h
+errno.h
+errno-base.h
+string.h
+xlocale.h
+stdlib.h
+alloca.h
+stdlib-float.h
+_G_config.h
+wchar.h
+stdarg.h
+stdio_lim.h
+sys_errlist.h
+ctype.h
+reboot.h
+resource.h
+ipc.h
+ipctypes.h
+ipc.h
+msq.h
+timex.h
+klogger.h
+devices.h
+signal_handler.h
+property_service.h
+stdbool.h
+system_properties.h
+properties.h
+inttypes.h
+stdint.h
+stdint.h
+wchar.h
+boot_info.h
+uJQ4
+]ghhgL
+gggg
+>MgL
+uMgg
+=2gL
+L0gNgg
+o.hg
+=Mgh
+uLgh
+uLgh
+KMgg/Lgg/
+gMI3h
+L000K
+KL000K
+gggL
+ZK00/000
+.LK000g
+fggh
+KjP+M
+fKKKKLKLKLL/00K000
+YPKKKKL
+KM/2
+/home/jenkins/workspace/SourceCode/applications/init
+/usr/lib/gcc-cross/arm-linux-gnueabi/5/include
+/usr/arm-linux-gnueabi/include/bits
+/usr/arm-linux-gnueabi/include/sys
+/usr/arm-linux-gnueabi/include
+/home/jenkins/workspace/SourceCode/out/sysroot/usr/include
+/usr/arm-linux-gnueabi/include/gnu
+/usr/arm-linux-gnueabi/include/linux
+/usr/lib/gcc-cross/arm-linux-gnueabi/5/include-fixed
+/usr/arm-linux-gnueabi/include/asm
+/usr/arm-linux-gnueabi/include/asm-generic
+/usr/arm-linux-gnueabi/include/netinet
+property_service.cpp
+stddef.h
+types.h
+types.h
+time.h
+unistd.h
+stat.h
+dirent.h
+confname.h
+dirent.h
+system_properties.h
+_system_properties.h
+fcntl-linux.h
+socket_type.h
+sockaddr.h
+socket.h
+un.h
+property_service.h
+stdc-predef.h
+stdio.h
+features.h
+cdefs.h
+wordsize.h
+stubs.h
+stubs-soft.h
+typesizes.h
+libio.h
+_G_config.h
+wchar.h
+stdarg.h
+stdio_lim.h
+sys_errlist.h
+stdlib.h
+waitflags.h
+waitstatus.h
+endian.h
+endian.h
+byteswap.h
+byteswap-16.h
+xlocale.h
+select.h
+select.h
+sigset.h
+time.h
+sysmacros.h
+pthreadtypes.h
+alloca.h
+stdlib-float.h
+posix_opt.h
+environments.h
+getopt.h
+string.h
+ctype.h
+fcntl.h
+fcntl.h
+uio.h
+posix1_lim.h
+local_lim.h
+limits.h
+limits.h
+syslimits.h
+limits.h
+posix2_lim.h
+xopen_lim.h
+errno.h
+errno.h
+errno.h
+errno.h
+errno.h
+errno-base.h
+socket.h
+uio.h
+socket.h
+socket.h
+sockios.h
+sockios.h
+in.h
+stdint.h
+stdint.h
+wchar.h
+in.h
+mman.h
+mman.h
+mman-linux.h
+stat.h
+stdbool.h
+init.h
+klogger.h
+gLgg/
+tJLML6K
+KK0K
+FKKK
+?fmKKL
+K1hKL
+?fgg
+K/MKKiKK
+K0/MiN0
+/home/jenkins/workspace/SourceCode/applications/init
+/usr/lib/gcc-cross/arm-linux-gnueabi/5/include
+/usr/arm-linux-gnueabi/include/bits
+/usr/arm-linux-gnueabi/include
+/usr/arm-linux-gnueabi/include/sys
+/usr/arm-linux-gnueabi/include/gnu
+/usr/arm-linux-gnueabi/include/linux
+/usr/arm-linux-gnueabi/include/asm
+/usr/arm-linux-gnueabi/include/asm-generic
+boot_info.cpp
+stddef.h
+types.h
+stdio.h
+libio.h
+boot_info.h
+stdc-predef.h
+stdlib.h
+features.h
+cdefs.h
+wordsize.h
+stubs.h
+stubs-soft.h
+waitflags.h
+waitstatus.h
+endian.h
+endian.h
+byteswap.h
+typesizes.h
+byteswap-16.h
+xlocale.h
+types.h
+time.h
+select.h
+select.h
+sigset.h
+time.h
+sysmacros.h
+pthreadtypes.h
+alloca.h
+stdlib-float.h
+_G_config.h
+wchar.h
+stdarg.h
+stdio_lim.h
+sys_errlist.h
+unistd.h
+posix_opt.h
+environments.h
+confname.h
+getopt.h
+errno.h
+errno.h
+errno.h
+errno.h
+errno.h
+errno-base.h
+string.h
+stat.h
+stat.h
+fcntl.h
+fcntl.h
+fcntl-linux.h
+uio.h
+stdint.h
+stdint.h
+wchar.h
+klogger.h
+__linux__ 1
+__DECIMAL_DIG__ 17
+_XOPEN_SOURCE_EXTENDED
+__UHA_FBIT__ 8
+__fsfilcnt_t_defined 
+__DEC128_EPSILON__ 1E-33DL
+__WCHAR_MIN__ 0U
+__UINT32_TYPE__ unsigned int
+__UINT32_MAX__ 0xffffffffU
+__CHAR_UNSIGNED__ 1
+__ino_t_defined 
+sizetype
+__MODE_T_TYPE __U32_TYPE
+__LLACCUM_MIN__ (-0X1P31LLK-0X1P31LLK)
+__LACCUM_EPSILON__ 0x1P-31LK
+__PTRDIFF_MAX__ 0x7fffffff
+__INTMAX_C(c) c ## LL
+__INTMAX_MAX__ 0x7fffffffffffffffLL
+__DEC32_SUBNORMAL_MIN__ 0.000001E-95DF
+__USE_XOPEN2K8XSI
+__REDIRECT_NTH(name,proto,alias) name proto __THROW __asm__ (__ASMNAME (#alias))
+__OFF64_T_TYPE __SQUAD_TYPE
+__ULACCUM_FBIT__ 32
+__WCHAR_MAX__ 0xffffffffU
+__LDBL_REDIR1(name,proto,alias) name proto
+__clockid_t_defined 1
+__UQUAD_TYPE __u_quad_t
+__ARM_FEATURE_QBIT
+__flexarr []
+__RLIM_T_TYPE __ULONGWORD_TYPE
+MAX_SEVICES 16
+__GNU_LIBRARY__
+__DBL_MAX_10_EXP__ 308
+__FRACT_MIN__ (-0.5R-0.5R)
+__ULLACCUM_MAX__ 0XFFFFFFFFFFFFFFFFP-32ULLK
+__USACCUM_MAX__ 0XFFFFP-8UHK
+__DEC32_MIN__ 1E-95DF
+__SLONG32_TYPE long int
+__USE_GNU 1
+__ORDER_PDP_ENDIAN__ 3412
+__SIZE_TYPE__ unsigned int
+__DEC64_MAX_EXP__ 385
+__FLT_HAS_DENORM__ 1
+__INT8_TYPE__ signed char
+__ULONG32_TYPE unsigned long int
+__USACCUM_MIN__ 0.0UHK
+__FSWORD_T_TYPE __SWORD_TYPE
+__LDBL_MIN_EXP__ (-1021)
+__LDBL_MANT_DIG__ 53
+__cpp_alias_templates 200704
+__UINT8_C(c) c
+_SIGSET_NWORDS (1024 / (8 * sizeof (unsigned long int)))
+__attribute_noinline__ __attribute__ ((__noinline__))
+__APCS_32__ 1
+__FD_ELT(d) ((d) / __NFDBITS)
+__STDC_HOSTED__ 1
+__STD_TYPE
+__FD_ZERO(s) do { unsigned int __i; fd_set *__arr = (s); for (__i = 0; __i < sizeof (fd_set) / sizeof (__fd_mask); ++__i) __FDS_BITS (__arr)[__i] = 0; } while (0)
+__INT_FAST64_TYPE__ long long int
+__WINT_TYPE__ unsigned int
+__BIT_TYPES_DEFINED__ 1
+__SIZE_T__ 
+__SIZEOF_LONG_LONG__ 8
+__SIZEOF_PTHREAD_ATTR_T 36
+__daddr_t_defined 
+__USFRACT_MAX__ 0XFFP-8UHR
+_XLOCALE_H 1
+__GLIBC__ 2
+FD_SETSIZE __FD_SETSIZE
+__ULFRACT_FBIT__ 32
+__SLONGWORD_TYPE long int
+__sigset_t_defined 
+__GLIBC_PREREQ(maj,min) ((__GLIBC__ << 16) + __GLIBC_MINOR__ >= ((maj) << 16) + (min))
+__SFRACT_EPSILON__ 0x1P-7HR
+__STDC_UTF_16__ 1
+_T_SIZE 
+__THUMBEL__
+__USQ_FBIT__ 32
+__ORDER_BIG_ENDIAN__ 4321
+__USA_FBIT__ 16
+__SQ_FBIT__ 31
+BIG_ENDIAN __BIG_ENDIAN
+__TQ_IBIT__ 0
+__UHQ_FBIT__ 16
+__UWORD_TYPE unsigned int
+__USE_POSIX
+__DEC32_EPSILON__ 1E-6DF
+__LACCUM_IBIT__ 32
+_SIGSET_H_types 1
+__DBL_MIN__ double(2.2250738585072014e-308L)
+__VFP_FP__ 1
+__LLFRACT_MIN__ (-0.5LLR-0.5LLR)
+__INTPTR_MAX__ 0x7fffffff
+__stub_fchflags 
+__UINT_FAST16_MAX__ 0xffffffffU
+__FSFILCNT64_T_TYPE __UQUAD_TYPE
+htole16(x) (x)
+__GNUC_PREREQ(maj,min) ((__GNUC__ << 16) + __GNUC_MINOR__ >= ((maj) << 16) + (min))
+__USE_XOPEN
+__UINT_FAST8_MAX__ 0xff
+__USE_XOPEN2K8
+_SYS_SIZE_T_H 
+__UINT_LEAST8_TYPE__ unsigned char
+__ACCUM_FBIT__ 15
+_ISOC11_SOURCE
+__UACCUM_IBIT__ 16
+__DBL_EPSILON__ double(2.2204460492503131e-16L)
+le16toh(x) (x)
+__INT_FAST64_MAX__ 0x7fffffffffffffffLL
+htobe16(x) __bswap_16 (x)
+__REDIRECT(name,proto,alias) name proto __asm__ (__ASMNAME (#alias))
+__USE_XOPEN2K8 1
+__CLOCKID_T_TYPE __S32_TYPE
+__SQUAD_TYPE __quad_t
+__DEC128_MIN_EXP__ (-6142)
+_STRUCT_TIMEVAL 1
+__UDA_FBIT__ 32
+__size_t__ 
+__USACCUM_EPSILON__ 0x1P-8UHK
+__UINTMAX_C(c) c ## ULL
+__SIZEOF_POINTER__ 4
+__INT_LEAST8_TYPE__ signed char
+__GCC_ATOMIC_BOOL_LOCK_FREE 1
+__int8_t_defined 
+/home/jenkins/workspace/SourceCode/applications/init/main.cpp
+le64toh(x) (x)
+__PDP_ENDIAN 3412
+be64toh(x) __bswap_64 (x)
+__glibc_likely(cond) __builtin_expect ((cond), 1)
+__TA_FBIT__ 63
+__THUMB_INTERWORK__ 1
+__ULLFRACT_MAX__ 0XFFFFFFFFFFFFFFFFP-64ULLR
+__FSBLKCNT64_T_TYPE __UQUAD_TYPE
+__attribute_warn_unused_result__ __attribute__ ((__warn_unused_result__))
+__ASMNAME(cname) __ASMNAME2 (__USER_LABEL_PREFIX__, cname)
+__CONCAT(x,y) x ## y
+__GNUG__ 5
+__REDIRECT_LDBL(name,proto,alias) __REDIRECT (name, proto, alias)
+_POSIX_C_SOURCE 200809L
+__UINT_FAST32_MAX__ 0xffffffffU
+__FLT_MAX_EXP__ 128
+__SIZEOF_LONG__ 4
+__FSBLKCNT_T_TYPE __ULONGWORD_TYPE
+__FLT_MIN_10_EXP__ (-37)
+__attribute_pure__ __attribute__ ((__pure__))
+strndupa(s,n) (__extension__ ({ const char *__old = (s); size_t __len = strnlen (__old, (n)); char *__new = (char *) __builtin_alloca (__len + 1); __new[__len] = '\0'; (char *) memcpy (__new, __old, __len); }))
+__SIZEOF_DOUBLE__ 8
+__cpp_lambdas 200907
+__cpp_nsdmi 200809
+__bswap_constant_16(x) ((unsigned short int)((((x) >> 8) & 0xffu) | (((x) & 0xffu) << 8)))
+_STDC_PREDEF_H 1
+__DEC64_MAX__ 9.999999999999999E384DD
+__USE_MISC 1
+__UTA_FBIT__ 64
+__FLT_DECIMAL_DIG__ 9
+_BITS_BYTESWAP_H 1
+__U16_TYPE unsigned short int
+__ptr_t void *
+__GNUC_STDC_INLINE__ 1
+__FRACT_FBIT__ 15
+__LLACCUM_EPSILON__ 0x1P-31LLK
+__GNUC_PATCHLEVEL__ 0
+__SYSCALL_SLONG_TYPE __SLONGWORD_TYPE
+__stub_revoke 
+__UINT_LEAST16_MAX__ 0xffff
+__intN_t(N,MODE) typedef int int ##N ##_t __attribute__ ((__mode__ (MODE)))
+MAX_CRASH_TIMES 3
+__END_DECLS }
+__BLKCNT64_T_TYPE __SQUAD_TYPE
+__LDBL_DIG__ 15
+__FLT_DIG__ 6
+__ARM_ARCH_ISA_ARM 1
+__u_char_defined 
+_BSD_SIZE_T_DEFINED_ 
+__UINT_FAST32_TYPE__ unsigned int
+___int_size_t_h 
+__STDC_UTF_32__ 1
+__USE_ISOC99 1
+__SACCUM_IBIT__ 8
+__FLT_MAX_10_EXP__ 38
+__PMT(args) args
+__DEC128_MAX__ 9.999999999999999999999999999999999E6144DL
+__FRACT_MAX__ 0X7FFFP-15R
+__S64_TYPE __quad_t
+__INT_FAST32_MAX__ 0x7fffffff
+__ATOMIC_SEQ_CST 5
+__ARM_ARCH_EXT_IDIV__
+__USE_LARGEFILE 1
+__BLKCNT_T_TYPE __SLONGWORD_TYPE
+__UINT16_MAX__ 0xffff
+__TQ_FBIT__ 127
+__LDBL_MAX_EXP__ 1024
+__UINT32_C(c) c ## U
+__pid_t_defined 
+__ARM_FEATURE_DSP
+__RLIM64_T_TYPE __UQUAD_TYPE
+__SIZEOF_SHORT__ 2
+__ULLACCUM_FBIT__ 32
+FD_ISSET(fd,fdsetp) __FD_ISSET (fd, fdsetp)
+__clockid_time_t
+__P(args) args
+__bswap_16(x) (__extension__ ({ unsigned short int __bsx = (unsigned short int) (x); __bswap_constant_16 (__bsx); }))
+__warndecl(name,msg) extern void name (void) __attribute__((__warning__ (msg)))
+__SIZEOF_LONG_DOUBLE__ 8
+__USE_GNU
+__PRAGMA_REDEFINE_EXTNAME 1
+__WCHAR_TYPE__ unsigned int
+__USA_IBIT__ 16
+__STDC_ISO_10646__ 201505L
+__SWORD_TYPE int
+__UINT_FAST64_TYPE__ long long unsigned int
+__GXX_ABI_VERSION 1009
+__FLT_MIN__ 1.1754943508222875e-38F
+__need_size_t 
+__HA_FBIT__ 7
+__UFRACT_MIN__ 0.0UR
+__KERNEL_STRICT_NAMES
+__fortify_function __extern_always_inline __attribute_artificial__
+__unix 1
+__USFRACT_IBIT__ 0
+__LDBL_EPSILON__ 2.2204460492503131e-16L
+__GLIBC_MINOR__ 23
+__USE_XOPEN2K
+__USFRACT_MIN__ 0.0UHR
+__thumb__
+__USE_XOPEN2KXSI
+__UINT8_MAX__ 0xff
+_GNU_SOURCE 1
+HMITICK 41
+__extern_inline extern __inline __attribute__ ((__gnu_inline__))
+_XOPEN_SOURCE 700
+__DBL_HAS_DENORM__ 1
+__USE_POSIX199309 1
+__DA_FBIT__ 31
+__INT_LEAST16_MAX__ 0x7fff
+__FLT_DENORM_MIN__ 1.4012984643248171e-45F
+__LDBL_MAX__ 1.7976931348623157e+308L
+__USE_POSIX199309
+__has_include_next(STR) __has_include_next__(STR)
+__clock_t_defined 1
+__cpp_exceptions 199711
+__UACCUM_MIN__ 0.0UK
+__stub_getmsg 
+__FLT_EPSILON__ 1.1920928955078125e-7F
+__USE_UNIX98
+__INT_FAST8_TYPE__ signed char
+__KERNEL_STRICT_NAMES 
+__UACCUM_EPSILON__ 0x1P-16UK
+__GID_T_TYPE __U32_TYPE
+__GCC_ATOMIC_SHORT_LOCK_FREE 1
+__HQ_IBIT__ 0
+__ULONGWORD_TYPE unsigned long int
+__USACCUM_FBIT__ 8
+__need_timespec 
+_XOPEN_SOURCE_EXTENDED 1
+__LACCUM_FBIT__ 31
+_LARGEFILE_SOURCE 1
+__need_time_t 
+__SIZEOF_PTHREAD_CONDATTR_T 4
+__LDBL_HAS_INFINITY__ 1
+__stub_setlogin 
+__DEC32_MAX__ 9.999999E96DF
+__ARM_PCS 1
+__SIG_ATOMIC_MIN__ (-__SIG_ATOMIC_MAX__ - 1)
+__UINT_LEAST8_MAX__ 0xff
+__cpp_decltype 200707
+__USE_FILE_OFFSET64
+__BEGIN_DECLS extern "C" {
+__DEC_EVAL_METHOD__ 2
+__stub___compat_create_module 
+htobe32(x) __bswap_32 (x)
+__bswap_constant_64(x) (__extension__ ((((x) & 0xff00000000000000ull) >> 56) | (((x) & 0x00ff000000000000ull) >> 40) | (((x) & 0x0000ff0000000000ull) >> 24) | (((x) & 0x000000ff00000000ull) >> 8) | (((x) & 0x00000000ff000000ull) << 8) | (((x) & 0x0000000000ff0000ull) << 24) | (((x) & 0x000000000000ff00ull) << 40) | (((x) & 0x00000000000000ffull) << 56)))
+__DEC64_SUBNORMAL_MIN__ 0.000000000000001E-383DD
+__USFRACT_EPSILON__ 0x1P-8UHR
+__SQ_IBIT__ 0
+__USFRACT_FBIT__ 8
+__LLACCUM_MAX__ 0X7FFFFFFFFFFFFFFFP-31LLK
+__va_arg_pack() __builtin_va_arg_pack ()
+__gnu_linux__ 1
+__USER_LABEL_PREFIX__ 
+__UINT64_MAX__ 0xffffffffffffffffULL
+__INT_LEAST32_MAX__ 0x7fffffff
+_ATFILE_SOURCE
+__useconds_t_defined 
+__need_timeval
+be16toh(x) __bswap_16 (x)
+__INT_LEAST8_MAX__ 0x7f
+__ARM_FEATURE_CLZ 1
+__ARM_FEATURE_IDIV
+__ATOMIC_ACQUIRE 2
+__USE_ISOC11
+__ARM_SIZEOF_WCHAR_T 4
+__has_include(STR) __has_include__(STR)
+NFDBITS __NFDBITS
+__U32_TYPE unsigned int
+__DBL_MAX__ double(1.7976931348623157e+308L)
+__ATOMIC_CONSUME 1
+__FLT_HAS_INFINITY__ 1
+__DADDR_T_TYPE __S32_TYPE
+__USE_LARGEFILE64 1
+__INT8_MAX__ 0x7f
+__FD_MASK(d) ((__fd_mask) (1UL << ((d) % __NFDBITS)))
+__SFRACT_MIN__ (-0.5HR-0.5HR)
+_BITS_TYPES_H 1
+__SA_IBIT__ 16
+__SIZEOF_PTHREAD_MUTEXATTR_T 4
+strdupa(s) (__extension__ ({ const char *__old = (s); size_t __len = strlen (__old) + 1; char *__new = (char *) __builtin_alloca (__len); (char *) memcpy (__new, __old, __len); }))
+__LEAF_ATTR __attribute__ ((__leaf__))
+__GNUC__ 5
+__UINT16_TYPE__ short unsigned int
+_POSIX_SOURCE
+__stub___compat_get_kernel_syms 
+__USE_ISOC95 1
+__cpp_raw_strings 200710
+__DEC32_MAX_EXP__ 97
+_T_SIZE_ 
+__bswap_constant_32(x) ((((x) & 0xff000000u) >> 24) | (((x) & 0x00ff0000u) >> 8) | (((x) & 0x0000ff00u) << 8) | (((x) & 0x000000ffu) << 24))
+_BITS_PTHREADTYPES_H 1
+__cpp_range_based_for 200907
+__LLACCUM_IBIT__ 32
+__FRACT_EPSILON__ 0x1P-15R
+__cpp_static_assert 200410
+__suseconds_t_defined 
+__INT_LEAST64_MAX__ 0x7fffffffffffffffLL
+__need_NULL 
+_FEATURES_H 1
+_DEFAULT_SOURCE 1
+__UINTPTR_MAX__ 0xffffffffU
+__dev_t_defined 
+__need_timer_t 
+__LEAF , __leaf__
+__UINT64_C(c) c ## ULL
+__UINT_LEAST64_TYPE__ long long unsigned int
+__attribute_used__ __attribute__ ((__used__))
+le32toh(x) (x)
+__ID_T_TYPE __U32_TYPE
+__GCC_ATOMIC_CHAR16_T_LOCK_FREE 1
+__USE_ISOC11 1
+__ino64_t_defined 
+__DBL_MAX_EXP__ 1024
+_BITS_TYPESIZES_H 1
+__ATOMIC_RELEASE 3
+__FLT_MANT_DIG__ 24
+_POSIX_SOURCE 1
+htobe64(x) __bswap_64 (x)
+__UDQ_IBIT__ 0
+__cpp_attributes 200809
+__UACCUM_MAX__ 0XFFFFFFFFP-16UK
+__USE_UNIX98 1
+argc
+_LARGEFILE_SOURCE
+__THROWNL throw ()
+__stub_fdetach 
+__THROW throw ()
+__LDBL_DENORM_MIN__ 4.9406564584124654e-324L
+__INT64_MAX__ 0x7fffffffffffffffLL
+__cpp_runtime_arrays 198712
+__ULLFRACT_IBIT__ 0
+argv
+__NLINK_T_TYPE __UWORD_TYPE
+_LARGEFILE64_SOURCE
+_SYS_SELECT_H 1
+__FLT_MAX__ 3.4028234663852886e+38F
+__UACCUM_FBIT__ 16
+__UFRACT_EPSILON__ 0x1P-16UR
+__LDBL_REDIR1_NTH(name,proto,alias) name proto __THROW
+__USE_POSIX2
+__UQQ_IBIT__ 0
+__SIZEOF_PTHREAD_BARRIERATTR_T 4
+__GCC_ATOMIC_LONG_LOCK_FREE 1
+__ULACCUM_MIN__ 0.0ULK
+__ARM_ARCH 5
+__INT_MAX__ 0x7fffffff
+__off64_t_defined 
+__FLT_RADIX__ 2
+__key_t_defined 
+__CHAR32_TYPE__ unsigned int
+__PTHREAD_RWLOCK_ELISION_EXTRA 0
+__LDBL_HAS_QUIET_NAN__ 1
+__need_NULL
+__UINT_FAST64_MAX__ 0xffffffffffffffffULL
+__HA_IBIT__ 8
+__USING_NAMESPACE_STD(name) 
+__GCC_ATOMIC_LLONG_LOCK_FREE 1
+__nonnull(params) __attribute__ ((__nonnull__ params))
+__timespec_defined 1
+__cpp_constexpr 200704
+__STD_TYPE __extension__ typedef
+_XOPEN_SOURCE
+__INT64_TYPE__ long long int
+__LFRACT_FBIT__ 31
+__need_timer_t
+__attribute_format_arg__(x) __attribute__ ((__format_arg__ (x)))
+__SIZEOF_WCHAR_T__ 4
+__INT_FAST8_MAX__ 0x7f
+LITTLE_ENDIAN __LITTLE_ENDIAN
+__PMT
+__SSP_STRONG__ 3
+__UFRACT_MAX__ 0XFFFFP-16UR
+__FSFILCNT_T_TYPE __ULONGWORD_TYPE
+__USE_POSIX199506 1
+__stub_lchmod 
+__cpp_delegating_constructors 200604
+__SFRACT_IBIT__ 0
+__BLKSIZE_T_TYPE __SLONGWORD_TYPE
+__GXX_EXPERIMENTAL_CXX0X__ 1
+__BYTE_ORDER__ __ORDER_LITTLE_ENDIAN__
+__CORRECT_ISO_CPP_STRING_H_PROTO 
+__INT32_C(c) c
+__need_clock_t 
+__ULLACCUM_EPSILON__ 0x1P-32ULLK
+__UFRACT_FBIT__ 16
+__UDQ_FBIT__ 64
+__U64_TYPE __u_quad_t
+__LDBL_MAX_10_EXP__ 308
+__INT_FAST32_TYPE__ int
+__stub_getpmsg 
+__UINT_LEAST32_TYPE__ unsigned int
+__stub_putmsg 
+__need_timespec
+__FLT_MIN_EXP__ (-125)
+__USECONDS_T_TYPE __U32_TYPE
+__USACCUM_IBIT__ 8
+__USE_MISC
+__USE_LARGEFILE
+__ULLACCUM_IBIT__ 32
+__UINTMAX_TYPE__ long long unsigned int
+__CHAR_BIT__ 8
+__USE_XOPEN2K 1
+__FLT_EVAL_METHOD__ 0
+__GCC_IEC_559_COMPLEX 0
+__KEY_T_TYPE __S32_TYPE
+__SCHAR_MAX__ 0x7f
+__cpp_initializer_lists 200806
+__thumb2__
+__have_pthread_attr_t 1
+__ARM_FEATURE_LDREX
+__UQQ_FBIT__ 8
+__attribute_alloc_size__(params) __attribute__ ((__alloc_size__ params))
+__DEC64_MIN_EXP__ (-382)
+__GCC_IEC_559 0
+TICK_TIMER 8
+__LFRACT_MAX__ 0X7FFFFFFFP-31LR
+__SIZEOF_PTRDIFF_T__ 4
+__stub_gtty 
+__STDC__ 1
+__USE_ISOCXX11 1
+__SOFTFP__ 1
+__FLOAT_WORD_ORDER__ __ORDER_LITTLE_ENDIAN__
+__UINT8_TYPE__ unsigned char
+__SYSCALL_ULONG_TYPE __ULONGWORD_TYPE
+__wur 
+__USE_XOPEN2K8XSI 1
+__cpp_rvalue_reference 200610
+__id_t_defined 
+__SIZEOF_PTHREAD_BARRIER_T 20
+__DEC128_MANT_DIG__ 34
+__nlink_t_defined 
+__need_timeval 
+__GNU_LIBRARY__ 6
+__UID_T_TYPE __U32_TYPE
+__LDBL_MIN_10_EXP__ (-307)
+__FLT_HAS_QUIET_NAN__ 1
+__GCC_ATOMIC_CHAR_LOCK_FREE 1
+__LFRACT_EPSILON__ 0x1P-31LR
+__LDBL_REDIR(name,proto) name proto
+__INT32_MAX__ 0x7fffffff
+__STRING(x) #x
+__ARM_SIZEOF_MINIMAL_ENUM 4
+__cpp_variadic_templates 200704
+__arm__ 1
+__FDS_BITS(set) ((set)->fds_bits)
+__FD_CLR(d,s) ((void) (__FDS_BITS (s)[__FD_ELT(d)] &= ~__FD_MASK(d)))
+__LITTLE_ENDIAN 1234
+__GXX_RTTI 1
+__WORDSIZE 32
+_ISOC99_SOURCE
+__DEC32_MANT_DIG__ 7
+makedev(maj,min) gnu_dev_makedev (maj, min)
+__BIGGEST_ALIGNMENT__ 8
+__BEGIN_NAMESPACE_STD 
+__TA_IBIT__ 64
+__ARM_FEATURE_SIMD32
+__LDBL_REDIR_DECL(name) 
+__REDIRECT_NTH_LDBL(name,proto,alias) __REDIRECT_NTH (name, proto, alias)
+__ARM_FEATURE_QRDMX
+__ARM_ARCH_ISA_THUMB 1
+__LONG_LONG_MAX__ 0x7fffffffffffffffLL
+__SIZEOF_PTHREAD_COND_COMPAT_T 12
+htole64(x) (x)
+__PID_T_TYPE __S32_TYPE
+__PTHREAD_SPINS 0
+__UFRACT_IBIT__ 0
+__ARM_32BIT_STATE 1
+__stub___compat_query_module 
+__INT8_C(c) c
+__LFRACT_IBIT__ 0
+__GCC_ATOMIC_POINTER_LOCK_FREE 1
+__DBL_MIN_EXP__ (-1021)
+__SIZE_T 
+_ENDIAN_H 1
+__INT32_TYPE__ int
+__GCC_ATOMIC_CHAR32_T_LOCK_FREE 1
+__FD_SET(d,s) ((void) (__FDS_BITS (s)[__FD_ELT(d)] |= __FD_MASK(d)))
+__FSID_T_TYPE struct { int __val[2]; }
+__USE_ISOC95
+__USE_ISOC99
+__USING_NAMESPACE_C99(name) 
+__USE_XOPEN_EXTENDED
+__LDBL_HAS_DENORM__ 1
+__always_inline __inline __attribute__ ((__always_inline__))
+__ACCUM_MIN__ (-0X1P15K-0X1P15K)
+__ACCUM_MAX__ 0X7FFFFFFFP-15K
+__need_time_t
+__UINT_LEAST64_MAX__ 0xffffffffffffffffULL
+__cpp_ref_qualifiers 200710
+__FRACT_IBIT__ 0
+__FD_SETSIZE 1024
+__WCHAR_UNSIGNED__ 1
+__ORDER_LITTLE_ENDIAN__ 1234
+__cpp_rtti 199711
+__DEC64_MANT_DIG__ 16
+__cpp_inheriting_constructors 200802
+__REDIRECT_NTHNL(name,proto,alias) name proto __THROWNL __asm__ (__ASMNAME (#alias))
+__ULACCUM_IBIT__ 32
+_ISOC95_SOURCE 1
+__SHRT_MAX__ 0x7fff
+__CPU_MASK_TYPE __ULONGWORD_TYPE
+__PTRDIFF_TYPE__ int
+_SIZE_T_DEFINED 
+__WINT_MAX__ 0xffffffffU
+__ssize_t_defined 
+_SYS_SYSMACROS_H 1
+__DQ_FBIT__ 63
+__UHQ_IBIT__ 0
+__END_NAMESPACE_STD 
+minor(dev) gnu_dev_minor (dev)
+__INT_FAST16_TYPE__ int
+__timer_t_defined 1
+__cpp_binary_literals 201304
+__SACCUM_MIN__ (-0X1P7HK-0X1P7HK)
+__ULFRACT_MAX__ 0XFFFFFFFFP-32ULR
+__UINT_LEAST16_TYPE__ short unsigned int
+__LACCUM_MAX__ 0X7FFFFFFFFFFFFFFFP-31LK
+__CHAR16_TYPE__ short unsigned int
+htole32(x) (x)
+__USE_POSIX199506
+__UTQ_FBIT__ 128
+__BIG_ENDIAN 4321
+__FINITE_MATH_ONLY__ 0
+__INT_FAST16_MAX__ 0x7fffffff
+__DEPRECATED 1
+__size_t 
+FD_CLR(fd,fdsetp) __FD_CLR (fd, fdsetp)
+__cpp_user_defined_literals 200809
+__ULACCUM_MAX__ 0XFFFFFFFFFFFFFFFFP-32ULK
+__USE_XOPEN2KXSI 1
+__stub_stty 
+__stub_putpmsg 
+__ULFRACT_MIN__ 0.0ULR
+__DQ_IBIT__ 0
+__warnattr(msg) __attribute__((__warning__ (msg)))
+_BSD_SIZE_T_ 
+__bos0(ptr) __builtin_object_size (ptr, 0)
+__DBL_DENORM_MIN__ double(4.9406564584124654e-324L)
+__BEGIN_NAMESPACE_C99 
+__S32_TYPE int
+__UTQ_IBIT__ 0
+__SA_FBIT__ 15
+__stub_sigreturn 
+__INO_T_TYPE __ULONGWORD_TYPE
+_STRING_H 1
+__SIG_ATOMIC_TYPE__ int
+CARSTICK 42
+__ELF__ 1
+__cpp_unicode_literals 200710
+FD_ZERO(fdsetp) __FD_ZERO (fdsetp)
+__USE_ATFILE 1
+__QQ_IBIT__ 0
+__FD_ISSET(d,s) ((__FDS_BITS (s)[__FD_ELT (d)] & __FD_MASK (d)) != 0)
+__off_t_defined 
+__LLACCUM_FBIT__ 31
+__INT_LEAST32_TYPE__ int
+__USQ_IBIT__ 0
+__GNUC_MINOR__ 4
+__INTMAX_TYPE__ long long int
+__GCC_ATOMIC_INT_LOCK_FREE 1
+__stub_chflags 
+__NFDBITS (8 * (int) sizeof (__fd_mask))
+_SIZET_ 
+__LFRACT_MIN__ (-0.5LR-0.5LR)
+__TIMER_T_TYPE void *
+__DBL_HAS_QUIET_NAN__ 1
+__uid_t_defined 
+major(dev) gnu_dev_major (dev)
+__LLFRACT_MAX__ 0X7FFFFFFFFFFFFFFFP-63LLR
+__DEC128_MAX_EXP__ 6145
+BYTE_ORDER __BYTE_ORDER
+__need_clock_t
+__SACCUM_MAX__ 0X7FFFP-7HK
+__INTPTR_TYPE__ int
+__UINTPTR_TYPE__ unsigned int
+__extern_always_inline extern __always_inline __attribute__ ((__gnu_inline__))
+__REGISTER_PREFIX__ 
+__DEC128_SUBNORMAL_MIN__ 0.000000000000000000000000000000001E-6143DL
+__DBL_DIG__ 15
+__ULFRACT_EPSILON__ 0x1P-32ULR
+__CLOCK_T_TYPE __SLONGWORD_TYPE
+__attribute_format_strfmon__(a,b) __attribute__ ((__format__ (__strfmon__, a, b)))
+__SIZEOF_SIZE_T__ 4
+__UINT64_TYPE__ long long unsigned int
+__DEC128_MIN__ 1E-6143DL
+__INT64_C(c) c ## LL
+_ATFILE_SOURCE 1
+__LDBL_MIN__ 2.2250738585072014e-308L
+__ACCUM_IBIT__ 16
+__UINT_FAST8_TYPE__ unsigned char
+__END_NAMESPACE_C99 
+_SYS_CDEFS_H 1
+__UINT16_C(c) c
+__UDA_IBIT__ 32
+__va_arg_pack_len() __builtin_va_arg_pack_len ()
+__NO_INLINE__ 1
+__blkcnt_t_defined 
+__need_clockid_t 
+__ATOMIC_RELAXED 0
+__ASMNAME2(prefix,cname) __STRING (prefix) cname
+__blksize_t_defined 
+__DBL_HAS_INFINITY__ 1
+__SIG_ATOMIC_MAX__ 0x7fffffff
+__SIZEOF_PTHREAD_COND_T 48
+__SIZEOF_FLOAT__ 4
+__DEC64_MIN__ 1E-383DD
+__USE_XOPEN 1
+__DBL_DECIMAL_DIG__ 17
+_SYS_TYPES_H 1
+__stub_fattach 
+__INT16_MAX__ 0x7fff
+__ULLFRACT_EPSILON__ 0x1P-64ULLR
+__attribute_malloc__ __attribute__ ((__malloc__))
+__attribute_const__ __attribute__ ((__const__))
+__NTH(fct) __LEAF_ATTR fct throw ()
+__attribute_deprecated__ __attribute__ ((__deprecated__))
+__GXX_WEAK__ 1
+__USE_POSIX 1
+__GCC_ATOMIC_TEST_AND_SET_TRUEVAL 1
+_INIT_H 
+__UTA_IBIT__ 64
+_LARGEFILE64_SOURCE 1
+__cpp_unicode_characters 200704
+__S16_TYPE short int
+__SIZEOF_WINT_T__ 4
+__time_t_defined 1
+__need_size_t
+__GXX_TYPEINFO_EQUALITY_INLINE 0
+main
+__SIZEOF_PTHREAD_RWLOCKATTR_T 8
+__LACCUM_MIN__ (-0X1P31LK-0X1P31LK)
+__attribute_artificial__ __attribute__ ((__artificial__))
+NULL __null
+__DEC32_MIN_EXP__ (-94)
+__ULLACCUM_MIN__ 0.0ULLK
+__GCC_ATOMIC_WCHAR_T_LOCK_FREE 1
+PDP_ENDIAN __PDP_ENDIAN
+__OFF_T_TYPE __SLONGWORD_TYPE
+__TIME_T_TYPE __SLONGWORD_TYPE
+__LDBL_REDIR_NTH(name,proto) name proto __THROW
+__restrict_arr 
+_SIZE_T_DECLARED 
+__SUSECONDS_T_TYPE __SLONGWORD_TYPE
+__USE_FORTIFY_LEVEL
+MAX_SVC_NAME_LEN 128
+_DEFAULT_SOURCE
+_GCC_SIZE_T 
+__ULLFRACT_MIN__ 0.0ULLR
+__u_intN_t(N,MODE) typedef unsigned int u_int ##N ##_t __attribute__ ((__mode__ (MODE)))
+__SIZEOF_INT__ 4
+__LLFRACT_IBIT__ 0
+__BYTE_ORDER __LITTLE_ENDIAN
+__DEV_T_TYPE __UQUAD_TYPE
+__SACCUM_EPSILON__ 0x1P-7HK
+__USE_ATFILE
+__bos(ptr) __builtin_object_size (ptr, __USE_FORTIFY_LEVEL > 1)
+__LONG_LONG_PAIR(HI,LO) LO, HI
+be32toh(x) __bswap_32 (x)
+__USE_POSIX2 1
+__unix__ 1
+__UINT_FAST16_TYPE__ unsigned int
+__UHA_IBIT__ 8
+__fsblkcnt_t_defined 
+__ACCUM_EPSILON__ 0x1P-15K
+__ULACCUM_EPSILON__ 0x1P-32ULK
+__GCC_HAVE_DWARF2_CFI_ASM 1
+__EXCEPTIONS 1
+__USE_XOPEN_EXTENDED 1
+_ISOC95_SOURCE
+__INO64_T_TYPE __UQUAD_TYPE
+__SIZEOF_PTHREAD_RWLOCK_T 32
+__mode_t_defined 
+__WINT_MIN__ 0U
+FD_SET(fd,fdsetp) __FD_SET (fd, fdsetp)
+__DEC64_EPSILON__ 1E-15DD
+__long_double_t long double
+__INT_LEAST16_TYPE__ short int
+__QQ_FBIT__ 7
+_ISOC11_SOURCE 1
+__LLFRACT_FBIT__ 63
+__ARMEL__ 1
+__USE_FORTIFY_LEVEL 0
+GNU C++11 5.4.0 20160609 -march=armv5t -mfloat-abi=soft -mtls-dialect=gnu -g3 -g -std=gnu++11 -funwind-tables -fstack-protector-strong
+__ARM_ARCH_5T__ 1
+__HQ_FBIT__ 15
+__SSIZE_T_TYPE __SWORD_TYPE
+__SIZE_MAX__ 0xffffffffU
+__ARM_FEATURE_SAT
+__UINT_LEAST32_MAX__ 0xffffffffU
+__stub_sstk 
+__USE_REENTRANT
+__LONG_MAX__ 0x7fffffffL
+__gid_t_defined 
+__errordecl(name,msg) extern void name (void) __attribute__((__error__ (msg)))
+__LLFRACT_EPSILON__ 0x1P-63LLR
+__SFRACT_MAX__ 0X7FP-7HR
+__ARM_ASM_SYNTAX_UNIFIED__
+__USE_LARGEFILE64
+__INT16_C(c) c
+__STDC_NO_THREADS__ 1
+__DA_IBIT__ 32
+_ISOC99_SOURCE 1
+__ATOMIC_ACQ_REL 4
+__SIZEOF_PTHREAD_MUTEX_T 24
+__FLOAT_WORD_ORDER __BYTE_ORDER
+__linux 1
+__DBL_MIN_10_EXP__ (-307)
+__ULLFRACT_FBIT__ 64
+__INT16_TYPE__ short int
+__SFRACT_FBIT__ 7
+__cplusplus 201103L
+__USE_ISOCXX11
+_POSIX_C_SOURCE
+__UINTMAX_MAX__ 0xffffffffffffffffULL
+__DBL_MANT_DIG__ 53
+__ULFRACT_IBIT__ 0
+__glibc_unlikely(cond) __builtin_expect ((cond), 0)
+__ARM_EABI__ 1
+__INT_LEAST64_TYPE__ long long int
+__SACCUM_FBIT__ 7
+__VERSION__ "5.4.0 20160609"
+O_DIRECT __O_DIRECT
+_POSIX_THREADS 200809L
+__S_IFDIR 0040000
+klogFd
+__OPEN_NEEDS_MODE(oflag) (((oflag) & O_CREAT) != 0 || ((oflag) & __O_TMPFILE) == __O_TMPFILE)
+_CS_POSIX_V7_ILP32_OFFBIG_LINTFLAGS _CS_POSIX_V7_ILP32_OFFBIG_LINTFLAGS
+_SC_LINE_MAX _SC_LINE_MAX
+_SC_XOPEN_XCU_VERSION _SC_XOPEN_XCU_VERSION
+_SC_CLK_TCK _SC_CLK_TCK
+_SC_ARG_MAX _SC_ARG_MAX
+_SC_V7_ILP32_OFFBIG _SC_V7_ILP32_OFFBIG
+_SC_BC_SCALE_MAX _SC_BC_SCALE_MAX
+_IO_va_list __gnuc_va_list
+_SC_INT_MIN _SC_INT_MIN
+_POSIX_MESSAGE_PASSING 200809L
+F_SHLCK 8
+_XOPEN_XPG2 1
+_POSIX_THREAD_CPUTIME 0
+_SC_GETGR_R_SIZE_MAX _SC_GETGR_R_SIZE_MAX
+_CS_XBS5_ILP32_OFF32_LINTFLAGS _CS_XBS5_ILP32_OFF32_LINTFLAGS
+_POSIX_V7_LPBIG_OFFBIG -1
+AT_NO_AUTOMOUNT 0x800
+_SC_PII_OSI_M _SC_PII_OSI_M
+_STATBUF_ST_RDEV 
+F_OWNER_PID
+_SC_PAGE_SIZE _SC_PAGESIZE
+_CS_XBS5_ILP32_OFFBIG_LINTFLAGS _CS_XBS5_ILP32_OFFBIG_LINTFLAGS
+_SC_NETWORKING _SC_NETWORKING
+_IO_file_flags _flags
+_SC_RTSIG_MAX _SC_RTSIG_MAX
+_STDARG_H 
+_SC_PII_XTI _SC_PII_XTI
+_SC_XOPEN_REALTIME _SC_XOPEN_REALTIME
+_IO_TIED_PUT_GET 0x400
+_POSIX_SPAWN 200809L
+F_SETOWN_EX __F_SETOWN_EX
+_IOS_NOCREATE 32
+_IO_DONT_CLOSE 0100000
+_SC_SYSTEM_DATABASE_R _SC_SYSTEM_DATABASE_R
+F_OWNER_TID
+__need___va_list
+DN_CREATE 0x00000004
+_IO_flockfile(_fp) 
+_CS_XBS5_LP64_OFF64_LINTFLAGS _CS_XBS5_LP64_OFF64_LINTFLAGS
+_SC_PRIORITIZED_IO _SC_PRIORITIZED_IO
+_XOPEN_SHM 1
+_POSIX_SEMAPHORES 200809L
+_IO_ftrylockfile(_fp) 
+_SC_2_PBS_CHECKPOINT _SC_2_PBS_CHECKPOINT
+_SC_SIGNALS _SC_SIGNALS
+O_EXCL 0200
+_PC_PATH_MAX _PC_PATH_MAX
+S_IXGRP (S_IXUSR >> 3)
+SPLICE_F_MOVE 1
+_CS_POSIX_V7_LPBIG_OFFBIG_LIBS _CS_POSIX_V7_LPBIG_OFFBIG_LIBS
+S_IRGRP (S_IRUSR >> 3)
+_CS_POSIX_V7_ILP32_OFFBIG_LIBS _CS_POSIX_V7_ILP32_OFFBIG_LIBS
+_POSIX_RAW_SOCKETS 200809L
+_IO_IS_FILEBUF 0x2000
+SEEK_SET 0
+O_NOATIME __O_NOATIME
+_IO_BUFSIZ _G_BUFSIZ
+_SC_BC_STRING_MAX _SC_BC_STRING_MAX
+_VA_LIST_DEFINED 
+_POSIX_SHELL 1
+_POSIX_VDISABLE '\0'
+_OLD_STDIO_MAGIC 0xFABC0000
+__S_IREAD 0400
+_POSIX_THREAD_PRIO_INHERIT 200809L
+FALLOC_FL_PUNCH_HOLE 2
+_POSIX_V6_LPBIG_OFFBIG -1
+L_tmpnam 20
+__O_DIRECTORY 040000
+_SC_FILE_SYSTEM _SC_FILE_SYSTEM
+_SC_TZNAME_MAX _SC_TZNAME_MAX
+_SC_EQUIV_CLASS_MAX _SC_EQUIV_CLASS_MAX
+POSIX_FADV_DONTNEED __POSIX_FADV_DONTNEED
+_SC_XBS5_ILP32_OFFBIG _SC_XBS5_ILP32_OFFBIG
+_CS_POSIX_V6_LPBIG_OFFBIG_LDFLAGS _CS_POSIX_V6_LPBIG_OFFBIG_LDFLAGS
+_SC_SINGLE_PROCESS _SC_SINGLE_PROCESS
+_SC_LEVEL1_ICACHE_ASSOC _SC_LEVEL1_ICACHE_ASSOC
+_IO_FLAGS2_USER_WBUF 8
+O_NOFOLLOW __O_NOFOLLOW
+_IO_stderr ((_IO_FILE*)(&_IO_2_1_stderr_))
+POSIX_FADV_RANDOM 1
+S_IWOTH (S_IWGRP >> 3)
+ACCESSPERMS (S_IRWXU|S_IRWXG|S_IRWXO)
+klogInit
+__F_GETSIG 11
+F_SETFL 4
+_POSIX_TRACE -1
+F_OFD_SETLK 37
+_IO_ferror_unlocked(__fp) (((__fp)->_flags & _IO_ERR_SEEN) != 0)
+_SC_ASYNCHRONOUS_IO _SC_ASYNCHRONOUS_IO
+_XOPEN_XPG3 1
+F_GETFL 3
+va_arg(v,l) __builtin_va_arg(v,l)
+L_SET SEEK_SET
+_IO_va_list _G_va_list
+_BITS_STAT_H 1
+_POSIX_VERSION 200809L
+_IO_SKIPWS 01
+__va_list__ 
+S_IXOTH (S_IXGRP >> 3)
+S_IROTH (S_IRGRP >> 3)
+LOCK_READ 64
+_LFS_LARGEFILE 1
+S_IRWXO (S_IRWXG >> 3)
+_PC_SOCK_MAXBUF _PC_SOCK_MAXBUF
+_IO_OCT 040
+_SC_THREADS _SC_THREADS
+_SC_RE_DUP_MAX _SC_RE_DUP_MAX
+_SC_NL_LANGMAX _SC_NL_LANGMAX
+_POSIX_THREAD_PROCESS_SHARED 200809L
+_IO_NO_READS 4
+__F_SETSIG 10
+_CS_LFS_LINTFLAGS _CS_LFS_LINTFLAGS
+_POSIX_THREAD_PRIO_PROTECT 200809L
+_SC_TTY_NAME_MAX _SC_TTY_NAME_MAX
+_CS_POSIX_V7_ILP32_OFF32_LDFLAGS _CS_POSIX_V7_ILP32_OFF32_LDFLAGS
+_SC_USHRT_MAX _SC_USHRT_MAX
+SPLICE_F_GIFT 8
+_PC_PRIO_IO _PC_PRIO_IO
+_SC_V7_LPBIG_OFFBIG _SC_V7_LPBIG_OFFBIG
+_SC_ADVISORY_INFO _SC_ADVISORY_INFO
+SPLICE_F_MORE 4
+O_FSYNC O_SYNC
+_IO_uid_t __uid_t
+_IOS_INPUT 1
+____mbstate_t_defined 1
+F_OWNER_GID
+DN_MODIFY 0x00000002
+_SC_LEVEL1_DCACHE_ASSOC _SC_LEVEL1_DCACHE_ASSOC
+_G_HAVE_MREMAP 1
+_IO_RIGHT 04
+_SC_PAGESIZE _SC_PAGESIZE
+LOCK_SH 1
+_SC_2_PBS_LOCATE _SC_2_PBS_LOCATE
+st_ctime st_ctim.tv_sec
+_CS_LFS_LDFLAGS _CS_LFS_LDFLAGS
+LOCK_NB 4
+_IO_BOOLALPHA 0200000
+_POSIX_SYNCHRONIZED_IO 200809L
+S_IFMT __S_IFMT
+_SC_2_FORT_DEV _SC_2_FORT_DEV
+_POSIX_THREAD_ROBUST_PRIO_PROTECT -1
+_SC_XBS5_LPBIG_OFFBIG _SC_XBS5_LPBIG_OFFBIG
+_SC_TYPED_MEMORY_OBJECTS _SC_TYPED_MEMORY_OBJECTS
+__O_TMPFILE (020000000 | __O_DIRECTORY)
+S_IFLNK __S_IFLNK
+_CS_POSIX_V6_ILP32_OFFBIG_LDFLAGS _CS_POSIX_V6_ILP32_OFFBIG_LDFLAGS
+__need_getopt
+_IO_wint_t wint_t
+P_tmpdir "/tmp"
+_POSIX2_VERSION __POSIX2_THIS_VERSION
+_SC_XOPEN_VERSION _SC_XOPEN_VERSION
+_SC_TRACE _SC_TRACE
+_G_HAVE_ST_BLKSIZE defined (_STATBUF_ST_BLKSIZE)
+F_SETPIPE_SZ 1031
+_CS_POSIX_V7_LPBIG_OFFBIG_LDFLAGS _CS_POSIX_V7_LPBIG_OFFBIG_LDFLAGS
+__S_TYPEISSEM(buf) ((buf)->st_mode - (buf)->st_mode)
+_XBS5_LP64_OFF64 -1
+_G_HAVE_MMAP 1
+F_ULOCK 0
+_POSIX_PRIORITY_SCHEDULING 200809L
+__S_ISTYPE(mode,mask) (((mode) & __S_IFMT) == (mask))
+_CS_XBS5_LPBIG_OFFBIG_LDFLAGS _CS_XBS5_LPBIG_OFFBIG_LDFLAGS
+_POSIX_SPIN_LOCKS 200809L
+_CS_XBS5_ILP32_OFF32_LIBS _CS_XBS5_ILP32_OFF32_LIBS
+__O_LARGEFILE 0400000
+_UNISTD_H 1
+_XOPEN_XPG4 1
+_SC_WORD_BIT _SC_WORD_BIT
+_SC_UINT_MAX _SC_UINT_MAX
+__O_PATH 010000000
+O_TMPFILE __O_TMPFILE
+O_PATH __O_PATH
+F_OFD_SETLKW 38
+_SC_MAPPED_FILES _SC_MAPPED_FILES
+_SC_SPIN_LOCKS _SC_SPIN_LOCKS
+AT_FDCWD -100
+_POSIX_TRACE_LOG -1
+_IO_cleanup_region_start(_fct,_fp) 
+_POSIX_V7_ILP32_OFF32 1
+_CS_POSIX_V6_LPBIG_OFFBIG_LIBS _CS_POSIX_V6_LPBIG_OFFBIG_LIBS
+_CS_POSIX_V6_ILP32_OFFBIG_LIBS _CS_POSIX_V6_ILP32_OFFBIG_LIBS
+__need_wint_t
+FD_CLOEXEC 1
+O_RDWR 02
+_SC_XOPEN_XPG3 _SC_XOPEN_XPG3
+_SC_THREAD_THREADS_MAX _SC_THREAD_THREADS_MAX
+_POSIX2_LOCALEDEF __POSIX2_THIS_VERSION
+_SC_XOPEN_CRYPT _SC_XOPEN_CRYPT
+_ZN3icm4init8klogInitEv
+_IO_SCIENTIFIC 04000
+S_ISUID __S_ISUID
+_SC_LEVEL4_CACHE_LINESIZE _SC_LEVEL4_CACHE_LINESIZE
+ALLPERMS (S_ISUID|S_ISGID|S_ISVTX|S_IRWXU|S_IRWXG|S_IRWXO)
+_SC_THREAD_ROBUST_PRIO_PROTECT _SC_THREAD_ROBUST_PRIO_PROTECT
+getc(_fp) _IO_getc (_fp)
+_SC_MQ_PRIO_MAX _SC_MQ_PRIO_MAX
+_SC_TRACE_USER_EVENT_MAX _SC_TRACE_USER_EVENT_MAX
+_SC_READER_WRITER_LOCKS _SC_READER_WRITER_LOCKS
+_SC_BASE _SC_BASE
+_STATBUF_ST_NSEC 
+_POSIX_THREAD_SAFE_FUNCTIONS 200809L
+SYNC_FILE_RANGE_WAIT_BEFORE 1
+st_mtime st_mtim.tv_sec
+_PC_SYNC_IO _PC_SYNC_IO
+_BITS_POSIX_OPT_H 1
+_CS_XBS5_ILP32_OFF32_LDFLAGS _CS_XBS5_ILP32_OFF32_LDFLAGS
+_IOS_TRUNC 16
+_CS_POSIX_V6_ILP32_OFF32_LIBS _CS_POSIX_V6_ILP32_OFF32_LIBS
+_SC_TIMERS _SC_TIMERS
+_SC_STREAMS _SC_STREAMS
+_IO_IN_BACKUP 0x100
+F_GETLK64 12
+_SC_THREAD_KEYS_MAX _SC_THREAD_KEYS_MAX
+_IO_peekc(_fp) _IO_peekc_unlocked (_fp)
+O_SYNC 04010000
+_IO_STDIO_H 
+_SC_SYSTEM_DATABASE _SC_SYSTEM_DATABASE
+_SC_ATEXIT_MAX _SC_ATEXIT_MAX
+_POSIX_MEMLOCK 200809L
+_ZN3icm4init10_klogWriteEPKcz
+_POSIX2_C_VERSION __POSIX2_THIS_VERSION
+__va_copy(d,s) __builtin_va_copy(d,s)
+_CS_POSIX_V7_LPBIG_OFFBIG_CFLAGS _CS_POSIX_V7_LPBIG_OFFBIG_CFLAGS
+_SC_DEVICE_SPECIFIC_R _SC_DEVICE_SPECIFIC_R
+MAX_BUF_LEN
+_SC_SS_REPL_MAX _SC_SS_REPL_MAX
+AT_REMOVEDIR 0x200
+_SC_THREAD_PRIORITY_SCHEDULING _SC_THREAD_PRIORITY_SCHEDULING
+__need___va_list 
+O_LARGEFILE __O_LARGEFILE
+_ANSI_STDARG_H_ 
+_SC_PII_INTERNET _SC_PII_INTERNET
+S_BLKSIZE 512
+_SC_XOPEN_XPG4 _SC_XOPEN_XPG4
+_POSIX_V6_ILP32_OFFBIG 1
+_CS_POSIX_V6_LP64_OFF64_LINTFLAGS _CS_POSIX_V6_LP64_OFF64_LINTFLAGS
+_POSIX2_SW_DEV __POSIX2_THIS_VERSION
+_SC_V6_ILP32_OFF32 _SC_V6_ILP32_OFF32
+__O_CLOEXEC 02000000
+_SC_2_PBS_ACCOUNTING _SC_2_PBS_ACCOUNTING
+klogName
+_SC_TRACE_NAME_MAX _SC_TRACE_NAME_MAX
+_IO_LINE_BUF 0x200
+_IO_BE(expr,res) __builtin_expect ((expr), res)
+FFSYNC O_FSYNC
+_IO_SHOWBASE 0200
+POSIX_FADV_WILLNEED 3
+FAPPEND O_APPEND
+_POSIX_TIMEOUTS 200809L
+UTIME_NOW ((1l << 30) - 1l)
+_POSIX_ASYNCHRONOUS_IO 200809L
+F_SETFD 2
+_IO_HAVE_ST_BLKSIZE _G_HAVE_ST_BLKSIZE
+_SC_REGEXP _SC_REGEXP
+DEFFILEMODE (S_IRUSR|S_IWUSR|S_IRGRP|S_IWGRP|S_IROTH|S_IWOTH)
+__POSIX_FADV_DONTNEED 4
+_SC_V6_ILP32_OFFBIG _SC_V6_ILP32_OFFBIG
+_IO_USER_LOCK 0x8000
+F_GETFD 1
+STDIN_FILENO 0
+_SC_NL_TEXTMAX _SC_NL_TEXTMAX
+POSIX_FADV_NORMAL 0
+UTIME_OMIT ((1l << 30) - 2l)
+_SC_STREAM_MAX _SC_STREAM_MAX
+_CS_POSIX_V6_ILP32_OFF32_LDFLAGS _CS_POSIX_V6_ILP32_OFF32_LDFLAGS
+_XBS5_LPBIG_OFFBIG -1
+_CS_POSIX_V6_LP64_OFF64_LDFLAGS _CS_POSIX_V6_LP64_OFF64_LDFLAGS
+O_ASYNC 020000
+__S_IFREG 0100000
+_PC_2_SYMLINKS _PC_2_SYMLINKS
+L_ctermid 9
+_SC_REALTIME_SIGNALS _SC_REALTIME_SIGNALS
+R_OK 4
+_SC_SPORADIC_SERVER _SC_SPORADIC_SERVER
+_IO_DELETE_DONT_CLOSE 0x40
+_LFS64_ASYNCHRONOUS_IO 1
+_SC_PII_OSI_CLTS _SC_PII_OSI_CLTS
+__need___FILE
+va_start(v,l) __builtin_va_start(v,l)
+_CS_POSIX_V7_ILP32_OFF32_CFLAGS _CS_POSIX_V7_ILP32_OFF32_CFLAGS
+O_ACCMODE 0003
+_LFS64_LARGEFILE 1
+_SC_THREAD_DESTRUCTOR_ITERATIONS _SC_THREAD_DESTRUCTOR_ITERATIONS
+_IO_INTERNAL 010
+LOCK_WRITE 128
+_IOS_NOREPLACE 64
+_POSIX_FSYNC 200809L
+_POSIX_CHOWN_RESTRICTED 0
+__O_NOATIME 01000000
+_SC_SIGQUEUE_MAX _SC_SIGQUEUE_MAX
+_CS_POSIX_V6_WIDTH_RESTRICTED_ENVS _CS_V6_WIDTH_RESTRICTED_ENVS
+_SC_SYMLOOP_MAX _SC_SYMLOOP_MAX
+_POSIX_V6_ILP32_OFF32 1
+_IO_stdin ((_IO_FILE*)(&_IO_2_1_stdin_))
+S_TYPEISSEM(buf) __S_TYPEISSEM(buf)
+_SC_NL_NMAX _SC_NL_NMAX
+S_IEXEC S_IXUSR
+W_OK 2
+LOCK_MAND 32
+_PC_NO_TRUNC _PC_NO_TRUNC
+F_DUPFD 0
+_POSIX_MEMORY_PROTECTION 200809L
+_IO_FLAGS2_NOTCANCEL 2
+_IO_STDIO 040000
+_SC_HOST_NAME_MAX _SC_HOST_NAME_MAX
+S_ISVTX __S_ISVTX
+__S_TYPEISSHM(buf) ((buf)->st_mode - (buf)->st_mode)
+_SC_NGROUPS_MAX _SC_NGROUPS_MAX
+_IO_off_t __off_t
+__intptr_t_defined 
+_SC_PII _SC_PII
+_CS_POSIX_V6_LP64_OFF64_CFLAGS _CS_POSIX_V6_LP64_OFF64_CFLAGS
+_SC_THREAD_PRIO_PROTECT _SC_THREAD_PRIO_PROTECT
+_SC_BARRIERS _SC_BARRIERS
+_SC_SHRT_MIN _SC_SHRT_MIN
+_LFS64_STDIO 1
+DN_MULTISHOT 0x80000000
+F_RDLCK 0
+__need_mbstate_t 
+_SC_SELECT _SC_SELECT
+_CS_POSIX_V6_ILP32_OFFBIG_CFLAGS _CS_POSIX_V6_ILP32_OFFBIG_CFLAGS
+_SC_AIO_PRIO_DELTA_MAX _SC_AIO_PRIO_DELTA_MAX
+O_APPEND 02000
+_IOS_ATEND 4
+_CS_PATH _CS_PATH
+_POSIX_MEMLOCK_RANGE 200809L
+_SC_PII_SOCKET _SC_PII_SOCKET
+_IONBF 2
+_IOS_OUTPUT 2
+S_IFBLK __S_IFBLK
+__socklen_t_defined 
+_SC_TRACE_LOG _SC_TRACE_LOG
+TMP_MAX 238328
+F_OK 0
+_XOPEN_VERSION 700
+_SC_XOPEN_SHM _SC_XOPEN_SHM
+_CS_POSIX_V5_WIDTH_RESTRICTED_ENVS _CS_V5_WIDTH_RESTRICTED_ENVS
+__need___FILE 
+_MKNOD_VER _MKNOD_VER_LINUX
+_PC_PIPE_BUF _PC_PIPE_BUF
+_IOS_APPEND 8
+__need_getopt 
+_POSIX_MAPPED_FILES 200809L
+_SC_T_IOV_MAX _SC_T_IOV_MAX
+_SC_XBS5_ILP32_OFF32 _SC_XBS5_ILP32_OFF32
+_POSIX_TIMERS 200809L
+_IO_UPPERCASE 01000
+putc(_ch,_fp) _IO_putc (_ch, _fp)
+_CS_POSIX_V7_LP64_OFF64_LINTFLAGS _CS_POSIX_V7_LP64_OFF64_LINTFLAGS
+BUFSIZ _IO_BUFSIZ
+_SC_INT_MAX _SC_INT_MAX
+F_WRLCK 1
+_POSIX_THREAD_ROBUST_PRIO_INHERIT 200809L
+FALLOC_FL_COLLAPSE_RANGE 8
+_SC_AIO_LISTIO_MAX _SC_AIO_LISTIO_MAX
+_PC_SYMLINK_MAX _PC_SYMLINK_MAX
+_IO_va_list
+_SC_SEM_NSEMS_MAX _SC_SEM_NSEMS_MAX
+_IO_funlockfile(_fp) 
+S_ISDIR(mode) __S_ISTYPE((mode), __S_IFDIR)
+_CS_POSIX_V7_WIDTH_RESTRICTED_ENVS _CS_V7_WIDTH_RESTRICTED_ENVS
+SEEK_END 2
+__need_FILE
+_SC_VERSION _SC_VERSION
+_IO_LINKED 0x80
+_CS_V6_ENV _CS_V6_ENV
+_CS_POSIX_V7_LP64_OFF64_LIBS _CS_POSIX_V7_LP64_OFF64_LIBS
+_SC_BC_DIM_MAX _SC_BC_DIM_MAX
+_PC_MAX_CANON _PC_MAX_CANON
+__O_DIRECT 0200000
+S_ISBLK(mode) __S_ISTYPE((mode), __S_IFBLK)
+DN_DELETE 0x00000008
+__F_GETOWN 9
+_BITS_UIO_H 1
+POSIX_FADV_NOREUSE __POSIX_FADV_NOREUSE
+_SC_REGEX_VERSION _SC_REGEX_VERSION
+_STDIO_H 1
+_IO_UNITBUF 020000
+_SC_JOB_CONTROL _SC_JOB_CONTROL
+_SC_CHAR_MAX _SC_CHAR_MAX
+_SC_DELAYTIMER_MAX _SC_DELAYTIMER_MAX
+_CS_LFS64_LIBS _CS_LFS64_LIBS
+S_IWRITE S_IWUSR
+_POSIX_SAVED_IDS 1
+_POSIX2_CHAR_TERM 200809L
+FOPEN_MAX 16
+_SC_COLL_WEIGHTS_MAX _SC_COLL_WEIGHTS_MAX
+_SC_LEVEL3_CACHE_LINESIZE _SC_LEVEL3_CACHE_LINESIZE
+_SC_CHARCLASS_NAME_MAX _SC_CHARCLASS_NAME_MAX
+_SC_NPROCESSORS_CONF _SC_NPROCESSORS_CONF
+O_DSYNC __O_DSYNC
+O_DIRECTORY __O_DIRECTORY
+_POSIX_V6_LP64_OFF64 -1
+FILENAME_MAX 4096
+_SC_THREAD_ROBUST_PRIO_INHERIT _SC_THREAD_ROBUST_PRIO_INHERIT
+_IO_iconv_t _G_iconv_t
+_POSIX_BARRIERS 200809L
+_SC_CHAR_BIT _SC_CHAR_BIT
+_LFS_ASYNCHRONOUS_IO 1
+_SC_IPV6 _SC_IPV6
+_SC_DEVICE_IO _SC_DEVICE_IO
+_SC_XOPEN_XPG2 _SC_XOPEN_XPG2
+_STATBUF_ST_BLKSIZE 
+/home/jenkins/workspace/SourceCode/applications/init/klogger.cpp
+_IO_fpos_t _G_fpos_t
+_SC_LEVEL1_DCACHE_SIZE _SC_LEVEL1_DCACHE_SIZE
+FNONBLOCK O_NONBLOCK
+EOF (-1)
+_XOPEN_REALTIME_THREADS 1
+FALLOC_FL_KEEP_SIZE 1
+_IO_LEFT 02
+_SC_TRACE_INHERIT _SC_TRACE_INHERIT
+_SC_2_C_DEV _SC_2_C_DEV
+_SC_C_LANG_SUPPORT_R _SC_C_LANG_SUPPORT_R
+_SC_PRIORITY_SCHEDULING _SC_PRIORITY_SCHEDULING
+_MKNOD_VER_SVR4 2
+__O_NOFOLLOW 0100000
+_STAT_VER_KERNEL 1
+_SC_MESSAGE_PASSING _SC_MESSAGE_PASSING
+F_GETLEASE 1025
+_PC_REC_XFER_ALIGN _PC_REC_XFER_ALIGN
+_CS_V7_ENV _CS_V7_ENV
+_SC_2_SW_DEV _SC_2_SW_DEV
+_POSIX_JOB_CONTROL 1
+F_SETLKW 7
+AT_SYMLINK_FOLLOW 0x400
+_CS_XBS5_ILP32_OFF32_CFLAGS _CS_XBS5_ILP32_OFF32_CFLAGS
+__F_SETOWN 8
+STDOUT_FILENO 1
+S_IFCHR __S_IFCHR
+_SC_XOPEN_LEGACY _SC_XOPEN_LEGACY
+__HAVE_COLUMN 
+POSIX_FADV_SEQUENTIAL 2
+_IO_SHOWPOINT 0400
+_PC_REC_MAX_XFER_SIZE _PC_REC_MAX_XFER_SIZE
+S_IXUSR __S_IEXEC
+_SC_SCHAR_MIN _SC_SCHAR_MIN
+_SC_NPROCESSORS_ONLN _SC_NPROCESSORS_ONLN
+O_RSYNC O_SYNC
+F_LOCK 1
+_CS_POSIX_V6_LP64_OFF64_LIBS _CS_POSIX_V6_LP64_OFF64_LIBS
+_IO_FLAGS2_MMAP 1
+_SC_LEVEL3_CACHE_ASSOC _SC_LEVEL3_CACHE_ASSOC
+F_SETOWN __F_SETOWN
+S_IFSOCK __S_IFSOCK
+_SC_IOV_MAX _SC_IOV_MAX
+_IO_MAGIC 0xFBAD0000
+F_DUPFD_CLOEXEC 1030
+_IOS_BIN 128
+S_IRUSR __S_IREAD
+_IO_ssize_t __ssize_t
+O_RDONLY 00
+_XOPEN_ENH_I18N 1
+AT_EACCESS 0x200
+_SC_UCHAR_MAX _SC_UCHAR_MAX
+_SC_MULTI_PROCESS _SC_MULTI_PROCESS
+_SC_2_C_VERSION _SC_2_C_VERSION
+O_NONBLOCK 04000
+_PC_CHOWN_RESTRICTED _PC_CHOWN_RESTRICTED
+L_XTND SEEK_END
+_SC_PII_OSI _SC_PII_OSI
+SEEK_CUR 1
+_SC_NL_MSGMAX _SC_NL_MSGMAX
+_POSIX_THREAD_SPORADIC_SERVER -1
+_IO_BAD_SEEN 0x4000
+__S_IFIFO 0010000
+_SC_LEVEL4_CACHE_ASSOC _SC_LEVEL4_CACHE_ASSOC
+_CS_V6_WIDTH_RESTRICTED_ENVS _CS_V6_WIDTH_RESTRICTED_ENVS
+_IO_peekc_unlocked(_fp) (_IO_BE ((_fp)->_IO_read_ptr >= (_fp)->_IO_read_end, 0) && __underflow (_fp) == EOF ? EOF : *(unsigned char *) (_fp)->_IO_read_ptr)
+_SC_XBS5_LP64_OFF64 _SC_XBS5_LP64_OFF64
+_POSIX2_C_DEV __POSIX2_THIS_VERSION
+_SC_TRACE_SYS_MAX _SC_TRACE_SYS_MAX
+_SC_THREAD_SAFE_FUNCTIONS _SC_THREAD_SAFE_FUNCTIONS
+_SC_OPEN_MAX _SC_OPEN_MAX
+_PC_ALLOC_SIZE_MIN _PC_ALLOC_SIZE_MIN
+_CS_XBS5_ILP32_OFFBIG_LIBS _CS_XBS5_ILP32_OFFBIG_LIBS
+_SC_PII_INTERNET_DGRAM _SC_PII_INTERNET_DGRAM
+_SC_XOPEN_UNIX _SC_XOPEN_UNIX
+_SC_V7_ILP32_OFF32 _SC_V7_ILP32_OFF32
+_SC_FILE_ATTRIBUTES _SC_FILE_ATTRIBUTES
+stdin stdin
+_POSIX_TYPED_MEMORY_OBJECTS -1
+_XBS5_ILP32_OFF32 1
+_IO_ERR_SEEN 0x20
+FNDELAY O_NDELAY
+_SC_THREAD_ATTR_STACKADDR _SC_THREAD_ATTR_STACKADDR
+_FCNTL_H 1
+_CS_GNU_LIBPTHREAD_VERSION _CS_GNU_LIBPTHREAD_VERSION
+_IO_SHOWPOS 02000
+_POSIX_THREAD_ATTR_STACKADDR 200809L
+F_TEST 3
+_SC_DEVICE_SPECIFIC _SC_DEVICE_SPECIFIC
+_SC_LEVEL2_CACHE_ASSOC _SC_LEVEL2_CACHE_ASSOC
+_SC_V7_LP64_OFF64 _SC_V7_LP64_OFF64
+stdout stdout
+__need_mbstate_t
+__pid_type
+_SC_TRACE_EVENT_FILTER _SC_TRACE_EVENT_FILTER
+FOPEN_MAX
+_IO_cleanup_region_end(_Doit) 
+S_TYPEISSHM(buf) __S_TYPEISSHM(buf)
+_XOPEN_UNIX 1
+_STAT_VER _STAT_VER_LINUX
+_SC_2_PBS_TRACK _SC_2_PBS_TRACK
+_SC_2_PBS_MESSAGE _SC_2_PBS_MESSAGE
+_klogWrite
+__S_IFBLK 0060000
+TEMP_FAILURE_RETRY(expression) (__extension__ ({ long int __result; do __result = (long int) (expression); while (__result == -1L && errno == EINTR); __result; }))
+__S_IFLNK 0120000
+_SC_LEVEL2_CACHE_LINESIZE _SC_LEVEL2_CACHE_LINESIZE
+_PC_REC_MIN_XFER_SIZE _PC_REC_MIN_XFER_SIZE
+S_ISFIFO(mode) __S_ISTYPE((mode), __S_IFIFO)
+_POSIX_TRACE_INHERIT -1
+_SC_SCHAR_MAX _SC_SCHAR_MAX
+_CS_V7_WIDTH_RESTRICTED_ENVS _CS_V7_WIDTH_RESTRICTED_ENVS
+_IO_NO_WRITES 8
+FALLOC_FL_ZERO_RANGE 16
+SEEK_DATA 3
+S_ISGID __S_ISGID
+__POSIX2_THIS_VERSION 200809L
+_SC_THREAD_PRIO_INHERIT _SC_THREAD_PRIO_INHERIT
+S_ISLNK(mode) __S_ISTYPE((mode), __S_IFLNK)
+S_ISCHR(mode) __S_ISTYPE((mode), __S_IFCHR)
+F_UNLCK 2
+_CS_POSIX_V6_LPBIG_OFFBIG_CFLAGS _CS_POSIX_V6_LPBIG_OFFBIG_CFLAGS
+_IO_HEX 0100
+_SC_BC_BASE_MAX _SC_BC_BASE_MAX
+DN_ACCESS 0x00000001
+_POSIX_REALTIME_SIGNALS 200809L
+_SC_2_C_BIND _SC_2_C_BIND
+_SC_POLL _SC_POLL
+_PC_REC_INCR_XFER_SIZE _PC_REC_INCR_XFER_SIZE
+_SC_SEM_VALUE_MAX _SC_SEM_VALUE_MAX
+S_IFDIR __S_IFDIR
+F_GETSIG __F_GETSIG
+_SC_2_LOCALEDEF _SC_2_LOCALEDEF
+_SC_LOGIN_NAME_MAX _SC_LOGIN_NAME_MAX
+O_CLOEXEC __O_CLOEXEC
+_PC_FILESIZEBITS _PC_FILESIZEBITS
+__GNUC_VA_LIST 
+va_end(v) __builtin_va_end(v)
+_XOPEN_XCU_VERSION 4
+_SC_NL_SETMAX _SC_NL_SETMAX
+_CS_POSIX_V6_ILP32_OFFBIG_LINTFLAGS _CS_POSIX_V6_ILP32_OFFBIG_LINTFLAGS
+_POSIX_IPV6 200809L
+_SC_PIPE _SC_PIPE
+_CS_POSIX_V7_ILP32_OFF32_LINTFLAGS _CS_POSIX_V7_ILP32_OFF32_LINTFLAGS
+STDERR_FILENO 2
+_POSIX_CLOCK_SELECTION 200809L
+AT_SYMLINK_NOFOLLOW 0x100
+_SC_CHAR_MIN _SC_CHAR_MIN
+_CS_V5_WIDTH_RESTRICTED_ENVS _CS_V5_WIDTH_RESTRICTED_ENVS
+__ILP32_OFFBIG_CFLAGS "-D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64"
+_CS_POSIX_V7_ILP32_OFFBIG_CFLAGS _CS_POSIX_V7_ILP32_OFFBIG_CFLAGS
+SEEK_HOLE 4
+LOCK_UN 8
+_POSIX_THREAD_PRIORITY_SCHEDULING 200809L
+S_IRWXU (__S_IREAD|__S_IWRITE|__S_IEXEC)
+_SC_MEMLOCK_RANGE _SC_MEMLOCK_RANGE
+SYNC_FILE_RANGE_WRITE 2
+_SC_C_LANG_SUPPORT _SC_C_LANG_SUPPORT
+_CS_XBS5_LP64_OFF64_CFLAGS _CS_XBS5_LP64_OFF64_CFLAGS
+_SC_MONOTONIC_CLOCK _SC_MONOTONIC_CLOCK
+_SC_LONG_BIT _SC_LONG_BIT
+_SC_EXPR_NEST_MAX _SC_EXPR_NEST_MAX
+_PC_ASYNC_IO _PC_ASYNC_IO
+_SC_TRACE_EVENT_NAME_MAX _SC_TRACE_EVENT_NAME_MAX
+_MKNOD_VER_LINUX 1
+F_SETSIG __F_SETSIG
+UIO_MAXIOV 1024
+_CS_XBS5_ILP32_OFFBIG_CFLAGS _CS_XBS5_ILP32_OFFBIG_CFLAGS
+O_NDELAY O_NONBLOCK
+_SC_GETPW_R_SIZE_MAX _SC_GETPW_R_SIZE_MAX
+_XOPEN_LEGACY 1
+__S_ISVTX 01000
+_SC_FIFO _SC_FIFO
+_CS_POSIX_V7_LP64_OFF64_LDFLAGS _CS_POSIX_V7_LP64_OFF64_LDFLAGS
+_SC_2_CHAR_TERM _SC_2_CHAR_TERM
+F_SETLK64 13
+_SC_SHELL _SC_SHELL
+_SC_USER_GROUPS _SC_USER_GROUPS
+_IO_putc_unlocked(_ch,_fp) (_IO_BE ((_fp)->_IO_write_ptr >= (_fp)->_IO_write_end, 0) ? __overflow (_fp, (unsigned char) (_ch)) : (unsigned char) (*(_fp)->_IO_write_ptr++ = (_ch)))
+_SC_XOPEN_ENH_I18N _SC_XOPEN_ENH_I18N
+DN_ATTRIB 0x00000020
+_SC_USER_GROUPS_R _SC_USER_GROUPS_R
+__S_IFCHR 0020000
+_SC_ULONG_MAX _SC_ULONG_MAX
+_G_IO_IO_FILE_VERSION 0x20001
+_POSIX_MONOTONIC_CLOCK 0
+st_atime st_atim.tv_sec
+stderr stderr
+F_SETLEASE 1024
+_SC_SHARED_MEMORY_OBJECTS _SC_SHARED_MEMORY_OBJECTS
+_SC_THREAD_STACK_MIN _SC_THREAD_STACK_MIN
+_SC_THREAD_ATTR_STACKSIZE _SC_THREAD_ATTR_STACKSIZE
+_IO_CURRENTLY_PUTTING 0x800
+L_INCR SEEK_CUR
+_SC_MB_LEN_MAX _SC_MB_LEN_MAX
+_IO_pid_t __pid_t
+__POSIX_FADV_NOREUSE 5
+_STDIO_USES_IOSTREAM 
+_SC_NL_ARGMAX _SC_NL_ARGMAX
+_SC_TIMEOUTS _SC_TIMEOUTS
+__S_TYPEISMQ(buf) ((buf)->st_mode - (buf)->st_mode)
+_IO_FIXED 010000
+_SC_LEVEL1_ICACHE_SIZE _SC_LEVEL1_ICACHE_SIZE
+O_WRONLY 01
+_SC_2_UPE _SC_2_UPE
+S_IRWXG (S_IRWXU >> 3)
+_POSIX_SPORADIC_SERVER -1
+_SC_MQ_OPEN_MAX _SC_MQ_OPEN_MAX
+O_TRUNC 01000
+_SC_RAW_SOCKETS _SC_RAW_SOCKETS
+_SC_CLOCK_SELECTION _SC_CLOCK_SELECTION
+_SC_AIO_MAX _SC_AIO_MAX
+__S_ISGID 02000
+_POSIX_V7_LP64_OFF64 -1
+__S_ISUID 04000
+__O_DSYNC 010000
+_SC_MEMORY_PROTECTION _SC_MEMORY_PROTECTION
+L_cuserid 9
+_G_va_list __gnuc_va_list
+S_TYPEISMQ(buf) __S_TYPEISMQ(buf)
+F_GETOWN_EX __F_GETOWN_EX
+X_OK 1
+_IOLBF 1
+_CS_POSIX_V7_LPBIG_OFFBIG_LINTFLAGS _CS_POSIX_V7_LPBIG_OFFBIG_LINTFLAGS
+_SC_LEVEL4_CACHE_SIZE _SC_LEVEL4_CACHE_SIZE
+__F_SETOWN_EX 15
+_STAT_VER_LINUX 3
+_CS_XBS5_LPBIG_OFFBIG_LINTFLAGS _CS_XBS5_LPBIG_OFFBIG_LINTFLAGS
+_POSIX_TRACE_EVENT_FILTER -1
+_SC_PII_INTERNET_STREAM _SC_PII_INTERNET_STREAM
+_SC_LEVEL1_DCACHE_LINESIZE _SC_LEVEL1_DCACHE_LINESIZE
+_CS_POSIX_V7_ILP32_OFF32_LIBS _CS_POSIX_V7_ILP32_OFF32_LIBS
+_PC_NAME_MAX _PC_NAME_MAX
+__F_GETOWN_EX 16
+_POSIX_REENTRANT_FUNCTIONS 1
+_IO_IS_APPENDING 0x1000
+S_IWGRP (S_IWUSR >> 3)
+__need_FILE 
+_SC_LEVEL3_CACHE_SIZE _SC_LEVEL3_CACHE_SIZE
+S_IFIFO __S_IFIFO
+S_IFREG __S_IFREG
+_SC_CHILD_MAX _SC_CHILD_MAX
+_SC_THREAD_SPORADIC_SERVER _SC_THREAD_SPORADIC_SERVER
+_SC_SPAWN _SC_SPAWN
+_CS_POSIX_V7_ILP32_OFFBIG_LDFLAGS _CS_POSIX_V7_ILP32_OFFBIG_LDFLAGS
+_CS_POSIX_V7_LP64_OFF64_CFLAGS _CS_POSIX_V7_LP64_OFF64_CFLAGS
+_G_config_h 1
+S_ISREG(mode) __S_ISTYPE((mode), __S_IFREG)
+_SC_THREAD_CPUTIME _SC_THREAD_CPUTIME
+_POSIX_NO_TRUNC 1
+_PC_LINK_MAX _PC_LINK_MAX
+_SC_UIO_MAXIOV _SC_UIO_MAXIOV
+_IO_MAGIC_MASK 0xFFFF0000
+_SC_FILE_LOCKING _SC_FILE_LOCKING
+_SC_2_VERSION _SC_2_VERSION
+_CS_LFS64_LDFLAGS _CS_LFS64_LDFLAGS
+_IO_feof_unlocked(__fp) (((__fp)->_flags & _IO_EOF_SEEN) != 0)
+_XOPEN_REALTIME 1
+AT_EMPTY_PATH 0x1000
+SYNC_FILE_RANGE_WAIT_AFTER 4
+_POSIX_REGEXP 1
+_IO_off64_t __off64_t
+O_CREAT 0100
+O_NOCTTY 0400
+_SC_V6_LPBIG_OFFBIG _SC_V6_LPBIG_OFFBIG
+_IO_UNIFIED_JUMPTABLES 1
+_VA_LIST_T_H 
+_SC_SSIZE_MAX _SC_SSIZE_MAX
+_CS_XBS5_LP64_OFF64_LDFLAGS _CS_XBS5_LP64_OFF64_LDFLAGS
+_VA_LIST_ 
+____FILE_defined 1
+__ap
+_SC_SAVED_IDS _SC_SAVED_IDS
+_SC_LEVEL2_CACHE_SIZE _SC_LEVEL2_CACHE_SIZE
+S_IWUSR __S_IWRITE
+_SC_SEMAPHORES _SC_SEMAPHORES
+_POSIX_SHARED_MEMORY_OBJECTS 200809L
+_SC_FD_MGMT _SC_FD_MGMT
+__S_IWRITE 0200
+_POSIX_ADVISORY_INFO 200809L
+F_OWNER_PGRP
+_IO_USER_BUF 1
+_SC_V6_LP64_OFF64 _SC_V6_LP64_OFF64
+_IO_size_t size_t
+_SC_2_PBS _SC_2_PBS
+_CS_POSIX_V6_LPBIG_OFFBIG_LINTFLAGS _CS_POSIX_V6_LPBIG_OFFBIG_LINTFLAGS
+LOCK_RW 192
+_SC_XOPEN_REALTIME_THREADS _SC_XOPEN_REALTIME_THREADS
+_SC_NZERO _SC_NZERO
+_CS_LFS64_LINTFLAGS _CS_LFS64_LINTFLAGS
+F_SETLK 6
+_CS_LFS_CFLAGS _CS_LFS_CFLAGS
+_POSIX_CPUTIME 0
+_CS_POSIX_V6_ILP32_OFF32_CFLAGS _CS_POSIX_V6_ILP32_OFF32_CFLAGS
+_CS_XBS5_LPBIG_OFFBIG_LIBS _CS_XBS5_LPBIG_OFFBIG_LIBS
+_SC_PHYS_PAGES _SC_PHYS_PAGES
+F_GETLK 5
+SPLICE_F_NONBLOCK 2
+F_NOTIFY 1026
+_XOPEN_CRYPT 1
+_SYS_STAT_H 1
+_IO_PENDING_OUTPUT_COUNT(_fp) ((_fp)->_IO_write_ptr - (_fp)->_IO_write_base)
+_POSIX2_C_BIND __POSIX2_THIS_VERSION
+_SC_AVPHYS_PAGES _SC_AVPHYS_PAGES
+_SC_LEVEL1_ICACHE_LINESIZE _SC_LEVEL1_ICACHE_LINESIZE
+_CS_XBS5_LP64_OFF64_LIBS _CS_XBS5_LP64_OFF64_LIBS
+_CS_LFS64_CFLAGS _CS_LFS64_CFLAGS
+_SC_MEMLOCK _SC_MEMLOCK
+_STAT_VER_LINUX_OLD 1
+__S_IEXEC 0100
+_IOFBF 0
+_CS_GNU_LIBC_VERSION _CS_GNU_LIBC_VERSION
+_SC_2_FORT_RUN _SC_2_FORT_RUN
+F_SETLKW64 14
+_IO_EOF_SEEN 0x10
+_PC_MAX_INPUT _PC_MAX_INPUT
+_STAT_VER_SVR4 2
+__S_IFSOCK 0140000
+DN_RENAME 0x00000010
+_POSIX_READER_WRITER_LOCKS 200809L
+_PC_VDISABLE _PC_VDISABLE
+MAX_HANDLE_SZ 128
+FASYNC O_ASYNC
+_SC_FSYNC _SC_FSYNC
+_POSIX_V7_ILP32_OFFBIG 1
+_CS_LFS_LIBS _CS_LFS_LIBS
+_SC_PII_OSI_COTS _SC_PII_OSI_COTS
+_POSIX_PRIORITIZED_IO 200809L
+_IO_UNBUFFERED 2
+_SC_CPUTIME _SC_CPUTIME
+LOCK_EX 2
+_G_BUFSIZ 8192
+S_ISSOCK(mode) __S_ISTYPE((mode), __S_IFSOCK)
+_POSIX_THREAD_ATTR_STACKSIZE 200809L
+_CS_POSIX_V6_ILP32_OFF32_LINTFLAGS _CS_POSIX_V6_ILP32_OFF32_LINTFLAGS
+/home/jenkins/workspace/SourceCode/out/APP_OBJ/init
+_SC_SHRT_MAX _SC_SHRT_MAX
+_CS_XBS5_LPBIG_OFFBIG_CFLAGS _CS_XBS5_LPBIG_OFFBIG_CFLAGS
+_SC_XOPEN_STREAMS _SC_XOPEN_STREAMS
+F_OFD_GETLK 36
+__S_IFMT 0170000
+_SC_PASS_MAX _SC_PASS_MAX
+S_IREAD S_IRUSR
+_IO_DEC 020
+_SC_TIMER_MAX _SC_TIMER_MAX
+_IO_fpos64_t _G_fpos64_t
+F_GETOWN __F_GETOWN
+_POSIX_ASYNC_IO 1
+_SC_THREAD_PROCESS_SHARED _SC_THREAD_PROCESS_SHARED
+_IO_getc_unlocked(_fp) (_IO_BE ((_fp)->_IO_read_ptr >= (_fp)->_IO_read_end, 0) ? __uflow (_fp) : *(unsigned char *) (_fp)->_IO_read_ptr++)
+_SC_SYNCHRONIZED_IO _SC_SYNCHRONIZED_IO
+F_TLOCK 2
+F_GETPIPE_SZ 1032
+_XBS5_ILP32_OFFBIG 1
+F_EXLCK 4
+_CS_XBS5_ILP32_OFFBIG_LDFLAGS _CS_XBS5_ILP32_OFFBIG_LDFLAGS
+_IO_stdout ((_IO_FILE*)(&_IO_2_1_stdout_))
+__ldiv_t_defined 1
+PF_ALG 38
+SCM_WIFI_STATUS SO_WIFI_STATUS
+FIOGETOWN 0x8903
+_LINUX_SYSINFO_H 
+NETLINK_LIST_MEMBERSHIPS 9
+_WCHAR_T_DEFINED 
+PF_UNSPEC 0
+EMEDIUMTYPE 124
+SIOCATMARK 0x8905
+deviceInit
+__undef_OPEN_MAX
+SO_REUSEADDR 2
+EACCES 13
+_POSIX_THREAD_KEYS_MAX 128
+WNOWAIT 0x01000000
+AF_IPX PF_IPX
+ETOOMANYREFS 109
+__WAIT_INT(status) (*(int *) &(status))
+SO_PRIORITY 12
+XATTR_SIZE_MAX 65536
+CMSG_DATA(cmsg) ((cmsg)->__cmsg_data)
+__WAIT_STATUS void *
+EBADF 9
+_ZN3icm4init17checkEthMasterCfgEv
+ENOPROTOOPT 92
+__WALL 0x40000000
+ENOTSUP EOPNOTSUPP
+SO_ERROR 4
+ENOBUFS 105
+EBADE 52
+AF_CAN PF_CAN
+_STDLIB_H 1
+PF_INET 2
+_POSIX_MQ_PRIO_MAX 32
+SOL_AAL 265
+SO_ATTACH_FILTER 26
+AF_ASH PF_ASH
+EWOULDBLOCK EAGAIN
+EREMCHG 78
+_POSIX_TIMER_MAX 32
+_DIRENT_HAVE_D_NAMLEN
+ENOANO 55
+SO_GET_FILTER SO_ATTACH_FILTER
+parseEvent
+PF_RXRPC 33
+PTHREAD_KEYS_MAX 1024
+EXDEV 18
+EILSEQ
+ENFILE 23
+ELOOP 40
+MSG_OOB MSG_OOB
+MSG_PEEK MSG_PEEK
+getParam
+EISNAM 120
+SO_PEEK_OFF 42
+TTY_NAME_MAX 32
+__W_EXITCODE(ret,sig) ((ret) << 8 | (sig))
+AF_ROSE PF_ROSE
+klogWrite(x,...) _klogWrite("init: " x, ##__VA_ARGS__)
+SO_DEBUG 1
+_POSIX_THREAD_DESTRUCTOR_ITERATIONS 4
+PF_IRDA 23
+NLMSG_ERROR 0x2
+PF_IEEE802154 36
+NLM_F_MATCH 0x200
+EMULTIHOP 72
+DT_LNK DT_LNK
+_SYS_UN_H 1
+AF_UNSPEC PF_UNSPEC
+PF_KEY 15
+XATTR_NAME_MAX 255
+NETLINK_KOBJECT_UEVENT 15
+EILSEQ 84
+NR_OPEN 1024
+AF_APPLETALK PF_APPLETALK
+SOL_RAW 255
+SOCK_DGRAM SOCK_DGRAM
+DT_UNKNOWN DT_UNKNOWN
+SCM_TIMESTAMPING SO_TIMESTAMPING
+ENOTEMPTY 39
+sa_family
+NLA_TYPE_MASK ~(NLA_F_NESTED | NLA_F_NET_BYTEORDER)
+PF_ASH 18
+___int_wchar_t_h 
+EEXIST 17
+NETLINK_ROUTE 0
+sockaddr_nl
+AF_IUCV PF_IUCV
+NLM_F_ATOMIC 0x400
+SO_SNDTIMEO 21
+nl_pid
+SO_RCVBUF 8
+NLM_F_REPLACE 0x100
+SOCK_CLOEXEC SOCK_CLOEXEC
+LINK_MAX 127
+ENOSR 63
+PTHREAD_DESTRUCTOR_ITERATIONS _POSIX_THREAD_DESTRUCTOR_ITERATIONS
+__SOCKADDR_COMMON_SIZE (sizeof (unsigned short int))
+SIOCGSTAMPNS 0x8907
+EBADRQC 56
+MSG_WAITALL MSG_WAITALL
+SHUT_RDWR SHUT_RDWR
+w_coredump __wait_terminated.__w_coredump
+EBADFD 77
+_DEVICES_H 
+w_stopval __wait_stopped.__w_stopval
+PF_SECURITY 14
+EREMOTE 66
+__WAIT_STATUS_DEFN void *
+_T_WCHAR_ 
+SOCK_SEQPACKET SOCK_SEQPACKET
+PF_ECONET 19
+ENETDOWN 100
+ENOTDIR 20
+errno (*__errno_location ())
+NETLINK_LISTEN_ALL_NSID 8
+_POSIX_NAME_MAX 14
+SO_ATTACH_BPF 50
+__WCOREDUMP(status) ((status) & __WCOREFLAG)
+EIDRM 43
+PF_BLUETOOTH 31
+EPERM 1
+AF_BRIDGE PF_BRIDGE
+handleDeviceEvent
+__need_Emath
+AF_BLUETOOTH PF_BLUETOOTH
+ELIBEXEC 83
+EOWNERDEAD 130
+ENOTNAM 118
+ESRCH 3
+SHUT_RD SHUT_RD
+EUNATCH 49
+AF_IRDA PF_IRDA
+_K_SS_ALIGNSIZE (__alignof__ (struct sockaddr *))
+recvBuf
+_SS_PADSIZE (_SS_SIZE - (2 * sizeof (__ss_aligntype)))
+AF_VSOCK PF_VSOCK
+SO_WIFI_STATUS 41
+_SYS_SOCKET_H 1
+_BITS_POSIX1_LIM_H 1
+SO_MARK 36
+NLM_F_REQUEST 1
+AF_X25 PF_X25
+SO_RCVTIMEO 20
+AF_ISDN PF_ISDN
+EL2HLT 51
+_DIRENT_HAVE_D_RECLEN 
+SHUT_WR SHUT_WR
+cfgFd
+NL_MMAP_MSG_ALIGNMENT NLMSG_ALIGNTO
+NLMSG_OK(nlh,len) ((len) >= (int)sizeof(struct nlmsghdr) && (nlh)->nlmsg_len >= sizeof(struct nlmsghdr) && (nlh)->nlmsg_len <= (len))
+MSG_WAITFORONE MSG_WAITFORONE
+FIOSETOWN 0x8901
+_ERRNO_H 1
+AF_PACKET PF_PACKET
+sa_data
+MSG_FIN MSG_FIN
+SOL_X25 262
+__LINUX_NETLINK_H 
+AF_IB PF_IB
+DT_CHR DT_CHR
+PF_ROSE 11
+PF_NFC 39
+AF_NETBEUI PF_NETBEUI
+PF_NETLINK 16
+PF_INET6 10
+NETLINK_ECRYPTFS 19
+SO_SECURITY_ENCRYPTION_NETWORK 24
+SO_MAX_PACING_RATE 47
+ERESTART 85
+subsys
+ARG_MAX 131072
+NLMSG_NEXT(nlh,len) ((len) -= NLMSG_ALIGN((nlh)->nlmsg_len), (struct nlmsghdr*)(((char*)(nlh)) + NLMSG_ALIGN((nlh)->nlmsg_len)))
+EADV 68
+__undef_ARG_MAX 
+NETLINK_FIB_LOOKUP 10
+_POSIX_RE_DUP_MAX 255
+SOMAXCONN 128
+CMSG_ALIGN(len) (((len) + sizeof (size_t) - 1) & (size_t) ~(sizeof (size_t) - 1))
+PF_PPPOX 24
+__ASM_GENERIC_BITS_PER_LONG 
+ENXIO 6
+__aligned_le64 __le64 __attribute__((aligned(8)))
+__ASM_GENERIC_SOCKET_H 
+SO_TYPE 3
+__undef_LINK_MAX
+EINTR 4
+DT_WHT DT_WHT
+NETLINK_CONNECTOR 11
+NETLINK_SELINUX 7
+EDESTADDRREQ 89
+NLM_F_DUMP_INTR 16
+paramName
+ueventFd
+__WIFCONTINUED(status) ((status) == __W_CONTINUED)
+_GCC_WCHAR_T 
+w_termsig __wait_terminated.__w_termsig
+_WCHAR_T_DEFINED_ 
+NETLINK_ADD_MEMBERSHIP 1
+P_ALL
+NETLINK_XFRM 6
+NETLINK_DNRTMSG 14
+MB_CUR_MAX (__ctype_get_mb_cur_max ())
+__BITS_SOCKET_H 
+AIO_PRIO_DELTA_MAX 20
+__W_STOPCODE(sig) ((sig) << 8 | 0x7f)
+_POSIX_CHILD_MAX 25
+_LINUX_KERNEL_H 
+ENOTSOCK 88
+ETH_CFG_MASTER "master"
+AF_RDS PF_RDS
+EDEADLK 35
+_LINUX_TYPES_H 
+SOCK_RAW SOCK_RAW
+PF_ROUTE PF_NETLINK
+MAXNAMLEN NAME_MAX
+NETLINK_CAP_ACK 10
+__bitwise__ 
+PF_IUCV 32
+PF_X25 9
+EREMOTEIO 121
+NETLINK_USERSOCK 2
+CMSG_NXTHDR(mhdr,cmsg) __cmsg_nxthdr (mhdr, cmsg)
+SO_RCVBUFFORCE 33
+PF_MPLS 28
+NETLINK_UNUSED 1
+PF_PHONET 35
+SEM_VALUE_MAX (2147483647)
+NETLINK_AUDIT 9
+__COMPAR_FN_T 
+NLM_F_EXCL 0x200
+CMSG_FIRSTHDR(mhdr) ((size_t) (mhdr)->msg_controllen >= sizeof (struct cmsghdr) ? (struct cmsghdr *) (mhdr)->msg_control : (struct cmsghdr *) 0)
+NLMSG_SPACE(len) NLMSG_ALIGN(NLMSG_LENGTH(len))
+_ZN3icm4init10deviceInitEv
+__WEXITSTATUS(status) (((status) & 0xff00) >> 8)
+SCM_RIGHTS SCM_RIGHTS
+w_stopsig __wait_stopped.__w_stopsig
+AF_ROUTE PF_ROUTE
+SO_BUSY_POLL 46
+__kernel_mode_t __kernel_mode_t
+__need_wchar_t
+EKEYREJECTED 129
+UEVENT_MSG_LEN
+__kernel_ipc_pid_t __kernel_ipc_pid_t
+_POSIX_SEM_NSEMS_MAX 256
+ERANGE 34
+EAFNOSUPPORT 97
+EIO 5
+PF_ISDN 34
+__WIFSIGNALED(status) (((signed char) (((status) & 0x7f) + 1) >> 1) > 0)
+_POSIX_CLOCKRES_MIN 20000000
+__aligned_be64 __be64 __attribute__((aligned(8)))
+__kernel_old_dev_t __kernel_old_dev_t
+_POSIX_PIPE_BUF 512
+ENETRESET 102
+PF_ATMPVC 8
+ETH_CFG_SLAVE "slave"
+_BSD_WCHAR_T_
+SOCK_STREAM SOCK_STREAM
+P_PGID
+EINPROGRESS 115
+SO_DETACH_BPF SO_DETACH_FILTER
+ESRMNT 69
+EL3HLT 46
+AF_ALG PF_ALG
+NLMSG_NOOP 0x1
+__malloc_and_calloc_defined 
+EDEADLOCK EDEADLK
+_POSIX_THREAD_THREADS_MAX 64
+_BITS_SOCKADDR_H 1
+AF_UNIX PF_UNIX
+AF_MAX PF_MAX
+SI_LOAD_SHIFT 16
+ETH_PHY_MASTER_CFG "/sys/bus/mdio_bus/devices/1:00/configuration/master_cfg"
+EL2NSYNC 45
+NLM_F_ECHO 8
+NETLINK_FIREWALL 3
+AF_WANPIPE PF_WANPIPE
+__ASM_GENERIC_POSIX_TYPES_H 
+AF_NETROM PF_NETROM
+EMLINK 31
+EDOM
+NLMSG_ALIGN(len) ( ((len)+NLMSG_ALIGNTO-1) & ~(NLMSG_ALIGNTO-1) )
+CMSG_LEN(len) (CMSG_ALIGN (sizeof (struct cmsghdr)) + (len))
+PF_UNIX PF_LOCAL
+DT_BLK DT_BLK
+PF_TIPC 30
+PF_CAIF 37
+WNOHANG 1
+MSG_EOR MSG_EOR
+NETLINK_PKTINFO 3
+AF_NFC PF_NFC
+SCM_CREDENTIALS SCM_CREDENTIALS
+SO_DOMAIN 39
+__CONST_SOCKADDR_ARG const struct sockaddr *
+NLMSG_DATA(nlh) ((void*)(((char*)nlh) + NLMSG_LENGTH(0)))
+_POSIX_UIO_MAXIOV 16
+NLMSG_MIN_TYPE 0x10
+params
+ENOSTR 60
+ENOSYS 38
+NLM_F_DUMP (NLM_F_ROOT|NLM_F_MATCH)
+__aligned_u64 __u64 __attribute__((aligned(8)))
+_POSIX_NGROUPS_MAX 8
+EPROTO 71
+DT_SOCK DT_SOCK
+this
+AF_ATMPVC PF_ATMPVC
+WSTOPPED 2
+ENOTCONN 107
+_POSIX_HIWAT _POSIX_PIPE_BUF
+WEXITED 4
+SOCK_NONBLOCK SOCK_NONBLOCK
+__wchar_t__ 
+EPROTONOSUPPORT 93
+_DIRENT_H 1
+ENOMEM 12
+__WIFEXITED(status) (__WTERMSIG(status) == 0)
+__need_error_t
+ENOEXEC 8
+__undef_ARG_MAX
+MQ_PRIO_MAX 32768
+PF_IPX 4
+PF_ATMSVC 20
+MAX_NL_PARAMS
+DTTOIF(dirtype) ((dirtype) << 12)
+__kernel_sa_family_t
+WCONTINUED 8
+SCM_TIMESTAMP SO_TIMESTAMP
+__bitwise 
+AF_ECONET PF_ECONET
+ESTRPIPE 86
+EBFONT 59
+MSG_DONTWAIT MSG_DONTWAIT
+checkEthMasterCfg
+_POSIX_SYMLINK_MAX 255
+__ALIGN_KERNEL(x,a) __ALIGN_KERNEL_MASK(x, (typeof(x))(a) - 1)
+MSG_TRYHARD MSG_DONTROUTE
+PF_VSOCK 40
+AF_SNA PF_SNA
+_POSIX_HOST_NAME_MAX 255
+_POSIX_AIO_MAX 1
+ENOMSG 42
+EOPNOTSUPP 95
+SIOCGSTAMP 0x8906
+AF_SECURITY PF_SECURITY
+_POSIX_OPEN_MAX 20
+SO_NO_CHECK 11
+_POSIX_AIO_LISTIO_MAX 2
+__SOCKADDR_ARG struct sockaddr *__restrict
+_POSIX_PATH_MAX 256
+NETLINK_ISCSI 8
+ENOKEY 126
+EPFNOSUPPORT 96
+ENOLCK 37
+SO_INCOMING_CPU 49
+openUeventSocket
+NLM_F_ROOT 0x100
+deviceFd
+SO_PEERSEC 31
+ECONNABORTED 103
+EMFILE 24
+DT_DIR DT_DIR
+EKEYREVOKED 128
+NLA_ALIGNTO 4
+_POSIX_MAX_CANON 255
+SO_LINGER 13
+NETLINK_SOCK_DIAG 4
+EDOM 33
+__undef_NR_OPEN 
+_ASM_GENERIC_ERRNO_BASE_H 
+NETLINK_NETFILTER 12
+NETLINK_NO_ENOBUFS 5
+ETIME 62
+SO_SNDLOWAT 19
+AF_ATMSVC PF_ATMSVC
+_POSIX_TZNAME_MAX 6
+ECHRNG 44
+__WIFSTOPPED(status) (((status) & 0xff) == 0x7f)
+AF_INET6 PF_INET6
+_LINUX_POSIX_TYPES_H 
+MSG_PROXY MSG_PROXY
+EROFS 30
+_ASM_GENERIC_INT_LL64_H 
+PF_SNA 22
+PF_APPLETALK 5
+major
+PF_DECnet 12
+SO_RXQ_OVFL 40
+__ASM_GENERIC_SOCKIOS_H 
+_ASM_TYPES_H 
+EINVAL 22
+_LINUX_LIMITS_H 
+SO_SNDBUF 7
+EBADR 53
+sockaddr
+__W_CONTINUED 0xffff
+ENOCSI 50
+ERANGE
+MSG_CTRUNC MSG_CTRUNC
+__WCHAR_T__ 
+ENAVAIL 119
+RTSIG_MAX 32
+WTERMSIG(status) __WTERMSIG (__WAIT_INT (status))
+__need_malloc_and_calloc
+_POSIX_MQ_OPEN_MAX 8
+isCfgOk
+ETIMEDOUT 110
+_POSIX_SSIZE_MAX 32767
+NL_MMAP_MSG_ALIGN(sz) __ALIGN_KERNEL(sz, NL_MMAP_MSG_ALIGNMENT)
+ECONNREFUSED 111
+SO_RCVLOWAT 18
+__u32
+SO_DETACH_FILTER 27
+getDeviceFd
+alloca
+NLMSG_ALIGNTO 4U
+__ARCH_ARM_POSIX_TYPES_H 
+__INT32_TYPE__
+ENODEV 19
+E2BIG 7
+ELIBACC 79
+MSG_CMSG_CLOEXEC MSG_CMSG_CLOEXEC
+_ZN3icm4init11getDeviceFdEv
+SO_BROADCAST 6
+MSG_MORE MSG_MORE
+SO_SECURITY_ENCRYPTION_TRANSPORT 23
+ELIBSCN 81
+EXIT_SUCCESS 0
+__undef_OPEN_MAX 
+ETXTBSY 26
+NETLINK_BROADCAST_ERROR 4
+NLMSG_OVERRUN 0x4
+_POSIX_RTSIG_MAX 8
+SO_REUSEPORT 15
+SO_NOFCS 43
+NETLINK_DROP_MEMBERSHIP 2
+SOCK_PACKET SOCK_PACKET
+NETLINK_RX_RING 6
+_WCHAR_T_DECLARED 
+w_retcode __wait_terminated.__w_retcode
+NETLINK_TX_RING 7
+_POSIX_STREAM_MAX 8
+ECHILD 10
+EHWPOISON 133
+SO_BINDTODEVICE 25
+__ss_aligntype unsigned long int
+EBUSY 16
+NETLINK_RDMA 20
+RAND_MAX 2147483647
+MSG_SYN MSG_SYN
+MSG_FASTOPEN MSG_FASTOPEN
+AF_LOCAL PF_LOCAL
+PF_RDS 21
+PF_LLC 26
+XATTR_LIST_MAX 65536
+SO_PASSCRED 16
+SUN_LEN(ptr) ((size_t) (((struct sockaddr_un *) 0)->sun_path) + strlen ((ptr)->sun_path))
+NLMSG_HDRLEN ((int) NLMSG_ALIGN(sizeof(struct nlmsghdr)))
+NLM_F_DUMP_FILTERED 32
+WUNTRACED 2
+EHOSTUNREACH 113
+EMSGSIZE 90
+NETLINK_SCSITRANSPORT 18
+_DIRENT_HAVE_D_OFF 
+ENAMETOOLONG 36
+NETLINK_NFLOG 5
+_D_EXACT_NAMLEN(d) (strlen ((d)->d_name))
+ERFKILL 132
+SOCK_DCCP SOCK_DCCP
+EUCLEAN 117
+NGROUPS_MAX 65536
+NLA_F_NESTED (1 << 15)
+ELIBMAX 82
+_POSIX_DELAYTIMER_MAX 32
+WIFSIGNALED(status) __WIFSIGNALED (__WAIT_INT (status))
+SOL_ATM 264
+PF_IB 27
+ESTALE 116
+DELAYTIMER_MAX 2147483647
+nl_groups
+ESOCKTNOSUPPORT 94
+SO_SELECT_ERR_QUEUE 45
+__undef_LINK_MAX 
+AF_CAIF PF_CAIF
+EOVERFLOW 75
+AF_PPPOX PF_PPPOX
+SOL_DECNET 261
+WIFEXITED(status) __WIFEXITED (__WAIT_INT (status))
+ENOTTY 25
+SIOCSPGRP 0x8902
+EXFULL 54
+EADDRINUSE 98
+MSG_ERRQUEUE MSG_ERRQUEUE
+PF_PACKET 17
+EAGAIN 11
+NET_MAJOR 36
+SO_SNDBUFFORCE 32
+SOCK_RDM SOCK_RDM
+EFAULT 14
+SIOCGPGRP 0x8904
+EL3RST 47
+SO_PEERNAME 28
+IFTODT(mode) (((mode) & 0170000) >> 12)
+DT_REG DT_REG
+PF_FILE PF_LOCAL
+NLA_ALIGN(len) (((len) + NLA_ALIGNTO - 1) & ~(NLA_ALIGNTO - 1))
+__UINTPTR_TYPE__ unsigned long
+_BITS_UIO_H_FOR_SYS_UIO_H 1
+SSIZE_MAX LONG_MAX
+NL_MMAP_HDRLEN NL_MMAP_MSG_ALIGN(sizeof(struct nl_mmap_hdr))
+minor
+_DIRENT_HAVE_D_TYPE 
+_POSIX_SIGQUEUE_MAX 32
+AF_PHONET PF_PHONET
+LOGIN_NAME_MAX 256
+MAX_LINKS 32
+_BSD_WCHAR_T_ 
+__lldiv_t_defined 1
+_ZN3icm4init17handleDeviceEventEv
+nl_family
+_ASM_GENERIC_ERRNO_H 
+EUSERS 87
+NLM_F_CREATE 0x400
+NLM_F_MULTI 2
+NETLINK_CRYPTO 21
+PF_CAN 29
+PF_BRIDGE 7
+_POSIX_MAX_INPUT 255
+__need_wchar_t 
+EISDIR 21
+SO_KEEPALIVE 9
+__WNOTHREAD 0x20000000
+_T_WCHAR 
+SOL_PACKET 263
+EFBIG 27
+_POSIX_QLIMIT 1
+NLM_F_APPEND 0x800
+EISCONN 106
+_LINUX_SOCKET_H 
+ENOLINK 67
+EKEYEXPIRED 127
+_ALLOCA_H 1
+EBADSLT 57
+__WCLONE 0x80000000
+PF_MAX 41
+_POSIX_ARG_MAX 4096
+NETLINK_INET_DIAG NETLINK_SOCK_DIAG
+ELNRNG 48
+uevent
+PATH_MAX 4096
+EPROTOTYPE 91
+PF_AX25 3
+__undef_NR_OPEN
+__WCHAR_T 
+SO_BPF_EXTENSIONS 48
+__WSTOPSIG(status) __WEXITSTATUS(status)
+AF_FILE PF_FILE
+_KLOGGER_H 
+EXIT_FAILURE 1
+ENOMEDIUM 123
+_POSIX_LOGIN_NAME_MAX 9
+AF_INET PF_INET
+/home/jenkins/workspace/SourceCode/applications/init/devices.cpp
+EDQUOT 122
+__kernel_uid_t __kernel_uid_t
+ENOTRECOVERABLE 131
+PTHREAD_STACK_MIN 16384
+WEXITSTATUS(status) __WEXITSTATUS (__WAIT_INT (status))
+ECOMM 70
+AF_RXRPC PF_RXRPC
+PTHREAD_THREADS_MAX
+WIFSTOPPED(status) __WIFSTOPPED (__WAIT_INT (status))
+SCM_TIMESTAMPNS SO_TIMESTAMPNS
+__WTERMSIG(status) ((status) & 0x7f)
+ENOPKG 65
+_POSIX_FD_SETSIZE _POSIX_OPEN_MAX
+NETLINK_IP6_FW 13
+PF_WANPIPE 25
+__socket_type
+HOST_NAME_MAX 64
+paramIdx
+ENOTBLK 15
+P_PID
+AF_MPLS PF_MPLS
+__WCOREFLAG 0x80
+NETLINK_GENERIC 16
+ETH_IFACE_FILE "/sys/class/net/eth0"
+AF_DECnet PF_DECnet
+ENOSPC 28
+SOL_SOCKET 1
+alloca(size) __builtin_alloca (size)
+__UINT32_TYPE__
+NLA_HDRLEN ((int) NLA_ALIGN(sizeof(struct nlattr)))
+_POSIX_LINK_MAX 8
+NLMSG_PAYLOAD(nlh,len) ((nlh)->nlmsg_len - NLMSG_SPACE((len)))
+AF_NETLINK PF_NETLINK
+ENOTUNIQ 76
+AF_TIPC PF_TIPC
+ENONET 64
+PF_NETROM 6
+__INT_WCHAR_T_H 
+SO_PEERCRED 17
+EHOSTDOWN 112
+__UINTPTR_TYPE__
+SO_PASSSEC 34
+DT_FIFO DT_FIFO
+__ENUM_IDTYPE_T 1
+WSTOPSIG(status) __WSTOPSIG (__WAIT_INT (status))
+ELIBBAD 80
+MSG_CONFIRM MSG_CONFIRM
+_POSIX_SYMLOOP_MAX 8
+NLMSG_LENGTH(len) ((len) + NLMSG_HDRLEN)
+SO_TIMESTAMPING 37
+SO_TIMESTAMP 29
+SO_PROTOCOL 38
+ECONNRESET 104
+ENOENT 2
+NLM_F_ACK 4
+ESPIPE 29
+ESHUTDOWN 108
+ECANCELED 125
+d_fileno d_ino
+SO_BSDCOMPAT 14
+__error_t_defined 1
+MSG_TRUNC MSG_TRUNC
+NLMSG_DONE 0x3
+MSG_TRYHARD
+NLA_F_NET_BYTEORDER (1 << 14)
+SOL_IRDA 266
+ENETUNREACH 101
+PF_NETBEUI 13
+SO_LOCK_FILTER 44
+__ALIGN_KERNEL_MASK(x,mask) (((x) + (mask)) & ~(mask))
+MSG_NOSIGNAL MSG_NOSIGNAL
+EPIPE 32
+AF_KEY PF_KEY
+PIPE_BUF 4096
+_POSIX_TTY_NAME_MAX 9
+AF_IEEE802154 PF_IEEE802154
+EBADMSG 74
+EALREADY 114
+EADDRNOTAVAIL 99
+EDOTDOT 73
+AF_AX25 PF_AX25
+ENODATA 61
+MSG_RST MSG_RST
+iface
+_SS_SIZE 128
+_POSIX_SEM_VALUE_MAX 32767
+SO_SECURITY_AUTHENTICATION 22
+SO_OOBINLINE 10
+SO_TIMESTAMPNS 35
+WIFCONTINUED(status) __WIFCONTINUED (__WAIT_INT (status))
+PF_LOCAL 1
+_D_ALLOC_NAMLEN(d) (((char *) (d) + (d)->d_reclen) - &(d)->d_name[0])
+SO_ACCEPTCONN 30
+__BITS_PER_LONG 32
+MSG_DONTROUTE MSG_DONTROUTE
+AF_LLC PF_LLC
+__SOCKADDR_COMMON(sa_prefix) sa_family_t sa_prefix ##family
+SO_DONTROUTE 5
+_K_SS_MAXSIZE 128
+nl_pad
+CMSG_SPACE(len) (CMSG_ALIGN (len) + CMSG_ALIGN (sizeof (struct cmsghdr)))
+W_EXITCODE(ret,sig) __W_EXITCODE (ret, sig)
+si_status _sifields._sigchld.si_status
+si_call_addr _sifields._sigsys._call_addr
+SIGCHLD 17
+sigs
+SIGCLD SIGCHLD
+BUS_MCEERR_AR BUS_MCEERR_AR
+SIGRTMIN (__libc_current_sigrtmin ())
+ILL_PRVOPC ILL_PRVOPC
+_sigpoll
+_ZN3icm4init29resetSigHandlerAndUnblockSigsEv
+POLL_PRI POLL_PRI
+si_band _sifields._sigpoll.si_band
+__sigisemptyset(set) (__extension__ ({ int __cnt = _SIGSET_NWORDS; const sigset_t *__set = (set); int __ret = __set->__val[--__cnt]; while (!__ret && --__cnt >= 0) __ret = __set->__val[__cnt]; __ret == 0; }))
+SI_QUEUE SI_QUEUE
+SIGALRM 14
+BUS_MCEERR_AO BUS_MCEERR_AO
+SEGV_ACCERR SEGV_ACCERR
+si_overrun _sifields._timer.si_overrun
+SIGINT 2
+WCOREFLAG __WCOREFLAG
+REG_R6 REG_R6
+_timer
+SIGPROF 27
+SA_STACK SA_ONSTACK
+sa_restorer
+handleSignal
+SIGPOLL SIGIO
+CLD_CONTINUED CLD_CONTINUED
+SIGSTKSZ 8192
+sa_sigaction __sigaction_handler.sa_sigaction
+sigev_notify_function _sigev_un._sigev_thread._function
+SIGTRAP 5
+_kill
+SEGV_MAPERR SEGV_MAPERR
+SIG_BLOCK 0
+SI_USER SI_USER
+SIGURG 23
+__clock_t
+SIGBUS 7
+__sigemptyset(set) (__extension__ ({ int __cnt = _SIGSET_NWORDS; sigset_t *__set = (set); while (--__cnt >= 0) __set->__val[__cnt] = 0; 0; }))
+blocking
+REG_R11 REG_R11
+REG_R12 REG_R12
+si_addr _sifields._sigfault.si_addr
+REG_R14 REG_R14
+si_timerid _sifields._timer.si_tid
+_sigchld
+FPE_INTOVF FPE_INTOVF
+SI_KERNEL SI_KERNEL
+_BITS_SIGTHREAD_H 1
+si_syscall _sifields._sigsys._syscall
+FPE_FLTINV FPE_FLTINV
+POLL_OUT POLL_OUT
+WCOREDUMP(status) __WCOREDUMP (__WAIT_INT (status))
+MINSIGSTKSZ 2048
+ILL_PRVREG ILL_PRVREG
+__SIGRTMIN 32
+SS_ONSTACK SS_ONSTACK
+POLL_ERR POLL_ERR
+__SIGRTMAX (_NSIG - 1)
+serviceInfo_t
+ILL_ILLTRP ILL_ILLTRP
+_ZN3icm4init11serviceInfoC4Ev
+REG_R2 REG_R2
+__SI_MAX_SIZE 128
+NGREG 18
+SI_TKILL SI_TKILL
+SA_RESETHAND 0x80000000
+si_stime _sifields._sigchld.si_stime
+REG_R3 REG_R3
+SIGILL 4
+9siginfo_t
+SIGTTIN 21
+WAIT_MYPGRP 0
+TRAP_BRKPT TRAP_BRKPT
+SA_RESTART 0x10000000
+sa_mask
+__need_siginfo_t
+si_ptr _sifields._rt.si_sigval.sival_ptr
+__SIGEV_MAX_SIZE 64
+REG_R5 REG_R5
+__sigandset(dest,left,right) (__extension__ ({ int __cnt = _SIGSET_NWORDS; sigset_t *__dest = (dest); const sigset_t *__left = (left); const sigset_t *__right = (right); while (--__cnt >= 0) __dest->__val[__cnt] = (__left->__val[__cnt] & __right->__val[__cnt]); 0; }))
+SIGUSR1 10
+SA_INTERRUPT 0x20000000
+si_code
+si_uid _sifields._kill.si_uid
+signalHandlerInit
+_EXTERN_INLINE __extern_inline
+__sig_atomic_t_defined 
+si_errno
+sigcontext_struct sigcontext
+__have_siginfo_t 1
+REG_R7 REG_R7
+_SIGNAL_H 
+TRAP_TRACE TRAP_TRACE
+SIGQUIT 3
+__val
+SIGUNUSED 31
+SIGCONT 18
+_ZN3icm4init17signalHandlerInitEv
+si_value _sifields._rt.si_sigval
+FPE_FLTUND FPE_FLTUND
+_ZN3icm4init15getSigHandlerFdEv
+__sighandler_t
+serviceInfo
+FPE_FLTRES FPE_FLTRES
+FPE_INTDIV FPE_INTDIV
+CLD_EXITED CLD_EXITED
+SA_NOCLDWAIT 2
+__SIGEV_PAD_SIZE ((__SIGEV_MAX_SIZE / sizeof (int)) - 3)
+si_int _sifields._rt.si_sigval.sival_int
+SA_NOMASK SA_NODEFER
+signalFd
+REG_R4 REG_R4
+CLD_DUMPED CLD_DUMPED
+SS_DISABLE SS_DISABLE
+FPE_FLTSUB FPE_FLTSUB
+_sigsys
+SA_ONSTACK 0x08000000
+SIG_ERR ((__sighandler_t) -1)
+REG_R15 REG_R15
+__sigfillset(set) (__extension__ ({ int __cnt = _SIGSET_NWORDS; sigset_t *__set = (set); while (--__cnt >= 0) __set->__val[__cnt] = ~0UL; 0; }))
+SA_ONESHOT SA_RESETHAND
+SIGKILL 9
+__sigword(sig) (((sig) - 1) / (8 * sizeof (unsigned long int)))
+SI_MESGQ SI_MESGQ
+SA_NOCLDSTOP 1
+SIGTSTP 20
+SIGIOT 6
+si_pid _sifields._kill.si_pid
+__need_siginfo_t 
+SIGXFSZ 25
+POLL_HUP POLL_HUP
+W_STOPCODE(sig) __W_STOPCODE (sig)
+__need_sig_atomic_t
+ILL_COPROC ILL_COPROC
+__sigorset(dest,left,right) (__extension__ ({ int __cnt = _SIGSET_NWORDS; sigset_t *__dest = (dest); const sigset_t *__left = (left); const sigset_t *__right = (right); while (--__cnt >= 0) __dest->__val[__cnt] = (__left->__val[__cnt] | __right->__val[__cnt]); 0; }))
+ILL_ILLOPN ILL_ILLOPN
+SIG_IGN ((__sighandler_t) 1)
+SIGSEGV 11
+__sigaction_handler
+__need_sigset_t
+SIGRTMAX (__libc_current_sigrtmax ())
+SIGINITPWROFF 35
+resetSigHandlerAndUnblockSigs
+sigProcMaskAllSigs
+getSigHandlerFd
+CLD_KILLED CLD_KILLED
+ILL_ILLADR ILL_ILLADR
+REG_R8 REG_R8
+SIGFPE 8
+__have_sigevent_t 1
+SIGEV_THREAD SIGEV_THREAD
+si_fd _sifields._sigpoll.si_fd
+_sifields
+SIGWINCH 28
+waitForProcess
+SIGPWR 30
+setSignals
+SIGSYS 31
+SIGTERM 15
+_SIGNAL_HANDLER_H 
+si_signo
+NSIG _NSIG
+_SIGSET_H_fns 1
+SA_NODEFER 0x40000000
+SI_SIGIO SI_SIGIO
+__SI_PAD_SIZE ((__SI_MAX_SIZE / sizeof (int)) - 3)
+SIGEV_NONE SIGEV_NONE
+_SYS_WAIT_H 1
+SIGTTOU 22
+SIGPIPE 13
+_ZN3icm4init12handleSignalEv
+si_utime _sifields._sigchld.si_utime
+sigmask(sig) __sigmask(sig)
+_ASMARM_SIGCONTEXT_H 
+/home/jenkins/workspace/SourceCode/applications/init/signal_handler.cpp
+REG_R1 REG_R1
+ILL_BADSTK ILL_BADSTK
+CLD_STOPPED CLD_STOPPED
+SIGHUP 1
+__have_sigval_t 1
+SIGSTKFLT 16
+_SYS_UCONTEXT_H 1
+SA_SIGINFO 4
+SI_ASYNCIO SI_ASYNCIO
+10__sigset_t
+sigval_t
+SIG_DFL ((__sighandler_t) 0)
+SI_ASYNCNL SI_ASYNCNL
+WAIT_ANY (-1)
+sa_handler __sigaction_handler.sa_handler
+FPE_FLTOVF FPE_FLTOVF
+_ZN3icm4init18sigProcMaskAllSigsEi
+_sigfault
+SIG_HOLD ((__sighandler_t) 2)
+FPE_FLTDIV FPE_FLTDIV
+_NSIG 65
+sig_no
+REG_R0 REG_R0
+SIGXCPU 24
+SIGIO 29
+sigact
+SI_TIMER SI_TIMER
+POLL_IN POLL_IN
+REG_R9 REG_R9
+SIGEV_THREAD_ID SIGEV_THREAD_ID
+SIGABRT 6
+REG_R10 REG_R10
+crashCount
+SIGUSR2 12
+SIGEV_SIGNAL SIGEV_SIGNAL
+BUS_ADRERR BUS_ADRERR
+svcName
+sigev_notify_attributes _sigev_un._sigev_thread._attribute
+sigchldHandler
+si_addr_lsb _sifields._sigfault.si_addr_lsb
+__sigmask(sig) (((unsigned long int) 1) << (((sig) - 1) % (8 * sizeof (unsigned long int))))
+nargs
+signalRecvFd
+BUS_OBJERR BUS_OBJERR
+SIG_UNBLOCK 1
+REG_R13 REG_R13
+BUS_ADRALN BUS_ADRALN
+SIG_SETMASK 2
+SIGVTALRM 26
+ILL_ILLOPC ILL_ILLOPC
+si_arch _sifields._sigsys._arch
+POLL_MSG POLL_MSG
+SIGSTOP 19
+sa_flags
+CLD_TRAPPED CLD_TRAPPED
+PRIxPTR __PRIPTR_PREFIX "x"
+SCNxMAX __PRI64_PREFIX "x"
+_ZN3icm4init10reportTickEi
+INT_FAST8_MIN (-128)
+TIOCSSERIAL 0x541F
+DBUS_ENV_FILE
+SIOCDELDLCI 0x8981
+PRId8 "d"
+INT_FAST32_MAX (2147483647)
+RUSAGE_CHILDREN RUSAGE_CHILDREN
+tm_mday
+SCNxFAST16 __PRIPTR_PREFIX "x"
+__pad2
+__pad3
+__pad5
+SCNi8 "hhi"
+MSG_LEN 20
+startOtaApp
+_STDBOOL_H 
+PRIO_PGRP PRIO_PGRP
+RUSAGE_LWP RUSAGE_THREAD
+MNT_EXPIRE MNT_EXPIRE
+PRIoFAST32 __PRIPTR_PREFIX "o"
+PRIxFAST32 __PRIPTR_PREFIX "x"
+_IOC_TYPE(nr) (((nr) >> _IOC_TYPESHIFT) & _IOC_TYPEMASK)
+PTRDIFF_MAX (2147483647)
+TIOCM_RNG 0x080
+UMOUNT_NOFOLLOW UMOUNT_NOFOLLOW
+SCNd64 __PRI64_PREFIX "d"
+mtext
+PRIu64 __PRI64_PREFIX "u"
+appCrashReport
+msgBufInit
+PRIXFAST64 __PRI64_PREFIX "X"
+_GCC_WRAP_STDINT_H 
+UINT_LEAST32_MAX (4294967295U)
+TCSETAW 0x5407
+____gwchar_t_defined 1
+SIOCGIFNAME 0x8910
+TIOCNXCL 0x540D
+PROP_NAME_MAX 32
+FIOQSIZE 0x545E
+SCNuLEAST64 __PRI64_PREFIX "u"
+SIOCDRARP 0x8960
+CLOCK_TAI 11
+SCNdLEAST16 "hd"
+RB_SW_SUSPEND 0xd000fce2
+IPC_STAT 2
+SCNi64 __PRI64_PREFIX "i"
+__rlim_t
+MS_SILENT MS_SILENT
+SYS_INIT_GPU
+SCNi32 "i"
+POLLMSG 0x400
+isprint_l(c,l) __isprint_l ((c), (l))
+__toascii_l(c,l) ((l), __toascii (c))
+notifyServiceStateChange
+STA_UNSYNC 0x0040
+TIOCGPKT _IOR('T', 0x38, int)
+isEthCfgMaster
+UINTPTR_MAX (4294967295U)
+RLIMIT_AS RLIMIT_AS
+PRIdLEAST32 "d"
+TCFLSH 0x540B
+STA_PPSSIGNAL 0x0100
+TIOCGLCKTRMIOS 0x5456
+CLOCK_REALTIME_ALARM 8
+__STDC_CONSTANT_MACROS 
+getServiceByPid
+START_UP_SH
+STA_INS 0x0010
+CRASH_LOG_FILE_LEN 256
+MS_NODEV MS_NODEV
+errFd
+tm_zone
+isascii_l(c,l) __isascii_l ((c), (l))
+monitorCoreService
+PRIO_MIN -20
+_LINUX_IOCTL_H 
+curCrashLog
+CarSTick
+_GCC_PTRDIFF_T 
+TIOCSBRK 0x5427
+IPC_EXCL 02000
+mcuUpdateModeState
+TIOCCONS 0x541D
+MSG_NOERROR 010000
+ispunct_l(c,l) __ispunct_l ((c), (l))
+_SYS_MSG_H 
+SCNoFAST32 __PRIPTR_PREFIX "o"
+SCNxFAST32 __PRIPTR_PREFIX "x"
+SVC_DBUS_DAEMON
+_ZN3icm4init18mcuUpdateModeStateEi
+PRIoFAST8 "o"
+devFdInit
+N_AX25 5
+RLIMIT_RTTIME __RLIMIT_RTTIME
+CEOT CEOF
+BLKFLSBUF _IO(0x12, 97)
+POLLOUT 0x004
+CLOCK_BOOTTIME 7
+CSTART CTRL('q')
+ADJ_TIMECONST 0x0020
+BLKRASET _IO(0x12, 98)
+INT8_MAX (127)
+PRIoLEAST64 __PRI64_PREFIX "o"
+PRIxLEAST64 __PRI64_PREFIX "x"
+bootReason
+PRIuFAST16 __PRIPTR_PREFIX "u"
+CINTR CTRL('c')
+INT_LEAST8_MIN (-128)
+HMIState
+_ISbit(bit) ((bit) < 8 ? ((1 << (bit)) << 8) : ((1 << (bit)) >> 8))
+SIOCGIFPFLAGS 0x8935
+PRIiFAST16 __PRIPTR_PREFIX "i"
+TCSETS2 _IOW('T', 0x2B, struct termios2)
+ENV_DBUS_SESSION_PID
+PRIdFAST32 __PRIPTR_PREFIX "d"
+SCNu32 "u"
+POLLIN 0x001
+tm_min
+startAudioApp
+SCNiMAX __PRI64_PREFIX "i"
+__isupper_l(c,l) __isctype_l((c), _ISupper, (l))
+RLIMIT_MSGQUEUE __RLIMIT_MSGQUEUE
+_ZN3icm4init13configNetworkEv
+__rlimit_resource
+_unused2
+IOC_INOUT ((_IOC_WRITE|_IOC_READ) << _IOC_DIRSHIFT)
+services
+PRIdPTR __PRIPTR_PREFIX "d"
+__initialize_p
+islower_l(c,l) __islower_l ((c), (l))
+IPC_SET 1
+TIOCGETD 0x5424
+MOD_ESTERROR ADJ_ESTERROR
+SIOCSIFLINK 0x8911
+INT32_MIN (-2147483647-1)
+CSTOP CTRL('s')
+openDevnullToStdio
+getServiceByName
+SIOCGIFMAP 0x8970
+CARSState
+PRIuLEAST8 "u"
+PRIX8 "X"
+TIOCCBRK 0x5428
+PTRDIFF_MIN (-2147483647-1)
+SYS_INIT_SCRIPT
+PRIi32 "i"
+SCNxFAST8 "hhx"
+TCGETX 0x5432
+_GCC_MAX_ALIGN_T 
+iscntrl_l(c,l) __iscntrl_l ((c), (l))
+SIOCGIFINDEX 0x8933
+PRIiPTR __PRIPTR_PREFIX "i"
+_IO(type,nr) _IOC(_IOC_NONE,(type),(nr),0)
+tm_mon
+SIOCSIFFLAGS 0x8914
+_SYS_IOCTL_H 1
+SCNoLEAST64 __PRI64_PREFIX "o"
+SCNxLEAST64 __PRI64_PREFIX "x"
+MS_MANDLOCK MS_MANDLOCK
+debug
+MS_RDONLY MS_RDONLY
+startFactoryTool
+RLIM_SAVED_MAX RLIM_INFINITY
+__isleap(year) ((year) % 4 == 0 && ((year) % 100 != 0 || (year) % 400 == 0))
+INT_LEAST32_MAX (2147483647)
+_IOC_NRBITS 8
+N_IRDA 11
+SCNiFAST16 __PRIPTR_PREFIX "i"
+WCHAR_MIN __WCHAR_MIN
+tm_hour
+SCNdFAST32 __PRIPTR_PREFIX "d"
+_vtable_offset
+toascii_l(c,l) __toascii_l ((c), (l))
+initPowerOff
+POLLREMOVE 0x1000
+PRIo64 __PRI64_PREFIX "o"
+CBRK CEOL
+toascii(c) __toascii (c)
+BLOCK_SIZE 1024
+PRIdLEAST64 __PRI64_PREFIX "d"
+RLIMIT_CPU RLIMIT_CPU
+_IOC_NRSHIFT 0
+tm_yday
+PRIXLEAST16 "X"
+TTYDEF_CFLAG (CREAD | CS7 | PARENB | HUPCL)
+_IOC_READ 2U
+PRIxMAX __PRI64_PREFIX "x"
+INT16_MIN (-32767-1)
+MS_NOSUID MS_NOSUID
+TIOCGRS485 0x542E
+BLKROGET _IO(0x12, 94)
+TIOCSLCKTRMIOS 0x5457
+SIOCGIFMTU 0x8921
+MS_REMOUNT MS_REMOUNT
+PRIX32 "X"
+SIOCSIFMTU 0x8922
+TIOCM_DSR 0x100
+N_TTY 0
+STA_NANO 0x2000
+initialized
+BLKRRPART _IO(0x12, 95)
+SIOCSRARP 0x8962
+FIONREAD 0x541B
+___int_ptrdiff_t_h 
+SIOCADDMULTI 0x8931
+BLKBSZGET _IOR(0x12,112,size_t)
+_T_PTRDIFF_ 
+TCSETSW 0x5403
+SCNu16 "hu"
+TTYDEF_LFLAG (ECHO | ICANON | ISIG | IEXTEN | ECHOE|ECHOKE|ECHOCTL)
+_IO_backup_base
+MOD_FREQUENCY ADJ_FREQUENCY
+UINT_LEAST16_MAX (65535)
+MS_LAZYTIME MS_LAZYTIME
+SIOCDELRT 0x890C
+SVC_OTA_APP
+MNT_DETACH MNT_DETACH
+PRIoLEAST8 "o"
+SIOCGIFCOUNT 0x8938
+RLIMIT_LOCKS __RLIMIT_LOCKS
+RLIMIT_NICE __RLIMIT_NICE
+MSG_COPY 040000
+TIOCEXCL 0x540C
+PRIiLEAST16 "i"
+SIG_ATOMIC_MAX (2147483647)
+RLIMIT_NPROC __RLIMIT_NPROC
+SIOCGIFMETRIC 0x891d
+_IOWR(type,nr,size) _IOC(_IOC_READ|_IOC_WRITE,(type),(nr),(_IOC_TYPECHECK(size)))
+__WCHAR_MAX __WCHAR_MAX__
+runInitScript
+TIOCGEXCL _IOR('T', 0x40, int)
+PRIXPTR __PRIPTR_PREFIX "X"
+RB_DISABLE_CAD 0
+SIOCGIFFLAGS 0x8913
+_IO_read_end
+PRIXFAST8 "X"
+__static_initialization_and_destruction_0
+_IO_save_base
+_SYS_POLL_H 1
+__WAIT_INT(status) (*(const int *) &(status))
+SVC_FACTORY_TOOL
+SIOCGIFBRDADDR 0x8919
+reportTick
+INTPTR_MIN (-2147483647-1)
+SCNuFAST64 __PRI64_PREFIX "u"
+SCNdLEAST64 __PRI64_PREFIX "d"
+TIOCSIG _IOW('T', 0x36, int)
+PRIO_PROCESS PRIO_PROCESS
+msg_cbytes __msg_cbytes
+_IO_write_end
+fileName
+__PTRDIFF_T 
+needConsole
+TIOCGICOUNT 0x545D
+_GXX_NULLPTR_T 
+PRId16 "d"
+PRIoPTR __PRIPTR_PREFIX "o"
+propertySetFdInit
+TIOCMSET 0x5418
+_IO_buf_base
+PRId32 "d"
+SCNuFAST8 "hhu"
+TIOCOUTQ 0x5411
+__islower_l(c,l) __isctype_l((c), _ISlower, (l))
+PRIO_MAX 20
+MOD_MAXERROR ADJ_MAXERROR
+SIOCSIFMETRIC 0x891e
+MS_DIRSYNC MS_DIRSYNC
+AUDIO_WORKING_DIR
+INT_LEAST16_MAX (32767)
+STA_PPSERROR 0x0800
+DEV_NULL
+msgBufSend
+isascii(c) __isascii (c)
+TTYDEF_IFLAG (BRKINT | ISTRIP | ICRNL | IMAXBEL | IXON | IXANY)
+TIOCM_ST 0x008
+startFtpd
+MS_BIND MS_BIND
+PRIiLEAST32 "i"
+rlim_max
+__isspace_l(c,l) __isctype_l((c), _ISspace, (l))
+PROPERTY_KEY_MAX PROP_NAME_MAX
+__isctype_l(c,type,locale) ((locale)->__ctype_b[(int) (c)] & (unsigned short int) type)
+MS_STRICTATIME MS_STRICTATIME
+INT8_MIN (-128)
+_IO_marker
+magic
+TIOCM_CD TIOCM_CAR
+CLOCKS_PER_SEC ((clock_t) 1000000)
+PATH_SHELL
+MS_MGC_VAL 0xc0ed0000
+INT_FAST16_MIN (-2147483647-1)
+MS_RMT_MASK (MS_RDONLY|MS_SYNCHRONOUS|MS_MANDLOCK|MS_I_VERSION |MS_LAZYTIME)
+PRIiFAST32 __PRIPTR_PREFIX "i"
+PRIuLEAST16 "u"
+PRIo16 "o"
+MS_NOATIME MS_NOATIME
+_IO_lock_t
+N_SLIP 1
+SIOCSIFHWBROADCAST 0x8937
+_IO_read_ptr
+isupper_l(c,l) __isupper_l ((c), (l))
+_GLOBAL__sub_I__ZN3icm4init14rebootPowerOffEi
+isdigit_l(c,l) __isdigit_l ((c), (l))
+TCSETAF 0x5408
+SIOCGIFCONF 0x8912
+_IOR(type,nr,size) _IOC(_IOC_READ,(type),(nr),(_IOC_TYPECHECK(size)))
+_flags2
+INT_FAST64_MIN (-__INT64_C(9223372036854775807)-1)
+isgraph_l(c,l) __isgraph_l ((c), (l))
+SVC_AUDIO_APP
+PRIxLEAST8 "x"
+PROPERTY_VALUE_MAX PROP_VALUE_MAX
+TIOCMBIC 0x5417
+PRIiLEAST8 "i"
+CLOCK_THREAD_CPUTIME_ID 3
+IOC_IN (_IOC_WRITE << _IOC_DIRSHIFT)
+IPC_INFO 3
+_IO_write_ptr
+N_HCI 15
+INTMAX_MIN (-__INT64_C(9223372036854775807)-1)
+myMsgBuf
+RB_POWER_OFF 0x4321fedc
+_SYS_REBOOT_H 1
+ENV_DBUS_SESSION_ADDR
+FIOASYNC 0x5452
+POLLERR 0x008
+PRId64 __PRI64_PREFIX "d"
+tm_sec
+BLKROSET _IO(0x12, 93)
+rebootPowerOff
+CERASE 0177
+DEV_TTY_MXC
+myMsgBuf_t
+BLOCK_SIZE_BITS 10
+PRIi64 __PRI64_PREFIX "i"
+STA_PPSJITTER 0x0200
+SIOCGIFSLAVE 0x8929
+TIOCSTI 0x5412
+CLOCK_BOOTTIME_ALARM 9
+INT64_MAX (__INT64_C(9223372036854775807))
+SIOCGIFADDR 0x8915
+decltype(nullptr)
+BLKSECTGET _IO(0x12,103)
+STA_DEL 0x0020
+STA_PPSTIME 0x0004
+RLIMIT_FSIZE RLIMIT_FSIZE
+__need_ptrdiff_t
+SCNu8 "hhu"
+TTYDEF_OFLAG (OPOST | ONLCR | XTABS)
+SIOCSIFNAME 0x8923
+PRIx8 "x"
+PROP_VALUE_MAX 92
+TCGETS2 _IOR('T', 0x2A, struct termios2)
+IPC_NOWAIT 04000
+_INTTYPES_H 1
+POLLRDBAND 0x080
+checkAndReportCodecFault
+offsetof(TYPE,MEMBER) __builtin_offsetof (TYPE, MEMBER)
+startEclusterApp
+mcuUpdateMode
+PRIxFAST64 __PRI64_PREFIX "x"
+TCSETXW 0x5435
+TIOCM_RI TIOCM_RNG
+SCNiFAST32 __PRIPTR_PREFIX "i"
+TIOCSERCONFIG 0x5453
+_tolower(c) ((int) (*__ctype_tolower_loc ())[(int) (c)])
+_lock
+MS_REC MS_REC
+SIOCSARP 0x8955
+_ZN3icm4init4mainEiPPc
+SIOCGARP 0x8954
+_INIT_PROPERTY_H 
+SCNd32 "d"
+_PTRDIFF_T_DECLARED 
+PRIx64 __PRI64_PREFIX "x"
+SCNd16 "hd"
+SIOCDELMULTI 0x8932
+_IO_buf_end
+addOrGetService
+wpid
+PRIiLEAST64 __PRI64_PREFIX "i"
+ADJ_SETOFFSET 0x0100
+isblank_l(c,l) __isblank_l ((c), (l))
+FIONBIO 0x5421
+UINT8_MAX (255)
+_BITS_WCHAR_H 1
+PRIu8 "u"
+_BITS_TIME_H 1
+SIOCSIFBRDADDR 0x891a
+MS_UNBINDABLE MS_UNBINDABLE
+INT_LEAST8_MAX (127)
+PRIiFAST64 __PRI64_PREFIX "i"
+TIOCSSOFTCAR 0x541A
+PRIo32 "o"
+MS_ACTIVE MS_ACTIVE
+PRIoMAX __PRI64_PREFIX "o"
+MS_NOEXEC MS_NOEXEC
+__STDC_LIMIT_MACROS
+UINT32_MAX (4294967295U)
+TCSETS 0x5402
+SVC_CAR_SERVICE
+TIOCSPTLCK _IOW('T', 0x31, int)
+MS_I_VERSION MS_I_VERSION
+N_PROFIBUS_FDL 10
+RLIMIT_RTPRIO __RLIMIT_RTPRIO
+SIOCGIFDSTADDR 0x8917
+pollfd
+SIOCDIFADDR 0x8936
+_shortbuf
+_sbuf
+CLOCK_REALTIME 0
+SCNxFAST64 __PRI64_PREFIX "x"
+INT16_MAX (32767)
+SCNiPTR __PRIPTR_PREFIX "i"
+TIOCM_CTS 0x020
+_IOC_NRMASK ((1 << _IOC_NRBITS)-1)
+TIOCSERSETMULTI 0x545B
+PRIxLEAST16 "x"
+HMITick
+TIOCSWINSZ 0x5414
+PRIO_USER PRIO_USER
+NETWORK_CONFIG_SH
+MS_PRIVATE MS_PRIVATE
+CMIN 1
+TIOCM_SR 0x010
+TIOCSERGETLSR 0x5459
+_pos
+killService
+UINT_FAST16_MAX (4294967295U)
+openCrashLogToStdio
+crashIgnore
+SIOCSIFSLAVE 0x8930
+rlim_cur
+SCNiFAST64 __PRI64_PREFIX "i"
+CDSUSP CTRL('y')
+WINT_MIN (0u)
+processCmd
+SCNiLEAST64 __PRI64_PREFIX "i"
+TCSETA 0x5406
+_BSD_PTRDIFF_T_ 
+TIOCSERGETMULTI 0x545A
+__isblank_l(c,l) __isctype_l((c), _ISblank, (l))
+PRIo8 "o"
+SCNuFAST16 __PRIPTR_PREFIX "u"
+mtype
+openConsole
+__isxdigit_l(c,l) __isctype_l((c), _ISxdigit, (l))
+_IOC_SIZEBITS 14
+rlimit
+CREPRINT CTRL('r')
+SCNuLEAST32 "u"
+startDbusDaemon
+TIOCSERGWILD 0x5454
+RLIMIT_MEMLOCK __RLIMIT_MEMLOCK
+TIOCPKT_DATA 0
+MOD_TAI ADJ_TAI
+CEOF CTRL('d')
+SIOCSIFMEM 0x8920
+readBootReason
+_IOC_DIRMASK ((1 << _IOC_DIRBITS)-1)
+SCNo16 "ho"
+_next
+ADJ_MAXERROR 0x0004
+PRIXFAST16 __PRIPTR_PREFIX "X"
+__toascii(c) ((c) & 0x7f)
+N_STRIP 4
+SIOCGIFBR 0x8940
+ADJ_FREQUENCY 0x0002
+CQUIT 034
+SCNuLEAST16 "hu"
+SIOCSIFENCAP 0x8926
+RUSAGE_THREAD RUSAGE_THREAD
+TIME_UTC 1
+_STDDEF_H_ 
+SIOCSIFPFLAGS 0x8934
+N_HDLC 13
+INTMAX_MAX (__INT64_C(9223372036854775807))
+TIOCPKT_FLUSHWRITE 2
+SCNoFAST8 "hho"
+STA_CLK 0x8000
+RB_AUTOBOOT 0x01234567
+MSG_STAT 11
+TIOCM_RTS 0x004
+TIOCPKT_FLUSHREAD 1
+_T_PTRDIFF 
+_IOC_TYPECHECK(t) (sizeof(t))
+SCNxLEAST32 "x"
+CSUSP CTRL('z')
+SCNo32 "o"
+STA_MODE 0x4000
+isalnum_l(c,l) __isalnum_l ((c), (l))
+_old_offset
+_IOC(dir,type,nr,size) (((dir) << _IOC_DIRSHIFT) | ((type) << _IOC_TYPESHIFT) | ((nr) << _IOC_NRSHIFT) | ((size) << _IOC_SIZESHIFT))
+SVC_SSHD
+WCHAR_MAX __WCHAR_MAX
+_STDINT_H 1
+TIOCNOTTY 0x5422
+TCSBRK 0x5409
+mountFileSystem
+SIOCRTMSG 0x890D
+sigFdInit
+PRIXLEAST32 "X"
+IPC_CREAT 01000
+__isalnum_l(c,l) __isctype_l((c), _ISalnum, (l))
+MOD_NANO ADJ_NANO
+N_6PACK 7
+SIOCGIFENCAP 0x8925
+runCoreServices
+SCNd8 "hhd"
+_IOC_NONE 0U
+startCarService
+PRIi8 "i"
+__ispunct_l(c,l) __isctype_l((c), _ISpunct, (l))
+BLKFRAGET _IO(0x12,101)
+RLIMIT_NLIMITS __RLIMIT_NLIMITS
+/home/jenkins/workspace/SourceCode/applications/init/init.cpp
+_ANSI_STDDEF_H 
+doLowLevelReboot
+_toupper(c) ((int) (*__ctype_toupper_loc ())[(int) (c)])
+PRIXMAX __PRI64_PREFIX "X"
+TIOCSETD 0x5423
+POLLHUP 0x010
+SIOCADDDLCI 0x8980
+N_MOUSE 2
+__isascii_l(c,l) ((l), __isascii (c))
+__bool_true_false_are_defined 1
+SCNoPTR __PRIPTR_PREFIX "o"
+_BITS_TIMEX_H 1
+BLKGETSIZE _IO(0x12, 96)
+TCSETSF2 _IOW('T', 0x2D, struct termios2)
+BIN_TCPSVD "tcpsvd"
+CLOCK_MONOTONIC_RAW 4
+SCNoLEAST16 "ho"
+POLLRDHUP 0x2000
+_SYS_MOUNT_H 1
+SCNiLEAST32 "i"
+MCU_UPDATE_FLAG_FILE "/data/ota_flag/mcu_flag.DAT"
+SIG_ATOMIC_MIN (-2147483647-1)
+SIOCSIFADDR 0x8916
+TIOCGSERIAL 0x541E
+_ZN3icm4init15getServiceByPidEi
+isspace_l(c,l) __isspace_l ((c), (l))
+PRIxFAST8 "x"
+POLLPRI 0x002
+PRIuLEAST32 "u"
+IPC_RMID 0
+_IO_read_base
+INT32_MAX (2147483647)
+SCNuLEAST8 "hhu"
+SIOCSIFDSTADDR 0x8918
+RLIM_SAVED_CUR RLIM_INFINITY
+__STDC_CONSTANT_MACROS
+SIOCGIFTXQLEN 0x8942
+tm_isdst
+_IOC_TYPEMASK ((1 << _IOC_TYPEBITS)-1)
+TIOCPKT_IOCTL 64
+entry
+_ZN3icm4init12initPowerOffEi
+RB_HALT_SYSTEM 0xcdef0123
+ADJ_OFFSET_SS_READ 0xa001
+__exctype(name) extern int name (int) __THROW
+SCNoMAX __PRI64_PREFIX "o"
+UINT_FAST8_MAX (255)
+_IOWR_BAD(type,nr,size) _IOC(_IOC_READ|_IOC_WRITE,(type),(nr),sizeof(size))
+RUSAGE_SELF RUSAGE_SELF
+__isascii(c) (((c) & ~0x7f) == 0)
+__CUTILS_PROPERTIES_H 
+SCNxPTR __PRIPTR_PREFIX "x"
+INT_LEAST32_MIN (-2147483647-1)
+N_SYNC_PPP 14
+__PRIPTR_PREFIX 
+_IOC_NR(nr) (((nr) >> _IOC_NRSHIFT) & _IOC_NRMASK)
+SCNu64 __PRI64_PREFIX "u"
+TIOCM_CAR 0x040
+__STDC_LIMIT_MACROS 
+INT_FAST64_MAX (__INT64_C(9223372036854775807))
+_BITS_IPCTYPES_H 1
+NCC 8
+_markers
+_fileno
+UINT_LEAST8_MAX (255)
+ADJ_NANO 0x2000
+initTick
+INT_FAST8_MAX (127)
+__priority
+SCNx64 __PRI64_PREFIX "x"
+__isgraph_l(c,l) __isctype_l((c), _ISgraph, (l))
+TIOCM_LE 0x001
+INT64_MIN (-__INT64_C(9223372036854775807)-1)
+MS_SHARED MS_SHARED
+TIOCSERGSTRUCT 0x5458
+N_SMSBLOCK 12
+PRIuFAST32 __PRIPTR_PREFIX "u"
+msgbuf
+saveCrashLog
+_ZN3icm4init11serviceInfoC2Ev
+SIOCSIFNETMASK 0x891c
+N_X25 6
+_IOC_DIR(nr) (((nr) >> _IOC_DIRSHIFT) & _IOC_DIRMASK)
+revents
+ADJ_TICK 0x4000
+STA_FREQHOLD 0x0080
+SIOCSIFTXQLEN 0x8943
+STA_PLL 0x0001
+SIZE_MAX (4294967295U)
+add_environment
+__tobody(c,f,a,args) (__extension__ ({ int __res; if (sizeof (c) > 1) { if (__builtin_constant_p (c)) { int __c = (c); __res = __c < -128 || __c > 255 ? __c : (a)[__c]; } else __res = f args; } else __res = (a)[(int) (c)]; __res; }))
+IPC_PRIVATE ((__key_t) 0)
+configNetwork
+RLIMIT_NOFILE RLIMIT_NOFILE
+TCSBRKP 0x5425
+__time_t
+_CTYPE_H 1
+TIOCGSID 0x5429
+TCSETSW2 _IOW('T', 0x2C, struct termios2)
+SCNo8 "hho"
+PRIiMAX __PRI64_PREFIX "i"
+TIOCPKT_START 8
+PRIuPTR __PRIPTR_PREFIX "u"
+CLOCK_REALTIME_COARSE 5
+MOD_STATUS ADJ_STATUS
+__isalpha_l(c,l) __isctype_l((c), _ISalpha, (l))
+SCNdMAX __PRI64_PREFIX "d"
+_IO_write_base
+_IOC_DIRSHIFT (_IOC_SIZESHIFT+_IOC_SIZEBITS)
+PRIdLEAST16 "d"
+STA_PPSFREQ 0x0002
+TIOCGPTLCK _IOR('T', 0x39, int)
+BLKSSZGET _IO(0x12,104)
+SCNdFAST8 "hhd"
+PRIoLEAST16 "o"
+SIOCGIFNETMASK 0x891b
+INT_LEAST64_MIN (-__INT64_C(9223372036854775807)-1)
+ADJ_OFFSET 0x0001
+RLIMIT_DATA RLIMIT_DATA
+MOD_TIMECONST ADJ_TIMECONST
+TTYDEF_SPEED (B9600)
+turnOffBL
+MSG_INFO 12
+CLNEXT CTRL('v')
+PRIX64 __PRI64_PREFIX "X"
+CFLUSH CDISCARD
+CDISCARD CTRL('o')
+TIOCGPTN _IOR('T', 0x30, unsigned int)
+PRIx16 "x"
+_cur_column
+STA_RONLY (STA_PPSSIGNAL | STA_PPSJITTER | STA_PPSWANDER | STA_PPSERROR | STA_CLOCKERR | STA_NANO | STA_MODE | STA_CLK)
+ADJ_ESTERROR 0x0008
+runShutDownAndKillAllProcess
+SCNuFAST32 __PRIPTR_PREFIX "u"
+__exctype_l(name) extern int name (int, __locale_t) __THROW
+TIMER_ABSTIME 1
+SCNiLEAST16 "hi"
+TCSETXF 0x5434
+SCNdLEAST8 "hhd"
+MOD_OFFSET ADJ_OFFSET
+TIOCMBIS 0x5416
+makeDevices
+PRIx32 "x"
+DEV_URANDOM
+CKILL CTRL('u')
+__isdigit_l(c,l) __isctype_l((c), _ISdigit, (l))
+INT_FAST32_MIN (-2147483647-1)
+tm_year
+BOOT_REASON "/proc/boot_reason"
+UINT64_MAX (__UINT64_C(18446744073709551615))
+POLLWRNORM 0x100
+SCNuPTR __PRIPTR_PREFIX "u"
+STA_CLOCKERR 0x1000
+_Bool bool
+fdCount
+TIOCPKT_STOP 4
+SCNoLEAST8 "hho"
+MS_RELATIME MS_RELATIME
+TCGETS 0x5401
+TIOCGPGRP 0x540F
+PRIuLEAST64 __PRI64_PREFIX "u"
+DEV_CORE_SERVICES
+BOOT_DEVICE_INFO "/dev/mmcblk0p3"
+MOD_CLKB ADJ_TICK
+MS_SYNCHRONOUS MS_SYNCHRONOUS
+tm_wday
+_INCLUDE_SYS_SYSTEM_PROPERTIES_H 
+PRIdLEAST8 "d"
+RLIMIT_CORE RLIMIT_CORE
+PRIoFAST16 __PRIPTR_PREFIX "o"
+PRIXLEAST8 "X"
+TCSETSF 0x5404
+PRIXFAST32 __PRIPTR_PREFIX "X"
+SIOCSIFMAP 0x8971
+_IOW_BAD(type,nr,size) _IOC(_IOC_WRITE,(type),(nr),sizeof(size))
+BLKSECTSET _IO(0x12,102)
+_SYS_IPC_H 1
+PRIxFAST16 __PRIPTR_PREFIX "x"
+FIONCLEX 0x5450
+PRIdFAST64 __PRI64_PREFIX "d"
+TIOCGSOFTCAR 0x5419
+CLOCK_PROCESS_CPUTIME_ID 2
+MS_NODIRATIME MS_NODIRATIME
+WINT_MAX (4294967295u)
+SIOCADDRT 0x890B
+SCNxLEAST8 "hhx"
+isalpha_l(c,l) __isalpha_l ((c), (l))
+RLIMIT_SIGPENDING __RLIMIT_SIGPENDING
+CRASH_LOG_DIR
+_ASM_GENERIC_IOCTL_H 
+PRIiFAST8 "i"
+INT_LEAST16_MIN (-32767-1)
+isxdigit_l(c,l) __isxdigit_l ((c), (l))
+CWERASE CTRL('w')
+N_PPP 3
+SIOCDARP 0x8953
+BLKRAGET _IO(0x12, 99)
+saveDbusEnv
+FIOCLEX 0x5451
+STA_FLL 0x0008
+MOD_CLKA ADJ_OFFSET_SINGLESHOT
+newCrashLog
+INT_LEAST64_MAX (__INT64_C(9223372036854775807))
+ECLUSTER_WORKING_DIR
+POLLWRBAND 0x200
+TCGETA 0x5405
+_IOC_DIRBITS 2
+MS_SLAVE MS_SLAVE
+_IOR_BAD(type,nr,size) _IOC(_IOC_READ,(type),(nr),sizeof(size))
+CLOCK_MONOTONIC_COARSE 6
+CEOL '\0'
+PRIdFAST8 "d"
+SCNiFAST8 "hhi"
+__PRI64_PREFIX "ll"
+_IOC_TYPEBITS 8
+RB_ENABLE_CAD 0x89abcdef
+PRIoFAST64 __PRI64_PREFIX "o"
+RLIMIT_OFILE __RLIMIT_OFILE
+SIOCGIFHWADDR 0x8927
+TIOCMGET 0x5415
+TIOCVHANGUP 0x5437
+_SYS_TTYDEFAULTS_H_ 
+POLLRDNORM 0x040
+SCNo64 __PRI64_PREFIX "o"
+_IOC_SIZE(nr) (((nr) >> _IOC_SIZESHIFT) & _IOC_SIZEMASK)
+MNT_FORCE MNT_FORCE
+N_MASC 8
+_IO_save_end
+SCNoLEAST32 "o"
+TIOCSRS485 0x542F
+SCNdFAST64 __PRI64_PREFIX "d"
+SVC_FTPD
+TCSETX 0x5433
+SCNoFAST16 __PRIPTR_PREFIX "o"
+SCNi16 "hi"
+SVC_CLUSTER_APP
+RB_KEXEC 0x45584543
+DEV_LCD_BL
+_ZN3icm4init18monitorCoreServiceEi
+TIOCGWINSZ 0x5413
+_IOC_SIZESHIFT (_IOC_TYPESHIFT+_IOC_TYPEBITS)
+PRIX16 "X"
+CTRL(x) (x&037)
+SIOGIFINDEX SIOCGIFINDEX
+ADJ_STATUS 0x0010
+TIOCSERSWILD 0x5455
+SIOCGRARP 0x8961
+PRIuFAST8 "u"
+SCNx16 "hx"
+DEV_TTY
+PRIXLEAST64 __PRI64_PREFIX "X"
+TCXONC 0x540A
+SCNdPTR __PRIPTR_PREFIX "d"
+STA_PPSWANDER 0x0400
+numOfServices
+ADJ_OFFSET_SINGLESHOT 0x8001
+UINT16_MAX (65535)
+SCNx32 "x"
+TIOCPKT 0x5420
+tm_gmtoff
+PRIdFAST16 __PRIPTR_PREFIX "d"
+PRIdMAX __PRI64_PREFIX "d"
+PRIoLEAST32 "o"
+SIOCSIFHWADDR 0x8924
+TIOCPKT_DOSTOP 32
+ADJ_TAI 0x0080
+MS_KERNMOUNT MS_KERNMOUNT
+MSG_EXCEPT 020000
+SCNoFAST64 __PRI64_PREFIX "o"
+_BOOT_INFO_H 
+MOD_MICRO ADJ_MICRO
+MS_MOVE MS_MOVE
+PRIi16 "i"
+PRIuFAST64 __PRI64_PREFIX "u"
+_ZN3icm4init24notifyServiceStateChangeEPNS0_11serviceInfoEi
+TIOCLINUX 0x541C
+SCNiLEAST8 "hhi"
+_chain
+TIOCSPGRP 0x5410
+SIOCGIFMEM 0x891f
+SCNxLEAST16 "hx"
+RLIMIT_RSS __RLIMIT_RSS
+ADJ_MICRO 0x1000
+_IOW(type,nr,size) _IOC(_IOC_WRITE,(type),(nr),(_IOC_TYPECHECK(size)))
+__WCHAR_MIN __WCHAR_MIN__
+INT_FAST16_MAX (2147483647)
+__syscall_slong_t
+MS_POSIXACL MS_POSIXACL
+needWait
+__gwchar_t wchar_t
+IOCSIZE_SHIFT (_IOC_SIZESHIFT)
+SIOCSIFBR 0x8941
+RLIM_NLIMITS __RLIM_NLIMITS
+TIOCGDEV _IOR('T', 0x32, unsigned int)
+__isprint_l(c,l) __isctype_l((c), _ISprint, (l))
+msg_id
+TIOCINQ FIONREAD
+CLOCK_MONOTONIC 1
+_IOC_SIZEMASK ((1 << _IOC_SIZEBITS)-1)
+timeout
+__iscntrl_l(c,l) __isctype_l((c), _IScntrl, (l))
+__pad1
+__pad4
+SIOCPROTOPRIVATE 0x89E0
+BLKFRASET _IO(0x12,100)
+runMcuUpdateModeServices
+UINT_LEAST64_MAX (__UINT64_C(18446744073709551615))
+__FUNCTION__
+_IO_FILE
+CTIME 0
+TIOCSCTTY 0x540E
+_IOC_WRITE 1U
+BLKBSZSET _IOW(0x12,113,size_t)
+TIOCPKT_NOSTOP 16
+TIOCMIWAIT 0x545C
+__uint32_t_defined 
+IOCSIZE_MASK (_IOC_SIZEMASK << _IOC_SIZESHIFT)
+BLKGETSIZE64 _IOR(0x12,114,size_t)
+DEV_CONSOLE
+MS_MGC_MSK 0xffff0000
+CRPRNT CREPRINT
+RLIM64_INFINITY 0xffffffffffffffffuLL
+TIOCM_DTR 0x002
+TIOCSER_TEMT 0x01
+SCNx8 "hhx"
+SCNdFAST16 __PRIPTR_PREFIX "d"
+UINTMAX_MAX (__UINT64_C(18446744073709551615))
+_IOC_TYPESHIFT (_IOC_NRSHIFT+_IOC_NRBITS)
+N_R3964 9
+PRIxLEAST32 "x"
+RLIMIT_STACK RLIMIT_STACK
+__ASM_ARM_IOCTLS_H 
+startProcess
+int32_t
+SCNdLEAST32 "d"
+IOC_OUT (_IOC_READ << _IOC_DIRSHIFT)
+UINT_FAST64_MAX (__UINT64_C(18446744073709551615))
+RLIM_INFINITY ((__rlim_t) -1)
+CSTATUS '\0'
+MS_NOUSER MS_NOUSER
+SCNuMAX __PRI64_PREFIX "u"
+INTPTR_MAX (2147483647)
+PRIu16 "u"
+POLLNVAL 0x020
+UINT_FAST32_MAX (4294967295U)
+SIOCDEVPRIVATE 0x89F0
+PRIuMAX __PRI64_PREFIX "u"
+__ASM_GENERIC_IOCTLS_H 
+_SYS_RESOURCE_H 1
+PRIu32 "u"
+IPV6_AUTHHDR 10
+MCAST_JOIN_SOURCE_GROUP 46
+__property_get
+IP_MULTICAST_IF 32
+MCL_CURRENT 1
+get_property_workspace
+IP_PASSSEC 18
+MAP_HUGETLB 0x40000
+MAP_DENYWRITE 0x00800
+IPPROTO_AH IPPROTO_AH
+load_properties
+IPPROTO_SCTP IPPROTO_SCTP
+IN_CLASSA(a) ((((in_addr_t)(a)) & 0x80000000) == 0)
+IN6_ARE_ADDR_EQUAL(a,b) (__extension__ ({ const struct in6_addr *__a = (const struct in6_addr *) (a); const struct in6_addr *__b = (const struct in6_addr *) (b); __a->s6_addr32[0] == __b->s6_addr32[0] && __a->s6_addr32[1] == __b->s6_addr32[1] && __a->s6_addr32[2] == __b->s6_addr32[2] && __a->s6_addr32[3] == __b->s6_addr32[3]; }))
+IP_MSFILTER_SIZE(numsrc) (sizeof (struct ip_msfilter) - sizeof (struct in_addr) + (numsrc) * sizeof (struct in_addr))
+property_set
+IPV6_MULTICAST_HOPS 18
+IPPROTO_TCP IPPROTO_TCP
+IPV6_RTHDR 57
+load_persist_props
+__ino_t
+MAP_FIXED 0x10
+ULONG_LONG_MAX
+PROT_EXEC 0x4
+IPV6_2292HOPOPTS 3
+_GCC_NEXT_LIMITS_H 
+IN6_IS_ADDR_MULTICAST(a) (((const uint8_t *) (a))[0] == 0xff)
+_POSIX2_BC_BASE_MAX 99
+UINT_MAX (INT_MAX * 2U + 1U)
+INADDR_MAX_LOCAL_GROUP ((in_addr_t) 0xe00000ff)
+_ZN3icm4init27property_load_boot_defaultsEv
+IPV6_PMTUDISC_WANT 1
+previous_was_dot
+INET_ADDRSTRLEN 16
+st_uid
+IPPROTO_FRAGMENT IPPROTO_FRAGMENT
+SERIAL_DIRTY(serial) ((serial) & 1)
+length
+IN_CLASSC(a) ((((in_addr_t)(a)) & 0xe0000000) == 0xc0000000)
+IPPROTO_UDP IPPROTO_UDP
+NL_TEXTMAX INT_MAX
+st_size
+PROP_AREA_MAGIC 0x504f5250
+_ZN3icm4init18load_persist_propsEv
+IPV6_MTU 24
+LLONG_MIN (-LLONG_MAX-1)
+IPV6_UNICAST_HOPS 16
+IP_NODEFRAG 22
+_BITS_POSIX2_LIM_H 1
+st_blksize
+IPPROTO_IPIP IPPROTO_IPIP
+PROT_GROWSUP 0x02000000
+st_gid
+IPPROTO_RAW IPPROTO_RAW
+IPV6_PMTUDISC_DONT 0
+SCM_SRCRT IPV6_RXSRCRT
+IN_CLASSB(a) ((((in_addr_t)(a)) & 0xc0000000) == 0x80000000)
+_GCC_NEXT_LIMITS_H
+st_ctim
+IP_MULTICAST_ALL 49
+LONG_LONG_MAX __LONG_LONG_MAX__
+MAP_HUGE_SHIFT 26
+IPV6_2292PKTOPTIONS 6
+property_load_boot_defaults
+IPPROTO_ESP IPPROTO_ESP
+COLL_WEIGHTS_MAX 255
+POSIX_MADV_SEQUENTIAL 2
+MADV_HUGEPAGE 14
+MCAST_UNBLOCK_SOURCE 44
+GROUP_FILTER_SIZE(numsrc) (sizeof (struct group_filter) - sizeof (struct sockaddr_storage) + ((numsrc) * sizeof (struct sockaddr_storage)))
+IPV6_V6ONLY 26
+INADDR_NONE ((in_addr_t) 0xffffffff)
+persistent_properties_loaded
+IPPROTO_MTP IPPROTO_MTP
+MCAST_BLOCK_SOURCE 43
+IP_HDRINCL 3
+st_atim
+_POSIX2_BC_STRING_MAX 1000
+IPPROTO_HOPOPTS IPPROTO_HOPOPTS
+IN_MULTICAST(a) IN_CLASSD(a)
+IP_DEFAULT_MULTICAST_LOOP 1
+IPV6_PMTUDISC_DO 2
+IP_PMTUDISC_OMIT 5
+PROP_AREA_VERSION 0xfc6ed0ab
+sun_family
+s6_addr __in6_u.__u6_addr8
+RE_DUP_MAX (0x7fff)
+_ZN3icm4init13property_initEv
+PROT_NONE 0x0
+NZERO 20
+handle_property_set_fd
+IPV6_MULTICAST_IF 17
+IP_IPSEC_POLICY 16
+IN_CLASSA_MAX 128
+IPV6_ADDRFORM 1
+sockaddr_un
+IPPROTO_ROUTING IPPROTO_ROUTING
+IPV6_PATHMTU 61
+INET6_ADDRSTRLEN 46
+namelen
+IP_MULTICAST_TTL 33
+IP_BIND_ADDRESS_NO_PORT 24
+__need_IOV_MAX 
+IPV6_LEAVE_ANYCAST 28
+MAP_POPULATE 0x08000
+POSIX_MADV_WILLNEED 3
+IP_RECVTTL 12
+IP_PKTOPTIONS 9
+PROT_WRITE 0x2
+IPV6_TCLASS 67
+SHRT_MIN (-SHRT_MAX - 1)
+addr_size
+IN_EXPERIMENTAL(a) ((((in_addr_t)(a)) & 0xe0000000) == 0xe0000000)
+PROP_AREA_VERSION_COMPAT 0x45434f76
+IPV6_DONTFRAG 62
+_NETINET_IN_H 1
+MADV_DONTDUMP 16
+IP_PMTUDISC 10
+IPV6_RECVRTHDR 56
+IP_MSFILTER 41
+/home/jenkins/workspace/SourceCode/applications/init/property_service.cpp
+IPV6_JOIN_ANYCAST 27
+__mode_t
+st_nlink
+IPV6_RXHOPOPTS IPV6_HOPOPTS
+PROP_PATH_RAMDISK_DEFAULT "/default.prop"
+CHAR_BIT __CHAR_BIT__
+MAP_NONBLOCK 0x10000
+d_name
+IP_PMTUDISC_WANT 1
+IPPROTO_BEETPH IPPROTO_BEETPH
+MAP_GROWSDOWN 0x00100
+IP_ADD_SOURCE_MEMBERSHIP 39
+_ZN3icm4init17properties_initedEv
+load_persistent_properties
+IN_CLASSC_HOST (0xffffffff & ~IN_CLASSC_NET)
+IN_CLASSA_HOST (0xffffffff & ~IN_CLASSA_NET)
+CHAR_MIN 0
+PROT_GROWSDOWN 0x01000000
+IN_CLASSD(a) ((((in_addr_t)(a)) & 0xf0000000) == 0xe0000000)
+ULONG_MAX (LONG_MAX * 2UL + 1UL)
+MCAST_EXCLUDE 0
+MB_LEN_MAX 16
+IPV6_RECVPATHMTU 60
+IP_PMTUDISC_DONT 0
+BC_DIM_MAX _POSIX2_BC_DIM_MAX
+_POSIX2_LINE_MAX 2048
+IN_CLASSB_NET 0xffff0000
+prop_info
+IPV6_JOIN_GROUP 20
+IN6_IS_ADDR_MC_ORGLOCAL(a) (IN6_IS_ADDR_MULTICAST(a) && ((((const uint8_t *) (a))[1] & 0xf) == 0x8))
+d_reclen
+IPV6_CHECKSUM 7
+MADV_HWPOISON 100
+MCAST_LEAVE_GROUP 45
+MAP_STACK 0x20000
+IPV6_2292PKTINFO 2
+PROP_PATH_LOCAL_OVERRIDE "/data/local.prop"
+_LIBC_LIMITS_H_ 1
+_ZN3icm4init22handle_property_set_fdEv
+ANDROID_SOCKET_ENV_PREFIX "ANDROID_SOCKET_"
+NL_MSGMAX INT_MAX
+SCHAR_MAX __SCHAR_MAX__
+INADDR_ALLRTRS_GROUP ((in_addr_t) 0xe0000002)
+MCL_FUTURE 2
+IPPROTO_IP IPPROTO_IP
+property_area_inited
+oops
+INT_MAX __INT_MAX__
+SOL_ICMPV6 58
+IPPROTO_DSTOPTS IPPROTO_DSTOPTS
+IPV6_RECVTCLASS 66
+IPV6_ADD_MEMBERSHIP IPV6_JOIN_GROUP
+ucred
+out_close
+MCAST_MSFILTER 48
+__nlink_t
+IPPROTO_RSVP IPPROTO_RSVP
+st_ino
+IPV6_2292RTHDR 5
+st_mode
+MAP_ANON MAP_ANONYMOUS
+IN_CLASSB_NSHIFT 16
+IN6_IS_ADDR_LOOPBACK(a) (__extension__ ({ const struct in6_addr *__a = (const struct in6_addr *) (a); __a->s6_addr32[0] == 0 && __a->s6_addr32[1] == 0 && __a->s6_addr32[2] == 0 && __a->s6_addr32[3] == htonl (1); }))
+NL_ARGMAX _POSIX_ARG_MAX
+LONG_MAX __LONG_MAX__
+MS_INVALIDATE 2
+value
+IP_FREEBIND 15
+prop_msg
+__glibc_reserved5
+d_off
+ULLONG_MAX (LLONG_MAX * 2ULL + 1)
+__socklen_t
+_POSIX2_COLL_WEIGHTS_MAX 2
+_XOPEN_IOV_MAX _POSIX_UIO_MAXIOV
+IPV6_RECVERR 25
+MADV_NOHUGEPAGE 15
+secon
+LONG_MIN (-LONG_MAX - 1L)
+IN_CLASSB_MAX 65536
+MAP_FAILED ((void *) -1)
+PROT_READ 0x1
+IPV6_XFRM_POLICY 35
+IP_RECVOPTS 6
+MADV_MERGEABLE 12
+IPV6_DSTOPTS 59
+dir_fd
+_ZN3icm4init22start_property_serviceEv
+PROP_SERVICE_NAME "property_service"
+IN6_IS_ADDR_MC_GLOBAL(a) (IN6_IS_ADDR_MULTICAST(a) && ((((const uint8_t *) (a))[1] & 0xf) == 0xe))
+_POSIX2_BC_SCALE_MAX 99
+property_init
+INADDR_ANY ((in_addr_t) 0x00000000)
+IN6_IS_ADDR_LINKLOCAL(a) (__extension__ ({ const struct in6_addr *__a = (const struct in6_addr *) (a); (__a->s6_addr32[0] & htonl (0xffc00000)) == htonl (0xfe800000); }))
+MCL_ONFAULT 4
+SOL_IP 0
+POSIX_MADV_RANDOM 1
+s6_addr32 __in6_u.__u6_addr32
+IPV6_IPSEC_POLICY 34
+_POSIX2_CHARCLASS_NAME_MAX 14
+SCHAR_MIN (-SCHAR_MAX - 1)
+IPPROTO_PIM IPPROTO_PIM
+PROP_PATH_SYSTEM_BUILD "/etc/build.prop"
+ANDROID_SOCKET_DIR "/tmp"
+check_perms
+IN_CLASSC_NSHIFT 8
+IN6ADDR_LOOPBACK_INIT { { { 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1 } } }
+s6_addr16 __in6_u.__u6_addr16
+IPV6_2292DSTOPTS 4
+IP_ROUTER_ALERT 5
+IPV6_RTHDR_TYPE_0 0
+IP_PMTUDISC_PROBE 3
+IPV6_HOPOPTS 54
+_ZN3icm4init22get_property_workspaceEPiS1_
+IP_MAX_MEMBERSHIPS 20
+BC_SCALE_MAX _POSIX2_BC_SCALE_MAX
+MAP_LOCKED 0x02000
+PERSISTENT_PROPERTY_DIR "/data/property"
+CHARCLASS_NAME_MAX 2048
+__blksize_t
+write_persistent_property
+IPV6_NEXTHOP 9
+IP_UNICAST_IF 50
+IPV6_PKTINFO 50
+LONG_BIT 32
+_ZN3icm4init12property_setEPKcS2_
+IP_DROP_SOURCE_MEMBERSHIP 40
+start_property_service
+load_override_properties
+_POSIX2_RE_DUP_MAX 255
+IPPROTO_ENCAP IPPROTO_ENCAP
+MADV_UNMERGEABLE 13
+PROP_PATH_FACTORY "/factory/factory.prop"
+IPPROTO_ICMPV6 IPPROTO_ICMPV6
+IP_PKTINFO 8
+properties_inited
+load_properties_from_file
+__dirstream
+IPPROTO_IGMP IPPROTO_IGMP
+MAP_SHARED 0x01
+__glibc_reserved4
+IPPROTO_DCCP IPPROTO_DCCP
+IPPROTO_UDPLITE IPPROTO_UDPLITE
+__blkcnt_t
+_XOPEN_LIM_H 1
+IPV6_MTU_DISCOVER 23
+IPV6_LEAVE_GROUP 21
+MAP_EXECUTABLE 0x01000
+IN_BADCLASS(a) ((((in_addr_t)(a)) & 0xf0000000) == 0xf0000000)
+IPPROTO_COMP IPPROTO_COMP
+USHRT_MAX (SHRT_MAX * 2 + 1)
+_ZN3icm4init14__property_getEPKcPc
+_GCC_LIMITS_H_ 
+MAP_NORESERVE 0x04000
+init_workspace
+out_unlink
+read_file
+IN6ADDR_ANY_INIT { { { 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 } } }
+cr_size
+IN6_IS_ADDR_V4COMPAT(a) (__extension__ ({ const struct in6_addr *__a = (const struct in6_addr *) (a); __a->s6_addr32[0] == 0 && __a->s6_addr32[1] == 0 && __a->s6_addr32[2] == 0 && ntohl (__a->s6_addr32[3]) > 1; }))
+IP_TTL 2
+sctx
+_POSIX2_EXPR_NEST_MAX 32
+ULONG_LONG_MAX (LONG_LONG_MAX * 2ULL + 1ULL)
+IPPROTO_ICMP IPPROTO_ICMP
+MS_SYNC 4
+MADV_REMOVE 9
+IN6_IS_ADDR_MC_LINKLOCAL(a) (IN6_IS_ADDR_MULTICAST(a) && ((((const uint8_t *) (a))[1] & 0xf) == 0x2))
+PROP_MSG_SETPROP 1
+IP_OPTIONS 4
+MADV_DODUMP 17
+valuelen
+IN_CLASSA_NSHIFT 24
+IPV6_RECVPKTINFO 49
+IP_RECVERR 11
+IPV6_RECVHOPOPTS 53
+__dev_t
+WORD_BIT 32
+IN6_IS_ADDR_MC_SITELOCAL(a) (IN6_IS_ADDR_MULTICAST(a) && ((((const uint8_t *) (a))[1] & 0xf) == 0x5))
+POSIX_MADV_DONTNEED 4
+is_legal_property_name
+IN_CLASSB_HOST (0xffffffff & ~IN_CLASSB_NET)
+IN_CLASSC_NET 0xffffff00
+INADDR_ALLHOSTS_GROUP ((in_addr_t) 0xe0000001)
+IP_MTU_DISCOVER 10
+UCHAR_MAX (SCHAR_MAX * 2 + 1)
+IP_RECVRETOPTS IP_RETOPTS
+IP_MULTICAST_LOOP 34
+MAP_PRIVATE 0x02
+IPPROTO_NONE IPPROTO_NONE
+init_property_area
+MREMAP_FIXED 2
+IPV6_PMTUDISC_OMIT 5
+MAP_FILE 0
+INADDR_UNSPEC_GROUP ((in_addr_t) 0xe0000000)
+MCAST_JOIN_GROUP 42
+dirent
+st_rdev
+INT_MIN (-INT_MAX - 1)
+IPV6_RXDSTOPTS IPV6_DSTOPTS
+st_dev
+IP_UNBLOCK_SOURCE 37
+IPV6_PMTUDISC_INTERFACE 4
+_POSIX2_BC_DIM_MAX 2048
+_REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_ 
+IP_XFRM_POLICY 17
+_LIMITS_H___ 
+NL_NMAX INT_MAX
+_ZN3icm4init19get_property_set_fdEv
+IP_TRANSPARENT 19
+IPV6_RECVHOPLIMIT 51
+IP_DEFAULT_MULTICAST_TTL 1
+MS_ASYNC 1
+PROP_FILENAME "/dev/__properties__"
+NL_LANGMAX _POSIX2_LINE_MAX
+IPV6_RECVDSTOPTS 58
+SHRT_MAX __SHRT_MAX__
+IPPROTO_MPLS IPPROTO_MPLS
+IP_ORIGDSTADDR 20
+__gid_t
+IPPROTO_IPV6 IPPROTO_IPV6
+perm
+get_property_set_fd
+IN6_IS_ADDR_V4MAPPED(a) (__extension__ ({ const struct in6_addr *__a = (const struct in6_addr *) (a); __a->s6_addr32[0] == 0 && __a->s6_addr32[1] == 0 && __a->s6_addr32[2] == htonl (0xffff); }))
+PROP_PATH_SYSTEM_DEFAULT "/etc/default.prop"
+IPPROTO_IDP IPPROTO_IDP
+IOV_MAX 1024
+CHAR_MAX UCHAR_MAX
+NL_SETMAX INT_MAX
+SOL_IPV6 41
+st_blocks
+INADDR_BROADCAST ((in_addr_t) 0xffffffff)
+IP_RECVORIGDSTADDR IP_ORIGDSTADDR
+IPV6_MULTICAST_LOOP 19
+IPPROTO_TP IPPROTO_TP
+IP_PMTUDISC_DO 2
+IPV6_RTHDR_LOOSE 0
+MAP_ANONYMOUS 0x20
+IN6_IS_ADDR_UNSPECIFIED(a) (__extension__ ({ const struct in6_addr *__a = (const struct in6_addr *) (a); __a->s6_addr32[0] == 0 && __a->s6_addr32[1] == 0 && __a->s6_addr32[2] == 0 && __a->s6_addr32[3] == 0; }))
+IN6_IS_ADDR_MC_NODELOCAL(a) (IN6_IS_ADDR_MULTICAST(a) && ((((const uint8_t *) (a))[1] & 0xf) == 0x1))
+sun_path
+LONG_LONG_MIN
+MAP_HUGE_MASK 0x3f
+IPV6_PMTUDISC_PROBE 3
+IPV6_HOPLIMIT 52
+MCAST_INCLUDE 1
+IPPROTO_MH IPPROTO_MH
+INADDR_LOOPBACK ((in_addr_t) 0x7f000001)
+create_socket
+POSIX_MADV_NORMAL 0
+PA_SIZE (128 * 1024)
+tv_nsec
+IP_MINTTL 21
+IP_MTU 14
+LLONG_MAX __LONG_LONG_MAX__
+IPV6_2292HOPLIMIT 8
+IP_ADD_MEMBERSHIP 35
+IN_LOOPBACKNET 127
+IP_TOS 1
+IP_CHECKSUM 23
+IPPROTO_EGP IPPROTO_EGP
+EXPR_NEST_MAX _POSIX2_EXPR_NEST_MAX
+pa_workspace
+source_ctx
+IP_BLOCK_SOURCE 38
+LINE_MAX _POSIX2_LINE_MAX
+IP_RECVTOS 13
+N3icm4init9workspaceE
+MADV_DONTFORK 10
+MREMAP_MAYMOVE 1
+__result
+BC_BASE_MAX _POSIX2_BC_BASE_MAX
+IPV6_ROUTER_ALERT 22
+MAP_TYPE 0x0f
+IP_RETOPTS 7
+LONG_LONG_MIN (-LONG_LONG_MAX - 1LL)
+IN_CLASSA_NET 0xff000000
+IN6_IS_ADDR_SITELOCAL(a) (__extension__ ({ const struct in6_addr *__a = (const struct in6_addr *) (a); (__a->s6_addr32[0] & htonl (0xffc00000)) == htonl (0xfec00000); }))
+tempPath
+IPV6_RTHDR_STRICT 1
+_INCLUDE_SYS__SYSTEM_PROPERTIES_H 
+st_mtim
+SERIAL_VALUE_LEN(serial) ((serial) >> 24)
+_SYS_MMAN_H 1
+MCAST_LEAVE_SOURCE_GROUP 47
+IPPROTO_GRE IPPROTO_GRE
+IPV6_RTHDRDSTOPTS 55
+IPV6_DROP_MEMBERSHIP IPV6_LEAVE_GROUP
+stat
+IP_PMTUDISC_INTERFACE 4
+BC_STRING_MAX _POSIX2_BC_STRING_MAX
+MADV_DOFORK 11
+IPPROTO_PUP IPPROTO_PUP
+IP_DROP_MEMBERSHIP 36
+mcuUpdateFlag
+_ZN3icm4init15isMcuUpdateModeEv
+mcuUpdateFlag_t
+flag
+/home/jenkins/workspace/SourceCode/applications/init/boot_info.cpp
+updateFlag
+isMcuUpdateFlagSet
+isMcuUpdateMode
+FLAG_OFFSET (sizeof(bootBackupInfo_t) * 2)
+"__P
+/usr/lib/gcc-cross/arm-linux-gnueabi/5/../../../../arm-linux-gnueabi/lib/../lib/crt1.o
+/usr/lib/gcc-cross/arm-linux-gnueabi/5/../../../../arm-linux-gnueabi/lib/../lib/crti.o
+call_weak_fn
+/usr/lib/gcc-cross/arm-linux-gnueabi/5/../../../../arm-linux-gnueabi/lib/../lib/crtn.o
+crtstuff.c
+__JCR_LIST__
+deregister_tm_clones
+__do_global_dtors_aux
+completed.9905
+__do_global_dtors_aux_fini_array_entry
+frame_dummy
+__frame_dummy_init_array_entry
+main.cpp
+klogger.cpp
+_ZN12_GLOBAL__N_1L11MAX_BUF_LENE
+_ZN12_GLOBAL__N_1L6klogFdE
+_ZN12_GLOBAL__N_1L8klogNameE
+devices.cpp
+_ZN12_GLOBAL__N_1L8deviceFdE
+_ZN12_GLOBAL__N_1L14UEVENT_MSG_LENE
+_ZN12_GLOBAL__N_1L13MAX_NL_PARAMSE
+_ZN12_GLOBAL__N_16ueventC2Ev
+_ZN12_GLOBAL__N_16ueventC1Ev
+_ZN3icm4initL16openUeventSocketEv
+_ZN3icm4initL10parseEventEPKcPN12_GLOBAL__N_16ueventE
+_ZN3icm4initL8getParamEPN12_GLOBAL__N_16ueventEPKc
+signal_handler.cpp
+_ZN12_GLOBAL__N_1L8signalFdE
+_ZN12_GLOBAL__N_1L12signalRecvFdE
+_ZN3icm4initL14sigchldHandlerEi
+_ZN3icm4initL14waitForProcessEi
+_ZN3icm4initL10setSignalsEiPFviE
+init.cpp
+_ZN12_GLOBAL__N_1L11START_UP_SHE
+_ZN12_GLOBAL__N_1L17NETWORK_CONFIG_SHE
+_ZN12_GLOBAL__N_1L10PATH_SHELLE
+_ZN12_GLOBAL__N_1L8DEV_NULLE
+_ZN12_GLOBAL__N_1L11DEV_CONSOLEE
+_ZN12_GLOBAL__N_1L11DEV_URANDOME
+_ZN12_GLOBAL__N_1L17DEV_CORE_SERVICESE
+_ZN12_GLOBAL__N_1L7DEV_TTYE
+_ZN12_GLOBAL__N_1L11DEV_TTY_MXCE
+_ZN12_GLOBAL__N_1L10DEV_LCD_BLE
+_ZN12_GLOBAL__N_1L12SYS_INIT_GPUE
+_ZN12_GLOBAL__N_1L15SYS_INIT_SCRIPTE
+_ZN12_GLOBAL__N_1L13CORE_SERVICESE
+_ZN12_GLOBAL__N_1L13DBUS_ENV_FILEE
+_ZN12_GLOBAL__N_1L21ENV_DBUS_SESSION_ADDRE
+_ZN12_GLOBAL__N_1L20ENV_DBUS_SESSION_PIDE
+_ZN12_GLOBAL__N_1L15SVC_DBUS_DAEMONE
+_ZN12_GLOBAL__N_1L15SVC_CAR_SERVICEE
+_ZN12_GLOBAL__N_1L11SVC_OTA_APPE
+_ZN12_GLOBAL__N_1L15SVC_CLUSTER_APPE
+_ZN12_GLOBAL__N_1L13SVC_AUDIO_APPE
+_ZN12_GLOBAL__N_1L16SVC_FACTORY_TOOLE
+_ZN12_GLOBAL__N_1L8SVC_FTPDE
+_ZN12_GLOBAL__N_1L8SVC_SSHDE
+_ZN12_GLOBAL__N_1L20ECLUSTER_WORKING_DIRE
+_ZN12_GLOBAL__N_1L17AUDIO_WORKING_DIRE
+_ZN12_GLOBAL__N_1L13CRASH_LOG_DIRE
+_ZN12_GLOBAL__N_1L3ENVE
+_ZN3icm4initL8servicesE
+_ZN3icm4initL13numOfServicesE
+_ZN3icm4initL13mcuUpdateModeE
+_ZN3icm4initL14isEthCfgMasterE
+_ZN3icm4initL8initTickE
+_ZN3icm4initL7HMITickE
+_ZN3icm4initL8CarSTickE
+_ZN3icm4initL6msg_idE
+_ZN3icm4initL8myMsgBufE
+_ZN3icm4initL11crashIgnoreE
+_ZN3icm4initL10msgBufInitEv
+_ZN3icm4initL10msgBufSendEv
+_ZN3icm4initL14readBootReasonEv
+_ZN3icm4initL24checkAndReportCodecFaultEv
+_ZN3icm4initL14appCrashReportEPKc
+_ZN3icm4initL19openCrashLogToStdioEPKc
+_ZN3icm4initL16getServiceByNameEPKc
+_ZZN3icm4initL16getServiceByNameEPKcE12__FUNCTION__
+_ZN3icm4initL15addOrGetServiceEPKc
+_ZN3icm4initL18openDevnullToStdioEv
+_ZN3icm4initL15add_environmentEPKcS2_
+_ZN3icm4initL12startProcessEPKcbb
+_ZN3icm4initL11openConsoleEv
+_ZN3icm4initL15startDbusDaemonEv
+_ZN3icm4initL11saveDbusEnvEv
+_ZZN3icm4initL15startDbusDaemonEvE12__FUNCTION__
+_ZN3icm4initL15startCarServiceEv
+_ZZN3icm4initL15startCarServiceEvE12__FUNCTION__
+_ZN3icm4initL11startOtaAppEv
+_ZZN3icm4initL11startOtaAppEvE12__FUNCTION__
+_ZN3icm4initL16startFactoryToolEv
+_ZZN3icm4initL16startFactoryToolEvE12__FUNCTION__
+_ZN3icm4initL9startFtpdEv
+_ZZN3icm4initL9startFtpdEvE12__FUNCTION__
+_ZN3icm4initL16startEclusterAppEv
+_ZZN3icm4initL16startEclusterAppEvE12__FUNCTION__
+_ZN3icm4initL13startAudioAppEv
+_ZZN3icm4initL13startAudioAppEvE12__FUNCTION__
+_ZN3icm4initL11killServiceEPNS0_11serviceInfoE
+_ZZN3icm4initL11saveDbusEnvEvE12__FUNCTION__
+_ZN3icm4initL28runShutDownAndKillAllProcessEv
+_ZN3icm4initL16doLowLevelRebootEj
+_ZN3icm4initL9turnOffBLEv
+_ZN3icm4initL11makeDevicesEv
+_ZN3icm4initL15runCoreServicesEv
+_ZN3icm4initL24runMcuUpdateModeServicesEv
+_ZZN3icm4initL24runMcuUpdateModeServicesEvE12__FUNCTION__
+_ZN3icm4initL12saveCrashLogEPKNS0_11serviceInfoE
+_ZN3icm4initL13runInitScriptEv
+_ZN3icm4initL15mountFileSystemEv
+_ZZN3icm4init18monitorCoreServiceEiE8HMIState
+_ZZN3icm4init18monitorCoreServiceEiE9CARSState
+_ZZN3icm4init4mainEiPPcE11initialized
+_Z41__static_initialization_and_destruction_0ii
+_GLOBAL__sub_I__ZN3icm4init14rebootPowerOffEi
+property_service.cpp
+_ZN3icm4initL28persistent_properties_loadedE
+_ZN3icm4initL20property_area_initedE
+_ZN3icm4initL15property_set_fdE
+_ZN3icm4initL14init_workspaceEPNS0_9workspaceEj
+_ZN3icm4initL12pa_workspaceE
+_ZN3icm4initL18init_property_areaEv
+_ZN3icm4initL11check_permsEPKcjjPc
+_ZN3icm4initL13create_socketEPKcijjj
+_ZN3icm4initL9read_fileEPKcPj
+_ZN3icm4initL25write_persistent_propertyEPKcS2_
+_ZN3icm4initL22is_legal_property_nameEPKcj
+_ZN3icm4initL15load_propertiesEPc
+_ZN3icm4initL25load_properties_from_fileEPKc
+_ZN3icm4initL26load_persistent_propertiesEv
+_ZN3icm4initL24load_override_propertiesEv
+boot_info.cpp
+_ZN3icm4initL18isMcuUpdateFlagSetEv
+_ZZN3icm4initL18isMcuUpdateFlagSetEvE12__FUNCTION__
+_ZZN3icm4init15isMcuUpdateModeEvE12__FUNCTION__
+elf-init.oS
+fstat.oS
+mknod.oS
+__FRAME_END__
+__JCR_END__
+__init_array_end
+__dso_handle
+__mknod
+_DYNAMIC
+__fstat
+__init_array_start
+__TMC_END__
+_GLOBAL_OFFSET_TABLE_
+__aeabi_unwind_cpp_pr0@@GCC_3.5
+__libc_csu_fini
+_ZN3icm4init22handle_property_set_fdEv
+_ZN3icm4init14__property_getEPKcPc
+fsync@@GLIBC_2.4
+strcmp@@GLIBC_2.4
+_ITM_deregisterTMCloneTable
+setsockopt@@GLIBC_2.4
+__bss_start__
+fopen@@GLIBC_2.4
+_ZN3icm4init22get_property_workspaceEPiS1_
+sigprocmask@@GLIBC_2.4
+__system_property_add
+free@@GLIBC_2.4
+fgets@@GLIBC_2.4
+umount@@GLIBC_2.4
+__stack_chk_guard@@GLIBC_2.4
+_ZN3icm4init17checkEthMasterCfgEv
+_exit@@GLIBC_2.4
+memcpy@@GLIBC_2.4
+execvp@@GLIBC_2.4
+_ZN3icm4init27property_load_boot_defaultsEv
+_edata
+_ZN3icm4init17signalHandlerInitEv
+isspace@@GLIBC_2.4
+signal@@GLIBC_2.4
+lseek@@GLIBC_2.4
+memcmp@@GLIBC_2.4
+__bss_end__
+strdup@@GLIBC_2.4
+openat@@GLIBC_2.4
+__stack_chk_fail@@GLIBC_2.4
+alarm@@GLIBC_2.4
+unlink@@GLIBC_2.4
+dup2@@GLIBC_2.4
+reboot@@GLIBC_2.4
+getrlimit@@GLIBC_2.4
+_ZN3icm4init10_klogWriteEPKcz
+socketpair@@GLIBC_2.4
+_ZN3icm4init4mainEiPPc
+chdir@@GLIBC_2.4
+_ZN3icm4init11getDeviceFdEv
+poll@@GLIBC_2.4
+accept@@GLIBC_2.4
+sigaction@@GLIBC_2.4
+getsockopt@@GLIBC_2.4
+usleep@@GLIBC_2.4
+waitpid@@GLIBC_2.4
+strcpy@@GLIBC_2.4
+fread@@GLIBC_2.4
+_ZN3icm4init29resetSigHandlerAndUnblockSigsEv
+opendir@@GLIBC_2.4
+_ZN3icm4init12property_setEPKcS2_
+_ZN3icm4init22start_property_serviceEv
+setrlimit@@GLIBC_2.4
+_ZN3icm4init11serviceInfoC1Ev
+__data_start
+malloc@@GLIBC_2.4
+__libc_start_main@@GLIBC_2.4
+strerror@@GLIBC_2.4
+__fxstat@@GLIBC_2.4
+strftime@@GLIBC_2.4
+localtime@@GLIBC_2.4
+__gmon_start__
+rename@@GLIBC_2.4
+kill@@GLIBC_2.4
+getpid@@GLIBC_2.4
+__system_property_get
+_IO_stdin_used
+strlen@@GLIBC_2.4
+setsid@@GLIBC_2.4
+strchr@@GLIBC_2.4
+_ZN3icm4init19get_property_set_fdEv
+setenv@@GLIBC_2.4
+_ZN3icm4init10deviceInitEv
+mkstemp@@GLIBC_2.4
+chown@@GLIBC_2.4
+fcntl@@GLIBC_2.4
+__libc_csu_init
+sigfillset@@GLIBC_2.4
+_ZN3icm4init15isMcuUpdateModeEv
+_ZN3icm4init12initPowerOffEi
+__errno_location@@GLIBC_2.4
+__aeabi_unwind_cpp_pr1@@GCC_3.5
+mkdir@@GLIBC_2.4
+bind@@GLIBC_2.4
+_ZN3icm4init18mcuUpdateModeStateEi
+memset@@GLIBC_2.4
+strncpy@@GLIBC_2.4
+write@@GLIBC_2.4
+_ZN3icm4init17properties_initedEv
+__end__
+_ZN3icm4init11serviceInfoC2Ev
+vfork@@GLIBC_2.4
+access@@GLIBC_2.4
+fclose@@GLIBC_2.4
+__bss_start
+property_get_int32
+main
+__system_property_area_init
+_ZN3icm4init15getServiceByPidEi
+_ZN3icm4init13property_initEv
+sigemptyset@@GLIBC_2.4
+_ZN3icm4init24notifyServiceStateChangeEPNS0_11serviceInfoEi
+putenv@@GLIBC_2.4
+readdir@@GLIBC_2.4
+strrchr@@GLIBC_2.4
+listen@@GLIBC_2.4
+_ZN3icm4init18monitorCoreServiceEi
+_Jv_RegisterClasses
+sprintf@@GLIBC_2.4
+_ZN3icm4init15getSigHandlerFdEv
+dirfd@@GLIBC_2.4
+vsnprintf@@GLIBC_2.4
+atoi@@GLIBC_2.4
+__system_property_update
+_ZN3icm4init18sigProcMaskAllSigsEi
+msgget@@GLIBC_2.4
+_ZN3icm4init13configNetworkEv
+_ZN3icm4init17handleDeviceEventEv
+socket@@GLIBC_2.4
+__system_property_find
+_ITM_registerTMCloneTable
+_ZN3icm4init8klogInitEv
+_ZN3icm4init10reportTickEi
+chmod@@GLIBC_2.4
+strncat@@GLIBC_2.4
+__xmknod@@GLIBC_2.4
+msgsnd@@GLIBC_2.4
+strncmp@@GLIBC_2.4
+abort@@GLIBC_2.4
+recv@@GLIBC_2.4
+closedir@@GLIBC_2.4
+_ZN3icm4init18load_persist_propsEv
+_ZN3icm4init12handleSignalEv
+.symtab
+.strtab
+.shstrtab
+.interp
+.note.ABI-tag
+.note.gnu.build-id
+.gnu.hash
+.dynsym
+.dynstr
+.gnu.version
+.gnu.version_r
+.rel.dyn
+.rel.plt
+.init
+.text
+.fini
+.rodata
+.ARM.extab
+.ARM.exidx
+.eh_frame
+.init_array
+.fini_array
+.jcr
+.dynamic
+.got
+.data
+.bss
+.comment
+.ARM.attributes
+.debug_aranges
+.debug_info
+.debug_abbrev
+.debug_line
+.debug_frame
+.debug_str
+.debug_ranges
+.debug_macro

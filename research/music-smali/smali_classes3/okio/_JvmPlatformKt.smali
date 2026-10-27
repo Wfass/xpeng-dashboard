@@ -1,0 +1,101 @@
+.class public final Lokio/_JvmPlatformKt;
+.super Ljava/lang/Object;
+.source "-JvmPlatform.kt"
+
+
+# annotations
+.annotation runtime Lkotlin/j;
+.end annotation
+
+
+# direct methods
+.method public static final asUtf8ToByteArray(Ljava/lang/String;)[B
+    .locals 1
+
+    const-string v0, "<this>"
+
+    invoke-static {p0, v0}, Lccf;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 21
+    sget-object v0, Lkotlin/text/d;->b:Ljava/nio/charset/Charset;
+
+    invoke-virtual {p0, v0}, Ljava/lang/String;->getBytes(Ljava/nio/charset/Charset;)[B
+
+    move-result-object p0
+
+    const-string v0, "(this as java.lang.String).getBytes(charset)"
+
+    invoke-static {p0, v0}, Lccf;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-object p0
+.end method
+
+.method public static final synchronized(Ljava/lang/Object;Lcar;)Ljava/lang/Object;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<R:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljava/lang/Object;",
+            "Lcar<",
+            "+TR;>;)TR;"
+        }
+    .end annotation
+
+    const-string v0, "lock"
+
+    invoke-static {p0, v0}, Lccf;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "block"
+
+    invoke-static {p1, v0}, Lccf;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 27
+    monitor-enter p0
+
+    const/4 v0, 0x1
+
+    :try_start_0
+    invoke-interface {p1}, Lcar;->invoke()Ljava/lang/Object;
+
+    move-result-object p1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    invoke-static {v0}, Lcce;->a(I)V
+
+    monitor-exit p0
+
+    invoke-static {v0}, Lcce;->b(I)V
+
+    return-object p1
+
+    :catchall_0
+    move-exception p1
+
+    invoke-static {v0}, Lcce;->a(I)V
+
+    monitor-exit p0
+
+    invoke-static {v0}, Lcce;->b(I)V
+
+    throw p1
+.end method
+
+.method public static final toUtf8String([B)Ljava/lang/String;
+    .locals 2
+
+    const-string v0, "<this>"
+
+    invoke-static {p0, v0}, Lccf;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 19
+    sget-object v0, Lkotlin/text/d;->b:Ljava/nio/charset/Charset;
+
+    new-instance v1, Ljava/lang/String;
+
+    invoke-direct {v1, p0, v0}, Ljava/lang/String;-><init>([BLjava/nio/charset/Charset;)V
+
+    return-object v1
+.end method

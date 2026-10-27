@@ -1,0 +1,9 @@
+version: 2.12.1
+apkFileName: musicradio.apk
+doNotCompress:
+- arsc
+- gif
+- png
+- so
+- res/drawable/yw_1222_0335.jpg
+- res/raw/client.p12

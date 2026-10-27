@@ -1,0 +1,14 @@
+infoflowconfig.json
+{
+    "cardUpdateScroll": false,
+    "cardInsertScroll": true,
+    "visualizerViewType": 0,
+    "cardAnimationDuration": 300,
+    "cardFocusedTime": 14000,
+    "avatarEnable": true,
+    "infoflowEnable": true,
+    "visualizerEnable": false,
+    "angleCardEnable": false,
+    "infoCarCheck": true,
+    "carCheckInterval": 15
+}

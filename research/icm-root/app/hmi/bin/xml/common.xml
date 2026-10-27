@@ -1,0 +1,33 @@
+<Common name="Common">
+	<DayNight type="int">0</DayNight>
+	<E28CarType type="int">0</E28CarType>
+	<Gear type="int">0</Gear>
+	<ElectricQuantity type="int">0</ElectricQuantity>
+	<ElectricQuantityStr type="string">--</ElectricQuantityStr>
+	<EnduranceMileage type="int">0</EnduranceMileage>
+	<EnduranceMileageState type="int">0</EnduranceMileageState>
+	<ElectricityColorControlProp type="int">0</ElectricityColorControlProp>
+	<TurnLeftLightControProp type="bool">false</TurnLeftLightControProp>
+	<TurnRightLightControProp type="bool">false</TurnRightLightControProp>
+	<CarColorControProp type="int">0</CarColorControProp>
+	<IsOffControProp type="bool">false</IsOffControProp>
+	<IsCharging type="bool"></IsCharging>
+	<IsHideUnderPage type="bool">0</IsHideUnderPage>
+	<BatteryOverheatVisible type="bool">false</BatteryOverheatVisible>
+	<Door>
+		<FL type="bool">false</FL>
+		<FR type="bool">false</FR>
+		<BL type="bool">false</BL>
+		<BR type="bool">false</BR>
+	</Door>
+	<Hood>
+		<Engine type="bool">false</Engine>
+		<Trunk type="bool">false</Trunk>
+		<FastCharge type="int">0</FastCharge>
+		<NormalCharge type="int">0</NormalCharge>
+	</Hood>
+	<Speed type="int">0</Speed>	
+	<ColorTest type="int">0</ColorTest>
+	<AbnormalStartup type="bool">false</AbnormalStartup>
+	<TrafficLightsState type="int">0</TrafficLightsState>
+</Common>

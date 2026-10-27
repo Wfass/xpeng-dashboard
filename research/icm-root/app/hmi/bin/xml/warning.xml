@@ -1,0 +1,1176 @@
+<wtitem name='Warning0'>
+    <id>0</id>
+    <textResid>0</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning1'>
+    <id>1</id>
+    <textResid>1</textResid>
+    <imgUrl>kzb://warning/Textures/icon/ic_electric_system_failure</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/IconTextReminderMulti-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning2'>
+    <id>2</id>
+    <textResid>2</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning3'>
+    <id>3</id>
+    <textResid>3</textResid>
+    <imgUrl>kzb://warning/Textures/icon/ic_parking_brake</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/IconTextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning4'>
+    <id>4</id>
+    <textResid>4</textResid>
+    <imgUrl>kzb://warning/Textures/icon/ic_parking_brake</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/IconTextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning5'>
+    <id>5</id>
+    <textResid>5</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning6'>
+    <id>6</id>
+    <textResid>6</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning7'>
+    <id>7</id>
+    <textResid>7</textResid>
+    <imgUrl>kzb://warning/Textures/icon/ic_electric_system_failure</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/IconTextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning8'>
+    <id>8</id>
+    <textResid>8</textResid>
+    <imgUrl>kzb://warning/Textures/icon/ic_electric_system_failure</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/IconTextReminderMulti-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning9'>
+    <id>9</id>
+    <textResid>9</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderMulti-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning10'>
+    <id>10</id>
+    <textResid>10</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning11'>
+    <id>11</id>
+    <textResid>11</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning12'>
+    <id>12</id>
+    <textResid>12</textResid>
+    <imgUrl>kzb://warning/Textures/icon/ic_airbag_failure</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/IconTextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning13'>
+    <id>13</id>
+    <textResid>13</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning14'>
+    <id>14</id>
+    <textResid>14</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning15'>
+    <id>15</id>
+    <textResid>15</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning16'>
+    <id>16</id>
+    <textResid>16</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning17'>
+    <id>17</id>
+    <textResid>17</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning18'>
+    <id>18</id>
+    <textResid>18</textResid>
+    <imgUrl>kzb://warning/Textures/icon/ic_braking_system_failure</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/IconTextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning19'>
+    <id>19</id>
+    <textResid>19</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_Red</prefabUrl>
+</wtitem>
+<wtitem name='Warning20'>
+    <id>20</id>
+    <textResid>20</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning21'>
+    <id>21</id>
+    <textResid>21</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning22'>
+    <id>22</id>
+    <textResid>22</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning23'>
+    <id>23</id>
+    <textResid>23</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning24'>
+    <id>24</id>
+    <textResid>24</textResid>
+    <imgUrl>kzb://warning/Textures/icon/EPS_electronic_power_steering_failure</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/IconTextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning25'>
+    <id>25</id>
+    <textResid>25</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning26'>
+    <id>26</id>
+    <textResid>26</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning27'>
+    <id>27</id>
+    <textResid>27</textResid>
+    <imgUrl>kzb://warning/Textures/icon/ic_battery_charging_failure</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/IconTextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning28'>
+    <id>28</id>
+    <textResid>28</textResid>
+    <imgUrl>kzb://warning/Textures/icon/ic_battery_charging_failure</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/IconTextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning29'>
+    <id>29</id>
+    <textResid>29</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning30'>
+    <id>30</id>
+    <textResid>30</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning31'>
+    <id>31</id>
+    <textResid>31</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning32'>
+    <id>32</id>
+    <textResid>32</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning33'>
+    <id>33</id>
+    <textResid>33</textResid>
+    <imgUrl>kzb://warning/Textures/icon/ic_main_driver's_seat_belt_is_not_fastened</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/IconTextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning34'>
+    <id>34</id>
+    <textResid>34</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning35'>
+    <id>35</id>
+    <textResid>35</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning36'>
+    <id>36</id>
+    <textResid>36</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderMulti-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning37'>
+    <id>37</id>
+    <textResid>37</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning38'>
+    <id>38</id>
+    <textResid>38</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning39'>
+    <id>39</id>
+    <textResid>39</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning40'>
+    <id>40</id>
+    <textResid>40</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning41'>
+    <id>41</id>
+    <textResid>41</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning42'>
+    <id>42</id>
+    <textResid>42</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning43'>
+    <id>43</id>
+    <textResid>43</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS_Red</prefabUrl>
+</wtitem>
+<wtitem name='Warning44'>
+    <id>44</id>
+    <textResid>44</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS_Red</prefabUrl>
+</wtitem>
+<wtitem name='Warning45'>
+    <id>45</id>
+    <textResid>45</textResid>
+    <imgUrl>kzb://warning/Textures/icon/ic_autohold</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/IconTextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning46'>
+    <id>46</id>
+    <textResid>46</textResid>
+    <imgUrl>kzb://warning/Textures/icon/ic_front_collision_warning</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderMulti-line_ADAS_Red</prefabUrl>
+</wtitem>
+<wtitem name='Warning47'>
+    <id>47</id>
+    <textResid>47</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning48'>
+    <id>48</id>
+    <textResid>48</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderMulti-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning49'>
+    <id>49</id>
+    <textResid>49</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderMulti-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning50'>
+    <id>50</id>
+    <textResid>50</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderMulti-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning51'>
+    <id>51</id>
+    <textResid>51</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning52'>
+    <id>52</id>
+    <textResid>52</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderMulti-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning53'>
+    <id>53</id>
+    <textResid>53</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderMulti-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning54'>
+    <id>54</id>
+    <textResid>54</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderMulti-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning55'>
+    <id>55</id>
+    <textResid>55</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning56'>
+    <id>56</id>
+    <textResid>56</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS_Red</prefabUrl>
+</wtitem>
+<wtitem name='Warning57'>
+    <id>57</id>
+    <textResid>57</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS_Red</prefabUrl>
+</wtitem>
+<wtitem name='Warning58'>
+    <id>58</id>
+    <textResid>58</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning59'>
+    <id>59</id>
+    <textResid>59</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning60'>
+    <id>60</id>
+    <textResid>60</textResid>
+    <imgUrl>kzb://warning/Textures/icon/ic_small alart_day</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/IconTextReminderSingle-line_ADAS_Red</prefabUrl>
+</wtitem>
+<wtitem name='Warning61'>
+    <id>61</id>
+    <textResid>61</textResid>
+    <imgUrl>kzb://warning/Textures/icon/ic_one_two_lcc_exitl_ift_waring</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/IconTextReminderMulti-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning62'>
+    <id>62</id>
+    <textResid>62</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning63'>
+    <id>63</id>
+    <textResid>63</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning64'>
+    <id>64</id>
+    <textResid>64</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning65'>
+    <id>65</id>
+    <textResid>65</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderMulti-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning66'>
+    <id>66</id>
+    <textResid>66</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning67'>
+    <id>67</id>
+    <textResid>67</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning68'>
+    <id>68</id>
+    <textResid>68</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning69'>
+    <id>69</id>
+    <textResid>69</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning70'>
+    <id>70</id>
+    <textResid>70</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning71'>
+    <id>71</id>
+    <textResid>71</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning72'>
+    <id>72</id>
+    <textResid>72</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning73'>
+    <id>73</id>
+    <textResid>73</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning74'>
+    <id>74</id>
+    <textResid>74</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning75'>
+    <id>75</id>
+    <textResid>75</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning76'>
+    <id>76</id>
+    <textResid>76</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning77'>
+    <id>77</id>
+    <textResid>77</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning78'>
+    <id>78</id>
+    <textResid>78</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning79'>
+    <id>79</id>
+    <textResid>79</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning80'>
+    <id>80</id>
+    <textResid>80</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderMulti-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning81'>
+    <id>81</id>
+    <textResid>81</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderMulti-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning82'>
+    <id>82</id>
+    <textResid>82</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderMulti-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning83'>
+    <id>83</id>
+    <textResid>83</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning84'>
+    <id>84</id>
+    <textResid>84</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderMulti-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning85'>
+    <id>85</id>
+    <textResid>85</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning86'>
+    <id>86</id>
+    <textResid>86</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning87'>
+    <id>87</id>
+    <textResid>87</textResid>
+    <imgUrl>kzb://warning/Textures/icon/ic_tyre_pressure_monitoring_system_failure</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/IconTextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning88'>
+    <id>88</id>
+    <textResid>88</textResid>
+    <imgUrl>kzb://warning/Textures/icon/ic_tyre_pressure_monitoring_system_failure</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/IconTextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning89'>
+    <id>89</id>
+    <textResid>89</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning90'>
+    <id>90</id>
+    <textResid>90</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning91'>
+    <id>91</id>
+    <textResid>91</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning92'>
+    <id>92</id>
+    <textResid>92</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning93'>
+    <id>93</id>
+    <textResid>93</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning94'>
+    <id>94</id>
+    <textResid>94</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning95'>
+    <id>95</id>
+    <textResid>95</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning96'>
+    <id>96</id>
+    <textResid>96</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning97'>
+    <id>97</id>
+    <textResid>97</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning98'>
+    <id>98</id>
+    <textResid>98</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning99'>
+    <id>99</id>
+    <textResid>99</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning100'>
+    <id>100</id>
+    <textResid>100</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning101'>
+    <id>101</id>
+    <textResid>101</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderMulti-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning102'>
+    <id>102</id>
+    <textResid>102</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderMulti-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning103'>
+    <id>103</id>
+    <textResid>103</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning104'>
+    <id>104</id>
+    <textResid>104</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning105'>
+    <id>105</id>
+    <textResid>105</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning106'>
+    <id>106</id>
+    <textResid>106</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderMulti-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning107'>
+    <id>107</id>
+    <textResid>107</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderMulti-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning108'>
+    <id>108</id>
+    <textResid>108</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning109'>
+    <id>109</id>
+    <textResid>109</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning110'>
+    <id>110</id>
+    <textResid>110</textResid>
+    <imgUrl>kzb://warning/Textures/icon/ic_small alart_day</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/IconTextReminderMulti-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning111'>
+    <id>111</id>
+    <textResid>111</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning112'>
+    <id>112</id>
+    <textResid>112</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning113'>
+    <id>113</id>
+    <textResid>113</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderMulti-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning114'>
+    <id>114</id>
+    <textResid>114</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning115'>
+    <id>115</id>
+    <textResid>115</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning116'>
+    <id>116</id>
+    <textResid>116</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning117'>
+    <id>117</id>
+    <textResid>117</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/AutonomousDriving</prefabUrl>
+</wtitem>
+<wtitem name='Warning118'>
+    <id>118</id>
+    <textResid>118</textResid>
+    <imgUrl>kzb://warning/Textures/icon/ic_red_pedal</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/IconTextReminderMulti-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning120'>
+    <id>120</id>
+    <textResid>120</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning121'>
+    <id>121</id>
+    <textResid>121</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning122'>
+    <id>122</id>
+    <textResid>122</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning123'>
+    <id>123</id>
+    <textResid>123</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning124'>
+    <id>124</id>
+    <textResid>124</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning126'>
+    <id>126</id>
+    <textResid>126</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderMulti-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning127'>
+    <id>127</id>
+    <textResid>127</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderMulti-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning128'>
+    <id>128</id>
+    <textResid>128</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning129'>
+    <id>129</id>
+    <textResid>129</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/AutonomousDriving</prefabUrl>
+</wtitem>
+<wtitem name='Warning130'>
+    <id>130</id>
+    <textResid>130</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning131'>
+    <id>131</id>
+    <textResid>131</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning132'>
+    <id>132</id>
+    <textResid>132</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning133'>
+    <id>133</id>
+    <textResid>133</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning134'>
+    <id>134</id>
+    <textResid>134</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderMulti-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning135'>
+    <id>135</id>
+    <textResid>135</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderMulti-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning136'>
+    <id>136</id>
+    <textResid>136</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderMulti-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning137'>
+    <id>137</id>
+    <textResid>137</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning138'>
+    <id>138</id>
+    <textResid>138</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning139'>
+    <id>139</id>
+    <textResid>139</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning140'>
+    <id>140</id>
+    <textResid>140</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning141'>
+    <id>141</id>
+    <textResid>141</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning142'>
+    <id>142</id>
+    <textResid>142</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning143'>
+    <id>143</id>
+    <textResid>143</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning144'>
+    <id>144</id>
+    <textResid>144</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning145'>
+    <id>145</id>
+    <textResid>145</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning146'>
+    <id>146</id>
+    <textResid>146</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning147'>
+    <id>147</id>
+    <textResid>147</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning148'>
+    <id>148</id>
+    <textResid>148</textResid>
+    <imgUrl>kzb://warning/Textures/icon/ic_small alart_day</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/IconTextReminderMulti-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning150'>
+    <id>150</id>
+    <textResid>150</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning151'>
+    <id>151</id>
+    <textResid>151</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning153'>
+    <id>153</id>
+    <textResid>153</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning158'>
+    <id>158</id>
+    <textResid>158</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderMulti-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning159'>
+    <id>159</id>
+    <textResid>159</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderMulti-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning160'>
+    <id>160</id>
+    <textResid>160</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderMulti-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning161'>
+    <id>161</id>
+    <textResid>161</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderMulti-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning162'>
+    <id>162</id>
+    <textResid>162</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderMulti-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning163'>
+    <id>163</id>
+    <textResid>163</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderMulti-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning164'>
+    <id>164</id>
+    <textResid>164</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderMulti-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning165'>
+    <id>165</id>
+    <textResid>165</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderMulti-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning166'>
+    <id>166</id>
+    <textResid>166</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderMulti-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning167'>
+    <id>167</id>
+    <textResid>167</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderMulti-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning168'>
+    <id>168</id>
+    <textResid>168</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderMulti-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning169'>
+    <id>169</id>
+    <textResid>169</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderMulti-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning170'>
+    <id>170</id>
+    <textResid>170</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderMulti-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning171'>
+    <id>171</id>
+    <textResid>171</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderMulti-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning172'>
+    <id>172</id>
+    <textResid>172</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderMulti-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning173'>
+    <id>173</id>
+    <textResid>173</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderMulti-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning174'>
+    <id>174</id>
+    <textResid>174</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderMulti-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning175'>
+    <id>175</id>
+    <textResid>175</textResid>
+    <imgUrl>kzb://warning/Textures/icon/ic_small alart_day</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/IconTextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning176'>
+    <id>176</id>
+    <textResid>176</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/AutonomousDriving</prefabUrl>
+</wtitem>
+<wtitem name='Warning177'>
+    <id>177</id>
+    <textResid>177</textResid>
+    <imgUrl>kzb://warning/Textures/icon/ic_sharp_turn</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/IconTextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning178'>
+    <id>178</id>
+    <textResid>178</textResid>
+    <imgUrl>kzb://warning/Textures/icon/ic_pedestrian</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/IconTextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning179'>
+    <id>179</id>
+    <textResid>179</textResid>
+    <imgUrl>kzb://warning/Textures/icon/ic_construction</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/IconTextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning180'>
+    <id>180</id>
+    <textResid>180</textResid>
+    <imgUrl>kzb://warning/Textures/icon/ic_distraction_warning</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/IconTextReminderSingle-line_ADAS_Red</prefabUrl>
+</wtitem>
+<wtitem name='Warning181'>
+    <id>181</id>
+    <textResid>181</textResid>
+    <imgUrl>kzb://warning/Textures/icon/ic_distraction_warning</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/IconTextReminderSingle-line_ADAS_Red</prefabUrl>
+</wtitem>
+<wtitem name='Warning182'>
+    <id>182</id>
+    <textResid>182</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderMulti-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning183'>
+    <id>183</id>
+    <textResid>183</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderMulti-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning184'>
+    <id>184</id>
+    <textResid>184</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderMulti-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning185'>
+    <id>185</id>
+    <textResid>185</textResid>
+    <imgUrl>kzb://warning/Textures/icon/ic_small alart_day</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/IconTextReminderMulti-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning186'>
+    <id>186</id>
+    <textResid>186</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/AutonomousDriving_DSM</prefabUrl>
+</wtitem>
+<wtitem name='Warning187'>
+    <id>187</id>
+    <textResid>187</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderMulti-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning188'>
+    <id>188</id>
+    <textResid>188</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning189'>
+    <id>189</id>
+    <textResid>189</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderMulti-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning190'>
+    <id>190</id>
+    <textResid>190</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning191'>
+    <id>191</id>
+    <textResid>191</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning192'>
+    <id>192</id>
+    <textResid>192</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning193'>
+    <id>193</id>
+    <textResid>193</textResid>
+    <imgUrl>kzb://warning/Textures/ic_shift_lever_press</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/IconTextReminderMulti-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning194'>
+    <id>194</id>
+    <textResid>194</textResid>
+    <imgUrl>kzb://warning/Textures/icon/ic_sharp_turn</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/IconTextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning195'>
+    <id>195</id>
+    <textResid>195</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning196'>
+    <id>196</id>
+    <textResid>196</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning197'>
+    <id>197</id>
+    <textResid>197</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning198'>
+    <id>198</id>
+    <textResid>198</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderMulti-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning199'>
+    <id>199</id>
+    <textResid>199</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderMulti-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning200'>
+    <id>200</id>
+    <textResid>200</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderMulti-line_ADAS</prefabUrl>
+</wtitem>
+<wtitem name='Warning201'>
+    <id>201</id>
+    <textResid>201</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning202'>
+    <id>202</id>
+    <textResid>202</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderMulti-line</prefabUrl>
+</wtitem>
+<wtitem name='Warning203'>
+    <id>203</id>
+    <textResid>203</textResid>
+    <imgUrl>kzb://warning/Textures/Default Texture</imgUrl>
+    <prefabUrl>kzb://warning/Prefabs/TextReminderSingle-line</prefabUrl>
+</wtitem>

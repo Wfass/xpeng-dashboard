@@ -1,0 +1,1906 @@
+*dump car service*
+    current date time: 2026-10-22 18:20:08
+    run time: +2d20h41m32s157ms
+*FutureConfig, DEFAULT:false
+*Dump all services*
+**dump XpVehicleService**
+    icm use someip:true, max HVAC fan speed level:10
+
+**dump XpUpdateTimeService**
+    PollingIntervalMs: +5m0s0ms
+    TimeErrorThresholdMs: +5s0ms
+    mTboxTimeSynced: true
+
+**dump CarPropertyService**
+    mAutopilotRegisteredProperties: { 2142=[VCU_CURRENT_GEARLEV, VCU_DRIMODE_FB, MCU_IG_DATA, XPU_CONNECTED] }
+    Client Info: 165
+        unknown(Pid:801) mListenerBinder:android.os.BinderProxy@68e1d2d mRateMap:{AVM_WORK_ST : 0.0}
+        system(Pid:905) mListenerBinder:android.os.BinderProxy@cae98b3 mRateMap:{VCU_CHARGE_STATUS : 0.0}
+        com.xiaopeng.xuiservice(Pid:1030) mListenerBinder:android.os.BinderProxy@acd0cc9 mRateMap:{ESC_AVH : -1.0}
+        com.xiaopeng.xuiservice(Pid:1030) mListenerBinder:android.os.BinderProxy@9e747f7 mRateMap:{SCU_OPERATION_TIPS : -1.0, SCU_RCTA_LEFT_WARNING : -1.0, SCU_RCTA_RIGHT_WARNING : -1.0, SCU_LONGCTRL_REMIND : -1.0, SCU_XPILOT_ST : -1.0, SCU_LATCTRL_REMIND : -1.0, SCU_ACC_ST : -1.0, SCU_MODE_INDEX : -1.0, SCU_URADAR_VOICE_TONE : -1.0, SCU_ALCCTRL_REMIND : -1.0, SCU_DOW_LWARNING : -1.0, SCU_DOW_RWARNING : -1.0, SCU_LATCTRL_REMIND_2 : -1.0, SCU_CIP_WARNING_ST : -1.0, SCU_ACC_RD_VOICE_TIPS : -1.0, SCU_SDC_CTRL_URADARVOICE_TONE : -1.0, SCU_DSM_REMMIND : -1.0, SCU_MRR_ASSIST_SYSST : -1.0}
+        com.xiaopeng.xuiservice(Pid:1030) mListenerBinder:android.os.BinderProxy@f711664 mRateMap:{VPM_LDW_RIGHT_WARNING_ST : -1.0, VPM_LDW_LEFT_WARNING_ST : -1.0}
+        com.xiaopeng.xuiservice(Pid:1030) mListenerBinder:android.os.BinderProxy@b9359cc mRateMap:{VCU_BMS_SOCDISP : -1.0, VCU_CURRENT_GEARLEV : -1.0, VCU_EVSYS_READYST : -1.0, VCU_BRKPEDAL_ST : -1.0, VCU_ACCPEDAL_SIG : -1.0, VCU_CHARGE_GUN_STATUS : -1.0, VCU_CHARGE_STATUS : -1.0, VCU_BAT_BUMP_RECRD : -1.0, VCU_RAW_CAR_SPEED : -1.0, VCU_DSTBAT_DISP_CLTC_FLOAT : -1.0, VCU_DSTBAT_DISP_WLTP_FLOAT : -1.0, VCU_DSTBAT_DISP_NEDC_FLOAT : -1.0}
+        com.xiaopeng.xuiservice(Pid:1030) mListenerBinder:android.os.BinderProxy@fa9dfce mRateMap:{SWS_UPLOAD_CAN_BUTTON : -1.0, SWS_BUTTON_RAWDATA : -1.0}
+        com.xiaopeng.xuiservice(Pid:1030) mListenerBinder:android.os.BinderProxy@16c731e mRateMap:{XPU_CDU_BRIGHTNESS_ST : -1.0, XPU_NGP_MODE_INDX : -1.0, XPU_NGP_TRIGGER_EVENT_DATA : -1.0}
+        com.xiaopeng.xuiservice(Pid:1030) mListenerBinder:android.os.BinderProxy@3fe6d82 mRateMap:{BCM_DRVSEAT_BELTSBR_WARNING : -1.0, BCM_PSNGRSEAT_BELTSBR_WARNING : -1.0, BCM_2NDLEFTSEAT_BELTSBR_WARNING : -1.0, BCM_2NDMIDSEAT_BELTSBR_WARNING : -1.0, BCM_2NDRIGHTSEAT_BELTSBR_WARNING : -1.0, SRS_PSNGR_OCCUPANCY_ST : -1.0}
+        com.xiaopeng.xuiservice(Pid:1030) mListenerBinder:android.os.BinderProxy@d7457ff mRateMap:{FOG_LIGHTS_SWITCH_XP : -1.0, BCM_DRIVERSEAT_OCCUPIED : -1.0, BCM_TRUNKAJAR : -1.0, BCM_LTURNLAMP_ST : -1.0, BCM_RTURNLAMP_ST : -1.0, BCM_FRONT_LIGHT_GROUP_MODE : -1.0, BCM_BONNET : -1.0, BCM_L_CHARGER_PORT : -1.0, BCM_R_CHARGER_PORT : -1.0, BCM_ATWS : -1.0, BCM_CWCCHRG_ST : -1.0, BCM_SDCL_PSDMOTO_ST : -1.0, BCM_WIPERSPDSW_ST : -1.0, BCM_ENVR_MODE : -1.0, BCM_DOOR : -1.0, BCM_LRTURNLAMP_ACTIVE_ST : -1.0, CDU_IBCM_RLPOS : -1.0, CDU_IBCM_FLPOS : -1.0, CDU_IBCM_FRPOS : -1.0, CDU_IBCM_RRPOS : -1.0}
+        com.xiaopeng.xuiservice(Pid:1030) mListenerBinder:android.os.BinderProxy@55b34d0 mRateMap:{ICM_SYNC_SIGNAL : -1.0, ICM_CARSETTING : -1.0, ICM_CONNECTED : -1.0}
+        com.xiaopeng.xuiservice(Pid:1030) mListenerBinder:android.os.BinderProxy@d5130cd mRateMap:{TBOX_CDU_APN : -1.0, TBOX_CAMERA_REMOTE_CTRL : -1.0, TBOX_AVP_START : -1.0, TBOX_CDU_SELF_MODE : -1.0, TBOX_COUNTDOWN : -1.0, TBOX_GUARD : -1.0}
+        com.xiaopeng.xuiservice(Pid:1030) mListenerBinder:android.os.BinderProxy@d3e6c93 mRateMap:{MCU_LLU_SW : -1.0, MCU_LLU_SHOWOFF_SW : -1.0, MCU_LLU_CHARGING_SW : -1.0, MCU_FB_LLU_ACTIVE : -1.0, MCU_LLU_LOCK_UNLOCK_MODE : -1.0, LLU_FUNCTIONST : -1.0, LLU_SCRIPT_ST : -1.0}
+        com.xiaopeng.xuiservice(Pid:1030) mListenerBinder:android.os.BinderProxy@745c7f6 mRateMap:{MCU_IG_DATA : -1.0, MCU_ATLS_STATUS : -1.0, MCU_POWERDOWN_ACTION : -1.0, MCU_BL_TEMP : -1.0, MCU_BL_IC_DRIVER_ST : -1.0, MSMD_MCU_WELCOME : -1.0}
+        com.xiaopeng.xuiservice(Pid:1030) mListenerBinder:android.os.BinderProxy@e9b9b59 mRateMap:{VCU_THERMORUNAWAY_ST : -1.0, MCU_DIAG_REQUEST : -1.0}
+        com.xiaopeng.xuiservice(Pid:1030) mListenerBinder:com.android.car.CarConditionService$1@e545c91 mRateMap:{VCU_ACCPEDAL_SIG : 0.0, VCU_RAW_CAR_SPEED : 0.0}
+        com.xiaopeng.xuiservice:iotservice(Pid:1154) mListenerBinder:android.os.BinderProxy@62a6b2b mRateMap:{SCU_OPERATION_TIPS : -1.0, SCU_RCTA_LEFT_WARNING : -1.0, SCU_RCTA_RIGHT_WARNING : -1.0, SCU_LONGCTRL_REMIND : -1.0, SCU_XPILOT_ST : -1.0, SCU_LATCTRL_REMIND : -1.0, SCU_ACC_ST : -1.0, SCU_MODE_INDEX : -1.0, SCU_URADAR_VOICE_TONE : -1.0, SCU_ALCCTRL_REMIND : -1.0, SCU_DOW_LWARNING : -1.0, SCU_DOW_RWARNING : -1.0, SCU_LATCTRL_REMIND_2 : -1.0, SCU_CIP_WARNING_ST : -1.0, SCU_ACC_RD_VOICE_TIPS : -1.0, SCU_SDC_CTRL_URADARVOICE_TONE : -1.0, SCU_DSM_REMMIND : -1.0, SCU_MRR_ASSIST_SYSST : -1.0}
+        com.xiaopeng.xuiservice:iotservice(Pid:1154) mListenerBinder:android.os.BinderProxy@64fbe70 mRateMap:{XPU_NGP_MODE_INDX : -1.0, XPU_NGP_ICON_ST : -1.0}
+        com.xiaopeng.xuiservice:iotservice(Pid:1154) mListenerBinder:android.os.BinderProxy@7a7677a mRateMap:{BCM_ENVR_MODE : -1.0}
+        com.xiaopeng.xuiservice:opencarsvc(Pid:1172) mListenerBinder:android.os.BinderProxy@7f1bc58 mRateMap:{HVAC_SEAT_VENTILATION : -1.0, BCM_DRIVERSEAT_OCCUPIED : -1.0, BCM_TRUNKAJAR : -1.0, BCM_SEAT_HEAT_LEVEL : -1.0, BCM_BONNET : -1.0, BCM_L_CHARGER_PORT : -1.0, BCM_MIRRORHEAT : -1.0, BCM_PSNSEAT_HEAT_LEVEL : -1.0, BCM_DOOR : -1.0, CDU_IBCM_RLPOS : -1.0, CDU_IBCM_FLPOS : -1.0, CDU_IBCM_FRPOS : -1.0, CDU_IBCM_RRPOS : -1.0}
+        com.xiaopeng.xuiservice:opencarsvc(Pid:1172) mListenerBinder:android.os.BinderProxy@d6031b1 mRateMap:{HVAC_FAN_SPEED : -1.0, HVAC_FAN_DIRECTION : -1.0, HVAC_RECIRC_ON : -1.0, HVAC_TEMPERATURE_SET : -1.0, HVAC_PM25 : -1.0, HVAC_SETTEMP_SYNCST : -1.0, HVAC_ECON : -1.0, HVAC_DEFROSTER_XP : -1.0, HVAC_AC_ON_XP : -1.0, HVAC_AUTO_ON_XP : -1.0, HVAC_POWER_ON_XP : -1.0, HVAC_TEMPERATURE_PSN_SET : -1.0}
+        com.xiaopeng.aiassistant(Pid:1338) mListenerBinder:android.os.BinderProxy@aa77a5 mRateMap:{VCU_CHARGE_STATUS : 0.0}
+        com.xiaopeng.aiassistant(Pid:1338) mListenerBinder:android.os.BinderProxy@7ca519c mRateMap:{MCU_IG_DATA : 0.0}
+        com.xiaopeng.aiassistant(Pid:1338) mListenerBinder:android.os.BinderProxy@7628f07 mRateMap:{SCU_NGP_XPILOTST : 0.0}
+        com.xiaopeng.aiassistant(Pid:1338) mListenerBinder:android.os.BinderProxy@600926e mRateMap:{XPU_NGP_MODE_INDX : 0.0}
+        com.xiaopeng.aiassistant(Pid:1338) mListenerBinder:android.os.BinderProxy@af8eb88 mRateMap:{VCU_CHARGE_STATUS : 0.0}
+        com.xiaopeng.aiassistant(Pid:1338) mListenerBinder:android.os.BinderProxy@2f53834 mRateMap:{VCU_CURRENT_GEARLEV : 0.0}
+        com.xiaopeng.aiassistant(Pid:1338) mListenerBinder:android.os.BinderProxy@db48146 mRateMap:{BCM_MSB_ACTIVE : 0.0}
+        com.xiaopeng.aiassistant(Pid:1338) mListenerBinder:android.os.BinderProxy@9f00d0f mRateMap:{VCU_CURRENT_GEARLEV : 0.0}
+        com.xiaopeng.systemui(Pid:1365) mListenerBinder:android.os.BinderProxy@2a7d31 mRateMap:{SWS_KNOB_BACKLIGHT : 0.0}
+        com.xiaopeng.systemui(Pid:1365) mListenerBinder:android.os.BinderProxy@49005d8 mRateMap:{TBOX_CDU_APN : 0.0}
+        com.xiaopeng.systemui(Pid:1365) mListenerBinder:android.os.BinderProxy@fae69f2 mRateMap:{VCU_BMS_SOCDISP : 0.0, VCU_CURRENT_GEARLEV : 0.0, VCU_EVSYS_READYST : 0.0, VCU_DSTBAT_DISP : 0.0, VCU_DRIVE_MODE : 0.0, VCU_RANDIS_MODE : 0.0, VCU_EXHIB_MODE_SW : 0.0}
+        com.xiaopeng.systemui(Pid:1365) mListenerBinder:android.os.BinderProxy@4cd454a mRateMap:{ICM_SYNC_SIGNAL : 0.0, ICM_CONNECTED : 0.0, ICM_BRIGHTNESS_SP : 0.0}
+        com.xiaopeng.systemui(Pid:1365) mListenerBinder:android.os.BinderProxy@36a98fd mRateMap:{BCM_LOW_BEAM : 0.0, BCM_FRONT_LIGHT_GROUP_MODE : 0.0, BCM_CWCCHRG_ST : 0.0, BCM_CWCCHRG_ABNORMAL_WARNING : 0.0, BCM_ENVR_MODE : 0.0}
+        com.xiaopeng.systemui(Pid:1365) mListenerBinder:android.os.BinderProxy@4b70843 mRateMap:{MCU_IG_DATA : 0.0}
+        com.xiaopeng.car.settings(Pid:1396) mListenerBinder:android.os.BinderProxy@236f217 mRateMap:{ICM_SYNC_SIGNAL : -1.0, ICM_CONNECTED : -1.0}
+        com.xiaopeng.car.settings(Pid:1396) mListenerBinder:android.os.BinderProxy@a9537ed mRateMap:{MCU_IG_DATA : 0.0, MCU_FACTORY_MODE : 0.0, MCU_WIFI_HOTSPOT_REQ : -1.0}
+        com.xiaopeng.car.settings(Pid:1396) mListenerBinder:android.os.BinderProxy@6e13622 mRateMap:{XPU_NEDC_STATUS : 0.0}
+        com.xiaopeng.car.settings(Pid:1396) mListenerBinder:android.os.BinderProxy@3f24604 mRateMap:{VCU_CURRENT_GEARLEV : 0.0}
+        com.xiaopeng.car.settings(Pid:1396) mListenerBinder:android.os.BinderProxy@485b073 mRateMap:{TBOX_SET_AUTO_POWEOFF_SW : -1.0, TBOX_SOLDIERSW : -1.0, TBOX_SOLDIER_CAMERASW : -1.0, TBOX_SOLDIER_ENABLE : -1.0}
+        com.xiaopeng.appstore(Pid:1758) mListenerBinder:android.os.BinderProxy@5bb19ad mRateMap:{MCU_IG_DATA : 0.0}
+        com.xiaopeng.xpspeechservice.ms(Pid:1783) mListenerBinder:android.os.BinderProxy@3df96c4 mRateMap:{VCU_CURRENT_GEARLEV : 0.0}
+        com.xiaopeng.xmart.camera(Pid:1802) mListenerBinder:android.os.BinderProxy@f35333e mRateMap:{VCU_CURRENT_GEARLEV : 0.0}
+        com.xiaopeng.xmart.camera(Pid:1802) mListenerBinder:android.os.BinderProxy@a78bb6d mRateMap:{VCU_CURRENT_GEARLEV : 0.0}
+        com.xiaopeng.xmart.camera(Pid:1802) mListenerBinder:android.os.BinderProxy@e88eab5 mRateMap:{XPU_NEDC_STATUS : 0.0}
+        com.xiaopeng.xmart.camera(Pid:1802) mListenerBinder:android.os.BinderProxy@45e631c mRateMap:{AVM_WORK_ST : 0.0}
+        com.xiaopeng.xmart.camera(Pid:1802) mListenerBinder:android.os.BinderProxy@abd66ec mRateMap:{TBOX_CAMERA_REMOTE_CTRL : -1.0, TBOX_SOLDIERSW : -1.0, TBOX_SOLDIERWORKST : -1.0, TBOX_SOLDIER_CAMERASW : -1.0, TBOX_GUARD : -1.0}
+        com.xiaopeng.xmart.camera(Pid:1802) mListenerBinder:android.os.BinderProxy@fb2e7ee mRateMap:{VCU_CURRENT_GEARLEV : 0.0}
+        com.xiaopeng.xmart.camera(Pid:1802) mListenerBinder:android.os.BinderProxy@1eb748f mRateMap:{MCU_IG_DATA : 0.0}
+        com.xiaopeng.xmart.camera(Pid:1802) mListenerBinder:android.os.BinderProxy@1d133a2 mRateMap:{AVM_DISPLAY_MODE : 0.0, AVM_WORK_ST : 0.0}
+        com.xiaopeng.xmart.camera(Pid:1802) mListenerBinder:android.os.BinderProxy@7f2a169 mRateMap:{XPU_NEDC_STATUS : 0.0, XPU_NGP_MODE_INDX : 0.0}
+        com.xiaopeng.xmart.camera(Pid:1802) mListenerBinder:android.os.BinderProxy@f37e59f mRateMap:{MCU_IG_DATA : 0.0}
+        com.xiaopeng.xmart.camera(Pid:1802) mListenerBinder:android.os.BinderProxy@e4cc7f9 mRateMap:{AVM_DISPLAY_MODE : 0.0, AVM_WORK_ST : 0.0}
+        com.xiaopeng.xmart.camera(Pid:1802) mListenerBinder:android.os.BinderProxy@c3db7f0 mRateMap:{BCM_LRTURNLAMP_ACTIVE_ST : 0.0}
+        com.xiaopeng.airplay(Pid:1841) mListenerBinder:android.os.BinderProxy@aa4db0b mRateMap:{MCU_IG_DATA : 0.0, MCU_FACTORY_MODE : 0.0}
+        com.xiaopeng.UnityService(Pid:1867) mListenerBinder:android.os.BinderProxy@210ac85 mRateMap:{MCU_IG_DATA : 0.0}
+        com.xiaopeng.chargecontrol(Pid:1896) mListenerBinder:android.os.BinderProxy@9313b32 mRateMap:{VCU_BMS_SOCDISP : 0.0, VCU_CURRENT_GEARLEV : 0.0, VCU_BATWARM_STDISP : 0.0, VCU_RESHEAT_MANATIME : 0.0, VCU_V2L_POWERLIMIT : 0.0, VCU_DSTBAT_DISP : 0.0, VCU_DCC_CHRGSTOP_REA : 0.0, VCU_BATCOLD_DISP : 0.0, VCU_CHGSPEED_SLOW_DSP : 0.0, VCU_CHARGE_GUN_STATUS : 0.0, VCU_CHARGE_STATUS : 0.0, VCU_CHARGE_COMPLETE_TIME : 0.0, VCU_BAT_KEEP_TEMP_MODE : 0.0, VCU_RANDIS_MODE : 0.0, VCU_DSTBAT_DISP_NEW : 0.0, VCU_DSTBAT_DISP_CLTC : 0.0, OBC_FAULT_PHASE_LOSS : 0.0, VCU_OBC_DCVOLT : 0.0, VCU_OBC_DCCUR : 0.0, VCU_DCCCS_CURR : 0.0, VCU_DCCCS_SUMU : 0.0, VCU_VEHELC_CONSP_100M : 0.0, VCU_VEHELC_CONSP_AVG : 0.0, VCU_DISCHARGE_BATTCAP_FLOAT : 0.0, VCU_DSTBAT_DISP_CLTC_FLOAT : 0.0, VCU_DSTBAT_DISP_WLTP_FLOAT : 0.0, VCU_DSTBAT_DISP_NEDC_FLOAT : 0.0}
+        com.xiaopeng.chargecontrol(Pid:1896) mListenerBinder:android.os.BinderProxy@4aba083 mRateMap:{BMS_CHARGE_MODE : 0.0}
+        com.xiaopeng.chargecontrol(Pid:1896) mListenerBinder:android.os.BinderProxy@348c01 mRateMap:{ICM_SYNC_SIGNAL : 0.0, ICM_CONNECTED : 0.0}
+        com.xiaopeng.chargecontrol(Pid:1896) mListenerBinder:android.os.BinderProxy@15ce73d mRateMap:{XPU_NEDC_STATUS : 0.0}
+        com.xiaopeng.chargecontrol(Pid:1896) mListenerBinder:android.os.BinderProxy@2ce1aa6 mRateMap:{MCU_IG_DATA : 0.0}
+        com.xiaopeng.chargecontrol(Pid:1896) mListenerBinder:android.os.BinderProxy@441ce7 mRateMap:{TBOX_CHARGE_STOP_SOC : 0.0, TBOX_APPOINT_CHG_SET : 0.0, TBOX_APPOINT_KEEP_TEMP : 0.0}
+        com.xiaopeng.chargecontrol(Pid:1896) mListenerBinder:android.os.BinderProxy@f78e094 mRateMap:{BCM_CHARG_GUNL_ST : 0.0, BCM_POWERMODE : 0.0}
+        com.xiaopeng.privacycentral(Pid:1913) mListenerBinder:android.os.BinderProxy@419f060 mRateMap:{MCU_IG_DATA : -1.0}
+        com.xiaopeng.privacycentral(Pid:1913) mListenerBinder:android.os.BinderProxy@fbb9c63 mRateMap:{VCU_CURRENT_GEARLEV : -1.0}
+        com.xiaopeng.montecarlo(Pid:1980) mListenerBinder:android.os.BinderProxy@317ae2c mRateMap:{HVAC_POWER_ON_XP : 0.0}
+        com.xiaopeng.montecarlo(Pid:1980) mListenerBinder:android.os.BinderProxy@4d7200 mRateMap:{HIGH_BEAM_LIGHTS_STATE : 0.0, BCM_DRIVERSEAT_OCCUPIED : 0.0, BCM_TRUNKAJAR : 0.0, BCM_LOW_BEAM : 0.0, BCM_BONNET : 0.0, BCM_POWERMODE : 0.0, BCM_DOOR : 0.0, BCM_LRTURNLAMP_ACTIVE_ST : 0.0}
+        com.xiaopeng.montecarlo(Pid:1980) mListenerBinder:android.os.BinderProxy@e33d87e mRateMap:{SCU_BSD_RIGHT_WARNING : 0.0, SCU_BSD_LEFT_WARNING : 0.0, SCU_XPILOT_ST : 0.0, SCU_ACC_ST : 0.0, SCU_MODE_INDEX : 0.0, SCU_RCW_WARNING : 0.0, SCU_NGP_OPEBUTTON_ST : 0.0, SCU_NGP_XPILOTST : 0.0, SCU_MRR_ASSIST_SYSST : 0.0}
+        com.xiaopeng.montecarlo(Pid:1980) mListenerBinder:android.os.BinderProxy@7678118 mRateMap:{XPU_NEDC_STATUS : 0.0, XPU_NAVI_CONFIRM_PROTO : 0.0}
+        com.xiaopeng.montecarlo(Pid:1980) mListenerBinder:android.os.BinderProxy@5b5ba39 mRateMap:{VCU_BMS_SOCDISP : 0.0, VCU_CURRENT_GEARLEV : 0.0, VCU_CHARGE_STATUS : 0.0, VCU_RANDIS_MODE : 0.0, VCU_DSTBAT_DISP_CLTC_FLOAT : 0.0, VCU_DSTBAT_DISP_WLTP_FLOAT : 0.0, VCU_DSTBAT_DISP_NEDC_FLOAT : 0.0}
+        com.xiaopeng.montecarlo(Pid:1980) mListenerBinder:android.os.BinderProxy@77dc1df mRateMap:{MCU_IG_DATA : 0.0, MCU_FACTORY_MODE : 0.0}
+        com.xiaopeng.montecarlo(Pid:1980) mListenerBinder:android.os.BinderProxy@730fe8a mRateMap:{IMU_SCULOCAT_CARSPEED : 0.0}
+        com.xiaopeng.montecarlo(Pid:1980) mListenerBinder:android.os.BinderProxy@a2ec0f5 mRateMap:{ICM_NEEDNAVI : 0.0, ICM_CONNECTED : 0.0}
+        com.xiaopeng.montecarlo(Pid:1980) mListenerBinder:android.os.BinderProxy@6269cfb mRateMap:{TBOX_CDU_APN : 0.0}
+        com.xiaopeng.hiddenCam(Pid:2022) mListenerBinder:android.os.BinderProxy@99ca3a9 mRateMap:{BCM_CENTRAL_LOCK_SW : 0.0, BCM_ENVR_MODE : 0.0}
+        com.xiaopeng.hiddenCam(Pid:2022) mListenerBinder:android.os.BinderProxy@280e0cf mRateMap:{XPU_CONNECTED : 0.0, XPU_VEH_LOCATION_PROTO : 0.0}
+        com.xiaopeng.hiddenCam(Pid:2022) mListenerBinder:android.os.BinderProxy@f455d2e mRateMap:{MCU_IG_DATA : 0.0}
+        com.xiaopeng.hiddenCam(Pid:2022) mListenerBinder:android.os.BinderProxy@64e1e3a mRateMap:{TBOX_CDU_APN : 0.0}
+        com.xiaopeng.hiddenCam(Pid:2022) mListenerBinder:android.os.BinderProxy@4a15b30 mRateMap:{VCU_CURRENT_GEARLEV : 0.0, VCU_CHARGE_STATUS : 0.0}
+        com.xiaopeng.hiddenCam(Pid:2022) mListenerBinder:android.os.BinderProxy@2f2d165 mRateMap:{AVM_WORK_ST : 0.0}
+        com.xiaopeng.hiddenCam(Pid:2022) mListenerBinder:android.os.BinderProxy@b4ad4e2 mRateMap:{SCU_OPERATION_TIPS : 0.0, SCU_NGP_MODE_STATUS : 0.0, SCU_ICM_CDU_AP_ST : 0.0, SCU_FEATURE_DATA : 0.0, SCU_LAVMSLOT : 0.0, SCU_RAVMSLOT : 0.0}
+        com.xiaopeng.carhvac(Pid:2083) mListenerBinder:android.os.BinderProxy@202c81d mRateMap:{ENV_OUTSIDE_TEMPERATURE : 0.0, HVAC_FAN_SPEED : 0.0, HVAC_FAN_DIRECTION : 0.0, HVAC_RECIRC_ON : 0.0, HVAC_TEMPERATURE_SET : 0.0, HVAC_PM25 : 0.0, HVAC_AIR_QUALITY_LEVEL : 0.0, HVAC_SETTEMP_SYNCST : 0.0, HVAC_DRV_LEFTHORZ : 0.0, HVAC_DRV_LEFTVERT : 0.0, HVAC_DRV_RIGHTHORZ : 0.0, HVAC_DRV_RIGHTVERT : 0.0, HVAC_PSN_LEFTHORZ : 0.0, HVAC_PSN_LEFTVERT : 0.0, HVAC_PSN_RIGHTHORZ : 0.0, HVAC_PSN_RIGHTVERT : 0.0, HVAC_AQS : 0.0, HVAC_EAVSWEEP_WIND : 0.0, HVAC_ECON : 0.0, HVAC_DRV_WINDMODE : 0.0, HVAC_PSN_WINDMODE : 0.0, HVAC_IONIZER : 0.0, HVAC_WINDMODE_COLOUR : 0.0, HVAC_DEFROSTER_XP : 0.0, HVAC_AC_ON_XP : 0.0, HVAC_AUTO_ON_XP : 0.0, HVAC_POWER_ON_XP : 0.0, HVAC_AFTER_BLOW : 0.0, HVAC_AUTO_DEFOG_SET : 0.0, HVAC_AUTO_DEFOG_WORK_ST : 0.0, HVAC_TEMPERATURE_PSN_SET : 0.0, HVAC_INNER_TEMPERATURE : 0.0}
+        com.xiaopeng.carhvac(Pid:2083) mListenerBinder:android.os.BinderProxy@7421ac7 mRateMap:{VCU_BMS_SOCDISP : 0.0, VCU_CURRENT_GEARLEV : 0.0, VCU_EVSYS_READYST : 0.0}
+        com.xiaopeng.carhvac(Pid:2083) mListenerBinder:android.os.BinderProxy@83838f4 mRateMap:{HVAC_SEAT_VENTILATION : 0.0, BCM_DRIVERSEAT_OCCUPIED : 0.0, BCM_REAR_DEFROST_ON : 0.0, BCM_SEAT_HEAT_LEVEL : 0.0, BCM_MIRRORHEAT : 0.0, BCM_PSNSEAT_HEAT_LEVEL : 0.0}
+        com.xiaopeng.carhvac(Pid:2083) mListenerBinder:android.os.BinderProxy@3efe406 mRateMap:{MCU_IG_DATA : 0.0}
+        com.xiaopeng.autopilot(Pid:2142) mListenerBinder:android.os.BinderProxy@5e994fa mRateMap:{MCU_IG_DATA : 0.0}
+        com.xiaopeng.autopilot(Pid:2142) mListenerBinder:android.os.BinderProxy@334caab mRateMap:{VCU_CURRENT_GEARLEV : 0.0, VCU_DRIMODE_FB : 0.0}
+        com.xiaopeng.autopilot(Pid:2142) mListenerBinder:android.os.BinderProxy@bb5de10 mRateMap:{XPU_CONNECTED : 0.0}
+        com.xiaopeng.device.communication(Pid:2154) mListenerBinder:android.os.BinderProxy@cc41ee1 mRateMap:{ICM_CRASH_INFO : 0.0}
+        com.xiaopeng.device.communication(Pid:2154) mListenerBinder:android.os.BinderProxy@cc96048 mRateMap:{MCU_IG_DATA : 0.0}
+        com.xiaopeng.carcontrol(Pid:2161) mListenerBinder:android.os.BinderProxy@fd3ddd5 mRateMap:{MSMD_SEATHORZPOS : 0.0, MSMD_SEATVERTICALPOS : 0.0, MSMD_SEATILTINGPOS : 0.0, MSMD_SEATLEGHEIGHTPOS : 0.0}
+        com.xiaopeng.carcontrol(Pid:2161) mListenerBinder:android.os.BinderProxy@9d96dde mRateMap:{VCU_ENERGY_RECOVERY : 0.0, VCU_BMS_SOCDISP : 0.0, VCU_CURRENT_GEARLEV : 0.0, VCU_EVSYS_READYST : 0.0, VCU_BRKPEDAL_ST : 0.0, VCU_CHARGE_GUN_STATUS : 0.0, VCU_CHARGE_STATUS : 0.0, VCU_DRIVE_MODE : 0.0, VCU_NGEAR_WARNINGSW : 0.0, VCU_CRUISECONTROL_STDISP : 0.0, VCU_DSTBAT_DISP_CLTC_FLOAT : 0.0, VCU_DSTBAT_DISP_WLTP_FLOAT : 0.0, VCU_DSTBAT_DISP_NEDC_FLOAT : 0.0}
+        com.xiaopeng.carcontrol(Pid:2161) mListenerBinder:android.os.BinderProxy@18af28d mRateMap:{TPMS_SENSOR_RESET : 0.0, TPMS_PRWARN_ALL : 0.0, TPMS_TEMPWARN_ALL : 0.0, TPMS_TEMP_ALL : 0.0, TPMS_PRFL : 0.0, TPMS_PRFR : 0.0, TPMS_PRRL : 0.0, TPMS_PRRR : 0.0}
+        com.xiaopeng.carcontrol(Pid:2161) mListenerBinder:android.os.BinderProxy@c9db28c mRateMap:{STEERING_WHEEL_EPS : 0.0}
+        com.xiaopeng.carcontrol(Pid:2161) mListenerBinder:android.os.BinderProxy@9a143b7 mRateMap:{AVAS_SWSTCMD : 0.0, AVAS_LOWSPEEDSOUND_CFG : 0.0}
+        com.xiaopeng.carcontrol(Pid:2161) mListenerBinder:android.os.BinderProxy@9ab0a8e mRateMap:{XPU_NEDC_STATUS : 0.0, XPU_AP_REMOTE_SW : 0.0, XPU_NGP_ULC_SW : 0.0, XPU_NGP_OPTIMAL_LANE_SW : 0.0, XPU_ISLC_DRIVER_SET : 0.0, XPU_NGP_CUSTOM_SPD_SW : 0.0, XPU_NGP_CUSTOM_SPD_COUNT1 : 0.0, XPU_NGP_CUSTOM_SPD_COUNT2 : 0.0}
+        com.xiaopeng.carcontrol(Pid:2161) mListenerBinder:android.os.BinderProxy@8e645 mRateMap:{DHC_ACTIVE_SW : 0.0}
+        com.xiaopeng.carcontrol(Pid:2161) mListenerBinder:android.os.BinderProxy@41e6c42 mRateMap:{BCM_MSB_ACTIVE : 0.0}
+        com.xiaopeng.carcontrol(Pid:2161) mListenerBinder:android.os.BinderProxy@28a89ea mRateMap:{ICM_SYNC_SIGNAL : 0.0, ICM_CONNECTED : 0.0, ICM_TOTAL_ODOMETER : 0.0, ICM_TRIP_SINC_IGON : 0.0, ICM_TRIP_SINC_CHRG : 0.0, ICM_TRIPA : 0.0, ICM_TRIPB : 0.0}
+        com.xiaopeng.carcontrol(Pid:2161) mListenerBinder:android.os.BinderProxy@8c19bbf mRateMap:{ESC_ESP : 0.0, ESC_AVH : 0.0, ESP_ESP_FAULT : 0.0, ESP_AVH_FAULT : 0.0, ESP_APBSYS_ST : 0.0, IBT_HBC_REQ : 0.0}
+        com.xiaopeng.carcontrol(Pid:2161) mListenerBinder:android.os.BinderProxy@88c919 mRateMap:{MCU_IG_DATA : 0.0, MCU_REMIND_WARNING : 0.0, MSMD_MCU_WELCOME : 0.0, MCU_BLE_ID_DATA : 0.0}
+        com.xiaopeng.carcontrol(Pid:2161) mListenerBinder:android.os.BinderProxy@2fc6453 mRateMap:{BCM_DRVSEAT_BELTSBR_WARNING : 0.0, BCM_PSNGRSEAT_BELTSBR_WARNING : 0.0, SRS_PSNGR_OCCUPANCY_ST : 0.0}
+        com.xiaopeng.carcontrol(Pid:2161) mListenerBinder:android.os.BinderProxy@fb96b78 mRateMap:{MCU_LLU_SW : 0.0, MCU_LLU_WAKEWAIT_SW : 0.0, MCU_LLU_SLEEP_SW : 0.0, MCU_LLU_CHARGING_SW : 0.0}
+        com.xiaopeng.carcontrol(Pid:2161) mListenerBinder:android.os.BinderProxy@4412a89 mRateMap:{TBOX_BLE_CONNECTEDST : 0.0}
+        com.xiaopeng.carcontrol(Pid:2161) mListenerBinder:android.os.BinderProxy@37f5ab6 mRateMap:{HIGH_BEAM_LIGHTS_STATE : 0.0, BCM_WIN_LOCK_ST : 0.0, FOG_LIGHTS_SWITCH_XP : 0.0, BCM_DRIVERSEAT_OCCUPIED : 0.0, BCM_CENTRAL_LOCK_SW : 0.0, BCM_TRUNKAJAR : 0.0, BCM_WIPERSERVICE_SW : 0.0, BCM_PARKING_LAMP : 0.0, BCM_FOLLOW_ME_HOME : 0.0, BCM_AUTO_UNLOCK : 0.0, BCM_LOW_BEAM : 0.0, BCM_FRONT_LIGHT_GROUP_MODE : 0.0, BCM_BONNET : 0.0, BCM_L_CHARGER_PORT : 0.0, BCM_R_CHARGER_PORT : 0.0, BCM_FOLLOW_ME_HOME_TIME : 0.0, BCM_CHILDLOCK_SW : 0.0, BCM_CWCCHRG_ST : 0.0, BCM_CWCCHRG_ABNORMAL_WARNING : 0.0, BCM_LOCKWIN_CFG : 0.0, BCM_POLLING_LOCK_CFG : 0.0, BCM_POLLING_UNLOCK_CFG : 0.0, BCM_RAIN_DETEC_SENCFG : 0.0, BCM_PAKLIGHT_FMB_CFG : 0.0, BCM_DOOR_UNLOCK_REQRES : 0.0, BCM_READY_ENABLE : 0.0, BCM_BRKPEDAL_ST : 0.0, BCM_ENVR_MODE : 0.0, BCM_CWC_SW : 0.0, BCM_DOOR : 0.0, BCM_PACKING_LAMP_OUTPUT : 0.0, BCM_LRTURNLAMP_ACTIVE_ST : 0.0, BCM_LR_DRL_OUTPUT_ST : 0.0, CDU_IBCM_RLPOS : 0.0, CDU_IBCM_FLPOS : 0.0, CDU_IBCM_FRPOS : 0.0, CDU_IBCM_RRPOS : 0.0}
+        com.xiaopeng.carcontrol(Pid:2161) mListenerBinder:android.os.BinderProxy@7818251 mRateMap:{ATL_AUTOBRIGHTNESSSW : 0.0, ATL_OPEN : 0.0}
+        com.xiaopeng.carcontrol(Pid:2161) mListenerBinder:android.os.BinderProxy@2d5c724 mRateMap:{SCU_FCWAEB_SW : 0.0, SCU_LDW_SW : 0.0, SCU_IHB_SW : 0.0, SCU_BSD_SW : 0.0, SCU_RCTA_SW : 0.0, SCU_RCW_SW : 0.0, SCU_DOW_SW : 0.0, SCU_LCS_SW : 0.0, SCU_ISLC_SW : 0.0, SCU_LCC_SW : 0.0, SCU_HIC_SW : 0.0, SCU_PHONE_PK_BTN : 0.0, SCU_PK_BTN : 0.0, SCU_REMOTE_PK_BTN : 0.0, SCU_OPERATION_TIPS : 0.0, SCU_ACC_ST : 0.0, SCU_RMIRROR_CTRL : 0.0, SCU_NGP_TIPS_WINDOWS_ST : 0.0, SCU_NGP_XPILOTST : 0.0, SCU_NGP_QUICKLANE_SW : 0.0, SCU_NGP_LCMODE_SW : 0.0, SCU_PARK_AP_SW : 0.0, SCU_DSM_SWITCH : 0.0}
+        com.xiaopeng.data.uploader(Pid:2182) mListenerBinder:android.os.BinderProxy@eb80dd7 mRateMap:{ICM_CRASH_INFO : 0.0, ICM_LOG_COMPRESS : 0.0}
+        com.xiaopeng.data.uploader(Pid:2182) mListenerBinder:android.os.BinderProxy@2287956 mRateMap:{MCU_IG_DATA : 0.0}
+        com.xiaopeng.carspeechservice(Pid:2227) mListenerBinder:android.os.BinderProxy@7bf3cbb mRateMap:{BCM_DRVSEAT_BELTSBR_WARNING : 0.0, BCM_PSNGRSEAT_BELTSBR_WARNING : 0.0, BCM_2NDLEFTSEAT_BELTSBR_WARNING : 0.0, BCM_2NDMIDSEAT_BELTSBR_WARNING : 0.0, BCM_2NDRIGHTSEAT_BELTSBR_WARNING : 0.0, SRS_PSNGR_OCCUPANCY_ST : 0.0}
+        com.xiaopeng.carspeechservice(Pid:2227) mListenerBinder:android.os.BinderProxy@f9ae997 mRateMap:{SCU_DSM_SWITCH : 0.0}
+        com.xiaopeng.carspeechservice(Pid:2227) mListenerBinder:android.os.BinderProxy@9226c16 mRateMap:{MCU_IG_DATA : 0.0}
+        com.xiaopeng.carspeechservice(Pid:2227) mListenerBinder:android.os.BinderProxy@9eba784 mRateMap:{MSMD_SEATHORZPOS : 0.0, MSMD_SEATVERTICALPOS : 0.0, MSMD_SEATILTINGPOS : 0.0}
+        com.xiaopeng.carspeechservice(Pid:2227) mListenerBinder:android.os.BinderProxy@d451ec0 mRateMap:{VCU_BMS_SOCDISP : 0.0, VCU_CURRENT_GEARLEV : 0.0, VCU_EVSYS_READYST : 0.0, VCU_DSTBAT_DISP : 0.0, VCU_EBS_BATT_SOC : 0.0, VCU_CHARGE_GUN_STATUS : 0.0, VCU_EXHIB_MODE_SW : 0.0}
+        com.xiaopeng.carspeechservice(Pid:2227) mListenerBinder:android.os.BinderProxy@4cb4154 mRateMap:{BCM_DRIVERSEAT_OCCUPIED : 0.0, BCM_TRUNKAJAR : 0.0, BCM_DOOR : 0.0, BCM_WIN_POS : 0.0}
+        com.xiaopeng.caraccount(Pid:2320) mListenerBinder:android.os.BinderProxy@e15e423 mRateMap:{TBOX_CDU_APN : 0.0}
+        com.xiaopeng.caraccount(Pid:2320) mListenerBinder:android.os.BinderProxy@8c9f9b4 mRateMap:{MCU_IG_DATA : 0.0, MCU_BLE_ID_DATA : -1.0}
+        com.xiaopeng.caraccount(Pid:2320) mListenerBinder:android.os.BinderProxy@ad1c952 mRateMap:{BCM_NFC_CARDIDINFO : 0.0}
+        com.xiaopeng.caraccount(Pid:2320) mListenerBinder:android.os.BinderProxy@e6fd20 mRateMap:{VCU_CURRENT_GEARLEV : 0.0}
+        com.xiaopeng.caraccount(Pid:2320) mListenerBinder:android.os.BinderProxy@a39b6d9 mRateMap:{ICM_SYNC_SIGNAL : 0.0, ICM_CONNECTED : 0.0}
+        com.xiaopeng.resourceservice(Pid:2376) mListenerBinder:android.os.BinderProxy@cd6a1c1 mRateMap:{VCU_CHARGE_GUN_STATUS : 0.0, VCU_RAW_CAR_SPEED : 0.0}
+        com.xiaopeng.resourceservice(Pid:2376) mListenerBinder:android.os.BinderProxy@3b20acb mRateMap:{MCU_IG_DATA : 0.0, MCU_FACTORY_MODE : 0.0}
+        com.xiaopeng.resourceservice(Pid:2376) mListenerBinder:android.os.BinderProxy@61aa2a8 mRateMap:{BCM_TRUNKAJAR : 0.0, BCM_BONNET : 0.0, BCM_DOOR : 0.0}
+        com.xiaopeng.configurationcenter(Pid:2434) mListenerBinder:android.os.BinderProxy@20aeb25 mRateMap:{MCU_IG_DATA : 0.0}
+        com.xiaopeng.xpime(Pid:2529) mListenerBinder:android.os.BinderProxy@851419a mRateMap:{MCU_IG_DATA : 0.0, MCU_BLE_ID_DATA : -1.0}
+        com.xiaopeng.musicradio(Pid:2663) mListenerBinder:android.os.BinderProxy@51f289e mRateMap:{MCU_IG_DATA : 0.0}
+        com.xiaopeng.musicradio(Pid:2663) mListenerBinder:android.os.BinderProxy@d05e795 mRateMap:{ICM_SYNC_SIGNAL : 0.0, ICM_CONNECTED : 0.0}
+        com.xiaopeng.musicradio(Pid:2663) mListenerBinder:android.os.BinderProxy@d4c59dd mRateMap:{SWS_KNOB_AM : 0.0, SWS_KNOB_FM : 0.0, SWS_KNOB_BT : 0.0, SWS_KNOB_WEB_RADIO : 0.0, SWS_KNOB_MUSIC : 0.0, SWS_UPLOAD_CAN_BUTTON : 0.0, SWS_KNOB_USB_MUSIC : 0.0, SWS_KNOB_TALKING_BOOK : 0.0, SWS_KNOB_VOICE_RESET_BUTTON : 0.0, SWS_KNOB_WIND_SPD : 0.0, SWS_KNOB_BACKLIGHT : 0.0, SWS_KNOB_TEMP : 0.0, SWS_BUTTON_RAWDATA : 0.0}
+        com.xiaopeng.privacyservice(Pid:2693) mListenerBinder:android.os.BinderProxy@8f1dd66 mRateMap:{VCU_CURRENT_GEARLEV : -1.0}
+        com.xiaopeng.privacyservice(Pid:2693) mListenerBinder:android.os.BinderProxy@35488a7 mRateMap:{MCU_IG_DATA : -1.0}
+        com.xiaopeng.btphone(Pid:3593) mListenerBinder:android.os.BinderProxy@14351bd mRateMap:{ICM_SYNC_SIGNAL : 0.0, ICM_CONNECTED : 0.0}
+        com.xiaopeng.xmart.cargallery(Pid:3838) mListenerBinder:android.os.BinderProxy@6035038 mRateMap:{MCU_IG_DATA : 0.0}
+        com.xiaopeng.xmart.cargallery(Pid:3838) mListenerBinder:android.os.BinderProxy@ee1b49b mRateMap:{VCU_CURRENT_GEARLEV : 0.0}
+        com.xiaopeng.aiot.coreservice(Pid:4110) mListenerBinder:android.os.BinderProxy@16f185a mRateMap:{AVM_DISPLAY_MODE : 0.0, AVM_WORK_ST : 0.0}
+        com.xiaopeng.aiot.coreservice(Pid:4110) mListenerBinder:android.os.BinderProxy@3581c13 mRateMap:{MCU_IG_DATA : 0.0, MCU_BLE_ID_DATA : -1.0}
+        com.xiaopeng.aiot.coreservice(Pid:4110) mListenerBinder:android.os.BinderProxy@de90849 mRateMap:{VCU_CURRENT_GEARLEV : 0.0}
+        com.xiaopeng.aiot.coreservice(Pid:4110) mListenerBinder:android.os.BinderProxy@db0e005 mRateMap:{VCU_BMS_SOCDISP : 0.0, VCU_CURRENT_GEARLEV : 0.0, VCU_CHARGE_GUN_STATUS : 0.0, VCU_CHARGE_STATUS : 0.0, VCU_CHARGE_COMPLETE_TIME : 0.0, VCU_RAW_CAR_SPEED : 0.0}
+        com.xiaopeng.aiot.coreservice(Pid:4110) mListenerBinder:android.os.BinderProxy@79e666f mRateMap:{BCM_DOOR : 0.0}
+        com.xiaopeng.aiot.coreservice(Pid:4110) mListenerBinder:android.os.BinderProxy@a819f7c mRateMap:{MCU_IG_DATA : 0.0}
+        com.xiaopeng.cardiagnosis(Pid:4181) mListenerBinder:android.os.BinderProxy@b8795b9 mRateMap:{TBOX_CONNECT_STATE : 0.0}
+        com.xiaopeng.cardiagnosis(Pid:4181) mListenerBinder:android.os.BinderProxy@c073768 mRateMap:{VCU_CHARGE_STATUS : 0.0}
+        com.xiaopeng.cardiagnosis(Pid:4181) mListenerBinder:android.os.BinderProxy@e6f4dfe mRateMap:{ICM_DIAGNOSIS_INFO : 0.0}
+        com.xiaopeng.cardiagnosis(Pid:4181) mListenerBinder:android.os.BinderProxy@f9bc95f mRateMap:{MCU_IG_DATA : 0.0}
+        com.xiaopeng.cardiagnosis(Pid:4181) mListenerBinder:android.os.BinderProxy@554fa8b mRateMap:{BCM_ATWS : 0.0}
+        com.xiaopeng.diagnostic(Pid:4247) mListenerBinder:android.os.BinderProxy@9f66026 mRateMap:{MCU_IG_DATA : 0.0, MSMD_MCU_WELCOME : 0.0}
+        com.xiaopeng.diagnostic(Pid:4247) mListenerBinder:android.os.BinderProxy@3cc6214 mRateMap:{VCU_ENERGY_RECOVERY : 0.0, VCU_BMS_SOCDISP : 0.0, VCU_CURRENT_GEARLEV : 0.0, VCU_EVSYS_READYST : 0.0, VCU_DSTBAT_DISP : 0.0, VCU_CHARGE_GUN_STATUS : 0.0, VCU_CHARGE_STATUS : 0.0, VCU_DRIVE_MODE : 0.0, VCU_CRUISECONTROL_STDISP : 0.0}
+        com.xiaopeng.diagnostic(Pid:4247) mListenerBinder:android.os.BinderProxy@3600abd mRateMap:{SWS_BUTTON_RAWDATA : 0.0}
+        com.xiaopeng.diagnostic(Pid:4247) mListenerBinder:android.os.BinderProxy@e5858b2 mRateMap:{HVAC_SEAT_VENTILATION : 0.0, BCM_DRIVERSEAT_OCCUPIED : 0.0, BCM_CENTRAL_LOCK_SW : 0.0, BCM_FOLLOW_ME_HOME : 0.0, BCM_AUTO_UNLOCK : 0.0, BCM_REAR_DEFROST_ON : 0.0, BCM_SEAT_HEAT_LEVEL : 0.0, BCM_L_CHARGER_PORT : 0.0, BCM_R_CHARGER_PORT : 0.0, BCM_FOLLOW_ME_HOME_TIME : 0.0, BCM_MIRRORHEAT : 0.0, BCM_PSNSEAT_HEAT_LEVEL : 0.0, BCM_CWCCHRG_ST : 0.0, BCM_CWCCHRG_ABNORMAL_WARNING : 0.0, BCM_RAIN_DETEC_SENCFG : 0.0, BCM_DOOR_UNLOCK_REQRES : 0.0, BCM_READY_ENABLE : 0.0, BCM_BRKPEDAL_ST : 0.0, CDU_IBCM_RLPOS : 0.0, CDU_IBCM_FLPOS : 0.0, CDU_IBCM_FRPOS : 0.0, CDU_IBCM_RRPOS : 0.0}
+        com.xiaopeng.diagnostic(Pid:4247) mListenerBinder:android.os.BinderProxy@296b467 mRateMap:{ICM_SYNC_SIGNAL : 0.0, ICM_CONNECTED : 0.0}
+        com.xiaopeng.privatecustomserviceback(Pid:4308) mListenerBinder:android.os.BinderProxy@b6e4c0a mRateMap:{BCM_DRVSEAT_BELTSBR_WARNING : 0.0, BCM_PSNGRSEAT_BELTSBR_WARNING : 0.0}
+        com.xiaopeng.privatecustomserviceback(Pid:4308) mListenerBinder:android.os.BinderProxy@e02d475 mRateMap:{VCU_BMS_SOCDISP : 0.0, VCU_CURRENT_GEARLEV : 0.0, VCU_EVSYS_READYST : 0.0, VCU_CHARGE_GUN_STATUS : 0.0, VCU_EXHIB_MODE_SW : 0.0}
+        com.xiaopeng.privatecustomserviceback(Pid:4308) mListenerBinder:android.os.BinderProxy@b29dfac mRateMap:{BCM_DOOR : 0.0}
+        com.xiaopeng.privatecustomserviceback(Pid:4308) mListenerBinder:android.os.BinderProxy@2dd9c7b mRateMap:{MCU_IG_DATA : 0.0}
+        com.xiaopeng.traffic.control(Pid:4338) mListenerBinder:android.os.BinderProxy@2b4a98 mRateMap:{MCU_IG_DATA : 0.0}
+        com.xiaopeng.xgpt(Pid:4435) mListenerBinder:android.os.BinderProxy@cb942f1 mRateMap:{VCU_CURRENT_GEARLEV : 0.0}
+        com.xiaopeng.xgpt(Pid:4435) mListenerBinder:android.os.BinderProxy@4ad1ed6 mRateMap:{AVM_DISPLAY_MODE : 0.0, AVM_WORK_ST : 0.0}
+        com.xiaopeng.xgpt(Pid:4435) mListenerBinder:android.os.BinderProxy@c9f8557 mRateMap:{MCU_IG_DATA : 0.0}
+    mPropertyToClientsMap: 350
+        Property=MCU_IG_DATA(557847561, 0x21401409) Listeners size: 39
+            pid: 1396(com.xiaopeng.car.settings), mListenerBinder: android.os.BinderProxy@a9537ed
+            pid: 1338(com.xiaopeng.aiassistant), mListenerBinder: android.os.BinderProxy@7ca519c
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@745c7f6
+            pid: 1867(com.xiaopeng.UnityService), mListenerBinder: android.os.BinderProxy@210ac85
+            pid: 1841(com.xiaopeng.airplay), mListenerBinder: android.os.BinderProxy@aa4db0b
+            pid: 1896(com.xiaopeng.chargecontrol), mListenerBinder: android.os.BinderProxy@2ce1aa6
+            pid: 1980(com.xiaopeng.montecarlo), mListenerBinder: android.os.BinderProxy@77dc1df
+            pid: 2182(com.xiaopeng.data.uploader), mListenerBinder: android.os.BinderProxy@2287956
+            pid: 1758(com.xiaopeng.appstore), mListenerBinder: android.os.BinderProxy@5bb19ad
+            pid: 2022(com.xiaopeng.hiddenCam), mListenerBinder: android.os.BinderProxy@f455d2e
+            pid: 2154(com.xiaopeng.device.communication), mListenerBinder: android.os.BinderProxy@cc96048
+            pid: 2083(com.xiaopeng.carhvac), mListenerBinder: android.os.BinderProxy@3efe406
+            pid: 1913(com.xiaopeng.privacycentral), mListenerBinder: android.os.BinderProxy@419f060
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@88c919
+            pid: 2529(com.xiaopeng.xpime), mListenerBinder: android.os.BinderProxy@851419a
+            pid: 2376(com.xiaopeng.resourceservice), mListenerBinder: android.os.BinderProxy@3b20acb
+            pid: 2693(com.xiaopeng.privacyservice), mListenerBinder: android.os.BinderProxy@35488a7
+            pid: 1365(com.xiaopeng.systemui), mListenerBinder: android.os.BinderProxy@4b70843
+            pid: 1802(com.xiaopeng.xmart.camera), mListenerBinder: android.os.BinderProxy@f37e59f
+            pid: 2227(com.xiaopeng.carspeechservice), mListenerBinder: android.os.BinderProxy@9226c16
+            pid: 1802(com.xiaopeng.xmart.camera), mListenerBinder: android.os.BinderProxy@1eb748f
+            pid: 2434(com.xiaopeng.configurationcenter), mListenerBinder: android.os.BinderProxy@20aeb25
+            pid: 2142(com.xiaopeng.autopilot), mListenerBinder: android.os.BinderProxy@5e994fa
+            pid: 2320(com.xiaopeng.caraccount), mListenerBinder: android.os.BinderProxy@8c9f9b4
+            pid: 2663(com.xiaopeng.musicradio), mListenerBinder: android.os.BinderProxy@51f289e
+            pid: 3838(com.xiaopeng.xmart.cargallery), mListenerBinder: android.os.BinderProxy@6035038
+            pid: 4110(com.xiaopeng.aiot.coreservice), mListenerBinder: android.os.BinderProxy@3581c13
+            pid: 4110(com.xiaopeng.aiot.coreservice), mListenerBinder: android.os.BinderProxy@a819f7c
+            pid: 4247(com.xiaopeng.diagnostic), mListenerBinder: android.os.BinderProxy@9f66026
+            pid: 4181(com.xiaopeng.cardiagnosis), mListenerBinder: android.os.BinderProxy@f9bc95f
+            pid: 4308(com.xiaopeng.privatecustomserviceback), mListenerBinder: android.os.BinderProxy@2dd9c7b
+            pid: 4338(com.xiaopeng.traffic.control), mListenerBinder: android.os.BinderProxy@2b4a98
+            pid: 4435(com.xiaopeng.xgpt), mListenerBinder: android.os.BinderProxy@c9f8557
+        Property=VCU_CURRENT_GEARLEV(557847045, 0x21401205) Listeners size: 29
+            pid: 1396(com.xiaopeng.car.settings), mListenerBinder: android.os.BinderProxy@3f24604
+            pid: 1338(com.xiaopeng.aiassistant), mListenerBinder: android.os.BinderProxy@9f00d0f
+            pid: 1338(com.xiaopeng.aiassistant), mListenerBinder: android.os.BinderProxy@2f53834
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@b9359cc
+            pid: 1896(com.xiaopeng.chargecontrol), mListenerBinder: android.os.BinderProxy@9313b32
+            pid: 1980(com.xiaopeng.montecarlo), mListenerBinder: android.os.BinderProxy@5b5ba39
+            pid: 1783(com.xiaopeng.xpspeechservice.ms), mListenerBinder: android.os.BinderProxy@3df96c4
+            pid: 2022(com.xiaopeng.hiddenCam), mListenerBinder: android.os.BinderProxy@4a15b30
+            pid: 2083(com.xiaopeng.carhvac), mListenerBinder: android.os.BinderProxy@7421ac7
+            pid: 1913(com.xiaopeng.privacycentral), mListenerBinder: android.os.BinderProxy@fbb9c63
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@9d96dde
+            pid: 2693(com.xiaopeng.privacyservice), mListenerBinder: android.os.BinderProxy@8f1dd66
+            pid: 1365(com.xiaopeng.systemui), mListenerBinder: android.os.BinderProxy@fae69f2
+            pid: 2227(com.xiaopeng.carspeechservice), mListenerBinder: android.os.BinderProxy@d451ec0
+            pid: 1802(com.xiaopeng.xmart.camera), mListenerBinder: android.os.BinderProxy@f35333e
+            pid: 1802(com.xiaopeng.xmart.camera), mListenerBinder: android.os.BinderProxy@a78bb6d
+            pid: 1802(com.xiaopeng.xmart.camera), mListenerBinder: android.os.BinderProxy@fb2e7ee
+            pid: 2142(com.xiaopeng.autopilot), mListenerBinder: android.os.BinderProxy@334caab
+            pid: 2320(com.xiaopeng.caraccount), mListenerBinder: android.os.BinderProxy@e6fd20
+            pid: 3838(com.xiaopeng.xmart.cargallery), mListenerBinder: android.os.BinderProxy@ee1b49b
+            pid: 4110(com.xiaopeng.aiot.coreservice), mListenerBinder: android.os.BinderProxy@de90849
+            pid: 4110(com.xiaopeng.aiot.coreservice), mListenerBinder: android.os.BinderProxy@db0e005
+            pid: 4247(com.xiaopeng.diagnostic), mListenerBinder: android.os.BinderProxy@3cc6214
+            pid: 4308(com.xiaopeng.privatecustomserviceback), mListenerBinder: android.os.BinderProxy@e02d475
+            pid: 4435(com.xiaopeng.xgpt), mListenerBinder: android.os.BinderProxy@cb942f1
+        Property=ICM_CONNECTED(557848078, 0x2140160e) Listeners size: 11
+            pid: 1396(com.xiaopeng.car.settings), mListenerBinder: android.os.BinderProxy@236f217
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@55b34d0
+            pid: 1896(com.xiaopeng.chargecontrol), mListenerBinder: android.os.BinderProxy@348c01
+            pid: 1980(com.xiaopeng.montecarlo), mListenerBinder: android.os.BinderProxy@a2ec0f5
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@28a89ea
+            pid: 1365(com.xiaopeng.systemui), mListenerBinder: android.os.BinderProxy@4cd454a
+            pid: 2320(com.xiaopeng.caraccount), mListenerBinder: android.os.BinderProxy@a39b6d9
+            pid: 2663(com.xiaopeng.musicradio), mListenerBinder: android.os.BinderProxy@d05e795
+            pid: 4247(com.xiaopeng.diagnostic), mListenerBinder: android.os.BinderProxy@296b467
+            pid: 3593(com.xiaopeng.btphone), mListenerBinder: android.os.BinderProxy@14351bd
+        Property=BCM_DOOR(557915161, 0x21411c19) Listeners size: 11
+            pid: 1172(com.xiaopeng.xuiservice:opencarsvc), mListenerBinder: android.os.BinderProxy@7f1bc58
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@d7457ff
+            pid: 1980(com.xiaopeng.montecarlo), mListenerBinder: android.os.BinderProxy@4d7200
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@37f5ab6
+            pid: 2376(com.xiaopeng.resourceservice), mListenerBinder: android.os.BinderProxy@61aa2a8
+            pid: 2227(com.xiaopeng.carspeechservice), mListenerBinder: android.os.BinderProxy@4cb4154
+            pid: 4110(com.xiaopeng.aiot.coreservice), mListenerBinder: android.os.BinderProxy@79e666f
+            pid: 4308(com.xiaopeng.privatecustomserviceback), mListenerBinder: android.os.BinderProxy@b29dfac
+        Property=VCU_CHARGE_STATUS(557847081, 0x21401229) Listeners size: 11
+            pid: 905(system), mListenerBinder: android.os.BinderProxy@cae98b3
+            pid: 1338(com.xiaopeng.aiassistant), mListenerBinder: android.os.BinderProxy@aa77a5
+            pid: 1338(com.xiaopeng.aiassistant), mListenerBinder: android.os.BinderProxy@af8eb88
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@b9359cc
+            pid: 1896(com.xiaopeng.chargecontrol), mListenerBinder: android.os.BinderProxy@9313b32
+            pid: 1980(com.xiaopeng.montecarlo), mListenerBinder: android.os.BinderProxy@5b5ba39
+            pid: 2022(com.xiaopeng.hiddenCam), mListenerBinder: android.os.BinderProxy@4a15b30
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@9d96dde
+            pid: 4110(com.xiaopeng.aiot.coreservice), mListenerBinder: android.os.BinderProxy@db0e005
+            pid: 4181(com.xiaopeng.cardiagnosis), mListenerBinder: android.os.BinderProxy@c073768
+            pid: 4247(com.xiaopeng.diagnostic), mListenerBinder: android.os.BinderProxy@3cc6214
+        Property=VCU_BMS_SOCDISP(557847042, 0x21401202) Listeners size: 10
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@b9359cc
+            pid: 1896(com.xiaopeng.chargecontrol), mListenerBinder: android.os.BinderProxy@9313b32
+            pid: 1980(com.xiaopeng.montecarlo), mListenerBinder: android.os.BinderProxy@5b5ba39
+            pid: 2083(com.xiaopeng.carhvac), mListenerBinder: android.os.BinderProxy@7421ac7
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@9d96dde
+            pid: 1365(com.xiaopeng.systemui), mListenerBinder: android.os.BinderProxy@fae69f2
+            pid: 2227(com.xiaopeng.carspeechservice), mListenerBinder: android.os.BinderProxy@d451ec0
+            pid: 4110(com.xiaopeng.aiot.coreservice), mListenerBinder: android.os.BinderProxy@db0e005
+            pid: 4247(com.xiaopeng.diagnostic), mListenerBinder: android.os.BinderProxy@3cc6214
+            pid: 4308(com.xiaopeng.privatecustomserviceback), mListenerBinder: android.os.BinderProxy@e02d475
+        Property=BCM_DRIVERSEAT_OCCUPIED(557849607, 0x21401c07) Listeners size: 10
+            pid: 1172(com.xiaopeng.xuiservice:opencarsvc), mListenerBinder: android.os.BinderProxy@7f1bc58
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@d7457ff
+            pid: 1980(com.xiaopeng.montecarlo), mListenerBinder: android.os.BinderProxy@4d7200
+            pid: 2083(com.xiaopeng.carhvac), mListenerBinder: android.os.BinderProxy@83838f4
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@37f5ab6
+            pid: 2227(com.xiaopeng.carspeechservice), mListenerBinder: android.os.BinderProxy@4cb4154
+            pid: 4247(com.xiaopeng.diagnostic), mListenerBinder: android.os.BinderProxy@e5858b2
+        Property=ICM_SYNC_SIGNAL(554702353, 0x21101611) Listeners size: 9
+            pid: 1396(com.xiaopeng.car.settings), mListenerBinder: android.os.BinderProxy@236f217
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@55b34d0
+            pid: 1896(com.xiaopeng.chargecontrol), mListenerBinder: android.os.BinderProxy@348c01
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@28a89ea
+            pid: 1365(com.xiaopeng.systemui), mListenerBinder: android.os.BinderProxy@4cd454a
+            pid: 2320(com.xiaopeng.caraccount), mListenerBinder: android.os.BinderProxy@a39b6d9
+            pid: 2663(com.xiaopeng.musicradio), mListenerBinder: android.os.BinderProxy@d05e795
+            pid: 4247(com.xiaopeng.diagnostic), mListenerBinder: android.os.BinderProxy@296b467
+            pid: 3593(com.xiaopeng.btphone), mListenerBinder: android.os.BinderProxy@14351bd
+        Property=AVM_WORK_ST(557855760, 0x21403410) Listeners size: 8
+            pid: 2022(com.xiaopeng.hiddenCam), mListenerBinder: android.os.BinderProxy@2f2d165
+            pid: 1802(com.xiaopeng.xmart.camera), mListenerBinder: android.os.BinderProxy@e4cc7f9
+            pid: 1802(com.xiaopeng.xmart.camera), mListenerBinder: android.os.BinderProxy@1d133a2
+            pid: 1802(com.xiaopeng.xmart.camera), mListenerBinder: android.os.BinderProxy@45e631c
+            pid: 4110(com.xiaopeng.aiot.coreservice), mListenerBinder: android.os.BinderProxy@16f185a
+            pid: 4435(com.xiaopeng.xgpt), mListenerBinder: android.os.BinderProxy@4ad1ed6
+            pid: 801(unknown), mListenerBinder: android.os.BinderProxy@68e1d2d
+        Property=VCU_CHARGE_GUN_STATUS(557847080, 0x21401228) Listeners size: 8
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@b9359cc
+            pid: 1896(com.xiaopeng.chargecontrol), mListenerBinder: android.os.BinderProxy@9313b32
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@9d96dde
+            pid: 2376(com.xiaopeng.resourceservice), mListenerBinder: android.os.BinderProxy@cd6a1c1
+            pid: 2227(com.xiaopeng.carspeechservice), mListenerBinder: android.os.BinderProxy@d451ec0
+            pid: 4110(com.xiaopeng.aiot.coreservice), mListenerBinder: android.os.BinderProxy@db0e005
+            pid: 4247(com.xiaopeng.diagnostic), mListenerBinder: android.os.BinderProxy@3cc6214
+            pid: 4308(com.xiaopeng.privatecustomserviceback), mListenerBinder: android.os.BinderProxy@e02d475
+        Property=XPU_NEDC_STATUS(557856775, 0x21403807) Listeners size: 7
+            pid: 1396(com.xiaopeng.car.settings), mListenerBinder: android.os.BinderProxy@6e13622
+            pid: 1896(com.xiaopeng.chargecontrol), mListenerBinder: android.os.BinderProxy@15ce73d
+            pid: 1980(com.xiaopeng.montecarlo), mListenerBinder: android.os.BinderProxy@7678118
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@9ab0a8e
+            pid: 1802(com.xiaopeng.xmart.camera), mListenerBinder: android.os.BinderProxy@e88eab5
+            pid: 1802(com.xiaopeng.xmart.camera), mListenerBinder: android.os.BinderProxy@7f2a169
+        Property=VCU_EVSYS_READYST(557847056, 0x21401210) Listeners size: 7
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@b9359cc
+            pid: 2083(com.xiaopeng.carhvac), mListenerBinder: android.os.BinderProxy@7421ac7
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@9d96dde
+            pid: 1365(com.xiaopeng.systemui), mListenerBinder: android.os.BinderProxy@fae69f2
+            pid: 2227(com.xiaopeng.carspeechservice), mListenerBinder: android.os.BinderProxy@d451ec0
+            pid: 4247(com.xiaopeng.diagnostic), mListenerBinder: android.os.BinderProxy@3cc6214
+            pid: 4308(com.xiaopeng.privatecustomserviceback), mListenerBinder: android.os.BinderProxy@e02d475
+        Property=VCU_RAW_CAR_SPEED(559944229, 0x21601225) Listeners size: 6
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@b9359cc
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: com.android.car.CarConditionService$1@e545c91
+            pid: 2376(com.xiaopeng.resourceservice), mListenerBinder: android.os.BinderProxy@cd6a1c1
+            pid: 4110(com.xiaopeng.aiot.coreservice), mListenerBinder: android.os.BinderProxy@db0e005
+        Property=BCM_TRUNKAJAR(557849610, 0x21401c0a) Listeners size: 6
+            pid: 1172(com.xiaopeng.xuiservice:opencarsvc), mListenerBinder: android.os.BinderProxy@7f1bc58
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@d7457ff
+            pid: 1980(com.xiaopeng.montecarlo), mListenerBinder: android.os.BinderProxy@4d7200
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@37f5ab6
+            pid: 2376(com.xiaopeng.resourceservice), mListenerBinder: android.os.BinderProxy@61aa2a8
+            pid: 2227(com.xiaopeng.carspeechservice), mListenerBinder: android.os.BinderProxy@4cb4154
+        Property=BCM_DRVSEAT_BELTSBR_WARNING(557849612, 0x21401c0c) Listeners size: 6
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@3fe6d82
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@2fc6453
+            pid: 2227(com.xiaopeng.carspeechservice), mListenerBinder: android.os.BinderProxy@7bf3cbb
+            pid: 4308(com.xiaopeng.privatecustomserviceback), mListenerBinder: android.os.BinderProxy@b6e4c0a
+        Property=BCM_PSNGRSEAT_BELTSBR_WARNING(557849613, 0x21401c0d) Listeners size: 6
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@3fe6d82
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@2fc6453
+            pid: 2227(com.xiaopeng.carspeechservice), mListenerBinder: android.os.BinderProxy@7bf3cbb
+            pid: 4308(com.xiaopeng.privatecustomserviceback), mListenerBinder: android.os.BinderProxy@b6e4c0a
+        Property=TBOX_CDU_APN(554700817, 0x21101011) Listeners size: 5
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@d5130cd
+            pid: 1980(com.xiaopeng.montecarlo), mListenerBinder: android.os.BinderProxy@6269cfb
+            pid: 2022(com.xiaopeng.hiddenCam), mListenerBinder: android.os.BinderProxy@64e1e3a
+            pid: 1365(com.xiaopeng.systemui), mListenerBinder: android.os.BinderProxy@49005d8
+            pid: 2320(com.xiaopeng.caraccount), mListenerBinder: android.os.BinderProxy@e15e423
+        Property=SRS_PSNGR_OCCUPANCY_ST(557849679, 0x21401c4f) Listeners size: 5
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@3fe6d82
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@2fc6453
+            pid: 2227(com.xiaopeng.carspeechservice), mListenerBinder: android.os.BinderProxy@7bf3cbb
+        Property=MCU_FACTORY_MODE(557847658, 0x2140146a) Listeners size: 5
+            pid: 1396(com.xiaopeng.car.settings), mListenerBinder: android.os.BinderProxy@a9537ed
+            pid: 1841(com.xiaopeng.airplay), mListenerBinder: android.os.BinderProxy@aa4db0b
+            pid: 1980(com.xiaopeng.montecarlo), mListenerBinder: android.os.BinderProxy@77dc1df
+            pid: 2376(com.xiaopeng.resourceservice), mListenerBinder: android.os.BinderProxy@3b20acb
+        Property=BCM_CWCCHRG_ST(557849713, 0x21401c71) Listeners size: 5
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@d7457ff
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@37f5ab6
+            pid: 1365(com.xiaopeng.systemui), mListenerBinder: android.os.BinderProxy@36a98fd
+            pid: 4247(com.xiaopeng.diagnostic), mListenerBinder: android.os.BinderProxy@e5858b2
+        Property=BCM_BONNET(557849641, 0x21401c29) Listeners size: 5
+            pid: 1172(com.xiaopeng.xuiservice:opencarsvc), mListenerBinder: android.os.BinderProxy@7f1bc58
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@d7457ff
+            pid: 1980(com.xiaopeng.montecarlo), mListenerBinder: android.os.BinderProxy@4d7200
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@37f5ab6
+            pid: 2376(com.xiaopeng.resourceservice), mListenerBinder: android.os.BinderProxy@61aa2a8
+        Property=BCM_ENVR_MODE(557849794, 0x21401cc2) Listeners size: 5
+            pid: 1154(com.xiaopeng.xuiservice:iotservice), mListenerBinder: android.os.BinderProxy@7a7677a
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@d7457ff
+            pid: 2022(com.xiaopeng.hiddenCam), mListenerBinder: android.os.BinderProxy@99ca3a9
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@37f5ab6
+            pid: 1365(com.xiaopeng.systemui), mListenerBinder: android.os.BinderProxy@36a98fd
+        Property=CDU_IBCM_RLPOS(559946854, 0x21601c66) Listeners size: 4
+            pid: 1172(com.xiaopeng.xuiservice:opencarsvc), mListenerBinder: android.os.BinderProxy@7f1bc58
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@d7457ff
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@37f5ab6
+            pid: 4247(com.xiaopeng.diagnostic), mListenerBinder: android.os.BinderProxy@e5858b2
+        Property=CDU_IBCM_FLPOS(559946855, 0x21601c67) Listeners size: 4
+            pid: 1172(com.xiaopeng.xuiservice:opencarsvc), mListenerBinder: android.os.BinderProxy@7f1bc58
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@d7457ff
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@37f5ab6
+            pid: 4247(com.xiaopeng.diagnostic), mListenerBinder: android.os.BinderProxy@e5858b2
+        Property=CDU_IBCM_FRPOS(559946856, 0x21601c68) Listeners size: 4
+            pid: 1172(com.xiaopeng.xuiservice:opencarsvc), mListenerBinder: android.os.BinderProxy@7f1bc58
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@d7457ff
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@37f5ab6
+            pid: 4247(com.xiaopeng.diagnostic), mListenerBinder: android.os.BinderProxy@e5858b2
+        Property=CDU_IBCM_RRPOS(559946857, 0x21601c69) Listeners size: 4
+            pid: 1172(com.xiaopeng.xuiservice:opencarsvc), mListenerBinder: android.os.BinderProxy@7f1bc58
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@d7457ff
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@37f5ab6
+            pid: 4247(com.xiaopeng.diagnostic), mListenerBinder: android.os.BinderProxy@e5858b2
+        Property=VCU_DSTBAT_DISP_CLTC_FLOAT(559944314, 0x2160127a) Listeners size: 4
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@b9359cc
+            pid: 1896(com.xiaopeng.chargecontrol), mListenerBinder: android.os.BinderProxy@9313b32
+            pid: 1980(com.xiaopeng.montecarlo), mListenerBinder: android.os.BinderProxy@5b5ba39
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@9d96dde
+        Property=VCU_DSTBAT_DISP_WLTP_FLOAT(559944315, 0x2160127b) Listeners size: 4
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@b9359cc
+            pid: 1896(com.xiaopeng.chargecontrol), mListenerBinder: android.os.BinderProxy@9313b32
+            pid: 1980(com.xiaopeng.montecarlo), mListenerBinder: android.os.BinderProxy@5b5ba39
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@9d96dde
+        Property=MCU_BLE_ID_DATA(560993375, 0x2170145f) Listeners size: 4
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@88c919
+            pid: 2529(com.xiaopeng.xpime), mListenerBinder: android.os.BinderProxy@851419a
+            pid: 2320(com.xiaopeng.caraccount), mListenerBinder: android.os.BinderProxy@8c9f9b4
+            pid: 4110(com.xiaopeng.aiot.coreservice), mListenerBinder: android.os.BinderProxy@3581c13
+        Property=AVM_DISPLAY_MODE(557855745, 0x21403401) Listeners size: 4
+            pid: 1802(com.xiaopeng.xmart.camera), mListenerBinder: android.os.BinderProxy@e4cc7f9
+            pid: 1802(com.xiaopeng.xmart.camera), mListenerBinder: android.os.BinderProxy@1d133a2
+            pid: 4110(com.xiaopeng.aiot.coreservice), mListenerBinder: android.os.BinderProxy@16f185a
+            pid: 4435(com.xiaopeng.xgpt), mListenerBinder: android.os.BinderProxy@4ad1ed6
+        Property=BCM_2NDLEFTSEAT_BELTSBR_WARNING(557849614, 0x21401c0e) Listeners size: 4
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@3fe6d82
+            pid: 2227(com.xiaopeng.carspeechservice), mListenerBinder: android.os.BinderProxy@7bf3cbb
+        Property=BCM_2NDRIGHTSEAT_BELTSBR_WARNING(557849616, 0x21401c10) Listeners size: 4
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@3fe6d82
+            pid: 2227(com.xiaopeng.carspeechservice), mListenerBinder: android.os.BinderProxy@7bf3cbb
+        Property=VCU_DSTBAT_DISP(557847057, 0x21401211) Listeners size: 4
+            pid: 1896(com.xiaopeng.chargecontrol), mListenerBinder: android.os.BinderProxy@9313b32
+            pid: 1365(com.xiaopeng.systemui), mListenerBinder: android.os.BinderProxy@fae69f2
+            pid: 2227(com.xiaopeng.carspeechservice), mListenerBinder: android.os.BinderProxy@d451ec0
+            pid: 4247(com.xiaopeng.diagnostic), mListenerBinder: android.os.BinderProxy@3cc6214
+        Property=SCU_OPERATION_TIPS(557852187, 0x2140261b) Listeners size: 4
+            pid: 1154(com.xiaopeng.xuiservice:iotservice), mListenerBinder: android.os.BinderProxy@62a6b2b
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@9e747f7
+            pid: 2022(com.xiaopeng.hiddenCam), mListenerBinder: android.os.BinderProxy@b4ad4e2
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@2d5c724
+        Property=BCM_L_CHARGER_PORT(557849642, 0x21401c2a) Listeners size: 4
+            pid: 1172(com.xiaopeng.xuiservice:opencarsvc), mListenerBinder: android.os.BinderProxy@7f1bc58
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@d7457ff
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@37f5ab6
+            pid: 4247(com.xiaopeng.diagnostic), mListenerBinder: android.os.BinderProxy@e5858b2
+        Property=XPU_NGP_MODE_INDX(557856815, 0x2140382f) Listeners size: 4
+            pid: 1154(com.xiaopeng.xuiservice:iotservice), mListenerBinder: android.os.BinderProxy@64fbe70
+            pid: 1338(com.xiaopeng.aiassistant), mListenerBinder: android.os.BinderProxy@600926e
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@16c731e
+            pid: 1802(com.xiaopeng.xmart.camera), mListenerBinder: android.os.BinderProxy@7f2a169
+        Property=SCU_ACC_ST(557852212, 0x21402634) Listeners size: 4
+            pid: 1154(com.xiaopeng.xuiservice:iotservice), mListenerBinder: android.os.BinderProxy@62a6b2b
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@9e747f7
+            pid: 1980(com.xiaopeng.montecarlo), mListenerBinder: android.os.BinderProxy@e33d87e
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@2d5c724
+        Property=BCM_LRTURNLAMP_ACTIVE_ST(557915328, 0x21411cc0) Listeners size: 4
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@d7457ff
+            pid: 1980(com.xiaopeng.montecarlo), mListenerBinder: android.os.BinderProxy@4d7200
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@37f5ab6
+            pid: 1802(com.xiaopeng.xmart.camera), mListenerBinder: android.os.BinderProxy@c3db7f0
+        Property=VCU_DSTBAT_DISP_NEDC_FLOAT(559944326, 0x21601286) Listeners size: 4
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@b9359cc
+            pid: 1896(com.xiaopeng.chargecontrol), mListenerBinder: android.os.BinderProxy@9313b32
+            pid: 1980(com.xiaopeng.montecarlo), mListenerBinder: android.os.BinderProxy@5b5ba39
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@9d96dde
+        Property=HVAC_SEAT_VENTILATION(356517139, 0x15400513) Listeners size: 3
+            pid: 1172(com.xiaopeng.xuiservice:opencarsvc), mListenerBinder: android.os.BinderProxy@7f1bc58
+            pid: 2083(com.xiaopeng.carhvac), mListenerBinder: android.os.BinderProxy@83838f4
+            pid: 4247(com.xiaopeng.diagnostic), mListenerBinder: android.os.BinderProxy@e5858b2
+        Property=BCM_MIRRORHEAT(557849665, 0x21401c41) Listeners size: 3
+            pid: 1172(com.xiaopeng.xuiservice:opencarsvc), mListenerBinder: android.os.BinderProxy@7f1bc58
+            pid: 2083(com.xiaopeng.carhvac), mListenerBinder: android.os.BinderProxy@83838f4
+            pid: 4247(com.xiaopeng.diagnostic), mListenerBinder: android.os.BinderProxy@e5858b2
+        Property=SCU_MODE_INDEX(557852235, 0x2140264b) Listeners size: 3
+            pid: 1154(com.xiaopeng.xuiservice:iotservice), mListenerBinder: android.os.BinderProxy@62a6b2b
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@9e747f7
+            pid: 1980(com.xiaopeng.montecarlo), mListenerBinder: android.os.BinderProxy@e33d87e
+        Property=VCU_RANDIS_MODE(557847127, 0x21401257) Listeners size: 3
+            pid: 1896(com.xiaopeng.chargecontrol), mListenerBinder: android.os.BinderProxy@9313b32
+            pid: 1980(com.xiaopeng.montecarlo), mListenerBinder: android.os.BinderProxy@5b5ba39
+            pid: 1365(com.xiaopeng.systemui), mListenerBinder: android.os.BinderProxy@fae69f2
+        Property=VCU_EXHIB_MODE_SW(557847137, 0x21401261) Listeners size: 3
+            pid: 1365(com.xiaopeng.systemui), mListenerBinder: android.os.BinderProxy@fae69f2
+            pid: 2227(com.xiaopeng.carspeechservice), mListenerBinder: android.os.BinderProxy@d451ec0
+            pid: 4308(com.xiaopeng.privatecustomserviceback), mListenerBinder: android.os.BinderProxy@e02d475
+        Property=BCM_PSNSEAT_HEAT_LEVEL(557849701, 0x21401c65) Listeners size: 3
+            pid: 1172(com.xiaopeng.xuiservice:opencarsvc), mListenerBinder: android.os.BinderProxy@7f1bc58
+            pid: 2083(com.xiaopeng.carhvac), mListenerBinder: android.os.BinderProxy@83838f4
+            pid: 4247(com.xiaopeng.diagnostic), mListenerBinder: android.os.BinderProxy@e5858b2
+        Property=SCU_ALCCTRL_REMIND(557852274, 0x21402672) Listeners size: 3
+            pid: 1154(com.xiaopeng.xuiservice:iotservice), mListenerBinder: android.os.BinderProxy@62a6b2b
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@9e747f7
+        Property=BCM_CWCCHRG_ABNORMAL_WARNING(557849714, 0x21401c72) Listeners size: 3
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@37f5ab6
+            pid: 1365(com.xiaopeng.systemui), mListenerBinder: android.os.BinderProxy@36a98fd
+            pid: 4247(com.xiaopeng.diagnostic), mListenerBinder: android.os.BinderProxy@e5858b2
+        Property=SCU_MRR_ASSIST_SYSST(557917818, 0x2141267a) Listeners size: 3
+            pid: 1154(com.xiaopeng.xuiservice:iotservice), mListenerBinder: android.os.BinderProxy@62a6b2b
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@9e747f7
+            pid: 1980(com.xiaopeng.montecarlo), mListenerBinder: android.os.BinderProxy@e33d87e
+        Property=MSMD_MCU_WELCOME(557849724, 0x21401c7c) Listeners size: 3
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@745c7f6
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@88c919
+            pid: 4247(com.xiaopeng.diagnostic), mListenerBinder: android.os.BinderProxy@9f66026
+        Property=ESC_AVH(557851651, 0x21402403) Listeners size: 3
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@acd0cc9
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@8c19bbf
+        Property=BCM_CENTRAL_LOCK_SW(557849609, 0x21401c09) Listeners size: 3
+            pid: 2022(com.xiaopeng.hiddenCam), mListenerBinder: android.os.BinderProxy@99ca3a9
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@37f5ab6
+            pid: 4247(com.xiaopeng.diagnostic), mListenerBinder: android.os.BinderProxy@e5858b2
+        Property=TBOX_CONNECT_STATE(557846543, 0x2140100f) Listeners size: 3
+            pid: 4181(com.xiaopeng.cardiagnosis), mListenerBinder: android.os.BinderProxy@b8795b9
+        Property=BCM_LOW_BEAM(557849633, 0x21401c21) Listeners size: 3
+            pid: 1980(com.xiaopeng.montecarlo), mListenerBinder: android.os.BinderProxy@4d7200
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@37f5ab6
+            pid: 1365(com.xiaopeng.systemui), mListenerBinder: android.os.BinderProxy@36a98fd
+        Property=BCM_SEAT_HEAT_LEVEL(557849638, 0x21401c26) Listeners size: 3
+            pid: 1172(com.xiaopeng.xuiservice:opencarsvc), mListenerBinder: android.os.BinderProxy@7f1bc58
+            pid: 2083(com.xiaopeng.carhvac), mListenerBinder: android.os.BinderProxy@83838f4
+            pid: 4247(com.xiaopeng.diagnostic), mListenerBinder: android.os.BinderProxy@e5858b2
+        Property=SCU_LONGCTRL_REMIND(557852199, 0x21402627) Listeners size: 3
+            pid: 1154(com.xiaopeng.xuiservice:iotservice), mListenerBinder: android.os.BinderProxy@62a6b2b
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@9e747f7
+        Property=SCU_XPILOT_ST(557852200, 0x21402628) Listeners size: 3
+            pid: 1154(com.xiaopeng.xuiservice:iotservice), mListenerBinder: android.os.BinderProxy@62a6b2b
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@9e747f7
+            pid: 1980(com.xiaopeng.montecarlo), mListenerBinder: android.os.BinderProxy@e33d87e
+        Property=BCM_FRONT_LIGHT_GROUP_MODE(557849640, 0x21401c28) Listeners size: 3
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@d7457ff
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@37f5ab6
+            pid: 1365(com.xiaopeng.systemui), mListenerBinder: android.os.BinderProxy@36a98fd
+        Property=HVAC_POWER_ON_XP(557849130, 0x21401a2a) Listeners size: 3
+            pid: 1172(com.xiaopeng.xuiservice:opencarsvc), mListenerBinder: android.os.BinderProxy@d6031b1
+            pid: 1980(com.xiaopeng.montecarlo), mListenerBinder: android.os.BinderProxy@317ae2c
+            pid: 2083(com.xiaopeng.carhvac), mListenerBinder: android.os.BinderProxy@202c81d
+        Property=VCU_DRIVE_MODE(557847082, 0x2140122a) Listeners size: 3
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@9d96dde
+            pid: 1365(com.xiaopeng.systemui), mListenerBinder: android.os.BinderProxy@fae69f2
+            pid: 4247(com.xiaopeng.diagnostic), mListenerBinder: android.os.BinderProxy@3cc6214
+        Property=BCM_R_CHARGER_PORT(557849643, 0x21401c2b) Listeners size: 3
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@d7457ff
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@37f5ab6
+            pid: 4247(com.xiaopeng.diagnostic), mListenerBinder: android.os.BinderProxy@e5858b2
+        Property=SWS_BUTTON_RAWDATA(557916716, 0x2141222c) Listeners size: 3
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@fa9dfce
+            pid: 2663(com.xiaopeng.musicradio), mListenerBinder: android.os.BinderProxy@d4c59dd
+            pid: 4247(com.xiaopeng.diagnostic), mListenerBinder: android.os.BinderProxy@3600abd
+        Property=SCU_NGP_XPILOTST(557852318, 0x2140269e) Listeners size: 3
+            pid: 1338(com.xiaopeng.aiassistant), mListenerBinder: android.os.BinderProxy@7628f07
+            pid: 1980(com.xiaopeng.montecarlo), mListenerBinder: android.os.BinderProxy@e33d87e
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@2d5c724
+        Property=HVAC_FAN_SPEED(356517120, 0x15400500) Listeners size: 2
+            pid: 1172(com.xiaopeng.xuiservice:opencarsvc), mListenerBinder: android.os.BinderProxy@d6031b1
+            pid: 2083(com.xiaopeng.carhvac), mListenerBinder: android.os.BinderProxy@202c81d
+        Property=HVAC_FAN_DIRECTION(356517121, 0x15400501) Listeners size: 2
+            pid: 1172(com.xiaopeng.xuiservice:opencarsvc), mListenerBinder: android.os.BinderProxy@d6031b1
+            pid: 2083(com.xiaopeng.carhvac), mListenerBinder: android.os.BinderProxy@202c81d
+        Property=HVAC_RECIRC_ON(356517128, 0x15400508) Listeners size: 2
+            pid: 1172(com.xiaopeng.xuiservice:opencarsvc), mListenerBinder: android.os.BinderProxy@d6031b1
+            pid: 2083(com.xiaopeng.carhvac), mListenerBinder: android.os.BinderProxy@202c81d
+        Property=HVAC_TEMPERATURE_SET(358614275, 0x15600503) Listeners size: 2
+            pid: 1172(com.xiaopeng.xuiservice:opencarsvc), mListenerBinder: android.os.BinderProxy@d6031b1
+            pid: 2083(com.xiaopeng.carhvac), mListenerBinder: android.os.BinderProxy@202c81d
+        Property=TBOX_SOLDIER_CAMERASW(557846594, 0x21401042) Listeners size: 2
+            pid: 1396(com.xiaopeng.car.settings), mListenerBinder: android.os.BinderProxy@485b073
+            pid: 1802(com.xiaopeng.xmart.camera), mListenerBinder: android.os.BinderProxy@abd66ec
+        Property=TBOX_CAMERA_REMOTE_CTRL(554700825, 0x21101019) Listeners size: 2
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@d5130cd
+            pid: 1802(com.xiaopeng.xmart.camera), mListenerBinder: android.os.BinderProxy@abd66ec
+        Property=MCU_LLU_SW(557847625, 0x21401449) Listeners size: 2
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@d3e6c93
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@fb96b78
+        Property=VCU_CRUISECONTROL_STDISP(557847118, 0x2140124e) Listeners size: 2
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@9d96dde
+            pid: 4247(com.xiaopeng.diagnostic), mListenerBinder: android.os.BinderProxy@3cc6214
+        Property=MCU_LLU_CHARGING_SW(557847631, 0x2140144f) Listeners size: 2
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@d3e6c93
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@fb96b78
+        Property=MSMD_SEATHORZPOS(557849686, 0x21401c56) Listeners size: 2
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@fd3ddd5
+            pid: 2227(com.xiaopeng.carspeechservice), mListenerBinder: android.os.BinderProxy@9eba784
+        Property=MSMD_SEATVERTICALPOS(557849687, 0x21401c57) Listeners size: 2
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@fd3ddd5
+            pid: 2227(com.xiaopeng.carspeechservice), mListenerBinder: android.os.BinderProxy@9eba784
+        Property=MSMD_SEATILTINGPOS(557849688, 0x21401c58) Listeners size: 2
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@fd3ddd5
+            pid: 2227(com.xiaopeng.carspeechservice), mListenerBinder: android.os.BinderProxy@9eba784
+        Property=BCM_POWERMODE(557849700, 0x21401c64) Listeners size: 2
+            pid: 1896(com.xiaopeng.chargecontrol), mListenerBinder: android.os.BinderProxy@f78e094
+            pid: 1980(com.xiaopeng.montecarlo), mListenerBinder: android.os.BinderProxy@4d7200
+        Property=SCU_URADAR_VOICE_TONE(557852262, 0x21402666) Listeners size: 2
+            pid: 1154(com.xiaopeng.xuiservice:iotservice), mListenerBinder: android.os.BinderProxy@62a6b2b
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@9e747f7
+        Property=SCU_DOW_LWARNING(557852286, 0x2140267e) Listeners size: 2
+            pid: 1154(com.xiaopeng.xuiservice:iotservice), mListenerBinder: android.os.BinderProxy@62a6b2b
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@9e747f7
+        Property=SCU_DOW_RWARNING(557852287, 0x2140267f) Listeners size: 2
+            pid: 1154(com.xiaopeng.xuiservice:iotservice), mListenerBinder: android.os.BinderProxy@62a6b2b
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@9e747f7
+        Property=SCU_FCWAEB_SW(557852161, 0x21402601) Listeners size: 2
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@2d5c724
+        Property=HIGH_BEAM_LIGHTS_STATE(289410561, 0x11400e01) Listeners size: 2
+            pid: 1980(com.xiaopeng.montecarlo), mListenerBinder: android.os.BinderProxy@4d7200
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@37f5ab6
+        Property=VCU_ENERGY_RECOVERY(557847041, 0x21401201) Listeners size: 2
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@9d96dde
+            pid: 4247(com.xiaopeng.diagnostic), mListenerBinder: android.os.BinderProxy@3cc6214
+        Property=SCU_LDW_SW(557852162, 0x21402602) Listeners size: 2
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@2d5c724
+        Property=FOG_LIGHTS_SWITCH_XP(557849602, 0x21401c02) Listeners size: 2
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@d7457ff
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@37f5ab6
+        Property=SCU_IHB_SW(557852163, 0x21402603) Listeners size: 2
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@2d5c724
+        Property=HVAC_PM25(557849092, 0x21401a04) Listeners size: 2
+            pid: 1172(com.xiaopeng.xuiservice:opencarsvc), mListenerBinder: android.os.BinderProxy@d6031b1
+            pid: 2083(com.xiaopeng.carhvac), mListenerBinder: android.os.BinderProxy@202c81d
+        Property=SCU_BSD_SW(557852165, 0x21402605) Listeners size: 2
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@2d5c724
+        Property=XPU_CONNECTED(557856773, 0x21403805) Listeners size: 2
+            pid: 2022(com.xiaopeng.hiddenCam), mListenerBinder: android.os.BinderProxy@280e0cf
+            pid: 2142(com.xiaopeng.autopilot), mListenerBinder: android.os.BinderProxy@bb5de10
+        Property=SCU_RCTA_SW(557852166, 0x21402606) Listeners size: 2
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@2d5c724
+        Property=SCU_RCW_SW(557852167, 0x21402607) Listeners size: 2
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@2d5c724
+        Property=SCU_DOW_SW(557852168, 0x21402608) Listeners size: 2
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@2d5c724
+        Property=ESP_ESP_FAULT(557851657, 0x21402409) Listeners size: 2
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@8c19bbf
+        Property=ESP_AVH_FAULT(557851659, 0x2140240b) Listeners size: 2
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@8c19bbf
+        Property=SCU_ISLC_SW(557852173, 0x2140260d) Listeners size: 2
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@2d5c724
+        Property=HVAC_SETTEMP_SYNCST(557849101, 0x21401a0d) Listeners size: 2
+            pid: 1172(com.xiaopeng.xuiservice:opencarsvc), mListenerBinder: android.os.BinderProxy@d6031b1
+            pid: 2083(com.xiaopeng.carhvac), mListenerBinder: android.os.BinderProxy@202c81d
+        Property=ICM_CRASH_INFO(554702429, 0x2110165d) Listeners size: 2
+            pid: 2182(com.xiaopeng.data.uploader), mListenerBinder: android.os.BinderProxy@eb80dd7
+            pid: 2154(com.xiaopeng.device.communication), mListenerBinder: android.os.BinderProxy@cc41ee1
+        Property=TPMS_TEMPWARN_ALL(557915662, 0x21411e0e) Listeners size: 2
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@18af28d
+        Property=BCM_2NDMIDSEAT_BELTSBR_WARNING(557849615, 0x21401c0f) Listeners size: 2
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@3fe6d82
+            pid: 2227(com.xiaopeng.carspeechservice), mListenerBinder: android.os.BinderProxy@7bf3cbb
+        Property=VCU_BRKPEDAL_ST(557847063, 0x21401217) Listeners size: 2
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@b9359cc
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@9d96dde
+        Property=VCU_ACCPEDAL_SIG(557847064, 0x21401218) Listeners size: 2
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@b9359cc
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: com.android.car.CarConditionService$1@e545c91
+        Property=HVAC_ECON(557849115, 0x21401a1b) Listeners size: 2
+            pid: 1172(com.xiaopeng.xuiservice:opencarsvc), mListenerBinder: android.os.BinderProxy@d6031b1
+            pid: 2083(com.xiaopeng.carhvac), mListenerBinder: android.os.BinderProxy@202c81d
+        Property=BCM_FOLLOW_ME_HOME(557849627, 0x21401c1b) Listeners size: 2
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@37f5ab6
+            pid: 4247(com.xiaopeng.diagnostic), mListenerBinder: android.os.BinderProxy@e5858b2
+        Property=BCM_AUTO_UNLOCK(557849629, 0x21401c1d) Listeners size: 2
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@37f5ab6
+            pid: 4247(com.xiaopeng.diagnostic), mListenerBinder: android.os.BinderProxy@e5858b2
+        Property=SWS_KNOB_BACKLIGHT(557916704, 0x21412220) Listeners size: 2
+            pid: 1365(com.xiaopeng.systemui), mListenerBinder: android.os.BinderProxy@2a7d31
+            pid: 2663(com.xiaopeng.musicradio), mListenerBinder: android.os.BinderProxy@d4c59dd
+        Property=HVAC_TEMPERATURE_PSN_SET(559946242, 0x21601a02) Listeners size: 2
+            pid: 1172(com.xiaopeng.xuiservice:opencarsvc), mListenerBinder: android.os.BinderProxy@d6031b1
+            pid: 2083(com.xiaopeng.carhvac), mListenerBinder: android.os.BinderProxy@202c81d
+        Property=BCM_MSB_ACTIVE(557849635, 0x21401c23) Listeners size: 2
+            pid: 1338(com.xiaopeng.aiassistant), mListenerBinder: android.os.BinderProxy@db48146
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@41e6c42
+        Property=SCU_RCTA_LEFT_WARNING(557852197, 0x21402625) Listeners size: 2
+            pid: 1154(com.xiaopeng.xuiservice:iotservice), mListenerBinder: android.os.BinderProxy@62a6b2b
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@9e747f7
+        Property=BCM_REAR_DEFROST_ON(557849637, 0x21401c25) Listeners size: 2
+            pid: 2083(com.xiaopeng.carhvac), mListenerBinder: android.os.BinderProxy@83838f4
+            pid: 4247(com.xiaopeng.diagnostic), mListenerBinder: android.os.BinderProxy@e5858b2
+        Property=HVAC_DEFROSTER_XP(557849126, 0x21401a26) Listeners size: 2
+            pid: 1172(com.xiaopeng.xuiservice:opencarsvc), mListenerBinder: android.os.BinderProxy@d6031b1
+            pid: 2083(com.xiaopeng.carhvac), mListenerBinder: android.os.BinderProxy@202c81d
+        Property=SCU_RCTA_RIGHT_WARNING(557852198, 0x21402626) Listeners size: 2
+            pid: 1154(com.xiaopeng.xuiservice:iotservice), mListenerBinder: android.os.BinderProxy@62a6b2b
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@9e747f7
+        Property=HVAC_AC_ON_XP(557849127, 0x21401a27) Listeners size: 2
+            pid: 1172(com.xiaopeng.xuiservice:opencarsvc), mListenerBinder: android.os.BinderProxy@d6031b1
+            pid: 2083(com.xiaopeng.carhvac), mListenerBinder: android.os.BinderProxy@202c81d
+        Property=SWS_UPLOAD_CAN_BUTTON(557851176, 0x21402228) Listeners size: 2
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@fa9dfce
+            pid: 2663(com.xiaopeng.musicradio), mListenerBinder: android.os.BinderProxy@d4c59dd
+        Property=HVAC_AUTO_ON_XP(557849129, 0x21401a29) Listeners size: 2
+            pid: 1172(com.xiaopeng.xuiservice:opencarsvc), mListenerBinder: android.os.BinderProxy@d6031b1
+            pid: 2083(com.xiaopeng.carhvac), mListenerBinder: android.os.BinderProxy@202c81d
+        Property=SCU_LATCTRL_REMIND(557852201, 0x21402629) Listeners size: 2
+            pid: 1154(com.xiaopeng.xuiservice:iotservice), mListenerBinder: android.os.BinderProxy@62a6b2b
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@9e747f7
+        Property=VCU_CHARGE_COMPLETE_TIME(557847084, 0x2140122c) Listeners size: 2
+            pid: 1896(com.xiaopeng.chargecontrol), mListenerBinder: android.os.BinderProxy@9313b32
+            pid: 4110(com.xiaopeng.aiot.coreservice), mListenerBinder: android.os.BinderProxy@db0e005
+        Property=BCM_ATWS(557849647, 0x21401c2f) Listeners size: 2
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@d7457ff
+            pid: 4181(com.xiaopeng.cardiagnosis), mListenerBinder: android.os.BinderProxy@554fa8b
+        Property=TBOX_SOLDIERSW(557846578, 0x21401032) Listeners size: 2
+            pid: 1396(com.xiaopeng.car.settings), mListenerBinder: android.os.BinderProxy@485b073
+            pid: 1802(com.xiaopeng.xmart.camera), mListenerBinder: android.os.BinderProxy@abd66ec
+        Property=BCM_FOLLOW_ME_HOME_TIME(557849650, 0x21401c32) Listeners size: 2
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@37f5ab6
+            pid: 4247(com.xiaopeng.diagnostic), mListenerBinder: android.os.BinderProxy@e5858b2
+        Property=MCU_DIAG_REQUEST(560993284, 0x21701404) Listeners size: 2
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@e9b9b59
+        Property=TBOX_GUARD(557912117, 0x21411035) Listeners size: 2
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@d5130cd
+            pid: 1802(com.xiaopeng.xmart.camera), mListenerBinder: android.os.BinderProxy@abd66ec
+        Property=TBOX_BLE_CONNECTEDST(557846582, 0x21401036) Listeners size: 2
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@4412a89
+        Property=VCU_THERMORUNAWAY_ST(557847095, 0x21401237) Listeners size: 2
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@e9b9b59
+        Property=SCU_DSM_REMMIND(557852370, 0x214026d2) Listeners size: 2
+            pid: 1154(com.xiaopeng.xuiservice:iotservice), mListenerBinder: android.os.BinderProxy@62a6b2b
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@9e747f7
+        Property=SCU_DSM_SWITCH(557852395, 0x214026eb) Listeners size: 2
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@2d5c724
+            pid: 2227(com.xiaopeng.carspeechservice), mListenerBinder: android.os.BinderProxy@f9ae997
+        Property=SCU_LATCTRL_REMIND_2(557852295, 0x21402687) Listeners size: 2
+            pid: 1154(com.xiaopeng.xuiservice:iotservice), mListenerBinder: android.os.BinderProxy@62a6b2b
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@9e747f7
+        Property=SCU_CIP_WARNING_ST(557852299, 0x2140268b) Listeners size: 2
+            pid: 1154(com.xiaopeng.xuiservice:iotservice), mListenerBinder: android.os.BinderProxy@62a6b2b
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@9e747f7
+        Property=SCU_ACC_RD_VOICE_TIPS(557852300, 0x2140268c) Listeners size: 2
+            pid: 1154(com.xiaopeng.xuiservice:iotservice), mListenerBinder: android.os.BinderProxy@62a6b2b
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@9e747f7
+        Property=BCM_RAIN_DETEC_SENCFG(557849754, 0x21401c9a) Listeners size: 2
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@37f5ab6
+            pid: 4247(com.xiaopeng.diagnostic), mListenerBinder: android.os.BinderProxy@e5858b2
+        Property=BCM_DOOR_UNLOCK_REQRES(557849759, 0x21401c9f) Listeners size: 2
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@37f5ab6
+            pid: 4247(com.xiaopeng.diagnostic), mListenerBinder: android.os.BinderProxy@e5858b2
+        Property=SCU_SDC_CTRL_URADARVOICE_TONE(557852326, 0x214026a6) Listeners size: 2
+            pid: 1154(com.xiaopeng.xuiservice:iotservice), mListenerBinder: android.os.BinderProxy@62a6b2b
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@9e747f7
+        Property=BCM_READY_ENABLE(557849786, 0x21401cba) Listeners size: 2
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@37f5ab6
+            pid: 4247(com.xiaopeng.diagnostic), mListenerBinder: android.os.BinderProxy@e5858b2
+        Property=BCM_BRKPEDAL_ST(557849787, 0x21401cbb) Listeners size: 2
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@37f5ab6
+            pid: 4247(com.xiaopeng.diagnostic), mListenerBinder: android.os.BinderProxy@e5858b2
+        Property=ENV_OUTSIDE_TEMPERATURE(291505923, 0x11600703) Listeners size: 1
+            pid: 2083(com.xiaopeng.carhvac), mListenerBinder: android.os.BinderProxy@202c81d
+        Property=IPUF_FAILST(557847104, 0x21401240) Listeners size: 1
+        Property=SCU_RAVMSLOT(560014947, 0x21612663) Listeners size: 1
+            pid: 2022(com.xiaopeng.hiddenCam), mListenerBinder: android.os.BinderProxy@b4ad4e2
+        Property=SCU_LAVMSLOT(560014946, 0x21612662) Listeners size: 1
+            pid: 2022(com.xiaopeng.hiddenCam), mListenerBinder: android.os.BinderProxy@b4ad4e2
+        Property=TBOX_SOLDIER_ENABLE(557846596, 0x21401044) Listeners size: 1
+            pid: 1396(com.xiaopeng.car.settings), mListenerBinder: android.os.BinderProxy@485b073
+        Property=TBOX_CDU_SELF_MODE(557846597, 0x21401045) Listeners size: 1
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@d5130cd
+        Property=ICM_CARSETTING(554702360, 0x21101618) Listeners size: 1
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@55b34d0
+        Property=HVAC_AUTO_DEFOG_WORK_ST(557849162, 0x21401a4a) Listeners size: 1
+            pid: 2083(com.xiaopeng.carhvac), mListenerBinder: android.os.BinderProxy@202c81d
+        Property=MCU_LLU_WAKEWAIT_SW(557847626, 0x2140144a) Listeners size: 1
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@fb96b78
+        Property=MCU_LLU_SHOWOFF_SW(557847627, 0x2140144b) Listeners size: 1
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@d3e6c93
+        Property=TBOX_APPOINT_KEEP_TEMP(557912138, 0x2141104a) Listeners size: 1
+            pid: 1896(com.xiaopeng.chargecontrol), mListenerBinder: android.os.BinderProxy@441ce7
+        Property=BCM_CHILDLOCK_SW(557849675, 0x21401c4b) Listeners size: 1
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@37f5ab6
+        Property=BCM_CHARG_GUNL_ST(557849677, 0x21401c4d) Listeners size: 1
+            pid: 1896(com.xiaopeng.chargecontrol), mListenerBinder: android.os.BinderProxy@f78e094
+        Property=VCU_DISCHARGE_BATTCAP_FLOAT(559944302, 0x2160126e) Listeners size: 1
+            pid: 1896(com.xiaopeng.chargecontrol), mListenerBinder: android.os.BinderProxy@9313b32
+        Property=MCU_LLU_SLEEP_SW(557847630, 0x2140144e) Listeners size: 1
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@fb96b78
+        Property=SCU_RMIRROR_CTRL(557852240, 0x21402650) Listeners size: 1
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@2d5c724
+        Property=MCU_POWERDOWN_ACTION(557847635, 0x21401453) Listeners size: 1
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@745c7f6
+        Property=VCU_BAT_KEEP_TEMP_MODE(557847123, 0x21401253) Listeners size: 1
+            pid: 1896(com.xiaopeng.chargecontrol), mListenerBinder: android.os.BinderProxy@9313b32
+        Property=XPU_NGP_CUSTOM_SPD_SW(557856851, 0x21403853) Listeners size: 1
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@9ab0a8e
+        Property=XPU_NGP_CUSTOM_SPD_COUNT1(557856852, 0x21403854) Listeners size: 1
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@9ab0a8e
+        Property=XPU_NGP_CUSTOM_SPD_COUNT2(557856853, 0x21403855) Listeners size: 1
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@9ab0a8e
+        Property=TBOX_SYNC_UTC_TIME(558960713, 0x21511049) Listeners size: 1
+        Property=VCU_DSTBAT_DISP_NEW(557847128, 0x21401258) Listeners size: 1
+            pid: 1896(com.xiaopeng.chargecontrol), mListenerBinder: android.os.BinderProxy@9313b32
+        Property=MSMD_SEATLEGHEIGHTPOS(557849689, 0x21401c59) Listeners size: 1
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@fd3ddd5
+        Property=VCU_CAR_STATIONARY_ST(557847132, 0x2140125c) Listeners size: 1
+        Property=VPM_LDW_RIGHT_WARNING_ST(557852252, 0x2140265c) Listeners size: 1
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@f711664
+        Property=VPM_LDW_LEFT_WARNING_ST(557852253, 0x2140265d) Listeners size: 1
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@f711664
+        Property=MCU_FB_LLU_ACTIVE(557847645, 0x2140145d) Listeners size: 1
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@d3e6c93
+        Property=XPU_NAVI_CONFIRM_PROTO(561002576, 0x21703850) Listeners size: 1
+            pid: 1980(com.xiaopeng.montecarlo), mListenerBinder: android.os.BinderProxy@7678118
+        Property=MCU_BL_TEMP(557847651, 0x21401463) Listeners size: 1
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@745c7f6
+        Property=MCU_BL_IC_DRIVER_ST(557847652, 0x21401464) Listeners size: 1
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@745c7f6
+        Property=VCU_DSTBAT_DISP_CLTC(557847140, 0x21401264) Listeners size: 1
+            pid: 1896(com.xiaopeng.chargecontrol), mListenerBinder: android.os.BinderProxy@9313b32
+        Property=OBC_FAULT_PHASE_LOSS(557847141, 0x21401265) Listeners size: 1
+            pid: 1896(com.xiaopeng.chargecontrol), mListenerBinder: android.os.BinderProxy@9313b32
+        Property=MCU_WIFI_HOTSPOT_REQ(557847660, 0x2140146c) Listeners size: 1
+            pid: 1396(com.xiaopeng.car.settings), mListenerBinder: android.os.BinderProxy@a9537ed
+        Property=DHC_ACTIVE_SW(557849711, 0x21401c6f) Listeners size: 1
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@8e645
+        Property=SCU_ICM_APAERR_TIPS(557852275, 0x21402673) Listeners size: 1
+        Property=BCM_LOCKWIN_CFG(557849715, 0x21401c73) Listeners size: 1
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@37f5ab6
+        Property=SRR_FLFAIL_ST(557852276, 0x21402674) Listeners size: 1
+        Property=BCM_POLLING_LOCK_CFG(557849716, 0x21401c74) Listeners size: 1
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@37f5ab6
+        Property=SRR_FRFAIL_ST(557852277, 0x21402675) Listeners size: 1
+        Property=BCM_POLLING_UNLOCK_CFG(557849717, 0x21401c75) Listeners size: 1
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@37f5ab6
+        Property=SRR_RLFAIL_ST(557852278, 0x21402676) Listeners size: 1
+        Property=SRR_RRFAIL_ST(557852279, 0x21402677) Listeners size: 1
+        Property=CDC_DATAUPLOAD_ST(557852280, 0x21402678) Listeners size: 1
+        Property=XPU_XPU_FAIL_ST(557852281, 0x21402679) Listeners size: 1
+        Property=VCU_BAT_BUMP_RECRD(557847161, 0x21401279) Listeners size: 1
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@b9359cc
+        Property=SCU_RCW_WARNING(557852283, 0x2140267b) Listeners size: 1
+            pid: 1980(com.xiaopeng.montecarlo), mListenerBinder: android.os.BinderProxy@e33d87e
+        Property=XPU_VEH_LOCATION_PROTO(561002571, 0x2170384b) Listeners size: 1
+            pid: 2022(com.xiaopeng.hiddenCam), mListenerBinder: android.os.BinderProxy@280e0cf
+        Property=SCU_FEATURE_DATA(560014942, 0x2161265e) Listeners size: 1
+            pid: 2022(com.xiaopeng.hiddenCam), mListenerBinder: android.os.BinderProxy@b4ad4e2
+        Property=TPMS_SENSOR_RESET(557850113, 0x21401e01) Listeners size: 1
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@18af28d
+        Property=BCM_WIN_POS(560012320, 0x21611c20) Listeners size: 1
+            pid: 2227(com.xiaopeng.carspeechservice), mListenerBinder: android.os.BinderProxy@4cb4154
+        Property=ESC_ESP(557851650, 0x21402402) Listeners size: 1
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@8c19bbf
+        Property=HVAC_AIR_QUALITY_LEVEL(557849093, 0x21401a05) Listeners size: 1
+            pid: 2083(com.xiaopeng.carhvac), mListenerBinder: android.os.BinderProxy@202c81d
+        Property=STEERING_WHEEL_EPS(557851653, 0x21402405) Listeners size: 1
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@c9db28c
+        Property=ATL_AUTOBRIGHTNESSSW(557848581, 0x21401805) Listeners size: 1
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@7818251
+        Property=TPMS_SYSFAULTWARN(557850118, 0x21401e06) Listeners size: 1
+        Property=TPMS_ABNORMALPRWARN(557850119, 0x21401e07) Listeners size: 1
+        Property=AVAS_SWSTCMD(557855239, 0x21403207) Listeners size: 1
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@9a143b7
+        Property=AVAS_LOWSPEEDSOUND_CFG(557855240, 0x21403208) Listeners size: 1
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@9a143b7
+        Property=XPU_CDU_BRIGHTNESS_ST(557856777, 0x21403809) Listeners size: 1
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@16c731e
+        Property=LLU_FUNCTIONST(557854217, 0x21402e09) Listeners size: 1
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@d3e6c93
+        Property=SCU_LCS_SW(557852169, 0x21402609) Listeners size: 1
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@2d5c724
+        Property=MCU_RID_MASTERSLAVE_CONTROL(560993338, 0x2170143a) Listeners size: 1
+        Property=VCU_BATWARM_STDISP(557847050, 0x2140120a) Listeners size: 1
+            pid: 1896(com.xiaopeng.chargecontrol), mListenerBinder: android.os.BinderProxy@9313b32
+        Property=ATL_OPEN(557848586, 0x2140180a) Listeners size: 1
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@7818251
+        Property=ATLS_ERR_ST(557848587, 0x2140180b) Listeners size: 1
+        Property=VCU_RESHEAT_MANATIME(557847051, 0x2140120b) Listeners size: 1
+            pid: 1896(com.xiaopeng.chargecontrol), mListenerBinder: android.os.BinderProxy@9313b32
+        Property=BCM_WIPERSERVICE_SW(557849611, 0x21401c0b) Listeners size: 1
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@37f5ab6
+        Property=ALS_ERROR_ST(557848588, 0x2140180c) Listeners size: 1
+        Property=ESP_SYS_WARNIND_REQ(557851660, 0x2140240c) Listeners size: 1
+        Property=VCU_V2L_POWERLIMIT(557847052, 0x2140120c) Listeners size: 1
+            pid: 1896(com.xiaopeng.chargecontrol), mListenerBinder: android.os.BinderProxy@9313b32
+        Property=ESP_WARN_LAMP(557851661, 0x2140240d) Listeners size: 1
+        Property=HVAC_INNER_TEMPERATURE(559946285, 0x21601a2d) Listeners size: 1
+            pid: 2083(com.xiaopeng.carhvac), mListenerBinder: android.os.BinderProxy@202c81d
+        Property=TPMS_PRWARN_ALL(557915660, 0x21411e0c) Listeners size: 1
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@18af28d
+        Property=ESP_APBERR_ST(557851662, 0x2140240e) Listeners size: 1
+        Property=ICM_TOTAL_ODOMETER(559945262, 0x2160162e) Listeners size: 1
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@28a89ea
+        Property=TPMS_TEMP_ALL(557915663, 0x21411e0f) Listeners size: 1
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@18af28d
+        Property=SCU_LCC_SW(557852174, 0x2140260e) Listeners size: 1
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@2d5c724
+        Property=ESP_ABS_FAULT(557851663, 0x2140240f) Listeners size: 1
+        Property=AVAS_FAULT(557855247, 0x2140320f) Listeners size: 1
+        Property=ICM_TRIP_SINC_IGON(559945263, 0x2160162f) Listeners size: 1
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@28a89ea
+        Property=SCU_HIC_SW(557852175, 0x2140260f) Listeners size: 1
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@2d5c724
+        Property=ICM_DIAGNOSIS_INFO(554702431, 0x2110165f) Listeners size: 1
+            pid: 4181(com.xiaopeng.cardiagnosis), mListenerBinder: android.os.BinderProxy@e6f4dfe
+        Property=HVAC_DRV_LEFTHORZ(557849104, 0x21401a10) Listeners size: 1
+            pid: 2083(com.xiaopeng.carhvac), mListenerBinder: android.os.BinderProxy@202c81d
+        Property=ICM_TRIP_SINC_CHRG(559945264, 0x21601630) Listeners size: 1
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@28a89ea
+        Property=IBT_FAILURE_LAMP(557851665, 0x21402411) Listeners size: 1
+        Property=HVAC_DRV_LEFTVERT(557849105, 0x21401a11) Listeners size: 1
+            pid: 2083(com.xiaopeng.carhvac), mListenerBinder: android.os.BinderProxy@202c81d
+        Property=ICM_TRIPA(559945265, 0x21601631) Listeners size: 1
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@28a89ea
+        Property=BCM_AIRBAG_FAULT_ST(557849618, 0x21401c12) Listeners size: 1
+        Property=HVAC_DRV_RIGHTHORZ(557849106, 0x21401a12) Listeners size: 1
+            pid: 2083(com.xiaopeng.carhvac), mListenerBinder: android.os.BinderProxy@202c81d
+        Property=ICM_TRIPB(559945266, 0x21601632) Listeners size: 1
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@28a89ea
+        Property=VCU_DCC_CHRGSTOP_REA(557847059, 0x21401213) Listeners size: 1
+            pid: 1896(com.xiaopeng.chargecontrol), mListenerBinder: android.os.BinderProxy@9313b32
+        Property=HVAC_DRV_RIGHTVERT(557849107, 0x21401a13) Listeners size: 1
+            pid: 2083(com.xiaopeng.carhvac), mListenerBinder: android.os.BinderProxy@202c81d
+        Property=ESP_APBSYS_ST(557851667, 0x21402413) Listeners size: 1
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@8c19bbf
+        Property=HVAC_PSN_LEFTHORZ(557849108, 0x21401a14) Listeners size: 1
+            pid: 2083(com.xiaopeng.carhvac), mListenerBinder: android.os.BinderProxy@202c81d
+        Property=IBT_HBC_REQ(557851668, 0x21402414) Listeners size: 1
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@8c19bbf
+        Property=XPU_AP_REMOTE_SW(557856788, 0x21403814) Listeners size: 1
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@9ab0a8e
+        Property=LLU_SCRIPT_ST(557854229, 0x21402e15) Listeners size: 1
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@d3e6c93
+        Property=ICM_NEEDNAVI(554702405, 0x21101645) Listeners size: 1
+            pid: 1980(com.xiaopeng.montecarlo), mListenerBinder: android.os.BinderProxy@a2ec0f5
+        Property=HVAC_PSN_LEFTVERT(557849109, 0x21401a15) Listeners size: 1
+            pid: 2083(com.xiaopeng.carhvac), mListenerBinder: android.os.BinderProxy@202c81d
+        Property=LLU_ERR_ST(557854230, 0x21402e16) Listeners size: 1
+        Property=BMS_CHARGE_MODE(557853718, 0x21402c16) Listeners size: 1
+            pid: 1896(com.xiaopeng.chargecontrol), mListenerBinder: android.os.BinderProxy@4aba083
+        Property=HVAC_PSN_RIGHTHORZ(557849110, 0x21401a16) Listeners size: 1
+            pid: 2083(com.xiaopeng.carhvac), mListenerBinder: android.os.BinderProxy@202c81d
+        Property=BCM_LTURNLAMP_ST(557849623, 0x21401c17) Listeners size: 1
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@d7457ff
+        Property=HVAC_PSN_RIGHTVERT(557849111, 0x21401a17) Listeners size: 1
+            pid: 2083(com.xiaopeng.carhvac), mListenerBinder: android.os.BinderProxy@202c81d
+        Property=SCU_PHONE_PK_BTN(557852183, 0x21402617) Listeners size: 1
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@2d5c724
+        Property=BCM_RTURNLAMP_ST(557849624, 0x21401c18) Listeners size: 1
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@d7457ff
+        Property=TBOX_AVP_START(557846552, 0x21401018) Listeners size: 1
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@d5130cd
+        Property=HVAC_AQS(557849112, 0x21401a18) Listeners size: 1
+            pid: 2083(com.xiaopeng.carhvac), mListenerBinder: android.os.BinderProxy@202c81d
+        Property=SCU_PK_BTN(557852184, 0x21402618) Listeners size: 1
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@2d5c724
+        Property=VCU_PGEAR_VD(557847065, 0x21401219) Listeners size: 1
+        Property=HVAC_EAVSWEEP_WIND(557849114, 0x21401a1a) Listeners size: 1
+            pid: 2083(com.xiaopeng.carhvac), mListenerBinder: android.os.BinderProxy@202c81d
+        Property=BCM_PARKING_LAMP(557849626, 0x21401c1a) Listeners size: 1
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@37f5ab6
+        Property=SCU_REMOTE_PK_BTN(557852186, 0x2140261a) Listeners size: 1
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@2d5c724
+        Property=VCU_BATCOLD_DISP(557847068, 0x2140121c) Listeners size: 1
+            pid: 1896(com.xiaopeng.chargecontrol), mListenerBinder: android.os.BinderProxy@9313b32
+        Property=HVAC_DRV_WINDMODE(557849116, 0x21401a1c) Listeners size: 1
+            pid: 2083(com.xiaopeng.carhvac), mListenerBinder: android.os.BinderProxy@202c81d
+        Property=VCU_CHGSPEED_SLOW_DSP(557847069, 0x2140121d) Listeners size: 1
+            pid: 1896(com.xiaopeng.chargecontrol), mListenerBinder: android.os.BinderProxy@9313b32
+        Property=HVAC_PSN_WINDMODE(557849117, 0x21401a1d) Listeners size: 1
+            pid: 2083(com.xiaopeng.carhvac), mListenerBinder: android.os.BinderProxy@202c81d
+        Property=HVAC_IONIZER(557849118, 0x21401a1e) Listeners size: 1
+            pid: 2083(com.xiaopeng.carhvac), mListenerBinder: android.os.BinderProxy@202c81d
+        Property=SWS_KNOB_WIND_SPD(557916703, 0x2141221f) Listeners size: 1
+            pid: 2663(com.xiaopeng.musicradio), mListenerBinder: android.os.BinderProxy@d4c59dd
+        Property=MCU_RID_RESET_PHY(560993296, 0x21701410) Listeners size: 1
+        Property=HVAC_WINDMODE_COLOUR(557849120, 0x21401a20) Listeners size: 1
+            pid: 2083(com.xiaopeng.carhvac), mListenerBinder: android.os.BinderProxy@202c81d
+        Property=SWS_KNOB_TEMP(557916705, 0x21412221) Listeners size: 1
+            pid: 2663(com.xiaopeng.musicradio), mListenerBinder: android.os.BinderProxy@d4c59dd
+        Property=MCU_RID_TEST_MODE(560993297, 0x21701411) Listeners size: 1
+        Property=XPU_NGP_TRIGGER_EVENT_DATA(561002513, 0x21703811) Listeners size: 1
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@16c731e
+        Property=TBOX_CHARGE_STOP_SOC(557846561, 0x21401021) Listeners size: 1
+            pid: 1896(com.xiaopeng.chargecontrol), mListenerBinder: android.os.BinderProxy@441ce7
+        Property=MCU_RID_CABLE_DIAGNOSTICS(560993298, 0x21701412) Listeners size: 1
+        Property=TBOX_APPOINT_CHG_SET(557912099, 0x21411023) Listeners size: 1
+            pid: 1896(com.xiaopeng.chargecontrol), mListenerBinder: android.os.BinderProxy@441ce7
+        Property=TPMS_PRFL(559947266, 0x21601e02) Listeners size: 1
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@18af28d
+        Property=SWS_KNOB_AM(557851170, 0x21402222) Listeners size: 1
+            pid: 2663(com.xiaopeng.musicradio), mListenerBinder: android.os.BinderProxy@d4c59dd
+        Property=MCU_DID_SQI_100BASE(560993299, 0x21701413) Listeners size: 1
+        Property=VCU_OBC_DCVOLT(559944195, 0x21601203) Listeners size: 1
+            pid: 1896(com.xiaopeng.chargecontrol), mListenerBinder: android.os.BinderProxy@9313b32
+        Property=SCU_BSD_RIGHT_WARNING(557852195, 0x21402623) Listeners size: 1
+            pid: 1980(com.xiaopeng.montecarlo), mListenerBinder: android.os.BinderProxy@e33d87e
+        Property=TPMS_PRFR(559947267, 0x21601e03) Listeners size: 1
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@18af28d
+        Property=SWS_KNOB_FM(557851171, 0x21402223) Listeners size: 1
+            pid: 2663(com.xiaopeng.musicradio), mListenerBinder: android.os.BinderProxy@d4c59dd
+        Property=MCU_DID_SQI_1000BASE(560993300, 0x21701414) Listeners size: 1
+        Property=VCU_OBC_DCCUR(559944196, 0x21601204) Listeners size: 1
+            pid: 1896(com.xiaopeng.chargecontrol), mListenerBinder: android.os.BinderProxy@9313b32
+        Property=SCU_BSD_LEFT_WARNING(557852196, 0x21402624) Listeners size: 1
+            pid: 1980(com.xiaopeng.montecarlo), mListenerBinder: android.os.BinderProxy@e33d87e
+        Property=TPMS_PRRL(559947268, 0x21601e04) Listeners size: 1
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@18af28d
+        Property=SWS_KNOB_BT(557851172, 0x21402224) Listeners size: 1
+            pid: 2663(com.xiaopeng.musicradio), mListenerBinder: android.os.BinderProxy@d4c59dd
+        Property=TPMS_PRRR(559947269, 0x21601e05) Listeners size: 1
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@18af28d
+        Property=SWS_KNOB_WEB_RADIO(557851173, 0x21402225) Listeners size: 1
+            pid: 2663(com.xiaopeng.musicradio), mListenerBinder: android.os.BinderProxy@d4c59dd
+        Property=VCU_DCCCS_CURR(559944198, 0x21601206) Listeners size: 1
+            pid: 1896(com.xiaopeng.chargecontrol), mListenerBinder: android.os.BinderProxy@9313b32
+        Property=VCU_EBS_BATT_SOC(557847078, 0x21401226) Listeners size: 1
+            pid: 2227(com.xiaopeng.carspeechservice), mListenerBinder: android.os.BinderProxy@d451ec0
+        Property=SWS_KNOB_MUSIC(557851174, 0x21402226) Listeners size: 1
+            pid: 2663(com.xiaopeng.musicradio), mListenerBinder: android.os.BinderProxy@d4c59dd
+        Property=VCU_DCCCS_SUMU(559944199, 0x21601207) Listeners size: 1
+            pid: 1896(com.xiaopeng.chargecontrol), mListenerBinder: android.os.BinderProxy@9313b32
+        Property=VCU_DRIMODE_FB(557847079, 0x21401227) Listeners size: 1
+            pid: 2142(com.xiaopeng.autopilot), mListenerBinder: android.os.BinderProxy@334caab
+        Property=SWS_KNOB_USB_MUSIC(557851177, 0x21402229) Listeners size: 1
+            pid: 2663(com.xiaopeng.musicradio), mListenerBinder: android.os.BinderProxy@d4c59dd
+        Property=SWS_KNOB_TALKING_BOOK(557851178, 0x2140222a) Listeners size: 1
+            pid: 2663(com.xiaopeng.musicradio), mListenerBinder: android.os.BinderProxy@d4c59dd
+        Property=XPU_NGP_ULC_SW(557856811, 0x2140382b) Listeners size: 1
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@9ab0a8e
+        Property=SWS_KNOB_VOICE_RESET_BUTTON(557851179, 0x2140222b) Listeners size: 1
+            pid: 2663(com.xiaopeng.musicradio), mListenerBinder: android.os.BinderProxy@d4c59dd
+        Property=IMU_SCULOCAT_CARSPEED(560018957, 0x2161360d) Listeners size: 1
+            pid: 1980(com.xiaopeng.montecarlo), mListenerBinder: android.os.BinderProxy@730fe8a
+        Property=HVAC_AFTER_BLOW(557849132, 0x21401a2c) Listeners size: 1
+            pid: 2083(com.xiaopeng.carhvac), mListenerBinder: android.os.BinderProxy@202c81d
+        Property=XPU_NGP_OPTIMAL_LANE_SW(557856812, 0x2140382c) Listeners size: 1
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@9ab0a8e
+        Property=TBOX_SET_AUTO_POWEOFF_SW(557846575, 0x2140102f) Listeners size: 1
+            pid: 1396(com.xiaopeng.car.settings), mListenerBinder: android.os.BinderProxy@485b073
+        Property=TBOX_COUNTDOWN(557912113, 0x21411031) Listeners size: 1
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@d5130cd
+        Property=XPU_ISLC_DRIVER_SET(557856816, 0x21403830) Listeners size: 1
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@9ab0a8e
+        Property=VCU_EVERRLAMP_DSP(557847089, 0x21401231) Listeners size: 1
+        Property=VCU_GEAR_WARNING(557847090, 0x21401232) Listeners size: 1
+        Property=VCU_EBS_ERR_DSP(557847091, 0x21401233) Listeners size: 1
+        Property=TBOX_SOLDIERWORKST(557846579, 0x21401033) Listeners size: 1
+            pid: 1802(com.xiaopeng.xmart.camera), mListenerBinder: android.os.BinderProxy@abd66ec
+        Property=VCU_LIQUIDHIGHTEMP_ERR(557847092, 0x21401234) Listeners size: 1
+        Property=VCU_WATERSENSOR_ERR(557847093, 0x21401235) Listeners size: 1
+        Property=AND_DIAG_REQUEST(560993285, 0x21701405) Listeners size: 1
+        Property=VCU_BCRUISE_ERR(557847094, 0x21401236) Listeners size: 1
+        Property=ICM_LOG_COMPRESS(554702438, 0x21101666) Listeners size: 1
+            pid: 2182(com.xiaopeng.data.uploader), mListenerBinder: android.os.BinderProxy@eb80dd7
+        Property=VCU_POWERLIMITATION_DSP(557847096, 0x21401238) Listeners size: 1
+        Property=VCU_CHGPORTHOT_DSP(557847097, 0x21401239) Listeners size: 1
+        Property=VCU_OBCMSG_LOST(557847098, 0x2140123a) Listeners size: 1
+        Property=VCU_VEHELC_CONSP_100M(559944218, 0x2160121a) Listeners size: 1
+            pid: 1896(com.xiaopeng.chargecontrol), mListenerBinder: android.os.BinderProxy@9313b32
+        Property=VCU_DEADBATTERY_FLAG(557847099, 0x2140123b) Listeners size: 1
+        Property=VCU_VEHELC_CONSP_AVG(559944219, 0x2160121b) Listeners size: 1
+            pid: 1896(com.xiaopeng.chargecontrol), mListenerBinder: android.os.BinderProxy@9313b32
+        Property=SCU_TAIL_RADAR(560014877, 0x2161261d) Listeners size: 1
+        Property=ICM_BRIGHTNESS_SP(557848124, 0x2140163c) Listeners size: 1
+            pid: 1365(com.xiaopeng.systemui), mListenerBinder: android.os.BinderProxy@4cd454a
+        Property=SCU_FRONT_RADAR(560014876, 0x2161261c) Listeners size: 1
+        Property=HVAC_AUTO_DEFOG_SET(557849149, 0x21401a3d) Listeners size: 1
+            pid: 2083(com.xiaopeng.carhvac), mListenerBinder: android.os.BinderProxy@202c81d
+        Property=VCU_NGEAR_WARNINGSW(557847101, 0x2140123d) Listeners size: 1
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@9d96dde
+        Property=VCU_EVERR_MSGDISP(557847102, 0x2140123e) Listeners size: 1
+        Property=MCU_ATLS_STATUS(557847614, 0x2140143e) Listeners size: 1
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@745c7f6
+        Property=IPUR_FAILST(557847103, 0x2140123f) Listeners size: 1
+        Property=BCM_LR_DRL_OUTPUT_ST(557915329, 0x21411cc1) Listeners size: 1
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@37f5ab6
+        Property=BCM_CWC_SW(557849797, 0x21401cc5) Listeners size: 1
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@37f5ab6
+        Property=SCU_NGP_MODE_STATUS(557852367, 0x214026cf) Listeners size: 1
+            pid: 2022(com.xiaopeng.hiddenCam), mListenerBinder: android.os.BinderProxy@b4ad4e2
+        Property=SCU_PARK_AP_SW(557852369, 0x214026d1) Listeners size: 1
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@2d5c724
+        Property=SCU_ICM_CDU_AP_ST(557852386, 0x214026e2) Listeners size: 1
+            pid: 2022(com.xiaopeng.hiddenCam), mListenerBinder: android.os.BinderProxy@b4ad4e2
+        Property=MCU_REMIND_WARNING(557847680, 0x21401480) Listeners size: 1
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@88c919
+        Property=BCM_HIGHTBEAM_FAIL(557849734, 0x21401c86) Listeners size: 1
+        Property=BCM_LOWBEAM_FAIL(557849735, 0x21401c87) Listeners size: 1
+        Property=BCM_LTURNLAMP_FAIL(557849736, 0x21401c88) Listeners size: 1
+        Property=BCM_RTURNLAMP_FAIL(557849737, 0x21401c89) Listeners size: 1
+        Property=BCM_REARFOG_FAIL(557849738, 0x21401c8a) Listeners size: 1
+        Property=BCM_RDTROUTPUT_FAIL(557849739, 0x21401c8b) Listeners size: 1
+        Property=BCM_LDTROUTPUT_FAIL(557849740, 0x21401c8c) Listeners size: 1
+        Property=BCM_PARKINGLAMP_FAIL(557849741, 0x21401c8d) Listeners size: 1
+        Property=BCM_SYSERROR_WARM(557849742, 0x21401c8e) Listeners size: 1
+        Property=MSMD_ECU_ERR(557849743, 0x21401c8f) Listeners size: 1
+        Property=MSMD_VENTILATIONMOTOR_ERR(557849744, 0x21401c90) Listeners size: 1
+        Property=MCU_LLU_LOCK_UNLOCK_MODE(557847696, 0x21401490) Listeners size: 1
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@d3e6c93
+        Property=MSMD_HEATSYS_ERR(557849745, 0x21401c91) Listeners size: 1
+        Property=MSMP_ECU_ERR(557849746, 0x21401c92) Listeners size: 1
+        Property=MSMP_HEATSYS_ERR(557849747, 0x21401c93) Listeners size: 1
+        Property=DHC_ERR(557849748, 0x21401c94) Listeners size: 1
+        Property=BCM_NFC_CARDIDINFO(560995492, 0x21701ca4) Listeners size: 1
+            pid: 2320(com.xiaopeng.caraccount), mListenerBinder: android.os.BinderProxy@ad1c952
+        Property=SCU_NGP_OPEBUTTON_ST(557852311, 0x21402697) Listeners size: 1
+            pid: 1980(com.xiaopeng.montecarlo), mListenerBinder: android.os.BinderProxy@e33d87e
+        Property=XPU_NGP_ICON_ST(557856921, 0x21403899) Listeners size: 1
+            pid: 1154(com.xiaopeng.xuiservice:iotservice), mListenerBinder: android.os.BinderProxy@64fbe70
+        Property=SCU_NGP_TIPS_WINDOWS_ST(557852314, 0x2140269a) Listeners size: 1
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@2d5c724
+        Property=BCM_WIN_LOCK_ST(557848731, 0x2140189b) Listeners size: 1
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@37f5ab6
+        Property=BCM_PAKLIGHT_FMB_CFG(557849757, 0x21401c9d) Listeners size: 1
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@37f5ab6
+        Property=BCM_PACKING_LAMP_OUTPUT(557915294, 0x21411c9e) Listeners size: 1
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@37f5ab6
+        Property=SCU_NGP_QUICKLANE_SW(557852319, 0x2140269f) Listeners size: 1
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@2d5c724
+        Property=BCM_SDCL_PSDMOTO_ST(557849760, 0x21401ca0) Listeners size: 1
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@d7457ff
+        Property=BCM_WIPERSPDSW_ST(557849762, 0x21401ca2) Listeners size: 1
+            pid: 1030(com.xiaopeng.xuiservice), mListenerBinder: android.os.BinderProxy@d7457ff
+        Property=SCU_NGP_LCMODE_SW(557852322, 0x214026a2) Listeners size: 1
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@2d5c724
+        Property=OTA_MCU_REQ_STATUS(557847592, 0x21401428) Listeners size: 0
+        Property=OTA_MCU_REQ_UPDATEFILE(557847593, 0x21401429) Listeners size: 0
+        Property=OTA_MCU_UPDATE_STATUS(557847595, 0x2140142b) Listeners size: 0
+        Property=TBOX_TIME_INFO(557912123, 0x2141103b) Listeners size: 0
+        Property=VCU_GEARLEV(557847100, 0x2140123c) Listeners size: 0
+        Property=MCU_DORMANCY_TIME(557913151, 0x2141143f) Listeners size: 0
+
+**dump XpSharedMemoryService**
+    Client Info: 4
+        com.xiaopeng.montecarlo(Pid:1980) mListenerBinder:android.os.BinderProxy@a5130aa mRateMap:{XPU_SR_RD_PERIOD_DATA}
+        com.xiaopeng.hiddenCam(Pid:2022) mListenerBinder:android.os.BinderProxy@478fa5c mRateMap:{XPU_HD_MAP_DATA, XPU_HD_MAP_PERIOD_DATA}
+        com.xiaopeng.autopilot(Pid:2142) mListenerBinder:android.os.BinderProxy@6789d09 mRateMap:{XPU_SR_PK_PERIOD_DATA, XPU_SR_PK_EVENT_DATA}
+        com.xiaopeng.aiot.coreservice(Pid:4110) mListenerBinder:android.os.BinderProxy@ec3ee50 mRateMap:{XPU_SR_PK_PERIOD_DATA}
+    mPropertyToClientsMap: 5
+        Property=XPU_SR_PK_PERIOD_DATA(561002507, 0x2170380b) Listeners size: 2
+            pid: 4110(com.xiaopeng.aiot.coreservice), mListenerBinder: android.os.BinderProxy@ec3ee50
+            pid: 2142(com.xiaopeng.autopilot), mListenerBinder: android.os.BinderProxy@6789d09
+        Property=XPU_HD_MAP_PERIOD_DATA(561002515, 0x21703813) Listeners size: 1
+            pid: 2022(com.xiaopeng.hiddenCam), mListenerBinder: android.os.BinderProxy@478fa5c
+        Property=XPU_SR_PK_EVENT_DATA(561002508, 0x2170380c) Listeners size: 1
+            pid: 2142(com.xiaopeng.autopilot), mListenerBinder: android.os.BinderProxy@6789d09
+        Property=XPU_SR_RD_PERIOD_DATA(561002509, 0x2170380d) Listeners size: 1
+            pid: 1980(com.xiaopeng.montecarlo), mListenerBinder: android.os.BinderProxy@a5130aa
+        Property=XPU_HD_MAP_DATA(561002511, 0x2170380f) Listeners size: 1
+            pid: 2022(com.xiaopeng.hiddenCam), mListenerBinder: android.os.BinderProxy@478fa5c
+
+*XpDiagnosticService*
+    Client Info: 5
+        unknown(Pid:1657) mListenerBinder:android.os.BinderProxy@69a65e9 mRateMap:{MCU_RID_RESET_PHY : 0.0, MCU_RID_TEST_MODE : 0.0, MCU_RID_CABLE_DIAGNOSTICS : 0.0, MCU_DID_SQI_100BASE : 0.0, MCU_DID_SQI_1000BASE : 0.0, MCU_RID_MASTERSLAVE_CONTROL : 0.0}
+        com.xiaopeng.chargecontrol(Pid:1896) mListenerBinder:android.os.BinderProxy@870cde8 mRateMap:{VCU_THERMORUNAWAY_ST : 0.0, VCU_DEADBATTERY_FLAG : 0.0}
+        com.xiaopeng.hiddenCam(Pid:2022) mListenerBinder:android.os.BinderProxy@754baeb mRateMap:{SCU_ALCCTRL_REMIND : 0.0}
+        com.xiaopeng.carcontrol(Pid:2161) mListenerBinder:android.os.BinderProxy@73a3190 mRateMap:{IBT_FAILURE_LAMP : 0.0}
+        com.xiaopeng.diagnostic(Pid:4247) mListenerBinder:android.os.BinderProxy@4647781 mRateMap:{IBT_FAILURE_LAMP : 0.0}
+    mPropertyToClientsMap: 10
+        Property=IBT_FAILURE_LAMP(557851665, 0x21402411) Listeners size: 2
+            pid: 2161(com.xiaopeng.carcontrol), mListenerBinder: android.os.BinderProxy@73a3190
+            pid: 4247(com.xiaopeng.diagnostic), mListenerBinder: android.os.BinderProxy@4647781
+        Property=MCU_RID_RESET_PHY(560993296, 0x21701410) Listeners size: 1
+            pid: 1657(unknown), mListenerBinder: android.os.BinderProxy@69a65e9
+        Property=MCU_RID_TEST_MODE(560993297, 0x21701411) Listeners size: 1
+            pid: 1657(unknown), mListenerBinder: android.os.BinderProxy@69a65e9
+        Property=MCU_RID_CABLE_DIAGNOSTICS(560993298, 0x21701412) Listeners size: 1
+            pid: 1657(unknown), mListenerBinder: android.os.BinderProxy@69a65e9
+        Property=SCU_ALCCTRL_REMIND(557852274, 0x21402672) Listeners size: 1
+            pid: 2022(com.xiaopeng.hiddenCam), mListenerBinder: android.os.BinderProxy@754baeb
+        Property=MCU_DID_SQI_100BASE(560993299, 0x21701413) Listeners size: 1
+            pid: 1657(unknown), mListenerBinder: android.os.BinderProxy@69a65e9
+        Property=MCU_DID_SQI_1000BASE(560993300, 0x21701414) Listeners size: 1
+            pid: 1657(unknown), mListenerBinder: android.os.BinderProxy@69a65e9
+        Property=VCU_THERMORUNAWAY_ST(557847095, 0x21401237) Listeners size: 1
+            pid: 1896(com.xiaopeng.chargecontrol), mListenerBinder: android.os.BinderProxy@870cde8
+        Property=MCU_RID_MASTERSLAVE_CONTROL(560993338, 0x2170143a) Listeners size: 1
+            pid: 1657(unknown), mListenerBinder: android.os.BinderProxy@69a65e9
+        Property=VCU_DEADBATTERY_FLAG(557847099, 0x2140123b) Listeners size: 1
+            pid: 1896(com.xiaopeng.chargecontrol), mListenerBinder: android.os.BinderProxy@870cde8
+Ecus Int Data: 
+    Property=VCU_EVERRLAMP_DSP(557847089, 0x21401231) = Pair{0 57781027632}
+    Property=VCU_GEAR_WARNING(557847090, 0x21401232) = Pair{0 55437094055627}
+    Property=VCU_EBS_ERR_DSP(557847091, 0x21401233) = Pair{0 57799491225}
+    Property=VCU_LIQUIDHIGHTEMP_ERR(557847092, 0x21401234) = Pair{0 57801239350}
+    Property=VCU_WATERSENSOR_ERR(557847093, 0x21401235) = Pair{0 57802913778}
+    Property=VCU_BCRUISE_ERR(557847094, 0x21401236) = Pair{0 57804749611}
+    Property=VCU_THERMORUNAWAY_ST(557847095, 0x21401237) = Pair{0 57811713725}
+    Property=VCU_POWERLIMITATION_DSP(557847096, 0x21401238) = Pair{0 57813673100}
+    Property=VCU_CHGPORTHOT_DSP(557847097, 0x21401239) = Pair{0 57815969455}
+    Property=VCU_OBCMSG_LOST(557847098, 0x2140123a) = Pair{0 57819849194}
+    Property=VCU_DEADBATTERY_FLAG(557847099, 0x2140123b) = Pair{0 57823913882}
+    Property=IPUR_FAILST(557847103, 0x2140123f) = Pair{0 57844128725}
+    Property=IPUF_FAILST(557847104, 0x21401240) = Pair{-1 0}
+    Property=VCU_BATHOT_DSP(557847105, 0x21401241) = Pair{-1 0}
+    Property=VCU_CCS_WORK_ST(557847106, 0x21401242) = Pair{-1 0}
+    Property=VCU_DCDC_ERROR(557847107, 0x21401243) = Pair{-1 0}
+    Property=VCU_BAT_VOLT_LOW(557847109, 0x21401245) = Pair{-1 0}
+    Property=VCU_EMOTOR_SYSTEM_HOT(557847110, 0x21401246) = Pair{-1 0}
+    Property=VCU_EVACUUM_PUMP_ERROR(557847111, 0x21401247) = Pair{-1 0}
+    Property=VCU_HVRLY_ADHESION_ST(557847112, 0x21401248) = Pair{-1 0}
+    Property=VCU_AGS_ERROR(557847113, 0x21401249) = Pair{-1 0}
+    Property=ATLS_ERR_ST(557848587, 0x2140180b) = Pair{0 57858127580}
+    Property=ALS_ERROR_ST(557848588, 0x2140180c) = Pair{0 32787366427954}
+    Property=HVAC_PTC_ERROR(557849134, 0x21401a2e) = Pair{-1 0}
+    Property=BCM_AIRBAG_FAULT_ST(557849618, 0x21401c12) = Pair{0 55547540956679}
+    Property=BCM_HIGHTBEAM_FAIL(557849734, 0x21401c86) = Pair{0 57867863413}
+    Property=BCM_LOWBEAM_FAIL(557849735, 0x21401c87) = Pair{0 57875969455}
+    Property=BCM_LTURNLAMP_FAIL(557849736, 0x21401c88) = Pair{0 57879207163}
+    Property=BCM_RTURNLAMP_FAIL(557849737, 0x21401c89) = Pair{0 57892763725}
+    Property=BCM_REARFOG_FAIL(557849738, 0x21401c8a) = Pair{0 57897651069}
+    Property=BCM_RDTROUTPUT_FAIL(557849739, 0x21401c8b) = Pair{0 57913130236}
+    Property=BCM_LDTROUTPUT_FAIL(557849740, 0x21401c8c) = Pair{0 57919524298}
+    Property=BCM_PARKINGLAMP_FAIL(557849741, 0x21401c8d) = Pair{0 57929833882}
+    Property=BCM_SYSERROR_WARM(557849742, 0x21401c8e) = Pair{0 57933963830}
+    Property=MSMD_ECU_ERR(557849743, 0x21401c8f) = Pair{0 57939587580}
+    Property=MSMD_VENTILATIONMOTOR_ERR(557849744, 0x21401c90) = Pair{0 57947817788}
+    Property=MSMD_HEATSYS_ERR(557849745, 0x21401c91) = Pair{0 57962521902}
+    Property=MSMP_ECU_ERR(557849746, 0x21401c92) = Pair{0 57977259090}
+    Property=MSMP_HEATSYS_ERR(557849747, 0x21401c93) = Pair{0 57982525965}
+    Property=DHC_ERR(557849748, 0x21401c94) = Pair{0 57984347319}
+    Property=TPMS_SYSFAULTWARN(557850118, 0x21401e06) = Pair{0 55544326007930}
+    Property=TPMS_ABNORMALPRWARN(557850119, 0x21401e07) = Pair{0 32787366656704}
+    Property=ESP_ESP_FAULT(557851657, 0x21402409) = Pair{0 55544358079336}
+    Property=ESP_HDC_FAULT(557851658, 0x2140240a) = Pair{-1 0}
+    Property=ESP_AVH_FAULT(557851659, 0x2140240b) = Pair{0 55544460597409}
+    Property=ESP_SYS_WARNIND_REQ(557851660, 0x2140240c) = Pair{0 55542779700118}
+    Property=ESP_WARN_LAMP(557851661, 0x2140240d) = Pair{0 32787363194516}
+    Property=ESP_APBERR_ST(557851662, 0x2140240e) = Pair{0 55542779732254}
+    Property=ESP_ABS_FAULT(557851663, 0x2140240f) = Pair{0 55544358007149}
+    Property=IBT_FAILURE_LAMP(557851665, 0x21402411) = Pair{0 55542957031420}
+    Property=SCU_FCWAEB_SW(557852161, 0x21402601) = Pair{1 58022140184}
+    Property=SCU_LDW_SW(557852162, 0x21402602) = Pair{0 58024140444}
+    Property=SCU_IHB_SW(557852163, 0x21402603) = Pair{2 56353108691215}
+    Property=SCU_BSD_SW(557852165, 0x21402605) = Pair{1 58033330496}
+    Property=SCU_RCTA_SW(557852166, 0x21402606) = Pair{1 58037124194}
+    Property=SCU_RCW_SW(557852167, 0x21402607) = Pair{1 58042621746}
+    Property=SCU_DOW_SW(557852168, 0x21402608) = Pair{1 58053683725}
+    Property=SCU_ISLC_SW(557852173, 0x2140260d) = Pair{1 54357827000519}
+    Property=SCU_LONGCTRL_REMIND(557852199, 0x21402627) = Pair{0 52871141439734}
+    Property=SCU_SIDE_REVERSION_WARNING(557852202, 0x2140262a) = Pair{-1 0}
+    Property=SCU_ALCCTRL_REMIND(557852274, 0x21402672) = Pair{0 53972829923323}
+    Property=SCU_ICM_APAERR_TIPS(557852275, 0x21402673) = Pair{0 58084124350}
+    Property=SRR_FLFAIL_ST(557852276, 0x21402674) = Pair{0 58094353309}
+    Property=SRR_FRFAIL_ST(557852277, 0x21402675) = Pair{0 58106535757}
+    Property=SRR_RLFAIL_ST(557852278, 0x21402676) = Pair{0 58113112892}
+    Property=SRR_RRFAIL_ST(557852279, 0x21402677) = Pair{0 58121302527}
+    Property=CDC_DATAUPLOAD_ST(557852280, 0x21402678) = Pair{-1 0}
+    Property=XPU_XPU_FAIL_ST(557852281, 0x21402679) = Pair{0 55724892564892}
+    Property=CIU_SD_ST(557852675, 0x21402803) = Pair{-1 0}
+    Property=CIU_DVR_STATUS(557852696, 0x21402818) = Pair{-1 0}
+    Property=LLU_ERR_ST(557854230, 0x21402e16) = Pair{0 58149607371}
+    Property=AVAS_FAULT(557855247, 0x2140320f) = Pair{0 58157327215}
+Ecus Int Vector Data: 
+    Property=VCU_TCM_MOTOR(557912650, 0x2141124a) = Pair{null 0}
+    Property=VCU_BATTERY_PTC_ERROR_INFO(557912651, 0x2141124b) = Pair{null 0}
+    Property=HVAC_COMPRESSOR_ERROR_INFO(557914671, 0x21411a2f) = Pair{null 0}
+    Property=BCM_MSM_ERROR_INFO(557915286, 0x21411c96) = Pair{null 0}
+    Property=TPMS_TEMPWARN_ALL(557915662, 0x21411e0e) = Pair{[Ljava.lang.Integer;@a3b8a1a 32787366731443}
+    Property=TPMS_ALL_SENSOR_ST(557915664, 0x21411e10) = Pair{null 0}
+
+*CarAudioService*
+	Run in legacy mode? false
+	Master mute? false
+
+CarVolumeGroup 0
+	Gain in millibel (min / max / default/ current): -4800 1200 0 -3400
+	Gain in index (min / max / default / current): 0 60 48 14
+	Context: MUSIC -> Bus: 0
+Bus Number (0) / address (BUS00_MEDIA)
+ 	sample rate / encoding format / channel count: 48000 2 2
+	Gain in millibel (min / max / default/ current): -4800 1200 0 -3400
+
+CarVolumeGroup 1
+	Gain in millibel (min / max / default/ current): -4800 1200 0 -800
+	Gain in index (min / max / default / current): 0 60 48 40
+	Context: VOICE_COMMAND -> Bus: 3
+	Context: CALL_RING -> Bus: 3
+	Context: CALL -> Bus: 3
+Bus Number (3) / address (BUS03_PHONE)
+ 	sample rate / encoding format / channel count: 48000 2 2
+	Gain in millibel (min / max / default/ current): -4800 1200 0 -800
+
+CarVolumeGroup 2
+	Gain in millibel (min / max / default/ current): -4800 1200 0 -1800
+	Gain in index (min / max / default / current): 0 60 48 30
+	Context: ALARM -> Bus: 1
+	Context: NOTIFICATION -> Bus: 1
+	Context: SYSTEM_SOUND -> Bus: 1
+Bus Number (1) / address (BUS01_SYS_NOTIFICATION)
+ 	sample rate / encoding format / channel count: 48000 2 2
+	Gain in millibel (min / max / default/ current): -4800 1200 0 -1800
+
+CarVolumeGroup 3
+	Gain in millibel (min / max / default/ current): -4800 1200 0 -1800
+	Gain in index (min / max / default / current): 0 60 48 30
+	Context: NAVIGATION -> Bus: 2
+Bus Number (2) / address (BUS02_NAV_GUIDANCE)
+ 	sample rate / encoding format / channel count: 48000 2 2
+	Gain in millibel (min / max / default/ current): -4800 1200 0 -1800
+
+
+*PowerManagementService*
+mCurrentState:PowerState state:1, param:4,mIsSleeping:false,mIsSleep:false,mProcessingStartTime:245838488,mLastSleepEntryTime:245843494
+**PowerEventProcessingHandlers
+PowerEventProcessingHandlerWrapper [handler=com.android.car.CarLocationService@66f810, mProcessingTime=0, mProcessingDone=true]
+PowerEventProcessingHandlerWrapper [handler=com.android.car.GarageModeService@2d67844, mProcessingTime=2000, mProcessingDone=true]
+PowerEventProcessingHandlerWrapper [handler=com.android.car.SystemStateControllerService@989e94b, mProcessingTime=0, mProcessingDone=true]
+PowerEventProcessingHandlerWrapper [handler=com.android.car.AirplaneModeService@9882ada, mProcessingTime=10000, mProcessingDone=true]
+
+AirplaneModeServicecom.android.car.AirplaneModeService@9882ada
+
+
+**dump CarConditionService**
+  mPropIdClientMap: 3
+        Property=VCU_RAW_CAR_SPEED(559944229, 0x21601225), clients size: 5
+           pid: 1030(com.xiaopeng.xuiservice), mCallbackBinder: android.os.BinderProxy@4c0751b
+           pid: 2161(com.xiaopeng.carcontrol), mCallbackBinder: android.os.BinderProxy@2def2af
+           pid: 2142(com.xiaopeng.autopilot), mCallbackBinder: android.os.BinderProxy@5ac06c6
+           pid: 2227(com.xiaopeng.carspeechservice), mCallbackBinder: android.os.BinderProxy@4d89f7f
+           pid: 4247(com.xiaopeng.diagnostic), mCallbackBinder: android.os.BinderProxy@2503003
+        Property=VCU_VIRTUAL_ACCPEDAL_SIG(557847159, 0x21401277), clients size: 1
+           pid: 4247(com.xiaopeng.diagnostic), mCallbackBinder: android.os.BinderProxy@2503003
+        Property=VCU_ACCPEDAL_SIG(557847064, 0x21401218), clients size: 1
+           pid: 2161(com.xiaopeng.carcontrol), mCallbackBinder: android.os.BinderProxy@2def2af
+  ConditionInfo: 5
+        com.xiaopeng.carspeechservice(2227, condition size: 1)
+            CarConditionStatus{
+		VCU_RAW_CAR_SPEED: [0.0, 60.0, 100.0, 120.0, 130.0, 160.0]
+		VCU_RAW_CAR_SPEED limitIndex: 0
+      	}
+        com.xiaopeng.carcontrol(2161, condition size: 1)
+            CarConditionStatus{
+		VCU_ACCPEDAL_SIG: [30]
+		VCU_RAW_CAR_SPEED: [3.0, 10.0, 70.0, 100.0]
+		VCU_ACCPEDAL_SIG limitIndex: 0
+		VCU_RAW_CAR_SPEED limitIndex: 0
+      	}
+        com.xiaopeng.autopilot(2142, condition size: 1)
+            CarConditionStatus{
+		VCU_RAW_CAR_SPEED: [20.0, 30.0, 50.0]
+		VCU_RAW_CAR_SPEED limitIndex: 0
+      	}
+        com.xiaopeng.diagnostic(4247, condition size: 1)
+            CarConditionStatus{
+		VCU_VIRTUAL_ACCPEDAL_SIG: [30]
+		VCU_RAW_CAR_SPEED: [3.0, 70.0, 100.0]
+		VCU_RAW_CAR_SPEED limitIndex: 0
+      	}
+        com.xiaopeng.xuiservice(1030, condition size: 1)
+            CarConditionStatus{
+		VCU_RAW_CAR_SPEED: [0.0, 3.0, 5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0, 76.2, 80.96, 85.714, 115.238]
+		VCU_RAW_CAR_SPEED limitIndex: 0
+      	}
+
+
+*IntelligentEngineService*
+Scene action change log:
+03-01 14:41:47 CarIntelligentEngine dispatchEventToCarWelcomeSceneClients:  changed from 0 to 0
+03-06 05:03:48 CarIntelligentEngine dispatchEventToCarWelcomeSceneClients:  changed from 1 to 1
+08-24 18:48:36 CarIntelligentEngine dispatchEventToCarWelcomeSceneClients:  changed from 0 to 0
+01-30 05:26:20 CarIntelligentEngine dispatchEventToCarWelcomeSceneClients:  changed from 1 to 1
+06-30 21:26:39 CarIntelligentEngine dispatchEventToCarWelcomeSceneClients:  changed from 1 to 1
+10-30 05:27:28 CarIntelligentEngine dispatchEventToCarWelcomeSceneClients:  changed from 0 to 0
+12-29 06:11:36 CarIntelligentEngine dispatchEventToCarWelcomeSceneClients:  changed from 0 to 0
+12-24 15:50:58 CarIntelligentEngine dispatchEventToCarWelcomeSceneClients:  changed from 1 to 1
+05-12 18:09:33 CarIntelligentEngine dispatchEventToCarWelcomeSceneClients:  changed from 0 to 0
+05-28 09:12:45 CarIntelligentEngine dispatchEventToCarWelcomeSceneClients:  changed from 0 to 0
+01-11 04:39:24 CarIntelligentEngine dispatchEventToCarWelcomeSceneClients:  changed from 1 to 1
+09-25 12:55:23 CarIntelligentEngine dispatchEventToCarWelcomeSceneClients:  changed from 0 to 0
+08-07 07:41:58 CarIntelligentEngine dispatchEventToCarWelcomeSceneClients:  changed from 1 to 1
+12-17 14:04:28 CarIntelligentEngine dispatchEventToCarWelcomeSceneClients:  changed from 0 to 0
+01-29 21:16:00 CarIntelligentEngine dispatchEventToCarDrivingSceneClients:  changed from 1 to 1
+12-27 08:48:56 CarIntelligentEngine dispatchEventToCarWelcomeSceneClients:  changed from 1 to 1
+10-09 10:16:43 CarIntelligentEngine dispatchEventToCarWelcomeSceneClients:  changed from 0 to 0
+08-19 20:43:41 CarIntelligentEngine dispatchEventToCarWelcomeSceneClients:  changed from 1 to 1
+03-26 16:30:29 CarIntelligentEngine dispatchEventToCarWelcomeSceneClients:  changed from 0 to 0
+06-14 05:33:10 CarIntelligentEngine dispatchEventToCarWelcomeSceneClients:  changed from 0 to 0
+
+*CarGuardModeService*
+Scene action change log:
+
+*Dump Vehicle HAL*
+Vehicle HAL Interface: android.hardware.automotive.vehicle@2.0::IVehicle
+**dump process call the prop set method count**
+**dump process call the prop get method count**
+**dump HAL services**
+*Power HAL*
+isPowerStateSupported:true,isDeepSleepAllowed:true
+**All Events, now ns:247347742976364, +2d20h42m27s742ms**
+event count:19557, lastEvent:Property=TBOX_CDU_APN(554700817, 0x21101011),timestamp:57021874547833,zone:0x0,floatValues: [],int32Values: [],int64Values: [],bytes: [],string: {"apn1":1,"apn2":1,"apn3":0,"imei":"868723060396429","imsi":"460138828609766","network_type":2,"p":"1-1","rsrp":-67,"rssi":-51}
+
+event count:75, lastEvent:Property=ICM_SYNC_SIGNAL(554702353, 0x21101611),timestamp:55546664905585,zone:0x0,floatValues: [],int32Values: [],int64Values: [],bytes: [],string: {"SyncMode":"SysReady","msgId":"","SyncProgress":1}
+event count:634, lastEvent:Property=SCU_RAVMSLOT(560014947, 0x21612663),timestamp:55669143037414,zone:0x0,floatValues: [-15234.82, 11029.77, -15232.93, 11028.45, -15230.14, 11032.42, 1.0, 3.0],int32Values: [],int64Values: [],bytes: [],string: 
+event count:691, lastEvent:Property=SCU_LAVMSLOT(560014946, 0x21612662),timestamp:55600544381190,zone:0x0,floatValues: [-15193.54, 11068.06, -15194.79, 11066.12, -15198.87, 11068.76, 6.0, 5.0],int32Values: [],int64Values: [],bytes: [],string: 
+event count:2, lastEvent:Property=TBOX_CDU_SELF_MODE(557846597, 0x21401045),timestamp:55457653760567,zone:0x0,floatValues: [],int32Values: [0],int64Values: [],bytes: [],string: 
+event count:75, lastEvent:Property=CDU_IBCM_RLPOS(559946854, 0x21601c66),timestamp:55490864191753,zone:0x0,floatValues: [99.5],int32Values: [],int64Values: [],bytes: [],string: 
+event count:288, lastEvent:Property=CDU_IBCM_FLPOS(559946855, 0x21601c67),timestamp:55547827171522,zone:0x0,floatValues: [100.0],int32Values: [],int64Values: [],bytes: [],string: 
+event count:160, lastEvent:Property=CDU_IBCM_FRPOS(559946856, 0x21601c68),timestamp:56490988042933,zone:0x0,floatValues: [100.0],int32Values: [],int64Values: [],bytes: [],string: 
+event count:26, lastEvent:Property=ICM_CARSETTING(554702360, 0x21101618),timestamp:56368757368657,zone:0x0,floatValues: [],int32Values: [],int64Values: [],bytes: [],string: {"msgType":msg,"msgId":"","msgData":{"msgCmd":"setHvacTempDriverValue","param":22.0}}
+event count:31, lastEvent:Property=CDU_IBCM_RRPOS(559946857, 0x21601c69),timestamp:40839764651689,zone:0x0,floatValues: [100.0],int32Values: [],int64Values: [],bytes: [],string: 
+event count:96, lastEvent:Property=SCU_MODE_INDEX(557852235, 0x2140264b),timestamp:54358026211717,zone:0x0,floatValues: [],int32Values: [0],int64Values: [],bytes: [],string: 
+event count:19, lastEvent:Property=BCM_CHARG_GUNL_ST(557849677, 0x21401c4d),timestamp:55514809546223,zone:0x0,floatValues: [],int32Values: [0],int64Values: [],bytes: [],string: 
+event count:108, lastEvent:Property=SRS_PSNGR_OCCUPANCY_ST(557849679, 0x21401c4f),timestamp:56439207581546,zone:0x0,floatValues: [],int32Values: [0],int64Values: [],bytes: [],string: 
+event count:416, lastEvent:Property=MSMD_SEATHORZPOS(557849686, 0x21401c56),timestamp:50675466724222,zone:0x0,floatValues: [],int32Values: [61],int64Values: [],bytes: [],string: 
+event count:208, lastEvent:Property=TBOX_SYNC_UTC_TIME(558960713, 0x21511049),timestamp:56746329375908,zone:0x0,floatValues: [],int32Values: [],int64Values: [480, 1792664133, 139],bytes: [],string: 
+event count:770, lastEvent:Property=VCU_DSTBAT_DISP_NEW(557847128, 0x21401258),timestamp:56776487887042,zone:0x0,floatValues: [],int32Values: [267],int64Values: [],bytes: [],string: 
+event count:835, lastEvent:Property=VCU_DSTBAT_DISP_CLTC_FLOAT(559944314, 0x2160127a),timestamp:56776488045844,zone:0x0,floatValues: [321.0],int32Values: [],int64Values: [],bytes: [],string: 
+event count:770, lastEvent:Property=VCU_DSTBAT_DISP_WLTP_FLOAT(559944315, 0x2160127b),timestamp:56776487941261,zone:0x0,floatValues: [267.0],int32Values: [],int64Values: [],bytes: [],string: 
+event count:471566, lastEvent:Property=VCU_CAR_STATIONARY_ST(557847132, 0x2140125c),timestamp:56407679448954,zone:0x0,floatValues: [],int32Values: [1],int64Values: [],bytes: [],string: 
+event count:26, lastEvent:Property=MCU_FB_LLU_ACTIVE(557847645, 0x2140145d),timestamp:55530903351685,zone:0x0,floatValues: [],int32Values: [1],int64Values: [],bytes: [],string: 
+event count:835, lastEvent:Property=VCU_DSTBAT_DISP_CLTC(557847140, 0x21401264),timestamp:56776487983240,zone:0x0,floatValues: [],int32Values: [321],int64Values: [],bytes: [],string: 
+event count:19, lastEvent:Property=BCM_POWERMODE(557849700, 0x21401c64),timestamp:55542761395639,zone:0x0,floatValues: [],int32Values: [1],int64Values: [],bytes: [],string: 
+event count:83, lastEvent:Property=SCU_URADAR_VOICE_TONE(557852262, 0x21402666),timestamp:56408258721662,zone:0x0,floatValues: [],int32Values: [0],int64Values: [],bytes: [],string: 
+event count:11, lastEvent:Property=MCU_FACTORY_MODE(557847658, 0x2140146a),timestamp:55514809387056,zone:0x0,floatValues: [],int32Values: [0],int64Values: [],bytes: [],string: 
+event count:7, lastEvent:Property=MCU_BLE_ID_DATA(560993375, 0x2170145f),timestamp:55530320218821,zone:0x0,floatValues: [],int32Values: [],int64Values: [],bytes: [51, 57, 53, 50, 51, 51, 54, 49],string: 
+event count:77, lastEvent:Property=BCM_CWCCHRG_ABNORMAL_WARNING(557849714, 0x21401c72),timestamp:56493868838088,zone:0x0,floatValues: [],int32Values: [0],int64Values: [],bytes: [],string: 
+event count:50, lastEvent:Property=SCU_ALCCTRL_REMIND(557852274, 0x21402672),timestamp:53972829923323,zone:0x0,floatValues: [],int32Values: [0],int64Values: [],bytes: [],string: 
+event count:49, lastEvent:Property=XPU_XPU_FAIL_ST(557852281, 0x21402679),timestamp:55724892564892,zone:0x0,floatValues: [],int32Values: [0],int64Values: [],bytes: [],string: 
+event count:1123702, lastEvent:Property=XPU_VEH_LOCATION_PROTO(561002571, 0x2170384b),timestamp:57022965343406,zone:0x0,floatValues: [],int32Values: [],int64Values: [],bytes: [8, -128, -73, -1, -82, -3, -40, -76, -16, 24, 21, 61, -98, -103, -58, 29, -52, 10, 31, 70],string: 
+event count:2, lastEvent:Property=SCU_MRR_ASSIST_SYSST(557917818, 0x2141267a),timestamp:35116261334457,zone:0x0,floatValues: [],int32Values: [1, 0, 0, 0],int64Values: [],bytes: [],string: 
+event count:2, lastEvent:Property=SCU_RCW_WARNING(557852283, 0x2140267b),timestamp:54820104511228,zone:0x0,floatValues: [],int32Values: [0],int64Values: [],bytes: [],string: 
+event count:21, lastEvent:Property=MSMD_MCU_WELCOME(557849724, 0x21401c7c),timestamp:55543450832878,zone:0x0,floatValues: [],int32Values: [1],int64Values: [],bytes: [],string: 
+event count:4, lastEvent:Property=SCU_DOW_LWARNING(557852286, 0x2140267e),timestamp:49977731158500,zone:0x0,floatValues: [],int32Values: [0],int64Values: [],bytes: [],string: 
+event count:2442, lastEvent:Property=SCU_FEATURE_DATA(560014942, 0x2161265e),timestamp:56403428122289,zone:0x0,floatValues: [-19658.43, -19658.41, 13.0, 10177.47, 10177.45, 1107.0],int32Values: [],int64Values: [],bytes: [],string: 
+event count:23, lastEvent:Property=HVAC_FAN_SPEED(356517120, 0x15400500),timestamp:51486542228599,zone:0x0,floatValues: [],int32Values: [1],int64Values: [],bytes: [],string: 
+event count:76, lastEvent:Property=AVM_DISPLAY_MODE(557855745, 0x21403401),timestamp:56405718480049,zone:0x0,floatValues: [],int32Values: [1],int64Values: [],bytes: [],string: 
+event count:473, lastEvent:Property=BCM_WIN_POS(560012320, 0x21611c20),timestamp:56490987979287,zone:0x0,floatValues: [100.0, 100.0, 99.5, 100.0],int32Values: [],int64Values: [],bytes: [],string: 
+event count:20, lastEvent:Property=TPMS_SENSOR_RESET(557850113, 0x21401e01),timestamp:55544325247513,zone:0x0,floatValues: [],int32Values: [2],int64Values: [],bytes: [],string: 
+event count:8, lastEvent:Property=HVAC_FAN_DIRECTION(356517121, 0x15400501),timestamp:50423828733902,zone:0x0,floatValues: [],int32Values: [1],int64Values: [],bytes: [],string: 
+event count:262, lastEvent:Property=HIGH_BEAM_LIGHTS_STATE(289410561, 0x11400e01),timestamp:56332728054660,zone:0x0,floatValues: [],int32Values: [0],int64Values: [],bytes: [],string: 
+event count:11187, lastEvent:Property=AP_POWER_BOOTUP_REASON(289409538, 0x11400a02),timestamp:57021560103615,zone:0x0,floatValues: [],int32Values: [4],int64Values: [],bytes: [],string: 
+event count:152, lastEvent:Property=VCU_BMS_SOCDISP(557847042, 0x21401202),timestamp:56149360707074,zone:0x0,floatValues: [],int32Values: [51],int64Values: [],bytes: [],string: 
+event count:1, lastEvent:Property=ESC_ESP(557851650, 0x21402402),timestamp:32787363171287,zone:0x0,floatValues: [],int32Values: [1],int64Values: [],bytes: [],string: 
+event count:242, lastEvent:Property=SCU_IHB_SW(557852163, 0x21402603),timestamp:56353108691215,zone:0x0,floatValues: [],int32Values: [2],int64Values: [],bytes: [],string: 
+event count:134, lastEvent:Property=ESC_AVH(557851651, 0x21402403),timestamp:56412938393848,zone:0x0,floatValues: [],int32Values: [0],int64Values: [],bytes: [],string: 
+event count:3079, lastEvent:Property=HVAC_PM25(557849092, 0x21401a04),timestamp:56565600130352,zone:0x0,floatValues: [],int32Values: [3],int64Values: [],bytes: [],string: 
+event count:48, lastEvent:Property=XPU_CONNECTED(557856773, 0x21403805),timestamp:55544796915013,zone:0x0,floatValues: [],int32Values: [1],int64Values: [],bytes: [],string: 
+event count:579, lastEvent:Property=HVAC_AIR_QUALITY_LEVEL(557849093, 0x21401a05),timestamp:55710182565627,zone:0x0,floatValues: [],int32Values: [0],int64Values: [],bytes: [],string: 
+event count:19, lastEvent:Property=STEERING_WHEEL_EPS(557851653, 0x21402405),timestamp:55542761101629,zone:0x0,floatValues: [],int32Values: [1],int64Values: [],bytes: [],string: 
+event count:230178, lastEvent:Property=VCU_RAW_CAR_SPEED(559944229, 0x21601225),timestamp:56407692588798,zone:0x0,floatValues: [0.0],int32Values: [],int64Values: [],bytes: [],string: 
+event count:69, lastEvent:Property=VCU_CURRENT_GEARLEV(557847045, 0x21401205),timestamp:56408227748642,zone:0x0,floatValues: [],int32Values: [4],int64Values: [],bytes: [],string: 
+event count:20, lastEvent:Property=TPMS_SYSFAULTWARN(557850118, 0x21401e06),timestamp:55544326007930,zone:0x0,floatValues: [],int32Values: [0],int64Values: [],bytes: [],string: 
+event count:73963, lastEvent:Property=EPS_STEERING_ANGLE_SPD(557851655, 0x21402407),timestamp:57022885772104,zone:0x0,floatValues: [],int32Values: [3],int64Values: [],bytes: [],string: 
+event count:1, lastEvent:Property=TPMS_ABNORMALPRWARN(557850119, 0x21401e07),timestamp:32787366656704,zone:0x0,floatValues: [],int32Values: [0],int64Values: [],bytes: [],string: 
+event count:25, lastEvent:Property=BCM_DRIVERSEAT_OCCUPIED(557849607, 0x21401c07),timestamp:56448098781960,zone:0x0,floatValues: [],int32Values: [1],int64Values: [],bytes: [],string: 
+event count:4, lastEvent:Property=HVAC_RECIRC_ON(356517128, 0x15400508),timestamp:44203630141962,zone:0x0,floatValues: [],int32Values: [1],int64Values: [],bytes: [],string: 
+event count:20546, lastEvent:Property=XPU_CDU_BRIGHTNESS_ST(557856777, 0x21403809),timestamp:57022925307729,zone:0x0,floatValues: [],int32Values: [18],int64Values: [],bytes: [],string: 
+event count:165, lastEvent:Property=LLU_FUNCTIONST(557854217, 0x21402e09),timestamp:56408499812027,zone:0x0,floatValues: [],int32Values: [13],int64Values: [],bytes: [],string: 
+event count:51, lastEvent:Property=BCM_CENTRAL_LOCK_SW(557849609, 0x21401c09),timestamp:56409577685308,zone:0x0,floatValues: [],int32Values: [0],int64Values: [],bytes: [],string: 
+event count:19, lastEvent:Property=MCU_IG_DATA(557847561, 0x21401409),timestamp:55542778174389,zone:0x0,floatValues: [],int32Values: [1],int64Values: [],bytes: [],string: 
+event count:20, lastEvent:Property=ESP_ESP_FAULT(557851657, 0x21402409),timestamp:55544358079336,zone:0x0,floatValues: [],int32Values: [0],int64Values: [],bytes: [],string: 
+event count:6, lastEvent:Property=BCM_TRUNKAJAR(557849610, 0x21401c0a),timestamp:55480813872121,zone:0x0,floatValues: [],int32Values: [0],int64Values: [],bytes: [],string: 
+event count:20, lastEvent:Property=ESP_AVH_FAULT(557851659, 0x2140240b),timestamp:55544460597409,zone:0x0,floatValues: [],int32Values: [0],int64Values: [],bytes: [],string: 
+event count:6, lastEvent:Property=VCU_RESHEAT_MANATIME(557847051, 0x2140120b),timestamp:50355941900022,zone:0x0,floatValues: [],int32Values: [0],int64Values: [],bytes: [],string: 
+event count:25, lastEvent:Property=BCM_DRVSEAT_BELTSBR_WARNING(557849612, 0x21401c0c),timestamp:56412590123223,zone:0x0,floatValues: [],int32Values: [1],int64Values: [],bytes: [],string: 
+event count:20, lastEvent:Property=ESP_SYS_WARNIND_REQ(557851660, 0x2140240c),timestamp:55542779700118,zone:0x0,floatValues: [],int32Values: [0],int64Values: [],bytes: [],string: 
+event count:1, lastEvent:Property=ALS_ERROR_ST(557848588, 0x2140180c),timestamp:32787366427954,zone:0x0,floatValues: [],int32Values: [0],int64Values: [],bytes: [],string: 
+event count:159, lastEvent:Property=HVAC_INNER_TEMPERATURE(559946285, 0x21601a2d),timestamp:56605357189921,zone:0x0,floatValues: [23.0],int32Values: [],int64Values: [],bytes: [],string: 
+event count:1, lastEvent:Property=BCM_PSNGRSEAT_BELTSBR_WARNING(557849613, 0x21401c0d),timestamp:32787362883370,zone:0x0,floatValues: [],int32Values: [0],int64Values: [],bytes: [],string: 
+event count:1, lastEvent:Property=ESP_WARN_LAMP(557851661, 0x2140240d),timestamp:32787363194516,zone:0x0,floatValues: [],int32Values: [0],int64Values: [],bytes: [],string: 
+event count:1, lastEvent:Property=TPMS_PRWARN_ALL(557915660, 0x21411e0c),timestamp:32787366570193,zone:0x0,floatValues: [],int32Values: [0, 0, 0, 0],int64Values: [],bytes: [],string: 
+event count:10, lastEvent:Property=HVAC_SETTEMP_SYNCST(557849101, 0x21401a0d),timestamp:50423828849683,zone:0x0,floatValues: [],int32Values: [1],int64Values: [],bytes: [],string: 
+event count:42, lastEvent:Property=SCU_ISLC_SW(557852173, 0x2140260d),timestamp:54357827000519,zone:0x0,floatValues: [],int32Values: [1],int64Values: [],bytes: [],string: 
+event count:61, lastEvent:Property=ICM_CONNECTED(557848078, 0x2140160e),timestamp:55544759814128,zone:0x0,floatValues: [],int32Values: [1],int64Values: [],bytes: [],string: 
+event count:1, lastEvent:Property=BCM_2NDLEFTSEAT_BELTSBR_WARNING(557849614, 0x21401c0e),timestamp:32787362845141,zone:0x0,floatValues: [],int32Values: [1],int64Values: [],bytes: [],string: 
+event count:20, lastEvent:Property=ESP_APBERR_ST(557851662, 0x2140240e),timestamp:55542779732254,zone:0x0,floatValues: [],int32Values: [0],int64Values: [],bytes: [],string: 
+event count:309, lastEvent:Property=TPMS_TEMP_ALL(557915663, 0x21411e0f),timestamp:56308778232482,zone:0x0,floatValues: [],int32Values: [27, 27, 28, 28],int64Values: [],bytes: [],string: 
+event count:243, lastEvent:Property=ICM_TOTAL_ODOMETER(559945262, 0x2160162e),timestamp:56308908329409,zone:0x0,floatValues: [113606.0],int32Values: [],int64Values: [],bytes: [],string: 
+event count:52, lastEvent:Property=TBOX_CONNECT_STATE(557846543, 0x2140100f),timestamp:55546009826211,zone:0x0,floatValues: [],int32Values: [1],int64Values: [],bytes: [],string: 
+event count:22, lastEvent:Property=SCU_HIC_SW(557852175, 0x2140260f),timestamp:55542925697514,zone:0x0,floatValues: [],int32Values: [1],int64Values: [],bytes: [],string: 
+event count:1, lastEvent:Property=BCM_2NDMIDSEAT_BELTSBR_WARNING(557849615, 0x21401c0f),timestamp:32787362968422,zone:0x0,floatValues: [],int32Values: [1],int64Values: [],bytes: [],string: 
+event count:20, lastEvent:Property=ESP_ABS_FAULT(557851663, 0x2140240f),timestamp:55544358007149,zone:0x0,floatValues: [],int32Values: [0],int64Values: [],bytes: [],string: 
+event count:1, lastEvent:Property=TPMS_TEMPWARN_ALL(557915662, 0x21411e0e),timestamp:32787366731443,zone:0x0,floatValues: [],int32Values: [0, 0, 0, 0],int64Values: [],bytes: [],string: 
+event count:2432, lastEvent:Property=ICM_TRIP_SINC_IGON(559945263, 0x2160162f),timestamp:56352708540330,zone:0x0,floatValues: [7.3],int32Values: [],int64Values: [],bytes: [],string: 
+event count:43, lastEvent:Property=VCU_EVSYS_READYST(557847056, 0x21401210),timestamp:55566006289745,zone:0x0,floatValues: [],int32Values: [2],int64Values: [],bytes: [],string: 
+event count:1, lastEvent:Property=BCM_2NDRIGHTSEAT_BELTSBR_WARNING(557849616, 0x21401c10),timestamp:32787362902329,zone:0x0,floatValues: [],int32Values: [1],int64Values: [],bytes: [],string: 
+event count:30, lastEvent:Property=AVM_WORK_ST(557855760, 0x21403410),timestamp:55553841836051,zone:0x0,floatValues: [],int32Values: [1],int64Values: [],bytes: [],string: 
+event count:2423, lastEvent:Property=ICM_TRIP_SINC_CHRG(559945264, 0x21601630),timestamp:56352708550850,zone:0x0,floatValues: [242.3],int32Values: [],int64Values: [],bytes: [],string: 
+event count:835, lastEvent:Property=VCU_DSTBAT_DISP(557847057, 0x21401211),timestamp:56776487967823,zone:0x0,floatValues: [],int32Values: [321],int64Values: [],bytes: [],string: 
+event count:20, lastEvent:Property=IBT_FAILURE_LAMP(557851665, 0x21402411),timestamp:55542957031420,zone:0x0,floatValues: [],int32Values: [0],int64Values: [],bytes: [],string: 
+event count:2423, lastEvent:Property=ICM_TRIPA(559945265, 0x21601631),timestamp:56352708546059,zone:0x0,floatValues: [30639.6],int32Values: [],int64Values: [],bytes: [],string: 
+event count:20, lastEvent:Property=BCM_AIRBAG_FAULT_ST(557849618, 0x21401c12),timestamp:55547540956679,zone:0x0,floatValues: [],int32Values: [0],int64Values: [],bytes: [],string: 
+event count:69, lastEvent:Property=ESP_APBSYS_ST(557851667, 0x21402413),timestamp:56409293074683,zone:0x0,floatValues: [],int32Values: [2],int64Values: [],bytes: [],string: 
+event count:1, lastEvent:Property=IBT_HBC_REQ(557851668, 0x21402414),timestamp:32787363068474,zone:0x0,floatValues: [],int32Values: [0],int64Values: [],bytes: [],string: 
+event count:126, lastEvent:Property=ICM_NEEDNAVI(554702405, 0x21101645),timestamp:55546921349960,zone:0x0,floatValues: [],int32Values: [],int64Values: [],bytes: [],string: {"Need":true,"Size-w":660,"Size-h":660,"Fps":5,"Format":2}
+event count:8, lastEvent:Property=HVAC_PSN_LEFTVERT(557849109, 0x21401a15),timestamp:56469368429139,zone:0x0,floatValues: [],int32Values: [14],int64Values: [],bytes: [],string: 
+event count:1, lastEvent:Property=BMS_CHARGE_MODE(557853718, 0x21402c16),timestamp:32787366758162,zone:0x0,floatValues: [],int32Values: [0],int64Values: [],bytes: [],string: 
+event count:1576, lastEvent:Property=BCM_LTURNLAMP_ST(557849623, 0x21401c17),timestamp:56331408296275,zone:0x0,floatValues: [],int32Values: [0],int64Values: [],bytes: [],string: 
+event count:22, lastEvent:Property=SCU_PHONE_PK_BTN(557852183, 0x21402617),timestamp:55542808994962,zone:0x0,floatValues: [],int32Values: [1],int64Values: [],bytes: [],string: 
+event count:8, lastEvent:Property=HVAC_PSN_RIGHTVERT(557849111, 0x21401a17),timestamp:56469368353045,zone:0x0,floatValues: [],int32Values: [14],int64Values: [],bytes: [],string: 
+event count:1226, lastEvent:Property=VCU_BRKPEDAL_ST(557847063, 0x21401217),timestamp:56410328355412,zone:0x0,floatValues: [],int32Values: [0],int64Values: [],bytes: [],string: 
+event count:1436, lastEvent:Property=BCM_RTURNLAMP_ST(557849624, 0x21401c18),timestamp:56357127983661,zone:0x0,floatValues: [],int32Values: [0],int64Values: [],bytes: [],string: 
+event count:76, lastEvent:Property=BCM_DOOR(557915161, 0x21411c19),timestamp:56490627325537,zone:0x0,floatValues: [],int32Values: [0, 0, 0, 0],int64Values: [],bytes: [],string: 
+event count:20658, lastEvent:Property=VCU_ACCPEDAL_SIG(557847064, 0x21401218),timestamp:56374046991780,zone:0x0,floatValues: [],int32Values: [0],int64Values: [],bytes: [],string: 
+event count:30, lastEvent:Property=VCU_PGEAR_VD(557847065, 0x21401219),timestamp:56409248731558,zone:0x0,floatValues: [],int32Values: [1],int64Values: [],bytes: [],string: 
+event count:146, lastEvent:Property=BCM_PARKING_LAMP(557849626, 0x21401c1a),timestamp:56408378640256,zone:0x0,floatValues: [],int32Values: [0],int64Values: [],bytes: [],string: 
+event count:375, lastEvent:Property=SCU_OPERATION_TIPS(557852187, 0x2140261b),timestamp:56408188622183,zone:0x0,floatValues: [],int32Values: [0],int64Values: [],bytes: [],string: 
+event count:34, lastEvent:Property=HVAC_IONIZER(557849118, 0x21401a1e),timestamp:55542791421420,zone:0x0,floatValues: [],int32Values: [1],int64Values: [],bytes: [],string: 
+event count:10, lastEvent:Property=HVAC_WINDMODE_COLOUR(557849120, 0x21401a20),timestamp:50423828828017,zone:0x0,floatValues: [],int32Values: [2],int64Values: [],bytes: [],string: 
+event count:204, lastEvent:Property=BCM_LOW_BEAM(557849633, 0x21401c21),timestamp:56408378688798,zone:0x0,floatValues: [],int32Values: [0],int64Values: [],bytes: [],string: 
+event count:608, lastEvent:Property=XPU_NGP_TRIGGER_EVENT_DATA(561002513, 0x21703811),timestamp:56405525537289,zone:0x0,floatValues: [],int32Values: [],int64Values: [],bytes: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],string: 
+event count:81, lastEvent:Property=TPMS_PRFL(559947266, 0x21601e02),timestamp:56227279631419,zone:0x0,floatValues: [238.902],int32Values: [],int64Values: [],bytes: [],string: 
+event count:8, lastEvent:Property=HVAC_TEMPERATURE_PSN_SET(559946242, 0x21601a02),timestamp:56368841450688,zone:0x0,floatValues: [22.0],int32Values: [],int64Values: [],bytes: [],string: 
+event count:29906, lastEvent:Property=VCU_OBC_DCVOLT(559944195, 0x21601203),timestamp:50356858155907,zone:0x0,floatValues: [0.0],int32Values: [],int64Values: [],bytes: [],string: 
+event count:66, lastEvent:Property=ENV_OUTSIDE_TEMPERATURE(291505923, 0x11600703),timestamp:55993650062133,zone:0x0,floatValues: [18.0],int32Values: [],int64Values: [],bytes: [],string: 
+event count:1, lastEvent:Property=BCM_MSB_ACTIVE(557849635, 0x21401c23),timestamp:32787366268058,zone:0x0,floatValues: [],int32Values: [1],int64Values: [],bytes: [],string: 
+event count:86, lastEvent:Property=TPMS_PRFR(559947267, 0x21601e03),timestamp:56226279340899,zone:0x0,floatValues: [241.648],int32Values: [],int64Values: [],bytes: [],string: 
+event count:492, lastEvent:Property=SCU_BSD_RIGHT_WARNING(557852195, 0x21402623),timestamp:56010069810252,zone:0x0,floatValues: [],int32Values: [0],int64Values: [],bytes: [],string: 
+event count:8, lastEvent:Property=HVAC_TEMPERATURE_SET(358614275, 0x15600503),timestamp:56368841383084,zone:0x0,floatValues: [22.0],int32Values: [],int64Values: [],bytes: [],string: 
+event count:25648, lastEvent:Property=VCU_OBC_DCCUR(559944196, 0x21601204),timestamp:50356858168615,zone:0x0,floatValues: [0.0],int32Values: [],int64Values: [],bytes: [],string: 
+event count:89, lastEvent:Property=TPMS_PRRL(559947268, 0x21601e04),timestamp:56177279157584,zone:0x0,floatValues: [247.14],int32Values: [],int64Values: [],bytes: [],string: 
+event count:456, lastEvent:Property=SCU_BSD_LEFT_WARNING(557852196, 0x21402624),timestamp:56297318713215,zone:0x0,floatValues: [],int32Values: [0],int64Values: [],bytes: [],string: 
+event count:103, lastEvent:Property=TPMS_PRRR(559947269, 0x21601e05),timestamp:56150279574157,zone:0x0,floatValues: [241.648],int32Values: [],int64Values: [],bytes: [],string: 
+event count:2, lastEvent:Property=SCU_RCTA_LEFT_WARNING(557852197, 0x21402625),timestamp:44095006851899,zone:0x0,floatValues: [],int32Values: [0],int64Values: [],bytes: [],string: 
+event count:51, lastEvent:Property=VCU_EBS_BATT_SOC(557847078, 0x21401226),timestamp:56664038687971,zone:0x0,floatValues: [],int32Values: [88],int64Values: [],bytes: [],string: 
+event count:83454, lastEvent:Property=EPS_STEERING_ANGLE(559948806, 0x21602406),timestamp:57022985859448,zone:0x0,floatValues: [-3.5],int32Values: [],int64Values: [],bytes: [],string: 
+event count:4, lastEvent:Property=VCU_DCCCS_CURR(559944198, 0x21601206),timestamp:50356858223459,zone:0x0,floatValues: [0.0],int32Values: [],int64Values: [],bytes: [],string: 
+event count:8, lastEvent:Property=HVAC_DEFROSTER_XP(557849126, 0x21401a26),timestamp:50423828788694,zone:0x0,floatValues: [],int32Values: [0],int64Values: [],bytes: [],string: 
+event count:2, lastEvent:Property=SCU_RCTA_RIGHT_WARNING(557852198, 0x21402626),timestamp:50583079974727,zone:0x0,floatValues: [],int32Values: [0],int64Values: [],bytes: [],string: 
+event count:10, lastEvent:Property=HVAC_AC_ON_XP(557849127, 0x21401a27),timestamp:50423828932079,zone:0x0,floatValues: [],int32Values: [1],int64Values: [],bytes: [],string: 
+event count:4, lastEvent:Property=VCU_DCCCS_SUMU(559944199, 0x21601207),timestamp:50356858199396,zone:0x0,floatValues: [0.0],int32Values: [],int64Values: [],bytes: [],string: 
+event count:30, lastEvent:Property=VCU_DRIMODE_FB(557847079, 0x21401227),timestamp:54357836067394,zone:0x0,floatValues: [],int32Values: [0],int64Values: [],bytes: [],string: 
+event count:6, lastEvent:Property=SCU_LONGCTRL_REMIND(557852199, 0x21402627),timestamp:52871141439734,zone:0x0,floatValues: [],int32Values: [0],int64Values: [],bytes: [],string: 
+event count:135, lastEvent:Property=BCM_FRONT_LIGHT_GROUP_MODE(557849640, 0x21401c28),timestamp:56408378709683,zone:0x0,floatValues: [],int32Values: [0],int64Values: [],bytes: [],string: 
+event count:15, lastEvent:Property=VCU_CHARGE_GUN_STATUS(557847080, 0x21401228),timestamp:50355942115282,zone:0x0,floatValues: [],int32Values: [0],int64Values: [],bytes: [],string: 
+event count:1538, lastEvent:Property=SCU_XPILOT_ST(557852200, 0x21402628),timestamp:56310539170033,zone:0x0,floatValues: [],int32Values: [1],int64Values: [],bytes: [],string: 
+event count:3, lastEvent:Property=VCU_CHARGE_STATUS(557847081, 0x21401229),timestamp:32787365994308,zone:0x0,floatValues: [],int32Values: [15],int64Values: [],bytes: [],string: 
+event count:115, lastEvent:Property=SCU_LATCTRL_REMIND(557852201, 0x21402629),timestamp:54360876425883,zone:0x0,floatValues: [],int32Values: [0],int64Values: [],bytes: [],string: 
+event count:1, lastEvent:Property=BCM_L_CHARGER_PORT(557849642, 0x21401c2a),timestamp:32787363976183,zone:0x0,floatValues: [],int32Values: [2],int64Values: [],bytes: [],string: 
+event count:17, lastEvent:Property=HVAC_POWER_ON_XP(557849130, 0x21401a2a),timestamp:55542761627097,zone:0x0,floatValues: [],int32Values: [1],int64Values: [],bytes: [],string: 
+event count:109, lastEvent:Property=VCU_CHARGE_COMPLETE_TIME(557847084, 0x2140122c),timestamp:32730654925059,zone:0x0,floatValues: [],int32Values: [2555],int64Values: [],bytes: [],string: 
+event count:468983, lastEvent:Property=IMU_SCULOCAT_CARSPEED(560018957, 0x2161360d),timestamp:57022957182312,zone:0x0,floatValues: [0.0, 0.0, 0.0, 0.0, 13717.0, 27.34673, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 94.0, 2.0, 240.0, 0.447, 0.0, 0.0086402, 0.0, -0.0024, 0.0, -0.0504892, 0.0, 9.8316, 0.0, -0.0142486, 0.0, 0.9836094, 8.0, 20.0, 10.0, 0.00221875, 0.0, 0.0],int32Values: [],int64Values: [],bytes: [],string: 
+event count:934, lastEvent:Property=SWS_BUTTON_RAWDATA(557916716, 0x2141222c),timestamp:57022896314395,zone:0x0,floatValues: [],int32Values: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],int64Values: [],bytes: [],string: 
+event count:28, lastEvent:Property=BCM_ATWS(557849647, 0x21401c2f),timestamp:55514809489243,zone:0x0,floatValues: [],int32Values: [2],int64Values: [],bytes: [],string: 
+event count:121, lastEvent:Property=XPU_NGP_MODE_INDX(557856815, 0x2140382f),timestamp:56405490981768,zone:0x0,floatValues: [],int32Values: [0],int64Values: [],bytes: [],string: 
+event count:4, lastEvent:Property=VCU_GEAR_WARNING(557847090, 0x21401232),timestamp:55437094055627,zone:0x0,floatValues: [],int32Values: [0],int64Values: [],bytes: [],string: 
+event count:11198, lastEvent:Property=MCU_PM_STATE(560993283, 0x21701403),timestamp:57021560121271,zone:0x0,floatValues: [],int32Values: [],int64Values: [],bytes: [1, 4, 0, 0, 0, 0, 0, 0],string: 
+event count:1777, lastEvent:Property=SCU_ACC_ST(557852212, 0x21402634),timestamp:56360539170535,zone:0x0,floatValues: [],int32Values: [1],int64Values: [],bytes: [],string: 
+event count:32, lastEvent:Property=TBOX_BLE_CONNECTEDST(557846582, 0x21401036),timestamp:55542761483139,zone:0x0,floatValues: [],int32Values: [0],int64Values: [],bytes: [],string: 
+event count:11155, lastEvent:Property=MCU_BATTERY_DATA(560993288, 0x21701408),timestamp:57021560172365,zone:0x0,floatValues: [],int32Values: [],int64Values: [],bytes: [4],string: 
+event count:56744, lastEvent:Property=TBOX_TIME_INFO(557912123, 0x2141103b),timestamp:57022915958927,zone:0x0,floatValues: [],int32Values: [2026, 10, 22, 18, 20, 8],int64Values: [],bytes: [],string: 
+event count:4850, lastEvent:Property=VCU_VEHELC_CONSP_100M(559944218, 0x2160121a),timestamp:56349350181841,zone:0x0,floatValues: [175.0],int32Values: [],int64Values: [],bytes: [],string: 
+event count:3325, lastEvent:Property=VCU_VEHELC_CONSP_AVG(559944219, 0x2160121b),timestamp:56393397924689,zone:0x0,floatValues: [18.6],int32Values: [],int64Values: [],bytes: [],string: 
+event count:680, lastEvent:Property=ICM_BRIGHTNESS_SP(557848124, 0x2140163c),timestamp:55742437583792,zone:0x0,floatValues: [],int32Values: [15],int64Values: [],bytes: [],string: 
+event count:83, lastEvent:Property=VCU_GEARLEV(557847100, 0x2140123c),timestamp:56409331128902,zone:0x0,floatValues: [],int32Values: [4],int64Values: [],bytes: [],string: 
+event count:41765, lastEvent:Property=SCU_TAIL_RADAR(560014877, 0x2161261d),timestamp:56410678060047,zone:0x0,floatValues: [500.0, 150.0, 150.0, 150.0, 150.0, 500.0],int32Values: [],int64Values: [],bytes: [],string: 
+event count:44056, lastEvent:Property=SCU_FRONT_RADAR(560014876, 0x2161261c),timestamp:56410678098224,zone:0x0,floatValues: [500.0, 150.0, 150.0, 150.0, 150.0, 500.0],int32Values: [],int64Values: [],bytes: [],string: 
+event count:23, lastEvent:Property=MCU_ATLS_STATUS(557847614, 0x2140143e),timestamp:55547541902981,zone:0x0,floatValues: [],int32Values: [3],int64Values: [],bytes: [],string: 
+event count:393, lastEvent:Property=BCM_LRTURNLAMP_ACTIVE_ST(557915328, 0x21411cc0),timestamp:56357098707932,zone:0x0,floatValues: [],int32Values: [0, 0],int64Values: [],bytes: [],string: 
+event count:51, lastEvent:Property=BCM_ENVR_MODE(557849794, 0x21401cc2),timestamp:55348604294203,zone:0x0,floatValues: [],int32Values: [2],int64Values: [],bytes: [],string: 
+event count:46, lastEvent:Property=SCU_NGP_MODE_STATUS(557852367, 0x214026cf),timestamp:55518028973305,zone:0x0,floatValues: [],int32Values: [1],int64Values: [],bytes: [],string: 
+event count:22, lastEvent:Property=SCU_PARK_AP_SW(557852369, 0x214026d1),timestamp:55542809021108,zone:0x0,floatValues: [],int32Values: [1],int64Values: [],bytes: [],string: 
+event count:6, lastEvent:Property=MCU_REMIND_WARNING(557847680, 0x21401480),timestamp:50304070359052,zone:0x0,floatValues: [],int32Values: [0],int64Values: [],bytes: [],string: 
+event count:2, lastEvent:Property=SCU_LATCTRL_REMIND_2(557852295, 0x21402687),timestamp:37567750282215,zone:0x0,floatValues: [],int32Values: [0],int64Values: [],bytes: [],string: 
+event count:8, lastEvent:Property=SCU_ACC_RD_VOICE_TIPS(557852300, 0x2140268c),timestamp:49223410262487,zone:0x0,floatValues: [],int32Values: [0],int64Values: [],bytes: [],string: 
+event count:21, lastEvent:Property=BCM_NFC_CARDIDINFO(560995492, 0x21701ca4),timestamp:55558563460581,zone:0x0,floatValues: [],int32Values: [],int64Values: [],bytes: [2, 35, 3, 2, -95, 0, 8, 40],string: 
+event count:200, lastEvent:Property=XPU_NGP_ICON_ST(557856921, 0x21403899),timestamp:54356577278541,zone:0x0,floatValues: [],int32Values: [0],int64Values: [],bytes: [],string: 
+event count:22, lastEvent:Property=SCU_NGP_TIPS_WINDOWS_ST(557852314, 0x2140269a),timestamp:55542925610951,zone:0x0,floatValues: [],int32Values: [1],int64Values: [],bytes: [],string: 
+event count:22, lastEvent:Property=SCU_NGP_XPILOTST(557852318, 0x2140269e),timestamp:55542925655743,zone:0x0,floatValues: [],int32Values: [1],int64Values: [],bytes: [],string: 
+event count:150, lastEvent:Property=BCM_DOOR_UNLOCK_REQRES(557849759, 0x21401c9f),timestamp:56409448686610,zone:0x0,floatValues: [],int32Values: [6],int64Values: [],bytes: [],string: 
+event count:493, lastEvent:Property=BCM_PACKING_LAMP_OUTPUT(557915294, 0x21411c9e),timestamp:56408378731298,zone:0x0,floatValues: [],int32Values: [0, 0, 0],int64Values: [],bytes: [],string: 
+event count:34, lastEvent:Property=BCM_WIPERSPDSW_ST(557849762, 0x21401ca2),timestamp:37467702566472,zone:0x0,floatValues: [],int32Values: [0],int64Values: [],bytes: [],string: 
+event count:835, lastEvent:Property=VCU_DSTBAT_DISP_NEDC_FLOAT(559944326, 0x21601286),timestamp:56776487999073,zone:0x0,floatValues: [321.0],int32Values: [],int64Values: [],bytes: [],string: 
+event count:22, lastEvent:Property=BCM_READY_ENABLE(557849786, 0x21401cba),timestamp:55566083732765,zone:0x0,floatValues: [],int32Values: [0],int64Values: [],bytes: [],string: 
+event count:832, lastEvent:Property=BCM_BRKPEDAL_ST(557849787, 0x21401cbb),timestamp:56410178308797,zone:0x0,floatValues: [],int32Values: [0],int64Values: [],bytes: [],string: 
+subscribed Property=HVAC_FAN_SPEED(356517120, 0x15400500)
+subscribed Property=HVAC_FAN_DIRECTION(356517121, 0x15400501)
+subscribed Property=HVAC_RECIRC_ON(356517128, 0x15400508)
+subscribed Property=HVAC_SEAT_VENTILATION(356517139, 0x15400513)
+subscribed Property=HVAC_TEMPERATURE_SET(358614275, 0x15600503)
+subscribed Property=ENV_OUTSIDE_TEMPERATURE(291505923, 0x11600703)
+subscribed Property=IPUF_FAILST(557847104, 0x21401240)
+subscribed Property=BCM_MIRRORHEAT(557849665, 0x21401c41)
+subscribed Property=ICM_SYNC_SIGNAL(554702353, 0x21101611)
+subscribed Property=TBOX_CDU_APN(554700817, 0x21101011)
+subscribed Property=SCU_RAVMSLOT(560014947, 0x21612663)
+subscribed Property=TBOX_SOLDIER_CAMERASW(557846594, 0x21401042)
+subscribed Property=SCU_LAVMSLOT(560014946, 0x21612662)
+subscribed Property=TBOX_SOLDIER_ENABLE(557846596, 0x21401044)
+subscribed Property=TBOX_CDU_SELF_MODE(557846597, 0x21401045)
+subscribed Property=CDU_IBCM_RLPOS(559946854, 0x21601c66)
+subscribed Property=CDU_IBCM_FLPOS(559946855, 0x21601c67)
+subscribed Property=CDU_IBCM_FRPOS(559946856, 0x21601c68)
+subscribed Property=ICM_CARSETTING(554702360, 0x21101618)
+subscribed Property=CDU_IBCM_RRPOS(559946857, 0x21601c69)
+subscribed Property=TBOX_CAMERA_REMOTE_CTRL(554700825, 0x21101019)
+subscribed Property=MCU_LLU_SW(557847625, 0x21401449)
+subscribed Property=HVAC_AUTO_DEFOG_WORK_ST(557849162, 0x21401a4a)
+subscribed Property=MCU_LLU_WAKEWAIT_SW(557847626, 0x2140144a)
+subscribed Property=SCU_MODE_INDEX(557852235, 0x2140264b)
+subscribed Property=MCU_LLU_SHOWOFF_SW(557847627, 0x2140144b)
+subscribed Property=TBOX_APPOINT_KEEP_TEMP(557912138, 0x2141104a)
+subscribed Property=BCM_CHILDLOCK_SW(557849675, 0x21401c4b)
+subscribed Property=BCM_CHARG_GUNL_ST(557849677, 0x21401c4d)
+subscribed Property=VCU_CRUISECONTROL_STDISP(557847118, 0x2140124e)
+subscribed Property=VCU_DISCHARGE_BATTCAP_FLOAT(559944302, 0x2160126e)
+subscribed Property=MCU_LLU_SLEEP_SW(557847630, 0x2140144e)
+subscribed Property=SRS_PSNGR_OCCUPANCY_ST(557849679, 0x21401c4f)
+subscribed Property=MCU_LLU_CHARGING_SW(557847631, 0x2140144f)
+subscribed Property=SCU_RMIRROR_CTRL(557852240, 0x21402650)
+subscribed Property=MCU_POWERDOWN_ACTION(557847635, 0x21401453)
+subscribed Property=VCU_BAT_KEEP_TEMP_MODE(557847123, 0x21401253)
+subscribed Property=XPU_NGP_CUSTOM_SPD_SW(557856851, 0x21403853)
+subscribed Property=XPU_NGP_CUSTOM_SPD_COUNT1(557856852, 0x21403854)
+subscribed Property=XPU_NGP_CUSTOM_SPD_COUNT2(557856853, 0x21403855)
+subscribed Property=MSMD_SEATHORZPOS(557849686, 0x21401c56)
+subscribed Property=VCU_RANDIS_MODE(557847127, 0x21401257)
+subscribed Property=MSMD_SEATVERTICALPOS(557849687, 0x21401c57)
+subscribed Property=TBOX_SYNC_UTC_TIME(558960713, 0x21511049)
+subscribed Property=VCU_DSTBAT_DISP_NEW(557847128, 0x21401258)
+subscribed Property=MSMD_SEATILTINGPOS(557849688, 0x21401c58)
+subscribed Property=MSMD_SEATLEGHEIGHTPOS(557849689, 0x21401c59)
+subscribed Property=VCU_DSTBAT_DISP_CLTC_FLOAT(559944314, 0x2160127a)
+subscribed Property=VCU_DSTBAT_DISP_WLTP_FLOAT(559944315, 0x2160127b)
+subscribed Property=VCU_CAR_STATIONARY_ST(557847132, 0x2140125c)
+subscribed Property=VPM_LDW_RIGHT_WARNING_ST(557852252, 0x2140265c)
+subscribed Property=VPM_LDW_LEFT_WARNING_ST(557852253, 0x2140265d)
+subscribed Property=MCU_FB_LLU_ACTIVE(557847645, 0x2140145d)
+subscribed Property=XPU_NAVI_CONFIRM_PROTO(561002576, 0x21703850)
+subscribed Property=VCU_EXHIB_MODE_SW(557847137, 0x21401261)
+subscribed Property=MCU_BL_TEMP(557847651, 0x21401463)
+subscribed Property=MCU_BL_IC_DRIVER_ST(557847652, 0x21401464)
+subscribed Property=BCM_POWERMODE(557849700, 0x21401c64)
+subscribed Property=VCU_DSTBAT_DISP_CLTC(557847140, 0x21401264)
+subscribed Property=BCM_PSNSEAT_HEAT_LEVEL(557849701, 0x21401c65)
+subscribed Property=OBC_FAULT_PHASE_LOSS(557847141, 0x21401265)
+subscribed Property=SCU_URADAR_VOICE_TONE(557852262, 0x21402666)
+subscribed Property=MCU_FACTORY_MODE(557847658, 0x2140146a)
+subscribed Property=MCU_WIFI_HOTSPOT_REQ(557847660, 0x2140146c)
+subscribed Property=MCU_BLE_ID_DATA(560993375, 0x2170145f)
+subscribed Property=DHC_ACTIVE_SW(557849711, 0x21401c6f)
+subscribed Property=BCM_CWCCHRG_ST(557849713, 0x21401c71)
+subscribed Property=SCU_ALCCTRL_REMIND(557852274, 0x21402672)
+subscribed Property=BCM_CWCCHRG_ABNORMAL_WARNING(557849714, 0x21401c72)
+subscribed Property=SCU_ICM_APAERR_TIPS(557852275, 0x21402673)
+subscribed Property=BCM_LOCKWIN_CFG(557849715, 0x21401c73)
+subscribed Property=SRR_FLFAIL_ST(557852276, 0x21402674)
+subscribed Property=BCM_POLLING_LOCK_CFG(557849716, 0x21401c74)
+subscribed Property=SRR_FRFAIL_ST(557852277, 0x21402675)
+subscribed Property=BCM_POLLING_UNLOCK_CFG(557849717, 0x21401c75)
+subscribed Property=SRR_RLFAIL_ST(557852278, 0x21402676)
+subscribed Property=SRR_RRFAIL_ST(557852279, 0x21402677)
+subscribed Property=CDC_DATAUPLOAD_ST(557852280, 0x21402678)
+subscribed Property=XPU_XPU_FAIL_ST(557852281, 0x21402679)
+subscribed Property=VCU_BAT_BUMP_RECRD(557847161, 0x21401279)
+subscribed Property=SCU_MRR_ASSIST_SYSST(557917818, 0x2141267a)
+subscribed Property=SCU_RCW_WARNING(557852283, 0x2140267b)
+subscribed Property=XPU_VEH_LOCATION_PROTO(561002571, 0x2170384b)
+subscribed Property=MSMD_MCU_WELCOME(557849724, 0x21401c7c)
+subscribed Property=SCU_DOW_LWARNING(557852286, 0x2140267e)
+subscribed Property=SCU_DOW_RWARNING(557852287, 0x2140267f)
+subscribed Property=SCU_FEATURE_DATA(560014942, 0x2161265e)
+subscribed Property=SCU_FCWAEB_SW(557852161, 0x21402601)
+subscribed Property=HIGH_BEAM_LIGHTS_STATE(289410561, 0x11400e01)
+subscribed Property=VCU_ENERGY_RECOVERY(557847041, 0x21401201)
+subscribed Property=TPMS_SENSOR_RESET(557850113, 0x21401e01)
+subscribed Property=BCM_WIN_POS(560012320, 0x21611c20)
+subscribed Property=AVM_DISPLAY_MODE(557855745, 0x21403401)
+subscribed Property=AP_POWER_BOOTUP_REASON(289409538, 0x11400a02)
+subscribed Property=SCU_LDW_SW(557852162, 0x21402602)
+subscribed Property=FOG_LIGHTS_SWITCH_XP(557849602, 0x21401c02)
+subscribed Property=VCU_BMS_SOCDISP(557847042, 0x21401202)
+subscribed Property=ESC_ESP(557851650, 0x21402402)
+subscribed Property=SCU_IHB_SW(557852163, 0x21402603)
+subscribed Property=ESC_AVH(557851651, 0x21402403)
+subscribed Property=HVAC_PM25(557849092, 0x21401a04)
+subscribed Property=VCU_CURRENT_GEARLEV(557847045, 0x21401205)
+subscribed Property=VCU_RAW_CAR_SPEED(559944229, 0x21601225)
+subscribed Property=SCU_BSD_SW(557852165, 0x21402605)
+subscribed Property=XPU_CONNECTED(557856773, 0x21403805)
+subscribed Property=HVAC_AIR_QUALITY_LEVEL(557849093, 0x21401a05)
+subscribed Property=STEERING_WHEEL_EPS(557851653, 0x21402405)
+subscribed Property=ATL_AUTOBRIGHTNESSSW(557848581, 0x21401805)
+subscribed Property=TPMS_SYSFAULTWARN(557850118, 0x21401e06)
+subscribed Property=SCU_RCTA_SW(557852166, 0x21402606)
+subscribed Property=EPS_STEERING_ANGLE_SPD(557851655, 0x21402407)
+subscribed Property=TPMS_ABNORMALPRWARN(557850119, 0x21401e07)
+subscribed Property=SCU_RCW_SW(557852167, 0x21402607)
+subscribed Property=BCM_DRIVERSEAT_OCCUPIED(557849607, 0x21401c07)
+subscribed Property=XPU_NEDC_STATUS(557856775, 0x21403807)
+subscribed Property=AVAS_SWSTCMD(557855239, 0x21403207)
+subscribed Property=SCU_DOW_SW(557852168, 0x21402608)
+subscribed Property=AVAS_LOWSPEEDSOUND_CFG(557855240, 0x21403208)
+subscribed Property=MCU_IG_DATA(557847561, 0x21401409)
+subscribed Property=ESP_ESP_FAULT(557851657, 0x21402409)
+subscribed Property=XPU_CDU_BRIGHTNESS_ST(557856777, 0x21403809)
+subscribed Property=LLU_FUNCTIONST(557854217, 0x21402e09)
+subscribed Property=BCM_CENTRAL_LOCK_SW(557849609, 0x21401c09)
+subscribed Property=SCU_LCS_SW(557852169, 0x21402609)
+subscribed Property=MCU_RID_MASTERSLAVE_CONTROL(560993338, 0x2170143a)
+subscribed Property=BCM_TRUNKAJAR(557849610, 0x21401c0a)
+subscribed Property=VCU_BATWARM_STDISP(557847050, 0x2140120a)
+subscribed Property=ATL_OPEN(557848586, 0x2140180a)
+subscribed Property=ATLS_ERR_ST(557848587, 0x2140180b)
+subscribed Property=ESP_AVH_FAULT(557851659, 0x2140240b)
+subscribed Property=VCU_RESHEAT_MANATIME(557847051, 0x2140120b)
+subscribed Property=BCM_WIPERSERVICE_SW(557849611, 0x21401c0b)
+subscribed Property=ALS_ERROR_ST(557848588, 0x2140180c)
+subscribed Property=ESP_SYS_WARNIND_REQ(557851660, 0x2140240c)
+subscribed Property=BCM_DRVSEAT_BELTSBR_WARNING(557849612, 0x21401c0c)
+subscribed Property=VCU_V2L_POWERLIMIT(557847052, 0x2140120c)
+subscribed Property=ESP_WARN_LAMP(557851661, 0x2140240d)
+subscribed Property=SCU_ISLC_SW(557852173, 0x2140260d)
+subscribed Property=BCM_PSNGRSEAT_BELTSBR_WARNING(557849613, 0x21401c0d)
+subscribed Property=HVAC_SETTEMP_SYNCST(557849101, 0x21401a0d)
+subscribed Property=ICM_CRASH_INFO(554702429, 0x2110165d)
+subscribed Property=HVAC_INNER_TEMPERATURE(559946285, 0x21601a2d)
+subscribed Property=TPMS_PRWARN_ALL(557915660, 0x21411e0c)
+subscribed Property=ICM_CONNECTED(557848078, 0x2140160e)
+subscribed Property=ESP_APBERR_ST(557851662, 0x2140240e)
+subscribed Property=BCM_2NDLEFTSEAT_BELTSBR_WARNING(557849614, 0x21401c0e)
+subscribed Property=ICM_TOTAL_ODOMETER(559945262, 0x2160162e)
+subscribed Property=TPMS_TEMP_ALL(557915663, 0x21411e0f)
+subscribed Property=SCU_LCC_SW(557852174, 0x2140260e)
+subscribed Property=TBOX_CONNECT_STATE(557846543, 0x2140100f)
+subscribed Property=ESP_ABS_FAULT(557851663, 0x2140240f)
+subscribed Property=AVAS_FAULT(557855247, 0x2140320f)
+subscribed Property=TPMS_TEMPWARN_ALL(557915662, 0x21411e0e)
+subscribed Property=BCM_2NDMIDSEAT_BELTSBR_WARNING(557849615, 0x21401c0f)
+subscribed Property=ICM_TRIP_SINC_IGON(559945263, 0x2160162f)
+subscribed Property=SCU_HIC_SW(557852175, 0x2140260f)
+subscribed Property=ICM_DIAGNOSIS_INFO(554702431, 0x2110165f)
+subscribed Property=BCM_2NDRIGHTSEAT_BELTSBR_WARNING(557849616, 0x21401c10)
+subscribed Property=AVM_WORK_ST(557855760, 0x21403410)
+subscribed Property=VCU_EVSYS_READYST(557847056, 0x21401210)
+subscribed Property=HVAC_DRV_LEFTHORZ(557849104, 0x21401a10)
+subscribed Property=ICM_TRIP_SINC_CHRG(559945264, 0x21601630)
+subscribed Property=HW_KEY_INPUT(289475088, 0x11410a10)
+subscribed Property=IBT_FAILURE_LAMP(557851665, 0x21402411)
+subscribed Property=VCU_DSTBAT_DISP(557847057, 0x21401211)
+subscribed Property=HVAC_DRV_LEFTVERT(557849105, 0x21401a11)
+subscribed Property=ICM_TRIPA(559945265, 0x21601631)
+subscribed Property=BCM_AIRBAG_FAULT_ST(557849618, 0x21401c12)
+subscribed Property=HVAC_DRV_RIGHTHORZ(557849106, 0x21401a12)
+subscribed Property=ICM_TRIPB(559945266, 0x21601632)
+subscribed Property=VCU_DCC_CHRGSTOP_REA(557847059, 0x21401213)
+subscribed Property=HVAC_DRV_RIGHTVERT(557849107, 0x21401a13)
+subscribed Property=ESP_APBSYS_ST(557851667, 0x21402413)
+subscribed Property=HVAC_PSN_LEFTHORZ(557849108, 0x21401a14)
+subscribed Property=IBT_HBC_REQ(557851668, 0x21402414)
+subscribed Property=XPU_AP_REMOTE_SW(557856788, 0x21403814)
+subscribed Property=LLU_SCRIPT_ST(557854229, 0x21402e15)
+subscribed Property=ICM_NEEDNAVI(554702405, 0x21101645)
+subscribed Property=HVAC_PSN_LEFTVERT(557849109, 0x21401a15)
+subscribed Property=LLU_ERR_ST(557854230, 0x21402e16)
+subscribed Property=BMS_CHARGE_MODE(557853718, 0x21402c16)
+subscribed Property=HVAC_PSN_RIGHTHORZ(557849110, 0x21401a16)
+subscribed Property=BCM_LTURNLAMP_ST(557849623, 0x21401c17)
+subscribed Property=VCU_BRKPEDAL_ST(557847063, 0x21401217)
+subscribed Property=HVAC_PSN_RIGHTVERT(557849111, 0x21401a17)
+subscribed Property=SCU_PHONE_PK_BTN(557852183, 0x21402617)
+subscribed Property=BCM_DOOR(557915161, 0x21411c19)
+subscribed Property=BCM_RTURNLAMP_ST(557849624, 0x21401c18)
+subscribed Property=VCU_ACCPEDAL_SIG(557847064, 0x21401218)
+subscribed Property=TBOX_AVP_START(557846552, 0x21401018)
+subscribed Property=HVAC_AQS(557849112, 0x21401a18)
+subscribed Property=SCU_PK_BTN(557852184, 0x21402618)
+subscribed Property=VCU_PGEAR_VD(557847065, 0x21401219)
+subscribed Property=HVAC_EAVSWEEP_WIND(557849114, 0x21401a1a)
+subscribed Property=BCM_PARKING_LAMP(557849626, 0x21401c1a)
+subscribed Property=SCU_REMOTE_PK_BTN(557852186, 0x2140261a)
+subscribed Property=HVAC_ECON(557849115, 0x21401a1b)
+subscribed Property=SCU_OPERATION_TIPS(557852187, 0x2140261b)
+subscribed Property=BCM_FOLLOW_ME_HOME(557849627, 0x21401c1b)
+subscribed Property=VCU_BATCOLD_DISP(557847068, 0x2140121c)
+subscribed Property=HVAC_DRV_WINDMODE(557849116, 0x21401a1c)
+subscribed Property=VCU_CHGSPEED_SLOW_DSP(557847069, 0x2140121d)
+subscribed Property=HVAC_PSN_WINDMODE(557849117, 0x21401a1d)
+subscribed Property=BCM_AUTO_UNLOCK(557849629, 0x21401c1d)
+subscribed Property=HVAC_IONIZER(557849118, 0x21401a1e)
+subscribed Property=SWS_KNOB_WIND_SPD(557916703, 0x2141221f)
+subscribed Property=MCU_RID_RESET_PHY(560993296, 0x21701410)
+subscribed Property=HVAC_WINDMODE_COLOUR(557849120, 0x21401a20)
+subscribed Property=SWS_KNOB_TEMP(557916705, 0x21412221)
+subscribed Property=MCU_RID_TEST_MODE(560993297, 0x21701411)
+subscribed Property=XPU_NGP_TRIGGER_EVENT_DATA(561002513, 0x21703811)
+subscribed Property=TBOX_CHARGE_STOP_SOC(557846561, 0x21401021)
+subscribed Property=BCM_LOW_BEAM(557849633, 0x21401c21)
+subscribed Property=SWS_KNOB_BACKLIGHT(557916704, 0x21412220)
+subscribed Property=MCU_RID_CABLE_DIAGNOSTICS(560993298, 0x21701412)
+subscribed Property=HVAC_TEMPERATURE_PSN_SET(559946242, 0x21601a02)
+subscribed Property=TBOX_APPOINT_CHG_SET(557912099, 0x21411023)
+subscribed Property=TPMS_PRFL(559947266, 0x21601e02)
+subscribed Property=SWS_KNOB_AM(557851170, 0x21402222)
+subscribed Property=MCU_DID_SQI_100BASE(560993299, 0x21701413)
+subscribed Property=BCM_MSB_ACTIVE(557849635, 0x21401c23)
+subscribed Property=VCU_OBC_DCVOLT(559944195, 0x21601203)
+subscribed Property=SCU_BSD_RIGHT_WARNING(557852195, 0x21402623)
+subscribed Property=TPMS_PRFR(559947267, 0x21601e03)
+subscribed Property=SWS_KNOB_FM(557851171, 0x21402223)
+subscribed Property=MCU_DID_SQI_1000BASE(560993300, 0x21701414)
+subscribed Property=VCU_OBC_DCCUR(559944196, 0x21601204)
+subscribed Property=SCU_BSD_LEFT_WARNING(557852196, 0x21402624)
+subscribed Property=TPMS_PRRL(559947268, 0x21601e04)
+subscribed Property=SWS_KNOB_BT(557851172, 0x21402224)
+subscribed Property=SCU_RCTA_LEFT_WARNING(557852197, 0x21402625)
+subscribed Property=BCM_REAR_DEFROST_ON(557849637, 0x21401c25)
+subscribed Property=TPMS_PRRR(559947269, 0x21601e05)
+subscribed Property=SWS_KNOB_WEB_RADIO(557851173, 0x21402225)
+subscribed Property=EPS_STEERING_ANGLE(559948806, 0x21602406)
+subscribed Property=BCM_SEAT_HEAT_LEVEL(557849638, 0x21401c26)
+subscribed Property=HVAC_DEFROSTER_XP(557849126, 0x21401a26)
+subscribed Property=SCU_RCTA_RIGHT_WARNING(557852198, 0x21402626)
+subscribed Property=VCU_DCCCS_CURR(559944198, 0x21601206)
+subscribed Property=VCU_EBS_BATT_SOC(557847078, 0x21401226)
+subscribed Property=SWS_KNOB_MUSIC(557851174, 0x21402226)
+subscribed Property=SCU_LONGCTRL_REMIND(557852199, 0x21402627)
+subscribed Property=HVAC_AC_ON_XP(557849127, 0x21401a27)
+subscribed Property=VCU_DCCCS_SUMU(559944199, 0x21601207)
+subscribed Property=VCU_DRIMODE_FB(557847079, 0x21401227)
+subscribed Property=SCU_XPILOT_ST(557852200, 0x21402628)
+subscribed Property=BCM_FRONT_LIGHT_GROUP_MODE(557849640, 0x21401c28)
+subscribed Property=VCU_CHARGE_GUN_STATUS(557847080, 0x21401228)
+subscribed Property=SWS_UPLOAD_CAN_BUTTON(557851176, 0x21402228)
+subscribed Property=OTA_MCU_REQ_STATUS(557847592, 0x21401428)
+subscribed Property=BCM_BONNET(557849641, 0x21401c29)
+subscribed Property=HVAC_AUTO_ON_XP(557849129, 0x21401a29)
+subscribed Property=VCU_CHARGE_STATUS(557847081, 0x21401229)
+subscribed Property=SCU_LATCTRL_REMIND(557852201, 0x21402629)
+subscribed Property=SWS_KNOB_USB_MUSIC(557851177, 0x21402229)
+subscribed Property=OTA_MCU_REQ_UPDATEFILE(557847593, 0x21401429)
+subscribed Property=BCM_L_CHARGER_PORT(557849642, 0x21401c2a)
+subscribed Property=HVAC_POWER_ON_XP(557849130, 0x21401a2a)
+subscribed Property=VCU_DRIVE_MODE(557847082, 0x2140122a)
+subscribed Property=SWS_KNOB_TALKING_BOOK(557851178, 0x2140222a)
+subscribed Property=BCM_R_CHARGER_PORT(557849643, 0x21401c2b)
+subscribed Property=XPU_NGP_ULC_SW(557856811, 0x2140382b)
+subscribed Property=SWS_KNOB_VOICE_RESET_BUTTON(557851179, 0x2140222b)
+subscribed Property=OTA_MCU_UPDATE_STATUS(557847595, 0x2140142b)
+subscribed Property=VCU_CHARGE_COMPLETE_TIME(557847084, 0x2140122c)
+subscribed Property=IMU_SCULOCAT_CARSPEED(560018957, 0x2161360d)
+subscribed Property=HVAC_AFTER_BLOW(557849132, 0x21401a2c)
+subscribed Property=XPU_NGP_OPTIMAL_LANE_SW(557856812, 0x2140382c)
+subscribed Property=SWS_BUTTON_RAWDATA(557916716, 0x2141222c)
+subscribed Property=XPU_NGP_MODE_INDX(557856815, 0x2140382f)
+subscribed Property=BCM_ATWS(557849647, 0x21401c2f)
+subscribed Property=TBOX_SET_AUTO_POWEOFF_SW(557846575, 0x2140102f)
+subscribed Property=TBOX_COUNTDOWN(557912113, 0x21411031)
+subscribed Property=XPU_ISLC_DRIVER_SET(557856816, 0x21403830)
+subscribed Property=VCU_EVERRLAMP_DSP(557847089, 0x21401231)
+subscribed Property=VCU_GEAR_WARNING(557847090, 0x21401232)
+subscribed Property=TBOX_SOLDIERSW(557846578, 0x21401032)
+subscribed Property=BCM_FOLLOW_ME_HOME_TIME(557849650, 0x21401c32)
+subscribed Property=MCU_PM_STATE(560993283, 0x21701403)
+subscribed Property=VCU_EBS_ERR_DSP(557847091, 0x21401233)
+subscribed Property=TBOX_SOLDIERWORKST(557846579, 0x21401033)
+subscribed Property=SCU_ACC_ST(557852212, 0x21402634)
+subscribed Property=VCU_LIQUIDHIGHTEMP_ERR(557847092, 0x21401234)
+subscribed Property=MCU_DIAG_REQUEST(560993284, 0x21701404)
+subscribed Property=TBOX_GUARD(557912117, 0x21411035)
+subscribed Property=VCU_WATERSENSOR_ERR(557847093, 0x21401235)
+subscribed Property=AND_DIAG_REQUEST(560993285, 0x21701405)
+subscribed Property=VCU_BCRUISE_ERR(557847094, 0x21401236)
+subscribed Property=TBOX_BLE_CONNECTEDST(557846582, 0x21401036)
+subscribed Property=ICM_LOG_COMPRESS(554702438, 0x21101666)
+subscribed Property=VCU_THERMORUNAWAY_ST(557847095, 0x21401237)
+subscribed Property=MCU_BATTERY_DATA(560993288, 0x21701408)
+subscribed Property=VCU_POWERLIMITATION_DSP(557847096, 0x21401238)
+subscribed Property=VCU_CHGPORTHOT_DSP(557847097, 0x21401239)
+subscribed Property=VCU_OBCMSG_LOST(557847098, 0x2140123a)
+subscribed Property=TBOX_TIME_INFO(557912123, 0x2141103b)
+subscribed Property=VCU_VEHELC_CONSP_100M(559944218, 0x2160121a)
+subscribed Property=VCU_DEADBATTERY_FLAG(557847099, 0x2140123b)
+subscribed Property=VCU_VEHELC_CONSP_AVG(559944219, 0x2160121b)
+subscribed Property=SCU_TAIL_RADAR(560014877, 0x2161261d)
+subscribed Property=ICM_BRIGHTNESS_SP(557848124, 0x2140163c)
+subscribed Property=VCU_GEARLEV(557847100, 0x2140123c)
+subscribed Property=SCU_FRONT_RADAR(560014876, 0x2161261c)
+subscribed Property=HVAC_AUTO_DEFOG_SET(557849149, 0x21401a3d)
+subscribed Property=VCU_NGEAR_WARNINGSW(557847101, 0x2140123d)
+subscribed Property=VCU_EVERR_MSGDISP(557847102, 0x2140123e)
+subscribed Property=MCU_ATLS_STATUS(557847614, 0x2140143e)
+subscribed Property=MCU_DORMANCY_TIME(557913151, 0x2141143f)
+subscribed Property=IPUR_FAILST(557847103, 0x2140123f)
+subscribed Property=BCM_LR_DRL_OUTPUT_ST(557915329, 0x21411cc1)
+subscribed Property=BCM_LRTURNLAMP_ACTIVE_ST(557915328, 0x21411cc0)
+subscribed Property=BCM_ENVR_MODE(557849794, 0x21401cc2)
+subscribed Property=BCM_CWC_SW(557849797, 0x21401cc5)
+subscribed Property=SCU_NGP_MODE_STATUS(557852367, 0x214026cf)
+subscribed Property=SCU_PARK_AP_SW(557852369, 0x214026d1)
+subscribed Property=SCU_DSM_REMMIND(557852370, 0x214026d2)
+subscribed Property=SCU_ICM_CDU_AP_ST(557852386, 0x214026e2)
+subscribed Property=SCU_DSM_SWITCH(557852395, 0x214026eb)
+subscribed Property=MCU_REMIND_WARNING(557847680, 0x21401480)
+subscribed Property=BCM_HIGHTBEAM_FAIL(557849734, 0x21401c86)
+subscribed Property=BCM_LOWBEAM_FAIL(557849735, 0x21401c87)
+subscribed Property=SCU_LATCTRL_REMIND_2(557852295, 0x21402687)
+subscribed Property=BCM_LTURNLAMP_FAIL(557849736, 0x21401c88)
+subscribed Property=BCM_RTURNLAMP_FAIL(557849737, 0x21401c89)
+subscribed Property=BCM_REARFOG_FAIL(557849738, 0x21401c8a)
+subscribed Property=BCM_RDTROUTPUT_FAIL(557849739, 0x21401c8b)
+subscribed Property=SCU_CIP_WARNING_ST(557852299, 0x2140268b)
+subscribed Property=BCM_LDTROUTPUT_FAIL(557849740, 0x21401c8c)
+subscribed Property=SCU_ACC_RD_VOICE_TIPS(557852300, 0x2140268c)
+subscribed Property=BCM_PARKINGLAMP_FAIL(557849741, 0x21401c8d)
+subscribed Property=BCM_SYSERROR_WARM(557849742, 0x21401c8e)
+subscribed Property=MSMD_ECU_ERR(557849743, 0x21401c8f)
+subscribed Property=MSMD_VENTILATIONMOTOR_ERR(557849744, 0x21401c90)
+subscribed Property=MCU_LLU_LOCK_UNLOCK_MODE(557847696, 0x21401490)
+subscribed Property=MSMD_HEATSYS_ERR(557849745, 0x21401c91)
+subscribed Property=MSMP_ECU_ERR(557849746, 0x21401c92)
+subscribed Property=MSMP_HEATSYS_ERR(557849747, 0x21401c93)
+subscribed Property=DHC_ERR(557849748, 0x21401c94)
+subscribed Property=BCM_NFC_CARDIDINFO(560995492, 0x21701ca4)
+subscribed Property=SCU_NGP_OPEBUTTON_ST(557852311, 0x21402697)
+subscribed Property=XPU_NGP_ICON_ST(557856921, 0x21403899)
+subscribed Property=BCM_RAIN_DETEC_SENCFG(557849754, 0x21401c9a)
+subscribed Property=SCU_NGP_TIPS_WINDOWS_ST(557852314, 0x2140269a)
+subscribed Property=BCM_WIN_LOCK_ST(557848731, 0x2140189b)
+subscribed Property=BCM_PAKLIGHT_FMB_CFG(557849757, 0x21401c9d)
+subscribed Property=SCU_NGP_XPILOTST(557852318, 0x2140269e)
+subscribed Property=BCM_PACKING_LAMP_OUTPUT(557915294, 0x21411c9e)
+subscribed Property=BCM_DOOR_UNLOCK_REQRES(557849759, 0x21401c9f)
+subscribed Property=SCU_NGP_QUICKLANE_SW(557852319, 0x2140269f)
+subscribed Property=BCM_SDCL_PSDMOTO_ST(557849760, 0x21401ca0)
+subscribed Property=BCM_WIPERSPDSW_ST(557849762, 0x21401ca2)
+subscribed Property=SCU_NGP_LCMODE_SW(557852322, 0x214026a2)
+subscribed Property=SCU_SDC_CTRL_URADARVOICE_TONE(557852326, 0x214026a6)
+subscribed Property=VCU_DSTBAT_DISP_NEDC_FLOAT(559944326, 0x21601286)
+subscribed Property=BCM_READY_ENABLE(557849786, 0x21401cba)
+subscribed Property=BCM_BRKPEDAL_ST(557849787, 0x21401cbb)

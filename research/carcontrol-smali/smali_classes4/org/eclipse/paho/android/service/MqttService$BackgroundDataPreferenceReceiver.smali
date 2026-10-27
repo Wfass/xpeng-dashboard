@@ -1,0 +1,131 @@
+.class Lorg/eclipse/paho/android/service/MqttService$BackgroundDataPreferenceReceiver;
+.super Landroid/content/BroadcastReceiver;
+.source "MqttService.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lorg/eclipse/paho/android/service/MqttService;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x2
+    name = "BackgroundDataPreferenceReceiver"
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lorg/eclipse/paho/android/service/MqttService;
+
+
+# direct methods
+.method private constructor <init>(Lorg/eclipse/paho/android/service/MqttService;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
+
+    .line 963
+    iput-object p1, p0, Lorg/eclipse/paho/android/service/MqttService$BackgroundDataPreferenceReceiver;->this$0:Lorg/eclipse/paho/android/service/MqttService;
+
+    invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
+
+    return-void
+.end method
+
+.method synthetic constructor <init>(Lorg/eclipse/paho/android/service/MqttService;Lorg/eclipse/paho/android/service/MqttService$1;)V
+    .locals 0
+
+    .line 963
+    invoke-direct {p0, p1}, Lorg/eclipse/paho/android/service/MqttService$BackgroundDataPreferenceReceiver;-><init>(Lorg/eclipse/paho/android/service/MqttService;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "intent"
+        }
+    .end annotation
+
+    .line 968
+    iget-object p1, p0, Lorg/eclipse/paho/android/service/MqttService$BackgroundDataPreferenceReceiver;->this$0:Lorg/eclipse/paho/android/service/MqttService;
+
+    const-string p2, "connectivity"
+
+    invoke-virtual {p1, p2}, Lorg/eclipse/paho/android/service/MqttService;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Landroid/net/ConnectivityManager;
+
+    .line 969
+    iget-object p2, p0, Lorg/eclipse/paho/android/service/MqttService$BackgroundDataPreferenceReceiver;->this$0:Lorg/eclipse/paho/android/service/MqttService;
+
+    const-string v0, "MqttService"
+
+    const-string v1, "Reconnect since BroadcastReceiver."
+
+    invoke-virtual {p2, v0, v1}, Lorg/eclipse/paho/android/service/MqttService;->traceDebug(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 970
+    invoke-virtual {p1}, Landroid/net/ConnectivityManager;->getBackgroundDataSetting()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    .line 971
+    iget-object p1, p0, Lorg/eclipse/paho/android/service/MqttService$BackgroundDataPreferenceReceiver;->this$0:Lorg/eclipse/paho/android/service/MqttService;
+
+    invoke-static {p1}, Lorg/eclipse/paho/android/service/MqttService;->access$600(Lorg/eclipse/paho/android/service/MqttService;)Z
+
+    move-result p1
+
+    if-nez p1, :cond_1
+
+    .line 972
+    iget-object p1, p0, Lorg/eclipse/paho/android/service/MqttService$BackgroundDataPreferenceReceiver;->this$0:Lorg/eclipse/paho/android/service/MqttService;
+
+    const/4 p2, 0x1
+
+    invoke-static {p1, p2}, Lorg/eclipse/paho/android/service/MqttService;->access$602(Lorg/eclipse/paho/android/service/MqttService;Z)Z
+
+    .line 975
+    iget-object p1, p0, Lorg/eclipse/paho/android/service/MqttService$BackgroundDataPreferenceReceiver;->this$0:Lorg/eclipse/paho/android/service/MqttService;
+
+    invoke-virtual {p1}, Lorg/eclipse/paho/android/service/MqttService;->reconnect()V
+
+    goto :goto_0
+
+    .line 978
+    :cond_0
+    iget-object p1, p0, Lorg/eclipse/paho/android/service/MqttService$BackgroundDataPreferenceReceiver;->this$0:Lorg/eclipse/paho/android/service/MqttService;
+
+    const/4 p2, 0x0
+
+    invoke-static {p1, p2}, Lorg/eclipse/paho/android/service/MqttService;->access$602(Lorg/eclipse/paho/android/service/MqttService;Z)Z
+
+    .line 979
+    iget-object p1, p0, Lorg/eclipse/paho/android/service/MqttService$BackgroundDataPreferenceReceiver;->this$0:Lorg/eclipse/paho/android/service/MqttService;
+
+    invoke-static {p1}, Lorg/eclipse/paho/android/service/MqttService;->access$500(Lorg/eclipse/paho/android/service/MqttService;)V
+
+    :cond_1
+    :goto_0
+    return-void
+.end method

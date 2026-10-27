@@ -1,0 +1,65 @@
+Manifest-Version: 1.0
+
+Name: AndroidManifest.xml
+SHA-256-Digest: FzhJzNZ0Upjq1LQpU4pTUHdsZ2M/vbr1qCM8AzxqlSA=
+
+Name: assets/amap_bus.png
+SHA-256-Digest: VZ33EcrEv0Bpr97eHdoyiI7nmf7YVCpC/UqErXzKVdA=
+
+Name: assets/amap_car.png
+SHA-256-Digest: YJ0EXyayVWMfR1albsVGsKHnjxFp5SEJTKQsa+kErNs=
+
+Name: assets/amap_end.png
+SHA-256-Digest: 80C6asfmwmMfmQd1rJPjhK7XpDiuw94WRzQH3CxE4zQ=
+
+Name: assets/amap_man.png
+SHA-256-Digest: FMEM2t+mdpJGNlXC7VLLVSn2986Ga2+jfjVdbJHAJwc=
+
+Name: assets/amap_start.png
+SHA-256-Digest: YDmIv1ZwJpIATwOYZMiDoPeiX4c/mUUcX4vDbc1P7WU=
+
+Name: assets/index_kstp.html
+SHA-256-Digest: jyb+z7O6mwP6WkRMwQ3TO+NShe14RsKQEkJZsbHQino=
+
+Name: assets/index_kstp_eu.html
+SHA-256-Digest: +YWx/hfgHMFozJV9+uEsGo+jJWwHrmcp4IbsBJVPSBE=
+
+Name: classes.dex
+SHA-256-Digest: 5noXnEBinWlGpzBE+eKaXb/Sb9B7OL05NfzTWu+8z7w=
+
+Name: classes2.dex
+SHA-256-Digest: BGKKRgr/TLza1chSCw4iyipeJQAo9rsQ809nghuHEn8=
+
+Name: com/alibaba/mtl/appmonitor/Transaction.aidl
+SHA-256-Digest: 5FzIsVPkgbR/CHOUH72hzJjxXltzx4XdbImgbF4k3ew=
+
+Name: com/alibaba/mtl/appmonitor/model/Dimension.aidl
+SHA-256-Digest: 3X7c29UYfJYaWtQtVXWm5Q4cyKpzrqyslyTeJ9Bz8zA=
+
+Name: com/alibaba/mtl/appmonitor/model/DimensionSet.aidl
+SHA-256-Digest: RP+lGvOOaO/NowE8KHYDWa2Q5Y4txYSBrQBEQ0tzBqs=
+
+Name: com/alibaba/mtl/appmonitor/model/DimensionValueSet.aidl
+SHA-256-Digest: cZXKOp838GzRk3D+5zn/+xzlytNMU7Cw1ZCVx6Kdtis=
+
+Name: com/alibaba/mtl/appmonitor/model/Measure.aidl
+SHA-256-Digest: YVTYLfh8UtA8ql6ISy7iQyT1oYWfO1cGtxNcLV88kTM=
+
+Name: com/alibaba/mtl/appmonitor/model/MeasureSet.aidl
+SHA-256-Digest: CD6TpBKTWBqfPgs7RKB2KryqS6mtipm3ntaKJT4zifQ=
+
+Name: com/alibaba/mtl/appmonitor/model/MeasureValueSet.aidl
+SHA-256-Digest: 86XV/dkARn4onN1lojyEX9J6dvmyYifz6rAnBXe2abo=
+
+Name: okhttp3/internal/publicsuffix/NOTICE
+SHA-256-Digest: ipxY+97V6jR0MV5KmCTKixSGCYoaA+iX4LGUGdXhh2o=
+
+Name: okhttp3/internal/publicsuffix/publicsuffixes.gz
+SHA-256-Digest: QgouIPJ0qEe0fiWZfeoghguqpeGSuUDOFLOgfVhkeR8=
+
+Name: res/raw/media_volume.ogg
+SHA-256-Digest: 73kOF7+B/3meBmiXX+BP0yVKzMfkM88EleHcpy5IcAw=
+
+Name: resources.arsc
+SHA-256-Digest: kZSgKF1T9sY6XXCTW3Iw40smK+1ilomXA9Dri1mTaD0=
+

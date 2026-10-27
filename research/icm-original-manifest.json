@@ -1,0 +1,27 @@
+[
+  {
+    "file": "icm-original.squashfs",
+    "bytes": 136323072,
+    "sha256": "67c94d38dc765facdf5a6c8aa913599a24f3b0d78c282c953f5d7812ff42db7b"
+  },
+  {
+    "file": "icm-package/rootfs.ext4",
+    "bytes": 943718400,
+    "sha256": "ee5998e2a6f2a46ff4305902ff84fc680d6169a4f24577b470cfeaa2a41b6c23"
+  },
+  {
+    "file": "icm-root/app/hmi/bin/ECluster",
+    "bytes": 11653790,
+    "sha256": "d90f0be953174a42ded65726782f069d3db2bf01a5469a556ced3265a69eacd5"
+  },
+  {
+    "file": "icm-root/app/hmi/bin/card.kzb",
+    "bytes": 1250596,
+    "sha256": "a742743904465ba1932f4363ca034e385490132a758a7a29412616ed56920eac"
+  },
+  {
+    "file": "icm-root/libXpIdcClusterClient.so",
+    "bytes": 1236688,
+    "sha256": "7cadbf1c5f1c40a89cab9ab173b709790ad54ce26ddf768f9a595f3c4f157685"
+  }
+]

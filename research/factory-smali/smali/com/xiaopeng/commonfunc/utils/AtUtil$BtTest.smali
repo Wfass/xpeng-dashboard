@@ -1,0 +1,45 @@
+.class public Lcom/xiaopeng/commonfunc/utils/AtUtil$BtTest;
+.super Ljava/lang/Object;
+.source "AtUtil.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/xiaopeng/commonfunc/utils/AtUtil;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "BtTest"
+.end annotation
+
+
+# static fields
+.field public static final BT_STATUS_OFF:Ljava/lang/String; = "OFF"
+
+.field public static final BT_STATUS_ON:Ljava/lang/String; = "ON"
+
+.field public static final CLOSING:I = 0x2
+
+.field public static final CMD_NAME:Ljava/lang/String; = "BTTEST"
+
+.field public static final CONNECTING:I = 0x5
+
+.field public static final OPENING:I = 0x1
+
+.field public static final PAIRING:I = 0x4
+
+.field public static final PENDING:I = 0x0
+
+.field public static final SEARCHING:I = 0x3
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 75
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

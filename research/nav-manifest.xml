@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:sharedUserId="android.uid.vmap"
+    android:versionCode="50106000"
+    android:versionName="V5.1.5_20260520181719_Release"
+    android:compileSdkVersion="30"
+    android:compileSdkVersionCodename="11"
+    package="com.xiaopeng.montecarlo"
+    platformBuildVersionCode="30"
+    platformBuildVersionName="11">
+
+    <uses-sdk
+        android:minSdkVersion="28"
+        android:targetSdkVersion="28" />
+
+    <uses-feature
+        android:glEsVersion="0x30000" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <meta-data
+        android:name="SPEECH_OBSERVER"
+        android:value="com.xiaopeng.montecarlo.SpeechNaviOverAllObserver" />
+
+    <meta-data
+        android:name="SPEECH_EVENTS"
+        android:value="@ref/0x7f1101b1" />
+
+    <meta-data
+        android:name="unity.splash-mode"
+        android:value="0" />
+
+    <meta-data
+        android:name="unity.splash-enable"
+        android:value="true" />
+
+    <meta-data
+        android:name="notch.config"
+        android:value="portrait|landscape" />
+
+    <meta-data
+        android:name="unity.build-id"
+        android:value="cae68907-9e8d-47b2-8c6a-c762f1b06e51" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.GET_TASKS" />
+
+    <uses-permission
+        android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission
+        android:name="com.xiaopeng.permission.DATA_SERVICE" />
+
+    <uses-permission
+        android:name="com.xiaopeng.permission.SYSTEM_DELEGATE" />
+
+    <uses-permission
+        android:name="com.xiaopeng.permission.SERVICE" />
+
+    <uses-permission
+        android:name="com.xiaopeng.permission.BROADCAST" />
+
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission
+        android:name="android.permission.INTERNAL_SYSTEM_WINDOW" />
+
+    <uses-permission
+        android:name="android.permission.RECORD_AUDIO" />
+
+    <permission
+        android:name="android.permission.INTERACT_ACROSS_USERS" />
+
+    <permission
+        android:name="com.xiaopeng.permission.DATA_SERVICE" />
+
+    <permission
+        android:label="provider pomission"
+        android:name="com.xiaopeng.montecarlo.favorite.read"
+        android:protectionLevel="0x0" />
+
+    <permission
+        android:label="provider pomission"
+        android:name="com.xiaopeng.montecarlo.favorite.write"
+        android:protectionLevel="0x0" />
+
+    <permission
+        android:name="com.xiaopeng.permission.LOCATION_SERVICE"
+        android:protectionLevel="0x3" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_CONFIGURATION" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="android.car.permission.CAR_INFO"
+        android:targetSdkVersion="28" />
+
+    <uses-permission
+        android:name="android.permission.XPENG_MAP" />
+
+    <uses-permission
+        android:name="android.permission.GET_ACCOUNTS" />
+
+    <uses-permission
+        android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+
+    <uses-permission
+        android:name="android.permission.MANAGE_ACCOUNTS" />
+
+    <uses-permission
+        android:name="android.permission.USE_CREDENTIALS" />
+
+    <uses-permission
+        android:name="android.permission.READ_PROFILE" />
+
+    <uses-permission
+        android:name="com.xiaopeng.permission.PRIVACY_SERVICE" />
+
+    <uses-permission
+        android:name="com.xiaopeng.permission.PRIVACY_POLICY_UPDATE_NOTIFY" />
+
+    <uses-permission
+        android:name="com.xiaopeng.vuisceneprovider.scene.read" />
+
+    <uses-permission
+        android:name="com.xiaopeng.vuisceneprovider.scene.write" />
+
+    <uses-permission
+        android:name="xiaopeng.permission.DATA_SERVICE" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+
+    <uses-permission
+        android:name="android.permission.INTERACT_ACROSS_USERS" />
+
+    <uses-permission
+        android:name="android.permission.CALL_PHONE" />
+
+    <uses-permission
+        android:name="android.permission.READ_SMS" />
+
+    <uses-permission
+        android:name="com.xiaopeng.permission.IPC" />
+
+    <uses-permission
+        android:name="com.xiaopeng.permission.LOCATION_SERVICE" />
+
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <uses-permission
+        android:name="android.permission.REORDER_TASKS" />
+
+    <uses-permission
+        android:name="android.permission.XIAOPENG_APP" />
+
+    <uses-permission
+        android:name="android.permission.LAUNCH_RESTRICTED_COMPONENT" />
+
+    <uses-permission
+        android:name="com.xiaopeng.permission.READ_CONFIGURATION" />
+
+    <application
+        android:theme="@ref/0x7f1200f5"
+        android:label="@ref/0x7f11008a"
+        android:icon="@ref/0x7f0e0000"
+        android:name="com.xiaopeng.montecarlo.App"
+        android:persistent="true"
+        android:debuggable="false"
+        android:allowBackup="false"
+        android:largeHeap="true"
+        android:supportsRtl="false"
+        android:extractNativeLibs="true"
+        android:networkSecurityConfig="@ref/0x7f140000"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory">
+
+        <activity
+            android:name="com.xiaopeng.montecarlo.AndroidMainActivity"
+            android:exported="true"
+            android:launchMode="3"
+            android:configChanges="0x40003fff"
+            android:windowSoftInputMode="0x21"
+            android:hardwareAccelerated="true"
+            android:resizeableActivity="true">
+
+            <meta-data
+                android:name="com.xiaopeng.metadata.activity.flags"
+                android:value="0x1000000" />
+
+            <meta-data
+                android:name="com.xiaopeng.metadata.task.areas"
+                android:value="secondary|primary|immersion" />
+
+            <meta-data
+                android:name="com.xiaopeng.metadata.task.screens"
+                android:value="ivi" />
+
+            <intent-filter
+                android:priority="100">
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="com.xiaopeng.intent.category.VIRTUAL_HOME_PRIMARY" />
+
+                <category
+                    android:name="com.xiaopeng.intent.category.VIRTUAL_HOME_SECONDARY" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+
+                <data
+                    android:scheme="xpengmap"
+                    android:host="map" />
+            </intent-filter>
+
+            <intent-filter>
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <data
+                    android:scheme="xpengmap"
+                    android:host="map" />
+            </intent-filter>
+
+            <meta-data
+                android:name="unityplayer.UnityActivity"
+                android:value="true" />
+
+            <meta-data
+                android:name="android.notch_support"
+                android:value="true" />
+        </activity>
+
+        <provider
+            android:name="com.xiaopeng.montecarlo.GlobalContentProvider"
+            android:enabled="true"
+            android:exported="false"
+            android:authorities="montecarlo.global" />
+
+        <meta-data
+            android:name="SPEECH_OBSERVER_SpeechNavi"
+            android:value="com.xiaopeng.montecarlo.SpeechNaviOverAllObserver" />
+
+        <meta-data
+            android:name="SPEECH_EVENTS_SpeechNavi"
+            android:value="@ref/0x7f1101b1" />
+
+        <service
+            android:name="com.xiaopeng.montecarlo.service.navi.NaviService"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.xiaopeng.montecarlo.NAVI_ACTION" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.xiaopeng.montecarlo.service.minimap.MiniMapService"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.xiaopeng.account.account.sync.FavoriteSyncReceiver">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+
+                <action
+                    android:name="com.xiaopeng.montecarlo.FAVORITE_TIME_SYNC_BROADCAST_ACTION" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.xiaopeng.montecarlo.broadcast.ANRManagerInitReceiver"
+            android:enabled="true"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.xiaopeng.anrManager" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.xiaopeng.montecarlo.custombroadcast.DetectionModuleReceiver"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.xiaopeng.action.START_STUCK_DETECT" />
+
+                <action
+                    android:name="com.xiaopeng.action.START_SIMULATED_NAVIGATION" />
+
+                <action
+                    android:name="com.xiaopeng.action.GIDC_RECORD_REPLAY_CONTROL" />
+
+                <action
+                    android:name="com.xiaopeng.action.LANE_LEVEL_SHOW" />
+
+                <action
+                    android:name="com.xiaopeng.action.NGP_DEBUG_SWITCH" />
+
+                <action
+                    android:name="com.xiaopeng.action.GPSNaviMode" />
+
+                <action
+                    android:name="com.xiaopeng.playRecord" />
+
+                <action
+                    android:name="com.xiaopeng.chargeOffline" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="385a284e6e635ac60adb82703abd1eda" />
+
+        <meta-data
+            android:name="xp_theme_night"
+            android:resource="@ref/0x7f1200f6" />
+
+        <service
+            android:name="com.xiaopeng.lib.framework.locationmodule.provider.LocationService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <provider
+            android:name="com.xiaopeng.lib.apirouter.server.ApiPublisherProvider"
+            android:permission="android.permission.LAUNCH_RESTRICTED_COMPONENT"
+            android:exported="true"
+            android:authorities="com.xiaopeng.montecarlo.api.publisher" />
+
+        <provider
+            android:name="com.xiaopeng.core.provider.favorite.NavFavoriteProvider"
+            android:readPermission="com.xiaopeng.montecarlo.favorite.read"
+            android:writePermission="com.xiaopeng.montecarlo.favorite.write"
+            android:exported="true"
+            android:authorities="com.xiaopeng.montecarlo.favorites" />
+
+        <provider
+            android:name="com.xiaopeng.core.provider.dataset.AccountContentProvider"
+            android:enabled="true"
+            android:exported="false"
+            android:authorities="montecarlo.account" />
+
+        <service
+            android:name="com.xiaopeng.speech.vui.proxy.VuiProtocolTestService"
+            android:enabled="true"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="speech.vui.protocol.test.Action" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="org.eclipse.paho.android.service.MqttService" />
+
+        <provider
+            android:name="com.xiaopeng.lib.framework.netchannelmodule.common.ContextNetStatusProvider"
+            android:exported="false"
+            android:authorities="com.xiaopeng.montecarlo.netmodule.provider" />
+
+        <service
+            android:name="com.xiaopeng.lib.framework.ipcmodule.AgentService"
+            android:permission="com.xiaopeng.permission.SERVICE"
+            android:enabled="true"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.xiaopeng.ipc.AgentService" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule"
+            android:value="GlideModule" />
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:exported="false"
+            android:authorities="com.xiaopeng.montecarlo.androidx-startup">
+
+            <meta-data
+                android:name="androidx.work.WorkManagerInitializer"
+                android:value="androidx.startup" />
+        </provider>
+
+        <service
+            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+            android:enabled="@ref/0x7f050007"
+            android:exported="false"
+            android:directBootAware="false" />
+
+        <service
+            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="@ref/0x7f050009"
+            android:exported="true"
+            android:directBootAware="false" />
+
+        <service
+            android:name="androidx.work.impl.foreground.SystemForegroundService"
+            android:enabled="@ref/0x7f050008"
+            android:exported="false"
+            android:directBootAware="false" />
+
+        <receiver
+            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+            android:enabled="true"
+            android:exported="false"
+            android:directBootAware="false" />
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+
+                <action
+                    android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BATTERY_OKAY" />
+
+                <action
+                    android:name="android.intent.action.BATTERY_LOW" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+
+                <action
+                    android:name="android.intent.action.DEVICE_STORAGE_OK" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <action
+                    android:name="android.intent.action.TIME_SET" />
+
+                <action
+                    android:name="android.intent.action.TIMEZONE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+            android:enabled="@ref/0x7f050007"
+            android:exported="false"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+            android:permission="android.permission.DUMP"
+            android:enabled="true"
+            android:exported="true"
+            android:directBootAware="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+            android:exported="false"
+            android:multiprocess="true"
+            android:authorities="com.xiaopeng.montecarlo.lifecycle-process" />
+
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:exported="false"
+            android:directBootAware="true" />
+
+        <provider
+            android:name="com.xiaopeng.lib.feature.XpFeatureProvider"
+            android:exported="false"
+            android:authorities="com.xiaopeng.montecarlo.XpFeatureProvider"
+            android:initOrder="1100" />
+    </application>
+</manifest>

@@ -1,0 +1,39 @@
+{
+  "status": "OFFLINE CANDIDATE ONLY; NOT SAFE TO DEPLOY WITHOUT LAYOUT AND RECOVERY VALIDATION",
+  "source_sha256": "a742743904465ba1932f4363ca034e385490132a758a7a29412616ed56920eac",
+  "output_sha256": "c4276544b162af7a4d33ae39b5ffc19ba6800e30da2f283b072a36041318b621",
+  "changes": [
+    {
+      "field": "image_A.height",
+      "offset": 132247,
+      "before": 240,
+      "after": 600
+    },
+    {
+      "field": "image_A.width",
+      "offset": 132263,
+      "before": 240,
+      "after": 600
+    },
+    {
+      "field": "image_B.height",
+      "offset": 132672,
+      "before": 240,
+      "after": 600
+    },
+    {
+      "field": "image_B.width",
+      "offset": 132680,
+      "before": 240,
+      "after": 600
+    }
+  ],
+  "validated": "All non-music resource payloads byte-identical; file size and directory unchanged",
+  "unvalidated": [
+    "node hierarchy and centering",
+    "mask/clipping geometry",
+    "overlap with song and artist labels",
+    "physical instrument rendering",
+    "live resource replacement and rollback path"
+  ]
+}

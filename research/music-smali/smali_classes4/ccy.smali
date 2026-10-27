@@ -1,0 +1,13 @@
+.class public interface abstract Lccy;
+.super Ljava/lang/Object;
+.source "KParameter.kt"
+
+
+# annotations
+.annotation runtime Lkotlin/j;
+.end annotation
+
+
+# virtual methods
+.method public abstract a()Ljava/lang/String;
+.end method

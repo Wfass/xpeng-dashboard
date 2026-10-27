@@ -1,0 +1,3573 @@
+{
+  "project": "card",
+  "entries": [
+    {
+      "name": "/$message_types",
+      "metaclass": 4294967295,
+      "offset": 27652,
+      "length": 4,
+      "flags": 0,
+      "raw_size": 4
+    },
+    {
+      "name": "/$metaclass_dictionary",
+      "metaclass": 4294967295,
+      "offset": 27656,
+      "length": 905,
+      "flags": 0,
+      "raw_size": 905
+    },
+    {
+      "name": "/$plugins",
+      "metaclass": 4294967295,
+      "offset": 28564,
+      "length": 32,
+      "flags": 0,
+      "raw_size": 32
+    },
+    {
+      "name": "/$property_dictionary",
+      "metaclass": 4294967295,
+      "offset": 28596,
+      "length": 10065,
+      "flags": 0,
+      "raw_size": 10065
+    },
+    {
+      "name": "/$property_types",
+      "metaclass": 4294967295,
+      "offset": 38664,
+      "length": 4613,
+      "flags": 0,
+      "raw_size": 4613
+    },
+    {
+      "name": "/$strings",
+      "metaclass": 4294967295,
+      "offset": 43280,
+      "length": 25884,
+      "flags": 0,
+      "raw_size": 25884
+    },
+    {
+      "name": "/Animation Clips/ColumnarPointer",
+      "metaclass": 27,
+      "offset": 69164,
+      "length": 72,
+      "flags": 0,
+      "raw_size": 72
+    },
+    {
+      "name": "/Animation Clips/ListLightBarLeft",
+      "metaclass": 27,
+      "offset": 69236,
+      "length": 64,
+      "flags": 0,
+      "raw_size": 64
+    },
+    {
+      "name": "/Animation Clips/ListLightBarLeft/Node2D.RenderTransformation_internal",
+      "metaclass": 27,
+      "offset": 69300,
+      "length": 76,
+      "flags": 0,
+      "raw_size": 76
+    },
+    {
+      "name": "/Animation Clips/ListLightBarRight",
+      "metaclass": 27,
+      "offset": 69376,
+      "length": 64,
+      "flags": 0,
+      "raw_size": 64
+    },
+    {
+      "name": "/Animation Clips/ListLightBarRight/Node2D.RenderTransformation_internal",
+      "metaclass": 27,
+      "offset": 69440,
+      "length": 76,
+      "flags": 0,
+      "raw_size": 76
+    },
+    {
+      "name": "/Animation Clips/PowerPointAnimation",
+      "metaclass": 27,
+      "offset": 69516,
+      "length": 64,
+      "flags": 0,
+      "raw_size": 64
+    },
+    {
+      "name": "/Animation Clips/PowerPointAnimation/Node2D.RenderTransformation_internal",
+      "metaclass": 27,
+      "offset": 69580,
+      "length": 68,
+      "flags": 0,
+      "raw_size": 68
+    },
+    {
+      "name": "/Animation Clips/标志球MIX",
+      "metaclass": 27,
+      "offset": 69648,
+      "length": 72,
+      "flags": 0,
+      "raw_size": 72
+    },
+    {
+      "name": "/Animation Data/Color_1",
+      "metaclass": 27,
+      "offset": 69720,
+      "length": 60,
+      "flags": 0,
+      "raw_size": 60
+    },
+    {
+      "name": "/Animation Data/Color_100",
+      "metaclass": 27,
+      "offset": 69780,
+      "length": 60,
+      "flags": 0,
+      "raw_size": 60
+    },
+    {
+      "name": "/Animation Data/Color_16",
+      "metaclass": 27,
+      "offset": 69840,
+      "length": 60,
+      "flags": 0,
+      "raw_size": 60
+    },
+    {
+      "name": "/Animation Data/Color_2",
+      "metaclass": 27,
+      "offset": 69900,
+      "length": 60,
+      "flags": 0,
+      "raw_size": 60
+    },
+    {
+      "name": "/Animation Data/Color_3",
+      "metaclass": 27,
+      "offset": 69960,
+      "length": 60,
+      "flags": 0,
+      "raw_size": 60
+    },
+    {
+      "name": "/Animation Data/Color_33",
+      "metaclass": 27,
+      "offset": 70020,
+      "length": 60,
+      "flags": 0,
+      "raw_size": 60
+    },
+    {
+      "name": "/Animation Data/Color_4",
+      "metaclass": 27,
+      "offset": 70080,
+      "length": 60,
+      "flags": 0,
+      "raw_size": 60
+    },
+    {
+      "name": "/Animation Data/Color_58",
+      "metaclass": 27,
+      "offset": 70140,
+      "length": 60,
+      "flags": 0,
+      "raw_size": 60
+    },
+    {
+      "name": "/Animation Data/ListLightBar_opacity",
+      "metaclass": 27,
+      "offset": 70200,
+      "length": 60,
+      "flags": 0,
+      "raw_size": 60
+    },
+    {
+      "name": "/Animation Data/ListLightBar_opacity_1",
+      "metaclass": 27,
+      "offset": 70260,
+      "length": 60,
+      "flags": 0,
+      "raw_size": 60
+    },
+    {
+      "name": "/Animation Data/ListLightBar_renderSCX",
+      "metaclass": 27,
+      "offset": 70320,
+      "length": 68,
+      "flags": 0,
+      "raw_size": 68
+    },
+    {
+      "name": "/Animation Data/ListLightBar_renderSCX_1",
+      "metaclass": 27,
+      "offset": 70388,
+      "length": 68,
+      "flags": 0,
+      "raw_size": 68
+    },
+    {
+      "name": "/Animation Data/ListLightBar_renderSCY",
+      "metaclass": 27,
+      "offset": 70456,
+      "length": 68,
+      "flags": 0,
+      "raw_size": 68
+    },
+    {
+      "name": "/Animation Data/ListLightBar_renderSCY_1",
+      "metaclass": 27,
+      "offset": 70524,
+      "length": 68,
+      "flags": 0,
+      "raw_size": 68
+    },
+    {
+      "name": "/Animation Data/PointerOpacity",
+      "metaclass": 27,
+      "offset": 70592,
+      "length": 60,
+      "flags": 0,
+      "raw_size": 60
+    },
+    {
+      "name": "/Animation Data/PointerRotation",
+      "metaclass": 27,
+      "offset": 70652,
+      "length": 68,
+      "flags": 0,
+      "raw_size": 68
+    },
+    {
+      "name": "/Animation Data/PowerColumnarDownBarMapping",
+      "metaclass": 27,
+      "offset": 70720,
+      "length": 60,
+      "flags": 0,
+      "raw_size": 60
+    },
+    {
+      "name": "/Animation Data/PowerColumnarUPBarMapping",
+      "metaclass": 27,
+      "offset": 70780,
+      "length": 60,
+      "flags": 0,
+      "raw_size": 60
+    },
+    {
+      "name": "/Animation Data/PowerDown",
+      "metaclass": 27,
+      "offset": 70840,
+      "length": 60,
+      "flags": 0,
+      "raw_size": 60
+    },
+    {
+      "name": "/Animation Data/PowerUP",
+      "metaclass": 27,
+      "offset": 70900,
+      "length": 60,
+      "flags": 0,
+      "raw_size": 60
+    },
+    {
+      "name": "/Animation Data/Power_EnergyBarProcess_Animation",
+      "metaclass": 27,
+      "offset": 70960,
+      "length": 60,
+      "flags": 0,
+      "raw_size": 60
+    },
+    {
+      "name": "/Animation Data/Power_EnergyBarTop_Animation",
+      "metaclass": 27,
+      "offset": 71020,
+      "length": 60,
+      "flags": 0,
+      "raw_size": 60
+    },
+    {
+      "name": "/Animation Data/String",
+      "metaclass": 27,
+      "offset": 71080,
+      "length": 68,
+      "flags": 0,
+      "raw_size": 68
+    },
+    {
+      "name": "/Animations/Color_1",
+      "metaclass": 28,
+      "offset": 71148,
+      "length": 40,
+      "flags": 0,
+      "raw_size": 40
+    },
+    {
+      "name": "/Animations/Color_100",
+      "metaclass": 28,
+      "offset": 71188,
+      "length": 56,
+      "flags": 0,
+      "raw_size": 56
+    },
+    {
+      "name": "/Animations/Color_16",
+      "metaclass": 28,
+      "offset": 71244,
+      "length": 56,
+      "flags": 0,
+      "raw_size": 56
+    },
+    {
+      "name": "/Animations/Color_2",
+      "metaclass": 28,
+      "offset": 71300,
+      "length": 56,
+      "flags": 0,
+      "raw_size": 56
+    },
+    {
+      "name": "/Animations/Color_3",
+      "metaclass": 28,
+      "offset": 71356,
+      "length": 72,
+      "flags": 0,
+      "raw_size": 72
+    },
+    {
+      "name": "/Animations/Color_33",
+      "metaclass": 28,
+      "offset": 71428,
+      "length": 72,
+      "flags": 0,
+      "raw_size": 72
+    },
+    {
+      "name": "/Animations/Color_4",
+      "metaclass": 28,
+      "offset": 71500,
+      "length": 56,
+      "flags": 0,
+      "raw_size": 56
+    },
+    {
+      "name": "/Animations/Color_58",
+      "metaclass": 28,
+      "offset": 71556,
+      "length": 72,
+      "flags": 0,
+      "raw_size": 72
+    },
+    {
+      "name": "/Animations/ListLightBar_opacity",
+      "metaclass": 28,
+      "offset": 71628,
+      "length": 56,
+      "flags": 0,
+      "raw_size": 56
+    },
+    {
+      "name": "/Animations/ListLightBar_opacity_1",
+      "metaclass": 28,
+      "offset": 71684,
+      "length": 56,
+      "flags": 0,
+      "raw_size": 56
+    },
+    {
+      "name": "/Animations/ListLightBar_renderSCX",
+      "metaclass": 28,
+      "offset": 71740,
+      "length": 56,
+      "flags": 0,
+      "raw_size": 56
+    },
+    {
+      "name": "/Animations/ListLightBar_renderSCX_1",
+      "metaclass": 28,
+      "offset": 71796,
+      "length": 56,
+      "flags": 0,
+      "raw_size": 56
+    },
+    {
+      "name": "/Animations/ListLightBar_renderSCY",
+      "metaclass": 28,
+      "offset": 71852,
+      "length": 56,
+      "flags": 0,
+      "raw_size": 56
+    },
+    {
+      "name": "/Animations/ListLightBar_renderSCY_1",
+      "metaclass": 28,
+      "offset": 71908,
+      "length": 56,
+      "flags": 0,
+      "raw_size": 56
+    },
+    {
+      "name": "/Animations/PointerOpacity",
+      "metaclass": 28,
+      "offset": 71964,
+      "length": 104,
+      "flags": 0,
+      "raw_size": 104
+    },
+    {
+      "name": "/Animations/PointerRotation",
+      "metaclass": 28,
+      "offset": 72068,
+      "length": 56,
+      "flags": 0,
+      "raw_size": 56
+    },
+    {
+      "name": "/Animations/PowerColumnarDownBarMapping",
+      "metaclass": 28,
+      "offset": 72124,
+      "length": 56,
+      "flags": 0,
+      "raw_size": 56
+    },
+    {
+      "name": "/Animations/PowerColumnarUPBarMapping",
+      "metaclass": 28,
+      "offset": 72180,
+      "length": 72,
+      "flags": 0,
+      "raw_size": 72
+    },
+    {
+      "name": "/Animations/PowerDown",
+      "metaclass": 28,
+      "offset": 72252,
+      "length": 40,
+      "flags": 0,
+      "raw_size": 40
+    },
+    {
+      "name": "/Animations/PowerUP",
+      "metaclass": 28,
+      "offset": 72292,
+      "length": 40,
+      "flags": 0,
+      "raw_size": 40
+    },
+    {
+      "name": "/Animations/Power_EnergyBarProcess_Animation",
+      "metaclass": 28,
+      "offset": 72332,
+      "length": 40,
+      "flags": 0,
+      "raw_size": 40
+    },
+    {
+      "name": "/Animations/Power_EnergyBarTop_Animation",
+      "metaclass": 28,
+      "offset": 72372,
+      "length": 40,
+      "flags": 0,
+      "raw_size": 40
+    },
+    {
+      "name": "/Animations/String",
+      "metaclass": 28,
+      "offset": 72412,
+      "length": 40,
+      "flags": 0,
+      "raw_size": 40
+    },
+    {
+      "name": "/Brushes/Altas_Material Brush",
+      "metaclass": 29,
+      "offset": 72452,
+      "length": 81,
+      "flags": 0,
+      "raw_size": 81
+    },
+    {
+      "name": "/Brushes/Bar Mask Material Brush",
+      "metaclass": 29,
+      "offset": 72536,
+      "length": 114,
+      "flags": 0,
+      "raw_size": 114
+    },
+    {
+      "name": "/Brushes/Color Brush",
+      "metaclass": 29,
+      "offset": 72652,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Brushes/ColorTextures",
+      "metaclass": 29,
+      "offset": 72688,
+      "length": 65,
+      "flags": 0,
+      "raw_size": 65
+    },
+    {
+      "name": "/Brushes/DefaultBackground",
+      "metaclass": 29,
+      "offset": 72756,
+      "length": 24,
+      "flags": 0,
+      "raw_size": 24
+    },
+    {
+      "name": "/Brushes/EnergyBarBrush",
+      "metaclass": 29,
+      "offset": 72780,
+      "length": 62,
+      "flags": 0,
+      "raw_size": 62
+    },
+    {
+      "name": "/Brushes/Map Mask Material Brush",
+      "metaclass": 29,
+      "offset": 72844,
+      "length": 110,
+      "flags": 0,
+      "raw_size": 110
+    },
+    {
+      "name": "/Brushes/Mask Material Brush",
+      "metaclass": 29,
+      "offset": 72956,
+      "length": 107,
+      "flags": 0,
+      "raw_size": 107
+    },
+    {
+      "name": "/Brushes/Material Brush",
+      "metaclass": 29,
+      "offset": 73064,
+      "length": 64,
+      "flags": 0,
+      "raw_size": 64
+    },
+    {
+      "name": "/Brushes/MultiAlphaMaterial Brush",
+      "metaclass": 29,
+      "offset": 73128,
+      "length": 70,
+      "flags": 0,
+      "raw_size": 70
+    },
+    {
+      "name": "/Brushes/Texture Brush",
+      "metaclass": 29,
+      "offset": 73200,
+      "length": 24,
+      "flags": 0,
+      "raw_size": 24
+    },
+    {
+      "name": "/Data Sources/Data source",
+      "metaclass": 30,
+      "offset": 73224,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Locales/neutral",
+      "metaclass": 31,
+      "offset": 73260,
+      "length": 20,
+      "flags": 0,
+      "raw_size": 20
+    },
+    {
+      "name": "/Locales/zh-CN",
+      "metaclass": 31,
+      "offset": 73280,
+      "length": 20,
+      "flags": 0,
+      "raw_size": 20
+    },
+    {
+      "name": "/Material Types/BarMaskTexture",
+      "metaclass": 32,
+      "offset": 73300,
+      "length": 1029,
+      "flags": 0,
+      "raw_size": 1029
+    },
+    {
+      "name": "/Material Types/CardBlit",
+      "metaclass": 32,
+      "offset": 74332,
+      "length": 752,
+      "flags": 0,
+      "raw_size": 752
+    },
+    {
+      "name": "/Material Types/ColorTexture",
+      "metaclass": 32,
+      "offset": 75084,
+      "length": 901,
+      "flags": 0,
+      "raw_size": 901
+    },
+    {
+      "name": "/Material Types/CopyTexture",
+      "metaclass": 32,
+      "offset": 75988,
+      "length": 505,
+      "flags": 0,
+      "raw_size": 505
+    },
+    {
+      "name": "/Material Types/DefaultBlit",
+      "metaclass": 32,
+      "offset": 76496,
+      "length": 622,
+      "flags": 0,
+      "raw_size": 622
+    },
+    {
+      "name": "/Material Types/EnergyBar",
+      "metaclass": 32,
+      "offset": 77120,
+      "length": 1881,
+      "flags": 0,
+      "raw_size": 1881
+    },
+    {
+      "name": "/Material Types/FontDefault",
+      "metaclass": 32,
+      "offset": 79004,
+      "length": 828,
+      "flags": 0,
+      "raw_size": 828
+    },
+    {
+      "name": "/Material Types/GraphUpdateMaterialType",
+      "metaclass": 32,
+      "offset": 79832,
+      "length": 1259,
+      "flags": 0,
+      "raw_size": 1259
+    },
+    {
+      "name": "/Material Types/MapMaskTexture",
+      "metaclass": 32,
+      "offset": 81092,
+      "length": 1291,
+      "flags": 0,
+      "raw_size": 1291
+    },
+    {
+      "name": "/Material Types/MaskTexture",
+      "metaclass": 32,
+      "offset": 82384,
+      "length": 1115,
+      "flags": 0,
+      "raw_size": 1115
+    },
+    {
+      "name": "/Material Types/MultiAlphaTexture",
+      "metaclass": 32,
+      "offset": 83500,
+      "length": 942,
+      "flags": 0,
+      "raw_size": 942
+    },
+    {
+      "name": "/Material Types/SweepTextures",
+      "metaclass": 32,
+      "offset": 84444,
+      "length": 1058,
+      "flags": 0,
+      "raw_size": 1058
+    },
+    {
+      "name": "/Material Types/Textured",
+      "metaclass": 32,
+      "offset": 85504,
+      "length": 850,
+      "flags": 0,
+      "raw_size": 850
+    },
+    {
+      "name": "/Material Types/VertexPhong",
+      "metaclass": 32,
+      "offset": 86356,
+      "length": 8629,
+      "flags": 0,
+      "raw_size": 8629
+    },
+    {
+      "name": "/Material Types/graphFillRenderMaterialType",
+      "metaclass": 32,
+      "offset": 94988,
+      "length": 1957,
+      "flags": 0,
+      "raw_size": 1957
+    },
+    {
+      "name": "/Material Types/graphLineRenderMaterialType",
+      "metaclass": 32,
+      "offset": 96948,
+      "length": 3464,
+      "flags": 0,
+      "raw_size": 3464
+    },
+    {
+      "name": "/Materials/BarMaskTextureMaterial",
+      "metaclass": 33,
+      "offset": 100412,
+      "length": 136,
+      "flags": 0,
+      "raw_size": 136
+    },
+    {
+      "name": "/Materials/CardBlit",
+      "metaclass": 33,
+      "offset": 100548,
+      "length": 44,
+      "flags": 0,
+      "raw_size": 44
+    },
+    {
+      "name": "/Materials/ColorTextureMaterial",
+      "metaclass": 33,
+      "offset": 100592,
+      "length": 88,
+      "flags": 0,
+      "raw_size": 88
+    },
+    {
+      "name": "/Materials/CopyPreviousData",
+      "metaclass": 33,
+      "offset": 100680,
+      "length": 77,
+      "flags": 0,
+      "raw_size": 77
+    },
+    {
+      "name": "/Materials/DefaultBlitMaterial",
+      "metaclass": 33,
+      "offset": 100760,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Materials/EnergyBarMaterial",
+      "metaclass": 33,
+      "offset": 100796,
+      "length": 84,
+      "flags": 0,
+      "raw_size": 84
+    },
+    {
+      "name": "/Materials/FontDefaultMaterial",
+      "metaclass": 33,
+      "offset": 100880,
+      "length": 56,
+      "flags": 0,
+      "raw_size": 56
+    },
+    {
+      "name": "/Materials/GraphUpdateMaterial",
+      "metaclass": 33,
+      "offset": 100936,
+      "length": 110,
+      "flags": 0,
+      "raw_size": 110
+    },
+    {
+      "name": "/Materials/MapMaskTextureMaterial",
+      "metaclass": 33,
+      "offset": 101048,
+      "length": 84,
+      "flags": 0,
+      "raw_size": 84
+    },
+    {
+      "name": "/Materials/MaskTextureMaterial",
+      "metaclass": 33,
+      "offset": 101132,
+      "length": 177,
+      "flags": 0,
+      "raw_size": 177
+    },
+    {
+      "name": "/Materials/MultiAlphaTextureMaterial",
+      "metaclass": 33,
+      "offset": 101312,
+      "length": 103,
+      "flags": 0,
+      "raw_size": 103
+    },
+    {
+      "name": "/Materials/SweepTexturesMaterial",
+      "metaclass": 33,
+      "offset": 101416,
+      "length": 68,
+      "flags": 0,
+      "raw_size": 68
+    },
+    {
+      "name": "/Materials/TexturedMaterial",
+      "metaclass": 33,
+      "offset": 101484,
+      "length": 101,
+      "flags": 0,
+      "raw_size": 101
+    },
+    {
+      "name": "/Materials/VertexPhongMaterial",
+      "metaclass": 33,
+      "offset": 101588,
+      "length": 124,
+      "flags": 0,
+      "raw_size": 124
+    },
+    {
+      "name": "/Materials/defaultMat",
+      "metaclass": 33,
+      "offset": 101712,
+      "length": 124,
+      "flags": 0,
+      "raw_size": 124
+    },
+    {
+      "name": "/Materials/graphFillRenderMaterialTypeMaterial",
+      "metaclass": 33,
+      "offset": 101836,
+      "length": 138,
+      "flags": 0,
+      "raw_size": 138
+    },
+    {
+      "name": "/Materials/graphLine",
+      "metaclass": 33,
+      "offset": 101976,
+      "length": 170,
+      "flags": 0,
+      "raw_size": 170
+    },
+    {
+      "name": "/Mesh Data/default",
+      "metaclass": 34,
+      "offset": 102148,
+      "length": 15520,
+      "flags": 0,
+      "raw_size": 15520
+    },
+    {
+      "name": "/Object Sources/Opaque",
+      "metaclass": 35,
+      "offset": 117668,
+      "length": 28,
+      "flags": 0,
+      "raw_size": 28
+    },
+    {
+      "name": "/Object Sources/Sorting Filter_icon",
+      "metaclass": 35,
+      "offset": 117696,
+      "length": 20,
+      "flags": 0,
+      "raw_size": 20
+    },
+    {
+      "name": "/Object Sources/Sorting Filter_text",
+      "metaclass": 35,
+      "offset": 117716,
+      "length": 20,
+      "flags": 0,
+      "raw_size": 20
+    },
+    {
+      "name": "/Object Sources/Transparent",
+      "metaclass": 35,
+      "offset": 117736,
+      "length": 28,
+      "flags": 0,
+      "raw_size": 28
+    },
+    {
+      "name": "/Object Sources/icon",
+      "metaclass": 35,
+      "offset": 117764,
+      "length": 24,
+      "flags": 0,
+      "raw_size": 24
+    },
+    {
+      "name": "/Object Sources/text",
+      "metaclass": 35,
+      "offset": 117788,
+      "length": 24,
+      "flags": 0,
+      "raw_size": 24
+    },
+    {
+      "name": "/Page Transitions/Default Transitions",
+      "metaclass": 36,
+      "offset": 117812,
+      "length": 64,
+      "flags": 0,
+      "raw_size": 64
+    },
+    {
+      "name": "/Prefabs/Car_Door_Ordinary",
+      "metaclass": 37,
+      "offset": 117876,
+      "length": 3168,
+      "flags": 0,
+      "raw_size": 3168
+    },
+    {
+      "name": "/Prefabs/Car_Door_Scissor",
+      "metaclass": 37,
+      "offset": 121044,
+      "length": 3362,
+      "flags": 0,
+      "raw_size": 3362
+    },
+    {
+      "name": "/Prefabs/CardHood",
+      "metaclass": 37,
+      "offset": 124408,
+      "length": 1692,
+      "flags": 0,
+      "raw_size": 1692
+    },
+    {
+      "name": "/Prefabs/Card_Car",
+      "metaclass": 37,
+      "offset": 126100,
+      "length": 5589,
+      "flags": 0,
+      "raw_size": 5589
+    },
+    {
+      "name": "/Prefabs/Card_Music",
+      "metaclass": 37,
+      "offset": 131692,
+      "length": 4149,
+      "flags": 0,
+      "raw_size": 4149
+    },
+    {
+      "name": "/Prefabs/Card_Navigation",
+      "metaclass": 37,
+      "offset": 135844,
+      "length": 6569,
+      "flags": 0,
+      "raw_size": 6569
+    },
+    {
+      "name": "/Prefabs/Card_Navigation/Card_Navigation/<ResourceDictionaryInNode>",
+      "metaclass": 31,
+      "offset": 142416,
+      "length": 51,
+      "flags": 0,
+      "raw_size": 51
+    },
+    {
+      "name": "/Prefabs/Card_Power",
+      "metaclass": 37,
+      "offset": 142468,
+      "length": 8214,
+      "flags": 0,
+      "raw_size": 8214
+    },
+    {
+      "name": "/Prefabs/Card_SensorFault",
+      "metaclass": 37,
+      "offset": 150684,
+      "length": 8278,
+      "flags": 0,
+      "raw_size": 8278
+    },
+    {
+      "name": "/Prefabs/Card_Trip",
+      "metaclass": 37,
+      "offset": 158964,
+      "length": 1849,
+      "flags": 0,
+      "raw_size": 1849
+    },
+    {
+      "name": "/Prefabs/List_Icon_5_Left",
+      "metaclass": 37,
+      "offset": 160816,
+      "length": 3026,
+      "flags": 0,
+      "raw_size": 3026
+    },
+    {
+      "name": "/Prefabs/List_Icon_5_Left/List_Icon_5_Left/<ResourceDictionaryInNode>",
+      "metaclass": 31,
+      "offset": 163844,
+      "length": 122,
+      "flags": 0,
+      "raw_size": 122
+    },
+    {
+      "name": "/Prefabs/List_Icon_6_Left",
+      "metaclass": 37,
+      "offset": 163968,
+      "length": 3336,
+      "flags": 0,
+      "raw_size": 3336
+    },
+    {
+      "name": "/Prefabs/List_Icon_6_Left/List_Icon_6_Left/<ResourceDictionaryInNode>",
+      "metaclass": 31,
+      "offset": 167304,
+      "length": 122,
+      "flags": 0,
+      "raw_size": 122
+    },
+    {
+      "name": "/Prefabs/List_Icon_Right",
+      "metaclass": 37,
+      "offset": 167428,
+      "length": 3026,
+      "flags": 0,
+      "raw_size": 3026
+    },
+    {
+      "name": "/Prefabs/List_Icon_Right/List_Icon_Right/<ResourceDictionaryInNode>",
+      "metaclass": 31,
+      "offset": 170456,
+      "length": 122,
+      "flags": 0,
+      "raw_size": 122
+    },
+    {
+      "name": "/Prefabs/List_Item_Icon",
+      "metaclass": 37,
+      "offset": 170580,
+      "length": 813,
+      "flags": 0,
+      "raw_size": 813
+    },
+    {
+      "name": "/Prefabs/List_Item_Icon/List_Item_Icon/icon/PrimitiveMeshInternal",
+      "metaclass": 34,
+      "offset": 171396,
+      "length": 40,
+      "flags": 0,
+      "raw_size": 40
+    },
+    {
+      "name": "/Prefabs/List_Item_Text",
+      "metaclass": 37,
+      "offset": 171436,
+      "length": 438,
+      "flags": 0,
+      "raw_size": 438
+    },
+    {
+      "name": "/Prefabs/LoadDataSource",
+      "metaclass": 37,
+      "offset": 171876,
+      "length": 83,
+      "flags": 0,
+      "raw_size": 83
+    },
+    {
+      "name": "/Prefabs/Main",
+      "metaclass": 37,
+      "offset": 171960,
+      "length": 16432,
+      "flags": 0,
+      "raw_size": 16432
+    },
+    {
+      "name": "/Prefabs/Main/Main/PowerCurve/Line/DisplacementTexture/Scene/Plane/PrimitiveMeshInternal",
+      "metaclass": 34,
+      "offset": 188392,
+      "length": 40,
+      "flags": 0,
+      "raw_size": 40
+    },
+    {
+      "name": "/Prefabs/Navi_AllLane",
+      "metaclass": 37,
+      "offset": 188432,
+      "length": 1631,
+      "flags": 0,
+      "raw_size": 1631
+    },
+    {
+      "name": "/Prefabs/Navi_AllLaneTollGate",
+      "metaclass": 37,
+      "offset": 190064,
+      "length": 1043,
+      "flags": 0,
+      "raw_size": 1043
+    },
+    {
+      "name": "/Prefabs/Navi_LaneIcon",
+      "metaclass": 37,
+      "offset": 191108,
+      "length": 1201,
+      "flags": 0,
+      "raw_size": 1201
+    },
+    {
+      "name": "/Prefabs/Navi_LaneIcon_TollGate",
+      "metaclass": 37,
+      "offset": 192312,
+      "length": 757,
+      "flags": 0,
+      "raw_size": 757
+    },
+    {
+      "name": "/Prefabs/Navi_Splitline",
+      "metaclass": 37,
+      "offset": 193072,
+      "length": 430,
+      "flags": 0,
+      "raw_size": 430
+    },
+    {
+      "name": "/Prefabs/PowerCurve",
+      "metaclass": 37,
+      "offset": 193504,
+      "length": 4210,
+      "flags": 0,
+      "raw_size": 4210
+    },
+    {
+      "name": "/Prefabs/PowerCurve/PowerCurve/DisplacementTexture/Scene/Plane/PrimitiveMeshInternal",
+      "metaclass": 34,
+      "offset": 197716,
+      "length": 40,
+      "flags": 0,
+      "raw_size": 40
+    },
+    {
+      "name": "/Prefabs/SensorFaultDot",
+      "metaclass": 37,
+      "offset": 197756,
+      "length": 442,
+      "flags": 0,
+      "raw_size": 442
+    },
+    {
+      "name": "/Prefabs/Text Block 2D",
+      "metaclass": 37,
+      "offset": 198200,
+      "length": 197,
+      "flags": 0,
+      "raw_size": 197
+    },
+    {
+      "name": "/Prefabs/Tire_Image",
+      "metaclass": 37,
+      "offset": 198400,
+      "length": 872,
+      "flags": 0,
+      "raw_size": 872
+    },
+    {
+      "name": "/Prefabs/Tire_Left",
+      "metaclass": 37,
+      "offset": 199272,
+      "length": 2405,
+      "flags": 0,
+      "raw_size": 2405
+    },
+    {
+      "name": "/Prefabs/Tire_Right",
+      "metaclass": 37,
+      "offset": 201680,
+      "length": 2349,
+      "flags": 0,
+      "raw_size": 2349
+    },
+    {
+      "name": "/Prefabs/Tire_Right2",
+      "metaclass": 37,
+      "offset": 204032,
+      "length": 2321,
+      "flags": 0,
+      "raw_size": 2321
+    },
+    {
+      "name": "/Prefabs/TripTextCenter",
+      "metaclass": 37,
+      "offset": 206356,
+      "length": 495,
+      "flags": 0,
+      "raw_size": 495
+    },
+    {
+      "name": "/Prefabs/TripTextLeft",
+      "metaclass": 37,
+      "offset": 206852,
+      "length": 859,
+      "flags": 0,
+      "raw_size": 859
+    },
+    {
+      "name": "/Prefabs/shadow",
+      "metaclass": 37,
+      "offset": 207712,
+      "length": 86,
+      "flags": 0,
+      "raw_size": 86
+    },
+    {
+      "name": "/Render Passes/GraphDataUpdateComposer",
+      "metaclass": 38,
+      "offset": 207800,
+      "length": 28,
+      "flags": 0,
+      "raw_size": 28
+    },
+    {
+      "name": "/Render Passes/GraphDataUpdateComposer/CopyToPreventFeedback",
+      "metaclass": 38,
+      "offset": 207828,
+      "length": 86,
+      "flags": 0,
+      "raw_size": 86
+    },
+    {
+      "name": "/Render Passes/GraphDataUpdateComposer/CopyToPreventFeedback/Blit Render Pass",
+      "metaclass": 38,
+      "offset": 207916,
+      "length": 114,
+      "flags": 0,
+      "raw_size": 114
+    },
+    {
+      "name": "/Render Passes/GraphDataUpdateComposer/CopyToPreventFeedback/Clear Render Pass",
+      "metaclass": 38,
+      "offset": 208032,
+      "length": 28,
+      "flags": 0,
+      "raw_size": 28
+    },
+    {
+      "name": "/Render Passes/GraphDataUpdateComposer/GraphDataUpdate",
+      "metaclass": 38,
+      "offset": 208060,
+      "length": 77,
+      "flags": 0,
+      "raw_size": 77
+    },
+    {
+      "name": "/Render Passes/GraphDataUpdateComposer/GraphDataUpdate/Clear Render Pass",
+      "metaclass": 38,
+      "offset": 208140,
+      "length": 28,
+      "flags": 0,
+      "raw_size": 28
+    },
+    {
+      "name": "/Render Passes/GraphDataUpdateComposer/GraphDataUpdate/Draw Objects",
+      "metaclass": 38,
+      "offset": 208168,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Render Passes/GraphFill Render Pass",
+      "metaclass": 38,
+      "offset": 208204,
+      "length": 24,
+      "flags": 0,
+      "raw_size": 24
+    },
+    {
+      "name": "/Render Passes/GraphFill Render Pass/Render to Texture Pass",
+      "metaclass": 38,
+      "offset": 208228,
+      "length": 79,
+      "flags": 0,
+      "raw_size": 79
+    },
+    {
+      "name": "/Render Passes/GraphFill Render Pass/Render to Texture Pass/Clear Render Pass",
+      "metaclass": 38,
+      "offset": 208308,
+      "length": 48,
+      "flags": 0,
+      "raw_size": 48
+    },
+    {
+      "name": "/Render Passes/GraphFill Render Pass/Render to Texture Pass/Draw Objects",
+      "metaclass": 38,
+      "offset": 208356,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Render Passes/Render Pass Item",
+      "metaclass": 38,
+      "offset": 208392,
+      "length": 28,
+      "flags": 0,
+      "raw_size": 28
+    },
+    {
+      "name": "/Render Passes/Render Pass Item/Clear Render Pass",
+      "metaclass": 38,
+      "offset": 208420,
+      "length": 28,
+      "flags": 0,
+      "raw_size": 28
+    },
+    {
+      "name": "/Render Passes/Render Pass Item/Draw Sorting Filter",
+      "metaclass": 38,
+      "offset": 208448,
+      "length": 73,
+      "flags": 0,
+      "raw_size": 73
+    },
+    {
+      "name": "/Resource Files/Images/DefaultTextureImage.png",
+      "metaclass": 4294967295,
+      "offset": 208524,
+      "length": 15151,
+      "flags": 0,
+      "raw_size": 15151
+    },
+    {
+      "name": "/Resource Files/Images/GraphFill.png",
+      "metaclass": 4294967295,
+      "offset": 223676,
+      "length": 1920,
+      "flags": 0,
+      "raw_size": 1920
+    },
+    {
+      "name": "/Resource Files/Images/GroupLane.png",
+      "metaclass": 4294967295,
+      "offset": 225596,
+      "length": 76989,
+      "flags": 0,
+      "raw_size": 76989
+    },
+    {
+      "name": "/Resource Files/Images/GroupLane_night.png",
+      "metaclass": 4294967295,
+      "offset": 302588,
+      "length": 82551,
+      "flags": 0,
+      "raw_size": 82551
+    },
+    {
+      "name": "/Resource Files/Images/Guidance/bg_laneicon_center_day.png",
+      "metaclass": 4294967295,
+      "offset": 385140,
+      "length": 140,
+      "flags": 0,
+      "raw_size": 140
+    },
+    {
+      "name": "/Resource Files/Images/Guidance/bg_laneicon_center_night.png",
+      "metaclass": 4294967295,
+      "offset": 385280,
+      "length": 140,
+      "flags": 0,
+      "raw_size": 140
+    },
+    {
+      "name": "/Resource Files/Images/Guidance/bg_laneicon_left_day.png",
+      "metaclass": 4294967295,
+      "offset": 385420,
+      "length": 437,
+      "flags": 0,
+      "raw_size": 437
+    },
+    {
+      "name": "/Resource Files/Images/Guidance/bg_laneicon_left_night.png",
+      "metaclass": 4294967295,
+      "offset": 385860,
+      "length": 432,
+      "flags": 0,
+      "raw_size": 432
+    },
+    {
+      "name": "/Resource Files/Images/Guidance/bg_laneicon_right_day.png",
+      "metaclass": 4294967295,
+      "offset": 386292,
+      "length": 438,
+      "flags": 0,
+      "raw_size": 438
+    },
+    {
+      "name": "/Resource Files/Images/Guidance/bg_laneicon_right_night.png",
+      "metaclass": 4294967295,
+      "offset": 386732,
+      "length": 439,
+      "flags": 0,
+      "raw_size": 439
+    },
+    {
+      "name": "/Resource Files/Images/Guidance/bg_tbt_background_day.png",
+      "metaclass": 4294967295,
+      "offset": 387172,
+      "length": 18144,
+      "flags": 0,
+      "raw_size": 18144
+    },
+    {
+      "name": "/Resource Files/Images/Guidance/bg_tbt_background_night.png",
+      "metaclass": 4294967295,
+      "offset": 405316,
+      "length": 1375,
+      "flags": 0,
+      "raw_size": 1375
+    },
+    {
+      "name": "/Resource Files/Images/Guidance/split_line_day.png",
+      "metaclass": 4294967295,
+      "offset": 406692,
+      "length": 118,
+      "flags": 0,
+      "raw_size": 118
+    },
+    {
+      "name": "/Resource Files/Images/Guidance/split_line_night.png",
+      "metaclass": 4294967295,
+      "offset": 406812,
+      "length": 118,
+      "flags": 0,
+      "raw_size": 118
+    },
+    {
+      "name": "/Resource Files/Images/Guidance/导航背景.png",
+      "metaclass": 4294967295,
+      "offset": 406932,
+      "length": 4888,
+      "flags": 0,
+      "raw_size": 4888
+    },
+    {
+      "name": "/Resource Files/Images/Icon/ic_applist_car.png",
+      "metaclass": 4294967295,
+      "offset": 411820,
+      "length": 4129,
+      "flags": 0,
+      "raw_size": 4129
+    },
+    {
+      "name": "/Resource Files/Images/Icon/ic_applist_media.png",
+      "metaclass": 4294967295,
+      "offset": 415952,
+      "length": 6255,
+      "flags": 0,
+      "raw_size": 6255
+    },
+    {
+      "name": "/Resource Files/Images/Icon/ic_applist_navigation.png",
+      "metaclass": 4294967295,
+      "offset": 422208,
+      "length": 5891,
+      "flags": 0,
+      "raw_size": 5891
+    },
+    {
+      "name": "/Resource Files/Images/Icon/ic_applist_power.png",
+      "metaclass": 4294967295,
+      "offset": 428100,
+      "length": 7014,
+      "flags": 0,
+      "raw_size": 7014
+    },
+    {
+      "name": "/Resource Files/Images/Icon/ic_applist_rada.png",
+      "metaclass": 4294967295,
+      "offset": 435116,
+      "length": 7152,
+      "flags": 0,
+      "raw_size": 7152
+    },
+    {
+      "name": "/Resource Files/Images/Icon/ic_applist_trip.png",
+      "metaclass": 4294967295,
+      "offset": 442268,
+      "length": 4946,
+      "flags": 0,
+      "raw_size": 4946
+    },
+    {
+      "name": "/Resource Files/Images/PowerEmpty_day.png",
+      "metaclass": 4294967295,
+      "offset": 447216,
+      "length": 1782,
+      "flags": 0,
+      "raw_size": 1782
+    },
+    {
+      "name": "/Resource Files/Images/PowerEmpty_night.png",
+      "metaclass": 4294967295,
+      "offset": 449000,
+      "length": 2696,
+      "flags": 0,
+      "raw_size": 2696
+    },
+    {
+      "name": "/Resource Files/Images/PowerFrame_day.png",
+      "metaclass": 4294967295,
+      "offset": 451696,
+      "length": 4168,
+      "flags": 0,
+      "raw_size": 4168
+    },
+    {
+      "name": "/Resource Files/Images/PowerFrame_night.png",
+      "metaclass": 4294967295,
+      "offset": 455864,
+      "length": 3992,
+      "flags": 0,
+      "raw_size": 3992
+    },
+    {
+      "name": "/Resource Files/Images/PowerFull_day.png",
+      "metaclass": 4294967295,
+      "offset": 459856,
+      "length": 8108,
+      "flags": 0,
+      "raw_size": 8108
+    },
+    {
+      "name": "/Resource Files/Images/PowerFull_night.png",
+      "metaclass": 4294967295,
+      "offset": 467964,
+      "length": 7485,
+      "flags": 0,
+      "raw_size": 7485
+    },
+    {
+      "name": "/Resource Files/Images/avg_line.png",
+      "metaclass": 4294967295,
+      "offset": 475452,
+      "length": 1475,
+      "flags": 0,
+      "raw_size": 1475
+    },
+    {
+      "name": "/Resource Files/Images/bg_card_shadow_Day.png",
+      "metaclass": 4294967295,
+      "offset": 476928,
+      "length": 6587,
+      "flags": 0,
+      "raw_size": 6587
+    },
+    {
+      "name": "/Resource Files/Images/bg_card_shadow_Night.png",
+      "metaclass": 4294967295,
+      "offset": 483516,
+      "length": 4940,
+      "flags": 0,
+      "raw_size": 4940
+    },
+    {
+      "name": "/Resource Files/Images/bg_chosen_tab.png",
+      "metaclass": 4294967295,
+      "offset": 488456,
+      "length": 18298,
+      "flags": 0,
+      "raw_size": 18298
+    },
+    {
+      "name": "/Resource Files/Images/bg_chosen_tab_night.png",
+      "metaclass": 4294967295,
+      "offset": 506756,
+      "length": 36844,
+      "flags": 0,
+      "raw_size": 36844
+    },
+    {
+      "name": "/Resource Files/Images/bg_cover_day.png",
+      "metaclass": 4294967295,
+      "offset": 543600,
+      "length": 25410,
+      "flags": 0,
+      "raw_size": 25410
+    },
+    {
+      "name": "/Resource Files/Images/bg_cover_night.png",
+      "metaclass": 4294967295,
+      "offset": 569012,
+      "length": 19314,
+      "flags": 0,
+      "raw_size": 19314
+    },
+    {
+      "name": "/Resource Files/Images/bg_default_cover_day.png",
+      "metaclass": 4294967295,
+      "offset": 588328,
+      "length": 17217,
+      "flags": 0,
+      "raw_size": 17217
+    },
+    {
+      "name": "/Resource Files/Images/bg_default_cover_night.png",
+      "metaclass": 4294967295,
+      "offset": 605548,
+      "length": 18384,
+      "flags": 0,
+      "raw_size": 18384
+    },
+    {
+      "name": "/Resource Files/Images/bg_line_day.png",
+      "metaclass": 4294967295,
+      "offset": 623932,
+      "length": 396,
+      "flags": 0,
+      "raw_size": 396
+    },
+    {
+      "name": "/Resource Files/Images/bg_mask.png",
+      "metaclass": 4294967295,
+      "offset": 624328,
+      "length": 2154,
+      "flags": 0,
+      "raw_size": 2154
+    },
+    {
+      "name": "/Resource Files/Images/bg_power_0_day.png",
+      "metaclass": 4294967295,
+      "offset": 626484,
+      "length": 227,
+      "flags": 0,
+      "raw_size": 227
+    },
+    {
+      "name": "/Resource Files/Images/bg_power_instant.png",
+      "metaclass": 4294967295,
+      "offset": 626712,
+      "length": 3086,
+      "flags": 0,
+      "raw_size": 3086
+    },
+    {
+      "name": "/Resource Files/Images/bg_power_instant_night.png",
+      "metaclass": 4294967295,
+      "offset": 629800,
+      "length": 4524,
+      "flags": 0,
+      "raw_size": 4524
+    },
+    {
+      "name": "/Resource Files/Images/bg_power_point.png",
+      "metaclass": 4294967295,
+      "offset": 634324,
+      "length": 965,
+      "flags": 0,
+      "raw_size": 965
+    },
+    {
+      "name": "/Resource Files/Images/bg_power_point2.png",
+      "metaclass": 4294967295,
+      "offset": 635292,
+      "length": 401,
+      "flags": 0,
+      "raw_size": 401
+    },
+    {
+      "name": "/Resource Files/Images/bg_power_point2Night.png",
+      "metaclass": 4294967295,
+      "offset": 635696,
+      "length": 389,
+      "flags": 0,
+      "raw_size": 389
+    },
+    {
+      "name": "/Resource Files/Images/bg_power_point_night.png",
+      "metaclass": 4294967295,
+      "offset": 636088,
+      "length": 1400,
+      "flags": 0,
+      "raw_size": 1400
+    },
+    {
+      "name": "/Resource Files/Images/bg_powerline_night_night.png",
+      "metaclass": 4294967295,
+      "offset": 637488,
+      "length": 10031,
+      "flags": 0,
+      "raw_size": 10031
+    },
+    {
+      "name": "/Resource Files/Images/car/bg_tire_faul.png",
+      "metaclass": 4294967295,
+      "offset": 647520,
+      "length": 884,
+      "flags": 0,
+      "raw_size": 884
+    },
+    {
+      "name": "/Resource Files/Images/car/bg_tire_faul_night.png",
+      "metaclass": 4294967295,
+      "offset": 648404,
+      "length": 728,
+      "flags": 0,
+      "raw_size": 728
+    },
+    {
+      "name": "/Resource Files/Images/car/bg_tire_normal.png",
+      "metaclass": 4294967295,
+      "offset": 649132,
+      "length": 777,
+      "flags": 0,
+      "raw_size": 777
+    },
+    {
+      "name": "/Resource Files/Images/car/bg_tire_normal_night.png",
+      "metaclass": 4294967295,
+      "offset": 649912,
+      "length": 658,
+      "flags": 0,
+      "raw_size": 658
+    },
+    {
+      "name": "/Resource Files/Images/car/bg_tire_yellow.png",
+      "metaclass": 4294967295,
+      "offset": 650572,
+      "length": 894,
+      "flags": 0,
+      "raw_size": 894
+    },
+    {
+      "name": "/Resource Files/Images/car/bg_tire_yellow_night.png",
+      "metaclass": 4294967295,
+      "offset": 651468,
+      "length": 785,
+      "flags": 0,
+      "raw_size": 785
+    },
+    {
+      "name": "/Resource Files/Images/car/bg_unlock_fault_left.png",
+      "metaclass": 4294967295,
+      "offset": 652256,
+      "length": 4182,
+      "flags": 0,
+      "raw_size": 4182
+    },
+    {
+      "name": "/Resource Files/Images/car/bg_unlock_fault_left_night.png",
+      "metaclass": 4294967295,
+      "offset": 656440,
+      "length": 4152,
+      "flags": 0,
+      "raw_size": 4152
+    },
+    {
+      "name": "/Resource Files/Images/car/bg_unlock_fault_rightpng.png",
+      "metaclass": 4294967295,
+      "offset": 660592,
+      "length": 4284,
+      "flags": 0,
+      "raw_size": 4284
+    },
+    {
+      "name": "/Resource Files/Images/car/bg_unlock_fault_rightpng_night.png",
+      "metaclass": 4294967295,
+      "offset": 664876,
+      "length": 4489,
+      "flags": 0,
+      "raw_size": 4489
+    },
+    {
+      "name": "/Resource Files/Images/car/bg_unlock_front.png",
+      "metaclass": 4294967295,
+      "offset": 669368,
+      "length": 3976,
+      "flags": 0,
+      "raw_size": 3976
+    },
+    {
+      "name": "/Resource Files/Images/car/bg_unlock_front_night.png",
+      "metaclass": 4294967295,
+      "offset": 673344,
+      "length": 3985,
+      "flags": 0,
+      "raw_size": 3985
+    },
+    {
+      "name": "/Resource Files/Images/car/bg_unlock_left.png",
+      "metaclass": 4294967295,
+      "offset": 677332,
+      "length": 4269,
+      "flags": 0,
+      "raw_size": 4269
+    },
+    {
+      "name": "/Resource Files/Images/car/bg_unlock_left_night.png",
+      "metaclass": 4294967295,
+      "offset": 681604,
+      "length": 4253,
+      "flags": 0,
+      "raw_size": 4253
+    },
+    {
+      "name": "/Resource Files/Images/car/bg_unlock_rear.png",
+      "metaclass": 4294967295,
+      "offset": 685860,
+      "length": 3976,
+      "flags": 0,
+      "raw_size": 3976
+    },
+    {
+      "name": "/Resource Files/Images/car/bg_unlock_rear_night.png",
+      "metaclass": 4294967295,
+      "offset": 689836,
+      "length": 3991,
+      "flags": 0,
+      "raw_size": 3991
+    },
+    {
+      "name": "/Resource Files/Images/car/bg_unlock_rightpng.png",
+      "metaclass": 4294967295,
+      "offset": 693828,
+      "length": 4279,
+      "flags": 0,
+      "raw_size": 4279
+    },
+    {
+      "name": "/Resource Files/Images/car/bg_unlock_rightpng_night.png",
+      "metaclass": 4294967295,
+      "offset": 698108,
+      "length": 4479,
+      "flags": 0,
+      "raw_size": 4479
+    },
+    {
+      "name": "/Resource Files/Images/car/前舱盖.png",
+      "metaclass": 4294967295,
+      "offset": 702588,
+      "length": 4367,
+      "flags": 0,
+      "raw_size": 4367
+    },
+    {
+      "name": "/Resource Files/Images/car/前舱盖_night.png",
+      "metaclass": 4294967295,
+      "offset": 706956,
+      "length": 4160,
+      "flags": 0,
+      "raw_size": 4160
+    },
+    {
+      "name": "/Resource Files/Images/car/右充电口盖.png",
+      "metaclass": 4294967295,
+      "offset": 711116,
+      "length": 403,
+      "flags": 0,
+      "raw_size": 403
+    },
+    {
+      "name": "/Resource Files/Images/car/右充电口盖_night.png",
+      "metaclass": 4294967295,
+      "offset": 711520,
+      "length": 392,
+      "flags": 0,
+      "raw_size": 392
+    },
+    {
+      "name": "/Resource Files/Images/car/后舱盖.png",
+      "metaclass": 4294967295,
+      "offset": 711912,
+      "length": 2748,
+      "flags": 0,
+      "raw_size": 2748
+    },
+    {
+      "name": "/Resource Files/Images/car/后舱盖_night.png",
+      "metaclass": 4294967295,
+      "offset": 714660,
+      "length": 2620,
+      "flags": 0,
+      "raw_size": 2620
+    },
+    {
+      "name": "/Resource Files/Images/car/左充电口盖.png",
+      "metaclass": 4294967295,
+      "offset": 717280,
+      "length": 417,
+      "flags": 0,
+      "raw_size": 417
+    },
+    {
+      "name": "/Resource Files/Images/car/左充电口盖_night.png",
+      "metaclass": 4294967295,
+      "offset": 717700,
+      "length": 411,
+      "flags": 0,
+      "raw_size": 411
+    },
+    {
+      "name": "/Resource Files/Images/car/左前门开.png",
+      "metaclass": 4294967295,
+      "offset": 718112,
+      "length": 4486,
+      "flags": 0,
+      "raw_size": 4486
+    },
+    {
+      "name": "/Resource Files/Images/car/左前门开_night.png",
+      "metaclass": 4294967295,
+      "offset": 722600,
+      "length": 4232,
+      "flags": 0,
+      "raw_size": 4232
+    },
+    {
+      "name": "/Resource Files/Images/car/左前门开_night_scissor.png",
+      "metaclass": 4294967295,
+      "offset": 726832,
+      "length": 4927,
+      "flags": 0,
+      "raw_size": 4927
+    },
+    {
+      "name": "/Resource Files/Images/car/左前门开_scissor.png",
+      "metaclass": 4294967295,
+      "offset": 731760,
+      "length": 5081,
+      "flags": 0,
+      "raw_size": 5081
+    },
+    {
+      "name": "/Resource Files/Images/car/左前门闭.png",
+      "metaclass": 4294967295,
+      "offset": 736844,
+      "length": 4454,
+      "flags": 0,
+      "raw_size": 4454
+    },
+    {
+      "name": "/Resource Files/Images/car/左前门闭_night.png",
+      "metaclass": 4294967295,
+      "offset": 741300,
+      "length": 3702,
+      "flags": 0,
+      "raw_size": 3702
+    },
+    {
+      "name": "/Resource Files/Images/car/左后门开.png",
+      "metaclass": 4294967295,
+      "offset": 745004,
+      "length": 3319,
+      "flags": 0,
+      "raw_size": 3319
+    },
+    {
+      "name": "/Resource Files/Images/car/左后门开_night.png",
+      "metaclass": 4294967295,
+      "offset": 748324,
+      "length": 3084,
+      "flags": 0,
+      "raw_size": 3084
+    },
+    {
+      "name": "/Resource Files/Images/car/左后门开_night_scissor.png",
+      "metaclass": 4294967295,
+      "offset": 751408,
+      "length": 3084,
+      "flags": 0,
+      "raw_size": 3084
+    },
+    {
+      "name": "/Resource Files/Images/car/左后门开_scissor.png",
+      "metaclass": 4294967295,
+      "offset": 754492,
+      "length": 3319,
+      "flags": 0,
+      "raw_size": 3319
+    },
+    {
+      "name": "/Resource Files/Images/car/左后门闭.png",
+      "metaclass": 4294967295,
+      "offset": 757812,
+      "length": 3769,
+      "flags": 0,
+      "raw_size": 3769
+    },
+    {
+      "name": "/Resource Files/Images/car/左后门闭_night.png",
+      "metaclass": 4294967295,
+      "offset": 761584,
+      "length": 3288,
+      "flags": 0,
+      "raw_size": 3288
+    },
+    {
+      "name": "/Resource Files/Images/car/无门车体.png",
+      "metaclass": 4294967295,
+      "offset": 764872,
+      "length": 51674,
+      "flags": 0,
+      "raw_size": 51674
+    },
+    {
+      "name": "/Resource Files/Images/car/无门车体_night.png",
+      "metaclass": 4294967295,
+      "offset": 816548,
+      "length": 46382,
+      "flags": 0,
+      "raw_size": 46382
+    },
+    {
+      "name": "/Resource Files/Images/card_radar_model_front.png",
+      "metaclass": 4294967295,
+      "offset": 862932,
+      "length": 87479,
+      "flags": 0,
+      "raw_size": 87479
+    },
+    {
+      "name": "/Resource Files/Images/card_radar_model_rear.png",
+      "metaclass": 4294967295,
+      "offset": 950412,
+      "length": 84005,
+      "flags": 0,
+      "raw_size": 84005
+    },
+    {
+      "name": "/Resource Files/Images/card_radar_model_whole.png",
+      "metaclass": 4294967295,
+      "offset": 1034420,
+      "length": 68603,
+      "flags": 0,
+      "raw_size": 68603
+    },
+    {
+      "name": "/Resource Files/Images/color1_power_instant.png",
+      "metaclass": 4294967295,
+      "offset": 1103024,
+      "length": 3989,
+      "flags": 0,
+      "raw_size": 3989
+    },
+    {
+      "name": "/Resource Files/Images/color2_power_instant.png",
+      "metaclass": 4294967295,
+      "offset": 1107016,
+      "length": 3102,
+      "flags": 0,
+      "raw_size": 3102
+    },
+    {
+      "name": "/Resource Files/Images/color_power_instant.png",
+      "metaclass": 4294967295,
+      "offset": 1110120,
+      "length": 5661,
+      "flags": 0,
+      "raw_size": 5661
+    },
+    {
+      "name": "/Resource Files/Images/guideline_turn_all_icons.png",
+      "metaclass": 4294967295,
+      "offset": 1115784,
+      "length": 24931,
+      "flags": 0,
+      "raw_size": 24931
+    },
+    {
+      "name": "/Resource Files/Images/guideline_turn_all_icons_night.png",
+      "metaclass": 4294967295,
+      "offset": 1140716,
+      "length": 26120,
+      "flags": 0,
+      "raw_size": 26120
+    },
+    {
+      "name": "/Resource Files/Images/ic_card_media_pause.png",
+      "metaclass": 4294967295,
+      "offset": 1166836,
+      "length": 1630,
+      "flags": 0,
+      "raw_size": 1630
+    },
+    {
+      "name": "/Resource Files/Images/ic_card_media_pause_night.png",
+      "metaclass": 4294967295,
+      "offset": 1168468,
+      "length": 1907,
+      "flags": 0,
+      "raw_size": 1907
+    },
+    {
+      "name": "/Resource Files/Images/line_color.png",
+      "metaclass": 4294967295,
+      "offset": 1170376,
+      "length": 295,
+      "flags": 0,
+      "raw_size": 295
+    },
+    {
+      "name": "/Resource Files/Images/line_form.png",
+      "metaclass": 4294967295,
+      "offset": 1170672,
+      "length": 1614,
+      "flags": 0,
+      "raw_size": 1614
+    },
+    {
+      "name": "/Resource Files/Images/line_form_night.png",
+      "metaclass": 4294967295,
+      "offset": 1172288,
+      "length": 2044,
+      "flags": 0,
+      "raw_size": 2044
+    },
+    {
+      "name": "/Resource Files/Images/mask.png",
+      "metaclass": 4294967295,
+      "offset": 1174332,
+      "length": 274,
+      "flags": 0,
+      "raw_size": 274
+    },
+    {
+      "name": "/Resource Files/Images/mask_power_1.png",
+      "metaclass": 4294967295,
+      "offset": 1174608,
+      "length": 1431,
+      "flags": 0,
+      "raw_size": 1431
+    },
+    {
+      "name": "/Resource Files/Images/mask_power_2.png",
+      "metaclass": 4294967295,
+      "offset": 1176040,
+      "length": 1510,
+      "flags": 0,
+      "raw_size": 1510
+    },
+    {
+      "name": "/Resource Files/Images/pic_music_album_cover_240-Day.png",
+      "metaclass": 4294967295,
+      "offset": 1177552,
+      "length": 1802,
+      "flags": 0,
+      "raw_size": 1802
+    },
+    {
+      "name": "/Resource Files/Images/pic_music_album_cover_240-night.png",
+      "metaclass": 4294967295,
+      "offset": 1179356,
+      "length": 1793,
+      "flags": 0,
+      "raw_size": 1793
+    },
+    {
+      "name": "/Resource Files/Images/pic_netradio_cover_240-Day.png",
+      "metaclass": 4294967295,
+      "offset": 1181152,
+      "length": 7259,
+      "flags": 0,
+      "raw_size": 7259
+    },
+    {
+      "name": "/Resource Files/Images/pic_netradio_cover_240-night.png",
+      "metaclass": 4294967295,
+      "offset": 1188412,
+      "length": 6824,
+      "flags": 0,
+      "raw_size": 6824
+    },
+    {
+      "name": "/Resource Files/Images/pic_read_cover_240-Day.png",
+      "metaclass": 4294967295,
+      "offset": 1195236,
+      "length": 2033,
+      "flags": 0,
+      "raw_size": 2033
+    },
+    {
+      "name": "/Resource Files/Images/pic_read_cover_240-night.png",
+      "metaclass": 4294967295,
+      "offset": 1197272,
+      "length": 1964,
+      "flags": 0,
+      "raw_size": 1964
+    },
+    {
+      "name": "/Resource Files/Images/point.png",
+      "metaclass": 4294967295,
+      "offset": 1199236,
+      "length": 233,
+      "flags": 0,
+      "raw_size": 233
+    },
+    {
+      "name": "/Resource Files/Images/smooth.png",
+      "metaclass": 4294967295,
+      "offset": 1199472,
+      "length": 8547,
+      "flags": 0,
+      "raw_size": 8547
+    },
+    {
+      "name": "/Resource Files/Images/刻度值.png",
+      "metaclass": 4294967295,
+      "offset": 1208020,
+      "length": 2647,
+      "flags": 0,
+      "raw_size": 2647
+    },
+    {
+      "name": "/Resource Files/Images/刻度值_night.png",
+      "metaclass": 4294967295,
+      "offset": 1210668,
+      "length": 2647,
+      "flags": 0,
+      "raw_size": 2647
+    },
+    {
+      "name": "/Resource Files/Images/刻度线.png",
+      "metaclass": 4294967295,
+      "offset": 1213316,
+      "length": 647,
+      "flags": 0,
+      "raw_size": 647
+    },
+    {
+      "name": "/Resource Files/Images/唱片mask.png",
+      "metaclass": 4294967295,
+      "offset": 1213964,
+      "length": 2216,
+      "flags": 0,
+      "raw_size": 2216
+    },
+    {
+      "name": "/Resource Files/Images/唱片阴影.png",
+      "metaclass": 4294967295,
+      "offset": 1216180,
+      "length": 6180,
+      "flags": 0,
+      "raw_size": 6180
+    },
+    {
+      "name": "/Resource Files/Images/导航背景_night.png",
+      "metaclass": 4294967295,
+      "offset": 1222360,
+      "length": 4322,
+      "flags": 0,
+      "raw_size": 4322
+    },
+    {
+      "name": "/Resource Files/Images/异常点.png",
+      "metaclass": 4294967295,
+      "offset": 1226684,
+      "length": 1410,
+      "flags": 0,
+      "raw_size": 1410
+    },
+    {
+      "name": "/Resource Files/Images/故障点.png",
+      "metaclass": 4294967295,
+      "offset": 1228096,
+      "length": 1285,
+      "flags": 0,
+      "raw_size": 1285
+    },
+    {
+      "name": "/Resource Files/Images/进度-Day.png",
+      "metaclass": 4294967295,
+      "offset": 1229384,
+      "length": 153,
+      "flags": 0,
+      "raw_size": 153
+    },
+    {
+      "name": "/Resource Files/Images/进度-night.png",
+      "metaclass": 4294967295,
+      "offset": 1229540,
+      "length": 153,
+      "flags": 0,
+      "raw_size": 153
+    },
+    {
+      "name": "/Resource Files/Images/进度槽-Day.png",
+      "metaclass": 4294967295,
+      "offset": 1229696,
+      "length": 288,
+      "flags": 0,
+      "raw_size": 288
+    },
+    {
+      "name": "/Resource Files/Images/进度槽-night.png",
+      "metaclass": 4294967295,
+      "offset": 1229984,
+      "length": 284,
+      "flags": 0,
+      "raw_size": 284
+    },
+    {
+      "name": "/Resource Files/Images/里程线条day.png",
+      "metaclass": 4294967295,
+      "offset": 1230268,
+      "length": 689,
+      "flags": 0,
+      "raw_size": 689
+    },
+    {
+      "name": "/Resource Files/Images/里程线条night.png",
+      "metaclass": 4294967295,
+      "offset": 1230960,
+      "length": 689,
+      "flags": 0,
+      "raw_size": 689
+    },
+    {
+      "name": "/StartupPrefab",
+      "metaclass": 37,
+      "offset": 1231652,
+      "length": 421,
+      "flags": 0,
+      "raw_size": 421
+    },
+    {
+      "name": "/State Managers/CarDoorTypes_SM",
+      "metaclass": 39,
+      "offset": 1232076,
+      "length": 275,
+      "flags": 0,
+      "raw_size": 275
+    },
+    {
+      "name": "/State Managers/CarTextStateManager",
+      "metaclass": 39,
+      "offset": 1232352,
+      "length": 2516,
+      "flags": 0,
+      "raw_size": 2516
+    },
+    {
+      "name": "/State Managers/CardStateManager",
+      "metaclass": 39,
+      "offset": 1234868,
+      "length": 590,
+      "flags": 0,
+      "raw_size": 590
+    },
+    {
+      "name": "/State Managers/DayOrNight_List_Text",
+      "metaclass": 39,
+      "offset": 1235460,
+      "length": 148,
+      "flags": 0,
+      "raw_size": 148
+    },
+    {
+      "name": "/State Managers/DoorStateManager_Oridnary",
+      "metaclass": 39,
+      "offset": 1235608,
+      "length": 188,
+      "flags": 0,
+      "raw_size": 188
+    },
+    {
+      "name": "/State Managers/DoorStateManager_Oridnary_Close",
+      "metaclass": 39,
+      "offset": 1235796,
+      "length": 156,
+      "flags": 0,
+      "raw_size": 156
+    },
+    {
+      "name": "/State Managers/DoorStateManager_Scissor",
+      "metaclass": 39,
+      "offset": 1235952,
+      "length": 188,
+      "flags": 0,
+      "raw_size": 188
+    },
+    {
+      "name": "/State Managers/DoorStateManager_Scissor_Close",
+      "metaclass": 39,
+      "offset": 1236140,
+      "length": 156,
+      "flags": 0,
+      "raw_size": 156
+    },
+    {
+      "name": "/State Managers/DoorStateManager_Scissor_FL",
+      "metaclass": 39,
+      "offset": 1236296,
+      "length": 236,
+      "flags": 0,
+      "raw_size": 236
+    },
+    {
+      "name": "/State Managers/DoorStateManager_Scissor_FR",
+      "metaclass": 39,
+      "offset": 1236532,
+      "length": 236,
+      "flags": 0,
+      "raw_size": 236
+    },
+    {
+      "name": "/State Managers/GuidanceLaneIcon_SM",
+      "metaclass": 39,
+      "offset": 1236768,
+      "length": 1380,
+      "flags": 0,
+      "raw_size": 1380
+    },
+    {
+      "name": "/State Managers/HoodStateManager",
+      "metaclass": 39,
+      "offset": 1238148,
+      "length": 432,
+      "flags": 0,
+      "raw_size": 432
+    },
+    {
+      "name": "/State Managers/LaneIcon_Normal_TollGate_SM",
+      "metaclass": 39,
+      "offset": 1238580,
+      "length": 194,
+      "flags": 0,
+      "raw_size": 194
+    },
+    {
+      "name": "/State Managers/LeftListStateManager",
+      "metaclass": 39,
+      "offset": 1238776,
+      "length": 350,
+      "flags": 0,
+      "raw_size": 350
+    },
+    {
+      "name": "/State Managers/MainState",
+      "metaclass": 39,
+      "offset": 1239128,
+      "length": 148,
+      "flags": 0,
+      "raw_size": 148
+    },
+    {
+      "name": "/State Managers/MusicStateManager",
+      "metaclass": 39,
+      "offset": 1239276,
+      "length": 1720,
+      "flags": 0,
+      "raw_size": 1720
+    },
+    {
+      "name": "/State Managers/Navi_LaneIcon_DayNight_SM",
+      "metaclass": 39,
+      "offset": 1240996,
+      "length": 132,
+      "flags": 0,
+      "raw_size": 132
+    },
+    {
+      "name": "/State Managers/Navi_TollGate_LaneIcon_SM",
+      "metaclass": 39,
+      "offset": 1241128,
+      "length": 285,
+      "flags": 0,
+      "raw_size": 285
+    },
+    {
+      "name": "/State Managers/NavigationTextStateManager",
+      "metaclass": 39,
+      "offset": 1241416,
+      "length": 148,
+      "flags": 0,
+      "raw_size": 148
+    },
+    {
+      "name": "/State Managers/PowerLeftOrRight",
+      "metaclass": 39,
+      "offset": 1241564,
+      "length": 156,
+      "flags": 0,
+      "raw_size": 156
+    },
+    {
+      "name": "/State Managers/PowerLeftOrRight_New",
+      "metaclass": 39,
+      "offset": 1241720,
+      "length": 540,
+      "flags": 0,
+      "raw_size": 540
+    },
+    {
+      "name": "/State Managers/RightListStateManager",
+      "metaclass": 39,
+      "offset": 1242260,
+      "length": 124,
+      "flags": 0,
+      "raw_size": 124
+    },
+    {
+      "name": "/State Managers/SensorFaultCarStateManager",
+      "metaclass": 39,
+      "offset": 1242384,
+      "length": 507,
+      "flags": 0,
+      "raw_size": 507
+    },
+    {
+      "name": "/State Managers/SensorFaultDotStateManager",
+      "metaclass": 39,
+      "offset": 1242892,
+      "length": 432,
+      "flags": 0,
+      "raw_size": 432
+    },
+    {
+      "name": "/State Managers/SensorFaultUltrasonicRadarStateManager",
+      "metaclass": 39,
+      "offset": 1243324,
+      "length": 1488,
+      "flags": 0,
+      "raw_size": 1488
+    },
+    {
+      "name": "/State Managers/SensorText_SingleLine_SM",
+      "metaclass": 39,
+      "offset": 1244812,
+      "length": 241,
+      "flags": 0,
+      "raw_size": 241
+    },
+    {
+      "name": "/Textures/Car/Day/bg_tire_faul",
+      "metaclass": 40,
+      "offset": 1245056,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Car/Day/bg_tire_normal",
+      "metaclass": 40,
+      "offset": 1245092,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Car/Day/bg_tire_yellow",
+      "metaclass": 40,
+      "offset": 1245128,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Car/Day/bg_unlock_fault_left",
+      "metaclass": 40,
+      "offset": 1245164,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Car/Day/bg_unlock_fault_rightpng",
+      "metaclass": 40,
+      "offset": 1245200,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Car/Day/bg_unlock_front",
+      "metaclass": 40,
+      "offset": 1245236,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Car/Day/bg_unlock_left",
+      "metaclass": 40,
+      "offset": 1245272,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Car/Day/bg_unlock_rear",
+      "metaclass": 40,
+      "offset": 1245308,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Car/Day/bg_unlock_rightpng",
+      "metaclass": 40,
+      "offset": 1245344,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Car/Day/前舱盖",
+      "metaclass": 40,
+      "offset": 1245380,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Car/Day/右充电口盖",
+      "metaclass": 40,
+      "offset": 1245416,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Car/Day/后舱盖",
+      "metaclass": 40,
+      "offset": 1245452,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Car/Day/左充电口盖",
+      "metaclass": 40,
+      "offset": 1245488,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Car/Day/左前门0",
+      "metaclass": 40,
+      "offset": 1245524,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Car/Day/左前门1",
+      "metaclass": 40,
+      "offset": 1245560,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Car/Day/左前门1_Scissor",
+      "metaclass": 40,
+      "offset": 1245596,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Car/Day/左后门0",
+      "metaclass": 40,
+      "offset": 1245632,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Car/Day/左后门1",
+      "metaclass": 40,
+      "offset": 1245668,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Car/Day/左后门1_Scissor",
+      "metaclass": 40,
+      "offset": 1245704,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Car/Day/无门车体",
+      "metaclass": 40,
+      "offset": 1245740,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Car/Night/bg_tire_faul_night",
+      "metaclass": 40,
+      "offset": 1245776,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Car/Night/bg_tire_normal_night",
+      "metaclass": 40,
+      "offset": 1245812,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Car/Night/bg_tire_yellow_night",
+      "metaclass": 40,
+      "offset": 1245848,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Car/Night/bg_unlock_fault_left_night",
+      "metaclass": 40,
+      "offset": 1245884,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Car/Night/bg_unlock_fault_rightpng_night",
+      "metaclass": 40,
+      "offset": 1245920,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Car/Night/bg_unlock_front_night",
+      "metaclass": 40,
+      "offset": 1245956,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Car/Night/bg_unlock_left_night",
+      "metaclass": 40,
+      "offset": 1245992,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Car/Night/bg_unlock_rear_night",
+      "metaclass": 40,
+      "offset": 1246028,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Car/Night/bg_unlock_rightpng_night",
+      "metaclass": 40,
+      "offset": 1246064,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Car/Night/前舱盖_night",
+      "metaclass": 40,
+      "offset": 1246100,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Car/Night/右充电口盖_night",
+      "metaclass": 40,
+      "offset": 1246136,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Car/Night/后舱盖_night",
+      "metaclass": 40,
+      "offset": 1246172,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Car/Night/左充电口盖_night",
+      "metaclass": 40,
+      "offset": 1246208,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Car/Night/左前门开_night",
+      "metaclass": 40,
+      "offset": 1246244,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Car/Night/左前门开_night_Scissor",
+      "metaclass": 40,
+      "offset": 1246280,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Car/Night/左前门闭_night",
+      "metaclass": 40,
+      "offset": 1246316,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Car/Night/左后门开_night",
+      "metaclass": 40,
+      "offset": 1246352,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Car/Night/左后门开_night_Scissor",
+      "metaclass": 40,
+      "offset": 1246388,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Car/Night/左后门闭_night",
+      "metaclass": 40,
+      "offset": 1246424,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Car/Night/无门车体_night",
+      "metaclass": 40,
+      "offset": 1246460,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Default Texture",
+      "metaclass": 40,
+      "offset": 1246496,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/GraphFill",
+      "metaclass": 40,
+      "offset": 1246532,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/GroupLane",
+      "metaclass": 40,
+      "offset": 1246568,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/GroupLane_night",
+      "metaclass": 40,
+      "offset": 1246604,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Guidance/bg_laneicon_center_day",
+      "metaclass": 40,
+      "offset": 1246640,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Guidance/bg_laneicon_center_night",
+      "metaclass": 40,
+      "offset": 1246676,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Guidance/bg_laneicon_left_day",
+      "metaclass": 40,
+      "offset": 1246712,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Guidance/bg_laneicon_left_night",
+      "metaclass": 40,
+      "offset": 1246748,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Guidance/bg_laneicon_right_day",
+      "metaclass": 40,
+      "offset": 1246784,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Guidance/bg_laneicon_right_night",
+      "metaclass": 40,
+      "offset": 1246820,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Guidance/bg_tbt_background_day",
+      "metaclass": 40,
+      "offset": 1246856,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Guidance/bg_tbt_background_night",
+      "metaclass": 40,
+      "offset": 1246892,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Guidance/split_line_day",
+      "metaclass": 40,
+      "offset": 1246928,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Guidance/split_line_night",
+      "metaclass": 40,
+      "offset": 1246964,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Guidance/导航背景",
+      "metaclass": 40,
+      "offset": 1247000,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Guidance/导航背景_night",
+      "metaclass": 40,
+      "offset": 1247036,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Icon/ic_applist_car",
+      "metaclass": 40,
+      "offset": 1247072,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Icon/ic_applist_media",
+      "metaclass": 40,
+      "offset": 1247108,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Icon/ic_applist_navigation",
+      "metaclass": 40,
+      "offset": 1247144,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Icon/ic_applist_power",
+      "metaclass": 40,
+      "offset": 1247180,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Icon/ic_applist_rada",
+      "metaclass": 40,
+      "offset": 1247216,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Icon/ic_applist_trip",
+      "metaclass": 40,
+      "offset": 1247252,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Muisic/Day/bg_cover_day",
+      "metaclass": 40,
+      "offset": 1247288,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Muisic/Day/bg_default_cover_day",
+      "metaclass": 40,
+      "offset": 1247324,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Muisic/Day/ic_card_media_pause",
+      "metaclass": 40,
+      "offset": 1247360,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Muisic/Day/pic_music_album_cover_240",
+      "metaclass": 40,
+      "offset": 1247396,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Muisic/Day/pic_netradio_cover_240",
+      "metaclass": 40,
+      "offset": 1247432,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Muisic/Day/pic_read_cover_240",
+      "metaclass": 40,
+      "offset": 1247468,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Muisic/Day/进度",
+      "metaclass": 40,
+      "offset": 1247504,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Muisic/Day/进度槽",
+      "metaclass": 40,
+      "offset": 1247540,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Muisic/Night/bg_cover_night",
+      "metaclass": 40,
+      "offset": 1247576,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Muisic/Night/bg_default_cover_night",
+      "metaclass": 40,
+      "offset": 1247612,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Muisic/Night/ic_card_media_pause_night",
+      "metaclass": 40,
+      "offset": 1247648,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Muisic/Night/pic_music_album_cover_240-night",
+      "metaclass": 40,
+      "offset": 1247684,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Muisic/Night/pic_netradio_cover_240-night",
+      "metaclass": 40,
+      "offset": 1247720,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Muisic/Night/pic_read_cover_240-night",
+      "metaclass": 40,
+      "offset": 1247756,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Muisic/Night/进度-night",
+      "metaclass": 40,
+      "offset": 1247792,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Muisic/Night/进度槽-night",
+      "metaclass": 40,
+      "offset": 1247828,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Muisic/mask",
+      "metaclass": 40,
+      "offset": 1247864,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Muisic/pic_netradio_cover_240",
+      "metaclass": 40,
+      "offset": 1247900,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Power/Day/PowerEmpty_day",
+      "metaclass": 40,
+      "offset": 1247936,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Power/Day/PowerFrame_day",
+      "metaclass": 40,
+      "offset": 1247972,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Power/Day/PowerFull_day",
+      "metaclass": 40,
+      "offset": 1248008,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Power/Day/bg_power_instant",
+      "metaclass": 40,
+      "offset": 1248044,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Power/Day/line_form",
+      "metaclass": 40,
+      "offset": 1248080,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Power/Night/PowerEmpty_night",
+      "metaclass": 40,
+      "offset": 1248116,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Power/Night/PowerFrame_night",
+      "metaclass": 40,
+      "offset": 1248152,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Power/Night/PowerFull_night",
+      "metaclass": 40,
+      "offset": 1248188,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Power/Night/bg_power_instant_night",
+      "metaclass": 40,
+      "offset": 1248224,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Power/Night/line_form_night",
+      "metaclass": 40,
+      "offset": 1248260,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Power/color1_power_instant",
+      "metaclass": 40,
+      "offset": 1248296,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Power/color2_power_instant",
+      "metaclass": 40,
+      "offset": 1248332,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/Power/刻度线",
+      "metaclass": 40,
+      "offset": 1248368,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/PowerCurveTargetTexture",
+      "metaclass": 40,
+      "offset": 1248404,
+      "length": 60,
+      "flags": 0,
+      "raw_size": 60
+    },
+    {
+      "name": "/Textures/Render Target Texture",
+      "metaclass": 40,
+      "offset": 1248464,
+      "length": 60,
+      "flags": 0,
+      "raw_size": 60
+    },
+    {
+      "name": "/Textures/Render Target Texture_1",
+      "metaclass": 40,
+      "offset": 1248524,
+      "length": 60,
+      "flags": 0,
+      "raw_size": 60
+    },
+    {
+      "name": "/Textures/Render Target Texture_Previous",
+      "metaclass": 40,
+      "offset": 1248584,
+      "length": 60,
+      "flags": 0,
+      "raw_size": 60
+    },
+    {
+      "name": "/Textures/SensorFault/point",
+      "metaclass": 40,
+      "offset": 1248644,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/SensorFault/异常点",
+      "metaclass": 40,
+      "offset": 1248680,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/SensorFault/故障点",
+      "metaclass": 40,
+      "offset": 1248716,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/avg_line",
+      "metaclass": 40,
+      "offset": 1248752,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/bg_card_shadow_Day",
+      "metaclass": 40,
+      "offset": 1248788,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/bg_card_shadow_Night",
+      "metaclass": 40,
+      "offset": 1248824,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/bg_chosen_tab",
+      "metaclass": 40,
+      "offset": 1248860,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/bg_chosen_tab_night",
+      "metaclass": 40,
+      "offset": 1248896,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/bg_line_day",
+      "metaclass": 40,
+      "offset": 1248932,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/bg_mask",
+      "metaclass": 40,
+      "offset": 1248968,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/bg_power_0_day",
+      "metaclass": 40,
+      "offset": 1249004,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/bg_power_point",
+      "metaclass": 40,
+      "offset": 1249040,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/bg_power_point2",
+      "metaclass": 40,
+      "offset": 1249076,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/bg_power_point2Night",
+      "metaclass": 40,
+      "offset": 1249112,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/bg_power_point_night",
+      "metaclass": 40,
+      "offset": 1249148,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/bg_powerline_night_night",
+      "metaclass": 40,
+      "offset": 1249184,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/card_radar_model_front",
+      "metaclass": 40,
+      "offset": 1249220,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/card_radar_model_rear",
+      "metaclass": 40,
+      "offset": 1249256,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/card_radar_model_whole",
+      "metaclass": 40,
+      "offset": 1249292,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/guideline_turn_all_icons",
+      "metaclass": 40,
+      "offset": 1249328,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/guideline_turn_all_icons_night",
+      "metaclass": 40,
+      "offset": 1249364,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/line_color",
+      "metaclass": 40,
+      "offset": 1249400,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/smooth",
+      "metaclass": 40,
+      "offset": 1249436,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/刻度值",
+      "metaclass": 40,
+      "offset": 1249472,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/刻度值_night",
+      "metaclass": 40,
+      "offset": 1249508,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/唱片mask",
+      "metaclass": 40,
+      "offset": 1249544,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/唱片阴影",
+      "metaclass": 40,
+      "offset": 1249580,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/里程线条day",
+      "metaclass": 40,
+      "offset": 1249616,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Textures/里程线条night",
+      "metaclass": 40,
+      "offset": 1249652,
+      "length": 36,
+      "flags": 0,
+      "raw_size": 36
+    },
+    {
+      "name": "/Trajectories/Ellipse Trajectory",
+      "metaclass": 41,
+      "offset": 1249688,
+      "length": 12,
+      "flags": 0,
+      "raw_size": 12
+    },
+    {
+      "name": "/Trajectories/Ellipse Trajectory/<GeneratedSpline>",
+      "metaclass": 4294967295,
+      "offset": 1249700,
+      "length": 896,
+      "flags": 0,
+      "raw_size": 896
+    }
+  ]
+}

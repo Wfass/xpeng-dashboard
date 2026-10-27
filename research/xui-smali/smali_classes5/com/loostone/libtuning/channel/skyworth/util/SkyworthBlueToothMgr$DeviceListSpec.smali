@@ -1,0 +1,93 @@
+.class public Lcom/loostone/libtuning/channel/skyworth/util/SkyworthBlueToothMgr$DeviceListSpec;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/loostone/libtuning/channel/skyworth/util/SkyworthBlueToothMgr;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "DeviceListSpec"
+.end annotation
+
+
+# instance fields
+.field public mDeviceAddress:Ljava/lang/String;
+
+.field public mDeviceName:Ljava/lang/String;
+
+.field public mDeviceType:I
+
+
+# direct methods
+.method public constructor <init>(ILjava/lang/String;Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    iput p1, p0, Lcom/loostone/libtuning/channel/skyworth/util/SkyworthBlueToothMgr$DeviceListSpec;->mDeviceType:I
+
+    .line 3
+    iput-object p2, p0, Lcom/loostone/libtuning/channel/skyworth/util/SkyworthBlueToothMgr$DeviceListSpec;->mDeviceName:Ljava/lang/String;
+
+    .line 4
+    iput-object p3, p0, Lcom/loostone/libtuning/channel/skyworth/util/SkyworthBlueToothMgr$DeviceListSpec;->mDeviceAddress:Ljava/lang/String;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public toString()Ljava/lang/String;
+    .locals 2
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "[type:0x"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v1, p0, Lcom/loostone/libtuning/channel/skyworth/util/SkyworthBlueToothMgr$DeviceListSpec;->mDeviceType:I
+
+    invoke-static {v1}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v1, " name:"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lcom/loostone/libtuning/channel/skyworth/util/SkyworthBlueToothMgr$DeviceListSpec;->mDeviceName:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v1, " address:"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lcom/loostone/libtuning/channel/skyworth/util/SkyworthBlueToothMgr$DeviceListSpec;->mDeviceAddress:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v1, "]"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method

@@ -1,0 +1,19 @@
+.class public interface abstract Lcom/xiaopeng/xuiservice/xapp/mode/XInputManagerWrapper$KeyEventListener;
+.super Ljava/lang/Object;
+.source "XInputManagerWrapper.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/xiaopeng/xuiservice/xapp/mode/XInputManagerWrapper;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "KeyEventListener"
+.end annotation
+
+
+# virtual methods
+.method public abstract onKeyEvent(Landroid/view/KeyEvent;)V
+.end method

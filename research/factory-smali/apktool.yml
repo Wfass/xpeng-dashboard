@@ -1,0 +1,7 @@
+version: 2.12.1
+apkFileName: factory.apk
+doNotCompress:
+- arsc
+- dex
+- ogg
+- assets/index_kstp.html

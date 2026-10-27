@@ -1,0 +1,135 @@
+.class Lcom/amap/api/services/a/bt$a;
+.super Landroid/os/Handler;
+.source "ManifestConfig.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/amap/api/services/a/bt;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = "a"
+.end annotation
+
+
+# instance fields
+.field a:Ljava/lang/String;
+
+.field final synthetic fX:Lcom/amap/api/services/a/bt;
+
+
+# direct methods
+.method public constructor <init>(Lcom/amap/api/services/a/bt;Landroid/os/Looper;)V
+    .locals 0
+
+    .line 98
+    iput-object p1, p0, Lcom/amap/api/services/a/bt$a;->fX:Lcom/amap/api/services/a/bt;
+
+    .line 99
+    invoke-direct {p0, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+
+    .line 96
+    const-string p1, "handleMessage"
+
+    iput-object p1, p0, Lcom/amap/api/services/a/bt$a;->a:Ljava/lang/String;
+
+    .line 100
+    return-void
+.end method
+
+
+# virtual methods
+.method public handleMessage(Landroid/os/Message;)V
+    .locals 2
+
+    .line 103
+    if-nez p1, :cond_0
+
+    .line 104
+    return-void
+
+    .line 106
+    :cond_0
+    iget v0, p1, Landroid/os/Message;->what:I
+
+    const/4 v1, 0x3
+
+    if-eq v0, v1, :cond_1
+
+    goto :goto_0
+
+    .line 109
+    :cond_1
+    :try_start_0
+    iget-object p1, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
+
+    check-cast p1, Lcom/amap/api/services/a/bu;
+
+    .line 110
+    if-nez p1, :cond_2
+
+    .line 111
+    new-instance p1, Lcom/amap/api/services/a/bu;
+
+    const/4 v0, 0x0
+
+    invoke-direct {p1, v0, v0}, Lcom/amap/api/services/a/bu;-><init>(ZZ)V
+
+    .line 113
+    :cond_2
+    invoke-static {}, Lcom/amap/api/services/a/bt;->bC()Landroid/content/Context;
+
+    move-result-object v0
+
+    .line 114
+    invoke-virtual {p1}, Lcom/amap/api/services/a/bu;->a()Z
+
+    move-result v1
+
+    invoke-static {v1}, Lcom/amap/api/services/a/bq;->l(Z)Lcom/amap/api/services/a/l;
+
+    move-result-object v1
+
+    .line 113
+    invoke-static {v0, v1}, Lcom/amap/api/services/a/r;->a(Landroid/content/Context;Lcom/amap/api/services/a/l;)Lcom/amap/api/services/a/r;
+
+    .line 115
+    nop
+
+    .line 116
+    invoke-virtual {p1}, Lcom/amap/api/services/a/bu;->a()Z
+
+    move-result p1
+
+    .line 115
+    invoke-static {p1}, Lcom/amap/api/services/a/bq;->l(Z)Lcom/amap/api/services/a/l;
+
+    move-result-object p1
+
+    sput-object p1, Lcom/amap/api/services/a/bt;->eN:Lcom/amap/api/services/a/l;
+    :try_end_0
+    .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 119
+    goto :goto_0
+
+    .line 117
+    :catch_0
+    move-exception p1
+
+    .line 118
+    const-string v0, "ManifestConfig"
+
+    iget-object v1, p0, Lcom/amap/api/services/a/bt$a;->a:Ljava/lang/String;
+
+    invoke-static {p1, v0, v1}, Lcom/amap/api/services/a/br;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 120
+    nop
+
+    .line 125
+    :goto_0
+    return-void
+.end method

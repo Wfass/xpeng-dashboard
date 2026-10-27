@@ -1,0 +1,745 @@
+.class final Lcom/activeandroid/ModelInfo;
+.super Ljava/lang/Object;
+.source "ModelInfo.java"
+
+
+# instance fields
+.field private mTableInfos:Ljava/util/Map;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Map<",
+            "Ljava/lang/Class<",
+            "+",
+            "Lcom/activeandroid/Model;",
+            ">;",
+            "Lcom/activeandroid/TableInfo;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private mTypeSerializers:Ljava/util/Map;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Map<",
+            "Ljava/lang/Class<",
+            "*>;",
+            "Lcom/activeandroid/serializer/TypeSerializer;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Lcom/activeandroid/Configuration;)V
+    .locals 2
+    .param p1, "configuration"    # Lcom/activeandroid/Configuration;
+
+    .line 60
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 46
+    new-instance v0, Ljava/util/HashMap;
+
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    iput-object v0, p0, Lcom/activeandroid/ModelInfo;->mTableInfos:Ljava/util/Map;
+
+    .line 47
+    new-instance v0, Lcom/activeandroid/ModelInfo$1;
+
+    invoke-direct {v0, p0}, Lcom/activeandroid/ModelInfo$1;-><init>(Lcom/activeandroid/ModelInfo;)V
+
+    iput-object v0, p0, Lcom/activeandroid/ModelInfo;->mTypeSerializers:Ljava/util/Map;
+
+    .line 61
+    invoke-direct {p0, p1}, Lcom/activeandroid/ModelInfo;->loadModelFromMetaData(Lcom/activeandroid/Configuration;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    .line 63
+    :try_start_0
+    invoke-virtual {p1}, Lcom/activeandroid/Configuration;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    invoke-direct {p0, v0}, Lcom/activeandroid/ModelInfo;->scanForModel(Landroid/content/Context;)V
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 67
+    goto :goto_0
+
+    .line 65
+    :catch_0
+    move-exception v0
+
+    .line 66
+    .local v0, "e":Ljava/io/IOException;
+    const-string v1, "Couldn\'t open source path."
+
+    invoke-static {v1, v0}, Lcom/activeandroid/util/Log;->e(Ljava/lang/String;Ljava/lang/Throwable;)I
+
+    .line 70
+    .end local v0    # "e":Ljava/io/IOException;
+    :cond_0
+    :goto_0
+    const-string v0, "ModelInfo loaded."
+
+    invoke-static {v0}, Lcom/activeandroid/util/Log;->i(Ljava/lang/String;)I
+
+    .line 71
+    return-void
+.end method
+
+.method private loadModelFromMetaData(Lcom/activeandroid/Configuration;)Z
+    .locals 7
+    .param p1, "configuration"    # Lcom/activeandroid/Configuration;
+
+    .line 94
+    invoke-virtual {p1}, Lcom/activeandroid/Configuration;->isValid()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    .line 95
+    const/4 v0, 0x0
+
+    return v0
+
+    .line 98
+    :cond_0
+    invoke-virtual {p1}, Lcom/activeandroid/Configuration;->getModelClasses()Ljava/util/List;
+
+    move-result-object v0
+
+    .line 99
+    .local v0, "models":Ljava/util/List;, "Ljava/util/List<Ljava/lang/Class<+Lcom/activeandroid/Model;>;>;"
+    if-eqz v0, :cond_1
+
+    .line 100
+    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v1
+
+    :goto_0
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/lang/Class;
+
+    .line 101
+    .local v2, "model":Ljava/lang/Class;, "Ljava/lang/Class<+Lcom/activeandroid/Model;>;"
+    iget-object v3, p0, Lcom/activeandroid/ModelInfo;->mTableInfos:Ljava/util/Map;
+
+    new-instance v4, Lcom/activeandroid/TableInfo;
+
+    invoke-direct {v4, v2}, Lcom/activeandroid/TableInfo;-><init>(Ljava/lang/Class;)V
+
+    invoke-interface {v3, v2, v4}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 102
+    .end local v2    # "model":Ljava/lang/Class;, "Ljava/lang/Class<+Lcom/activeandroid/Model;>;"
+    goto :goto_0
+
+    .line 105
+    :cond_1
+    invoke-virtual {p1}, Lcom/activeandroid/Configuration;->getTypeSerializers()Ljava/util/List;
+
+    move-result-object v1
+
+    .line 106
+    .local v1, "typeSerializers":Ljava/util/List;, "Ljava/util/List<Ljava/lang/Class<+Lcom/activeandroid/serializer/TypeSerializer;>;>;"
+    if-eqz v1, :cond_2
+
+    .line 107
+    invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v2
+
+    :goto_1
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_2
+
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Ljava/lang/Class;
+
+    .line 109
+    .local v3, "typeSerializer":Ljava/lang/Class;, "Ljava/lang/Class<+Lcom/activeandroid/serializer/TypeSerializer;>;"
+    :try_start_0
+    invoke-virtual {v3}, Ljava/lang/Class;->newInstance()Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Lcom/activeandroid/serializer/TypeSerializer;
+
+    .line 110
+    .local v4, "instance":Lcom/activeandroid/serializer/TypeSerializer;
+    iget-object v5, p0, Lcom/activeandroid/ModelInfo;->mTypeSerializers:Ljava/util/Map;
+
+    invoke-virtual {v4}, Lcom/activeandroid/serializer/TypeSerializer;->getDeserializedType()Ljava/lang/Class;
+
+    move-result-object v6
+
+    invoke-interface {v5, v6, v4}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    :try_end_0
+    .catch Ljava/lang/InstantiationException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .end local v4    # "instance":Lcom/activeandroid/serializer/TypeSerializer;
+    goto :goto_2
+
+    .line 115
+    :catch_0
+    move-exception v4
+
+    .line 116
+    .local v4, "e":Ljava/lang/IllegalAccessException;
+    const-string v5, "IllegalAccessException"
+
+    invoke-static {v5, v4}, Lcom/activeandroid/util/Log;->e(Ljava/lang/String;Ljava/lang/Throwable;)I
+
+    .end local v3    # "typeSerializer":Ljava/lang/Class;, "Ljava/lang/Class<+Lcom/activeandroid/serializer/TypeSerializer;>;"
+    .end local v4    # "e":Ljava/lang/IllegalAccessException;
+    goto :goto_3
+
+    .line 112
+    .restart local v3    # "typeSerializer":Ljava/lang/Class;, "Ljava/lang/Class<+Lcom/activeandroid/serializer/TypeSerializer;>;"
+    :catch_1
+    move-exception v4
+
+    .line 113
+    .local v4, "e":Ljava/lang/InstantiationException;
+    const-string v5, "Couldn\'t instantiate TypeSerializer."
+
+    invoke-static {v5, v4}, Lcom/activeandroid/util/Log;->e(Ljava/lang/String;Ljava/lang/Throwable;)I
+
+    .line 117
+    .end local v3    # "typeSerializer":Ljava/lang/Class;, "Ljava/lang/Class<+Lcom/activeandroid/serializer/TypeSerializer;>;"
+    .end local v4    # "e":Ljava/lang/InstantiationException;
+    :goto_2
+    nop
+
+    .line 118
+    :goto_3
+    goto :goto_1
+
+    .line 121
+    :cond_2
+    const/4 v2, 0x1
+
+    return v2
+.end method
+
+.method private scanForModel(Landroid/content/Context;)V
+    .locals 7
+    .param p1, "context"    # Landroid/content/Context;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 125
+    invoke-virtual {p1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 126
+    .local v0, "packageName":Ljava/lang/String;
+    invoke-virtual {p1}, Landroid/content/Context;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
+
+    move-result-object v1
+
+    iget-object v1, v1, Landroid/content/pm/ApplicationInfo;->sourceDir:Ljava/lang/String;
+
+    .line 127
+    .local v1, "sourcePath":Ljava/lang/String;
+    new-instance v2, Ljava/util/ArrayList;
+
+    invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
+
+    .line 129
+    .local v2, "paths":Ljava/util/List;, "Ljava/util/List<Ljava/lang/String;>;"
+    if-eqz v1, :cond_1
+
+    new-instance v3, Ljava/io/File;
+
+    invoke-direct {v3, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v3}, Ljava/io/File;->isDirectory()Z
+
+    move-result v3
+
+    if-nez v3, :cond_1
+
+    .line 130
+    new-instance v3, Ldalvik/system/DexFile;
+
+    invoke-direct {v3, v1}, Ldalvik/system/DexFile;-><init>(Ljava/lang/String;)V
+
+    .line 131
+    .local v3, "dexfile":Ldalvik/system/DexFile;
+    invoke-virtual {v3}, Ldalvik/system/DexFile;->entries()Ljava/util/Enumeration;
+
+    move-result-object v4
+
+    .line 133
+    .local v4, "entries":Ljava/util/Enumeration;, "Ljava/util/Enumeration<Ljava/lang/String;>;"
+    :goto_0
+    invoke-interface {v4}, Ljava/util/Enumeration;->hasMoreElements()Z
+
+    move-result v5
+
+    if-eqz v5, :cond_0
+
+    .line 134
+    invoke-interface {v4}, Ljava/util/Enumeration;->nextElement()Ljava/lang/Object;
+
+    move-result-object v5
+
+    invoke-interface {v2, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    goto :goto_0
+
+    .line 136
+    .end local v3    # "dexfile":Ldalvik/system/DexFile;
+    .end local v4    # "entries":Ljava/util/Enumeration;, "Ljava/util/Enumeration<Ljava/lang/String;>;"
+    :cond_0
+    goto :goto_2
+
+    .line 139
+    :cond_1
+    invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/Thread;->getContextClassLoader()Ljava/lang/ClassLoader;
+
+    move-result-object v3
+
+    .line 140
+    .local v3, "classLoader":Ljava/lang/ClassLoader;
+    const-string v4, ""
+
+    invoke-virtual {v3, v4}, Ljava/lang/ClassLoader;->getResources(Ljava/lang/String;)Ljava/util/Enumeration;
+
+    move-result-object v4
+
+    .line 142
+    .local v4, "resources":Ljava/util/Enumeration;, "Ljava/util/Enumeration<Ljava/net/URL;>;"
+    :goto_1
+    invoke-interface {v4}, Ljava/util/Enumeration;->hasMoreElements()Z
+
+    move-result v5
+
+    if-eqz v5, :cond_4
+
+    .line 143
+    invoke-interface {v4}, Ljava/util/Enumeration;->nextElement()Ljava/lang/Object;
+
+    move-result-object v5
+
+    check-cast v5, Ljava/net/URL;
+
+    invoke-virtual {v5}, Ljava/net/URL;->getFile()Ljava/lang/String;
+
+    move-result-object v5
+
+    .line 144
+    .local v5, "path":Ljava/lang/String;
+    const-string v6, "bin"
+
+    invoke-virtual {v5, v6}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v6
+
+    if-nez v6, :cond_2
+
+    const-string v6, "classes"
+
+    invoke-virtual {v5, v6}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v6
+
+    if-eqz v6, :cond_3
+
+    .line 145
+    :cond_2
+    invoke-interface {v2, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 147
+    .end local v5    # "path":Ljava/lang/String;
+    :cond_3
+    goto :goto_1
+
+    .line 150
+    .end local v3    # "classLoader":Ljava/lang/ClassLoader;
+    .end local v4    # "resources":Ljava/util/Enumeration;, "Ljava/util/Enumeration<Ljava/net/URL;>;"
+    :cond_4
+    :goto_2
+    invoke-interface {v2}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v3
+
+    :goto_3
+    invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v4
+
+    if-eqz v4, :cond_5
+
+    invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljava/lang/String;
+
+    .line 151
+    .local v4, "path":Ljava/lang/String;
+    new-instance v5, Ljava/io/File;
+
+    invoke-direct {v5, v4}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 152
+    .local v5, "file":Ljava/io/File;
+    invoke-virtual {p1}, Landroid/content/Context;->getClassLoader()Ljava/lang/ClassLoader;
+
+    move-result-object v6
+
+    invoke-direct {p0, v5, v0, v6}, Lcom/activeandroid/ModelInfo;->scanForModelClasses(Ljava/io/File;Ljava/lang/String;Ljava/lang/ClassLoader;)V
+
+    .line 153
+    .end local v4    # "path":Ljava/lang/String;
+    .end local v5    # "file":Ljava/io/File;
+    goto :goto_3
+
+    .line 154
+    :cond_5
+    return-void
+.end method
+
+.method private scanForModelClasses(Ljava/io/File;Ljava/lang/String;Ljava/lang/ClassLoader;)V
+    .locals 5
+    .param p1, "path"    # Ljava/io/File;
+    .param p2, "packageName"    # Ljava/lang/String;
+    .param p3, "classLoader"    # Ljava/lang/ClassLoader;
+
+    .line 157
+    invoke-virtual {p1}, Ljava/io/File;->isDirectory()Z
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_0
+
+    .line 158
+    invoke-virtual {p1}, Ljava/io/File;->listFiles()[Ljava/io/File;
+
+    move-result-object v0
+
+    array-length v2, v0
+
+    :goto_0
+    if-ge v1, v2, :cond_6
+
+    aget-object v3, v0, v1
+
+    .line 159
+    .local v3, "file":Ljava/io/File;
+    invoke-direct {p0, v3, p2, p3}, Lcom/activeandroid/ModelInfo;->scanForModelClasses(Ljava/io/File;Ljava/lang/String;Ljava/lang/ClassLoader;)V
+
+    .line 158
+    .end local v3    # "file":Ljava/io/File;
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_0
+
+    .line 163
+    :cond_0
+    invoke-virtual {p1}, Ljava/io/File;->getName()Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 166
+    .local v0, "className":Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/io/File;->getPath()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_3
+
+    .line 167
+    invoke-virtual {p1}, Ljava/io/File;->getPath()Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 169
+    const-string v2, ".class"
+
+    invoke-virtual {v0, v2}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_2
+
+    .line 170
+    invoke-virtual {v0}, Ljava/lang/String;->length()I
+
+    move-result v2
+
+    add-int/lit8 v2, v2, -0x6
+
+    invoke-virtual {v0, v1, v2}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 176
+    const-string v2, "file.separator"
+
+    invoke-static {v2}, Ljava/lang/System;->getProperty(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    const-string v3, "."
+
+    invoke-virtual {v0, v2, v3}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 178
+    invoke-virtual {v0, p2}, Ljava/lang/String;->lastIndexOf(Ljava/lang/String;)I
+
+    move-result v2
+
+    .line 179
+    .local v2, "packageNameIndex":I
+    if-gez v2, :cond_1
+
+    .line 180
+    return-void
+
+    .line 183
+    :cond_1
+    invoke-virtual {v0, v2}, Ljava/lang/String;->substring(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    .end local v2    # "packageNameIndex":I
+    goto :goto_1
+
+    .line 173
+    :cond_2
+    return-void
+
+    .line 187
+    :cond_3
+    :goto_1
+    :try_start_0
+    invoke-static {v0, v1, p3}, Ljava/lang/Class;->forName(Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
+
+    move-result-object v1
+
+    .line 188
+    .local v1, "discoveredClass":Ljava/lang/Class;, "Ljava/lang/Class<*>;"
+    invoke-static {v1}, Lcom/activeandroid/util/ReflectionUtils;->isModel(Ljava/lang/Class;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_4
+
+    .line 190
+    move-object v2, v1
+
+    .line 191
+    .local v2, "modelClass":Ljava/lang/Class;, "Ljava/lang/Class<+Lcom/activeandroid/Model;>;"
+    iget-object v3, p0, Lcom/activeandroid/ModelInfo;->mTableInfos:Ljava/util/Map;
+
+    new-instance v4, Lcom/activeandroid/TableInfo;
+
+    invoke-direct {v4, v2}, Lcom/activeandroid/TableInfo;-><init>(Ljava/lang/Class;)V
+
+    invoke-interface {v3, v2, v4}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 192
+    .end local v2    # "modelClass":Ljava/lang/Class;, "Ljava/lang/Class<+Lcom/activeandroid/Model;>;"
+    goto :goto_2
+
+    .line 193
+    :cond_4
+    invoke-static {v1}, Lcom/activeandroid/util/ReflectionUtils;->isTypeSerializer(Ljava/lang/Class;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_5
+
+    .line 194
+    invoke-virtual {v1}, Ljava/lang/Class;->newInstance()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lcom/activeandroid/serializer/TypeSerializer;
+
+    .line 195
+    .local v2, "instance":Lcom/activeandroid/serializer/TypeSerializer;
+    iget-object v3, p0, Lcom/activeandroid/ModelInfo;->mTypeSerializers:Ljava/util/Map;
+
+    invoke-virtual {v2}, Lcom/activeandroid/serializer/TypeSerializer;->getDeserializedType()Ljava/lang/Class;
+
+    move-result-object v4
+
+    invoke-interface {v3, v4, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    :try_end_0
+    .catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_2
+    .catch Ljava/lang/InstantiationException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .end local v1    # "discoveredClass":Ljava/lang/Class;, "Ljava/lang/Class<*>;"
+    .end local v2    # "instance":Lcom/activeandroid/serializer/TypeSerializer;
+    goto :goto_2
+
+    .line 204
+    :catch_0
+    move-exception v1
+
+    .line 205
+    .local v1, "e":Ljava/lang/IllegalAccessException;
+    const-string v2, "IllegalAccessException"
+
+    invoke-static {v2, v1}, Lcom/activeandroid/util/Log;->e(Ljava/lang/String;Ljava/lang/Throwable;)I
+
+    .end local v0    # "className":Ljava/lang/String;
+    .end local v1    # "e":Ljava/lang/IllegalAccessException;
+    goto :goto_3
+
+    .line 201
+    .restart local v0    # "className":Ljava/lang/String;
+    :catch_1
+    move-exception v1
+
+    .line 202
+    .local v1, "e":Ljava/lang/InstantiationException;
+    const-string v2, "Couldn\'t instantiate TypeSerializer."
+
+    invoke-static {v2, v1}, Lcom/activeandroid/util/Log;->e(Ljava/lang/String;Ljava/lang/Throwable;)I
+
+    .end local v1    # "e":Ljava/lang/InstantiationException;
+    goto :goto_2
+
+    .line 198
+    :catch_2
+    move-exception v1
+
+    .line 199
+    .local v1, "e":Ljava/lang/ClassNotFoundException;
+    const-string v2, "Couldn\'t create class."
+
+    invoke-static {v2, v1}, Lcom/activeandroid/util/Log;->e(Ljava/lang/String;Ljava/lang/Throwable;)I
+
+    .line 206
+    .end local v0    # "className":Ljava/lang/String;
+    .end local v1    # "e":Ljava/lang/ClassNotFoundException;
+    :cond_5
+    :goto_2
+    nop
+
+    .line 208
+    :cond_6
+    :goto_3
+    return-void
+.end method
+
+
+# virtual methods
+.method public getTableInfo(Ljava/lang/Class;)Lcom/activeandroid/TableInfo;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Class<",
+            "+",
+            "Lcom/activeandroid/Model;",
+            ">;)",
+            "Lcom/activeandroid/TableInfo;"
+        }
+    .end annotation
+
+    .line 82
+    .local p1, "type":Ljava/lang/Class;, "Ljava/lang/Class<+Lcom/activeandroid/Model;>;"
+    iget-object v0, p0, Lcom/activeandroid/ModelInfo;->mTableInfos:Ljava/util/Map;
+
+    invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/activeandroid/TableInfo;
+
+    return-object v0
+.end method
+
+.method public getTableInfos()Ljava/util/Collection;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Collection<",
+            "Lcom/activeandroid/TableInfo;",
+            ">;"
+        }
+    .end annotation
+
+    .line 78
+    iget-object v0, p0, Lcom/activeandroid/ModelInfo;->mTableInfos:Ljava/util/Map;
+
+    invoke-interface {v0}, Ljava/util/Map;->values()Ljava/util/Collection;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public getTypeSerializer(Ljava/lang/Class;)Lcom/activeandroid/serializer/TypeSerializer;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Class<",
+            "*>;)",
+            "Lcom/activeandroid/serializer/TypeSerializer;"
+        }
+    .end annotation
+
+    .line 86
+    .local p1, "type":Ljava/lang/Class;, "Ljava/lang/Class<*>;"
+    iget-object v0, p0, Lcom/activeandroid/ModelInfo;->mTypeSerializers:Ljava/util/Map;
+
+    invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/activeandroid/serializer/TypeSerializer;
+
+    return-object v0
+.end method

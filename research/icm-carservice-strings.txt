@@ -1,0 +1,4442 @@
+/lib/ld-linux.so.3
+A0`A
+,L@b0
+2C6"@
+D@{e
+|aSi6
+vxIk
+>_}0`
+\2|sK
+YWb3
+TCXW
+39@
+$mQG
+Ww`|M
+%c9.
+P_st,
+libXpShmMgr.so
+_Jv_RegisterClasses
+__android_log_buf_print
+_ITM_deregisterTMCloneTable
+__gmon_start__
+_ITM_registerTMCloneTable
+start_shared_memory_server
+_fini
+notify_client_char_message
+libproperty.so
+property_get
+property_set
+system_properties_init
+libpthread.so.0
+pthread_getspecific
+recvfrom
+pthread_mutex_unlock
+pthread_create
+sendto
+pthread_once
+__errno_location
+lseek
+send
+nanosleep
+pthread_cond_signal
+pthread_mutex_lock
+pthread_mutex_destroy
+pthread_cond_wait
+read
+accept
+write
+pthread_cond_destroy
+recvmsg
+pthread_cond_timedwait
+recv
+__pthread_key_create
+pthread_setspecific
+pthread_cond_init
+fsync
+fcntl
+pthread_mutex_init
+liblog.so
+__android_log_print
+libgio-2.0.so.0
+g_main_context_pop_thread_default
+g_free
+g_type_interface_peek
+g_variant_take_ref
+g_value_unset
+g_source_set_priority
+g_object_class_override_property
+g_intern_static_string
+g_variant_ref_sink
+g_object_freeze_notify
+g_main_loop_quit
+g_variant_builder_add
+g_variant_builder_init
+g_source_set_callback
+g_type_add_instance_private
+g_object_unref
+g_object_get_property
+g_datalist_id_set_data_full
+g_list_free_full
+g_variant_get_size
+g_object_notify
+g_main_loop_new
+g_value_get_boolean
+g_mutex_init
+g_malloc0_n
+g_variant_iter_next
+g_variant_get_data
+g_assertion_message_expr
+g_object_new
+g_object_ref
+g_signal_emitv
+g_main_context_new
+__aeabi_d2ulz
+g_value_copy
+g_variant_type_checked_
+g_mutex_unlock
+g_value_set_variant
+g_main_context_push_thread_default
+g_variant_iter_free
+g_main_context_ref_thread_default
+g_object_get
+g_idle_source_new
+g_signal_accumulator_true_handled
+g_quark_try_string
+g_variant_builder_end
+__aeabi_d2lz
+g_variant_get
+g_object_set
+g_set_error
+g_cond_wait
+g_value_get_variant
+g_variant_iter_init
+g_signal_new
+g_variant_builder_clear
+g_unix_fd_source_new
+g_variant_builder_new
+g_signal_connect_data
+g_param_spec_variant
+g_type_interface_add_prerequisite
+g_main_context_unref
+g_variant_n_children
+g_variant_unref
+g_cond_signal
+g_type_register_static_simple
+g_list_reverse
+g_object_interface_install_property
+g_object_class_find_property
+g_malloc0
+g_value_init
+g_list_prepend
+g_value_set_object
+g_mutex_lock
+g_main_loop_unref
+g_source_set_name
+g_source_destroy
+g_once_init_enter
+g_strerror
+g_signal_lookup
+g_source_unref
+g_source_attach
+g_object_notify_by_pspec
+g_error_free
+g_mutex_clear
+g_variant_get_fixed_array
+g_cclosure_marshal_generic
+g_variant_iter_next_value
+g_object_set_property
+g_atomic_pointer_get
+g_once_init_leave
+g_type_add_interface_static
+g_quark_to_string
+g_main_loop_run
+g_object_thaw_notify
+g_variant_builder_unref
+g_type_class_peek_parent
+g_log
+g_variant_new
+g_type_class_adjust_private_offset
+g_datalist_clear
+g_bus_unown_name
+g_dbus_interface_skeleton_get_connection
+g_dbus_interface_skeleton_get_object_path
+g_dbus_proxy_call
+g_dbus_message_get_unix_fd_list
+g_dbus_method_invocation_return_error
+g_dbus_method_invocation_get_type
+g_dbus_proxy_get_cached_property
+g_async_result_get_source_object
+g_dbus_interface_skeleton_get_type
+g_initable_new
+g_dbus_proxy_set_interface_info
+g_dbus_error_quark
+g_dbus_method_invocation_get_message
+g_dbus_proxy_call_finish
+g_dbus_method_invocation_return_value
+g_dbus_interface_skeleton_export
+g_dbus_connection_emit_signal
+g_unix_fd_list_get_type
+g_async_initable_new_async
+g_bus_own_name
+g_dbus_interface_info_lookup_property
+g_dbus_gvariant_to_gvalue
+g_dbus_interface_info_lookup_signal
+g_dbus_gvalue_to_gvariant
+g_dbus_interface_skeleton_get_connections
+g_dbus_connection_set_exit_on_close
+g_async_initable_get_type
+g_dbus_method_invocation_get_method_info
+g_async_initable_new_finish
+g_dbus_proxy_call_sync
+g_dbus_proxy_get_type
+libgobject-2.0.so.0
+__aeabi_f2lz
+g_type_check_class_cast
+g_type_check_instance_cast
+libglib-2.0.so.0
+g_thread_try_new
+g_unix_signal_add
+g_thread_join
+libvsomeip.so.2
+_ZN7vsomeip7runtime3getEv
+libstdc++.so.6
+_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev
+_ZNSt6chrono3_V212system_clock3nowEv
+_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE4swapERS4_
+_ZTVN10__cxxabiv121__vmi_class_type_infoE
+_ZTVSt9basic_iosIcSt11char_traitsIcEE
+__cxa_end_catch
+_ZNSt9basic_iosIcSt11char_traitsIcEE4initEPSt15basic_streambufIcS1_E
+__cxa_throw_bad_array_new_length
+__dynamic_cast
+_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_replaceEjjPKcj
+_ZNSt6thread6detachEv
+_ZSt25__throw_bad_function_callv
+_ZNSt6localeD1Ev
+_ZNSt18condition_variableD1Ev
+_ZNSt18condition_variable4waitERSt11unique_lockISt5mutexE
+_ZNSt7__cxx1118basic_stringstreamIcSt11char_traitsIcESaIcEED1Ev
+_ZNSt6thread15_M_start_threadESt10shared_ptrINS_10_Impl_baseEEPFvvE
+_ZNSt8ios_baseD2Ev
+_ZTTNSt7__cxx1118basic_stringstreamIcSt11char_traitsIcESaIcEEE
+__aeabi_atexit
+_Znaj
+_ZSt9terminatev
+_ZSt18_Rb_tree_incrementPSt18_Rb_tree_node_base
+__cxa_begin_catch
+_ZSt7getlineIcSt11char_traitsIcESaIcEERSt13basic_istreamIT_T0_ES7_RNSt7__cxx1112basic_stringIS4_S5_T1_EES4_
+_ZSt29_Rb_tree_insert_and_rebalancebPSt18_Rb_tree_node_baseS0_RS_
+_ZSt20__throw_length_errorPKc
+_ZSt20__throw_out_of_rangePKc
+__cxa_rethrow
+_ZNSt6localeC1Ev
+_ZNSt18condition_variableC1Ev
+_ZNSt18condition_variable10notify_oneEv
+_ZSt18_Rb_tree_decrementPSt18_Rb_tree_node_base
+_ZNKSt8__detail20_Prime_rehash_policy11_M_next_bktEj
+_ZNSt8ios_base4InitD1Ev
+_ZNSt18condition_variable10notify_allEv
+_ZNSt8ios_baseC2Ev
+_ZSt17__throw_bad_allocv
+_ZSt24__throw_out_of_range_fmtPKcz
+_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE5rfindEcj
+__gxx_personality_v0
+_ZTVN10__cxxabiv120__si_class_type_infoE
+_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_createERjj
+_ZNSt8__detail15_List_node_base7_M_hookEPS0_
+_Znwj
+_ZSt18_Rb_tree_incrementPKSt18_Rb_tree_node_base
+_ZNKSt9type_infoeqERKS_
+_ZSt19__throw_logic_errorPKc
+_ZNSt8ios_base4InitC1Ev
+_ZSt20__throw_system_errori
+_ZTVN10__cxxabiv117__class_type_infoE
+_ZNKSt8__detail20_Prime_rehash_policy14_M_need_rehashEjjj
+_ZTVNSt7__cxx1118basic_stringstreamIcSt11char_traitsIcESaIcEEE
+__cxa_end_cleanup
+__cxa_guard_acquire
+_ZTVNSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEEE
+__cxa_guard_release
+__cxa_pure_virtual
+_ZNSt6chrono3_V212steady_clock3nowEv
+_ZNSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEE7_M_syncEPcjj
+_ZdlPv
+_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7compareEPKc
+_ZdaPv
+_ZSt24__throw_invalid_argumentPKc
+_ZTVSt15basic_streambufIcSt11char_traitsIcEE
+libm.so.6
+ceil
+lround
+libgcc_s.so.1
+__aeabi_d2iz
+__aeabi_dsub
+__aeabi_unwind_cpp_pr0
+__aeabi_unwind_cpp_pr1
+__aeabi_uldivmod
+__aeabi_ul2d
+__aeabi_ul2f
+__aeabi_d2uiz
+__aeabi_dcmpun
+__aeabi_l2d
+__aeabi_fadd
+__aeabi_dadd
+__aeabi_f2uiz
+__aeabi_uidiv
+__aeabi_dcmpge
+__aeabi_d2f
+__aeabi_dcmpgt
+__aeabi_dmul
+__aeabi_f2iz
+__aeabi_f2d
+__aeabi_ddiv
+__aeabi_dcmple
+__aeabi_dcmplt
+__aeabi_ui2d
+__aeabi_ldivmod
+__aeabi_i2d
+__aeabi_fcmpeq
+__aeabi_uidivmod
+libc.so.6
+epoll_create
+socket
+__printf_chk
+srand
+fopen
+strncmp
+strrchr
+pipe
+__isoc99_sscanf
+__fdelt_chk
+epoll_wait
+inet_ntop
+strncpy
+__stack_chk_fail
+listen
+msgrcv
+select
+mkdir
+realloc
+abort
+popen
+getpid
+kill
+strftime
+chmod
+strtod
+strtol
+cfsetispeed
+fgets
+calloc
+strlen
+prctl
+memset
+strstr
+tcsetattr
+bind
+memcmp
+eventfd
+msgget
+inet_addr
+fputs
+memcpy
+fclose
+setsockopt
+malloc
+umask
+remove
+system
+__snprintf_chk
+setrlimit
+pclose
+usleep
+__getdelim
+gettimeofday
+rename
+epoll_ctl
+__memcpy_chk
+clock_gettime
+tcflush
+localtime
+strchr
+__strcpy_chk
+__ctype_tolower_loc
+__sprintf_chk
+cfsetospeed
+__xstat
+memmove
+access
+strcmp
+__libc_start_main
+random
+snprintf
+ld-linux.so.3
+__stack_chk_guard
+_edata
+__bss_start
+__bss_start__
+__bss_end__
+__end__
+GLIBC_2.4
+GLIBC_2.15
+GLIBC_2.7
+GLIBC_2.17
+GLIBCXX_3.4.20
+CXXABI_1.3.8
+GLIBCXX_3.4.18
+GLIBCXX_3.4.11
+CXXABI_1.3
+GLIBCXX_3.4.14
+CXXABI_ARM_1.3.3
+GLIBCXX_3.4.21
+GLIBCXX_3.4.15
+GLIBCXX_3.4.19
+GLIBCXX_3.4
+GCC_3.5
+AAd%
+@Al1
+@A <
+@A <
+@AL0
+`!\(
+:&p!;&p!3
+MbP?<
+MbP?
+@AX@
+@!<A
+@!PA
+@!hA
+p!\B
+@AQ"
+@AR"
+@AS"
+@AT"
+@AU"
+@AV"
+@AW"
+@A4F
+@ALF
+ A`f
+ A(g
+1@|k
+@Ap@-
+pA0@-
+;p@-
+pAy9
+@A-3
+@AN2
+@As0
+@A\0
+@AE0
+@A.0
+@Av/
+@A_/
+@AH/
+@A1/
+@A:
+N5xpeng12SortedVectorINS_16key_value_pair_tIiNS_6Looper7RequestEEEEE
+N5xpeng14MessageHandlerE
+N5xpeng18WeakMessageHandlerE
+N5xpeng14LooperCallbackE
+N5xpeng20SimpleLooperCallbackE
+N5xpeng6LooperE
+Ignoring unexpected epoll events 0x%x on wake event fd.
+Ignoring unexpected epoll events 0x%x on fd %d that is no longer registered.
+vector::_M_range_check: __n (which is %zu) >= this->size() (which is %zu)
+It cost %f > %d ms
+Looper
+N5xpeng7RefBaseE
+N5xpeng10VectorImplE
+N5xpeng16SortedVectorImplE
+Vector<> have different types (this=%p, rhs=%p)
+Vector
+new_size overflow
+new_capacity overflow
+new_alloc_size overflow
+St22_Maybe_get_result_typeISt7_Mem_fnIMN5xpeng15XpengVehicleHalEFviiEEvE
+St22_Maybe_get_result_typeISt7_Mem_fnIM19SharedMemeryManagerFiiPcjEEvE
+St22_Maybe_get_result_typeISt7_Mem_fnIMN5xpeng15XpengVehicleHalEFviPviEEvE
+St22_Maybe_get_result_typeISt7_Mem_fnIMN5xpeng15XpengVehicleHalEFNS1_10StatusCodeEiPviEEvE
+St22_Weak_result_type_implISt7_Mem_fnIMN5xpeng15XpengVehicleHalEFviiEEE
+St22_Weak_result_type_implISt7_Mem_fnIM19SharedMemeryManagerFiiPcjEEE
+St22_Weak_result_type_implISt7_Mem_fnIMN5xpeng15XpengVehicleHalEFviPviEEE
+St22_Weak_result_type_implISt7_Mem_fnIMN5xpeng15XpengVehicleHalEFNS1_10StatusCodeEiPviEEE
+St17_Weak_result_typeISt7_Mem_fnIMN5xpeng15XpengVehicleHalEFviiEEE
+St17_Weak_result_typeISt7_Mem_fnIM19SharedMemeryManagerFiiPcjEEE
+St17_Weak_result_typeISt7_Mem_fnIMN5xpeng15XpengVehicleHalEFviPviEEE
+St17_Weak_result_typeISt7_Mem_fnIMN5xpeng15XpengVehicleHalEFNS1_10StatusCodeEiPviEEE
+N5xpeng15XpengVehicleHalE
+St5_BindIFSt7_Mem_fnIMN5xpeng15XpengVehicleHalEFviPviEEPS2_St12_PlaceholderILi1EES8_ILi2EES8_ILi3EEEE
+St5_BindIFSt7_Mem_fnIMN5xpeng15XpengVehicleHalEFNS1_10StatusCodeEiPviEEPS2_St12_PlaceholderILi1EES9_ILi2EES9_ILi3EEEE
+St5_BindIFSt7_Mem_fnIMN5xpeng15XpengVehicleHalEFviiEEPS2_St12_PlaceholderILi1EES7_ILi2EEEE
+St5_BindIFSt7_Mem_fnIM19SharedMemeryManagerFiiPcjEEPS1_St12_PlaceholderILi1EES7_ILi2EES7_ILi3EEEE
+propToContext
+onPropSetError
+setManager
+addPropContext
+XpengVehicleHal
+doDebug
+--> %s prop %s(%X) data is null.
+XpengVehicleHal
+--> %s bytes prop %s(%X)[%llu:%d] = (count = %d > 64)
+--> %s double vec prop %s(%X)[%llu:%d] = (%d) %s
+--> %s bytes prop %s(%X)[%llu:%d] = (%d) %s
+--> %s float vec prop %s(%X)[%llu:%d] = (%d) %s
+--> %s int64 vec prop %s(%X)[%llu:%d] = (%d) %s
+--> %s int vec prop %s(%X)[%llu:%d] = (%d) %s
+--> %s bool prop %s(%X)[%llu:%d] = %d
+--> %s int prop %s(%X)[%llu:%d] = %d
+--> %s int64 prop %s(%X)[%llu:%d] = %lld
+--> %s float prop %s(%X)[%llu:%d] = %f
+--> %s double prop %s(%X)[%llu:%d] = %f
+--> %s string prop %s(%X)[%llu:%d] = %.*s%s
+%02X 
+%lld 
+cmd is null.
+get return results [%s].
+run cmd [%s] ok.
+run cmd [%s] fail.
+basic_string::_M_construct null not valid
+%s: get prop (%x) context fail!
+%s: prop [%s], err (%d).
+Invalid prop type(%X)! 
+report
+# [%s] prop (%s), count (%d), _count (%d), releaseData(bytes).
+# [%s] prop (%s), count (%d), _count (%d), releaseData(string).
+prop type error!
+%s:%d prop (%s) had manager (%s), set to (%s) error.
+listProperties
+Fail to create prop manager thread!
+Invalid Prop Type for %s (%X)!
+vector::_M_default_append
+Invalid value type! %X
+[Report]
+[Set]
+/data/propContext.h
+.prop = toInt(VehicleProperty::%s),
+.access = %d,
+.PropName = "%s",
+.mcuId = 0x%X
+const int McuPropConfigsCount = %d;
+dumpPropContext end====
+#ifndef __PROPCONTEXT__H__
+#define __PROPCONTEXT__H__
+const PropMcuConfig McuPropConfigs[] = {
+#endif
+prop->value.int32Values[0] = %d *(int *)data = %d test=%d
+%s: add prop (%x) context fail!
+#20200718-001 %s(), mCarTypeId (0x%x).
+icm display id: %s
+ICM_E28B_8210001ED10003_V5.0.1_H.F_20241009164948_USER_Release
+ro.build.display.id
+Unknow gHardwareId %X!
+MCU request GPU to change partition in eol mode!
+true
+persist.eol.mode
+/usr/bin/tool_upgrade_mcu boot
+system current partition is [%s]
+persist.last.partition
+/usr/bin/tool_upgrade_mcu changeboot
+/bin/sync
+/sbin/reboot
+false
+mcu in eol mode! GPU check if change partition scuess!
+system last partition is [%s]
+mcu not in eol mode!
+mcu request to power off!
+/sbin/shutdown
+callback cost too many time! prop = %X, diff = %lld
+force log! (%d:%d:%s)
+bool
+int64
+float
+string
+bytes
+int32_vec
+int64_vec
+float_vec
+double_vec
+call (%s) setDebugFlag(%s).
+manager:[0/1/2/3/4] func:[0/1] ...
+not found manager to setDebugFlag().
+CanHandler->onMessage (mid = 0x%x), len (%lu).
+set prop (0x%02x), value (0x%02x).
+%d: %30s = %08X:%d, %10s, %2s, %d, [%08x]-{%s}.
+%s:%d Unknow Prop [%x:%s]!
+SysReady
+Invalid BaseManager Prop Type for [%x:%s]!
+Prop [%x:%s] is not writable!
+fillVehiclePropValue: unknown type: %d
+XpVehicleHal
+setManager (%x:%s) %s fail!
+xpeng::Looper::POLL_ERROR
+Looper::pollOnce() returned unknown status %d
+prop (%x:%s) not use BaseManager!
+224.0.0.0
+HOST_VCU_RAW_CAR_SPEED
+HOST_VCU_BMS_SOCDISP
+HOST_SWS_RMUTE_BUTTON
+HOST_TBOX_APPOINT_CHG_SET_MIN
+HOST_TBOX_APPOINT_CHG_SET_HOUR
+HOST_MCU_POWER_RANGE_FLAG
+HOST_VCU_VEH_PWR_DISP
+HOST_VCU_CURRENT_GEARLEV
+HOST_VCU_DSTBAT_DISP
+HOST_MCU_IG_DATA
+HOST_MCU_CHARGING_STATE
+HOST_MCU_VOICE_ID
+HOST_PARK_AVP_LIGHT_ST
+HOST_VCU_POWERLIMITATION_DSP
+HOST_VCU_BMS_SOCLOW_STATUS
+HOST_BCM_AIRBAG_FAULT_ST
+HOST_ESP_BOOST_FAULT_ST
+HOST_ESP_ABS_FAULT
+HOST_BCM_SMART_HIGHBEAM_ST
+HOST_ESP_ESP_FAULT
+HOST_ESC_ESP
+HOST_ESP_IND_LIGHT_AVH
+HOST_BCM_L_CHARGER_PORT
+HOST_VCU_BATCOLD_DISP
+HOST_TPMS_SYSFAULTWARN
+HOST_ESP_SYS_WARNIND_REQ
+HOST_ESP_APB_FUNC_LAMP
+HOST_ESP_WARN_LAMP
+HOST_VCU_IND_12V_BAT
+HOST_VCU_EVERRLAMP_DSP
+HOST_VCU_EMOTOR_SYS_HOT_DISP
+HOST_VCU_BAT_HOT_DISP
+HOST_VCU_BATT_FAULT_DISP
+HOST_VCU_HV_CUTOFF_DISP
+HOST_SCU_MRR_FCW_WARNING_ST
+HOST_BCM_2NDLEFTSEAT_BELTSBR_WARNING
+HOST_BCM_2NDMIDSEAT_BELTSBR_WARNING
+HOST_BCM_2NDRIGHTSEAT_BELTSBR_WARNING
+HOST_BCM_CHARGEPORT_LEFT_FAULT
+HOST_XPU_AUTO_PILOT_ST
+HOST_VCU_COOLANT_OVERHEAT_ST
+HOST_BCM_DOOR
+HOST_BCM_BONNET
+HOST_BCM_TRUNKAJAR
+HOST_MAIN_WARN_LAMP
+HOST_BCM_EDRIVER_SEAT
+HOST_BCM_EPSNGR_SEAT
+HOST_FOG_LIGHTS_SWITCH_XP
+HOST_BCM_PARKING_LAMP
+HOST_HIGH_BEAM_LIGHTS_STATE
+HOST_BCM_ELOW_BEAM
+HOST_LTURNLAMP_RTURNLAMP_ST
+HOST_BCM_ECHARGEPORT_RIGHT_FAULT
+HOST_BCM_R_CHARGER_PORT
+HOST_VCU_EVSYS_READYST
+HOST_VCU_HVAC_ELCCON_SPHIGH
+HOST_VCU_CHARGE_GUN_STATUS
+HOST_BCM_EBRAKING_LIGHT
+HOST_XPU_EACC_LEVEL
+HOST_MCU_EMRADAR_CALIBRATION_STATE
+HOST_MCU_EURADAR_CAL_RL
+HOST_MCU_EURADAR_CAL_RR
+HOST_MCU_EURADAR_CAL_FL
+HOST_MCU_EURADAR_CAL_FR
+HOST_MCU_EACC_CC_LIGHT
+HOST_MCU_EAUTOPILOT_TIPS_ID
+HOST_EBAT_PREPARE_TIME
+HOST_ENV_OUTSIDE_TEMPERATURE
+HOST_EALARM_ID
+HOST_ESPEED_XCC
+HOST_ICM_TOTAL_ODOMETER
+HOST_EOTA_ECU_SILENT_MODE
+HOST_TRIP_DISTANCE_TIME
+HOST_ESCREEN_COLORTEST
+HOST_EAVG_VEHELCCONSP
+HOST_ELCD_BLIGHT
+HOST_ELCD_BL_EN_STATUS
+HOST_ESOCMAXCHG_PWLIMIT
+HOST_ECHARGE_STATUS
+HOST_ECHARGE_CUR
+HOST_ECHARGE_VOLTAGE
+HOST_ECHARGE_LIMIT_TIME
+HOST_ERADAR_SPACING_FOL
+HOST_ERADAR_SPACING_FCL
+HOST_ERADAR_SPACING_FCR
+HOST_ERADAR_SPACING_FOR
+HOST_ERADAR_SPACING_ROL
+HOST_ERADAR_SPACING_RCL
+HOST_ERADAR_SPACING_RCR
+HOST_ERADAR_SPACING_ROR
+HOST_ETPMS_PRESSURE_LF
+HOST_ETPMS_TEMP_FLG_LF
+HOST_ETPMS_STATUS_LF
+HOST_ETPMS_PRESSURE_RF
+HOST_ETPMS_TEMP_FLG_RF
+HOST_ETPMS_STATUS_RF
+HOST_ETPMS_PRESSURE_LB
+HOST_ETPMS_TEMP_FLG_LB
+HOST_ETPMS_STATUS_LB
+HOST_ETPMS_PRESSURE_RB
+HOST_ETPMS_TEMP_FLG_RB
+HOST_ETPMS_STATUS_RB
+HOST_ETPMS_TEMPERATURE_LF
+HOST_ETPMS_TEMPERATURE_RF
+HOST_ETPMS_TEMPERATURE_LB
+HOST_ETPMS_TEMPERATURE_RB
+HOST_EIND_TRS_FORB
+HOST_EIND_ALC
+HOST_EIND_TRS_WARN
+HOST_EIND_TRS_SPEED
+HOST_EIND_FCW_AEB
+HOST_EIND_LBSD
+HOST_EIND_RBSD
+HOST_EIND_RCTA_LEFT
+HOST_EIND_RCTA_RIGHT
+HOST_EENGCOST_P100M
+HOST_ICM_TRIP_SINC_CHRG
+HOST_EIND_RCW
+HOST_EPARKING_AREA
+HOST_EPARKING_L1
+HOST_EPARKING_L2
+HOST_EPARKING_L3
+HOST_EPARKING_R1
+HOST_EPARKING_R2
+HOST_EPARKING_R3
+HOST_ELANE_STATUS_LL
+HOST_ELANE_STATUS_RR
+HOST_ELANE_STATUS_L
+HOST_ELANE_STATUS_R
+HOST_EALC_TARGET_X
+HOST_EALC_TARGET_Y
+HOST_ELANE_PARAM_LL
+HOST_ELANE_PARAM_L
+HOST_ELANE_PARAM_R
+HOST_ELANE_PARAM_RR
+HOST_ELANE_LINE_L
+HOST_ELANE_LINE_R
+HOST_ELANE_LINE_LL
+HOST_ELANE_LINE_RR
+HOST_ESTART_LANE_LINE_L
+HOST_ESTART_LANE_LINE_R
+HOST_ESTART_LANE_LINE_LL
+HOST_ESTART_LANE_LINE_RR
+HOST_ERADAR_FSL
+HOST_ERADAR_FSR
+HOST_ERADAR_RSL
+HOST_ERADAR_RSR
+HOST_ERADAR_DISPLAY_STATE
+HOST_ERADAR_LEVEL_RSL
+HOST_ERADAR_LEVEL_RSR
+HOST_ERADAR_LEVEL_FL
+HOST_ERADAR_LEVEL_FCL
+HOST_ERADAR_LEVEL_FCR
+HOST_ERADAR_LEVEL_FR
+HOST_ERADAR_LEVEL_RL
+HOST_ERADAR_LEVEL_RCL
+HOST_ERADAR_LEVEL_RCR
+HOST_ERADAR_LEVEL_RR
+HOST_SCU_NEDC_STATUS
+HOST_ALC_LANE_YAW
+HOST_ELANE_ORDER_PARAM_3
+HOST_ELANE_ORDER_PARAM_2
+HOST_ELANE_ORDER_PARAM_1
+HOST_ERADAR_FDISTANCE
+HOST_ERADAR_RDISTANCE
+HOST_ERADAR_LEVEL_FSL
+HOST_ERADAR_LEVEL_FSR
+HOST_BCM_SEAT_HEAT_LEVEL
+HOST_EMCU_BACKLIGHT_STATE
+HOST_EGEAR_N_REMIND
+HOST_ESPEAKER_TYPE
+HOST_EAC_WIND_LEVEL
+HOST_EWIND_MODE_STATE
+HOST_ESEAT_WIND_LEVEL
+HOST_EAUTO_SWING_STATE
+HOST_EAC_OPEN_STATE
+HOST_ECAR_COLOR_CONFIG
+HOST_ECAR_TYPE_CONFIG
+HOST_ETMPS_TEMP_WARN
+HOST_EUSB_UPDATE_FLAG
+HOST_EMCU_REBOOT_REQ
+HOST_EAC_TEMP_VALUE
+HOST_SURPLUS_USABLE_POWER
+HOST_ESENSOR_ERROR_INFO
+HOST_EURADAR_STATUS
+HOST_EURADAR_STATUS_FOL
+HOST_EURADAR_STATUS_FCL
+HOST_EURADAR_STATUS_FCR
+HOST_EURADAR_STATUS_FOR
+HOST_EURADAR_STATUS_FSL
+HOST_EURADAR_STATUS_FSR
+HOST_EURADAR_STATUS_ROL
+HOST_EURADAR_STATUS_RCL
+HOST_EURADAR_STATUS_RCR
+HOST_EURADAR_STATUS_ROR
+HOST_EURADAR_STATUS_RSL
+HOST_EURADAR_STATUS_RSR
+HOST_EMWRADAR_STATUS
+HOST_EMWRADAR_STATUS_FC
+HOST_EMWRADAR_STATUS_FL
+HOST_EMWRADAR_STATUS_FR
+HOST_EMWRADAR_STATUS_RCL
+HOST_EMWRADAR_STATUS_RCR
+HOST_ECAMERA_VPM_STATUS_FCU
+HOST_ECAMERA_FISHEYE_STATUS_FCU
+HOST_ECAMERA_MAIN_STATE_FCU
+HOST_ECAMERA_NARROW_STATE_FCU
+HOST_ECAMERA_DAM_STATE_FLI
+HOST_ECAMERA_SVCAM_STATE_FCD
+HOST_ECAMERA_SVCAM_STATE_L
+HOST_ECAMERA_SVCAM_STATE_R
+HOST_ECAMERA_SVCAM_STATE_REAR
+HOST_ECAMERA_SVCAM_STATE
+HOST_ESENSOR_ERRORINFO_ID
+HOST_ESPEED_LIMIT
+HOST_EFORWARD_VEHICLE_ANGLE_11
+HOST_EFORWARD_VEHICLE_X_11
+HOST_EFORWARD_VEHICLE_Y_11
+HOST_EFORWARD_VEHICLE_COLOR_11
+HOST_EFORWARD_VEHICLE_TYPE_11
+HOST_EDATE_YEAR
+HOST_EDATE_DAY
+HOST_EDATE_MONTH
+HOST_EDATE_HOUR
+HOST_EDATE_MIN
+HOST_EDATE_SEC
+HOST_VEHICLE_TYPE
+HOST_EPARTITION_REQUEST
+HOST_EFORWARD_VEHICLE_ANGLE_9
+HOST_EFORWARD_VEHICLE_X_9
+HOST_EFORWARD_VEHICLE_Y_9
+HOST_EFORWARD_VEHICLE_COLOR_9
+HOST_EFORWARD_VEHICLE_TYPE_9
+HOST_EFORWARD_VEHICLE_ANGLE_10
+HOST_EFORWARD_VEHICLE_X_10
+HOST_EFORWARD_VEHICLE_Y_10
+HOST_EFORWARD_VEHICLE_COLOR_10
+HOST_EFORWARD_VEHICLE_TYPE_10
+HOST_EFORWARD_VEHICLE_ANGLE_7
+HOST_EFORWARD_VEHICLE_X_7
+HOST_EFORWARD_VEHICLE_Y_7
+HOST_EFORWARD_VEHICLE_COLOR_7
+HOST_EFORWARD_VEHICLE_TYPE_7
+HOST_EFORWARD_VEHICLE_ANGLE_8
+HOST_EFORWARD_VEHICLE_X_8
+HOST_EFORWARD_VEHICLE_Y_8
+HOST_EFORWARD_VEHICLE_COLOR_8
+HOST_EFORWARD_VEHICLE_TYPE_8
+HOST_UART_I2C_ABNORMAL_STATUS
+HOST_TRIP_DISTANCE_TIME_2
+HOST_NGP_LIGHT_STATUS
+HOST_FCW_AEB_CLOSE_STATUS
+HOST_TURN_LIGHT_TYPE
+HOST_VEHICLE_COLOR_CONFIG
+HOST_LCC_WARNING_LIGHT_STATUS
+HOST_ACL_WARNING_LIGHT_STATUS
+HOST_ETPMS_MULTI_STATUS_LF
+HOST_ETPMS_MULTI_STATUS_RF
+HOST_ETPMS_MULTI_STATUS_LB
+HOST_ETPMS_MULTI_STATUS_RB
+HOST_ISLC_ST
+HOST_VCU_DRIVE_MODE
+HOST_RANDIS_MODE
+HOST_TRAFFIC_LIGHTS_ST
+HOST_XPU_SPD_LMT_TYPE
+HOST_ECHARGE_VOLTAGE_LEVEL
+HOST_VEHICLE_1_SD_INFO
+HOST_VEHICLE_2_SD_INFO
+HOST_VEHICLE_3_SD_INFO
+HOST_VEHICLE_4_SD_INFO
+HOST_VEHICLE_5_SD_INFO
+HOST_VEHICLE_6_SD_INFO
+HOST_MCU_ESET_TIME_STATE
+HOST_MCU_ESET_OTA_STATE
+HOST_MCU_ESET_HMI_DSP_STATE
+HOST_MCU_ESET_TIME
+HOST_MCU_ESET_RESET_TRIPA
+HOST_MCU_ESET_RESET_TRIPB
+HOST_MCU_ESET_FORCE_POWER_OFF
+HOST_MCU_ESET_REBOOT_RSP
+HOST_MCU_ESET_LCD_PANEL_ERROR
+HOST_MCU_ESET_LCD_BL_ERROR
+HOST_MCU_ESET_FPD_ERROR
+HOST_MCU_ESET_LCD_BUCK_ERROR
+HOST_MCU_ESET_VOL_LOW_ERROR
+HOST_MCU_ESET_VOL_HIGH_ERROR
+HOST_MCU_ESET_LCD_CABLE_ERROR
+HOST_MCU_ESET_LCD_MCU_ERROR
+HOST_MCU_ESET_LCD_TI_ERROR
+HOST_MCU_ESET_EMMC_STATE
+HOST_MCU_ESET_PHY_STATE
+HOST_MCU_ESET_LVDS_STATE
+HOST_MCU_ESET_PARTITION_STATE
+HOST_MCU_ESET_ICM_VERSION
+HOST_LANE_CONE_1_INFO
+HOST_LANE_CONE_2_INFO
+HOST_LANE_CONE_3_INFO
+HOST_LANE_CONE_4_INFO
+HOST_LANE_CONE_5_INFO
+HOST_ICM_TIME_FORMAT_SP
+HOST_ICM_BRIGHTNESS_SP
+HOST_ICM_SPEED_LIMIT_WARNING_VALUE_SP
+HOST_ICM_ALARM_VOLUME_SP
+HOST_ICM_SPEED_LIMIT_WARNING_SWITCH_SP
+HOST_ICM_UPDATE_PROGRESS
+HOST_ICM_UPDATE_RESULT
+HOST_ICM_FEEDBACK_SIGNAL
+HOST_ICM_SYNC_SIGNAL
+HOST_ICM_ALLCARD_REFRSH
+HOST_ICM_INFOFLOW_MSG
+HOST_ICM_CARSETTING
+HOST_ICM_NEEDNAVI
+HOST_ICM_UPDATE_REQ
+HOST_ICM_RESET_TRIPA_SP
+HOST_ICM_RESET_TRIPB_SP
+HOST_ICM_UPDATE_TRANS
+HOST_ICM_OSDSHOW
+HOST_ICM_INFOCARD_ADD
+HOST_ICM_INFOCARD_UPDATE
+HOST_ICM_INFOCARD_REMOVE
+HOST_ICM_WHEEL_KEY
+HOST_ICM_SYNC_TIME
+HOST_ICM_SEND_NAV_MSG
+HOST_ICM_ACCOUNT
+HOST_ICM_WEATHER
+HOST_ICM_BLUETOOTH_PHONE
+HOST_ICM_FACE_INFO
+HOST_ICM_NAVIGATION
+HOST_ICM_SEND_MUSIC_MSG
+HOST_ICM_SEND_NET_RADIO_MSG
+HOST_ICM_TCP_SUBCRIBE
+HOST_ICM_UDP_SUBCRIBE
+HOST_ICM_CRASH_INFO
+HOST_ICM_VERSION_INFO
+HOST_ICM_DIAGNOSIS_INFO
+HOST_ICM_ALL_LAMP_STATE_REQ
+HOST_ICM_ALL_LAMP_STATE_INFO
+HOST_ICM_LEFT_MENU_CONTROL
+HOST_ICM_RIGHT_MENU_CONTROL
+HOST_ICM_LOG_COMPRESS
+HOST_ICM_RANDIS_DISPLAY_TYPE
+HOST_ICM_LOCALE_LANGUAGE
+HOST_ICM_CHANGE_MILEAGE_DOUBLE
+HOST_ICM_CHARGING_DURATION
+HOST_DEBUG_HAL
+HOST_DEBUG_PROP_LOGCTRL
+HOST_MCU_SOFT_VERSION
+HOST_MCU_UPGRADE_ACK
+HOST_MCU_ABNORMAL_RECOVERY_REQ_ACK
+HOST_MCU_SYSTEM_RESET_ACK
+HOST_MCU_UPGRADE_BOOT_VER_ACK
+HOST_MCU_UPGRADE_NOTIFY
+HOST_MCU_ABNORMAL_RECOVERY_REQ
+HOST_MCU_SYSTEM_RESET_REQ
+HOST_MCU_UPGRADE_BOOT_VER_NOTIFY
+13Communication
+write len (%d) to mcu, data = %s
+Communication
+need to write (%d) bytes to mcu, ret (%d).
+write: mMcuTtyFd = %d error %d: %s.
+close mMcuTtyFd, reopen Mcu uart!!!
+/dev/ttymxc0
+#20200828 try to open [%s], fd (%d).
+Fail to set mcu tty Option!
+Fail to open tty device for comm! errno = %d.
+Unknow message %d!
+persist.vendor.vehicle.debug
+Communication::mMcudebug is (%d).
+Fail to create uart_read thread!
+Fail to create uart_write thread!
+mcu tty Error! fd (%d).
+read mcu tty fd (%d) error %d:%s!
+recv mcu data = %s
+uart_read
+uart_write
+B c0
+s2R"
+b$C4 
+S6r&
+<`A
+>2.Q
+P%@Fpg`
+RwbVr
+ftGd$T
+Wfvv
+F4VL
+DXeH
+uJTZ7j
+ld\EL
+n6~UNt^
+FrameProtocol
+~FrameProtocol
+13FrameProtocol
+Head tag check fail len = %d, tag = %04X
+FrameProtocol
+Invalid frame len(%u)!
+Header crc check fail! recv = %04X calc = %04X
+Data checksum fail! recv = %04X calc = %04X
+Invalid frame len: %d
+Found invalid frame len: %d
+mcu recv count = %u
+Ignore msg %X, len = %d! no cache!
+send msg time out! timeoutCount (%u), waitAckId (0X%04X), sendLen (%d).
+duplicate id: %d.
+missing frame ? last = %u, new = %u.
+Waiting ack id = %X, but recv %X
+#has send count (%u) cmd to mcu.
+Recv invalid frame len: %d
+recevie mcu msgId (0x%x), len (%d).
+recevie mcu msgId (0x%x), len (%d), roll count (%d).
+# MCU boot info  [%02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x]
+# MCU boot info  reset_src (%hu)
+# MCU boot info  reset_type (%d)
+# MCU boot info  mcu_run_time (%u)
+# MCU boot version = %c%c
+# MCU hardware version = %s
+# MCU software version = %s
+%c%c
+sys.mcu.boot.version
+%c.%c.%c
+sys.mcu.soft.version
+sys.mcu.hardware.version
+# Invalid msg id (%04X) flen(%u) dlen(%u) with sync!
+# MCU UartTp = %08X.%08X.
+Ignore %d bytes! data = %s
+/data/update.squashfs
+/etc/mcu/cluser_V1.0.bin
+/usr/bin/tool_upgrade_mcu 3
+sync
+reboot -f
+receive %d C, but has not file /data/update.squashfs!!!
+receive %d C, set soc to upgrade mcu mode.
+11RoundBuffer
+N5xpeng12SortedVectorINS_16key_value_pair_tIjyEEEE
+N5xpeng12SortedVectorINS_16key_value_pair_tIjP10PropConfigEEEE
+14CanPropHandler
+setStringProp
+~CanHandler
+initCanConfig
+CanHandler
+onCanIdLost
+dumpRunInfo
+sendCmd
+sendPayload
+setBoolProp
+setCharProp
+setInt32Prop
+setInt64Prop
+setFloatProp
+setDoubleProp
+reportDataKeepLast
+reportDataInvaild
+setCycleReport
+10CanHandler
+%s:%d prop (%s) fail.
+CanHandler
+%s()
+## vehicle power off!
+## vehicle local IG ON!
+%s mCarTypeId [0X%X] START!
+%s mCarTypeId [0X%X] END!
+%s: msg.id (0x%x) more than gCanMapMax (0x%x).
+gCanTypeId (0x%x) set canid (0X%03X), msg name (%s) printf type (%d).
+## write config error! prop [0x%x:%s], sig [%s].
+## read config error! prop [0x%x:%s], sig [%s].
+## write config error! signal [%s] in prop [0x%x:%s]!
+## read config error! signal [%s] in prop [0x%x:%s]!
+can't not find config for prop %s:%x!
+sig (%s) sigHight (%d) error!
+Invalid prop config! prop = %X, signal = %s, offset = %lf, factor = %lf
+Unexcept value %llu for signal %s in prop %X!
+Unknown prop(%X:%s)'s value type!
+%s(), send cmd to mcu in period 2000ms!
+add can %X =(%u) %016llX %016llX %016llX %016llX %016llX %016llX %016llX %016llX
+dump mcu first raw data:
+ID (0x%02x) (%02d) { %s}.
+dump mcu second raw data:
+%s: Invalid can id 0x%x.
+Can Bus Lost Message! ID:(0x%x)
+onCanIdLost Unexcept signal %s in prop %X!
+/data/can_%lld.txt
+%s:%d fopen (%s) file error!
+dump can record file (%s) start.
+=======================%s start=======================
+mCanMsgCount(%llu), runTime(%u)->rate(%u), durTime(%u)->dur_rate(%u).
+mPropConfigCbCount(%llu), runTime(%u)->rate(%u), durTime(%u)->dur_rate(%u).
+MSG: (%u), (%03x), (%.2f%%), cnt(%llu), ut(%.3lf), [%s], [%s].
+mSignalCbCount(%llu), runTime(%u)->rate(%u), durTime(%u)->dur_rate(%u).
+PROP: (%u), cnt(%llu), (%.2f%%), [%s:0x%x] sig[%s].
+=======================%s end=======================
+SIG: (%u), cnt(%llu), (%.2f%%), [%s], val(%lld).
+dump can record file (%s) end.
+ %02x
+%s mid [0x%x] data (%d):{%s }.
+message 0x%x! in handleMessage
+Unknow message 0x%x!
+%s: mPayload.buffer = %s, roll count (%u).
+%s:%d prop [%s] wSignalCount (%d) != 1 error!
+Invalid prop config! prop [%X:%s], signal (%s).
+Unexcept value %d for prop %X!
+%s:%d prop [%s] wSignalCount (%d) != count (%d) error!
+Unexcept value %lld for prop %X!
+%s signal %s in prop %X!
+Can Bus Resume Message! ID:(0x%x).
+recv can msg 0X%X = { %s}.
+sig name = %30s, start = %u, len = %u, value = %llX --> %llX <--> %0.8lf
+update event msg [0x%x:%s:%s] = (%0.8lf)!
+canId (0x%x) not in gCanMap! data = { %s}.
+start
+stop
+%s to simulate can report data.
+%s:%d prop (%x:%s) fail.
+%s: prop [%x:%s] to (%llu)ns cycle report.
+[%x:%s] is already in mCycleVec, update (%llu) to (%llu)
+ ...
+R_0x0
+R_0x1
+R_0x2
+R_0x3
+R_0x4
+R_0x5
+R_0x6
+R_0x7
+R_0x8
+R_0x9
+R_0xE
+R_0xF
+R_0x10
+R_0x11
+R_0x12
+R_0x13
+R_0x14
+R_0x15
+R_0x20
+CDU_MCU_SEND_CAN
+R_0x30
+R_0x31
+DATA_FORWARD_VEHICLE_1_ANGLE_NEW
+DATA_FORWARD_VEHICLE_3_TYPE_NEW
+DATA_FORWARD_VEHICLE_5_X_NEW_XPH0
+DATA_FORWARD_VEHICLE_3_X_NEW_XPH0
+DATA_FORWARD_VEHICLE_6_TYPE_NEW
+DATA_FORWARD_VEHICLE_1_COLOR_NEW
+DATA_FORWARD_VEHICLE_1_X_NEW
+DATA_FORWARD_VEHICLE_5_COLOR_NEW
+DATA_FORWARD_VEHICLE_1_TYPE_NEW
+DATA_FORWARD_VEHICLE_6_X_NEW_XPH0
+DATA_FORWARD_VEHICLE_2_X_NEW_XPH0
+DATA_FORWARD_VEHICLE_2_TYPE_NEW
+DATA_FORWARD_VEHICLE_6_ANGLE_NEW
+DATA_FORWARD_VEHICLE_1_Y_NEW
+DATA_FORWARD_VEHICLE_6_COLOR_NEW
+DATA_FORWARD_VEHICLE_4_ANGLE_NEW
+DATA_FORWARD_VEHICLE_6_Y_NEW
+DATA_FORWARD_VEHICLE_2_X_NEW
+DATA_FORWARD_VEHICLE_2_ANGLE_NEW
+DATA_FORWARD_VEHICLE_3_Y_NEW
+DATA_FORWARD_VEHICLE_5_Y_NEW
+DATA_FORWARD_VEHICLE_4_TYPE_NEW
+DATA_FORWARD_VEHICLE_4_COLOR_NEW
+DATA_FORWARD_VEHICLE_3_X_NEW
+DATA_FORWARD_VEHICLE_5_TYPE_NEW
+DATA_FORWARD_VEHICLE_1_X_NEW_XPH0
+DATA_FORWARD_VEHICLE_5_ANGLE_NEW
+DATA_FORWARD_VEHICLE_2_Y_NEW
+DATA_FORWARD_VEHICLE_3_ANGLE_NEW
+DATA_FORWARD_VEHICLE_5_X_NEW
+DATA_FORWARD_VEHICLE_4_Y_NEW
+DATA_FORWARD_VEHICLE_4_X_NEW_XPH0
+DATA_FORWARD_VEHICLE_4_X_NEW
+DATA_FORWARD_VEHICLE_3_COLOR_NEW
+DATA_FORWARD_VEHICLE_2_COLOR_NEW
+DATA_FORWARD_VEHICLE_6_X_NEW
+DATA_LANE_CONE_1_X
+DATA_LANE_CONE_5_X
+DATA_LANE_CONE_1_Y
+DATA_LANE_CONE_2_TYPE
+DATA_LANE_CONE_4_TYPE
+DATA_LANE_CONE_3_X
+DATA_LANE_CONE_4_X
+DATA_LANE_CONE_5_TYPE
+DATA_LANE_CONE_3_TYPE
+DATA_LANE_CONE_4_Y
+DATA_LANE_CONE_3_Y
+DATA_LANE_CONE_1_TYPE
+DATA_LANE_CONE_5_Y
+DATA_LANE_CONE_2_Y
+DATA_LANE_CONE_2_X
+SET_DATA_FORCE_POWER_OFF
+SET_LCD_Buck_Error
+SET_DATA_LCD_Ti947_Error
+SET_DATA_TIME_XPH0
+SET_LCD_Voltage_High_Error
+SET_LCD_Cable_Error
+SET_DATA_EMMC_STATE
+SET_DATA_LVDS_STATE
+SET_DATA_VERSION_L
+SET_DATA_OTA_STATE
+SET_DATA_TIME
+SET_DATA_VERSION_M
+SET_DATA_RESET_TRIPA
+SET_DATA_HMI_DSP_STATE
+SET_DATA_RESET_TRIPB
+SET_LCD_Voltage_Low_Error
+SET_LCD_Backlight_Error
+SET_DATA_VERSION_H
+SET_DATA_PHY_STATE
+SET_LCD_Panel_Error
+SET_DATA_PARTITION_STATE
+SET_DATA_TIME_STATE
+SET_LCD_Lcd_MCU_Error
+SET_DATA_MCU_REBOOT_RSP
+SET_LCD_FPDLink_unlock_Error
+WasherFluidWarningInd
+DATA_TIRE_MULTI_STATUS_RB
+DATA_TIRE_MULTI_STATUS_LF
+VCU_DriveMode_Disp
+DATA_NGP_LIGHT_STATUS_NEW
+DATA_LCC_WARNING_LIGHT_STATUS
+XPU_ISLCSt
+PsngrSRSCloseInd
+DATA_NEW_AVG_VEHELCCONSP
+DATA_SPEED_LMT_TYPE
+DATA_VEHICLE_COLOR_CONFIG
+DATA_FCW_AEB_CLOSE_STATUS
+DATA_RANDIS_MODE
+DATA_ACL_WARNING_LIGHT_STATUS
+BCM_SMART_HIGH_BEAM
+DATA_TURN_LIGHT_TYPE
+DATA_NGP_LIGHT_STATUS
+DATA_TIRE_MULTI_STATUS_RF
+DATA_NEW_AVG_VEHELCCONSP_XPH0
+DATA_TIRE_MULTI_STATUS_LB
+DATA_TRAFFIC_LIGHT
+DATA_OBC_ACVOLTST
+DATA_IND_TRS_SPEED_NEW
+DATA_TIME_SINCE_CHARGING_XPH0
+DATA_DISTANCE_SINCE_CHARGING
+DATA_TIME_SINCE_IGON_XPH0
+DATA_VALUE_FLAG
+DATA_TIME_SINCE_CHARGING
+DATA_DISTANCE_SINCE_IGON_XPH1
+DATA_TIME_SINCE_CHARGING_XPH1
+DATA_DISTANCE_SINCE_IGON
+DATA_UART_IIC_ABNORMAL_STATUS
+DATA_DISTANCE_SINCE_IGON_XPH0
+DATA_TIME_SINCE_IGON
+DATA_DISTANCE_SINCE_CHARGING_XPH1
+DATA_DISTANCE_SINCE_CHARGING_XPH0
+DATA_FORWARD_VEHICLE_7_COLOR
+DATA_FORWARD_VEHICLE_7_TYPE
+DATA_FORWARD_VEHICLE_8_ANGLE
+DATA_FORWARD_VEHICLE_7_Y
+DATA_FORWARD_VEHICLE_8_X
+DATA_FORWARD_VEHICLE_7_X
+DATA_FORWARD_VEHICLE_7_ANGLE
+DATA_FORWARD_VEHICLE_8_COLOR
+DATA_FORWARD_VEHICLE_8_Y
+DATA_FORWARD_VEHICLE_8_TYPE
+DATA_FORWARD_VEHICLE_10_COLOR
+DATA_FORWARD_VEHICLE_10_X
+DATA_FORWARD_VEHICLE_10_ANGLE
+DATA_FORWARD_VEHICLE_9_Y
+DATA_FORWARD_VEHICLE_9_X
+DATA_FORWARD_VEHICLE_10_Y
+DATA_FORWARD_VEHICLE_10_TYPE
+DATA_FORWARD_VEHICLE_9_COLOR
+DATA_FORWARD_VEHICLE_9_ANGLE
+DATA_FORWARD_VEHICLE_9_TYPE
+DATA_DATE_HOUR
+DATA_DATE_HOUR_XPH0
+DATA_DATE_YEAR_XPH0
+DATA_FORWARD_VEHICLE_11_ANGLE
+DATA_FORWARD_VEHICLE_11_Y
+DATA_DATE_SEC
+DATA_DATE_YEAR
+DATA_FORWARD_VEHICLE_11_TYPE
+DATA_PARTITION_REQUEST
+DATA_DATE_DAY
+DATA_DATE_MONTH
+DATA_FORWARD_VEHICLE_11_COLOR
+DATA_DATE_MIN
+DATA_FORWARD_VEHICLE_11_X
+DATA_VEHICLE_TYPE
+DATA_SENSORINFO_SVCAM_REAR_STATE
+DATA_SENSORINFO_URADAR_RCR_STATE
+DATA_SENSORINFO_MRADAR_RL_STATE
+DATA_SENSORINFO_MRADAR_FL_STATE
+DATA_SENSORINFO_DAM_FRONT_STATE
+DATA_SENSORINFO_URADAR_ROR_STATE
+DATA_SENSORINFO_URADAR_ROL_STATE
+DATA_SENSORINFO_VPM_VPM_STATE
+DATA_SENSORINFO_ERRINF_ID
+DATA_SENSORINFO_XPUCAM_MAIN_STATE
+DATA_SENSORINFO_URADAR_FCR_STATE
+DATA_SENSORINFO_XPUCAM_FISHEYE_STATE
+DATA_SENSORINFO_URADAR_STATE
+DATA_SENSORINFO_MRADAR_RR_STATE
+DATA_SENSORINFO_MRADAR_FR_STATE
+DATA_SENSORINFO_ERRINF_ID_XPH0
+DATA_SENSORINFO_URADAR_FSL_STATE
+DATA_SENSORINFO_URADAR_RCL_STATE
+DATA_SENSORINFO_MRADAR_STATE
+DATA_SPEED_LIMIT
+DATA_SENSORINFO_SVCAM_STATE
+DATA_SENSORINFO_URADAR_FSR_STATE
+DATA_SENSORINFO_MRADAR_FC_STATE
+DATA_SENSORINFO_URADAR_FOL_STATE
+DATA_SENSORINFO_URADAR_FCL_STATE
+DATA_SENSORINFO_URADAR_FOR_STATE
+DATA_SENSORINFO_URADAR_RSL_STATE
+DATA_SENSORINFO_XPUCAM_NARROW_STATE
+DATA_SENSORINFO_SVCAM_RIGHT_STATE
+DATA_SENSORINFO_SVCAM_LEFT_STATE
+DATA_SENSORINFO_PRIORITY
+DATA_SENSORINFO_URADAR_RSR_STATE
+DATA_SENSORINFO_SVCAM_FRONT_STATE
+DATA_AC_OPEN_STATE
+DATA_CAR_LEVEL_CONFIG
+DATA_RADAR_COLOR_RF2
+DATA_USB_UPGREDE_NOTIFY
+DATA_MCU_BACKLIGHT_STATE
+DATA_WIND_MODE_STATE
+DATA_AUTO_SWING_STATE
+DATA_GEAR_N_REMIND
+MSMD_SeatHeatSt
+DATA_SPEAKER_TYPE
+DATA_RADAR_DSP_SPACING_TAIL
+DATA_TIRE_TEMP_WARNING
+DATA_RADAR_DSP_SPACING_HEAD
+DATA_MCU_REBOOT_REQ
+DATA_SEAT_WIND_LEVEL
+DATA_CAR_COLOR_CONFIG
+DATA_AC_TEMP_VALUE
+DATA_RADAR_COLOR_LF2
+DATA_SURPLUS_USABLE_POWER
+DATA_AC_WIND_LEVEL
+DATA_TRAFFIC_LANE_PARAM2
+DATA_TRAFFIC_LANE_PARAM1
+DATA_TRAFFIC_LANE_PARAM2_XPH0
+DATA_TRAFFIC_LANE_PARAM1_XPH0
+DATA_TRAFFIC_LANE_PARAM3
+DATA_TRAFFIC_LANE_PARAM3_XPH0
+DATA_TRAFFIC_LANE_PARAM1_XPH1
+DATA_RADAR_COLOR_LB0
+DATA_RADAR_COLOR_LF1
+DATA_FORWARD_VEHICLE_1_X
+DATA_RADAR_SPACING_LB2
+DATA_FORWARD_VEHICLE_4_X
+DATA_FORWARD_VEHICLE_2_Y
+DATA_RADAR_STATE
+DATA_FORWARD_VEHICLE_5_COLOR
+DATA_RADAR_COLOR_RF0_XPH0
+DATA_RADAR_COLOR_LB2
+DATA_FORWARD_VEHICLE_6_TYPE
+DATA_FORWARD_VEHICLE_6_Y
+DATA_FORWARD_VEHICLE_1_TYPE
+DATA_RADAR_COLOR_RF0
+DATA_RADAR_COLOR_LF0
+DATA_FORWARD_VEHICLE_2_TYPE_XPH0
+DATA_FORWARD_VEHICLE_3_Y
+DATA_TRAFFIC_LANE_LENGTH_R0
+DATA_FORWARD_VEHICLE_3_COLOR
+DATA_RADAR_COLOR_RF1
+DATA_RADAR_SPACING_RF2
+DATA_TRAFFIC_LANE_X0_R0
+DATA_FORWARD_VEHICLE_2_X
+DATA_FORWARD_VEHICLE_1_ANGLE
+DATA_FORWARD_VEHICLE_2_ANGLE
+DATA_FORWARD_VEHICLE_2_TYPE
+DATA_ALC_LANE_YAW
+DATA_TRAFFIC_LANE_X0_L0
+DATA_FORWARD_VEHICLE_1_COLOR
+DATA_FORWARD_VEHICLE_6_X
+DATA_FORWARD_VEHICLE_5_ANGLE
+DATA_FORWARD_VEHICLE_5_TYPE
+DATA_FORWARD_VEHICLE_5_X
+DATA_FORWARD_VEHICLE_3_TYPE
+DATA_TRAFFIC_LANE_LENGTH_L0
+DATA_TRAFFIC_LANE_LENGTH_L1
+DATA_TRAFFIC_LANE_X0_L1
+DATA_FORWARD_VEHICLE_4_COLOR
+DATA_FORWARD_VEHICLE_6_TYPE_XPH0
+DATA_FORWARD_VEHICLE_6_ANGLE
+DATA_FORWARD_VEHICLE_6_COLOR
+DATA_RADAR_COLOR_RB1
+DATA_TRAFFIC_LANE_LENGTH_R1
+DATA_TRAFFIC_LANE_X0_R1
+DATA_FORWARD_VEHICLE_1_Y
+DATA_RADAR_SPACING_LF2
+DATA_FORWARD_VEHICLE_3_ANGLE
+DATA_RADAR_COLOR_RB0
+DATA_RADAR_COLOR_RB2
+DATA_SCU_NEDC_STATUS
+DATA_FORWARD_VEHICLE_4_Y
+DATA_FORWARD_VEHICLE_5_Y
+DATA_RADAR_SPACING_RB2
+DATA_FORWARD_VEHICLE_3_COLOR_XPH0
+DATA_FORWARD_VEHICLE_3_X
+DATA_FORWARD_VEHICLE_4_ANGLE
+DATA_FORWARD_VEHICLE_2_COLOR
+DATA_RADAR_COLOR_LB0_XPH0
+DATA_RADAR_COLOR_LB1
+DATA_FORWARD_VEHICLE_4_TYPE
+DATA_TRAFFIC_LANE_PARAM0_R1
+DATA_TRAFFIC_LANE_STATUS_L0
+DATA_TRAFFIC_LANE_PARAM0_L0
+DATA_TRAFFIC_LANE_PARAM0_L1
+DATA_TRAFFIC_LANE_STATUS_L1
+DATA_ALC_TARGET_Y
+DATA_ALC_TARGET_X
+DATA_TRAFFIC_LANE_STATUS_R0
+DATA_TRAFFIC_LANE_STATUS_R1
+DATA_TRAFFIC_LANE_PARAM0_R0
+DATA_CARPORT_LEFT_PORT2
+DATA_IND_RCW
+DATA_IND_ALC
+ICM_TripSinceChrg_XPH1
+DATA_IND_RCTA_LEFT
+DATA_CARPORT_AREA
+DATA_IND_TRS_SPEED
+DATA_CARPORT_LEFT_PORT3
+ICM_TripSinceChrg
+DATA_IND_FCW
+DATA_IND_BSD_LEFT
+DATA_IND_RCTA_RIGHT
+ICM_TripSinceChrg_XPH0
+DATA_IND_TRS_WARN
+DATA_ENGCOST_P100M
+DATA_CARPORT_RIGHT_PORT2
+DATA_IND_TRS_FORB
+DATA_IND_BSD_RIGHT
+DATA_CARPORT_LEFT_PORT1
+DATA_CARPORT_RIGHT_PORT1
+DATA_CARPORT_RIGHT_PORT3
+DATA_TIRE_TEMPERATURE_RF
+DATA_TIRE_STATUS_RB
+DATA_TIRE_PRESSURE_LB
+DATA_TIRE_STATUS_RF
+DATA_TIRE_TEMP_FLG_LB
+DATA_TIRE_TEMPERATURE_RB
+DATA_TIRE_STATUS_LF
+DATA_TIRE_PRESSURE_RF
+DATA_TIRE_TEMPERATURE_LF
+DATA_TIRE_TEMP_FLG_LF
+DATA_TIRE_TEMP_FLG_RF
+DATA_TIRE_PRESSURE_LF
+DATA_TIRE_STATUS_LB
+DATA_TIRE_TEMP_FLG_RB
+DATA_TIRE_PRESSURE_RB
+DATA_TIRE_TEMPERATURE_LB
+DATA_RADAR_SPACING_RF1
+DATA_RADAR_SPACING_LF0
+DATA_RADAR_SPACING_LB0
+DATA_RADAR_SPACING_RB1
+DATA_RADAR_SPACING_LB1
+DATA_RADAR_SPACING_RF0
+DATA_RADAR_SPACING_LF1
+DATA_RADAR_SPACING_RB0
+DATA_EOL_SET_BLIGHT_EN
+DATA_CHARGE_LEFT_TIME
+DATA_CHARGE_VOLTAGE_XPH0
+DATA_BAT_CHARGING_MAX
+DATA_FASTCHARGE_AMPERE_XPH0
+DATA_FASTCHARGE_AMPERE
+DATA_SLOWCHARGE_AMPERE
+DATA_LCD_BLIGHT
+DATA_CHARGE_VOLTAGE
+DATA_BAT_DISCHARGE_MAX
+DATA_SLOWCHARGE_AMPERE_XPH0
+DATA_DISCHARGE_AMPERE
+DATA_DISCHARGE_AMPERE_XPH0
+DATA_CHARGE_LEFT_TIME_XPH0
+DATA_CHARGE_SPEED_FLAG
+ICM_TotalOdometer_XPH0
+DATA_TRIP_TIME_XPH0
+DATA_DRV_VALUE_FLAG
+ICM_TotalOdometer
+DATA_TRIP_DISTANCE_XPH0
+ICM_TotalOdometer_XPH1
+DATA_SCREENCOLORTEST
+DATA_TRIP_DISTANCE_XPH1
+DATA_TRIP_TIME
+DATA_OTA_ECU_SILENT_MODE
+DATA_AVG_VEHELCCONSP
+DATA_TRIP_DISTANCE
+DATA_MRADAR_CALIBRATION_STATE
+DATA_SPEED_XCC
+DATA_ALARM_ID
+DATA_MRADAR_CALIBRATION_FR
+DATA_MRADAR_CALIBRATION_FL
+DATA_MRADAR_CALIBRATION_RL
+DATA_CHARGE_PREPARE_TIME_XPH0
+DATA_IND_XCC
+DATA_autopilot_ID
+HVAC_CDU_CorrectedExterTempSt
+DATA_CHARGE_PREPARE_TIME_XPH1
+DATA_ACC_LEVEL
+DATA_CHARGE_PREPARE_TIME
+DATA_MRADAR_CALIBRATION_RR
+VCU_EVSysReadySt
+DATA_IND_SEATBELT_D
+DATA_IND_BRAKE_ERR
+EPS_WarnLamp
+SRS_2ndMidPsngrSeatBeltSbrWarning
+iBCM_HighBeamOutputSt
+VCU_bHVACElcConspHigh
+iBCM_RLDoorAjarSt
+ESP_ABSFault
+DATA_IND_TURN_RIGHT
+DATA_IND_MAIN_ALARM
+PARK_AVP_LIGHT_ST
+iBCM_RearFogLampOutputSt
+VCU_BMS_SOCLow_Disp
+DATA_IND_BRAKING
+DATA_IND_CHARGEPORT_LEFT_FAULT
+VCU_EMotorSysHotDisp
+VCU_EVErrLampDisp
+DATA_IND_TURN_LEFT
+DATA_IND_SEATBELT_P
+SRS_2ndLeftPsngrSeatBeltSbrWarning
+MRR_FCWWarningSt
+iBCM_TrunkAjarSt
+ESP_ESPPATA
+VCU_ChrgConnSt
+TPMS_SysFaultWarn
+VCU_PowerLimitationDisp
+ESP_APBFuncLamp
+iBCM_RChargerPortSt
+DATA_IND_AUTO_PILOT
+ESP_APBWarningLamp
+iBCM_LChargerPortAjarSt
+SRS_AirbagFaultSt
+VCU_BatHotDisp
+DATA_IND_LOW_BEAM
+iBCM_BonnetAjarSt
+iBCM_RRDoorAjarSt
+DATA_IND_12V_BAT
+VCU_BatCold_Disp
+DATA_IND_CHARGEPORT_RIGHT_FAULT
+VCU_BattFaultDisp
+iBCM_PsngrDoorAjarSt
+iBCM_DriverDoorAjarSt
+VCU_HVCutOffDisp
+DATA_IND_COOLANT_OVERHEAT
+ESP_ESPFault
+DATA_IND_AVH
+SRS_2ndRightPsngrSeatBeltSbrWarning
+DATA_IND_INTL_HIGH_BEAM
+iBCM_ParkingLampOutputSt
+VCU_dstBatDisp_XPH0
+TBOX_CDU_AppointChghour
+CGW_CDU_RMuteButton
+VCU_BMS_SOCDisp
+VCU_VehPwrDisp
+TBOX_CDU_AppointChgmin
+VCU_dstBatDisp
+DATA_VOICE_ID
+DATA_POWER_RANGE_FLAG
+VCU_GearLev
+ESP_VehSpd
+VCU_VehPwrDisp_XPH0
+DATA_CHARGING_STATE
+DATA_WORK_MODE
+B c0
+s2R"
+b$C4 
+S6r&
+<`A
+>2.Q
+P%@Fpg`
+RwbVr
+ftGd$T
+Wfvv
+F4VL
+DXeH
+uJTZ7j
+ld\EL
+n6~UNt^
+Fail to open %s for burn! err = %d
+Pmodem
+basic_string::substr
+%s: __pos (which is %zu) > this->size() (which is %zu)
+file = %s,filename = [%s]
+step = %d, event = %02X,len = %d
+Update  packsize invalid %d
+<<<<ACK mStep = %d
+ACK START
+ACK FIRST PACK
+ACK sendfile end
+Unexcept step %d in ACK!
+<<< C mStep = %d
+file size = %d, package size = %u, package count = %u,
+Unexcept step %d in CRC16!
+<<<<NAK mStep = %d
+Unexcept step %d in NAK!
+Update error! err = %X
+Fail to read file! err = %d
+ret = %d, packno = %u
+N9__gnu_cxx7__mutexE
+St11_Mutex_baseILN9__gnu_cxx12_Lock_policyE1EE
+St16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE1EE
+St19_Sp_make_shared_tag
+St23_Sp_counted_ptr_inplaceIN10McuManager9RouteInfoESaIS1_ELN9__gnu_cxx12_Lock_policyE1EE
+sendCmd
+sendOtaFile
+setBoolProp
+setInt64Prop
+reverseDebugFlag
+onSpecialMessage
+setData
+onMessage
+setInt32Prop
+setCharProp
+setFloatProp
+setDoubleProp
+setStringProp
+McuManager
+~McuManager
+10McuManager
+McuManager
+%s: %s
+burn done!
+burn err!
+/data/Log/mcu
+/data/Log/mcu/log0.dlt
+/data/Log/mcu/log1.dlt
+/data/Log/mcu/log2.dlt
+/data/Log/mcu/log3.dlt
+/data/Log/mcu/log4.dlt
+/data/Log/mcu/log5.dlt
+/data/Log/mcu/log6.dlt
+/data/Log/mcu/log7.dlt
+/data/Log/mcu/log8.dlt
+/data/Log/mcu/log9.dlt
+/data/Log/mcu/log10.dlt
+Fail to open %s to write! err = %d
+Fail to write log file! err = %d
+Need to write %d, but only %d writen!
+/data/Log/mcu/log%d.dlt
+software version %.*s
+XPENGE28%02X%02X%02X%02X%02X%02X%02X%02X
+00000E28%02X%02X%02X%02X%02X%02X%02X%02X
+XPENGD21B%02X%02X%02X%02X%02X%02X%02X%02X
+0000D21B%02X%02X%02X%02X%02X%02X%02X%02X
+%u,%u,%u,%u,%u,%u,%u,%u,%u,%u
+/dev/block/by-name/cfc
+read cfc flash memory[%d] %s
+cfc flash memory the same value
+Fail to write cfc file! err = %d
+write cfc flash memory[%d] %s
+unable to fsync the  cfc block
+cfc_info: %s
+The mcu version is: %s
+The hardwareId is: %s
+Invalid %s msg (%X) len: %d
+%s:%d find prop (%s) route fail.
+%s: [%s:0x%x] from (%d) -> (%d).
+mcu run time = %u.
+SAFM_LAST_OCCUR_ID: %d
+SAFM_LAST_OCCUR_ID: %d, Counter:%d, date:%d-%d-%d %d:%d:%d, Voltage:%d, wakeupResetTime:%d,cp_id: %d
+Invalid %s (%X) len: %d
+allPackLen (%d), packLen (%d), packNum (%d).
+%s: unknow (%s) mid (0x%x).
+%s: delete %s (%d) bytes in RouteInfo.
+onMsg [%s:%x:%d] len (%d):{%s }.
+%s: [%s:%x] len (%d) != (%d) error.
+%s: find RouteInfo fail, msgid (0x%04x) data len (%d).
+setProp [%s:%x:%d] int32 array (%d):{ %s}.
+%s:%d [%s:%x] unsupport type (%d)!
+%s:%d [%s:%x] count (%d) != (%d) error.
+%02x 
+setProp [%s:%x:%d] byte array (%d):{ %s}.
+set cur temp (%d).
+setProp [%s:%x:%d] float array (%d):{ %s}.
+mcuId (%s:0x%x), bdata (%x,%x,%x,%x)
+setProp [%s:%x:%d] double array (%d):{ %s}.
+setProp [%s:%x:%d] string (%lu):{%s}.
+MCU_CANCLE_IIC_MONITOR_ACK
+onMessage
+BaseManager
+~BaseManager
+setDebugFlag
+11BaseManager
+%s [%s] in BaseManager mid (0x%x).
+BaseManager
+%s(), name (%s), id (%d).
+%s [%s] mDebug (%d).
+St22_Maybe_get_result_typeISt7_Mem_fnIM13SomeipManagerFvRKN7vsomeip12ip_address_tEEEvE
+St22_Maybe_get_result_typeISt7_Mem_fnIM13SomeipManagerFviPviEEvE
+St22_Maybe_get_result_typeISt7_Mem_fnIM13SomeipManagerFvN7vsomeip12state_type_eEEEvE
+St22_Maybe_get_result_typeISt7_Mem_fnIM13SomeipManagerFvRKSt10shared_ptrIN7vsomeip7messageEEEEvE
+St22_Maybe_get_result_typeISt7_Mem_fnIM13SomeipManagerFbtbEEvE
+St22_Weak_result_type_implISt7_Mem_fnIM13SomeipManagerFvRKN7vsomeip12ip_address_tEEEE
+St22_Weak_result_type_implISt7_Mem_fnIM13SomeipManagerFviPviEEE
+St22_Weak_result_type_implISt7_Mem_fnIM13SomeipManagerFvN7vsomeip12state_type_eEEEE
+St22_Weak_result_type_implISt7_Mem_fnIM13SomeipManagerFvRKSt10shared_ptrIN7vsomeip7messageEEEEE
+St22_Weak_result_type_implISt7_Mem_fnIM13SomeipManagerFbtbEEE
+St17_Weak_result_typeISt7_Mem_fnIM13SomeipManagerFvRKN7vsomeip12ip_address_tEEEE
+St17_Weak_result_typeISt7_Mem_fnIM13SomeipManagerFviPviEEE
+St17_Weak_result_typeISt7_Mem_fnIM13SomeipManagerFvN7vsomeip12state_type_eEEEE
+St17_Weak_result_typeISt7_Mem_fnIM13SomeipManagerFvRKSt10shared_ptrIN7vsomeip7messageEEEEE
+St17_Weak_result_typeISt7_Mem_fnIM13SomeipManagerFbtbEEE
+St5_BindIFSt7_Mem_fnIM13SomeipManagerFviPviEEPS1_St12_PlaceholderILi1EES7_ILi2EES7_ILi3EEEE
+St5_BindIFSt7_Mem_fnIM13SomeipManagerFvN7vsomeip12state_type_eEEEPS1_St12_PlaceholderILi1EEEE
+St5_BindIFSt7_Mem_fnIM13SomeipManagerFvRKSt10shared_ptrIN7vsomeip7messageEEEEPS1_St12_PlaceholderILi1EEEE
+St5_BindIFSt7_Mem_fnIM13SomeipManagerFbtbEEPS1_St12_PlaceholderILi1EES6_ILi2EEEE
+St5_BindIFSt7_Mem_fnIM13SomeipManagerFvRKN7vsomeip12ip_address_tEEEPS1_St12_PlaceholderILi1EEEE
+doWork
+subscription_handler
+subscription_handler_udp
+onAvailabilityCbk
+onClientMessage
+onServiceMessage
+setBoolProp
+setInt32Prop
+setCharProp
+setInt64Prop
+setFloatProp
+setDoubleProp
+toSetEventId
+toGetEventId
+setStringProp
+someipWork
+SomeipManager
+~SomeipManager
+13SomeipManager
+### reboot address is [xxx].
+SomeipManager
+On State Cbk, state (%hhu).
+Start To Offer TCP Service (%x:%x).
+Start To Offer UDP Service (%x:%x).
+Fail to create work thread!
+%s func(): use someip service-discovery update in 2020-07-08.
+Fail to create somkip work thread!
+POLL_ERROR.
+Looper::pollOnce() returned unknown status %d.
+subscribed
+unsubscribed
+%s client (0x%x) [%s]!
+On Availability Cbk, RT (%ld), Service (%X.%X), Is_available (%d).
+%s: find client (%x:%x) fail.
+%s: find handler (%x:%x:%s) fail.
+SERVICE
+CLIENT
+%s:%d prop (%s) fail, handler (%p).
+%s:%d prop (%s) fail, handler (%p), count (%d).
+%s:%d prop (%s) fail, client (%p), count (%d).
+%s:%d prop (%s) fail, handler (%p), size (%lu).
+Unknow Message %d!
+172.20.1.40
+add SomeipClient (%s) success.
+CDU_ICM_Heartbeat
+CDU_ICM_TimeFormat
+CDU_ICM_Brightness
+CDU_ICM_AlarmVolume
+CDU_ICM_SpeedLimitWarnValue
+CDU_ICM_SpeedLimitWarnSwitch
+CDU_ICM_Reset_TripA
+CDU_ICM_Reset_TripB
+CDU_ICM_Update_Transfer
+CDU_ICM_Update_Req
+CDU_ICM_FeedBack
+CDU_ICM_Sync
+CDU_ICM_OsdShow
+CDU_ICM_InfoCardAdd
+CDU_ICM_InfoCardUpdate
+CDU_ICM_InfoCardRemove
+CDU_ICM_AllCardsRefresh
+CDU_ICM_InfoFlowMsg
+CDU_ICM_WheelKey
+CDU_ICM_SyncTime
+CDU_ICM_Nav_Info
+CDU_ICM_Account
+CDU_ICM_Weather
+CDU_ICM_Bt_Phone
+CDU_ICM_FaceInfo
+CDU_ICM_Nav_Picture
+CDU_ICM_Music
+CDU_ICM_Net_Radio
+ICM_CDU_Heartbeat_Ack
+ICM_CDU_TimeFormat
+ICM_CDU_Brightness
+ICM_CDU_SpeedLimitWarnValue
+ICM_CDU_AlarmVolume
+ICM_CDU_SpeedLimitWarnSwitch
+ICM_CDU_Update_Progress
+ICM_CDU_Update_Result
+ICM_CDU_FeedBack
+ICM_CDU_Sync
+ICM_CDU_AllCardsRefresh
+ICM_CDU_InfoFlowMsg
+ICM_CDU_CarSetting
+ICM_CDU_Need_Navi
+ICM_CDU_Transfer_Rep
+172.20.1.45
+add addSomeipService (%s) success.
+ICM_CDU_All_Lamp_State_Info
+ICM_CDU_Log_Compress_Information
+CDU_ICM_All_Lamp_State_Req
+CDU_ICM_Left_Menu_Control
+CDU_ICM_Right_Menu_Control
+CDU_ICM_Charging_duration
+CDU_ICM_Log_Compress_Req
+CDU_ICM_RANDIS_DISPLAY_TYPE
+CDU_ICM_Locale_Language
+CDU_ICM_change_mileage
+# add addSomeipServiceUdp (%s) success.
+ICM_CDU_Udp_Heartbeat_Ack
+ICM_CDU_Udp_TimeFormat
+ICM_CDU_Udp_Brightness
+ICM_CDU_Udp_SpeedLimitWarnValue
+ICM_CDU_Udp_SpeedLimitWarnSwitch
+ICM_CDU_Udp_AlarmVolume
+ICM_CDU_Udp_Need_Navi
+ICM_CDU_Udp_Crash_Info
+ICM_CDU_Udp_Version_Info
+ICM_CDU_Udp_Diagnosis_Info
+CDU_ICM_Udp_Heartbeat
+CDU_ICM_Udp_TimeFormat
+CDU_ICM_Udp_Brightness
+CDU_ICM_Udp_AlarmVolume
+CDU_ICM_Udp_SpeedLimitWarnValue
+CDU_ICM_Udp_SpeedLimitWarnSwitch
+CDU_ICM_Udp_Account
+CDU_ICM_Udp_Weather
+CDU_ICM_Udp_SyncTime
+CDU_ICM_Udp_Sync_Daynight_Mode
+CDU_ICM_Udp_Local_Language
+SomeipWorkThread
+%s:%d app_tcp Couldn't initialize application.
+onMessage
+~SomeipHandler
+setDebugFlag
+pingAddress
+SomeipHandler
+13SomeipHandler
+[%s]: client (0x%x), subscribed (%d).
+SomeipHandler
+%s [%s] in SomeipHandler.
+request_no_return
+request_ack
+request_no_return_ack
+notify_ack
+responde
+responde_ack
+error_ack
+mt_unknown
+error_unknow
+UNKNOWN
+/proc/net/tcp
+/proc/net/udp
+'%s'
+ %d: %8x%8x%8x%8x:%x %8x%8x%8x%8x:%x %x %x:%x %*X:%*X %*X %d %*d %ld
+ %d: %x:%x %x:%x %x %x:%x %*X:%*X %*X %d %*d %ld
+%-6s%6d%7d %*.*s %*.*s %-11s
+%s       SYN_SENT
+%s       ESTABLISHED
+tcp        0      0 %s       0.0.0.0:*               LISTEN
+udp        0      0 %s           0.0.0.0:*
+[%s:%s] -> {%s}.
+client
+%s: ip [%s] socket error.
+%s: ip [%s] setsockopt error.
+%s: ip [%s] sendto error.
+%s: ip [%s] recvfrom error.
+sysResetPhy start to run [%s].
+/root/reset_phy.sh &
+sysResetPhy cmd [%s] ok.
+sysResetPhy cmd [%s] fail.
+%s(), name (%s), (%x:%x:%x).
+ESTABLISHED
+SYN_SENT
+SYN_RECV
+FIN_WAIT1
+FIN_WAIT2
+TIME_WAIT
+CLOSE
+CLOSE_WAIT
+LAST_ACK
+LISTEN
+CLOSING
+St23_Sp_counted_ptr_inplaceIN13SomeipService9RouteInfoESaIS1_ELN9__gnu_cxx12_Lock_policyE1EE
+sendResponse
+doDebug
+sendMessage
+sendMessage
+sendMessage
+sendMessage
+SomeipService
+~SomeipService
+sendMessage
+13SomeipService
+## vehicle power off! in [%s].
+SomeipService
+## vehicle local IG ON! in [%s].
+subscribe
+unsubscribe
+# [%s:%x:%x] be [%s] status! time [%s], runtime (%lld), mTickCheckCount (%lu).
+%s:%d
+restart offer service(%x:%x).
+0.0.0.0
+172.20.1.33
+# client [%s] ping GW (%s) successed.
+# ping [%s] (%s) successed.
+# ping [%s] (%s) Failed.
+# client [%s] ping GW (%s) Failed.
+%s: app is null
+%s: rtm_ is null
+%s: manager is null
+[%s] reverse Sender's all RouteInfo debug flag.
+[%s] reverse Receiver's all RouteInfo debug flag.
+[%s] %s: not support value (%d).
+[%s] dump mReceiver route.size (%lu): 
+     [method:prop:d_type:m_type:name:log_interval:callcnt:bytecnt]
+     receiver [%04x:%x:%d:%s:%s:%lu:%llu:%llu].
+     sender [%x:%04x:%d:%s:%s:%lu:%llu:%llu].
+[%s] dump mSender route.size (%lu): 
+     [prop:method:d_type:m_type:name:log_interval:callcnt:bytecnt]
+{ true }
+{ false }
+{ ... }
+%.*s...
+%.*s
+{ hex... }
+<= onMesge [%s] [%04x:%s:%d](%llu), (%lu):%s, [%d:%s].
+[%s] message (%s) return (%d) error, drop message!
+[%s] message (%s) type error, drop message!
+[%s] TYPE_INT_ARRAY len (%d) error.
+[%s] TYPE_FLOAT_ARRAY len (%d) error.
+[%s] Invalid Type (%d), method (%x).
+%Y-%m-%d %H:%M:%S
+## [%s] _subscribed is (%d) in [%s].
+%s: prop (0x%x) not found error (%d)!
+send to [%s] (%x:%s:%d:%lu) fail, mSubscribe (%d), lost time (%s).
+=> send to [%s] [%04x:%s:%d]:(%llu) str (%lu):%.*s%s.
+send to [%s] (%x:%s:%d:%d) fail, mSubscribe (%d), lost time (%s).
+=> send to [%s] [%04x:%s:%d]:(%llu) bool val (%d).
+=> send to [%s] [%04x:%s:%d]:(%llu) int array (%d):{ %s}.
+vector::_M_emplace_back_aux
+=> send to [%s] [%04x:%s:%d]:(%llu) byte array len (%d).
+SomeipService::%s(%s).
+SomeipService::%s(%s)
+vector::_M_range_insert
+=> send to [%s] [%04x:%s:%d]:(%llu), --> (%d):%s.
+St22_Maybe_get_result_typeISt7_Mem_fnIM12SomeipClientFvtttttEEvE
+St22_Maybe_get_result_typeISt7_Mem_fnIM12SomeipClientFvtEEvE
+St22_Weak_result_type_implISt7_Mem_fnIM12SomeipClientFvtEEE
+St22_Weak_result_type_implISt7_Mem_fnIM12SomeipClientFvtttttEEE
+St17_Weak_result_typeISt7_Mem_fnIM12SomeipClientFvtEEE
+St17_Weak_result_typeISt7_Mem_fnIM12SomeipClientFvtttttEEE
+St5_BindIFSt7_Mem_fnIM12SomeipClientFvtttttEEPS1_St12_PlaceholderILi1EES6_ILi2EES6_ILi3EES6_ILi4EES6_ILi5EEEE
+St5_BindIFSt7_Mem_fnIM12SomeipClientFvtEEPS1_St12_PlaceholderILi1EEEE
+St23_Sp_counted_ptr_inplaceIN12SomeipClient9RouteInfoESaIS1_ELN9__gnu_cxx12_Lock_policyE1EE
+onSubscriptionError
+setConnectStatus
+onAvailabilityCbk
+handleTickAck
+handleTickSend
+handleSubscribeStatus
+sendMessage
+sendMessage
+sendMessage
+onSubscriptionStatusChanged
+SomeipClient
+~SomeipClient
+addSenderRoute
+addReceiverRoute
+doDebug
+sendMessage
+12SomeipClient
+[%s] %s: code (0x%x).
+SomeipClient
+# client [%s] ping destination GW (%s) successed.
+# ping destination [%s] (%s) successed.
+# ping destination [%s] (%s) Failed.
+# client [%s] ping destination GW (%s) Failed.
+[%s] %s: set mSubscribe (%d) to (%d), mConnectLostCnt (%llu).
+[%s] change status in (%ld), (%s).
+[%s] %s: service (%x.%x), available (%d).
+# receive [%s] tick_ack (%d), mTickCount (%d), on subscribe time [%s].
+[%s] %s: mTickAckFlag (%d) warnning!
+receive [%s] tick_ack(%d) != mTickCount(%d) error.
+connect
+disconnect
+# [%s] in [%s] status! time [%s], runtime (%lld), mTickCheckCount (%lu).
+[%s] reset someip client connection.
+# [%s] tick ack timeout! now (%lld), mSendClk (%lld), mRecvClk (%lld), reconnect service (%x.%x).
+[%s] %s: mSubscribe is false.
+[%s] %s: success (%d), mAvailable (%d).
+[%s] %s: subscribe all event success.
+[%s] unknow method id (%x) from service (%x.%x).
+[%s] subscribe event not done, drop message!
+send to [%s] (%x:%s:%d:%d) fail, lost time (%s).
+send to [%s] (%x:%s:%d:%lu) fail, lost time (%s).
+[%s] %s: Service (%x:%x), Group (%x), Event (%x), Error (%d).
+# this (%p) != client pointer (%p) warning!
+[%s] unsupport method (%x) in mReceiver.
+SomeipClient::%s(%s), pointer (%p)
+%s: [%s] route (%x:%04x:%d:%s).
+%s: [%s] route (%04x:%x:%d:%s).
+[%s] set mRecvClk to (%lld).
+[%s] service(%x.%x) is_available (%d).
+[%s] release_service().
+[%s] request_service().
+[%s] notifyToSubscribe().
+[%s] notifyToPing().
+[%s] handleTickSend().
+[%s] stopTick().
+[%s] notifyToDumpRoute().
+[%s] getAddressStatus().
+[%s] pingDestinationLinks().
+[%s] unsupport method (%x) to Subscribe.
+## [%s] subscribe service (%X.%X), Event Group (%X).
+{"SyncMode":"ProcessId","msgId":"","SyncProgress":%d}
+     receiver [%04x:%x:%d:%s:%s:%u:%llu:%llu].
+     sender [%x:%04x:%d:%s:%s:%u:%llu:%llu].
+could not enable core file generation
+echo -n 0 > /proc/%d/coredump_filter
+-------------- exec command: %s  ---------------
+sendsocket
+init
+N5xpeng23VehicleDebugToolServiceE
+[%s %d]~~~~~~~~~~~~~ exit receive loop.
+sendsocket socket error: %s errno :%d
+Fail to create Communication thread!
+error msg_type %d
+prop(0x%X) outStatus = %d
+error msg.msg_type %d
+socket() fail, listenfd (%d).
+setsockopt SO_REUSEADDR fail [%s:%d].
+bind() fail [%s:%d], listenfd (%d).
+Please wait for the client information.
+accpet socket error [%s:%d].
+SharedMemeryManager
+~SharedMemeryManager
+init
+SharedMemeryManager
+NSt6thread10_Impl_baseE
+NSt6thread5_ImplISt12_Bind_simpleIFSt7_Mem_fnIM16DiagnosisManagerFvvEEPS3_EEEE
+St23_Sp_counted_ptr_inplaceINSt6thread5_ImplISt12_Bind_simpleIFSt7_Mem_fnIM16DiagnosisManagerFvvEEPS4_EEEESaISB_ELN9__gnu_cxx12_Lock_policyE1EE
+checkEmmcState
+openNetlinkSocket
+openNetlinkSocket
+~DiagnosisManager
+receiveIpcMessage
+handleDiagnosisEvent
+DiagnosisManager
+@A16DiagnosisManager
+module
+errorcode
+errormsg
+Failed to print monitor.
+DiagnosisManager
+%s enter
+emmctool
+%s(): Unable to create uevent socket(%d)
+%s(): Unable to set uevent socket SO_PASSCRED option
+%s(): Unable to bind uevent socket
+%s(): create netlink client %d (fd: %d)
+%s() allocate memory fail
+%s(): Unable to set uevent socket SO_RCVBUF/SO_RCVBUFFORCE option
+5.0.1
+icm sw version: %s
+reset MCU
+Fail to create DiagnosisManager thread!
+not connected
+cdu is %s
+ReceiveIpcMsg
+receive ipc Message
+msgget failed, error %d:%s!
+msgget %d[%#x]
+msgrcv %s
+tas2505
+audio blocked
+%s[%d]: call createDiagnsisJsonMsg failed
+msgrcv failed, error %d:%s!
+stoi
+%s: recvmsg flag[%s] cmd[%d] errorState[%d] module[%d] error[%d] param[%s]
+map::at
+%s, unsupported cmd[%d] or errorState[%d]
+read diagnosis netlink socket fd (%d) error %d:%s!
+Diagnosis netlink socket Error! fd (%d).
+Received spurious callback for unhandled poll event. events= 0x%x
+PhyManager
+~PhyManager
+PhyManager
+phytool get sqi
+phytool get link_stat
+RunCommandUtils
+Running cmd returned error: %s
+no tool to run
+running cmd not terminated normally: %d
+Failed to run cmd: %s
+N13HealthMonitor7MonitorE
+St23_Sp_counted_ptr_inplaceIN13HealthMonitor15DirectorMonitorESaIS1_ELN9__gnu_cxx12_Lock_policyE1EE
+St23_Sp_counted_ptr_inplaceIN13HealthMonitor13LooperMonitorESaIS1_ELN9__gnu_cxx12_Lock_policyE1EE
+addMonitor
+addLooper
+N13HealthMonitor13LooperMonitorE
+N13HealthMonitor15DirectorMonitorE
+*ZN13HealthMonitor27startMonitorHealthDelayedMsExEUlvE_
+*ZN13HealthMonitor13LooperMonitor12startMonitorEvEUlvE_
+Stop sending the signal to the init process!
+HealthMonitor
+thread %s is unhealthy!
+%s name: %s id: %zu
+count = %d
+CountDownLatch
+u%04x
+%1.15g
+%1.17g
+%i.%i.%i
+St22_Maybe_get_result_typeISt7_Mem_fnIMN5xpeng11DBusManagerEFvvEEvE
+St22_Maybe_get_result_typeISt7_Mem_fnIMN5xpeng11DBusManagerEFiP20Vehicle_Prop_Value_tEEvE
+St22_Weak_result_type_implISt7_Mem_fnIMN5xpeng11DBusManagerEFvvEEE
+St22_Weak_result_type_implISt7_Mem_fnIMN5xpeng11DBusManagerEFiP20Vehicle_Prop_Value_tEEE
+St17_Weak_result_typeISt7_Mem_fnIMN5xpeng11DBusManagerEFvvEEE
+St17_Weak_result_typeISt7_Mem_fnIMN5xpeng11DBusManagerEFiP20Vehicle_Prop_Value_tEEE
+11Monitorable
+St5_BindIFSt7_Mem_fnIMN5xpeng11DBusManagerEFiP20Vehicle_Prop_Value_tEEPS2_St12_PlaceholderILi1EEEE
+St5_BindIFSt7_Mem_fnIMN5xpeng11DBusManagerEFvvEEPS2_EE
+N5xpeng11DBusManagerE
+prop data is null
+dbus_bif
+-----> double vec property %X = (%d) %s
+-----> bytes property %X = (%d) %s
+-----> float vec property %X = (%d) %s
+-----> int64 vec property %X = (%d) %s
+-----> int vec property %X = (%d) %s
+-----> bool property %X = %d
+-----> int property %X = %d
+-----> int64 property %X = %lld
+-----> float property %X = %f
+-----> double property %X = %f
+-----> string property %X = %s
+Entry
+init
+dbus_cluster
+startMonitorDBusClusterThread
+gdbus_to_dbusbif_init
+create_channels
+_deal_cluster_carservice_changed_data
+deal_carservice_data
+_set_data
+%s():%d Could not write wake signal, errno=%d
+%s():%d XpGDBusServer # xp_service_idc_cluster_proxy_create() fail, exit!!!
+%s():%d Cannot create pipe %s
+%s():%d Could not make wake read pipe non-blocking.  errno=%d
+%s():%d Could not make wake write pipe non-blocking.  errno=%d
+%s():%d property: HOST_MCU_ESET_TIME_STATE is not readable
+%s():%d property: HOST_MCU_ESET_OTA_STATE is not readable
+%s():%d property: HOST_MCU_ESET_HMI_DSP_STATE is not readable
+%s():%d property: HOST_MCU_ESET_TIME is not readable
+%s():%d property: HOST_MCU_ESET_RESET_TRIPA is not readable
+%s():%d property: HOST_MCU_ESET_RESET_TRIPB is not readable
+%s():%d property: HOST_MCU_ESET_FORCE_POWER_OFF is not readable
+%s():%d property: HOST_MCU_ESET_REBOOT_RSP is not readable
+%s():%d property: HOST_MCU_ESET_LCD_PANEL_ERROR is not readable
+%s():%d property: HOST_MCU_ESET_LCD_BL_ERROR is not readable
+%s():%d property: HOST_MCU_ESET_FPD_ERROR is not readable
+%s():%d property: HOST_MCU_ESET_LCD_BUCK_ERROR is not readable
+%s():%d property: HOST_MCU_ESET_VOL_LOW_ERROR is not readable
+%s():%d property: HOST_MCU_ESET_VOL_HIGH_ERROR is not readable
+%s():%d property: HOST_MCU_ESET_LCD_CABLE_ERROR is not readable
+%s():%d property: HOST_MCU_ESET_LCD_MCU_ERROR is not readable
+%s():%d property: HOST_MCU_ESET_LCD_TI_ERROR is not readable
+%s():%d property: HOST_MCU_ESET_EMMC_STATE is not readable
+%s():%d property: HOST_MCU_ESET_PHY_STATE is not readable
+%s():%d property: HOST_MCU_ESET_LVDS_STATE is not readable
+%s():%d property: HOST_MCU_ESET_PARTITION_STATE is not readable
+%s():%d property: HOST_MCU_ESET_ICM_VERSION is not readable
+%s():%d property: HOST_ICM_UPDATE_PROGRESS is not readable
+%s():%d property: HOST_ICM_UPDATE_RESULT is not readable
+%s():%d property: HOST_ICM_CRASH_INFO is not readable
+%s():%d property: HOST_ICM_VERSION_INFO is not readable
+%s():%d property: HOST_ICM_DIAGNOSIS_INFO is not readable
+%s():%d property: HOST_ICM_ALL_LAMP_STATE_INFO is not readable
+%s():%d property: HOST_MCU_UPGRADE_NOTIFY is not readable
+%s():%d property: HOST_MCU_ABNORMAL_RECOVERY_REQ is not readable
+%s():%d property: HOST_MCU_SYSTEM_RESET_REQ is not readable
+%s():%d property: HOST_MCU_UPGRADE_BOOT_VER_NOTIFY is not readable
+%s():%d Unsupported property: %#X
+%s():%d property id: %#X is unsupported
+_cluster_service_on_name_acquired
+_cluster_service_on_name_lost
+_cluster_service_thread
+_cluster_service_on_bus_acquired
+_service_on_method_get_host_mcu_upgrade_boot_ver_ack
+_service_on_method_get_host_mcu_system_reset_ack
+_service_on_method_get_host_mcu_abnormal_recovery_req_ack
+_service_on_method_get_host_mcu_upgrade_ack
+_service_on_method_get_host_mcu_soft_version
+_service_on_method_get_host_debug_prop_logctrl
+_service_on_method_get_host_icm_charging_duration
+_service_on_method_get_host_icm_change_mileage_double
+_service_on_method_get_host_icm_locale_language
+_service_on_method_get_host_icm_randis_display_type
+_service_on_method_get_host_icm_log_compress
+_service_on_method_get_host_icm_right_menu_control
+_service_on_method_get_host_icm_left_menu_control
+_service_on_method_get_host_icm_all_lamp_state_req
+_service_on_method_get_host_icm_tcp_subcribe
+_service_on_method_get_host_icm_face_info
+_service_on_method_get_host_icm_bluetooth_phone
+_service_on_method_get_host_icm_weather
+_service_on_method_get_host_icm_account
+_service_on_method_get_host_icm_sync_time
+_service_on_method_get_host_icm_wheel_key
+_service_on_method_get_host_icm_infocard_remove
+_service_on_method_get_host_icm_infocard_update
+_service_on_method_get_host_icm_infocard_add
+_service_on_method_get_host_icm_osdshow
+_service_on_method_get_host_icm_update_trans
+_service_on_method_get_host_icm_reset_tripb_sp
+_service_on_method_get_host_icm_reset_tripa_sp
+_service_on_method_get_host_icm_update_req
+_service_on_method_get_host_icm_neednavi
+_service_on_method_get_host_icm_carsetting
+_service_on_method_get_host_icm_infoflow_msg
+_service_on_method_get_host_icm_allcard_refrsh
+_service_on_method_get_host_icm_sync_signal
+_service_on_method_get_host_icm_feedback_signal
+_service_on_method_get_host_icm_speed_limit_warning_switch_sp
+_service_on_method_get_host_icm_alarm_volume_sp
+_service_on_method_get_host_icm_speed_limit_warning_value_sp
+_service_on_method_get_host_icm_brightness_sp
+_service_on_method_get_host_icm_time_format_sp
+_service_on_method_get_host_lane_cone_5_info
+_service_on_method_get_host_lane_cone_4_info
+_service_on_method_get_host_lane_cone_3_info
+_service_on_method_get_host_lane_cone_2_info
+_service_on_method_get_host_lane_cone_1_info
+_service_on_method_get_host_vehicle_6_sd_info
+_service_on_method_get_host_vehicle_5_sd_info
+_service_on_method_get_host_vehicle_4_sd_info
+_service_on_method_get_host_vehicle_3_sd_info
+_service_on_method_get_host_vehicle_2_sd_info
+_service_on_method_get_host_vehicle_1_sd_info
+_service_on_method_get_host_echarge_voltage_level
+_service_on_method_get_host_xpu_spd_lmt_type
+_service_on_method_get_host_traffic_lights_st
+_service_on_method_get_host_randis_mode
+_service_on_method_get_host_vcu_drive_mode
+_service_on_method_get_host_islc_st
+_service_on_method_get_host_etpms_multi_status_rb
+_service_on_method_get_host_etpms_multi_status_lb
+_service_on_method_get_host_etpms_multi_status_rf
+_service_on_method_get_host_etpms_multi_status_lf
+_service_on_method_get_host_acl_warning_light_status
+_service_on_method_get_host_lcc_warning_light_status
+_service_on_method_get_host_vehicle_color_config
+_service_on_method_get_host_turn_light_type
+_service_on_method_get_host_fcw_aeb_close_status
+_service_on_method_get_host_ngp_light_status
+_service_on_method_get_host_trip_distance_time_2
+_service_on_method_get_host_uart_i2c_abnormal_status
+_service_on_method_get_host_eforward_vehicle_type_8
+_service_on_method_get_host_eforward_vehicle_color_8
+_service_on_method_get_host_eforward_vehicle_y_8
+_service_on_method_get_host_eforward_vehicle_x_8
+_service_on_method_get_host_eforward_vehicle_angle_8
+_service_on_method_get_host_eforward_vehicle_type_7
+_service_on_method_get_host_eforward_vehicle_color_7
+_service_on_method_get_host_eforward_vehicle_y_7
+_service_on_method_get_host_eforward_vehicle_x_7
+_service_on_method_get_host_eforward_vehicle_angle_7
+_service_on_method_get_host_eforward_vehicle_type_10
+_service_on_method_get_host_eforward_vehicle_color_10
+_service_on_method_get_host_eforward_vehicle_y_10
+_service_on_method_get_host_eforward_vehicle_x_10
+_service_on_method_get_host_eforward_vehicle_angle_10
+_service_on_method_get_host_eforward_vehicle_type_9
+_service_on_method_get_host_eforward_vehicle_color_9
+_service_on_method_get_host_eforward_vehicle_y_9
+_service_on_method_get_host_eforward_vehicle_x_9
+_service_on_method_get_host_eforward_vehicle_angle_9
+_service_on_method_get_host_epartition_request
+_service_on_method_get_host_vehicle_type
+_service_on_method_get_host_edate_sec
+_service_on_method_get_host_edate_min
+_service_on_method_get_host_edate_hour
+_service_on_method_get_host_edate_month
+_service_on_method_get_host_edate_day
+_service_on_method_get_host_edate_year
+_service_on_method_get_host_eforward_vehicle_type_11
+_service_on_method_get_host_eforward_vehicle_color_11
+_service_on_method_get_host_eforward_vehicle_y_11
+_service_on_method_get_host_eforward_vehicle_x_11
+_service_on_method_get_host_eforward_vehicle_angle_11
+_service_on_method_get_host_espeed_limit
+_service_on_method_get_host_esensor_errorinfo_id
+_service_on_method_get_host_ecamera_svcam_state
+_service_on_method_get_host_ecamera_svcam_state_rear
+_service_on_method_get_host_ecamera_svcam_state_r
+_service_on_method_get_host_ecamera_svcam_state_l
+_service_on_method_get_host_ecamera_svcam_state_fcd
+_service_on_method_get_host_ecamera_dam_state_fli
+_service_on_method_get_host_ecamera_narrow_state_fcu
+_service_on_method_get_host_ecamera_main_state_fcu
+_service_on_method_get_host_ecamera_fisheye_status_fcu
+_service_on_method_get_host_ecamera_vpm_status_fcu
+_service_on_method_get_host_emwradar_status_rcr
+_service_on_method_get_host_emwradar_status_rcl
+_service_on_method_get_host_emwradar_status_fr
+_service_on_method_get_host_emwradar_status_fl
+_service_on_method_get_host_emwradar_status_fc
+_service_on_method_get_host_emwradar_status
+_service_on_method_get_host_euradar_status_rsr
+_service_on_method_get_host_euradar_status_rsl
+_service_on_method_get_host_euradar_status_ror
+_service_on_method_get_host_euradar_status_rcr
+_service_on_method_get_host_euradar_status_rcl
+_service_on_method_get_host_euradar_status_rol
+_service_on_method_get_host_euradar_status_fsr
+_service_on_method_get_host_euradar_status_fsl
+_service_on_method_get_host_euradar_status_for
+_service_on_method_get_host_euradar_status_fcr
+_service_on_method_get_host_euradar_status_fcl
+_service_on_method_get_host_euradar_status_fol
+_service_on_method_get_host_euradar_status
+_service_on_method_get_host_esensor_error_info
+_service_on_method_get_host_surplus_usable_power
+_service_on_method_get_host_eac_temp_value
+_service_on_method_get_host_emcu_reboot_req
+_service_on_method_get_host_eusb_update_flag
+_service_on_method_get_host_etmps_temp_warn
+_service_on_method_get_host_ecar_type_config
+_service_on_method_get_host_ecar_color_config
+_service_on_method_get_host_eac_open_state
+_service_on_method_get_host_eauto_swing_state
+_service_on_method_get_host_eseat_wind_level
+_service_on_method_get_host_ewind_mode_state
+_service_on_method_get_host_eac_wind_level
+_service_on_method_get_host_espeaker_type
+_service_on_method_get_host_egear_n_remind
+_service_on_method_get_host_emcu_backlight_state
+_service_on_method_get_host_bcm_seat_heat_level
+_service_on_method_get_host_eradar_level_fsr
+_service_on_method_get_host_eradar_level_fsl
+_service_on_method_get_host_eradar_rdistance
+_service_on_method_get_host_eradar_fdistance
+_service_on_method_get_host_elane_order_param_1
+_service_on_method_get_host_elane_order_param_2
+_service_on_method_get_host_elane_order_param_3
+_service_on_method_get_host_alc_lane_yaw
+_service_on_method_get_host_scu_nedc_status
+_service_on_method_get_host_eradar_level_rr
+_service_on_method_get_host_eradar_level_rcr
+_service_on_method_get_host_eradar_level_rcl
+_service_on_method_get_host_eradar_level_rl
+_service_on_method_get_host_eradar_level_fr
+_service_on_method_get_host_eradar_level_fcr
+_service_on_method_get_host_eradar_level_fcl
+_service_on_method_get_host_eradar_level_fl
+_service_on_method_get_host_eradar_level_rsr
+_service_on_method_get_host_eradar_level_rsl
+_service_on_method_get_host_eradar_display_state
+_service_on_method_get_host_eradar_rsr
+_service_on_method_get_host_eradar_rsl
+_service_on_method_get_host_eradar_fsr
+_service_on_method_get_host_eradar_fsl
+_service_on_method_get_host_estart_lane_line_rr
+_service_on_method_get_host_estart_lane_line_ll
+_service_on_method_get_host_estart_lane_line_r
+_service_on_method_get_host_estart_lane_line_l
+_service_on_method_get_host_elane_line_rr
+_service_on_method_get_host_elane_line_ll
+_service_on_method_get_host_elane_line_r
+_service_on_method_get_host_elane_line_l
+_service_on_method_get_host_elane_param_rr
+_service_on_method_get_host_elane_param_r
+_service_on_method_get_host_elane_param_l
+_service_on_method_get_host_elane_param_ll
+_service_on_method_get_host_ealc_target_y
+_service_on_method_get_host_ealc_target_x
+_service_on_method_get_host_elane_status_r
+_service_on_method_get_host_elane_status_l
+_service_on_method_get_host_elane_status_rr
+_service_on_method_get_host_elane_status_ll
+_service_on_method_get_host_eparking_r3
+_service_on_method_get_host_eparking_r2
+_service_on_method_get_host_eparking_r1
+_service_on_method_get_host_eparking_l3
+_service_on_method_get_host_eparking_l2
+_service_on_method_get_host_eparking_l1
+_service_on_method_get_host_eparking_area
+_service_on_method_get_host_eind_rcw
+_service_on_method_get_host_icm_trip_sinc_chrg
+_service_on_method_get_host_eengcost_p100m
+_service_on_method_get_host_eind_rcta_right
+_service_on_method_get_host_eind_rcta_left
+_service_on_method_get_host_eind_rbsd
+_service_on_method_get_host_eind_lbsd
+_service_on_method_get_host_eind_fcw_aeb
+_service_on_method_get_host_eind_trs_speed
+_service_on_method_get_host_eind_trs_warn
+_service_on_method_get_host_eind_alc
+_service_on_method_get_host_eind_trs_forb
+_service_on_method_get_host_etpms_temperature_rb
+_service_on_method_get_host_etpms_temperature_lb
+_service_on_method_get_host_etpms_temperature_rf
+_service_on_method_get_host_etpms_temperature_lf
+_service_on_method_get_host_etpms_status_rb
+_service_on_method_get_host_etpms_temp_flg_rb
+_service_on_method_get_host_etpms_pressure_rb
+_service_on_method_get_host_etpms_status_lb
+_service_on_method_get_host_etpms_temp_flg_lb
+_service_on_method_get_host_etpms_pressure_lb
+_service_on_method_get_host_etpms_status_rf
+_service_on_method_get_host_etpms_temp_flg_rf
+_service_on_method_get_host_etpms_pressure_rf
+_service_on_method_get_host_etpms_status_lf
+_service_on_method_get_host_etpms_temp_flg_lf
+_service_on_method_get_host_etpms_pressure_lf
+_service_on_method_get_host_eradar_spacing_ror
+_service_on_method_get_host_eradar_spacing_rcr
+_service_on_method_get_host_eradar_spacing_rcl
+_service_on_method_get_host_eradar_spacing_rol
+_service_on_method_get_host_eradar_spacing_for
+_service_on_method_get_host_eradar_spacing_fcr
+_service_on_method_get_host_eradar_spacing_fcl
+_service_on_method_get_host_eradar_spacing_fol
+_service_on_method_get_host_echarge_limit_time
+_service_on_method_get_host_echarge_voltage
+_service_on_method_get_host_echarge_cur
+_service_on_method_get_host_echarge_status
+_service_on_method_get_host_esocmaxchg_pwlimit
+_service_on_method_get_host_elcd_bl_en_status
+_service_on_method_get_host_elcd_blight
+_service_on_method_get_host_eavg_vehelcconsp
+_service_on_method_get_host_escreen_colortest
+_service_on_method_get_host_trip_distance_time
+_service_on_method_get_host_eota_ecu_silent_mode
+_service_on_method_get_host_icm_total_odometer
+_service_on_method_get_host_espeed_xcc
+_service_on_method_get_host_ealarm_id
+_service_on_method_get_host_env_outside_temperature
+_service_on_method_get_host_ebat_prepare_time
+_service_on_method_get_host_mcu_eautopilot_tips_id
+_service_on_method_get_host_mcu_eacc_cc_light
+_service_on_method_get_host_mcu_euradar_cal_fr
+_service_on_method_get_host_mcu_euradar_cal_fl
+_service_on_method_get_host_mcu_euradar_cal_rr
+_service_on_method_get_host_mcu_euradar_cal_rl
+_service_on_method_get_host_mcu_emradar_calibration_state
+_service_on_method_get_host_xpu_eacc_level
+_service_on_method_get_host_bcm_ebraking_light
+_service_on_method_get_host_vcu_charge_gun_status
+_service_on_method_get_host_vcu_hvac_elccon_sphigh
+_service_on_method_get_host_vcu_evsys_readyst
+_service_on_method_get_host_bcm_r_charger_port
+_service_on_method_get_host_bcm_echargeport_right_fault
+_service_on_method_get_host_lturnlamp_rturnlamp_st
+_service_on_method_get_host_bcm_elow_beam
+_service_on_method_get_host_high_beam_lights_state
+_service_on_method_get_host_bcm_parking_lamp
+_service_on_method_get_host_fog_lights_switch_xp
+_service_on_method_get_host_bcm_epsngr_seat
+_service_on_method_get_host_bcm_edriver_seat
+_service_on_method_get_host_main_warn_lamp
+_service_on_method_get_host_bcm_trunkajar
+_service_on_method_get_host_bcm_bonnet
+_service_on_method_get_host_bcm_door
+_service_on_method_get_host_vcu_coolant_overheat_st
+_service_on_method_get_host_xpu_auto_pilot_st
+_service_on_method_get_host_bcm_chargeport_left_fault
+_service_on_method_get_host_bcm_2ndrightseat_beltsbr_warning
+_service_on_method_get_host_bcm_2ndmidseat_beltsbr_warning
+_service_on_method_get_host_bcm_2ndleftseat_beltsbr_warning
+_service_on_method_get_host_scu_mrr_fcw_warning_st
+_service_on_method_get_host_vcu_hv_cutoff_disp
+_service_on_method_get_host_vcu_batt_fault_disp
+_service_on_method_get_host_vcu_bat_hot_disp
+_service_on_method_get_host_vcu_emotor_sys_hot_disp
+_service_on_method_get_host_vcu_everrlamp_dsp
+_service_on_method_get_host_vcu_ind_12v_bat
+_service_on_method_get_host_esp_warn_lamp
+_service_on_method_get_host_esp_apb_func_lamp
+_service_on_method_get_host_esp_sys_warnind_req
+_service_on_method_get_host_tpms_sysfaultwarn
+_service_on_method_get_host_vcu_batcold_disp
+_service_on_method_get_host_bcm_l_charger_port
+_service_on_method_get_host_esp_ind_light_avh
+_service_on_method_get_host_esc_esp
+_service_on_method_get_host_esp_esp_fault
+_service_on_method_get_host_bcm_smart_highbeam_st
+_service_on_method_get_host_esp_abs_fault
+_service_on_method_get_host_esp_boost_fault_st
+_service_on_method_get_host_bcm_airbag_fault_st
+_service_on_method_get_host_vcu_bms_soclow_status
+_service_on_method_get_host_vcu_powerlimitation_dsp
+_service_on_method_get_host_park_avp_light_st
+_service_on_method_get_host_mcu_voice_id
+_service_on_method_get_host_mcu_charging_state
+_service_on_method_get_host_mcu_ig_data
+_service_on_method_get_host_vcu_dstbat_disp
+_service_on_method_get_host_vcu_current_gearlev
+_service_on_method_get_host_vcu_veh_pwr_disp
+_service_on_method_get_host_mcu_power_range_flag
+_service_on_method_get_host_tbox_appoint_chg_set_hour
+_service_on_method_get_host_tbox_appoint_chg_set_min
+_service_on_method_get_host_sws_rmute_button
+_service_on_method_get_host_vcu_bms_socdisp
+_service_on_method_get_host_vcu_raw_car_speed
+_service_on_method_report_property
+_service_on_method_set_host_mcu_upgrade_boot_ver_notify
+_service_on_method_set_host_mcu_system_reset_req
+_service_on_method_set_host_mcu_abnormal_recovery_req
+_service_on_method_set_host_mcu_upgrade_notify
+_service_on_method_set_host_debug_prop_logctrl
+_service_on_method_set_host_icm_randis_display_type
+_service_on_method_set_host_icm_log_compress
+_service_on_method_set_host_icm_all_lamp_state_info
+_service_on_method_set_host_icm_diagnosis_info
+_service_on_method_set_host_icm_version_info
+_service_on_method_set_host_icm_crash_info
+_service_on_method_set_host_icm_update_req
+_service_on_method_set_host_icm_neednavi
+_service_on_method_set_host_icm_carsetting
+_service_on_method_set_host_icm_infoflow_msg
+_service_on_method_set_host_icm_allcard_refrsh
+_service_on_method_set_host_icm_sync_signal
+_service_on_method_set_host_icm_feedback_signal
+_service_on_method_set_host_icm_update_result
+_service_on_method_set_host_icm_update_progress
+_service_on_method_set_host_icm_speed_limit_warning_switch_sp
+_service_on_method_set_host_icm_alarm_volume_sp
+_service_on_method_set_host_icm_speed_limit_warning_value_sp
+_service_on_method_set_host_icm_brightness_sp
+_service_on_method_set_host_icm_time_format_sp
+_service_on_method_set_host_mcu_eset_icm_version
+_service_on_method_set_host_mcu_eset_partition_state
+_service_on_method_set_host_mcu_eset_lvds_state
+_service_on_method_set_host_mcu_eset_phy_state
+_service_on_method_set_host_mcu_eset_emmc_state
+_service_on_method_set_host_mcu_eset_lcd_ti_error
+_service_on_method_set_host_mcu_eset_lcd_mcu_error
+_service_on_method_set_host_mcu_eset_lcd_cable_error
+_service_on_method_set_host_mcu_eset_vol_high_error
+_service_on_method_set_host_mcu_eset_vol_low_error
+_service_on_method_set_host_mcu_eset_lcd_buck_error
+_service_on_method_set_host_mcu_eset_fpd_error
+_service_on_method_set_host_mcu_eset_lcd_bl_error
+_service_on_method_set_host_mcu_eset_lcd_panel_error
+_service_on_method_set_host_mcu_eset_reboot_rsp
+_service_on_method_set_host_mcu_eset_force_power_off
+_service_on_method_set_host_mcu_eset_reset_tripb
+_service_on_method_set_host_mcu_eset_reset_tripa
+_service_on_method_set_host_mcu_eset_time
+_service_on_method_set_host_mcu_eset_hmi_dsp_state
+_service_on_method_set_host_mcu_eset_ota_state
+_service_on_method_set_host_mcu_eset_time_state
+_service_on_method_set_host_vcu_batcold_disp
+cluster_service_on_handle_sigterm
+_service_init_cluster_context
+xp_service_idc_start_cluster_work_thread
+xp_service_idc_print_err_status
+%s():%d enter
+gdbus-lib
+%s():%d  - enter
+%s():%d  - Either no connection to D-Bus could be estanlish or the bus name could not be acquired.
+%s():%d cluster service thread started
+%s():%d  - arg is NULL!!!
+%s():%d  - domain_controller_cluster_skeleton_new() fail
+com.xiaopeng.DomainController.Cluster
+%s():%d  - g_bus_own_name() fail
+Adder I/O
+%s():%d  - Exit from main loop!
+handle-report-property
+%s():%d  - handle-report-property  fail!!!
+handle-get-host-vcu-raw-car-speed
+%s():%d  - handle-get-host-vcu-raw-car-speed fail!!!
+handle-get-host-vcu-bms-socdisp
+%s():%d  - handle-get-host-vcu-bms-socdisp fail!!!
+handle-get-host-sws-rmute-button
+%s():%d  - handle-get-host-sws-rmute-button fail!!!
+handle-get-host-tbox-appoint-chg-set-min
+%s():%d  - handle-get-host-tbox-appoint-chg-set-min fail!!!
+handle-get-host-tbox-appoint-chg-set-hour
+%s():%d  - handle-get-host-tbox-appoint-chg-set-hour fail!!!
+handle-get-host-mcu-power-range-flag
+%s():%d  - handle-get-host-mcu-power-range-flag fail!!!
+handle-get-host-vcu-veh-pwr-disp
+%s():%d  - handle-get-host-vcu-veh-pwr-disp fail!!!
+handle-get-host-vcu-current-gearlev
+%s():%d  - handle-get-host-vcu-current-gearlev fail!!!
+handle-get-host-vcu-dstbat-disp
+%s():%d  - handle-get-host-vcu-dstbat-disp fail!!!
+handle-get-host-mcu-ig-data
+%s():%d  - handle-get-host-mcu-ig-data fail!!!
+handle-get-host-mcu-charging-state
+%s():%d  - handle-get-host-mcu-charging-state fail!!!
+handle-get-host-mcu-voice-id
+%s():%d  - handle-get-host-mcu-voice-id fail!!!
+handle-get-host-park-avp-light-st
+%s():%d  - handle-get-host-park-avp-light-st fail!!!
+handle-get-host-vcu-powerlimitation-dsp
+%s():%d  - handle-get-host-vcu-powerlimitation-dsp fail!!!
+handle-get-host-vcu-bms-soclow-status
+%s():%d  - handle-get-host-vcu-bms-soclow-status fail!!!
+handle-get-host-bcm-airbag-fault-st
+%s():%d  - handle-get-host-bcm-airbag-fault-st fail!!!
+handle-get-host-esp-boost-fault-st
+%s():%d  - handle-get-host-esp-boost-fault-st fail!!!
+handle-get-host-esp-abs-fault
+%s():%d  - handle-get-host-esp-abs-fault fail!!!
+handle-get-host-bcm-smart-highbeam-st
+%s():%d  - handle-get-host-bcm-smart-highbeam-st fail!!!
+handle-get-host-esp-esp-fault
+%s():%d  - handle-get-host-esp-esp-fault fail!!!
+handle-get-host-esc-esp
+%s():%d  - handle-get-host-esc-esp fail!!!
+handle-get-host-esp-ind-light-avh
+%s():%d  - handle-get-host-esp-ind-light-avh fail!!!
+handle-get-host-bcm-l-charger-port
+%s():%d  - handle-get-host-bcm-l-charger-port fail!!!
+handle-get-host-vcu-batcold-disp
+%s():%d  - handle-get-host-vcu-batcold-disp fail!!!
+handle-set-host-vcu-batcold-disp
+%s():%d  -handle-set-host-vcu-batcold-disp fail!!!
+handle-get-host-tpms-sysfaultwarn
+%s():%d  - handle-get-host-tpms-sysfaultwarn fail!!!
+handle-get-host-esp-sys-warnind-req
+%s():%d  - handle-get-host-esp-sys-warnind-req fail!!!
+handle-get-host-esp-apb-func-lamp
+%s():%d  - handle-get-host-esp-apb-func-lamp fail!!!
+handle-get-host-esp-warn-lamp
+%s():%d  - handle-get-host-esp-warn-lamp fail!!!
+handle-get-host-vcu-ind-12v-bat
+%s():%d  - handle-get-host-vcu-ind-12v-bat fail!!!
+handle-get-host-vcu-everrlamp-dsp
+%s():%d  - handle-get-host-vcu-everrlamp-dsp fail!!!
+handle-get-host-vcu-emotor-sys-hot-disp
+%s():%d  - handle-get-host-vcu-emotor-sys-hot-disp fail!!!
+handle-get-host-vcu-bat-hot-disp
+%s():%d  - handle-get-host-vcu-bat-hot-disp fail!!!
+handle-get-host-vcu-batt-fault-disp
+%s():%d  - handle-get-host-vcu-batt-fault-disp fail!!!
+handle-get-host-vcu-hv-cutoff-disp
+%s():%d  - handle-get-host-vcu-hv-cutoff-disp fail!!!
+handle-get-host-scu-mrr-fcw-warning-st
+%s():%d  - handle-get-host-scu-mrr-fcw-warning-st fail!!!
+handle-get-host-bcm-2ndleftseat-beltsbr-warning
+%s():%d  - handle-get-host-bcm-2ndleftseat-beltsbr-warning fail!!!
+handle-get-host-bcm-2ndmidseat-beltsbr-warning
+%s():%d  - handle-get-host-bcm-2ndmidseat-beltsbr-warning fail!!!
+handle-get-host-bcm-2ndrightseat-beltsbr-warning
+%s():%d  - handle-get-host-bcm-2ndrightseat-beltsbr-warning fail!!!
+handle-get-host-bcm-chargeport-left-fault
+%s():%d  - handle-get-host-bcm-chargeport-left-fault fail!!!
+handle-get-host-xpu-auto-pilot-st
+%s():%d  - handle-get-host-xpu-auto-pilot-st fail!!!
+handle-get-host-vcu-coolant-overheat-st
+%s():%d  - handle-get-host-vcu-coolant-overheat-st fail!!!
+handle-get-host-bcm-door
+%s():%d  - handle-get-host-bcm-door fail!!!
+handle-get-host-bcm-bonnet
+%s():%d  - handle-get-host-bcm-bonnet fail!!!
+handle-get-host-bcm-trunkajar
+%s():%d  - handle-get-host-bcm-trunkajar fail!!!
+handle-get-host-main-warn-lamp
+%s():%d  - handle-get-host-main-warn-lamp fail!!!
+handle-get-host-bcm-edriver-seat
+%s():%d  - handle-get-host-bcm-edriver-seat fail!!!
+handle-get-host-bcm-epsngr-seat
+%s():%d  - handle-get-host-bcm-epsngr-seat fail!!!
+handle-get-host-fog-lights-switch-xp
+%s():%d  - handle-get-host-fog-lights-switch-xp fail!!!
+handle-get-host-bcm-parking-lamp
+%s():%d  - handle-get-host-bcm-parking-lamp fail!!!
+handle-get-host-high-beam-lights-state
+%s():%d  - handle-get-host-high-beam-lights-state fail!!!
+handle-get-host-bcm-elow-beam
+%s():%d  - handle-get-host-bcm-elow-beam fail!!!
+handle-get-host-lturnlamp-rturnlamp-st
+%s():%d  - handle-get-host-lturnlamp-rturnlamp-st fail!!!
+handle-get-host-bcm-echargeport-right-fault
+%s():%d  - handle-get-host-bcm-echargeport-right-fault fail!!!
+handle-get-host-bcm-r-charger-port
+%s():%d  - handle-get-host-bcm-r-charger-port fail!!!
+handle-get-host-vcu-evsys-readyst
+%s():%d  - handle-get-host-vcu-evsys-readyst fail!!!
+handle-get-host-vcu-hvac-elccon-sphigh
+%s():%d  - handle-get-host-vcu-hvac-elccon-sphigh fail!!!
+handle-get-host-vcu-charge-gun-status
+%s():%d  - handle-get-host-vcu-charge-gun-status fail!!!
+handle-get-host-bcm-ebraking-light
+%s():%d  - handle-get-host-bcm-ebraking-light fail!!!
+handle-get-host-xpu-eacc-level
+%s():%d  - handle-get-host-xpu-eacc-level fail!!!
+handle-get-host-mcu-emradar-calibration-state
+%s():%d  - handle-get-host-mcu-emradar-calibration-state fail!!!
+handle-get-host-mcu-euradar-cal-rl
+%s():%d  - handle-get-host-mcu-euradar-cal-rl fail!!!
+handle-get-host-mcu-euradar-cal-rr
+%s():%d  - handle-get-host-mcu-euradar-cal-rr fail!!!
+handle-get-host-mcu-euradar-cal-fl
+%s():%d  - handle-get-host-mcu-euradar-cal-fl fail!!!
+handle-get-host-mcu-euradar-cal-fr
+%s():%d  - handle-get-host-mcu-euradar-cal-fr fail!!!
+handle-get-host-mcu-eacc-cc-light
+%s():%d  - handle-get-host-mcu-eacc-cc-light fail!!!
+handle-get-host-mcu-eautopilot-tips-id
+%s():%d  - handle-get-host-mcu-eautopilot-tips-id fail!!!
+handle-get-host-ebat-prepare-time
+%s():%d  - handle-get-host-ebat-prepare-time fail!!!
+handle-get-host-env-outside-temperature
+%s():%d  - handle-get-host-env-outside-temperature fail!!!
+handle-get-host-ealarm-id
+%s():%d  - handle-get-host-ealarm-id fail!!!
+handle-get-host-espeed-xcc
+%s():%d  - handle-get-host-espeed-xcc fail!!!
+handle-get-host-icm-total-odometer
+%s():%d  - handle-get-host-icm-total-odometer fail!!!
+handle-get-host-eota-ecu-silent-mode
+%s():%d  - handle-get-host-eota-ecu-silent-mode fail!!!
+handle-get-host-trip-distance-time
+%s():%d  - handle-get-host-trip-distance-time fail!!!
+handle-get-host-escreen-colortest
+%s():%d  - handle-get-host-escreen-colortest fail!!!
+handle-get-host-eavg-vehelcconsp
+%s():%d  - handle-get-host-eavg-vehelcconsp fail!!!
+handle-get-host-elcd-blight
+%s():%d  - handle-get-host-elcd-blight fail!!!
+handle-get-host-elcd-bl-en-status
+%s():%d  - handle-get-host-elcd-bl-en-status fail!!!
+handle-get-host-esocmaxchg-pwlimit
+%s():%d  - handle-get-host-esocmaxchg-pwlimit fail!!!
+handle-get-host-echarge-status
+%s():%d  - handle-get-host-echarge-status fail!!!
+handle-get-host-echarge-cur
+%s():%d  - handle-get-host-echarge-cur fail!!!
+handle-get-host-echarge-voltage
+%s():%d  - handle-get-host-echarge-voltage fail!!!
+handle-get-host-echarge-limit-time
+%s():%d  - handle-get-host-echarge-limit-time fail!!!
+handle-get-host-eradar-spacing-fol
+%s():%d  - handle-get-host-eradar-spacing-fol fail!!!
+handle-get-host-eradar-spacing-fcl
+%s():%d  - handle-get-host-eradar-spacing-fcl fail!!!
+handle-get-host-eradar-spacing-fcr
+%s():%d  - handle-get-host-eradar-spacing-fcr fail!!!
+handle-get-host-eradar-spacing-for
+%s():%d  - handle-get-host-eradar-spacing-for fail!!!
+handle-get-host-eradar-spacing-rol
+%s():%d  - handle-get-host-eradar-spacing-rol fail!!!
+handle-get-host-eradar-spacing-rcl
+%s():%d  - handle-get-host-eradar-spacing-rcl fail!!!
+handle-get-host-eradar-spacing-rcr
+%s():%d  - handle-get-host-eradar-spacing-rcr fail!!!
+handle-get-host-eradar-spacing-ror
+%s():%d  - handle-get-host-eradar-spacing-ror fail!!!
+handle-get-host-etpms-pressure-lf
+%s():%d  - handle-get-host-etpms-pressure-lf fail!!!
+handle-get-host-etpms-temp-flg-lf
+%s():%d  - handle-get-host-etpms-temp-flg-lf fail!!!
+handle-get-host-etpms-status-lf
+%s():%d  - handle-get-host-etpms-status-lf fail!!!
+handle-get-host-etpms-pressure-rf
+%s():%d  - handle-get-host-etpms-pressure-rf fail!!!
+handle-get-host-etpms-temp-flg-rf
+%s():%d  - handle-get-host-etpms-temp-flg-rf fail!!!
+handle-get-host-etpms-status-rf
+%s():%d  - handle-get-host-etpms-status-rf fail!!!
+handle-get-host-etpms-pressure-lb
+%s():%d  - handle-get-host-etpms-pressure-lb fail!!!
+handle-get-host-etpms-temp-flg-lb
+%s():%d  - handle-get-host-etpms-temp-flg-lb fail!!!
+handle-get-host-etpms-status-lb
+%s():%d  - handle-get-host-etpms-status-lb fail!!!
+handle-get-host-etpms-pressure-rb
+%s():%d  - handle-get-host-etpms-pressure-rb fail!!!
+handle-get-host-etpms-temp-flg-rb
+%s():%d  - handle-get-host-etpms-temp-flg-rb fail!!!
+handle-get-host-etpms-status-rb
+%s():%d  - handle-get-host-etpms-status-rb fail!!!
+handle-get-host-etpms-temperature-lf
+%s():%d  - handle-get-host-etpms-temperature-lf fail!!!
+handle-get-host-etpms-temperature-rf
+%s():%d  - handle-get-host-etpms-temperature-rf fail!!!
+handle-get-host-etpms-temperature-lb
+%s():%d  - handle-get-host-etpms-temperature-lb fail!!!
+handle-get-host-etpms-temperature-rb
+%s():%d  - handle-get-host-etpms-temperature-rb fail!!!
+handle-get-host-eind-trs-forb
+%s():%d  - handle-get-host-eind-trs-forb fail!!!
+handle-get-host-eind-alc
+%s():%d  - handle-get-host-eind-alc fail!!!
+handle-get-host-eind-trs-warn
+%s():%d  - handle-get-host-eind-trs-warn fail!!!
+handle-get-host-eind-trs-speed
+%s():%d  - handle-get-host-eind-trs-speed fail!!!
+handle-get-host-eind-fcw-aeb
+%s():%d  - handle-get-host-eind-fcw-aeb fail!!!
+handle-get-host-eind-lbsd
+%s():%d  - handle-get-host-eind-lbsd fail!!!
+handle-get-host-eind-rbsd
+%s():%d  - handle-get-host-eind-rbsd fail!!!
+handle-get-host-eind-rcta-left
+%s():%d  - handle-get-host-eind-rcta-left fail!!!
+handle-get-host-eind-rcta-right
+%s():%d  - handle-get-host-eind-rcta-right fail!!!
+handle-get-host-eengcost-p100m
+%s():%d  - handle-get-host-eengcost-p100m fail!!!
+handle-get-host-icm-trip-sinc-chrg
+%s():%d  - handle-get-host-icm-trip-sinc-chrg fail!!!
+handle-get-host-eind-rcw
+%s():%d  - handle-get-host-eind-rcw fail!!!
+handle-get-host-eparking-area
+%s():%d  - handle-get-host-eparking-area fail!!!
+handle-get-host-eparking-l1
+%s():%d  - handle-get-host-eparking-l1 fail!!!
+handle-get-host-eparking-l2
+%s():%d  - handle-get-host-eparking-l2 fail!!!
+handle-get-host-eparking-l3
+%s():%d  - handle-get-host-eparking-l3 fail!!!
+handle-get-host-eparking-r1
+%s():%d  - handle-get-host-eparking-r1 fail!!!
+handle-get-host-eparking-r2
+%s():%d  - handle-get-host-eparking-r2 fail!!!
+handle-get-host-eparking-r3
+%s():%d  - handle-get-host-eparking-r3 fail!!!
+handle-get-host-elane-status-ll
+%s():%d  - handle-get-host-elane-status-ll fail!!!
+handle-get-host-elane-status-rr
+%s():%d  - handle-get-host-elane-status-rr fail!!!
+handle-get-host-elane-status-l
+%s():%d  - handle-get-host-elane-status-l fail!!!
+handle-get-host-elane-status-r
+%s():%d  - handle-get-host-elane-status-r fail!!!
+handle-get-host-ealc-target-x
+%s():%d  - handle-get-host-ealc-target-x fail!!!
+handle-get-host-ealc-target-y
+%s():%d  - handle-get-host-ealc-target-y fail!!!
+handle-get-host-elane-param-ll
+%s():%d  - handle-get-host-elane-param-ll fail!!!
+handle-get-host-elane-param-l
+%s():%d  - handle-get-host-elane-param-l fail!!!
+handle-get-host-elane-param-r
+%s():%d  - handle-get-host-elane-param-r fail!!!
+handle-get-host-elane-param-rr
+%s():%d  - handle-get-host-elane-param-rr fail!!!
+handle-get-host-elane-line-l
+%s():%d  - handle-get-host-elane-line-l fail!!!
+handle-get-host-elane-line-r
+%s():%d  - handle-get-host-elane-line-r fail!!!
+handle-get-host-elane-line-ll
+%s():%d  - handle-get-host-elane-line-ll fail!!!
+handle-get-host-elane-line-rr
+%s():%d  - handle-get-host-elane-line-rr fail!!!
+handle-get-host-estart-lane-line-l
+%s():%d  - handle-get-host-estart-lane-line-l fail!!!
+handle-get-host-estart-lane-line-r
+%s():%d  - handle-get-host-estart-lane-line-r fail!!!
+handle-get-host-estart-lane-line-ll
+%s():%d  - handle-get-host-estart-lane-line-ll fail!!!
+handle-get-host-estart-lane-line-rr
+%s():%d  - handle-get-host-estart-lane-line-rr fail!!!
+handle-get-host-eradar-fsl
+%s():%d  - handle-get-host-eradar-fsl fail!!!
+handle-get-host-eradar-fsr
+%s():%d  - handle-get-host-eradar-fsr fail!!!
+handle-get-host-eradar-rsl
+%s():%d  - handle-get-host-eradar-rsl fail!!!
+handle-get-host-eradar-rsr
+%s():%d  - handle-get-host-eradar-rsr fail!!!
+handle-get-host-eradar-display-state
+%s():%d  - handle-get-host-eradar-display-state fail!!!
+handle-get-host-eradar-level-rsl
+%s():%d  - handle-get-host-eradar-level-rsl fail!!!
+handle-get-host-eradar-level-rsr
+%s():%d  - handle-get-host-eradar-level-rsr fail!!!
+handle-get-host-eradar-level-fl
+%s():%d  - handle-get-host-eradar-level-fl fail!!!
+handle-get-host-eradar-level-fcl
+%s():%d  - handle-get-host-eradar-level-fcl fail!!!
+handle-get-host-eradar-level-fcr
+%s():%d  - handle-get-host-eradar-level-fcr fail!!!
+handle-get-host-eradar-level-fr
+%s():%d  - handle-get-host-eradar-level-fr fail!!!
+handle-get-host-eradar-level-rl
+%s():%d  - handle-get-host-eradar-level-rl fail!!!
+handle-get-host-eradar-level-rcl
+%s():%d  - handle-get-host-eradar-level-rcl fail!!!
+handle-get-host-eradar-level-rcr
+%s():%d  - handle-get-host-eradar-level-rcr fail!!!
+handle-get-host-eradar-level-rr
+%s():%d  - handle-get-host-eradar-level-rr fail!!!
+handle-get-host-scu-nedc-status
+%s():%d  - handle-get-host-scu-nedc-status fail!!!
+handle-get-host-alc-lane-yaw
+%s():%d  - handle-get-host-alc-lane-yaw fail!!!
+handle-get-host-elane-order-param-3
+%s():%d  - handle-get-host-elane-order-param-3 fail!!!
+handle-get-host-elane-order-param-2
+%s():%d  - handle-get-host-elane-order-param-2 fail!!!
+handle-get-host-elane-order-param-1
+%s():%d  - handle-get-host-elane-order-param-1 fail!!!
+handle-get-host-eradar-fdistance
+%s():%d  - handle-get-host-eradar-fdistance fail!!!
+handle-get-host-eradar-rdistance
+%s():%d  - handle-get-host-eradar-rdistance fail!!!
+handle-get-host-eradar-level-fsl
+%s():%d  - handle-get-host-eradar-level-fsl fail!!!
+handle-get-host-eradar-level-fsr
+%s():%d  - handle-get-host-eradar-level-fsr fail!!!
+handle-get-host-bcm-seat-heat-level
+%s():%d  - handle-get-host-bcm-seat-heat-level fail!!!
+handle-get-host-emcu-backlight-state
+%s():%d  - handle-get-host-emcu-backlight-state fail!!!
+handle-get-host-egear-n-remind
+%s():%d  - handle-get-host-egear-n-remind fail!!!
+handle-get-host-espeaker-type
+%s():%d  - handle-get-host-espeaker-type fail!!!
+handle-get-host-eac-wind-level
+%s():%d  - handle-get-host-eac-wind-level fail!!!
+handle-get-host-ewind-mode-state
+%s():%d  - handle-get-host-ewind-mode-state fail!!!
+handle-get-host-eseat-wind-level
+%s():%d  - handle-get-host-eseat-wind-level fail!!!
+handle-get-host-eauto-swing-state
+%s():%d  - handle-get-host-eauto-swing-state fail!!!
+handle-get-host-eac-open-state
+%s():%d  - handle-get-host-eac-open-state fail!!!
+handle-get-host-ecar-color-config
+%s():%d  - handle-get-host-ecar-color-config fail!!!
+handle-get-host-ecar-type-config
+%s():%d  - handle-get-host-ecar-type-config fail!!!
+handle-get-host-etmps-temp-warn
+%s():%d  - handle-get-host-etmps-temp-warn fail!!!
+handle-get-host-eusb-update-flag
+%s():%d  - handle-get-host-eusb-update-flag fail!!!
+handle-get-host-emcu-reboot-req
+%s():%d  - handle-get-host-emcu-reboot-req fail!!!
+handle-get-host-eac-temp-value
+%s():%d  - handle-get-host-eac-temp-value fail!!!
+handle-get-host-surplus-usable-power
+%s():%d  - handle-get-host-surplus-usable-power fail!!!
+handle-get-host-esensor-error-info
+%s():%d  - handle-get-host-esensor-error-info fail!!!
+handle-get-host-euradar-status
+%s():%d  - handle-get-host-euradar-status fail!!!
+handle-get-host-euradar-status-fol
+%s():%d  - handle-get-host-euradar-status-fol fail!!!
+handle-get-host-euradar-status-fcl
+%s():%d  - handle-get-host-euradar-status-fcl fail!!!
+handle-get-host-euradar-status-fcr
+%s():%d  - handle-get-host-euradar-status-fcr fail!!!
+handle-get-host-euradar-status-for
+%s():%d  - handle-get-host-euradar-status-for fail!!!
+handle-get-host-euradar-status-fsl
+%s():%d  - handle-get-host-euradar-status-fsl fail!!!
+handle-get-host-euradar-status-fsr
+%s():%d  - handle-get-host-euradar-status-fsr fail!!!
+handle-get-host-euradar-status-rol
+%s():%d  - handle-get-host-euradar-status-rol fail!!!
+handle-get-host-euradar-status-rcl
+%s():%d  - handle-get-host-euradar-status-rcl fail!!!
+handle-get-host-euradar-status-rcr
+%s():%d  - handle-get-host-euradar-status-rcr fail!!!
+handle-get-host-euradar-status-ror
+%s():%d  - handle-get-host-euradar-status-ror fail!!!
+handle-get-host-euradar-status-rsl
+%s():%d  - handle-get-host-euradar-status-rsl fail!!!
+handle-get-host-euradar-status-rsr
+%s():%d  - handle-get-host-euradar-status-rsr fail!!!
+handle-get-host-emwradar-status
+%s():%d  - handle-get-host-emwradar-status fail!!!
+handle-get-host-emwradar-status-fc
+%s():%d  - handle-get-host-emwradar-status-fc fail!!!
+handle-get-host-emwradar-status-fl
+%s():%d  - handle-get-host-emwradar-status-fl fail!!!
+handle-get-host-emwradar-status-fr
+%s():%d  - handle-get-host-emwradar-status-fr fail!!!
+handle-get-host-emwradar-status-rcl
+%s():%d  - handle-get-host-emwradar-status-rcl fail!!!
+handle-get-host-emwradar-status-rcr
+%s():%d  - handle-get-host-emwradar-status-rcr fail!!!
+handle-get-host-ecamera-vpm-status-fcu
+%s():%d  - handle-get-host-ecamera-vpm-status-fcu fail!!!
+handle-get-host-ecamera-fisheye-status-fcu
+%s():%d  - handle-get-host-ecamera-fisheye-status-fcu fail!!!
+handle-get-host-ecamera-main-state-fcu
+%s():%d  - handle-get-host-ecamera-main-state-fcu fail!!!
+handle-get-host-ecamera-narrow-state-fcu
+%s():%d  - handle-get-host-ecamera-narrow-state-fcu fail!!!
+handle-get-host-ecamera-dam-state-fli
+%s():%d  - handle-get-host-ecamera-dam-state-fli fail!!!
+handle-get-host-ecamera-svcam-state-fcd
+%s():%d  - handle-get-host-ecamera-svcam-state-fcd fail!!!
+handle-get-host-ecamera-svcam-state-l
+%s():%d  - handle-get-host-ecamera-svcam-state-l fail!!!
+handle-get-host-ecamera-svcam-state-r
+%s():%d  - handle-get-host-ecamera-svcam-state-r fail!!!
+handle-get-host-ecamera-svcam-state-rear
+%s():%d  - handle-get-host-ecamera-svcam-state-rear fail!!!
+handle-get-host-ecamera-svcam-state
+%s():%d  - handle-get-host-ecamera-svcam-state fail!!!
+handle-get-host-esensor-errorinfo-id
+%s():%d  - handle-get-host-esensor-errorinfo-id fail!!!
+handle-get-host-espeed-limit
+%s():%d  - handle-get-host-espeed-limit fail!!!
+handle-get-host-eforward-vehicle-angle-11
+%s():%d  - handle-get-host-eforward-vehicle-angle-11 fail!!!
+handle-get-host-eforward-vehicle-x-11
+%s():%d  - handle-get-host-eforward-vehicle-x-11 fail!!!
+handle-get-host-eforward-vehicle-y-11
+%s():%d  - handle-get-host-eforward-vehicle-y-11 fail!!!
+handle-get-host-eforward-vehicle-color-11
+%s():%d  - handle-get-host-eforward-vehicle-color-11 fail!!!
+handle-get-host-eforward-vehicle-type-11
+%s():%d  - handle-get-host-eforward-vehicle-type-11 fail!!!
+handle-get-host-edate-year
+%s():%d  - handle-get-host-edate-year fail!!!
+handle-get-host-edate-day
+%s():%d  - handle-get-host-edate-day fail!!!
+handle-get-host-edate-month
+%s():%d  - handle-get-host-edate-month fail!!!
+handle-get-host-edate-hour
+%s():%d  - handle-get-host-edate-hour fail!!!
+handle-get-host-edate-min
+%s():%d  - handle-get-host-edate-min fail!!!
+handle-get-host-edate-sec
+%s():%d  - handle-get-host-edate-sec fail!!!
+handle-get-host-vehicle-type
+%s():%d  - handle-get-host-vehicle-type fail!!!
+handle-get-host-epartition-request
+%s():%d  - handle-get-host-epartition-request fail!!!
+handle-get-host-eforward-vehicle-angle-9
+%s():%d  - handle-get-host-eforward-vehicle-angle-9 fail!!!
+handle-get-host-eforward-vehicle-x-9
+%s():%d  - handle-get-host-eforward-vehicle-x-9 fail!!!
+handle-get-host-eforward-vehicle-y-9
+%s():%d  - handle-get-host-eforward-vehicle-y-9 fail!!!
+handle-get-host-eforward-vehicle-color-9
+%s():%d  - handle-get-host-eforward-vehicle-color-9 fail!!!
+handle-get-host-eforward-vehicle-type-9
+%s():%d  - handle-get-host-eforward-vehicle-type-9 fail!!!
+handle-get-host-eforward-vehicle-angle-10
+%s():%d  - handle-get-host-eforward-vehicle-angle-10 fail!!!
+handle-get-host-eforward-vehicle-x-10
+%s():%d  - handle-get-host-eforward-vehicle-x-10 fail!!!
+handle-get-host-eforward-vehicle-y-10
+%s():%d  - handle-get-host-eforward-vehicle-y-10 fail!!!
+handle-get-host-eforward-vehicle-color-10
+%s():%d  - handle-get-host-eforward-vehicle-color-10 fail!!!
+handle-get-host-eforward-vehicle-type-10
+%s():%d  - handle-get-host-eforward-vehicle-type-10 fail!!!
+handle-get-host-eforward-vehicle-angle-7
+%s():%d  - handle-get-host-eforward-vehicle-angle-7 fail!!!
+handle-get-host-eforward-vehicle-x-7
+%s():%d  - handle-get-host-eforward-vehicle-x-7 fail!!!
+handle-get-host-eforward-vehicle-y-7
+%s():%d  - handle-get-host-eforward-vehicle-y-7 fail!!!
+handle-get-host-eforward-vehicle-color-7
+%s():%d  - handle-get-host-eforward-vehicle-color-7 fail!!!
+handle-get-host-eforward-vehicle-type-7
+%s():%d  - handle-get-host-eforward-vehicle-type-7 fail!!!
+handle-get-host-eforward-vehicle-angle-8
+%s():%d  - handle-get-host-eforward-vehicle-angle-8 fail!!!
+handle-get-host-eforward-vehicle-x-8
+%s():%d  - handle-get-host-eforward-vehicle-x-8 fail!!!
+handle-get-host-eforward-vehicle-y-8
+%s():%d  - handle-get-host-eforward-vehicle-y-8 fail!!!
+handle-get-host-eforward-vehicle-color-8
+%s():%d  - handle-get-host-eforward-vehicle-color-8 fail!!!
+handle-get-host-eforward-vehicle-type-8
+%s():%d  - handle-get-host-eforward-vehicle-type-8 fail!!!
+handle-get-host-uart-i2c-abnormal-status
+%s():%d  - handle-get-host-uart-i2c-abnormal-status fail!!!
+handle-get-host-trip-distance-time-2
+%s():%d  - handle-get-host-trip-distance-time-2 fail!!!
+handle-get-host-ngp-light-status
+%s():%d  - handle-get-host-ngp-light-status fail!!!
+handle-get-host-fcw-aeb-close-status
+%s():%d  - handle-get-host-fcw-aeb-close-status fail!!!
+handle-get-host-turn-light-type
+%s():%d  - handle-get-host-turn-light-type fail!!!
+handle-get-host-vehicle-color-config
+%s():%d  - handle-get-host-vehicle-color-config fail!!!
+handle-get-host-lcc-warning-light-status
+%s():%d  - handle-get-host-lcc-warning-light-status fail!!!
+handle-get-host-acl-warning-light-status
+%s():%d  - handle-get-host-acl-warning-light-status fail!!!
+handle-get-host-etpms-multi-status-lf
+%s():%d  - handle-get-host-etpms-multi-status-lf fail!!!
+handle-get-host-etpms-multi-status-rf
+%s():%d  - handle-get-host-etpms-multi-status-rf fail!!!
+handle-get-host-etpms-multi-status-lb
+%s():%d  - handle-get-host-etpms-multi-status-lb fail!!!
+handle-get-host-etpms-multi-status-rb
+%s():%d  - handle-get-host-etpms-multi-status-rb fail!!!
+handle-get-host-islc-st
+%s():%d  - handle-get-host-islc-st fail!!!
+handle-get-host-vcu-drive-mode
+%s():%d  - handle-get-host-vcu-drive-mode fail!!!
+handle-get-host-randis-mode
+%s():%d  - handle-get-host-randis-mode fail!!!
+handle-get-host-traffic-lights-st
+%s():%d  - handle-get-host-traffic-lights-st fail!!!
+handle-get-host-xpu-spd-lmt-type
+%s():%d  - handle-get-host-xpu-spd-lmt-type fail!!!
+handle-get-host-echarge-voltage-level
+%s():%d  - handle-get-host-echarge-voltage-level fail!!!
+handle-get-host-vehicle-1-sd-info
+%s():%d  - handle-get-host-vehicle-1-sd-info fail!!!
+handle-get-host-vehicle-2-sd-info
+%s():%d  - handle-get-host-vehicle-2-sd-info fail!!!
+handle-get-host-vehicle-3-sd-info
+%s():%d  - handle-get-host-vehicle-3-sd-info fail!!!
+handle-get-host-vehicle-4-sd-info
+%s():%d  - handle-get-host-vehicle-4-sd-info fail!!!
+handle-get-host-vehicle-5-sd-info
+%s():%d  - handle-get-host-vehicle-5-sd-info fail!!!
+handle-get-host-vehicle-6-sd-info
+%s():%d  - handle-get-host-vehicle-6-sd-info fail!!!
+handle-set-host-mcu-eset-time-state
+%s():%d  -handle-set-host-mcu-eset-time-state fail!!!
+handle-set-host-mcu-eset-ota-state
+%s():%d  -handle-set-host-mcu-eset-ota-state fail!!!
+handle-set-host-mcu-eset-hmi-dsp-state
+%s():%d  -handle-set-host-mcu-eset-hmi-dsp-state fail!!!
+handle-set-host-mcu-eset-time
+%s():%d  -handle-set-host-mcu-eset-time fail!!!
+handle-set-host-mcu-eset-reset-tripa
+%s():%d  -handle-set-host-mcu-eset-reset-tripa fail!!!
+handle-set-host-mcu-eset-reset-tripb
+%s():%d  -handle-set-host-mcu-eset-reset-tripb fail!!!
+handle-set-host-mcu-eset-force-power-off
+%s():%d  -handle-set-host-mcu-eset-force-power-off fail!!!
+handle-set-host-mcu-eset-reboot-rsp
+%s():%d  -handle-set-host-mcu-eset-reboot-rsp fail!!!
+handle-set-host-mcu-eset-lcd-panel-error
+%s():%d  -handle-set-host-mcu-eset-lcd-panel-error fail!!!
+handle-set-host-mcu-eset-lcd-bl-error
+%s():%d  -handle-set-host-mcu-eset-lcd-bl-error fail!!!
+handle-set-host-mcu-eset-fpd-error
+%s():%d  -handle-set-host-mcu-eset-fpd-error fail!!!
+handle-set-host-mcu-eset-lcd-buck-error
+%s():%d  -handle-set-host-mcu-eset-lcd-buck-error fail!!!
+handle-set-host-mcu-eset-vol-low-error
+%s():%d  -handle-set-host-mcu-eset-vol-low-error fail!!!
+handle-set-host-mcu-eset-vol-high-error
+%s():%d  -handle-set-host-mcu-eset-vol-high-error fail!!!
+handle-set-host-mcu-eset-lcd-cable-error
+%s():%d  -handle-set-host-mcu-eset-lcd-cable-error fail!!!
+handle-set-host-mcu-eset-lcd-mcu-error
+%s():%d  -handle-set-host-mcu-eset-lcd-mcu-error fail!!!
+handle-set-host-mcu-eset-lcd-ti-error
+%s():%d  -handle-set-host-mcu-eset-lcd-ti-error fail!!!
+handle-set-host-mcu-eset-emmc-state
+%s():%d  -handle-set-host-mcu-eset-emmc-state fail!!!
+handle-set-host-mcu-eset-phy-state
+%s():%d  -handle-set-host-mcu-eset-phy-state fail!!!
+handle-set-host-mcu-eset-lvds-state
+%s():%d  -handle-set-host-mcu-eset-lvds-state fail!!!
+handle-set-host-mcu-eset-partition-state
+%s():%d  -handle-set-host-mcu-eset-partition-state fail!!!
+handle-set-host-mcu-eset-icm-version
+%s():%d  -handle-set-host-mcu-eset-icm-version fail!!!
+handle-get-host-lane-cone-1-info
+%s():%d  - handle-get-host-lane-cone-1-info fail!!!
+handle-get-host-lane-cone-2-info
+%s():%d  - handle-get-host-lane-cone-2-info fail!!!
+handle-get-host-lane-cone-3-info
+%s():%d  - handle-get-host-lane-cone-3-info fail!!!
+handle-get-host-lane-cone-4-info
+%s():%d  - handle-get-host-lane-cone-4-info fail!!!
+handle-get-host-lane-cone-5-info
+%s():%d  - handle-get-host-lane-cone-5-info fail!!!
+handle-get-host-icm-time-format-sp
+%s():%d  - handle-get-host-icm-time-format-sp fail!!!
+handle-set-host-icm-time-format-sp
+%s():%d  -handle-set-host-icm-time-format-sp fail!!!
+handle-get-host-icm-brightness-sp
+%s():%d  - handle-get-host-icm-brightness-sp fail!!!
+handle-set-host-icm-brightness-sp
+%s():%d  -handle-set-host-icm-brightness-sp fail!!!
+handle-get-host-icm-speed-limit-warning-value-sp
+%s():%d  - handle-get-host-icm-speed-limit-warning-value-sp fail!!!
+handle-set-host-icm-speed-limit-warning-value-sp
+%s():%d  -handle-set-host-icm-speed-limit-warning-value-sp fail!!!
+handle-get-host-icm-alarm-volume-sp
+%s():%d  - handle-get-host-icm-alarm-volume-sp fail!!!
+handle-set-host-icm-alarm-volume-sp
+%s():%d  -handle-set-host-icm-alarm-volume-sp fail!!!
+handle-get-host-icm-speed-limit-warning-switch-sp
+%s():%d  - handle-get-host-icm-speed-limit-warning-switch-sp fail!!!
+handle-set-host-icm-speed-limit-warning-switch-sp
+%s():%d  -handle-set-host-icm-speed-limit-warning-switch-sp fail!!!
+handle-set-host-icm-update-progress
+%s():%d  -handle-set-host-icm-update-progress fail!!!
+handle-set-host-icm-update-result
+%s():%d  -handle-set-host-icm-update-result fail!!!
+handle-get-host-icm-feedback-signal
+%s():%d  - handle-get-host-icm-feedback-signal fail!!!
+handle-set-host-icm-feedback-signal
+%s():%d  -handle-set-host-icm-feedback-signal fail!!!
+handle-get-host-icm-sync-signal
+%s():%d  - handle-get-host-icm-sync-signal fail!!!
+handle-set-host-icm-sync-signal
+%s():%d  -handle-set-host-icm-sync-signal fail!!!
+handle-get-host-icm-allcard-refrsh
+%s():%d  - handle-get-host-icm-allcard-refrsh fail!!!
+handle-set-host-icm-allcard-refrsh
+%s():%d  -handle-set-host-icm-allcard-refrsh fail!!!
+handle-get-host-icm-infoflow-msg
+%s():%d  - handle-get-host-icm-infoflow-msg fail!!!
+handle-set-host-icm-infoflow-msg
+%s():%d  -handle-set-host-icm-infoflow-msg fail!!!
+handle-get-host-icm-carsetting
+%s():%d  - handle-get-host-icm-carsetting fail!!!
+handle-set-host-icm-carsetting
+%s():%d  -handle-set-host-icm-carsetting fail!!!
+handle-get-host-icm-neednavi
+%s():%d  - handle-get-host-icm-neednavi fail!!!
+handle-set-host-icm-neednavi
+%s():%d  -handle-set-host-icm-neednavi fail!!!
+handle-get-host-icm-update-req
+%s():%d  - handle-get-host-icm-update-req fail!!!
+handle-set-host-icm-update-req
+%s():%d  -handle-set-host-icm-update-req fail!!!
+handle-get-host-icm-reset-tripa-sp
+%s():%d  - handle-get-host-icm-reset-tripa-sp fail!!!
+handle-get-host-icm-reset-tripb-sp
+%s():%d  - handle-get-host-icm-reset-tripb-sp fail!!!
+handle-get-host-icm-update-trans
+%s():%d  - handle-get-host-icm-update-trans fail!!!
+handle-get-host-icm-osdshow
+%s():%d  - handle-get-host-icm-osdshow fail!!!
+handle-get-host-icm-infocard-add
+%s():%d  - handle-get-host-icm-infocard-add fail!!!
+handle-get-host-icm-infocard-update
+%s():%d  - handle-get-host-icm-infocard-update fail!!!
+handle-get-host-icm-infocard-remove
+%s():%d  - handle-get-host-icm-infocard-remove fail!!!
+handle-get-host-icm-wheel-key
+%s():%d  - handle-get-host-icm-wheel-key fail!!!
+handle-get-host-icm-sync-time
+%s():%d  - handle-get-host-icm-sync-time fail!!!
+handle-get-host-icm-account
+%s():%d  - handle-get-host-icm-account fail!!!
+handle-get-host-icm-weather
+%s():%d  - handle-get-host-icm-weather fail!!!
+handle-get-host-icm-bluetooth-phone
+%s():%d  - handle-get-host-icm-bluetooth-phone fail!!!
+handle-get-host-icm-face-info
+%s():%d  - handle-get-host-icm-face-info fail!!!
+handle-get-host-icm-tcp-subcribe
+%s():%d  - handle-get-host-icm-tcp-subcribe fail!!!
+handle-set-host-icm-crash-info
+%s():%d  -handle-set-host-icm-crash-info fail!!!
+handle-set-host-icm-version-info
+%s():%d  -handle-set-host-icm-version-info fail!!!
+handle-set-host-icm-diagnosis-info
+%s():%d  -handle-set-host-icm-diagnosis-info fail!!!
+handle-get-host-icm-all-lamp-state-req
+%s():%d  - handle-get-host-icm-all-lamp-state-req fail!!!
+handle-set-host-icm-all-lamp-state-info
+%s():%d  -handle-set-host-icm-all-lamp-state-info fail!!!
+handle-get-host-icm-left-menu-control
+%s():%d  - handle-get-host-icm-left-menu-control fail!!!
+handle-get-host-icm-right-menu-control
+%s():%d  - handle-get-host-icm-right-menu-control fail!!!
+handle-get-host-icm-log-compress
+%s():%d  - handle-get-host-icm-log-compress fail!!!
+handle-set-host-icm-log-compress
+%s():%d  -handle-set-host-icm-log-compress fail!!!
+handle-get-host-icm-randis-display-type
+%s():%d  - handle-get-host-icm-randis-display-type fail!!!
+handle-set-host-icm-randis-display-type
+%s():%d  -handle-set-host-icm-randis-display-type fail!!!
+handle-get-host-icm-locale-language
+%s():%d  - handle-get-host-icm-locale-language fail!!!
+handle-get-host-icm-change-mileage-double
+%s():%d  - handle-get-host-icm-change-mileage-double fail!!!
+handle-get-host-icm-charging-duration
+%s():%d  - handle-get-host-icm-charging-duration fail!!!
+handle-get-host-debug-prop-logctrl
+%s():%d  - handle-get-host-debug-prop-logctrl fail!!!
+handle-set-host-debug-prop-logctrl
+%s():%d  -handle-set-host-debug-prop-logctrl fail!!!
+handle-get-host-mcu-soft-version
+%s():%d  - handle-get-host-mcu-soft-version fail!!!
+handle-get-host-mcu-upgrade-ack
+%s():%d  - handle-get-host-mcu-upgrade-ack fail!!!
+handle-get-host-mcu-abnormal-recovery-req-ack
+%s():%d  - handle-get-host-mcu-abnormal-recovery-req-ack fail!!!
+handle-get-host-mcu-system-reset-ack
+%s():%d  - handle-get-host-mcu-system-reset-ack fail!!!
+handle-get-host-mcu-upgrade-boot-ver-ack
+%s():%d  - handle-get-host-mcu-upgrade-boot-ver-ack fail!!!
+handle-set-host-mcu-upgrade-notify
+%s():%d  -handle-set-host-mcu-upgrade-notify fail!!!
+handle-set-host-mcu-abnormal-recovery-req
+%s():%d  -handle-set-host-mcu-abnormal-recovery-req fail!!!
+handle-set-host-mcu-system-reset-req
+%s():%d  -handle-set-host-mcu-system-reset-req fail!!!
+handle-set-host-mcu-upgrade-boot-ver-notify
+%s():%d  -handle-set-host-mcu-upgrade-boot-ver-notify fail!!!
+/com/xiaopeng/DomainController/Cluster
+%s():%d pUserData is NULL, return
+%s():%d  - domain_controller_cluster_complete_get_host_mcu_upgrade_boot_ver_ack() return NULL
+(iiayx)
+%s():%d property is invalid, should request car service
+%s():%d  - domain_controller_cluster_complete_get_host_mcu_system_reset_ack() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_mcu_abnormal_recovery_req_ack() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_mcu_upgrade_ack() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_mcu_soft_version() return NULL
+(iisx)
+%s():%d  - domain_controller_cluster_complete_get_host_debug_prop_logctrl() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_icm_charging_duration() return NULL
+(iiix)
+%s():%d  - domain_controller_cluster_complete_get_host_icm_change_mileage_double() return NULL
+(iiadx)
+%s():%d  - domain_controller_cluster_complete_get_host_icm_locale_language() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_icm_randis_display_type() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_icm_log_compress() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_icm_right_menu_control() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_icm_left_menu_control() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_icm_all_lamp_state_req() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_icm_tcp_subcribe() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_icm_face_info() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_icm_bluetooth_phone() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_icm_weather() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_icm_account() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_icm_sync_time() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_icm_wheel_key() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_icm_infocard_remove() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_icm_infocard_update() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_icm_infocard_add() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_icm_osdshow() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_icm_update_trans() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_icm_reset_tripb_sp() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_icm_reset_tripa_sp() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_icm_update_req() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_icm_neednavi() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_icm_carsetting() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_icm_infoflow_msg() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_icm_allcard_refrsh() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_icm_sync_signal() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_icm_feedback_signal() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_icm_speed_limit_warning_switch_sp() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_icm_alarm_volume_sp() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_icm_speed_limit_warning_value_sp() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_icm_brightness_sp() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_icm_time_format_sp() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_lane_cone_5_info() return NULL
+(iiaix)
+%s():%d  - domain_controller_cluster_complete_get_host_lane_cone_4_info() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_lane_cone_3_info() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_lane_cone_2_info() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_lane_cone_1_info() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_vehicle_6_sd_info() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_vehicle_5_sd_info() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_vehicle_4_sd_info() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_vehicle_3_sd_info() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_vehicle_2_sd_info() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_vehicle_1_sd_info() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_echarge_voltage_level() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_xpu_spd_lmt_type() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_traffic_lights_st() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_randis_mode() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_vcu_drive_mode() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_islc_st() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_etpms_multi_status_rb() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_etpms_multi_status_lb() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_etpms_multi_status_rf() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_etpms_multi_status_lf() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_acl_warning_light_status() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_lcc_warning_light_status() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_vehicle_color_config() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_turn_light_type() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_fcw_aeb_close_status() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_ngp_light_status() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_trip_distance_time_2() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_uart_i2c_abnormal_status() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eforward_vehicle_type_8() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eforward_vehicle_color_8() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eforward_vehicle_y_8() return NULL
+(iidx)
+%s():%d  - domain_controller_cluster_complete_get_host_eforward_vehicle_x_8() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eforward_vehicle_angle_8() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eforward_vehicle_type_7() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eforward_vehicle_color_7() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eforward_vehicle_y_7() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eforward_vehicle_x_7() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eforward_vehicle_angle_7() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eforward_vehicle_type_10() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eforward_vehicle_color_10() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eforward_vehicle_y_10() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eforward_vehicle_x_10() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eforward_vehicle_angle_10() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eforward_vehicle_type_9() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eforward_vehicle_color_9() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eforward_vehicle_y_9() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eforward_vehicle_x_9() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eforward_vehicle_angle_9() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_epartition_request() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_vehicle_type() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_edate_sec() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_edate_min() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_edate_hour() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_edate_month() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_edate_day() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_edate_year() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eforward_vehicle_type_11() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eforward_vehicle_color_11() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eforward_vehicle_y_11() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eforward_vehicle_x_11() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eforward_vehicle_angle_11() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_espeed_limit() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_esensor_errorinfo_id() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_ecamera_svcam_state() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_ecamera_svcam_state_rear() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_ecamera_svcam_state_r() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_ecamera_svcam_state_l() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_ecamera_svcam_state_fcd() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_ecamera_dam_state_fli() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_ecamera_narrow_state_fcu() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_ecamera_main_state_fcu() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_ecamera_fisheye_status_fcu() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_ecamera_vpm_status_fcu() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_emwradar_status_rcr() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_emwradar_status_rcl() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_emwradar_status_fr() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_emwradar_status_fl() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_emwradar_status_fc() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_emwradar_status() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_euradar_status_rsr() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_euradar_status_rsl() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_euradar_status_ror() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_euradar_status_rcr() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_euradar_status_rcl() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_euradar_status_rol() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_euradar_status_fsr() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_euradar_status_fsl() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_euradar_status_for() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_euradar_status_fcr() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_euradar_status_fcl() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_euradar_status_fol() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_euradar_status() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_esensor_error_info() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_surplus_usable_power() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eac_temp_value() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_emcu_reboot_req() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eusb_update_flag() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_etmps_temp_warn() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_ecar_type_config() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_ecar_color_config() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eac_open_state() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eauto_swing_state() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eseat_wind_level() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_ewind_mode_state() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eac_wind_level() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_espeaker_type() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_egear_n_remind() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_emcu_backlight_state() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_bcm_seat_heat_level() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eradar_level_fsr() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eradar_level_fsl() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eradar_rdistance() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eradar_fdistance() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_elane_order_param_1() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_elane_order_param_2() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_elane_order_param_3() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_alc_lane_yaw() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_scu_nedc_status() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eradar_level_rr() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eradar_level_rcr() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eradar_level_rcl() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eradar_level_rl() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eradar_level_fr() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eradar_level_fcr() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eradar_level_fcl() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eradar_level_fl() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eradar_level_rsr() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eradar_level_rsl() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eradar_display_state() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eradar_rsr() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eradar_rsl() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eradar_fsr() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eradar_fsl() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_estart_lane_line_rr() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_estart_lane_line_ll() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_estart_lane_line_r() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_estart_lane_line_l() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_elane_line_rr() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_elane_line_ll() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_elane_line_r() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_elane_line_l() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_elane_param_rr() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_elane_param_r() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_elane_param_l() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_elane_param_ll() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_ealc_target_y() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_ealc_target_x() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_elane_status_r() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_elane_status_l() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_elane_status_rr() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_elane_status_ll() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eparking_r3() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eparking_r2() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eparking_r1() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eparking_l3() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eparking_l2() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eparking_l1() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eparking_area() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eind_rcw() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_icm_trip_sinc_chrg() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eengcost_p100m() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eind_rcta_right() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eind_rcta_left() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eind_rbsd() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eind_lbsd() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eind_fcw_aeb() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eind_trs_speed() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eind_trs_warn() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eind_alc() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eind_trs_forb() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_etpms_temperature_rb() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_etpms_temperature_lb() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_etpms_temperature_rf() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_etpms_temperature_lf() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_etpms_status_rb() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_etpms_temp_flg_rb() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_etpms_pressure_rb() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_etpms_status_lb() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_etpms_temp_flg_lb() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_etpms_pressure_lb() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_etpms_status_rf() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_etpms_temp_flg_rf() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_etpms_pressure_rf() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_etpms_status_lf() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_etpms_temp_flg_lf() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_etpms_pressure_lf() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eradar_spacing_ror() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eradar_spacing_rcr() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eradar_spacing_rcl() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eradar_spacing_rol() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eradar_spacing_for() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eradar_spacing_fcr() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eradar_spacing_fcl() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eradar_spacing_fol() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_echarge_limit_time() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_echarge_voltage() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_echarge_cur() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_echarge_status() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_esocmaxchg_pwlimit() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_elcd_bl_en_status() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_elcd_blight() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eavg_vehelcconsp() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_escreen_colortest() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_trip_distance_time() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_eota_ecu_silent_mode() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_icm_total_odometer() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_espeed_xcc() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_ealarm_id() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_env_outside_temperature() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_ebat_prepare_time() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_mcu_eautopilot_tips_id() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_mcu_eacc_cc_light() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_mcu_euradar_cal_fr() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_mcu_euradar_cal_fl() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_mcu_euradar_cal_rr() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_mcu_euradar_cal_rl() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_mcu_emradar_calibration_state() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_xpu_eacc_level() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_bcm_ebraking_light() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_vcu_charge_gun_status() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_vcu_hvac_elccon_sphigh() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_vcu_evsys_readyst() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_bcm_r_charger_port() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_bcm_echargeport_right_fault() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_lturnlamp_rturnlamp_st() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_bcm_elow_beam() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_high_beam_lights_state() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_bcm_parking_lamp() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_fog_lights_switch_xp() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_bcm_epsngr_seat() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_bcm_edriver_seat() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_main_warn_lamp() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_bcm_trunkajar() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_bcm_bonnet() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_bcm_door() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_vcu_coolant_overheat_st() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_xpu_auto_pilot_st() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_bcm_chargeport_left_fault() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_bcm_2ndrightseat_beltsbr_warning() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_bcm_2ndmidseat_beltsbr_warning() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_bcm_2ndleftseat_beltsbr_warning() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_scu_mrr_fcw_warning_st() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_vcu_hv_cutoff_disp() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_vcu_batt_fault_disp() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_vcu_bat_hot_disp() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_vcu_emotor_sys_hot_disp() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_vcu_everrlamp_dsp() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_vcu_ind_12v_bat() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_esp_warn_lamp() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_esp_apb_func_lamp() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_esp_sys_warnind_req() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_tpms_sysfaultwarn() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_vcu_batcold_disp() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_bcm_l_charger_port() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_esp_ind_light_avh() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_esc_esp() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_esp_esp_fault() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_bcm_smart_highbeam_st() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_esp_abs_fault() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_esp_boost_fault_st() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_bcm_airbag_fault_st() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_vcu_bms_soclow_status() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_vcu_powerlimitation_dsp() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_park_avp_light_st() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_mcu_voice_id() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_mcu_charging_state() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_mcu_ig_data() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_vcu_dstbat_disp() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_vcu_current_gearlev() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_vcu_veh_pwr_disp() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_mcu_power_range_flag() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_tbox_appoint_chg_set_hour() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_tbox_appoint_chg_set_min() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_sws_rmute_button() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_vcu_bms_socdisp() return NULL
+%s():%d  - domain_controller_cluster_complete_get_host_vcu_raw_car_speed() return NULL
+%s():%d IDCServiceWrap # pUserData or value is NULL, return
+%s():%d IDCServiceWrap # on_report_property_funcon_report_property_func is not registered!!!
+%s():%d IDCServiceWrap # property: %#X is not supported!!!
+%s():%d IDCServiceWrap - unsupport count: %d for single int32
+%s():%d IDCServiceWrap - unsupport count: %d for single double
+%s():%d IDCServiceWrap # pUserData or GetHostMcuUpgradeBootVerNotify is NULL, return
+%s():%d IDCServiceWrap # _service_on_method_set_host_mcu_upgrade_boot_ver_notify() - on_bytes_property_set_func is not registerred!!!
+%s():%d IDCServiceWrap # pUserData or GetHostMcuSystemResetReq is NULL, return
+%s():%d IDCServiceWrap # _service_on_method_set_host_mcu_system_reset_req() - on_bytes_property_set_func is not registerred!!!
+%s():%d IDCServiceWrap # pUserData or GetHostMcuAbnormalRecoveryReq is NULL, return
+%s():%d IDCServiceWrap # _service_on_method_set_host_mcu_abnormal_recovery_req() - on_bytes_property_set_func is not registerred!!!
+%s():%d IDCServiceWrap # pUserData or GetHostMcuUpgradeNotify is NULL, return
+%s():%d IDCServiceWrap # _service_on_method_set_host_mcu_upgrade_notify() - on_bytes_property_set_func is not registerred!!!
+%s():%d IDCServiceWrap # pUserData or GetHostDebugPropLogctrl is NULL, return
+%s():%d IDCServiceWrap # _service_on_method_set_host_debug_prop_logctrl() - on_bytes_property_set_func is not registerred!!!
+%s():%d  - pUserData is NULL, return
+%s():%d  - on_string_property_set_func is not registerred!!!
+%s():%d  - on_int32_property_set_func is not registerred!!!
+%s():%d IDCServiceWrap # pUserData or GetHostMcuEsetIcmVersion is NULL, return
+%s():%d IDCServiceWrap # _service_on_method_set_host_mcu_eset_icm_version() - on_int32_vec_property_set_func is not registerred!!!
+%s():%d  - signal 15 is captured...
+%s():%d  - malloc() fail!!!
+%s():%d  -malloc() fail!!!
+%s():%d  - pContext is NULL!!!
+cluster_thread
+%s():%d  - create thread error!!!, err msg: %s
+%s():%d  - create thread error!!!
+%s():%d  - err status is: IDCErrorStatus_NotSet
+%s():%d  - err status is: IDCErrorStatus_Ok
+%s():%d  - err status is: IDCErrorStatus_Timeout
+%s():%d  - err status is: IDCErrorStatus_InvalidArgument
+%s():%d  - err status is: IDCErrorStatus_NotAvailable
+%s():%d  - err status is: IDCErrorStatus_NotSupport
+%s():%d  - err status is: IDCErrorStatus_Error
+%s():%d  - err status is: IDCErrorStatus_SignalLost
+%s():%d  - err status is: IDCErrorStatus_SignalVdInvalid
+%s():%d  - err status is: IDCErrorStatus_KeepLast
+%s():%d  - err status is: IDCErrorStatus_InvalidShow
+%s():%d  - err status %d is unknown
+_run_common_thread
+_common_service_on_handle_sigterm
+xp_service_idc_start_common_work_thread
+%s():%d common thread started
+%s():%d  - signal 15 is captured..
+common_thread
+domain_controller_cluster_proxy_set_property
+domain_controller_cluster_proxy_get_property
+_domain_controller_cluster_skeleton_handle_set_property
+_domain_controller_cluster_skeleton_handle_get_property
+_domain_controller_cluster_skeleton_handle_method_call
+domain_controller_cluster_skeleton_set_property
+domain_controller_cluster_skeleton_get_property
+host-vcu-raw-car-speed
+host-vcu-bms-socdisp
+host-sws-rmute-button
+host-tbox-appoint-chg-set-min
+host-tbox-appoint-chg-set-hour
+host-mcu-power-range-flag
+host-vcu-veh-pwr-disp
+host-vcu-current-gearlev
+host-vcu-dstbat-disp
+host-mcu-ig-data
+host-mcu-charging-state
+host-mcu-voice-id
+host-park-avp-light-st
+host-vcu-powerlimitation-dsp
+host-vcu-bms-soclow-status
+host-bcm-airbag-fault-st
+host-esp-boost-fault-st
+host-esp-abs-fault
+host-bcm-smart-highbeam-st
+host-esp-esp-fault
+host-esc-esp
+host-esp-ind-light-avh
+host-bcm-l-charger-port
+host-vcu-batcold-disp
+host-tpms-sysfaultwarn
+host-esp-sys-warnind-req
+host-esp-apb-func-lamp
+host-esp-warn-lamp
+host-vcu-ind-12v-bat
+host-vcu-everrlamp-dsp
+host-vcu-emotor-sys-hot-disp
+host-vcu-bat-hot-disp
+host-vcu-batt-fault-disp
+host-vcu-hv-cutoff-disp
+host-scu-mrr-fcw-warning-st
+host-bcm-2ndleftseat-beltsbr-warning
+host-bcm-2ndmidseat-beltsbr-warning
+host-bcm-2ndrightseat-beltsbr-warning
+host-bcm-chargeport-left-fault
+host-xpu-auto-pilot-st
+host-vcu-coolant-overheat-st
+host-bcm-door
+host-bcm-bonnet
+host-bcm-trunkajar
+host-main-warn-lamp
+host-bcm-edriver-seat
+host-bcm-epsngr-seat
+host-fog-lights-switch-xp
+host-bcm-parking-lamp
+host-high-beam-lights-state
+host-bcm-elow-beam
+host-lturnlamp-rturnlamp-st
+host-bcm-echargeport-right-fault
+host-bcm-r-charger-port
+host-vcu-evsys-readyst
+host-vcu-hvac-elccon-sphigh
+host-vcu-charge-gun-status
+host-bcm-ebraking-light
+host-xpu-eacc-level
+host-mcu-emradar-calibration-state
+host-mcu-euradar-cal-rl
+host-mcu-euradar-cal-rr
+host-mcu-euradar-cal-fl
+host-mcu-euradar-cal-fr
+host-mcu-eacc-cc-light
+host-mcu-eautopilot-tips-id
+host-ebat-prepare-time
+host-env-outside-temperature
+host-ealarm-id
+host-espeed-xcc
+host-icm-total-odometer
+host-eota-ecu-silent-mode
+host-trip-distance-time
+host-escreen-colortest
+host-eavg-vehelcconsp
+host-elcd-blight
+host-elcd-bl-en-status
+host-esocmaxchg-pwlimit
+host-echarge-status
+host-echarge-cur
+host-echarge-voltage
+host-echarge-limit-time
+host-eradar-spacing-fol
+host-eradar-spacing-fcl
+host-eradar-spacing-fcr
+host-eradar-spacing-for
+host-eradar-spacing-rol
+host-eradar-spacing-rcl
+host-eradar-spacing-rcr
+host-eradar-spacing-ror
+host-etpms-pressure-lf
+host-etpms-temp-flg-lf
+host-etpms-status-lf
+host-etpms-pressure-rf
+host-etpms-temp-flg-rf
+host-etpms-status-rf
+host-etpms-pressure-lb
+host-etpms-temp-flg-lb
+host-etpms-status-lb
+host-etpms-pressure-rb
+host-etpms-temp-flg-rb
+host-etpms-status-rb
+host-etpms-temperature-lf
+host-etpms-temperature-rf
+host-etpms-temperature-lb
+host-etpms-temperature-rb
+host-eind-trs-forb
+host-eind-alc
+host-eind-trs-warn
+host-eind-trs-speed
+host-eind-fcw-aeb
+host-eind-lbsd
+host-eind-rbsd
+host-eind-rcta-left
+host-eind-rcta-right
+host-eengcost-p100m
+host-icm-trip-sinc-chrg
+host-eind-rcw
+host-eparking-area
+host-eparking-l1
+host-eparking-l2
+host-eparking-l3
+host-eparking-r1
+host-eparking-r2
+host-eparking-r3
+host-elane-status-ll
+host-elane-status-rr
+host-elane-status-l
+host-elane-status-r
+host-ealc-target-x
+host-ealc-target-y
+host-elane-param-ll
+host-elane-param-l
+host-elane-param-r
+host-elane-param-rr
+host-elane-line-l
+host-elane-line-r
+host-elane-line-ll
+host-elane-line-rr
+host-estart-lane-line-l
+host-estart-lane-line-r
+host-estart-lane-line-ll
+host-estart-lane-line-rr
+host-eradar-fsl
+host-eradar-fsr
+host-eradar-rsl
+host-eradar-rsr
+host-eradar-display-state
+host-eradar-level-rsl
+host-eradar-level-rsr
+host-eradar-level-fl
+host-eradar-level-fcl
+host-eradar-level-fcr
+host-eradar-level-fr
+host-eradar-level-rl
+host-eradar-level-rcl
+host-eradar-level-rcr
+host-eradar-level-rr
+host-scu-nedc-status
+host-alc-lane-yaw
+host-elane-order-param-3
+host-elane-order-param-2
+host-elane-order-param-1
+host-eradar-fdistance
+host-eradar-rdistance
+host-eradar-level-fsl
+host-eradar-level-fsr
+host-bcm-seat-heat-level
+host-emcu-backlight-state
+host-egear-n-remind
+host-espeaker-type
+host-eac-wind-level
+host-ewind-mode-state
+host-eseat-wind-level
+host-eauto-swing-state
+host-eac-open-state
+host-ecar-color-config
+host-ecar-type-config
+host-etmps-temp-warn
+host-eusb-update-flag
+host-emcu-reboot-req
+host-eac-temp-value
+host-surplus-usable-power
+host-esensor-error-info
+host-euradar-status
+host-euradar-status-fol
+host-euradar-status-fcl
+host-euradar-status-fcr
+host-euradar-status-for
+host-euradar-status-fsl
+host-euradar-status-fsr
+host-euradar-status-rol
+host-euradar-status-rcl
+host-euradar-status-rcr
+host-euradar-status-ror
+host-euradar-status-rsl
+host-euradar-status-rsr
+host-emwradar-status
+host-emwradar-status-fc
+host-emwradar-status-fl
+host-emwradar-status-fr
+host-emwradar-status-rcl
+host-emwradar-status-rcr
+host-ecamera-vpm-status-fcu
+host-ecamera-fisheye-status-fcu
+host-ecamera-main-state-fcu
+host-ecamera-narrow-state-fcu
+host-ecamera-dam-state-fli
+host-ecamera-svcam-state-fcd
+host-ecamera-svcam-state-l
+host-ecamera-svcam-state-r
+host-ecamera-svcam-state-rear
+host-ecamera-svcam-state
+host-esensor-errorinfo-id
+host-espeed-limit
+host-eforward-vehicle-angle-11
+host-eforward-vehicle-x-11
+host-eforward-vehicle-y-11
+host-eforward-vehicle-color-11
+host-eforward-vehicle-type-11
+host-edate-year
+host-edate-day
+host-edate-month
+host-edate-hour
+host-edate-min
+host-edate-sec
+host-vehicle-type
+host-epartition-request
+host-eforward-vehicle-angle-9
+host-eforward-vehicle-x-9
+host-eforward-vehicle-y-9
+host-eforward-vehicle-color-9
+host-eforward-vehicle-type-9
+host-eforward-vehicle-angle-10
+host-eforward-vehicle-x-10
+host-eforward-vehicle-y-10
+host-eforward-vehicle-color-10
+host-eforward-vehicle-type-10
+host-eforward-vehicle-angle-7
+host-eforward-vehicle-x-7
+host-eforward-vehicle-y-7
+host-eforward-vehicle-color-7
+host-eforward-vehicle-type-7
+host-eforward-vehicle-angle-8
+host-eforward-vehicle-x-8
+host-eforward-vehicle-y-8
+host-eforward-vehicle-color-8
+host-eforward-vehicle-type-8
+host-uart-i2c-abnormal-status
+host-trip-distance-time-2
+host-ngp-light-status
+host-fcw-aeb-close-status
+host-turn-light-type
+host-vehicle-color-config
+host-lcc-warning-light-status
+host-acl-warning-light-status
+host-etpms-multi-status-lf
+host-etpms-multi-status-rf
+host-etpms-multi-status-lb
+host-etpms-multi-status-rb
+host-islc-st
+host-vcu-drive-mode
+host-randis-mode
+host-traffic-lights-st
+host-xpu-spd-lmt-type
+host-echarge-voltage-level
+host-vehicle-1-sd-info
+host-vehicle-2-sd-info
+host-vehicle-3-sd-info
+host-vehicle-4-sd-info
+host-vehicle-5-sd-info
+host-vehicle-6-sd-info
+host-mcu-eset-time-state
+host-mcu-eset-ota-state
+host-mcu-eset-hmi-dsp-state
+host-mcu-eset-time
+host-mcu-eset-reset-tripa
+host-mcu-eset-reset-tripb
+host-mcu-eset-force-power-off
+host-mcu-eset-reboot-rsp
+host-mcu-eset-lcd-panel-error
+host-mcu-eset-lcd-bl-error
+host-mcu-eset-fpd-error
+host-mcu-eset-lcd-buck-error
+host-mcu-eset-vol-low-error
+host-mcu-eset-vol-high-error
+host-mcu-eset-lcd-cable-error
+host-mcu-eset-lcd-mcu-error
+host-mcu-eset-lcd-ti-error
+host-mcu-eset-emmc-state
+host-mcu-eset-phy-state
+host-mcu-eset-lvds-state
+host-mcu-eset-partition-state
+host-mcu-eset-icm-version
+host-lane-cone-1-info
+host-lane-cone-2-info
+host-lane-cone-3-info
+host-lane-cone-4-info
+host-lane-cone-5-info
+host-icm-time-format-sp
+host-icm-brightness-sp
+host-icm-speed-limit-warning-value-sp
+host-icm-alarm-volume-sp
+host-icm-speed-limit-warning-switch-sp
+host-icm-update-progress
+host-icm-update-result
+host-icm-feedback-signal
+host-icm-sync-signal
+host-icm-allcard-refrsh
+host-icm-infoflow-msg
+host-icm-carsetting
+host-icm-neednavi
+host-icm-update-req
+host-icm-reset-tripa-sp
+host-icm-reset-tripb-sp
+host-icm-update-trans
+host-icm-osdshow
+host-icm-infocard-add
+host-icm-infocard-update
+host-icm-infocard-remove
+host-icm-wheel-key
+host-icm-sync-time
+host-icm-account
+host-icm-weather
+host-icm-bluetooth-phone
+host-icm-face-info
+host-icm-tcp-subcribe
+host-icm-crash-info
+host-icm-version-info
+host-icm-diagnosis-info
+host-icm-all-lamp-state-req
+host-icm-all-lamp-state-info
+host-icm-left-menu-control
+host-icm-right-menu-control
+host-icm-log-compress
+host-icm-randis-display-type
+host-icm-locale-language
+host-icm-change-mileage-double
+host-icm-charging-duration
+host-debug-prop-logctrl
+host-mcu-soft-version
+host-mcu-upgrade-ack
+host-mcu-abnormal-recovery-req-ack
+host-mcu-system-reset-ack
+host-mcu-upgrade-boot-ver-ack
+host-mcu-upgrade-notify
+host-mcu-abnormal-recovery-req
+host-mcu-system-reset-req
+host-mcu-upgrade-boot-ver-notify
+/home/jenkins/workspace/SourceCode/applications/carservice/dbus/interface_lib/generated/DomainControllerCluster.c
+prop_id != 0 && prop_id - 1 < 349
+(ssv)
+org.freedesktop.DBus.Properties.Set
+Error setting property '%s' on interface com.xiaopeng.DomainController.Cluster: %s (%s, %d)
+DomainControllerCluster
+DomainControllerClusterProxy
+DomainControllerClusterSkeleton
+(iii@ayx)
+report_property
+get_host_vcu_raw_car_speed
+(@(iidx)i)
+get_host_vcu_bms_socdisp
+(@(iiix)i)
+get_host_sws_rmute_button
+get_host_tbox_appoint_chg_set_min
+get_host_tbox_appoint_chg_set_hour
+get_host_mcu_power_range_flag
+get_host_vcu_veh_pwr_disp
+get_host_vcu_current_gearlev
+get_host_vcu_dstbat_disp
+get_host_mcu_ig_data
+get_host_mcu_charging_state
+get_host_mcu_voice_id
+get_host_park_avp_light_st
+get_host_vcu_powerlimitation_dsp
+get_host_vcu_bms_soclow_status
+get_host_bcm_airbag_fault_st
+get_host_esp_boost_fault_st
+get_host_esp_abs_fault
+get_host_bcm_smart_highbeam_st
+get_host_esp_esp_fault
+get_host_esc_esp
+get_host_esp_ind_light_avh
+get_host_bcm_l_charger_port
+set_host_vcu_batcold_disp
+get_host_vcu_batcold_disp
+get_host_tpms_sysfaultwarn
+get_host_esp_sys_warnind_req
+get_host_esp_apb_func_lamp
+get_host_esp_warn_lamp
+get_host_vcu_ind_12v_bat
+get_host_vcu_everrlamp_dsp
+get_host_vcu_emotor_sys_hot_disp
+get_host_vcu_bat_hot_disp
+get_host_vcu_batt_fault_disp
+get_host_vcu_hv_cutoff_disp
+get_host_scu_mrr_fcw_warning_st
+get_host_bcm_2ndleftseat_beltsbr_warning
+get_host_bcm_2ndmidseat_beltsbr_warning
+get_host_bcm_2ndrightseat_beltsbr_warning
+get_host_bcm_chargeport_left_fault
+get_host_xpu_auto_pilot_st
+get_host_vcu_coolant_overheat_st
+get_host_bcm_door
+(@(iiaix)i)
+get_host_bcm_bonnet
+get_host_bcm_trunkajar
+get_host_main_warn_lamp
+get_host_bcm_edriver_seat
+get_host_bcm_epsngr_seat
+get_host_fog_lights_switch_xp
+get_host_bcm_parking_lamp
+get_host_high_beam_lights_state
+get_host_bcm_elow_beam
+get_host_lturnlamp_rturnlamp_st
+get_host_bcm_echargeport_right_fault
+get_host_bcm_r_charger_port
+get_host_vcu_evsys_readyst
+get_host_vcu_hvac_elccon_sphigh
+get_host_vcu_charge_gun_status
+get_host_bcm_ebraking_light
+get_host_xpu_eacc_level
+get_host_mcu_emradar_calibration_state
+get_host_mcu_euradar_cal_rl
+get_host_mcu_euradar_cal_rr
+get_host_mcu_euradar_cal_fl
+get_host_mcu_euradar_cal_fr
+get_host_mcu_eacc_cc_light
+get_host_mcu_eautopilot_tips_id
+get_host_ebat_prepare_time
+get_host_env_outside_temperature
+get_host_ealarm_id
+get_host_espeed_xcc
+get_host_icm_total_odometer
+get_host_eota_ecu_silent_mode
+get_host_trip_distance_time
+(@(iiadx)i)
+get_host_escreen_colortest
+get_host_eavg_vehelcconsp
+get_host_elcd_blight
+get_host_elcd_bl_en_status
+get_host_esocmaxchg_pwlimit
+get_host_echarge_status
+get_host_echarge_cur
+get_host_echarge_voltage
+get_host_echarge_limit_time
+get_host_eradar_spacing_fol
+get_host_eradar_spacing_fcl
+get_host_eradar_spacing_fcr
+get_host_eradar_spacing_for
+get_host_eradar_spacing_rol
+get_host_eradar_spacing_rcl
+get_host_eradar_spacing_rcr
+get_host_eradar_spacing_ror
+get_host_etpms_pressure_lf
+get_host_etpms_temp_flg_lf
+get_host_etpms_status_lf
+get_host_etpms_pressure_rf
+get_host_etpms_temp_flg_rf
+get_host_etpms_status_rf
+get_host_etpms_pressure_lb
+get_host_etpms_temp_flg_lb
+get_host_etpms_status_lb
+get_host_etpms_pressure_rb
+get_host_etpms_temp_flg_rb
+get_host_etpms_status_rb
+get_host_etpms_temperature_lf
+get_host_etpms_temperature_rf
+get_host_etpms_temperature_lb
+get_host_etpms_temperature_rb
+get_host_eind_trs_forb
+get_host_eind_alc
+get_host_eind_trs_warn
+get_host_eind_trs_speed
+get_host_eind_fcw_aeb
+get_host_eind_lbsd
+get_host_eind_rbsd
+get_host_eind_rcta_left
+get_host_eind_rcta_right
+get_host_eengcost_p100m
+get_host_icm_trip_sinc_chrg
+get_host_eind_rcw
+get_host_eparking_area
+get_host_eparking_l1
+get_host_eparking_l2
+get_host_eparking_l3
+get_host_eparking_r1
+get_host_eparking_r2
+get_host_eparking_r3
+get_host_elane_status_ll
+get_host_elane_status_rr
+get_host_elane_status_l
+get_host_elane_status_r
+get_host_ealc_target_x
+get_host_ealc_target_y
+get_host_elane_param_ll
+get_host_elane_param_l
+get_host_elane_param_r
+get_host_elane_param_rr
+get_host_elane_line_l
+get_host_elane_line_r
+get_host_elane_line_ll
+get_host_elane_line_rr
+get_host_estart_lane_line_l
+get_host_estart_lane_line_r
+get_host_estart_lane_line_ll
+get_host_estart_lane_line_rr
+get_host_eradar_fsl
+get_host_eradar_fsr
+get_host_eradar_rsl
+get_host_eradar_rsr
+get_host_eradar_display_state
+get_host_eradar_level_rsl
+get_host_eradar_level_rsr
+get_host_eradar_level_fl
+get_host_eradar_level_fcl
+get_host_eradar_level_fcr
+get_host_eradar_level_fr
+get_host_eradar_level_rl
+get_host_eradar_level_rcl
+get_host_eradar_level_rcr
+get_host_eradar_level_rr
+get_host_scu_nedc_status
+get_host_alc_lane_yaw
+get_host_elane_order_param_3
+get_host_elane_order_param_2
+get_host_elane_order_param_1
+get_host_eradar_fdistance
+get_host_eradar_rdistance
+get_host_eradar_level_fsl
+get_host_eradar_level_fsr
+get_host_bcm_seat_heat_level
+get_host_emcu_backlight_state
+get_host_egear_n_remind
+get_host_espeaker_type
+get_host_eac_wind_level
+get_host_ewind_mode_state
+get_host_eseat_wind_level
+get_host_eauto_swing_state
+get_host_eac_open_state
+get_host_ecar_color_config
+get_host_ecar_type_config
+get_host_etmps_temp_warn
+get_host_eusb_update_flag
+get_host_emcu_reboot_req
+get_host_eac_temp_value
+get_host_surplus_usable_power
+get_host_esensor_error_info
+get_host_euradar_status
+get_host_euradar_status_fol
+get_host_euradar_status_fcl
+get_host_euradar_status_fcr
+get_host_euradar_status_for
+get_host_euradar_status_fsl
+get_host_euradar_status_fsr
+get_host_euradar_status_rol
+get_host_euradar_status_rcl
+get_host_euradar_status_rcr
+get_host_euradar_status_ror
+get_host_euradar_status_rsl
+get_host_euradar_status_rsr
+get_host_emwradar_status
+get_host_emwradar_status_fc
+get_host_emwradar_status_fl
+get_host_emwradar_status_fr
+get_host_emwradar_status_rcl
+get_host_emwradar_status_rcr
+get_host_ecamera_vpm_status_fcu
+get_host_ecamera_fisheye_status_fcu
+get_host_ecamera_main_state_fcu
+get_host_ecamera_narrow_state_fcu
+get_host_ecamera_dam_state_fli
+get_host_ecamera_svcam_state_fcd
+get_host_ecamera_svcam_state_l
+get_host_ecamera_svcam_state_r
+get_host_ecamera_svcam_state_rear
+get_host_ecamera_svcam_state
+get_host_esensor_errorinfo_id
+get_host_espeed_limit
+get_host_eforward_vehicle_angle_11
+get_host_eforward_vehicle_x_11
+get_host_eforward_vehicle_y_11
+get_host_eforward_vehicle_color_11
+get_host_eforward_vehicle_type_11
+get_host_edate_year
+get_host_edate_day
+get_host_edate_month
+get_host_edate_hour
+get_host_edate_min
+get_host_edate_sec
+get_host_vehicle_type
+get_host_epartition_request
+get_host_eforward_vehicle_angle_9
+get_host_eforward_vehicle_x_9
+get_host_eforward_vehicle_y_9
+get_host_eforward_vehicle_color_9
+get_host_eforward_vehicle_type_9
+get_host_eforward_vehicle_angle_10
+get_host_eforward_vehicle_x_10
+get_host_eforward_vehicle_y_10
+get_host_eforward_vehicle_color_10
+get_host_eforward_vehicle_type_10
+get_host_eforward_vehicle_angle_7
+get_host_eforward_vehicle_x_7
+get_host_eforward_vehicle_y_7
+get_host_eforward_vehicle_color_7
+get_host_eforward_vehicle_type_7
+get_host_eforward_vehicle_angle_8
+get_host_eforward_vehicle_x_8
+get_host_eforward_vehicle_y_8
+get_host_eforward_vehicle_color_8
+get_host_eforward_vehicle_type_8
+get_host_uart_i2c_abnormal_status
+get_host_trip_distance_time_2
+get_host_ngp_light_status
+get_host_fcw_aeb_close_status
+get_host_turn_light_type
+get_host_vehicle_color_config
+get_host_lcc_warning_light_status
+get_host_acl_warning_light_status
+get_host_etpms_multi_status_lf
+get_host_etpms_multi_status_rf
+get_host_etpms_multi_status_lb
+get_host_etpms_multi_status_rb
+get_host_islc_st
+get_host_vcu_drive_mode
+get_host_randis_mode
+get_host_traffic_lights_st
+get_host_xpu_spd_lmt_type
+get_host_echarge_voltage_level
+get_host_vehicle_1_sd_info
+get_host_vehicle_2_sd_info
+get_host_vehicle_3_sd_info
+get_host_vehicle_4_sd_info
+get_host_vehicle_5_sd_info
+get_host_vehicle_6_sd_info
+set_host_mcu_eset_time_state
+set_host_mcu_eset_ota_state
+set_host_mcu_eset_hmi_dsp_state
+set_host_mcu_eset_time
+set_host_mcu_eset_reset_tripa
+set_host_mcu_eset_reset_tripb
+set_host_mcu_eset_force_power_off
+set_host_mcu_eset_reboot_rsp
+set_host_mcu_eset_lcd_panel_error
+set_host_mcu_eset_lcd_bl_error
+set_host_mcu_eset_fpd_error
+set_host_mcu_eset_lcd_buck_error
+set_host_mcu_eset_vol_low_error
+set_host_mcu_eset_vol_high_error
+set_host_mcu_eset_lcd_cable_error
+set_host_mcu_eset_lcd_mcu_error
+set_host_mcu_eset_lcd_ti_error
+set_host_mcu_eset_emmc_state
+set_host_mcu_eset_phy_state
+set_host_mcu_eset_lvds_state
+set_host_mcu_eset_partition_state
+(@ai)
+set_host_mcu_eset_icm_version
+get_host_lane_cone_1_info
+get_host_lane_cone_2_info
+get_host_lane_cone_3_info
+get_host_lane_cone_4_info
+get_host_lane_cone_5_info
+set_host_icm_time_format_sp
+get_host_icm_time_format_sp
+set_host_icm_brightness_sp
+get_host_icm_brightness_sp
+set_host_icm_speed_limit_warning_value_sp
+get_host_icm_speed_limit_warning_value_sp
+set_host_icm_alarm_volume_sp
+get_host_icm_alarm_volume_sp
+set_host_icm_speed_limit_warning_switch_sp
+get_host_icm_speed_limit_warning_switch_sp
+set_host_icm_update_progress
+set_host_icm_update_result
+set_host_icm_feedback_signal
+get_host_icm_feedback_signal
+(@(iisx)i)
+set_host_icm_sync_signal
+get_host_icm_sync_signal
+set_host_icm_allcard_refrsh
+get_host_icm_allcard_refrsh
+set_host_icm_infoflow_msg
+get_host_icm_infoflow_msg
+set_host_icm_carsetting
+get_host_icm_carsetting
+set_host_icm_neednavi
+get_host_icm_neednavi
+set_host_icm_update_req
+get_host_icm_update_req
+get_host_icm_reset_tripa_sp
+get_host_icm_reset_tripb_sp
+get_host_icm_update_trans
+get_host_icm_osdshow
+get_host_icm_infocard_add
+get_host_icm_infocard_update
+get_host_icm_infocard_remove
+get_host_icm_wheel_key
+get_host_icm_sync_time
+get_host_icm_account
+get_host_icm_weather
+get_host_icm_bluetooth_phone
+get_host_icm_face_info
+get_host_icm_tcp_subcribe
+set_host_icm_crash_info
+set_host_icm_version_info
+set_host_icm_diagnosis_info
+get_host_icm_all_lamp_state_req
+set_host_icm_all_lamp_state_info
+get_host_icm_left_menu_control
+get_host_icm_right_menu_control
+set_host_icm_log_compress
+get_host_icm_log_compress
+set_host_icm_randis_display_type
+get_host_icm_randis_display_type
+get_host_icm_locale_language
+get_host_icm_change_mileage_double
+get_host_icm_charging_duration
+(@ay)
+set_host_debug_prop_logctrl
+get_host_debug_prop_logctrl
+(@(iiayx)i)
+get_host_mcu_soft_version
+get_host_mcu_upgrade_ack
+get_host_mcu_abnormal_recovery_req_ack
+get_host_mcu_system_reset_ack
+get_host_mcu_upgrade_boot_ver_ack
+set_host_mcu_upgrade_notify
+set_host_mcu_abnormal_recovery_req
+set_host_mcu_system_reset_req
+set_host_mcu_upgrade_boot_ver_notify
+a{sv}
+{&sv}
+g-interface-name
+g-object-path
+g-connection
+g-name
+g-flags
+g-bus-type
+No property with name %s
+info != NULL
+Method %s is not implemented on interface %s
+{sv}
+(sa{sv}as)
+org.freedesktop.DBus.Properties
+PropertiesChanged
+cluster
+reportTime
+value
+extraIntData
+errorCode
+property
+host_icm_send_nav_msg
+host_icm_navigation
+host_icm_send_music_msg
+host_icm_send_net_radio_msg
+host_icm_udp_subcribe
+host_debug_hal
+GCC: (Ubuntu/Linaro 5.4.0-6ubuntu1~16.04.9) 5.4.0 20160609
+aeabi
+.shstrtab
+.interp
+.note.ABI-tag
+.note.gnu.build-id
+.gnu.hash
+.dynsym
+.dynstr
+.gnu.version
+.gnu.version_r
+.rel.dyn
+.rel.plt
+.init
+.text
+.fini
+.rodata
+.ARM.extab
+.ARM.exidx
+.eh_frame
+.init_array
+.fini_array
+.jcr
+.dynamic
+.got
+.data
+.bss
+.comment
+.ARM.attributes

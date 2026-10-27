@@ -1,0 +1,53 @@
+{
+  "status": "OFFLINE CANDIDATE ONLY; NOT LOADED BY KANZI OR DEPLOYED",
+  "source": "/Users/wayne/个人/xpeng/ClusterLyrics/research/icm-root/app/hmi/bin/card.kzb",
+  "source_sha256": "a742743904465ba1932f4363ca034e385490132a758a7a29412616ed56920eac",
+  "output": "/Users/wayne/个人/xpeng/ClusterLyrics/patches/card.song-lyrics.UNVALIDATED.kzb",
+  "output_sha256": "1529c9da55be139ff0c395d211666ead9e02a53bc4744fcba15f7c258b90b4d1",
+  "strategy": "Reuse the existing Trip card index (4) and replace its prefab with the Music prefab; keep the original Music card unchanged.",
+  "changes": {
+    "trip_slot_prefab": "Card_Music with MusicStateManager bindings",
+    "lyrics_image": [
+      {
+        "field": "lyrics_image.height",
+        "before": 240,
+        "after": 600
+      },
+      {
+        "field": "lyrics_image.width",
+        "before": 240,
+        "after": 600
+      },
+      {
+        "field": "fallback_image.height",
+        "before": 240,
+        "after": 600
+      },
+      {
+        "field": "fallback_image.width",
+        "before": 240,
+        "after": 600
+      }
+    ],
+    "selector_label": {
+      "from": "里程",
+      "to": "歌词"
+    },
+    "selector_icon": {
+      "from": "kzb://card/Textures/Icon/ic_applist_trip",
+      "to": "kzb://card/Textures/Icon/ic_applist_media"
+    },
+    "selector_prefabs": [
+      "/Prefabs/List_Icon_5_Left",
+      "/Prefabs/List_Icon_6_Left",
+      "/Prefabs/List_Icon_Right"
+    ]
+  },
+  "static_validation": "KZBF header and 446-entry directory parse; all non-target resource payloads are byte-identical; Trip slot points to the patched Music prefab; all selector resources contain the new label and media icon URL.",
+  "unvalidated": [
+    "Kanzi runtime loading of the repacked prefab",
+    "visual overlap/clipping with a 600x600 lyrics image and song/artist text",
+    "physical instrument rendering and card selection behavior",
+    "safe live resource replacement and rollback path"
+  ]
+}

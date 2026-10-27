@@ -1,0 +1,118 @@
+.class public final Lzipkin2/internal/V1JsonSpanWriter;
+.super Ljava/lang/Object;
+.source "V1JsonSpanWriter.java"
+
+# interfaces
+.implements Lzipkin2/internal/Buffer$Writer;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lzipkin2/internal/Buffer$Writer<",
+        "Lzipkin2/Span;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field final converter:Lzipkin2/v1/V2SpanConverter;
+
+.field final v1SpanWriter:Lzipkin2/internal/V1SpanWriter;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 1
+
+    .line 22
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 23
+    invoke-static {}, Lzipkin2/v1/V2SpanConverter;->create()Lzipkin2/v1/V2SpanConverter;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lzipkin2/internal/V1JsonSpanWriter;->converter:Lzipkin2/v1/V2SpanConverter;
+
+    .line 24
+    new-instance v0, Lzipkin2/internal/V1SpanWriter;
+
+    invoke-direct {v0}, Lzipkin2/internal/V1SpanWriter;-><init>()V
+
+    iput-object v0, p0, Lzipkin2/internal/V1JsonSpanWriter;->v1SpanWriter:Lzipkin2/internal/V1SpanWriter;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic sizeInBytes(Ljava/lang/Object;)I
+    .locals 0
+
+    .line 22
+    check-cast p1, Lzipkin2/Span;
+
+    invoke-virtual {p0, p1}, Lzipkin2/internal/V1JsonSpanWriter;->sizeInBytes(Lzipkin2/Span;)I
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public sizeInBytes(Lzipkin2/Span;)I
+    .locals 2
+    .param p1, "value"    # Lzipkin2/Span;
+
+    .line 28
+    iget-object v0, p0, Lzipkin2/internal/V1JsonSpanWriter;->converter:Lzipkin2/v1/V2SpanConverter;
+
+    invoke-virtual {v0, p1}, Lzipkin2/v1/V2SpanConverter;->convert(Lzipkin2/Span;)Lzipkin2/v1/V1Span;
+
+    move-result-object v0
+
+    .line 29
+    .local v0, "v1Span":Lzipkin2/v1/V1Span;
+    iget-object v1, p0, Lzipkin2/internal/V1JsonSpanWriter;->v1SpanWriter:Lzipkin2/internal/V1SpanWriter;
+
+    invoke-virtual {v1, v0}, Lzipkin2/internal/V1SpanWriter;->sizeInBytes(Lzipkin2/v1/V1Span;)I
+
+    move-result v1
+
+    return v1
+.end method
+
+.method public bridge synthetic write(Ljava/lang/Object;Lzipkin2/internal/Buffer;)V
+    .locals 0
+
+    .line 22
+    check-cast p1, Lzipkin2/Span;
+
+    invoke-virtual {p0, p1, p2}, Lzipkin2/internal/V1JsonSpanWriter;->write(Lzipkin2/Span;Lzipkin2/internal/Buffer;)V
+
+    return-void
+.end method
+
+.method public write(Lzipkin2/Span;Lzipkin2/internal/Buffer;)V
+    .locals 2
+    .param p1, "value"    # Lzipkin2/Span;
+    .param p2, "b"    # Lzipkin2/internal/Buffer;
+
+    .line 34
+    iget-object v0, p0, Lzipkin2/internal/V1JsonSpanWriter;->converter:Lzipkin2/v1/V2SpanConverter;
+
+    invoke-virtual {v0, p1}, Lzipkin2/v1/V2SpanConverter;->convert(Lzipkin2/Span;)Lzipkin2/v1/V1Span;
+
+    move-result-object v0
+
+    .line 35
+    .local v0, "v1Span":Lzipkin2/v1/V1Span;
+    iget-object v1, p0, Lzipkin2/internal/V1JsonSpanWriter;->v1SpanWriter:Lzipkin2/internal/V1SpanWriter;
+
+    invoke-virtual {v1, v0, p2}, Lzipkin2/internal/V1SpanWriter;->write(Lzipkin2/v1/V1Span;Lzipkin2/internal/Buffer;)V
+
+    .line 36
+    return-void
+.end method

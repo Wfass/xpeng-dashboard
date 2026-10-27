@@ -1,0 +1,34 @@
+.class public final synthetic Lcom/android/car/media/common/-$$Lambda$c$QsD0BebPllCz4aS6lNBQIt8LLf4;
+.super Ljava/lang/Object;
+.source "lambda"
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
+
+
+# instance fields
+.field private final synthetic f$0:Lcom/android/car/media/common/c;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcom/android/car/media/common/c;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/android/car/media/common/-$$Lambda$c$QsD0BebPllCz4aS6lNBQIt8LLf4;->f$0:Lcom/android/car/media/common/c;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onClick(Landroid/view/View;)V
+    .locals 1
+
+    iget-object v0, p0, Lcom/android/car/media/common/-$$Lambda$c$QsD0BebPllCz4aS6lNBQIt8LLf4;->f$0:Lcom/android/car/media/common/c;
+
+    invoke-static {v0, p1}, Lcom/android/car/media/common/c;->lambda$QsD0BebPllCz4aS6lNBQIt8LLf4(Lcom/android/car/media/common/c;Landroid/view/View;)V
+
+    return-void
+.end method

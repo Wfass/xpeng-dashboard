@@ -1,0 +1,145 @@
+.class Lcom/xiaopeng/carcontrol/dialog/panel/rearseat/SeatControlTlScene$1;
+.super Ljava/lang/Object;
+.source "SeatControlTlScene.java"
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/xiaopeng/carcontrol/dialog/panel/rearseat/SeatControlTlScene;->setTrdListener()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lcom/xiaopeng/carcontrol/dialog/panel/rearseat/SeatControlTlScene;
+
+
+# direct methods
+.method constructor <init>(Lcom/xiaopeng/carcontrol/dialog/panel/rearseat/SeatControlTlScene;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
+
+    .line 236
+    iput-object p1, p0, Lcom/xiaopeng/carcontrol/dialog/panel/rearseat/SeatControlTlScene$1;->this$0:Lcom/xiaopeng/carcontrol/dialog/panel/rearseat/SeatControlTlScene;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onClick(Landroid/view/View;)V
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "v"
+        }
+    .end annotation
+
+    const-wide/16 v0, 0x1f4
+
+    const/4 p1, 0x0
+
+    .line 239
+    invoke-static {v0, v1, p1}, Lcom/xiaopeng/carcontrol/helper/ClickHelper;->isFastClick(JZ)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    .line 240
+    invoke-static {}, Lcom/xiaopeng/carcontrol/helper/NotificationHelper;->getInstance()Lcom/xiaopeng/carcontrol/helper/NotificationHelper;
+
+    move-result-object p1
+
+    const v0, 0x7f1103cb
+
+    invoke-virtual {p1, v0}, Lcom/xiaopeng/carcontrol/helper/NotificationHelper;->showToast(I)V
+
+    return-void
+
+    .line 243
+    :cond_0
+    iget-object p1, p0, Lcom/xiaopeng/carcontrol/dialog/panel/rearseat/SeatControlTlScene$1;->this$0:Lcom/xiaopeng/carcontrol/dialog/panel/rearseat/SeatControlTlScene;
+
+    invoke-static {p1}, Lcom/xiaopeng/carcontrol/dialog/panel/rearseat/SeatControlTlScene;->access$000(Lcom/xiaopeng/carcontrol/dialog/panel/rearseat/SeatControlTlScene;)Lcom/xiaopeng/xui/widget/XStatefulToggleButtonSingle;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Lcom/xiaopeng/xui/widget/XStatefulToggleButtonSingle;->getState()I
+
+    move-result p1
+
+    if-eqz p1, :cond_3
+
+    iget-object p1, p0, Lcom/xiaopeng/carcontrol/dialog/panel/rearseat/SeatControlTlScene$1;->this$0:Lcom/xiaopeng/carcontrol/dialog/panel/rearseat/SeatControlTlScene;
+
+    invoke-static {p1}, Lcom/xiaopeng/carcontrol/dialog/panel/rearseat/SeatControlTlScene;->access$000(Lcom/xiaopeng/carcontrol/dialog/panel/rearseat/SeatControlTlScene;)Lcom/xiaopeng/xui/widget/XStatefulToggleButtonSingle;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Lcom/xiaopeng/xui/widget/XStatefulToggleButtonSingle;->getState()I
+
+    move-result p1
+
+    const/4 v0, 0x3
+
+    if-ne p1, v0, :cond_1
+
+    goto :goto_0
+
+    .line 247
+    :cond_1
+    iget-object p1, p0, Lcom/xiaopeng/carcontrol/dialog/panel/rearseat/SeatControlTlScene$1;->this$0:Lcom/xiaopeng/carcontrol/dialog/panel/rearseat/SeatControlTlScene;
+
+    invoke-static {p1}, Lcom/xiaopeng/carcontrol/dialog/panel/rearseat/SeatControlTlScene;->access$000(Lcom/xiaopeng/carcontrol/dialog/panel/rearseat/SeatControlTlScene;)Lcom/xiaopeng/xui/widget/XStatefulToggleButtonSingle;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Lcom/xiaopeng/xui/widget/XStatefulToggleButtonSingle;->getState()I
+
+    move-result p1
+
+    const/4 v0, 0x1
+
+    if-ne p1, v0, :cond_2
+
+    .line 248
+    iget-object p1, p0, Lcom/xiaopeng/carcontrol/dialog/panel/rearseat/SeatControlTlScene$1;->this$0:Lcom/xiaopeng/carcontrol/dialog/panel/rearseat/SeatControlTlScene;
+
+    invoke-static {p1}, Lcom/xiaopeng/carcontrol/dialog/panel/rearseat/SeatControlTlScene;->access$000(Lcom/xiaopeng/carcontrol/dialog/panel/rearseat/SeatControlTlScene;)Lcom/xiaopeng/xui/widget/XStatefulToggleButtonSingle;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Lcom/xiaopeng/xui/widget/XStatefulToggleButtonSingle;->setPause()I
+
+    :cond_2
+    return-void
+
+    .line 244
+    :cond_3
+    :goto_0
+    iget-object p1, p0, Lcom/xiaopeng/carcontrol/dialog/panel/rearseat/SeatControlTlScene$1;->this$0:Lcom/xiaopeng/carcontrol/dialog/panel/rearseat/SeatControlTlScene;
+
+    invoke-static {p1}, Lcom/xiaopeng/carcontrol/dialog/panel/rearseat/SeatControlTlScene;->access$100(Lcom/xiaopeng/carcontrol/dialog/panel/rearseat/SeatControlTlScene;)V
+
+    return-void
+.end method

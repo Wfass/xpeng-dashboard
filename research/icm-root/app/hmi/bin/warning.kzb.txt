@@ -1,0 +1,327 @@
+﻿Files:
+PropertyTypeLibrary/Card.SensorText
+PropertyTypeLibrary/CubemapColor
+PropertyTypeLibrary/Main.WarningIcon
+PropertyTypeLibrary/Main.WarningText
+PropertyTypeLibrary/offset
+PropertyTypeLibrary/smoothing
+PropertyTypeLibrary/Texture2
+PropertyTypeLibrary/TextureCube
+PropertyTypeLibrary/TAG_PROPERTY_TYPE_Transparent
+Animation Clips/Animation Clip
+Screens/Screen/RootPage/BG
+Screens/Screen/RootPage/Warning
+Screens/Screen/<ResourceDictionaryInNode>
+Screens/Screen/RootPage
+Screens/Screen
+Material Types/VertexPhong
+Material Types/ColorTexture
+Material Types/DefaultBlit
+Material Types/FontDefault
+Material Types/MaskTexture
+Material Types/SweepTextures
+Material Types/Textured
+Materials/VertexPhongMaterial
+Materials/ColorTextureMaterial
+Materials/DefaultBlitMaterial
+Materials/FontDefaultMaterial
+Materials/MaskTextureMaterial
+Materials/SweepTexturesMaterial
+Materials/TexturedMaterial
+Brushes/DefaultBackground
+Brushes/Color Brush
+Brushes/Texture Brush
+Brushes/Shadow_Texture Brush
+Prefabs/Warning/Warning/Warning
+Prefabs/Warning/Warning
+Prefabs/AutonomousDriving/AutonomousDriving/shadow
+Prefabs/AutonomousDriving/AutonomousDriving/BG
+Prefabs/AutonomousDriving/AutonomousDriving
+Prefabs/IconTextReminderMulti-line/IconTextReminderMulti-line/location/BG/BG_Normal
+Prefabs/IconTextReminderMulti-line/IconTextReminderMulti-line/location/BG
+Prefabs/IconTextReminderMulti-line/IconTextReminderMulti-line/location/Icon
+Prefabs/IconTextReminderMulti-line/IconTextReminderMulti-line/location/TextReminder
+Prefabs/IconTextReminderMulti-line/IconTextReminderMulti-line/shadow
+Prefabs/IconTextReminderMulti-line/IconTextReminderMulti-line/location
+Prefabs/IconTextReminderMulti-line/IconTextReminderMulti-line
+Prefabs/TextReminderMulti-line/TextReminderMulti-line/location/BG/BG_Normal
+Prefabs/TextReminderMulti-line/TextReminderMulti-line/location/BG
+Prefabs/TextReminderMulti-line/TextReminderMulti-line/location/TextReminder
+Prefabs/TextReminderMulti-line/TextReminderMulti-line/shadow
+Prefabs/TextReminderMulti-line/TextReminderMulti-line/location
+Prefabs/TextReminderMulti-line/TextReminderMulti-line
+Prefabs/TextReminderSingle-line/TextReminderSingle-line/location/BG/BG_Normal
+Prefabs/TextReminderSingle-line/TextReminderSingle-line/location/BG
+Prefabs/TextReminderSingle-line/TextReminderSingle-line/location/TextReminder
+Prefabs/TextReminderSingle-line/TextReminderSingle-line/shadow
+Prefabs/TextReminderSingle-line/TextReminderSingle-line/location
+Prefabs/TextReminderSingle-line/TextReminderSingle-line
+Prefabs/IconTextReminderSingle-line/IconTextReminderSingle-line/location/BG/BG_Normal
+Prefabs/IconTextReminderSingle-line/IconTextReminderSingle-line/location/BG
+Prefabs/IconTextReminderSingle-line/IconTextReminderSingle-line/location/Icon
+Prefabs/IconTextReminderSingle-line/IconTextReminderSingle-line/location/TextReminder
+Prefabs/IconTextReminderSingle-line/IconTextReminderSingle-line/shadow
+Prefabs/IconTextReminderSingle-line/IconTextReminderSingle-line/location
+Prefabs/IconTextReminderSingle-line/IconTextReminderSingle-line
+Prefabs/TextReminderSingle-line_ADAS/TextReminderSingle-line_ADAS/location/BG/BG_Normal
+Prefabs/TextReminderSingle-line_ADAS/TextReminderSingle-line_ADAS/location/BG
+Prefabs/TextReminderSingle-line_ADAS/TextReminderSingle-line_ADAS/location/TextReminder
+Prefabs/TextReminderSingle-line_ADAS/TextReminderSingle-line_ADAS/shadow
+Prefabs/TextReminderSingle-line_ADAS/TextReminderSingle-line_ADAS/location
+Prefabs/TextReminderSingle-line_ADAS/TextReminderSingle-line_ADAS
+Prefabs/TextReminderMulti-line_ADAS/TextReminderMulti-line_ADAS/location/BG/BG_Normal
+Prefabs/TextReminderMulti-line_ADAS/TextReminderMulti-line_ADAS/location/BG
+Prefabs/TextReminderMulti-line_ADAS/TextReminderMulti-line_ADAS/location/TextReminder
+Prefabs/TextReminderMulti-line_ADAS/TextReminderMulti-line_ADAS/shadow
+Prefabs/TextReminderMulti-line_ADAS/TextReminderMulti-line_ADAS/location
+Prefabs/TextReminderMulti-line_ADAS/TextReminderMulti-line_ADAS
+Prefabs/TextReminderSingle-line_ADAS_Red/TextReminderSingle-line_ADAS_Red/location/BG/BG_Red/Nine Patch Image
+Prefabs/TextReminderSingle-line_ADAS_Red/TextReminderSingle-line_ADAS_Red/location/BG/BG_Red
+Prefabs/TextReminderSingle-line_ADAS_Red/TextReminderSingle-line_ADAS_Red/location/BG
+Prefabs/TextReminderSingle-line_ADAS_Red/TextReminderSingle-line_ADAS_Red/location/TextReminder
+Prefabs/TextReminderSingle-line_ADAS_Red/TextReminderSingle-line_ADAS_Red/shadow
+Prefabs/TextReminderSingle-line_ADAS_Red/TextReminderSingle-line_ADAS_Red/location
+Prefabs/TextReminderSingle-line_ADAS_Red/TextReminderSingle-line_ADAS_Red
+Prefabs/TextReminderSingle-line_Red/TextReminderSingle-line_Red/location/BG/BG_Red/Nine Patch Image
+Prefabs/TextReminderSingle-line_Red/TextReminderSingle-line_Red/location/BG/BG_Red
+Prefabs/TextReminderSingle-line_Red/TextReminderSingle-line_Red/location/BG
+Prefabs/TextReminderSingle-line_Red/TextReminderSingle-line_Red/location/TextReminder
+Prefabs/TextReminderSingle-line_Red/TextReminderSingle-line_Red/shadow
+Prefabs/TextReminderSingle-line_Red/TextReminderSingle-line_Red/location
+Prefabs/TextReminderSingle-line_Red/TextReminderSingle-line_Red
+Prefabs/TextReminderMulti-line_ADAS_Red/TextReminderMulti-line_ADAS_Red/location/BG/BG_Red/Nine Patch Image
+Prefabs/TextReminderMulti-line_ADAS_Red/TextReminderMulti-line_ADAS_Red/location/BG/BG_Red
+Prefabs/TextReminderMulti-line_ADAS_Red/TextReminderMulti-line_ADAS_Red/location/BG
+Prefabs/TextReminderMulti-line_ADAS_Red/TextReminderMulti-line_ADAS_Red/location/TextReminder
+Prefabs/TextReminderMulti-line_ADAS_Red/TextReminderMulti-line_ADAS_Red/shadow
+Prefabs/TextReminderMulti-line_ADAS_Red/TextReminderMulti-line_ADAS_Red/location
+Prefabs/TextReminderMulti-line_ADAS_Red/TextReminderMulti-line_ADAS_Red
+Prefabs/TextReminderMulti-line_Red/TextReminderMulti-line_Red/location/BG/BG_Red/Nine Patch Image
+Prefabs/TextReminderMulti-line_Red/TextReminderMulti-line_Red/location/BG/BG_Red
+Prefabs/TextReminderMulti-line_Red/TextReminderMulti-line_Red/location/BG
+Prefabs/TextReminderMulti-line_Red/TextReminderMulti-line_Red/location/TextReminder
+Prefabs/TextReminderMulti-line_Red/TextReminderMulti-line_Red/shadow
+Prefabs/TextReminderMulti-line_Red/TextReminderMulti-line_Red/location
+Prefabs/TextReminderMulti-line_Red/TextReminderMulti-line_Red
+Prefabs/IconTextReminderSingle-line_ADAS/IconTextReminderSingle-line_ADAS/location/BG/BG_Normal
+Prefabs/IconTextReminderSingle-line_ADAS/IconTextReminderSingle-line_ADAS/location/BG
+Prefabs/IconTextReminderSingle-line_ADAS/IconTextReminderSingle-line_ADAS/location/Icon
+Prefabs/IconTextReminderSingle-line_ADAS/IconTextReminderSingle-line_ADAS/location/TextReminder
+Prefabs/IconTextReminderSingle-line_ADAS/IconTextReminderSingle-line_ADAS/shadow
+Prefabs/IconTextReminderSingle-line_ADAS/IconTextReminderSingle-line_ADAS/location
+Prefabs/IconTextReminderSingle-line_ADAS/IconTextReminderSingle-line_ADAS
+Prefabs/IconTextReminderMulti-line_ADAS/IconTextReminderMulti-line_ADAS/location/BG/BG_Normal
+Prefabs/IconTextReminderMulti-line_ADAS/IconTextReminderMulti-line_ADAS/location/BG
+Prefabs/IconTextReminderMulti-line_ADAS/IconTextReminderMulti-line_ADAS/location/Icon
+Prefabs/IconTextReminderMulti-line_ADAS/IconTextReminderMulti-line_ADAS/location/TextReminder
+Prefabs/IconTextReminderMulti-line_ADAS/IconTextReminderMulti-line_ADAS/shadow
+Prefabs/IconTextReminderMulti-line_ADAS/IconTextReminderMulti-line_ADAS/location
+Prefabs/IconTextReminderMulti-line_ADAS/IconTextReminderMulti-line_ADAS
+Prefabs/IconTextReminderSingle-line_ADAS_Red/IconTextReminderSingle-line_ADAS_Red/location/BG/BG_Red/Nine Patch Image
+Prefabs/IconTextReminderSingle-line_ADAS_Red/IconTextReminderSingle-line_ADAS_Red/location/BG/BG_Red
+Prefabs/IconTextReminderSingle-line_ADAS_Red/IconTextReminderSingle-line_ADAS_Red/location/BG
+Prefabs/IconTextReminderSingle-line_ADAS_Red/IconTextReminderSingle-line_ADAS_Red/location/Icon
+Prefabs/IconTextReminderSingle-line_ADAS_Red/IconTextReminderSingle-line_ADAS_Red/location/TextReminder
+Prefabs/IconTextReminderSingle-line_ADAS_Red/IconTextReminderSingle-line_ADAS_Red/shadow
+Prefabs/IconTextReminderSingle-line_ADAS_Red/IconTextReminderSingle-line_ADAS_Red/location
+Prefabs/IconTextReminderSingle-line_ADAS_Red/IconTextReminderSingle-line_ADAS_Red
+Prefabs/BG_Normal/BG_Normal/Nine Patch Image
+Prefabs/BG_Normal/BG_Normal
+Prefabs/BG_Red/BG_Red/Nine Patch Image
+Prefabs/BG_Red/BG_Red
+Prefabs/IconTextReminderMulti-line_ADAS_Red/IconTextReminderMulti-line_ADAS_Red/location/BG/BG_Red/Nine Patch Image
+Prefabs/IconTextReminderMulti-line_ADAS_Red/IconTextReminderMulti-line_ADAS_Red/location/BG/BG_Red
+Prefabs/IconTextReminderMulti-line_ADAS_Red/IconTextReminderMulti-line_ADAS_Red/location/BG
+Prefabs/IconTextReminderMulti-line_ADAS_Red/IconTextReminderMulti-line_ADAS_Red/location/Icon
+Prefabs/IconTextReminderMulti-line_ADAS_Red/IconTextReminderMulti-line_ADAS_Red/location/TextReminder
+Prefabs/IconTextReminderMulti-line_ADAS_Red/IconTextReminderMulti-line_ADAS_Red/shadow
+Prefabs/IconTextReminderMulti-line_ADAS_Red/IconTextReminderMulti-line_ADAS_Red/location
+Prefabs/IconTextReminderMulti-line_ADAS_Red/IconTextReminderMulti-line_ADAS_Red
+Prefabs/TextReminderSingle-line_Card/TextReminderSingle-line_Card/location/BG/BG_Normal
+Prefabs/TextReminderSingle-line_Card/TextReminderSingle-line_Card/location/BG
+Prefabs/TextReminderSingle-line_Card/TextReminderSingle-line_Card/location/TextReminder
+Prefabs/TextReminderSingle-line_Card/TextReminderSingle-line_Card/shadow
+Prefabs/TextReminderSingle-line_Card/TextReminderSingle-line_Card/location
+Prefabs/TextReminderSingle-line_Card/TextReminderSingle-line_Card
+Prefabs/AutonomousDriving_DSM/AutonomousDriving_DSM/shadow
+Prefabs/AutonomousDriving_DSM/AutonomousDriving_DSM/BG
+Prefabs/AutonomousDriving_DSM/AutonomousDriving_DSM
+Prefabs/IconTextReminderMulti-line_125/IconTextReminderMulti-line_125/location/BG/BG_Normal
+Prefabs/IconTextReminderMulti-line_125/IconTextReminderMulti-line_125/location/BG
+Prefabs/IconTextReminderMulti-line_125/IconTextReminderMulti-line_125/location/Icon
+Prefabs/IconTextReminderMulti-line_125/IconTextReminderMulti-line_125/location/TextReminder
+Prefabs/IconTextReminderMulti-line_125/IconTextReminderMulti-line_125/shadow
+Prefabs/IconTextReminderMulti-line_125/IconTextReminderMulti-line_125/location
+Prefabs/IconTextReminderMulti-line_125/IconTextReminderMulti-line_125
+Prefabs/Warning
+Prefabs/AutonomousDriving
+Prefabs/IconTextReminderMulti-line
+Prefabs/TextReminderMulti-line
+Prefabs/TextReminderSingle-line
+Prefabs/IconTextReminderSingle-line
+Prefabs/TextReminderSingle-line_ADAS
+Prefabs/TextReminderMulti-line_ADAS
+Prefabs/TextReminderSingle-line_ADAS_Red
+Prefabs/TextReminderSingle-line_Red
+Prefabs/TextReminderMulti-line_ADAS_Red
+Prefabs/TextReminderMulti-line_Red
+Prefabs/IconTextReminderSingle-line_ADAS
+Prefabs/IconTextReminderMulti-line_ADAS
+Prefabs/IconTextReminderSingle-line_ADAS_Red
+Prefabs/BG_Normal
+Prefabs/BG_Red
+Prefabs/IconTextReminderMulti-line_ADAS_Red
+Prefabs/TextReminderSingle-line_Card
+Prefabs/AutonomousDriving_DSM
+Prefabs/IconTextReminderMulti-line_125
+Localization/warning
+Locales/neutral
+Locales/zh-CN
+Page Transitions/Default Transitions
+Resource Files/Images/DefaultTextureImage.png
+Resource Files/Images/弹出框.png
+Resource Files/Images/bg_dialog_gray.png
+Resource Files/Images/bg_dialog_gray_big.png
+Resource Files/Images/bg_dialog_gray_left.png
+Resource Files/Images/bg_dialog_gray_right.png
+Resource Files/Images/bg_dialog_gray_self.png
+Resource Files/Images/bg_dialog_red.png
+Resource Files/Images/bg_dialog_red_big.png
+Resource Files/Images/bg_dialog_red_left.png
+Resource Files/Images/bg_dialog_red_right.png
+Resource Files/Images/bg_warning_shadow.png
+Resource Files/Images/bg_dialog_gray_big_night.png
+Resource Files/Images/bg_dialog_gray_left_night.png
+Resource Files/Images/bg_dialog_gray_night.png
+Resource Files/Images/bg_dialog_gray_right_night.png
+Resource Files/Images/bg_dialog_gray_self_night.png
+Resource Files/Images/bg_warning_shadow_night.png
+Resource Files/Images/bg_warning_shadow_night_night.png
+Resource Files/Images/bg_dialog_red_big_night.png
+Resource Files/Images/bg_dialog_red_left_night.png
+Resource Files/Images/bg_dialog_red_night.png
+Resource Files/Images/bg_dialog_red_right_night.png
+Resource Files/Images/ic_small alart_day.png
+Resource Files/Images/弹出框_night.png
+Resource Files/Images/ic_autohold.png
+Resource Files/Images/ic_electric_system_failure.png
+Resource Files/Images/ic_parking_brake.png
+Resource Files/Images/ic_Airbag failure.png
+Resource Files/Images/ic_braking_system_failure.png
+Resource Files/Images/EPS_electronic_power_steering_failure.png
+Resource Files/Images/ic_battery_charging_failure.png
+Resource Files/Images/ic_front_collision_warning.png
+Resource Files/Images/ic_tyre_pressure_monitoring_system_failure.png
+Resource Files/Images/ic_main_driver's_seat_belt_is_not_fastened.png
+Resource Files/Images/bg_dialog_gray_1.png
+Resource Files/Images/bg_dialog_gray_2.png
+Resource Files/Images/bg_dialog_gray_3.png
+Resource Files/Images/bg_dialog_gray_4.png
+Resource Files/Images/bg_dialog_gray_5.png
+Resource Files/Images/bg_dialog_gray_6.png
+Resource Files/Images/bg_dialog_gray_7.png
+Resource Files/Images/bg_dialog_gray_8.png
+Resource Files/Images/bg_dialog_gray_9.png
+Resource Files/Images/bg_dialog_gray_1_night.png
+Resource Files/Images/bg_dialog_gray_2_night.png
+Resource Files/Images/bg_dialog_gray_3_night.png
+Resource Files/Images/bg_dialog_gray_4_night.png
+Resource Files/Images/bg_dialog_gray_5_night.png
+Resource Files/Images/bg_dialog_gray_6_night.png
+Resource Files/Images/bg_dialog_gray_7_night.png
+Resource Files/Images/bg_dialog_gray_8_night.png
+Resource Files/Images/bg_dialog_gray_9_night.png
+Resource Files/Images/bg_dialog_red_1_Night.png
+Resource Files/Images/bg_dialog_red_2_Night.png
+Resource Files/Images/bg_dialog_red_3_Night.png
+Resource Files/Images/bg_dialog_red_4_Night.png
+Resource Files/Images/bg_dialog_red_5_Night.png
+Resource Files/Images/bg_dialog_red_6_Night.png
+Resource Files/Images/bg_dialog_red_7_Night.png
+Resource Files/Images/bg_dialog_red_8_Night.png
+Resource Files/Images/bg_dialog_red_9_Night.png
+Resource Files/Images/bg_dialog_red_1.png
+Resource Files/Images/bg_dialog_red_2.png
+Resource Files/Images/bg_dialog_red_3.png
+Resource Files/Images/bg_dialog_red_4.png
+Resource Files/Images/bg_dialog_red_5.png
+Resource Files/Images/bg_dialog_red_6.png
+Resource Files/Images/bg_dialog_red_7.png
+Resource Files/Images/bg_dialog_red_8.png
+Resource Files/Images/bg_dialog_red_9.png
+Resource Files/Images/ic_red_pedal.png
+Resource Files/Images/ic_construction.png
+Resource Files/Images/ic_pedestrian.png
+Resource Files/Images/ic_sharp_turn.png
+Resource Files/Images/ic_distraction_warning.png
+Resource Files/Images/DSM_day.png
+Resource Files/Images/DSM_night.png
+Resource Files/Images/bigshadow_day.png
+Resource Files/Images/bigshadow_night.png
+Resource Files/Images/ic_one_two_lcc_exitl_ift_waring.png
+Resource Files/Images/ic_shift_lever_press.png
+Textures/day/bg_warning_shadow
+Textures/day/bg_dialog_gray_1
+Textures/day/bg_dialog_gray_2
+Textures/day/bg_dialog_gray_3
+Textures/day/bg_dialog_gray_4
+Textures/day/bg_dialog_gray_5
+Textures/day/bg_dialog_gray_6
+Textures/day/bg_dialog_gray_7
+Textures/day/bg_dialog_gray_8
+Textures/day/bg_dialog_gray_9
+Textures/day/bigshadow_day
+Textures/night/bg_warning_shadow_night
+Textures/night/bg_dialog_gray_1_night
+Textures/night/bg_dialog_gray_2_night
+Textures/night/bg_dialog_gray_3_night
+Textures/night/bg_dialog_gray_4_night
+Textures/night/bg_dialog_gray_5_night
+Textures/night/bg_dialog_gray_6_night
+Textures/night/bg_dialog_gray_7_night
+Textures/night/bg_dialog_gray_8_night
+Textures/night/bg_dialog_gray_9_night
+Textures/night/bigshadow_night
+Textures/Red/bg_dialog_red_1_Night
+Textures/Red/bg_dialog_red_2_Night
+Textures/Red/bg_dialog_red_3_Night
+Textures/Red/bg_dialog_red_4_Night
+Textures/Red/bg_dialog_red_5_Night
+Textures/Red/bg_dialog_red_6_Night
+Textures/Red/bg_dialog_red_7_Night
+Textures/Red/bg_dialog_red_8_Night
+Textures/Red/bg_dialog_red_9_Night
+Textures/Red/bg_dialog_red_1
+Textures/Red/bg_dialog_red_2
+Textures/Red/bg_dialog_red_3
+Textures/Red/bg_dialog_red_4
+Textures/Red/bg_dialog_red_5
+Textures/Red/bg_dialog_red_6
+Textures/Red/bg_dialog_red_7
+Textures/Red/bg_dialog_red_8
+Textures/Red/bg_dialog_red_9
+Textures/icon/ic_small alart_day
+Textures/icon/ic_autohold
+Textures/icon/ic_electric_system_failure
+Textures/icon/ic_parking_brake
+Textures/icon/ic_airbag_failure
+Textures/icon/ic_braking_system_failure
+Textures/icon/EPS_electronic_power_steering_failure
+Textures/icon/ic_battery_charging_failure
+Textures/icon/ic_front_collision_warning
+Textures/icon/ic_tyre_pressure_monitoring_system_failure
+Textures/icon/ic_main_driver's_seat_belt_is_not_fastened
+Textures/icon/ic_red_pedal
+Textures/icon/ic_construction
+Textures/icon/ic_pedestrian
+Textures/icon/ic_sharp_turn
+Textures/icon/ic_distraction_warning
+Textures/icon/ic_one_two_lcc_exitl_ift_waring
+Textures/Default Texture
+Textures/弹出框
+Textures/弹出框_night
+Textures/DSM_day
+Textures/DSM_night
+Textures/ic_shift_lever_press
+Styles/Text Block 2D Style
+/warning

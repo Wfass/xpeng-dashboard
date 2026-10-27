@@ -1,0 +1,16 @@
+<NormalInfo name="NormalInfo">
+	<!-- <Speed type="int">0</Speed>  -->
+	<!-- <ElectricityPercent type="float">1.0</ElectricityPercent> -->
+	<!--Electricity type="int">3</Electricity-->
+	<Time type="string">00:00</Time>
+	<!-- <Mileage type="int">0</Mileage> -->
+	<Temperature type="int">00</Temperature>
+	<DrivingMode type="int">0</DrivingMode>
+	<ReadyIndicatorLight type="bool">false</ReadyIndicatorLight>
+	<BatteryLifeStandard type="int">0</BatteryLifeStandard>
+	<TimePattern type="int">0</TimePattern>
+	<MorningOrAfternoon type="int">0</MorningOrAfternoon>
+	<SpeedUnitVisible type="bool">true</SpeedUnitVisible>
+	<EnduranceMileageNumVisible type="bool">true</EnduranceMileageNumVisible>	
+</NormalInfo>
+

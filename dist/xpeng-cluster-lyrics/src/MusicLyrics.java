@@ -80,7 +80,7 @@ public class MusicLyrics {
     }catch(Exception ignored){}
     return (context.getResources().getConfiguration().uiMode&android.content.res.Configuration.UI_MODE_NIGHT_MASK)==android.content.res.Configuration.UI_MODE_NIGHT_YES;
   }
-  static byte[] render(Context context,String title,String artist,List<ClusterLyrics.Line> lines,int index,int visibleRows,String transitionFrom,float transitionProgress)throws Exception{
+  static byte[] render(Context context,String title,String artist,List<ClusterLyrics.Line> lines,int index,int visibleRows)throws Exception{
     // Match the Navigation card's 660x660 MapBG image area. The lyrics slot
     // has no native title/artist rows, so include them in the image header.
     Bitmap b=Bitmap.createBitmap(660,660,Bitmap.Config.ARGB_8888);Canvas c=new Canvas(b);
@@ -98,12 +98,7 @@ public class MusicLyrics {
     float previousY=Math.max(175,350-style.verticalGap)+style.verticalOffset;
     float nextY=Math.min(520,350+style.verticalGap)+style.verticalOffset;
     float center=350+style.verticalOffset;
-    if(transitionFrom!=null&&transitionProgress<1f){
-      float p=Math.max(0f,Math.min(1f,transitionProgress));
-      drawCentered(c,transitionFrom,width,style.currentSize,style.minCurrentSize,250,style.maxLines,style.withAlpha((int)(255*(1f-p)),accent),center-90f*p,style.lineSpacing,style.bold);
-      drawCentered(c,now,width,style.currentSize,style.minCurrentSize,250,style.maxLines,style.withAlpha((int)(255*p),accent),center+65f*(1f-p),style.lineSpacing,style.bold);
-      if(visibleRows==3)drawCentered(c,next,width,style.sideSize,Math.max(10,style.sideSize-20),92,2,style.withAlpha(0x99,accent),nextY,style.lineSpacing,style.bold);
-    }else if(visibleRows==2){
+    if(visibleRows==2){
       float upper=center-style.verticalGap/2f,lower=center+style.verticalGap/2f;
       drawCentered(c,now,width,style.currentSize,style.minCurrentSize,250,style.maxLines,accent,upper,style.lineSpacing,style.bold);
       drawCentered(c,next,width,style.sideSize,Math.max(10,style.sideSize-20),92,2,style.withAlpha(0x99,accent),lower,style.lineSpacing,style.bold);
@@ -144,7 +139,7 @@ public class MusicLyrics {
     }
   }
   static void work(MediaSessionManager manager,Object shm,Context context,boolean restore)throws Exception{
-    String cached="",lastKey="",lastSong="",transitionFrom=null;int lastIndex=-1;long sentAt=0,transitionStarted=0,count=0;List<ClusterLyrics.Line> lines=new ArrayList<>();
+    String cached="",lastKey="";long sentAt=0,count=0;List<ClusterLyrics.Line> lines=new ArrayList<>();
     while(true){
       MediaController mc=null;
       for(MediaController candidate:manager.getActiveSessions(null))if(candidate.getPackageName().equals("com.xiaopeng.musicradio")){mc=candidate;break;}
@@ -161,22 +156,14 @@ public class MusicLyrics {
       String subtitle=artist;
       String key=title+"|"+index+"|"+playing;
       long now=SystemClock.elapsedRealtime();
-      if(!restore&&!song.equals(lastSong)){lastIndex=-1;transitionFrom=null;transitionStarted=0;}
-      if(!restore&&index!=lastIndex&&lastIndex>=0&&song.equals(lastSong)){
-        transitionFrom=lastIndex<lines.size()?lines.get(lastIndex).text:null;transitionStarted=now;
-      }
-      boolean animating=transitionFrom!=null&&now-transitionStarted<500;
-      float transitionProgress=animating?(now-transitionStarted)/500f:1f;
-      if(!animating&&transitionFrom!=null){transitionFrom=null;transitionProgress=1f;}
-      if(restore||!key.equals(lastKey)||now-sentAt>=(animating?125:1000)){
+      if(restore||!key.equals(lastKey)||now-sentAt>=1000){
         JSONObject music=new JSONObject().put("artist",subtitle).put("song",song).put("progress",String.valueOf(position/1000)).put("total",String.valueOf(md.getLong(MediaMetadata.METADATA_KEY_DURATION)/1000)).put("startPosition",String.valueOf(md.getLong("startPosition"))).put("status",playing?"play":"pause");
         JSONObject message=new JSONObject().put("enable","1").put("msgtype","7").put("music",music).put("reporttime",new java.text.SimpleDateFormat("HH:mm",Locale.CHINA).format(new Date()));
-        byte[] image=restore?album(md):render(context,title,artist,lines,index,Style.load().visibleRows,transitionFrom,transitionProgress);
+        byte[] image=restore?album(md):render(context,title,artist,lines,index,Style.load().visibleRows);
         send(shm,message,image);lastKey=key;sentAt=now;count++;
         if(count==1||count%15==0||restore)System.out.println("MUSIC_SUBMITTED count="+count+" lineIndex="+index+" positionMs="+position+" restore="+restore+" imageBytes="+image.length);
       }
-      lastSong=song;lastIndex=index;
-      if(restore)return;Thread.sleep(animating?100:250);
+      if(restore)return;Thread.sleep(250);
     }
   }
 }

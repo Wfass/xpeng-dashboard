@@ -9,7 +9,7 @@ mkdir -p "$OUT/classes" "$OUT/dex"
 rm -rf "$OUT/classes" "$OUT/dex"
 mkdir -p "$OUT/classes" "$OUT/dex"
 javac -source 8 -target 8 -bootclasspath "$ANDROID_JAR" -d "$OUT/classes" control-app/src/com/xpeng/clusterlyrics/control/LyricsControlActivity.java
-"$BUILD_TOOLS/aapt" package -f -M control-app/AndroidManifest.xml -S control-app/res -I "$ANDROID_JAR" --min-sdk-version 28 --target-sdk-version 28 --version-code 1 --version-name 1.0 -F "$OUT/lyrics-control-unsigned.apk"
+"$BUILD_TOOLS/aapt" package -f -M control-app/AndroidManifest.xml -S control-app/res -I "$ANDROID_JAR" --min-sdk-version 28 --target-sdk-version 28 --version-code 2 --version-name 1.1 -F "$OUT/lyrics-control-unsigned.apk"
 "$BUILD_TOOLS/d8" --min-api 28 --output "$OUT/dex" "$OUT"/classes/com/xpeng/clusterlyrics/control/*.class
 (cd "$OUT/dex" && zip -q -j ../lyrics-control-unsigned.apk classes.dex)
 if [ ! -f "$OUT/debug.keystore" ]; then

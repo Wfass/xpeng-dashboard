@@ -33,7 +33,7 @@ public class LyricsControlActivity extends Activity {
   private final Handler handler=new Handler(Looper.getMainLooper());
   private File settingsFile;
   private int dayColor=Color.rgb(32,37,43),nightColor=Color.WHITE,currentSize=56,minCurrentSize=12,sideSize=24,verticalGap=150,lineSpacing=4;
-  private int contentWidth=620,verticalOffset=0,titleSize=24,artistSize=18,backgroundAlpha=0,maxLines=3,themeMode=0,colorRole=0;
+  private int contentWidth=620,verticalOffset=0,titleSize=24,artistSize=18,backgroundAlpha=0,maxLines=3,visibleRows=3,themeMode=0,colorRole=0;
   private boolean showTitle=true,showArtist=true,bold=true;
   private int previewColor=0;
   private TextView saveStatus;
@@ -58,6 +58,7 @@ public class LyricsControlActivity extends Activity {
     controls.addView(section("调整哪套颜色"));controls.addView(choices(new String[]{"白天颜色","夜间颜色"},colorRole,new Pick(){public void choose(int i){colorRole=i;refreshPalette();if(preview!=null)preview.invalidate();}}));
     controls.addView(section("歌词颜色"));paletteRow=(LinearLayout)palette();controls.addView(paletteRow);
     controls.addView(section("排版"));
+    controls.addView(section("上下句显示行数"));controls.addView(choices(new String[]{"两行歌词","三行歌词"},visibleRows-2,new Pick(){public void choose(int i){visibleRows=i+2;changed();}}));
     addSlider(controls,"当前歌词最大字号",12,110,currentSize," px",new Change(){public void set(int v){currentSize=v;if(minCurrentSize>v)minCurrentSize=v;changed();}});
     addSlider(controls,"当前歌词最小字号",8,Math.max(8,currentSize),minCurrentSize," px",new Change(){public void set(int v){minCurrentSize=v;changed();}});
     addSlider(controls,"上下句字号",10,60,sideSize," px",new Change(){public void set(int v){sideSize=v;changed();}});
@@ -65,7 +66,7 @@ public class LyricsControlActivity extends Activity {
     addSlider(controls,"多行歌词行距",0,30,lineSpacing," px",new Change(){public void set(int v){lineSpacing=v;changed();}});
     addSlider(controls,"歌词可用宽度",300,660,contentWidth," px",new Change(){public void set(int v){contentWidth=v;changed();}});
     addSlider(controls,"歌词整体上下位置",-120,120,verticalOffset," px",new Change(){public void set(int v){verticalOffset=v;changed();}});
-    addSlider(controls,"最多显示行数",1,5,maxLines," 行",new Change(){public void set(int v){maxLines=v;changed();}});
+    addSlider(controls,"单句最多换行数",1,5,maxLines," 行",new Change(){public void set(int v){maxLines=v;changed();}});
     controls.addView(section("歌曲信息与背景"));
     controls.addView(choices(new String[]{"显示歌名","隐藏歌名"},showTitle?0:1,new Pick(){public void choose(int i){showTitle=i==0;changed();}}));
     controls.addView(choices(new String[]{"显示歌手","隐藏歌手"},showArtist?0:1,new Pick(){public void choose(int i){showArtist=i==0;changed();}}));
@@ -156,7 +157,7 @@ public class LyricsControlActivity extends Activity {
   private void scheduleSave(){if(pendingSave!=null)handler.removeCallbacks(pendingSave);pendingSave=new Runnable(){public void run(){save();}};handler.postDelayed(pendingSave,450);}
   private void save(){
     try{
-      JSONObject json=new JSONObject().put("version",2).put("dayColor",dayColor&0x00ffffff).put("nightColor",nightColor&0x00ffffff).put("currentSize",currentSize).put("minCurrentSize",minCurrentSize).put("sideSize",sideSize).put("verticalGap",verticalGap).put("lineSpacing",lineSpacing).put("contentWidth",contentWidth).put("verticalOffset",verticalOffset).put("titleSize",titleSize).put("artistSize",artistSize).put("backgroundAlpha",backgroundAlpha).put("maxLines",maxLines).put("themeMode",themeMode).put("showTitle",showTitle).put("showArtist",showArtist).put("bold",bold);
+      JSONObject json=new JSONObject().put("version",3).put("dayColor",dayColor&0x00ffffff).put("nightColor",nightColor&0x00ffffff).put("currentSize",currentSize).put("minCurrentSize",minCurrentSize).put("sideSize",sideSize).put("verticalGap",verticalGap).put("lineSpacing",lineSpacing).put("contentWidth",contentWidth).put("verticalOffset",verticalOffset).put("titleSize",titleSize).put("artistSize",artistSize).put("backgroundAlpha",backgroundAlpha).put("maxLines",maxLines).put("visibleRows",visibleRows).put("themeMode",themeMode).put("showTitle",showTitle).put("showArtist",showArtist).put("bold",bold);
       File parent=settingsFile.getParentFile();if(parent!=null&&!parent.exists()&&!parent.mkdirs())throw new IllegalStateException("无法创建设置目录");
       try(FileOutputStream out=new FileOutputStream(settingsFile)){out.write(json.toString().getBytes(StandardCharsets.UTF_8));out.flush();out.getFD().sync();}
       settingsFile.setReadable(true,false);if(saveStatus!=null)saveStatus.setText("已保存 · 下次歌词刷新时生效");
@@ -168,7 +169,7 @@ public class LyricsControlActivity extends Activity {
       byte[] b=new byte[(int)Math.min(settingsFile.length(),8192)];int n=in.read(b);if(n<=0)return;JSONObject j=new JSONObject(new String(b,0,n,StandardCharsets.UTF_8));
       int legacy=j.optInt("color",Color.WHITE)|0xff000000;dayColor=j.optInt("dayColor",Color.rgb(32,37,43))|0xff000000;nightColor=j.optInt("nightColor",legacy)|0xff000000;
       currentSize=clamp(j.optInt("currentSize",currentSize),12,110);minCurrentSize=clamp(j.optInt("minCurrentSize",12),8,currentSize);sideSize=clamp(j.optInt("sideSize",sideSize),10,60);verticalGap=clamp(j.optInt("verticalGap",verticalGap),90,260);lineSpacing=clamp(j.optInt("lineSpacing",lineSpacing),0,30);
-      contentWidth=clamp(j.optInt("contentWidth",contentWidth),300,660);verticalOffset=clamp(j.optInt("verticalOffset",verticalOffset),-120,120);titleSize=clamp(j.optInt("titleSize",titleSize),10,42);artistSize=clamp(j.optInt("artistSize",artistSize),10,36);backgroundAlpha=clamp(j.optInt("backgroundAlpha",backgroundAlpha),0,230);maxLines=clamp(j.optInt("maxLines",maxLines),1,5);themeMode=clamp(j.optInt("themeMode",themeMode),0,2);showTitle=j.optBoolean("showTitle",showTitle);showArtist=j.optBoolean("showArtist",showArtist);bold=j.optBoolean("bold",bold);
+      contentWidth=clamp(j.optInt("contentWidth",contentWidth),300,660);verticalOffset=clamp(j.optInt("verticalOffset",verticalOffset),-120,120);titleSize=clamp(j.optInt("titleSize",titleSize),10,42);artistSize=clamp(j.optInt("artistSize",artistSize),10,36);backgroundAlpha=clamp(j.optInt("backgroundAlpha",backgroundAlpha),0,230);maxLines=clamp(j.optInt("maxLines",maxLines),1,5);visibleRows=clamp(j.optInt("visibleRows",visibleRows),2,3);themeMode=clamp(j.optInt("themeMode",themeMode),0,2);showTitle=j.optBoolean("showTitle",showTitle);showArtist=j.optBoolean("showArtist",showArtist);bold=j.optBoolean("bold",bold);
     }catch(Exception ignored){}
   }
   private int clamp(int v,int min,int max){return Math.max(min,Math.min(max,v));}
@@ -186,9 +187,8 @@ public class LyricsControlActivity extends Activity {
       if(showTitle)text(canvas,"歌曲名称",72,titleSize,dark?0xddffffff:0xdd20252b,false);
       if(showArtist)text(canvas,"歌手名称",120,artistSize,dark?0x99ffffff:0x9920252b,false);
       float previousY=Math.max(175,350-verticalGap)+verticalOffset;float nextY=Math.min(520,350+verticalGap)+verticalOffset;
-      text(canvas,"上一句歌词",previousY,sideSize,(active&0x00ffffff)|0x99000000,bold);
-      text(canvas,"正在播放",350+verticalOffset,currentSize,active,bold);
-      text(canvas,"下一句歌词",nextY,sideSize,(active&0x00ffffff)|0x99000000,bold);
+      if(visibleRows==2){text(canvas,"正在播放",350+verticalOffset-verticalGap/2f,currentSize,active,bold);text(canvas,"下一句歌词",350+verticalOffset+verticalGap/2f,sideSize,(active&0x00ffffff)|0x99000000,bold);}
+      else{text(canvas,"上一句歌词",previousY,sideSize,(active&0x00ffffff)|0x99000000,bold);text(canvas,"正在播放",350+verticalOffset,currentSize,active,bold);text(canvas,"下一句歌词",nextY,sideSize,(active&0x00ffffff)|0x99000000,bold);}
       canvas.restore();
     }
   }

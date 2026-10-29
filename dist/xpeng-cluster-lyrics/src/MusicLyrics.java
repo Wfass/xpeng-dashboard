@@ -74,11 +74,13 @@ public class MusicLyrics {
     try{
       Object ui=context.getSystemService("uimode");
       Object mode=ui.getClass().getMethod("getDayNightMode").invoke(ui);
-      if(mode instanceof Integer){int value=((Integer)mode).intValue();if(value==0)return false;if(value==1)return true;}
+      // The driver observed day/night palettes reversed with the previous
+      // interpretation, so invert this vehicle getter's presentation mapping.
+      if(mode instanceof Integer){int value=((Integer)mode).intValue();if(value==0)return true;if(value==1)return false;}
     }catch(Exception ignored){}
     return (context.getResources().getConfiguration().uiMode&android.content.res.Configuration.UI_MODE_NIGHT_MASK)==android.content.res.Configuration.UI_MODE_NIGHT_YES;
   }
-  static byte[] render(Context context,String title,String artist,List<ClusterLyrics.Line> lines,int index)throws Exception{
+  static byte[] render(Context context,String title,String artist,List<ClusterLyrics.Line> lines,int index,int visibleRows,String transitionFrom,float transitionProgress)throws Exception{
     // Match the Navigation card's 660x660 MapBG image area. The lyrics slot
     // has no native title/artist rows, so include them in the image header.
     Bitmap b=Bitmap.createBitmap(660,660,Bitmap.Config.ARGB_8888);Canvas c=new Canvas(b);
@@ -95,14 +97,26 @@ public class MusicLyrics {
     if(style.showArtist)drawCentered(c,artist,width,style.artistSize,Math.max(10,style.artistSize-16),44,1,night?0x99FFFFFF:0x9920252B,100,0,false);
     float previousY=Math.max(175,350-style.verticalGap)+style.verticalOffset;
     float nextY=Math.min(520,350+style.verticalGap)+style.verticalOffset;
-    drawCentered(c,previous,width,style.sideSize,Math.max(10,style.sideSize-20),92,2,style.withAlpha(0x99,accent),previousY,style.lineSpacing,style.bold);
-    drawCentered(c,now,width,style.currentSize,style.minCurrentSize,250,style.maxLines,accent,350+style.verticalOffset,style.lineSpacing,style.bold);
-    drawCentered(c,next,width,style.sideSize,Math.max(10,style.sideSize-20),92,2,style.withAlpha(0x99,accent),nextY,style.lineSpacing,style.bold);
+    float center=350+style.verticalOffset;
+    if(transitionFrom!=null&&transitionProgress<1f){
+      float p=Math.max(0f,Math.min(1f,transitionProgress));
+      drawCentered(c,transitionFrom,width,style.currentSize,style.minCurrentSize,250,style.maxLines,style.withAlpha((int)(255*(1f-p)),accent),center-90f*p,style.lineSpacing,style.bold);
+      drawCentered(c,now,width,style.currentSize,style.minCurrentSize,250,style.maxLines,style.withAlpha((int)(255*p),accent),center+65f*(1f-p),style.lineSpacing,style.bold);
+      if(visibleRows==3)drawCentered(c,next,width,style.sideSize,Math.max(10,style.sideSize-20),92,2,style.withAlpha(0x99,accent),nextY,style.lineSpacing,style.bold);
+    }else if(visibleRows==2){
+      float upper=center-style.verticalGap/2f,lower=center+style.verticalGap/2f;
+      drawCentered(c,now,width,style.currentSize,style.minCurrentSize,250,style.maxLines,accent,upper,style.lineSpacing,style.bold);
+      drawCentered(c,next,width,style.sideSize,Math.max(10,style.sideSize-20),92,2,style.withAlpha(0x99,accent),lower,style.lineSpacing,style.bold);
+    }else{
+      drawCentered(c,previous,width,style.sideSize,Math.max(10,style.sideSize-20),92,2,style.withAlpha(0x99,accent),previousY,style.lineSpacing,style.bold);
+      drawCentered(c,now,width,style.currentSize,style.minCurrentSize,250,style.maxLines,accent,center,style.lineSpacing,style.bold);
+      drawCentered(c,next,width,style.sideSize,Math.max(10,style.sideSize-20),92,2,style.withAlpha(0x99,accent),nextY,style.lineSpacing,style.bold);
+    }
     ByteArrayOutputStream out=new ByteArrayOutputStream();b.compress(Bitmap.CompressFormat.PNG,100,out);b.recycle();return out.toByteArray();
   }
   static class Style {
     int dayColor=0xff20252b,nightColor=Color.WHITE,currentSize=56,minCurrentSize=12,sideSize=24,verticalGap=150,lineSpacing=4;
-    int contentWidth=620,verticalOffset=0,titleSize=24,artistSize=18,backgroundColor=Color.BLACK,backgroundAlpha=0,maxLines=3,themeMode=0;
+    int contentWidth=620,verticalOffset=0,titleSize=24,artistSize=18,backgroundColor=Color.BLACK,backgroundAlpha=0,maxLines=3,themeMode=0,visibleRows=3;
     boolean showTitle=true,showArtist=true,bold=true;
     int withAlpha(int alpha,int color){return (color&0x00ffffff)|(alpha<<24);}
     static int clamp(int v,int min,int max){return Math.max(min,Math.min(max,v));}
@@ -123,13 +137,14 @@ public class MusicLyrics {
         s.titleSize=clamp(j.optInt("titleSize",s.titleSize),10,42);s.artistSize=clamp(j.optInt("artistSize",s.artistSize),10,36);
         s.backgroundColor=j.optInt("backgroundColor",s.backgroundColor)|0xff000000;s.backgroundAlpha=clamp(j.optInt("backgroundAlpha",s.backgroundAlpha),0,230);
         s.maxLines=clamp(j.optInt("maxLines",s.maxLines),1,5);s.themeMode=clamp(j.optInt("themeMode",s.themeMode),0,2);
+        s.visibleRows=clamp(j.optInt("visibleRows",s.visibleRows),2,3);
         s.showTitle=j.optBoolean("showTitle",s.showTitle);s.showArtist=j.optBoolean("showArtist",s.showArtist);s.bold=j.optBoolean("bold",s.bold);
       }catch(Exception ignored){}
       return s;
     }
   }
   static void work(MediaSessionManager manager,Object shm,Context context,boolean restore)throws Exception{
-    String cached="",lastKey="";List<ClusterLyrics.Line> lines=new ArrayList<>();long sentAt=0,count=0;
+    String cached="",lastKey="",lastSong="",transitionFrom=null;int lastIndex=-1;long sentAt=0,transitionStarted=0,count=0;List<ClusterLyrics.Line> lines=new ArrayList<>();
     while(true){
       MediaController mc=null;
       for(MediaController candidate:manager.getActiveSessions(null))if(candidate.getPackageName().equals("com.xiaopeng.musicradio")){mc=candidate;break;}
@@ -146,14 +161,22 @@ public class MusicLyrics {
       String subtitle=artist;
       String key=title+"|"+index+"|"+playing;
       long now=SystemClock.elapsedRealtime();
-      if(restore||!key.equals(lastKey)||now-sentAt>=1000){
+      if(!restore&&!song.equals(lastSong)){lastIndex=-1;transitionFrom=null;transitionStarted=0;}
+      if(!restore&&index!=lastIndex&&lastIndex>=0&&song.equals(lastSong)){
+        transitionFrom=lastIndex<lines.size()?lines.get(lastIndex).text:null;transitionStarted=now;
+      }
+      boolean animating=transitionFrom!=null&&now-transitionStarted<500;
+      float transitionProgress=animating?(now-transitionStarted)/500f:1f;
+      if(!animating&&transitionFrom!=null){transitionFrom=null;transitionProgress=1f;}
+      if(restore||!key.equals(lastKey)||now-sentAt>=(animating?125:1000)){
         JSONObject music=new JSONObject().put("artist",subtitle).put("song",song).put("progress",String.valueOf(position/1000)).put("total",String.valueOf(md.getLong(MediaMetadata.METADATA_KEY_DURATION)/1000)).put("startPosition",String.valueOf(md.getLong("startPosition"))).put("status",playing?"play":"pause");
         JSONObject message=new JSONObject().put("enable","1").put("msgtype","7").put("music",music).put("reporttime",new java.text.SimpleDateFormat("HH:mm",Locale.CHINA).format(new Date()));
-        byte[] image=restore?album(md):render(context,title,artist,lines,index);
+        byte[] image=restore?album(md):render(context,title,artist,lines,index,Style.load().visibleRows,transitionFrom,transitionProgress);
         send(shm,message,image);lastKey=key;sentAt=now;count++;
         if(count==1||count%15==0||restore)System.out.println("MUSIC_SUBMITTED count="+count+" lineIndex="+index+" positionMs="+position+" restore="+restore+" imageBytes="+image.length);
       }
-      if(restore)return;Thread.sleep(250);
+      lastSong=song;lastIndex=index;
+      if(restore)return;Thread.sleep(animating?100:250);
     }
   }
 }
